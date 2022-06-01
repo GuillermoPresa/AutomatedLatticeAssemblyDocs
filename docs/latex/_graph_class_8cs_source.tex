@@ -1,0 +1,465 @@
+\hypertarget{_graph_class_8cs_source}{}\doxysection{Graph\+Class.\+cs}
+\label{_graph_class_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Robot/SimpleRobot1/GraphClass.cs@{C:/Users/Guille/LatticeAssembly/Assets/Robot/SimpleRobot1/GraphClass.cs}}
+\mbox{\hyperlink{_graph_class_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00004}00004 \textcolor{keyword}{using }System.Text;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00005}00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00006}\mbox{\hyperlink{_graph_class_8cs_ababa94d9960f4fef518b02331e6d9910}{00006}} \textcolor{keyword}{using }\mbox{\hyperlink{_graph_class_8cs_ababa94d9960f4fef518b02331e6d9910}{SD}} = System.Diagnostics;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00008}\mbox{\hyperlink{class_navigation_path}{00008}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_navigation_path}{NavigationPath}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00010}\mbox{\hyperlink{class_navigation_path_a8b4140f8e5efe68dcb937c4647bbe975}{00010}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_navigation_path_a8b4140f8e5efe68dcb937c4647bbe975}{\_FordwardsNavigationPath}} = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00012}\mbox{\hyperlink{class_navigation_path_a5c17842eecc022c76ae37f09d2548ba1}{00012}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_navigation_path_a5c17842eecc022c76ae37f09d2548ba1}{\_MovementCost}} = 9999999999;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00014}\mbox{\hyperlink{class_navigation_path_a7b441a6d9991b9270c8f5c6d0288a0d4}{00014}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_navigation_path_a7b441a6d9991b9270c8f5c6d0288a0d4}{MovementCost}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00015}00015     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00016}00016         \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_navigation_path_a5c17842eecc022c76ae37f09d2548ba1}{\_MovementCost}}; \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00017}00017     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00018}\mbox{\hyperlink{class_navigation_path_ae279ca42e4009531e02062cbe398eee6}{00018}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_navigation_path_ae279ca42e4009531e02062cbe398eee6}{FordwardsNavigationPath}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00019}00019     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00020}00020         \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_navigation_path_a8b4140f8e5efe68dcb937c4647bbe975}{\_FordwardsNavigationPath}}; \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00022}\mbox{\hyperlink{class_navigation_path_ac60ec963b79831ae469f34d2912db299}{00022}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_navigation_path_ac60ec963b79831ae469f34d2912db299}{BackwardsNavigationPath}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00024}00024         \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_navigation_path_ab22c25dade769344174f01175dd7eb56}{InverseNavigationPath}}(\mbox{\hyperlink{class_navigation_path_a8b4140f8e5efe68dcb937c4647bbe975}{\_FordwardsNavigationPath}}); \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00027}\mbox{\hyperlink{class_navigation_path_a09f4b42c84eb3de527ba06861f6e9cdd}{00027}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_navigation_path_a09f4b42c84eb3de527ba06861f6e9cdd}{SetBackwardsMovement}}(List<GameObject> BackwardsPath)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00028}00028     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00029}00029         \mbox{\hyperlink{class_navigation_path_a8b4140f8e5efe68dcb937c4647bbe975}{\_FordwardsNavigationPath}} = \mbox{\hyperlink{class_navigation_path_ab22c25dade769344174f01175dd7eb56}{InverseNavigationPath}}(BackwardsPath);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00030}00030         \mbox{\hyperlink{class_navigation_path_a5c17842eecc022c76ae37f09d2548ba1}{\_MovementCost}} = 2; \textcolor{comment}{//Placeholder stuff}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00031}00031         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00034}\mbox{\hyperlink{class_navigation_path_ab22c25dade769344174f01175dd7eb56}{00034}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_navigation_path_ab22c25dade769344174f01175dd7eb56}{InverseNavigationPath}}(List<GameObject> PathToInvert)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00035}00035     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00036}00036         List<GameObject> InvertedPath = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00038}00038         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = PathToInvert.Count() -\/ 1; i >= 0; i = i -\/ 1)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00039}00039         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00040}00040             InvertedPath.Add(PathToInvert[i]);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00041}00041         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00043}00043         \textcolor{keywordflow}{return} InvertedPath;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00048}\mbox{\hyperlink{class_graph_node}{00048}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_graph_node}{GraphNode}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00049}00049 \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00050}00050     \textcolor{keyword}{private} GameObject \_value;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00051}00051     List<GraphNode> \_neighbours;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00052}00052     List<float> \_EdgeWeight = \textcolor{keyword}{new} List<float>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00053}00053     List<string> \_EdgeMovementType = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00054}00054     Dictionary<GraphNode, Dictionary<string, object>> \_NeighbourDictionary = \textcolor{keyword}{new} Dictionary<GraphNode, Dictionary<string, object>>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00056}\mbox{\hyperlink{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}{00056}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}{visited}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00057}\mbox{\hyperlink{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}{00057}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}{DistanceFromStartingNode}} = (float)999999999;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00058}\mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{00058}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_graph_node}{GraphNode}} \mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{PreviousVertex}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00060}\mbox{\hyperlink{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}{00060}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}{Clear}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00061}00061     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00062}00062         \mbox{\hyperlink{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}{visited}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00063}00063         \mbox{\hyperlink{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}{DistanceFromStartingNode}} = (float)999999999;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00064}00064         \mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{PreviousVertex}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00066}00066         \_neighbours.\mbox{\hyperlink{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}{Clear}}();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00067}00067         \_EdgeWeight.Clear();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00068}00068         \_EdgeMovementType.Clear();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00069}00069         \_NeighbourDictionary.Clear();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00073}00073         \textcolor{comment}{//foreach (GraphNode Neighbour in \_neighbours)}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00074}00074         \textcolor{comment}{//\{}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00075}00075         \textcolor{comment}{//    RemoveNeighbour(Neighbour);}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00076}00076         \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00079}00079     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00081}\mbox{\hyperlink{class_graph_node_a2d4ce49e2ee25d746821bbf527b9e4a5}{00081}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_node_a2d4ce49e2ee25d746821bbf527b9e4a5}{ResetSearchParameters}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00082}00082     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00083}00083         \mbox{\hyperlink{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}{visited}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00084}00084         \mbox{\hyperlink{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}{DistanceFromStartingNode}} = (float)99999999999;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00085}00085         \mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{PreviousVertex}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00089}\mbox{\hyperlink{class_graph_node_aac326ec4b6615ae23ef584fbbf998628}{00089}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_graph_node_aac326ec4b6615ae23ef584fbbf998628}{GraphNode}}(GameObject value)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00090}00090     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00091}00091         this.\_value = value;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00092}00092         \_neighbours = \textcolor{keyword}{new} List<GraphNode>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00093}00093     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00095}\mbox{\hyperlink{class_graph_node_ad24d79c581ceaf6ed31e112446f23611}{00095}}     \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_ad24d79c581ceaf6ed31e112446f23611}{Equals}}(\textcolor{keywordtype}{object} other)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00096}00096     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00097}00097         \mbox{\hyperlink{class_graph_node}{GraphNode}} otherNode = (\mbox{\hyperlink{class_graph_node_aac326ec4b6615ae23ef584fbbf998628}{GraphNode}})other;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00098}00098         \textcolor{keywordflow}{return} otherNode == \textcolor{keyword}{this};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00099}00099     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00101}\mbox{\hyperlink{class_graph_node_ace598b1b916a7ccd9eccfe4f34a68acb}{00101}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_ace598b1b916a7ccd9eccfe4f34a68acb}{operator ==}}(\mbox{\hyperlink{class_graph_node}{GraphNode}} obj1, \mbox{\hyperlink{class_graph_node}{GraphNode}} obj2)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00102}00102     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00103}00103         \textcolor{keywordflow}{return} (obj1?.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}?.GetInstanceID() == obj2?.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}?.GetInstanceID());}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00104}00104     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00106}\mbox{\hyperlink{class_graph_node_ab87ba204e9cf0220e47ae9081e7f2d00}{00106}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_ab87ba204e9cf0220e47ae9081e7f2d00}{operator !=}}(\mbox{\hyperlink{class_graph_node}{GraphNode}} obj1, \mbox{\hyperlink{class_graph_node}{GraphNode}} obj2)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00107}00107     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00108}00108         \textcolor{keywordflow}{return} !(obj1 == obj2);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00109}00109     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00111}\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{00111}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00112}00112     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00113}00113         \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \_value; \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00116}\mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{00116}}     \textcolor{keyword}{public} IList<GraphNode> \mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00117}00117     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00118}00118         \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \_neighbours.AsReadOnly(); \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00121}\mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{00121}}     \textcolor{keyword}{public} IList<float> \mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{EdgeWeight}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00122}00122     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00123}00123         \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \_EdgeWeight.AsReadOnly(); \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00124}00124     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00127}\mbox{\hyperlink{class_graph_node_a0aef609b5cfd7df010b3ecbcec86356f}{00127}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_a0aef609b5cfd7df010b3ecbcec86356f}{AddNeighbour}}(\mbox{\hyperlink{class_graph_node}{GraphNode}} neighbour, \textcolor{keywordtype}{float} \mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{EdgeWeight}}, \textcolor{keywordtype}{string} MovementType)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00128}00128     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00129}00129         \textcolor{keywordflow}{if} (\_neighbours.Contains(neighbour))}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00130}00130         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00131}00131             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00132}00132         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00133}00133         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00134}00134         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00135}00135             \_neighbours.Add(neighbour);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00136}00136             \_EdgeWeight.Add(\mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{EdgeWeight}});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00137}00137             \_EdgeMovementType.Add(MovementType);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00138}00138             \_NeighbourDictionary.Add(neighbour, \textcolor{keyword}{new} Dictionary<string, object>() \{ \{ \textcolor{stringliteral}{"{}Weight"{}}, \mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{EdgeWeight}} \}, \{ \textcolor{stringliteral}{"{}Movement"{}}, MovementType \} \});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00140}00140             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00141}00141         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00142}00142     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00144}\mbox{\hyperlink{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}{00144}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}{RemoveNeighbour}}(\mbox{\hyperlink{class_graph_node}{GraphNode}} neighbour)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00145}00145     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00146}00146         \textcolor{keywordflow}{if} (\_neighbours.Contains(neighbour))}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00147}00147         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00148}00148             \textcolor{keywordtype}{int} Index = \_neighbours.IndexOf(neighbour);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00149}00149             \_EdgeWeight.RemoveAt(Index);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00150}00150             \_EdgeMovementType.RemoveAt(Index);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00151}00151             \_neighbours.RemoveAt(Index);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00152}00152             \_NeighbourDictionary.Remove(neighbour);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00154}00154             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00155}00155         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00156}00156         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00157}00157     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00159}\mbox{\hyperlink{class_graph_node_a7c81a4ea013b72f9c8459aa5f3296b5b}{00159}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_node_a7c81a4ea013b72f9c8459aa5f3296b5b}{RemoveAllNeighbours}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00160}00160     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00161}00161         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} item \textcolor{keywordflow}{in} \_neighbours)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00162}00162         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00163}00163             \_neighbours.Remove(item);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00164}00164         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00165}00165         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00166}00166     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00168}\mbox{\hyperlink{class_graph_node_ad6631a80420b8757811616504289f4ca}{00168}}     \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_graph_node_ad6631a80420b8757811616504289f4ca}{ToString}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00169}00169     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00170}00170         StringBuilder nodeString = \textcolor{keyword}{new} StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00171}00171         nodeString.Append(\textcolor{stringliteral}{"{}[ Node Value "{}} + \mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}} + \textcolor{stringliteral}{"{} with Neighbours : "{}});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00172}00172         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} item \textcolor{keywordflow}{in} \mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00173}00173         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00174}00174             nodeString.Append(item.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}.ToString() + \textcolor{stringliteral}{"{} "{}});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00175}00175         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00176}00176         nodeString.Append(\textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00177}00177         \textcolor{keywordflow}{return} nodeString.ToString();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00178}00178     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00179}00179 \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00180}\mbox{\hyperlink{class_graph}{00180}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_graph}{Graph}}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00181}00181 \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00182}00182     List<GraphNode> GraphNodeList = \textcolor{keyword}{new} List<GraphNode>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00184}\mbox{\hyperlink{class_graph_af26586373903299b29109fbdd0b93c4d}{00184}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_af26586373903299b29109fbdd0b93c4d}{DrawMesh}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00185}00185     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00186}00186         \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{class_graph_node}{GraphNode}} Node \textcolor{keywordflow}{in} GraphNodeList) \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00187}00187             }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00188}00188             \textcolor{keywordflow}{foreach}(\mbox{\hyperlink{class_graph_node}{GraphNode}} NeighboringNode \textcolor{keywordflow}{in} Node.\mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00189}00189             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00190}00190                 Debug.DrawLine(Node.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}.transform.position, NeighboringNode.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}.transform.position, Color.green);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00191}00191             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00192}00192         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00193}00193     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00194}00194 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00195}\mbox{\hyperlink{class_graph_ab8ccb82fd216cc5a36c3887c6820428f}{00195}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_graph_ab8ccb82fd216cc5a36c3887c6820428f}{Graph}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00196}00196     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00198}00198     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00199}00199 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00200}\mbox{\hyperlink{class_graph_aef9eec77dc196b41c6f3a957ec834a1d}{00200}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_graph_aef9eec77dc196b41c6f3a957ec834a1d}{Count}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00201}00201     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00202}00202         \textcolor{keywordflow}{return} GraphNodeList.Count;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00203}00203     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00204}00204 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00205}\mbox{\hyperlink{class_graph_addefede59dc24daa7d423ce7d2bbde6f}{00205}}     \textcolor{keyword}{public} IList<GraphNode> \mbox{\hyperlink{class_graph_addefede59dc24daa7d423ce7d2bbde6f}{GraphNodes}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00206}00206     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00207}00207         \textcolor{keywordflow}{return} GraphNodeList.AsReadOnly();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00208}00208 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00209}00209     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00211}\mbox{\hyperlink{class_graph_a0b4db92ff7da6b87f453bcd9d9083a16}{00211}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_a0b4db92ff7da6b87f453bcd9d9083a16}{AddNode}}(GameObject value)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00212}00212     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00213}00213 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00214}00214         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(value) is not \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00215}00215         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00216}00216             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00217}00217         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00218}00218         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00219}00219         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00220}00220             GraphNodeList.Add(\textcolor{keyword}{new} \mbox{\hyperlink{class_graph_node}{GraphNode}}(value));}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00221}00221             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00222}00222         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00223}00223     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00224}00224     \textcolor{comment}{// N1 parent and N2 child (not bidirectional)}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00226}\mbox{\hyperlink{class_graph_ab8b286cfe410dc5959810e11932b6ba0}{00226}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_ab8b286cfe410dc5959810e11932b6ba0}{ContainsEdge}}(GameObject n1, GameObject n2)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00227}00227     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00228}00228 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00229}00229         \mbox{\hyperlink{class_graph_node}{GraphNode}} gn1 = \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(n1);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00230}00230         \mbox{\hyperlink{class_graph_node}{GraphNode}} gn2 = \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(n2);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00232}00232         \textcolor{keywordflow}{if} (gn1 is \textcolor{keyword}{null} || gn2 is \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00233}00233         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00234}00234             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00235}00235         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00236}00236         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (gn1.\mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}}.Contains(gn2))}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00237}00237         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00238}00238             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00239}00239         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00240}00240         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00241}00241         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00242}00242             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00243}00243         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00244}00244     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00245}00245 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00246}\mbox{\hyperlink{class_graph_aa8d727eb1b3f711e16a6bad0b99bc18d}{00246}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_aa8d727eb1b3f711e16a6bad0b99bc18d}{AddEdge}}(GameObject n1, GameObject n2, \textcolor{keywordtype}{float} EdgeWeight, \textcolor{keywordtype}{string} MovementType)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00247}00247     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00248}00248         \mbox{\hyperlink{class_graph_node}{GraphNode}} gn1 = \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(n1);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00249}00249         \mbox{\hyperlink{class_graph_node}{GraphNode}} gn2 = \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(n2);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00250}00250 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00251}00251         \textcolor{keywordtype}{bool} EdgeContained = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00252}00252 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00253}00253         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} Neighbor \textcolor{keywordflow}{in} gn1.\mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00254}00254         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00255}00255             \textcolor{keywordflow}{if} (Neighbor == gn2)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00256}00256             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00257}00257                 EdgeContained = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00258}00258             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00259}00259         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00260}00260 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00261}00261 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00262}00262         \textcolor{keywordflow}{if} (gn1 is \textcolor{keyword}{null} || gn2 is \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00263}00263         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00264}00264             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00265}00265         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00266}00266         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (EdgeContained)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00267}00267         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00268}00268             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00269}00269         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00270}00270         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00271}00271         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00272}00272             gn1.AddNeighbour(gn2, EdgeWeight, MovementType);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00273}00273             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00274}00274         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00275}00275     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00276}00276 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00277}00277     \mbox{\hyperlink{class_graph_node}{GraphNode}} Find(GameObject value)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00278}00278     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00279}00279         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} item \textcolor{keywordflow}{in} GraphNodeList)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00280}00280         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00281}00281             \textcolor{keywordflow}{if} (item.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}.Equals(value))}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00282}00282             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00283}00283                 \textcolor{keywordflow}{return} item;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00284}00284             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00285}00285         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00286}00286         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00287}00287     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00288}00288 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00289}\mbox{\hyperlink{class_graph_a269204d0a2158ada3f622c07484b444a}{00289}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_a269204d0a2158ada3f622c07484b444a}{RemoveNode}}(GameObject value)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00290}00290     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00291}00291         \mbox{\hyperlink{class_graph_node}{GraphNode}} TBR = Find(value);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00292}00292         \textcolor{keywordflow}{if} (TBR is not \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00293}00293         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00294}00294             GraphNodeList.Remove(TBR);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00295}00295             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} node \textcolor{keywordflow}{in} GraphNodeList)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00296}00296             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00297}00297                 node.\mbox{\hyperlink{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}{RemoveNeighbour}}(TBR);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00298}00298             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00299}00299             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00300}00300         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00301}00301         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00302}00302     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00303}00303 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00304}\mbox{\hyperlink{class_graph_a4086af6f607a78076fa497cdcb73b686}{00304}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_a4086af6f607a78076fa497cdcb73b686}{RemoveEdge}}(GameObject value1, GameObject value2)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00305}00305     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00306}00306         \mbox{\hyperlink{class_graph_node}{GraphNode}} node1 = Find(value1);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00307}00307         \mbox{\hyperlink{class_graph_node}{GraphNode}} node2 = Find(value2);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00308}00308 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00309}00309         \textcolor{keywordflow}{if} (node1 is \textcolor{keyword}{null} || node2 is \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00310}00310         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00311}00311             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00312}00312         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00313}00313         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!node1.\mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}}.Contains(node2))}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00314}00314         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00315}00315             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00316}00316         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00317}00317         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00318}00318         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00319}00319             node1.\mbox{\hyperlink{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}{RemoveNeighbour}}(node2);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00320}00320             node2.\mbox{\hyperlink{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}{RemoveNeighbour}}(node1);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00321}00321             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00322}00322         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00323}00323 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00324}00324     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00325}00325 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00326}\mbox{\hyperlink{class_graph_a8a069a3c7e99a80dcbdd52a58d3ff843}{00326}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a8a069a3c7e99a80dcbdd52a58d3ff843}{RemoveLattice}}(GameObject LatticeToRemove, GameObject Robot)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00327}00327     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00328}00328         \mbox{\hyperlink{class_graph_node}{GraphNode}} gnToRemove = \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(LatticeToRemove);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00329}00329     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00330}00330 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00331}00331 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00332}\mbox{\hyperlink{class_graph_a13a8c565a17e7a886981cbeaf6f7fd6b}{00332}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a13a8c565a17e7a886981cbeaf6f7fd6b}{Clear}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00333}00333     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00334}00334         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} node \textcolor{keywordflow}{in} GraphNodeList)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00335}00335         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00336}00336             \textcolor{comment}{//node.RemoveAllNeighbours();}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00337}00337             node.\mbox{\hyperlink{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}{Clear}}();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00338}00338 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00339}00339 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00340}00340         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00341}00341         \textcolor{comment}{//GraphNodeList.Clear();}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00342}00342         \textcolor{comment}{//GraphNodeList = null;}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00343}00343 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00344}00344     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00345}00345 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00346}\mbox{\hyperlink{class_graph_abd05a1fcf99b131b6899c0efe57a2b08}{00346}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_abd05a1fcf99b131b6899c0efe57a2b08}{ResetSearchParameters}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00347}00347     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00348}00348         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} Node \textcolor{keywordflow}{in} GraphNodeList)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00349}00349         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00350}00350             Node.\mbox{\hyperlink{class_graph_node_a2d4ce49e2ee25d746821bbf527b9e4a5}{ResetSearchParameters}}();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00351}00351         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00352}00352     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00353}00353 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00354}00354 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00355}\mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{00355}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_graph_node}{GraphNode}} \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{FindGraphNodeFromNodeObject}}(GameObject Node)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00356}00356     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00357}00357         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} \mbox{\hyperlink{class_graph_node}{GraphNode}} \textcolor{keywordflow}{in} GraphNodeList)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00358}00358         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00359}00359             \textcolor{keywordflow}{if} (\mbox{\hyperlink{_viewport_controller_8cs_aef19bab18b9814edeef255c43e4f6bbc}{Object}}.ReferenceEquals(\mbox{\hyperlink{class_graph_node}{GraphNode}}.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}, Node))}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00360}00360             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00361}00361                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_graph_node}{GraphNode}};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00362}00362             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00363}00363         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00364}00364 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00365}00365         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00366}00366     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00367}00367 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00368}\mbox{\hyperlink{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}{00368}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_navigation_path}{NavigationPath}} \mbox{\hyperlink{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}{DijkstraPath}}(\mbox{\hyperlink{class_graph_node}{GraphNode}} StartingNode, \mbox{\hyperlink{class_graph_node}{GraphNode}} FinalNode)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00369}00369     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00370}00370         \mbox{\hyperlink{class_graph_a8c8441b17f8a083c13756a85d873a15b}{CompleteDijkstraFromStartingNode}}(StartingNode);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00371}00371 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00372}00372         \mbox{\hyperlink{class_graph_node}{GraphNode}} CurrentNode;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00373}00373         List<GameObject> BackwardsNodePath = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00374}00374         List<GameObject> FordwardsNodePath = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00375}00375         \textcolor{keywordtype}{bool} Finished = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00376}00376 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00377}00377         }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00378}00378 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00379}00379 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00380}00380         CurrentNode = FinalNode;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00381}00381         \textcolor{keywordflow}{while} (Finished is \textcolor{keyword}{false})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00382}00382         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00383}00383             BackwardsNodePath.Add(CurrentNode.\mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00384}00384 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00385}00385             \textcolor{keywordflow}{if} (CurrentNode.\mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{PreviousVertex}} is \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00386}00386             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00387}00387                 Finished = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00388}00388             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00389}00389             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00390}00390             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00391}00391                 CurrentNode = CurrentNode.\mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{PreviousVertex}};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00392}00392             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00393}00393         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00394}00394 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00395}00395         \mbox{\hyperlink{class_navigation_path}{NavigationPath}} \mbox{\hyperlink{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}{DijkstraPath}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_navigation_path}{NavigationPath}}();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00396}00396         \mbox{\hyperlink{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}{DijkstraPath}}.\mbox{\hyperlink{class_navigation_path_a09f4b42c84eb3de527ba06861f6e9cdd}{SetBackwardsMovement}}(BackwardsNodePath);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00397}00397 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00398}00398         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}{DijkstraPath}};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00399}00399 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00400}00400     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00401}00401 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00402}\mbox{\hyperlink{class_graph_a8c8441b17f8a083c13756a85d873a15b}{00402}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a8c8441b17f8a083c13756a85d873a15b}{CompleteDijkstraFromStartingNode}}(\mbox{\hyperlink{class_graph_node}{GraphNode}} StartingNode)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00403}00403     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00404}00404         \mbox{\hyperlink{class_graph_abd05a1fcf99b131b6899c0efe57a2b08}{ResetSearchParameters}}();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00405}00405         \textcolor{keywordtype}{bool} FoundOptimalPath = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00406}00406 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00407}00407         StartingNode.DistanceFromStartingNode = 0;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00408}00408 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00409}00409         var UnvisitedNodes = GraphNodeList.Where(TempNode => TempNode.visited == \textcolor{keyword}{false}).OrderBy(MyNode => MyNode.DistanceFromStartingNode);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00410}00410 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00411}00411         \textcolor{keywordflow}{while} (FoundOptimalPath is not \textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00412}00412         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00413}00413             \textcolor{comment}{//Debug.Log(GraphNodeList);}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00414}00414             var ClosestUnvisitedNode = GraphNodeList.Where(TempNode => TempNode.visited == \textcolor{keyword}{false}).OrderBy(MyNode => MyNode.DistanceFromStartingNode).First();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00415}00415 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00416}00416             \textcolor{comment}{//Visit the closest unvisited node. AKA examine its unvisited neigbours.}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00417}00417 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00418}00418             var UnvisitedNeighbours = ClosestUnvisitedNode.Neighbours.Where(TempNode => TempNode.visited == \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00419}00419             \textcolor{comment}{//var UnvisitedNeighbours = ClosestUnvisitedNode.Neighbours;}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00420}00420 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00421}00421             \textcolor{keywordtype}{int} NeighbourCount = UnvisitedNeighbours.Count();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00422}00422             \textcolor{comment}{//Debug.Log(NeighbourCount);}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00423}00423             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} UnvisitedNeighbour \textcolor{keywordflow}{in} UnvisitedNeighbours)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00424}00424             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00425}00425                 \textcolor{comment}{//Debug.Log("{}Visiting new unvisited neighbour"{});}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00426}00426                 \textcolor{keywordtype}{int} IndexOfNeighbour = ClosestUnvisitedNode.Neighbours.IndexOf(UnvisitedNeighbour);}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00427}00427                 \textcolor{keywordtype}{float} DistanceBetweenNodes = ClosestUnvisitedNode.DistanceFromStartingNode + ClosestUnvisitedNode.EdgeWeight[IndexOfNeighbour];}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00428}00428                 \textcolor{comment}{//Debug.Log("{}Visiting new unvisited neighbour with distance between nodes of: "{} + ClosestUnvisitedNode.EdgeWeight[IndexOfNeighbour].ToString() + "{}And prev node from origin of"{} + ClosestUnvisitedNode.DistanceFromStartingNode.ToString());}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00429}00429 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00430}00430                 \textcolor{keywordflow}{if} (DistanceBetweenNodes < UnvisitedNeighbour.\mbox{\hyperlink{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}{DistanceFromStartingNode}})}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00431}00431                 \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00432}00432                     \textcolor{comment}{//Debug.Log("{}Adding a new previous vertex"{});}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00433}00433                     UnvisitedNeighbour.DistanceFromStartingNode = DistanceBetweenNodes;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00434}00434                     UnvisitedNeighbour.PreviousVertex = ClosestUnvisitedNode;}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00435}00435                 \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00436}00436             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00437}00437 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00438}00438             ClosestUnvisitedNode.visited = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00439}00439 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00440}00440             \textcolor{keywordflow}{if} (GraphNodeList.Where(TempNode => TempNode.visited == \textcolor{keyword}{false}).Count() == 0)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00441}00441             \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00442}00442                 FoundOptimalPath = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00443}00443             \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00444}00444         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00445}00445     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00446}00446 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00447}\mbox{\hyperlink{class_graph_acc69e698b1d49ddbef16b7898e11e66f}{00447}}     \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_graph_acc69e698b1d49ddbef16b7898e11e66f}{ToString}}()}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00448}00448     \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00449}00449         StringBuilder NodeString = \textcolor{keyword}{new} StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00450}00450 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00451}00451         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_graph_node}{GraphNode}} node \textcolor{keywordflow}{in} GraphNodeList)}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00452}00452         \{}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00453}00453             NodeString.Append(node.\mbox{\hyperlink{class_graph_node_ad6631a80420b8757811616504289f4ca}{ToString}}());}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00454}00454         \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00455}00455         NodeString.Append(\textcolor{stringliteral}{"{}/n"{}});}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00456}00456         \textcolor{keywordflow}{return} NodeString.ToString();}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00457}00457     \}}
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00458}00458 }
+\DoxyCodeLine{\Hypertarget{_graph_class_8cs_source_l00459}00459 \}}
+
+\end{DoxyCode}

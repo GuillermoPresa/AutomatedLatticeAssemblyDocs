@@ -1,0 +1,85 @@
+\hypertarget{_space_navigator_windows_8cs_source}{}\doxysection{Space\+Navigator\+Windows.\+cs}
+\label{_space_navigator_windows_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Plugins/SpaceNavigatorWindows.cs@{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Plugins/SpaceNavigatorWindows.cs}}
+\mbox{\hyperlink{_space_navigator_windows_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00001}00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Runtime.InteropServices;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00005}00005 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_space_navigator_driver}{SpaceNavigatorDriver}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00007}00007 \textcolor{preprocessor}{\#if UNITY\_EDITOR\_WIN || UNITY\_STANDALONE\_WIN}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00008}00008     \textcolor{keyword}{using }TDx.TDxInput;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00010}00010     \textcolor{keyword}{class }SpaceNavigatorWindows : SpaceNavigator \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00011}00011         \textcolor{keyword}{private} \textcolor{keyword}{const} \textcolor{keywordtype}{float} TransSensScale = 0.0001f, RotSensScale = 0.0008f;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00013}00013         \textcolor{comment}{// Public API}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00014}00014         \textcolor{keyword}{public} \textcolor{keyword}{override} Vector3 GetTranslation() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00015}00015             \textcolor{keywordtype}{float} sensitivity = Application.isPlaying ? Settings.PlayTransSens : Settings.TransSens[Settings.CurrentGear];}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00016}00016             \textcolor{keywordflow}{return} (SubInstance.\_sensor == \textcolor{keyword}{null} ?}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00017}00017                         Vector3.zero :}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00018}00018                         \textcolor{keyword}{new} Vector3(}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00019}00019                             Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Translation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.X) ? 0 : (\textcolor{keywordtype}{float})SubInstance.\_sensor.Translation.X,}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00020}00020                             Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Translation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Y) ? 0 : (\textcolor{keywordtype}{float})SubInstance.\_sensor.Translation.Y,}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00021}00021                             Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Translation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Z) ? 0 : -\/(\textcolor{keywordtype}{float})SubInstance.\_sensor.Translation.Z) *}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00022}00022                         sensitivity * TransSensScale);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00023}00023         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00024}00024         \textcolor{keyword}{public} \textcolor{keyword}{override} Quaternion GetRotation() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00025}00025             \textcolor{keywordtype}{float} sensitivity = Application.isPlaying ? Settings.PlayRotSens : Settings.RotSens;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00026}00026             \textcolor{keywordflow}{return} (SubInstance.\_sensor == \textcolor{keyword}{null} ?}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00027}00027                         Quaternion.identity :}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00028}00028                         Quaternion.AngleAxis(}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00029}00029                             (\textcolor{keywordtype}{float})SubInstance.\_sensor.Rotation.Angle * sensitivity * RotSensScale,}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00030}00030                             \textcolor{keyword}{new} Vector3(}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00031}00031                                 Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Rotation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.X) ? 0 : -\/(\textcolor{keywordtype}{float})SubInstance.\_sensor.Rotation.X,}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00032}00032                                 Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Rotation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Y) ? 0 : -\/(\textcolor{keywordtype}{float})SubInstance.\_sensor.Rotation.Y,}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00033}00033                                 Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Rotation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Z) ? 0 : (\textcolor{keywordtype}{float})SubInstance.\_sensor.Rotation.Z)));}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00034}00034         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00036}00036         \textcolor{comment}{// Device variables}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00037}00037         \textcolor{keyword}{private} Sensor \_sensor;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00038}00038         \textcolor{keyword}{private} Device \_device;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00039}00039         \textcolor{comment}{//private Keyboard \_keyboard;}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00041}00041 \textcolor{preprocessor}{        \#region -\/ Singleton -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00045}00045         \textcolor{keyword}{private} SpaceNavigatorWindows() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00046}00046             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00047}00047                 \textcolor{keywordflow}{if} (\_device == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00048}00048                     \_device = \textcolor{keyword}{new} DeviceClass();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00049}00049                     \_sensor = \_device.Sensor;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00050}00050                     \textcolor{comment}{//\_keyboard = \_device.Keyboard;}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00051}00051                 \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00052}00052                 \textcolor{keywordflow}{if} (!\_device.IsConnected)}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00053}00053                     \_device.Connect();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00054}00054             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00055}00055             \textcolor{keywordflow}{catch} (COMException ex) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00056}00056                 Debug.LogError(ex.ToString());}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00057}00057             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00058}00058         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00060}00060         \textcolor{keyword}{public} \textcolor{keyword}{static} SpaceNavigatorWindows SubInstance \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00061}00061             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \_subInstance ?? (\_subInstance = \textcolor{keyword}{new} SpaceNavigatorWindows()); \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00062}00062         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00063}00063         \textcolor{keyword}{private} \textcolor{keyword}{static} SpaceNavigatorWindows \_subInstance;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00064}00064 \textcolor{preprocessor}{        \#endregion -\/ Singleton -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00066}00066 \textcolor{preprocessor}{        \#region -\/ IDisposable -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00067}00067         \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{void} Dispose() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00068}00068             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00069}00069                 \textcolor{keywordflow}{if} (\_device != \textcolor{keyword}{null} \&\& \_device.IsConnected) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00070}00070                     \_device.Disconnect();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00071}00071                     \_subInstance = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00072}00072                     GC.Collect();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00073}00073                 \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00074}00074             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00075}00075             \textcolor{keywordflow}{catch} (COMException ex) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00076}00076                 Debug.LogError(ex.ToString());}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00077}00077             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00078}00078         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00079}00079 \textcolor{preprocessor}{        \#endregion -\/ IDisposable -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00080}00080     \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00081}00081 \textcolor{preprocessor}{\#endif    }\textcolor{comment}{// UNITY\_EDITOR\_WIN || UNITY\_STANDALONE\_WIN}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_windows_8cs_source_l00082}00082 \}}
+
+\end{DoxyCode}

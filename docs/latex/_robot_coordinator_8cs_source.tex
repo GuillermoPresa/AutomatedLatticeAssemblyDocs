@@ -1,0 +1,96 @@
+\hypertarget{_robot_coordinator_8cs_source}{}\doxysection{Robot\+Coordinator.\+cs}
+\label{_robot_coordinator_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/RobotCoordinator.cs@{C:/Users/Guille/LatticeAssembly/Assets/RobotCoordinator.cs}}
+\mbox{\hyperlink{_robot_coordinator_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00004}00004 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00006}\mbox{\hyperlink{class_robot_coordinator}{00006}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_robot_coordinator}{RobotCoordinator}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00007}00007 \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00009}\mbox{\hyperlink{class_robot_coordinator_ae3d7c29f43a55b61419321bf208dde7c}{00009}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_robot_coordinator_ae3d7c29f43a55b61419321bf208dde7c}{ReferenceScriptReference}};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00010}\mbox{\hyperlink{class_robot_coordinator_a62810fa927aab0e18fa6cc1ca77e00c7}{00010}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_time_manager}{TimeManager}} \mbox{\hyperlink{class_robot_coordinator_a62810fa927aab0e18fa6cc1ca77e00c7}{TimeManagerReference}};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00011}\mbox{\hyperlink{class_robot_coordinator_a2c236a11e7b13cf697a22105ee099640}{00011}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_selection_script}{SelectionScript}} \mbox{\hyperlink{class_robot_coordinator_a2c236a11e7b13cf697a22105ee099640}{SelectionScriptReference}};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00014}\mbox{\hyperlink{class_robot_coordinator_a1bd1aa98c0765f8cb744f5e8bb8cc9f1}{00014}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_robot_coordinator_a1bd1aa98c0765f8cb744f5e8bb8cc9f1}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00015}00015     \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00016}00016         GameObject GlobalManager = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}});}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00017}00017         \mbox{\hyperlink{class_robot_coordinator_ae3d7c29f43a55b61419321bf208dde7c}{ReferenceScriptReference}} = GlobalManager.GetComponent<\mbox{\hyperlink{class_references}{References}}>();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00018}00018         \mbox{\hyperlink{class_robot_coordinator_a62810fa927aab0e18fa6cc1ca77e00c7}{TimeManagerReference}} = GlobalManager.GetComponent<\mbox{\hyperlink{class_time_manager}{TimeManager}}>();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00019}00019         \mbox{\hyperlink{class_robot_coordinator_a2c236a11e7b13cf697a22105ee099640}{SelectionScriptReference}} = GlobalManager.GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00020}00020     \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00022}\mbox{\hyperlink{class_robot_coordinator_adf62aefbd7ac012a5b5001b016e7636d}{00022}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_robot_coordinator_adf62aefbd7ac012a5b5001b016e7636d}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00024}00024         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_robot_coordinator_ae3d7c29f43a55b61419321bf208dde7c}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_a5691572b32aa4cfe355fb0e274d14f2c}{Building}})}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00026}00026             }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00027}00027             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_robot_coordinator_a2c236a11e7b13cf697a22105ee099640}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_afdcc8661d7be982ef37a323355cca79a}{SelectedRobot}} is \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00028}00028             \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00029}00029                 Debug.LogError(\textcolor{stringliteral}{"{}Please select a robot to complete this operation"{}});}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00030}00030                 \textcolor{comment}{//Building = false;}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00031}00031                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00032}00032             \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00036}00036             \textcolor{keywordtype}{int} BuiltTimeStep = \mbox{\hyperlink{class_robot_coordinator_a62810fa927aab0e18fa6cc1ca77e00c7}{TimeManagerReference}}.\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00037}00037             \textcolor{keywordtype}{int} StepToBuild = BuiltTimeStep + 1;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00038}00038             Debug.Log(\textcolor{stringliteral}{"{}Proceeding to build next step: "{}});}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00040}00040             \textcolor{comment}{//GameObject[] ToBeBuild = ReferenceScriptReference.globalLatticeList.Where(filter => filter.GetComponent<LatticeClass>().TimeStamp > BuiltTimeStep).OrderBy(x => x.GetComponent<LatticeClass>().TimeStamp).ToArray();}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00042}00042             List<GameObject> ToBeBuild = \mbox{\hyperlink{class_robot_coordinator_a2c236a11e7b13cf697a22105ee099640}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_ac40451363e27342cb270c0968e81ff40}{SelectedObject}}.GetComponent<\mbox{\hyperlink{class_parent_object_script}{ParentObjectScript}}>().ObjectCollection.UnplacedLatticeList;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00044}00044             GameObject WorkerRobot = \mbox{\hyperlink{class_robot_coordinator_a2c236a11e7b13cf697a22105ee099640}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_afdcc8661d7be982ef37a323355cca79a}{SelectedRobot}};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00046}00046             Physics.SyncTransforms();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00047}00047             WorkerRobot.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().MapNavigationSpace();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00049}00049             \textcolor{keywordflow}{foreach} (GameObject LatticeToBuild \textcolor{keywordflow}{in} ToBeBuild)}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00050}00050             \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00051}00051                 Debug.Log(\textcolor{stringliteral}{"{}WIP"{}});}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00053}00053                 \textcolor{comment}{//Need a function find path to lattice **NOT NODES**}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00054}00054                 \textcolor{keywordtype}{bool} CanInsert = WorkerRobot.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().CheckInsertionPossible(LatticeToBuild);}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00056}00056                 \mbox{\hyperlink{class_navigation_path}{NavigationPath}} CurrentOptimalPath = \textcolor{keyword}{new} \mbox{\hyperlink{class_navigation_path}{NavigationPath}}();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00058}00058                 \textcolor{keywordflow}{if} (CanInsert)}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00059}00059                 \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00060}00060                     List<GameObject> PossibleNodeInsertions = WorkerRobot.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().LatticeInsertionPossibleNodes(LatticeToBuild);}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00062}00062                     \textcolor{keywordflow}{foreach}(GameObject Node \textcolor{keywordflow}{in} PossibleNodeInsertions)}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00063}00063                     \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00064}00064                        }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00065}00065                         \mbox{\hyperlink{class_navigation_path}{NavigationPath}} ThisPath = WorkerRobot.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().FindPathBetweenNodes(Node);}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00067}00067                         \textcolor{keywordflow}{if}(ThisPath.\mbox{\hyperlink{class_navigation_path_a5c17842eecc022c76ae37f09d2548ba1}{\_MovementCost}} < CurrentOptimalPath.\mbox{\hyperlink{class_navigation_path_a5c17842eecc022c76ae37f09d2548ba1}{\_MovementCost}})}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00068}00068                         \{}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00069}00069                             CurrentOptimalPath = ThisPath;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00070}00070                              }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00071}00071                         \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00072}00072                     \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00074}00074                     WorkerRobot.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().MoveRobotAlongPath(CurrentOptimalPath);}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00075}00075                     \textcolor{comment}{//ReferenceScriptReference.Building = false;}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00077}00077                     TimeManagerReference.TimeStep = \mbox{\hyperlink{class_robot_coordinator_a62810fa927aab0e18fa6cc1ca77e00c7}{TimeManagerReference}}.\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}}+1;}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00078}00078                     LatticeToBuild.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().PlaceLattice();}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00081}00081                     System.Threading.Thread.Sleep(250);}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00082}00082                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00083}00083                 \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00084}00084             \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00085}00085             \textcolor{comment}{//ReferenceScriptReference.Building = false;}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00086}00086         \}       }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{_robot_coordinator_8cs_source_l00090}00090 \}}
+
+\end{DoxyCode}

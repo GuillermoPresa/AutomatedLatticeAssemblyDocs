@@ -1,0 +1,113 @@
+\hypertarget{_references_8cs_source}{}\doxysection{References.\+cs}
+\label{_references_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/References.cs@{C:/Users/Guille/LatticeAssembly/Assets/References.cs}}
+\mbox{\hyperlink{_references_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00005}\mbox{\hyperlink{class_references}{00005}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_references}{References}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00008}00008     \textcolor{comment}{//Directory paths}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00009}\mbox{\hyperlink{class_references_af78ba2e50d3f68e0323493c574eefdf3}{00009}}     \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_references_af78ba2e50d3f68e0323493c574eefdf3}{ObjectsPath}} = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Resources\(\backslash\)\(\backslash\)Objects"{}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00010}\mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{00010}}     \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{LatticePath}} = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Resources\(\backslash\)\(\backslash\)Lattice"{}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00013}\mbox{\hyperlink{class_references_a5691572b32aa4cfe355fb0e274d14f2c}{00013}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_references_a5691572b32aa4cfe355fb0e274d14f2c}{Building}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00016}00016     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00017}\mbox{\hyperlink{class_references_a321f0fef18f4ad19b68ef5228a647420}{00017}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_references_a321f0fef18f4ad19b68ef5228a647420}{fileListIndex}} = 0;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00018}00018     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00019}\mbox{\hyperlink{class_references_a8221734b03b76f3baa2422726b8e3ffc}{00019}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_references_a8221734b03b76f3baa2422726b8e3ffc}{LatticeTypeIndex}} = 0;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00020}00020     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00021}\mbox{\hyperlink{class_references_a85bfc55a8befb0bd747361bbb0020376}{00021}}     \textcolor{keyword}{public} IDictionary<int, Material> \mbox{\hyperlink{class_references_a85bfc55a8befb0bd747361bbb0020376}{LatticeTypeMaterialIDict}} = \textcolor{keyword}{new} Dictionary<int, Material>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00024}\mbox{\hyperlink{class_references_aa8e873a41635ab94001b3f8bd0bf57c6}{00024}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_references_aa8e873a41635ab94001b3f8bd0bf57c6}{ObjectCount}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00026}00026     \textcolor{comment}{//Lists}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00027}\mbox{\hyperlink{class_references_a66407fdd67433f9e5550b831be838e6b}{00027}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_references_a66407fdd67433f9e5550b831be838e6b}{fileList}} = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00028}\mbox{\hyperlink{class_references_adcf0c08a0ba71fde0f840afd994c568a}{00028}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_references_adcf0c08a0ba71fde0f840afd994c568a}{latticeTypeList}} = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00030}\mbox{\hyperlink{class_references_ab842e405de79d761bf61c33147179c47}{00030}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_references_ab842e405de79d761bf61c33147179c47}{ObjectList}} = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00031}\mbox{\hyperlink{class_references_adc8e9041aa00361f4ffce36694ab73ce}{00031}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_references_adc8e9041aa00361f4ffce36694ab73ce}{WorkerList}} = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00032}\mbox{\hyperlink{class_references_a386e193b994ba31cf9b54f9eec20e8ec}{00032}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_references_a386e193b994ba31cf9b54f9eec20e8ec}{AllObjectsAndWorkersList}} = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00034}\mbox{\hyperlink{class_references_a5dc80d96f3cef19d9df9b29fae8ff03b}{00034}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_references_a5dc80d96f3cef19d9df9b29fae8ff03b}{globalLatticeList}} = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00036}00036     \textcolor{comment}{//Materials}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00037}\mbox{\hyperlink{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}{00037}}     \textcolor{keyword}{public} Material \mbox{\hyperlink{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}{StructureMaterial}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00038}\mbox{\hyperlink{class_references_a67ded95600ec59d53ba4b5bdcaa2b315}{00038}}     \textcolor{keyword}{public} Material \mbox{\hyperlink{class_references_a67ded95600ec59d53ba4b5bdcaa2b315}{InitialStructureMaterial}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00040}\mbox{\hyperlink{class_references_adea2e447839f404e6fb011269ada64d4}{00040}}     \textcolor{keyword}{public} Material \mbox{\hyperlink{class_references_adea2e447839f404e6fb011269ada64d4}{UnplacedLatticeMaterial}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00043}00043     \textcolor{comment}{//Spawning prefabs}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00044}\mbox{\hyperlink{class_references_a3760c76d3c9ef01a6fac7e3e549184f2}{00044}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_references_a3760c76d3c9ef01a6fac7e3e549184f2}{Lattice}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00045}\mbox{\hyperlink{class_references_aad351d151e3aec04eca0d82d16cd39bc}{00045}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_references_aad351d151e3aec04eca0d82d16cd39bc}{ObjectParentPrefab}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00046}\mbox{\hyperlink{class_references_a02ed04f25220d583c8fba1a1cf0d63e1}{00046}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_references_a02ed04f25220d583c8fba1a1cf0d63e1}{LatticeHighlighter}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00047}\mbox{\hyperlink{class_references_aa13e3df440ffcbb539ff51e5d48737d8}{00047}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_references_aa13e3df440ffcbb539ff51e5d48737d8}{RobotWorker}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00050}00050     \textcolor{comment}{//Global parent}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00051}\mbox{\hyperlink{class_references_a8acd7f49260322d1d1237dc35065b7aa}{00051}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_references_a8acd7f49260322d1d1237dc35065b7aa}{GlobalParent}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00053}\mbox{\hyperlink{class_references_af4a195a6edf4c8d2b65783c2e6222d05}{00053}}     \textcolor{keyword}{public} Mesh \mbox{\hyperlink{class_references_af4a195a6edf4c8d2b65783c2e6222d05}{LatticeBoundingBoxMesh}};}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00055}\mbox{\hyperlink{class_references_afa18f3ec6ac4f878c28b3b4d66203270}{00055}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_references_afa18f3ec6ac4f878c28b3b4d66203270}{Start}}()}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00056}00056     \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00057}00057         \mbox{\hyperlink{class_references_a4d096056921e4a05e1822f5f25396bab}{UpdateFileList}}();}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00058}00058         \mbox{\hyperlink{class_references_adcf0c08a0ba71fde0f840afd994c568a}{latticeTypeList}} = DirectoryReader.GetFolderNamesInDirectory(\mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{LatticePath}});}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00060}00060         \mbox{\hyperlink{class_references_a85bfc55a8befb0bd747361bbb0020376}{LatticeTypeMaterialIDict}}.Add(1, \mbox{\hyperlink{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}{StructureMaterial}});}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00061}00061         \mbox{\hyperlink{class_references_a85bfc55a8befb0bd747361bbb0020376}{LatticeTypeMaterialIDict}}.Add(2, \mbox{\hyperlink{class_references_a67ded95600ec59d53ba4b5bdcaa2b315}{InitialStructureMaterial}});}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00064}\mbox{\hyperlink{class_references_a35e69fd2a60b35f1a70276b8d23f6056}{00064}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_references_a35e69fd2a60b35f1a70276b8d23f6056}{Update}}()}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00065}00065     \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00066}00066         \mbox{\hyperlink{class_references_aa8e873a41635ab94001b3f8bd0bf57c6}{ObjectCount}} = \mbox{\hyperlink{class_references_a8acd7f49260322d1d1237dc35065b7aa}{GlobalParent}}.GetComponent<\mbox{\hyperlink{class_parent_object_script}{ParentObjectScript}}>().ObjectCollection.ObjectCount;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00067}00067     \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00069}\mbox{\hyperlink{class_references_a4d096056921e4a05e1822f5f25396bab}{00069}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_references_a4d096056921e4a05e1822f5f25396bab}{UpdateFileList}}()}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00070}00070     \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00071}00071         \mbox{\hyperlink{class_references_a66407fdd67433f9e5550b831be838e6b}{fileList}} = DirectoryReader.GetFolderNamesInDirectory(\mbox{\hyperlink{class_references_af78ba2e50d3f68e0323493c574eefdf3}{ObjectsPath}});}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00075}\mbox{\hyperlink{class_references_a01a2db7007bf1cdf014c958da61a4172}{00075}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_references_a01a2db7007bf1cdf014c958da61a4172}{SortAndAddToObjectList}}(GameObject ObjectToAdd)}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00076}00076     \textcolor{comment}{//Cassify whether the object is a robot, a lattie structure, a node point or what and add it to the corresponding list. }}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00077}00077     \textcolor{comment}{//What do we do for objects that contain all? We unpack them recursively until there is no more?????}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00078}00078     \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00079}00079         \textcolor{keywordflow}{foreach}(Transform ChildTransform \textcolor{keywordflow}{in} ObjectToAdd.transform)}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00080}00080         \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00081}00081             GameObject ChildObject = ChildTransform.gameObject;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00083}00083             \textcolor{keywordtype}{string} ChildTag = ChildObject.tag;}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00085}00085             \textcolor{keywordflow}{if}(ChildTag == \textcolor{stringliteral}{"{}Lattice"{}})}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00086}00086             \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00087}00087                 \mbox{\hyperlink{class_references_a5dc80d96f3cef19d9df9b29fae8ff03b}{globalLatticeList}}.Add(ChildObject);}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00088}00088             \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00089}00089             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(ChildTag == \textcolor{stringliteral}{"{}Robot"{}})}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00090}00090             \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00091}00091                 \mbox{\hyperlink{class_references_adc8e9041aa00361f4ffce36694ab73ce}{WorkerList}}.Add(ChildObject);}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00092}00092             \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00093}00093             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00094}00094             \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00095}00095                 Debug.LogError(\textcolor{stringliteral}{"{}This object contains no valid tag (Not lattice or robot)"{}});}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00096}00096                 \textcolor{keywordflow}{if} (ChildTransform.childCount > 0)}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00097}00097                 \{}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00098}00098                     \mbox{\hyperlink{class_references_a01a2db7007bf1cdf014c958da61a4172}{SortAndAddToObjectList}}(ChildObject);}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00099}00099                 \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00100}00100             \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00101}00101         \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00102}00102         }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00103}00103         }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_references_8cs_source_l00107}00107 \}}
+
+\end{DoxyCode}

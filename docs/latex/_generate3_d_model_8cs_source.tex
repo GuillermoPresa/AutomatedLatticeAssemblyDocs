@@ -1,0 +1,58 @@
+\hypertarget{_generate3_d_model_8cs_source}{}\doxysection{Generate3\+DModel.\+cs}
+\label{_generate3_d_model_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/Generate3DModel.cs@{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/Generate3DModel.cs}}
+\mbox{\hyperlink{_generate3_d_model_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00004}00004 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00005}00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00008}00008 \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{class }Generate3DModel}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00011}00011     \textcolor{keyword}{public} \textcolor{keyword}{static} Mesh GenerateModelForPathPrefab(GameObject SourceObject)}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00013}00013         Mesh BoundingBoxModel = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_references}{References}}>().LatticeBoundingBoxMesh;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00015}00015         \textcolor{comment}{//Inspired by Craig Perko youtube video https://www.youtube.com/watch?v=wYAlky1aZn4;}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00017}00017         MeshFilter[] filters = SourceObject.GetComponentsInChildren<MeshFilter>().Where(filter => filter.gameObject.tag != \textcolor{stringliteral}{"{}NoMergeMeshing"{}}).ToArray();}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00019}00019         Mesh finalMesh = \textcolor{keyword}{new} Mesh();}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00021}00021         finalMesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00024}00024         CombineInstance[] combiners = \textcolor{keyword}{new} CombineInstance[filters.Length];}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00026}00026         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} a = 0; a < filters.Length; a++)}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00027}00027         \{}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00029}00029             combiners[a].subMeshIndex = 0;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00030}00030             combiners[a].mesh = filters[a].sharedMesh;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00032}00032             \textcolor{keywordflow}{if} (filters[a].gameObject.tag == \textcolor{stringliteral}{"{}Lattice"{}})}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00033}00033             \{}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00034}00034                 combiners[a].mesh = BoundingBoxModel;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00035}00035             \}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00037}00037             combiners[a].transform = filters[a].transform.localToWorldMatrix;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00038}00038         \}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00040}00040         finalMesh.CombineMeshes(combiners, \textcolor{keyword}{true}, \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00042}00042         finalMesh.RecalculateBounds();}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00044}00044         \textcolor{comment}{//var savePath = "{}Assets/Resources/Objects/"{} + SourceObject.name + "{}/"{} + SourceObject.name + "{}Mesh.asset"{};}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00045}00045         \textcolor{comment}{//Debug.Log("{}Saved Mesh to:"{} + savePath);}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00046}00046         \textcolor{comment}{//AssetDatabase.CreateAsset(finalMesh, savePath);}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00048}00048         \textcolor{keywordflow}{return} finalMesh;}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_generate3_d_model_8cs_source_l00052}00052 \}}
+
+\end{DoxyCode}

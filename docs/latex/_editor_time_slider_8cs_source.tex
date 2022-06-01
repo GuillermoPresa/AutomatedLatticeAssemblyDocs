@@ -1,0 +1,55 @@
+\hypertarget{_editor_time_slider_8cs_source}{}\doxysection{Editor\+Time\+Slider.\+cs}
+\label{_editor_time_slider_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/EditorTimeSlider.cs@{C:/Users/Guille/LatticeAssembly/Assets/EditorTimeSlider.cs}}
+\mbox{\hyperlink{_editor_time_slider_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00001}00001 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00002}00002 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00005}\mbox{\hyperlink{class_time_slider}{00005}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_time_slider}{TimeSlider}} : EditorWindow}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00007}00007     }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00008}\mbox{\hyperlink{class_time_slider_a7ccb158e26dde5693565730236017f5c}{00008}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_time_slider_a7ccb158e26dde5693565730236017f5c}{Iteration}} = 0;}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00009}\mbox{\hyperlink{class_time_slider_a2742dbf14d03dbbd278540fa68cfde13}{00009}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_time_slider_a2742dbf14d03dbbd278540fa68cfde13}{MaxIteration}};}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00011}00011     [MenuItem(\textcolor{stringliteral}{"{}Window/Timeline Slider"{}})]}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00012}\mbox{\hyperlink{class_time_slider_aaae008ba98f8e9f7275ac316d6a9f470}{00012}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_time_slider_aaae008ba98f8e9f7275ac316d6a9f470}{ShowWindow}}()}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00013}00013     \{}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00014}00014         EditorWindow.GetWindow<\mbox{\hyperlink{class_time_slider}{TimeSlider}}>(\textcolor{stringliteral}{"{}Timeline"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00015}00015     \}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00017}00017     \textcolor{keywordtype}{void} OnGUI()}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00018}00018     \{}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00020}00020         \textcolor{keywordflow}{if} (EditorApplication.isPlaying)}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00021}00021             Repaint();}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00023}00023         \mbox{\hyperlink{class_time_manager}{TimeManager}} TimeManagerScript = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_time_manager}{TimeManager}}>();}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00025}00025         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00027}00027         TimeManagerScript.TimeStep = EditorGUILayout.IntSlider(TimeManagerScript.\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}}, 0, \mbox{\hyperlink{class_time_slider_a2742dbf14d03dbbd278540fa68cfde13}{MaxIteration}});}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00028}00028        }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00029}00029         \textcolor{keywordtype}{bool} FalseBool = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00031}00031         \textcolor{keywordflow}{if} (UITools.ReturningBoolButtonImplementation(ref FalseBool, \textcolor{stringliteral}{"{}-\/1"{}}, 4)) \{ TimeManagerScript.\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}}-\/-\/; \}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00033}00033         FalseBool = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00035}00035         \textcolor{keywordflow}{if} (UITools.ReturningBoolButtonImplementation(ref FalseBool, \textcolor{stringliteral}{"{}+1"{}}, 4))\{ TimeManagerScript.\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}}++; \}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00037}00037         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00041}00041         \mbox{\hyperlink{class_time_slider_a2742dbf14d03dbbd278540fa68cfde13}{MaxIteration}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_references}{References}}>().globalLatticeList.Count;}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00043}00043         \textcolor{comment}{//foreach (GameObject Object in GameObject.Find("{}GlobalManager"{}).GetComponent<References>().ObjectList)}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00044}00044         \textcolor{comment}{//\{}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00045}00045         \textcolor{comment}{//    Object.GetComponent<ParentObjectScript>().UpdateLatticesVisibility();}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00046}00046         \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{_editor_time_slider_8cs_source_l00049}00049 \}}
+
+\end{DoxyCode}

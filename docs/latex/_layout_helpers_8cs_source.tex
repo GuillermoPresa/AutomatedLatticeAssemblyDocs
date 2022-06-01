@@ -1,0 +1,114 @@
+\hypertarget{_layout_helpers_8cs_source}{}\doxysection{Layout\+Helpers.\+cs}
+\label{_layout_helpers_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/RTS\_Camera/Scripts/Editor/LayoutHelpers.cs@{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/RTS\_Camera/Scripts/Editor/LayoutHelpers.cs}}
+\mbox{\hyperlink{_layout_helpers_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00001}00001 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00002}00002 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00003}00003 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00004}00004 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00005}00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00008}\mbox{\hyperlink{class_vertical_block}{00008}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_vertical_block}{VerticalBlock}} : IDisposable}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00010}\mbox{\hyperlink{class_vertical_block_a81e8fd8b9d6343621312a01a4ebe28ba}{00010}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_vertical_block_a81e8fd8b9d6343621312a01a4ebe28ba}{VerticalBlock}}(params GUILayoutOption[] options)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00011}00011     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00012}00012         GUILayout.BeginVertical(options);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00013}00013     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00015}\mbox{\hyperlink{class_vertical_block_a3cb42e06fd92e0007dd2a057f9422cf1}{00015}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_vertical_block_a3cb42e06fd92e0007dd2a057f9422cf1}{VerticalBlock}}(GUIStyle style, params GUILayoutOption[] options)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00016}00016     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00017}00017         GUILayout.BeginVertical(style, options);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00018}00018     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00020}\mbox{\hyperlink{class_vertical_block_ac5c10930e034faeddd754307a2bee083}{00020}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_vertical_block_ac5c10930e034faeddd754307a2bee083}{Dispose}}()}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00021}00021     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00022}00022         GUILayout.EndVertical();}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00024}00024 \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00026}\mbox{\hyperlink{class_scrollview_block}{00026}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_scrollview_block}{ScrollviewBlock}} : IDisposable}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00027}00027 \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00028}\mbox{\hyperlink{class_scrollview_block_a5917afa6b9b022d5163da5703d9baf3f}{00028}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_scrollview_block_a5917afa6b9b022d5163da5703d9baf3f}{ScrollviewBlock}}(ref Vector2 scrollPos, params GUILayoutOption[] options)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00029}00029     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00030}00030         scrollPos = GUILayout.BeginScrollView(scrollPos, options);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00033}\mbox{\hyperlink{class_scrollview_block_afaa4c1524a57f1a3d2d8388168c206e9}{00033}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_scrollview_block_afaa4c1524a57f1a3d2d8388168c206e9}{Dispose}}()}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00034}00034     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00035}00035         GUILayout.EndScrollView();}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00039}\mbox{\hyperlink{class_horizontal_block}{00039}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_horizontal_block}{HorizontalBlock}} : IDisposable}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00040}00040 \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00041}\mbox{\hyperlink{class_horizontal_block_a35fac29857ba5027597c5553223e5270}{00041}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_horizontal_block_a35fac29857ba5027597c5553223e5270}{HorizontalBlock}}(params GUILayoutOption[] options)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00042}00042     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00043}00043         GUILayout.BeginHorizontal(options);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00046}\mbox{\hyperlink{class_horizontal_block_a26df5ee8acb0fe69e33dd0f98bf7da49}{00046}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_horizontal_block_a26df5ee8acb0fe69e33dd0f98bf7da49}{HorizontalBlock}}(GUIStyle style, params GUILayoutOption[] options)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00047}00047     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00048}00048         GUILayout.BeginHorizontal(style, options);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00051}\mbox{\hyperlink{class_horizontal_block_a89e1f070115864040a117abd1d553428}{00051}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_horizontal_block_a89e1f070115864040a117abd1d553428}{Dispose}}()}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00052}00052     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00053}00053         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00057}\mbox{\hyperlink{class_colored_block}{00057}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_colored_block}{ColoredBlock}} : System.IDisposable}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00058}00058 \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00059}\mbox{\hyperlink{class_colored_block_a78a2ff158c9b2fd94419bc8dff591c64}{00059}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_colored_block_a78a2ff158c9b2fd94419bc8dff591c64}{ColoredBlock}}(Color color)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00060}00060     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00061}00061         GUI.color = color;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00064}\mbox{\hyperlink{class_colored_block_ab76d620d28e731a183637d49adf3531e}{00064}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_colored_block_ab76d620d28e731a183637d49adf3531e}{Dispose}}()}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00065}00065     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00066}00066         GUI.color = Color.white;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00067}00067     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00070}00070 [Serializable]}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00071}\mbox{\hyperlink{class_tabs_block}{00071}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_tabs_block}{TabsBlock}}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00072}00072 \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00073}00073     \textcolor{keyword}{private}  Dictionary<string, Action> methods;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00074}00074     \textcolor{keyword}{private} Action currentGuiMethod;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00075}\mbox{\hyperlink{class_tabs_block_a0bd71aab72ae4a49f22877987ab87796}{00075}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_tabs_block_a0bd71aab72ae4a49f22877987ab87796}{curMethodIndex}} = -\/1;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00077}\mbox{\hyperlink{class_tabs_block_a74130ab2612a1fcf22cd5c3488e1c102}{00077}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_tabs_block_a74130ab2612a1fcf22cd5c3488e1c102}{TabsBlock}}(Dictionary<string, Action> \_methods)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00078}00078     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00079}00079         methods = \_methods;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00080}00080         \mbox{\hyperlink{class_tabs_block_a82042608488df90b05cc4ff7b58082b5}{SetCurrentMethod}}(0);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00083}\mbox{\hyperlink{class_tabs_block_ace96b271c6b50b2d66fb6ad368f1f019}{00083}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tabs_block_ace96b271c6b50b2d66fb6ad368f1f019}{Draw}}()}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00084}00084     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00085}00085         var keys = methods.Keys.ToArray();}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00086}00086         \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{class_vertical_block}{VerticalBlock}}(EditorStyles.helpBox))}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00087}00087         \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00088}00088             \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{class_horizontal_block}{HorizontalBlock}}())}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00089}00089             \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00090}00090                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keys.Length; i++)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00091}00091                 \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00092}00092                     var btnStyle = i == 0 ? EditorStyles.miniButtonLeft : i == (keys.Length -\/ 1) ? EditorStyles.miniButtonRight : EditorStyles.miniButtonMid;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00093}00093                     using (\textcolor{keyword}{new} \mbox{\hyperlink{class_colored_block}{ColoredBlock}}(currentGuiMethod == methods[keys[i]] ? Color.grey : Color.white))}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00094}00094                         \textcolor{keywordflow}{if} (GUILayout.Button(keys[i], btnStyle))}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00095}00095                             \mbox{\hyperlink{class_tabs_block_a82042608488df90b05cc4ff7b58082b5}{SetCurrentMethod}}(i);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00096}00096                 \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00097}00097             \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00098}00098             GUILayout.Label(keys[\mbox{\hyperlink{class_tabs_block_a0bd71aab72ae4a49f22877987ab87796}{curMethodIndex}}], EditorStyles.centeredGreyMiniLabel);}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00099}00099             currentGuiMethod();}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00100}00100         \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00101}00101     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00103}\mbox{\hyperlink{class_tabs_block_a82042608488df90b05cc4ff7b58082b5}{00103}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tabs_block_a82042608488df90b05cc4ff7b58082b5}{SetCurrentMethod}}(\textcolor{keywordtype}{int} index)}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00104}00104     \{}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00105}00105         \mbox{\hyperlink{class_tabs_block_a0bd71aab72ae4a49f22877987ab87796}{curMethodIndex}} = index;}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00106}00106         currentGuiMethod = methods[methods.Keys.ToArray()[index]];}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{_layout_helpers_8cs_source_l00108}00108 \}}
+
+\end{DoxyCode}

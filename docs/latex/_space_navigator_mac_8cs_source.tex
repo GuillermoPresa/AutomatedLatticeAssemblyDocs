@@ -1,0 +1,102 @@
+\hypertarget{_space_navigator_mac_8cs_source}{}\doxysection{Space\+Navigator\+Mac.\+cs}
+\label{_space_navigator_mac_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Plugins/SpaceNavigatorMac.cs@{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Plugins/SpaceNavigatorMac.cs}}
+\mbox{\hyperlink{_space_navigator_mac_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Runtime.InteropServices;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00002}00002 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00003}00003 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00005}00005 \textcolor{preprocessor}{\#if UNITY\_EDITOR\_OSX || UNITY\_STANDALONE\_OSX}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00007}00007 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_space_navigator_driver}{SpaceNavigatorDriver}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00008}00008     \textcolor{keyword}{public} \textcolor{keyword}{class }SpaceNavigatorMac : SpaceNavigator \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00009}00009         \textcolor{keyword}{private} \textcolor{keyword}{const} \textcolor{keywordtype}{float} TransSensScale = 0.007f, RotSensScale = 0.025f;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00011}00011 \textcolor{preprocessor}{\#if UNITY\_4\_0 || UNITY\_4\_1 || UNITY\_4\_2 || UNITY\_4\_3 || UNITY\_4\_4 || UNITY\_4\_5 || UNITY\_4\_6}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00012}00012         \textcolor{keyword}{private} \textcolor{keyword}{const} \textcolor{keywordtype}{string} BundleName = \textcolor{stringliteral}{"{}3DConnexionWrapperU4"{}};}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00013}00013 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00014}00014     \textcolor{keyword}{private} \textcolor{keyword}{const} \textcolor{keywordtype}{string} BundleName = \textcolor{stringliteral}{"{}3DConnexionWrapperU5"{}};}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00015}00015 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00016}00016         [DllImport(BundleName)]}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00017}00017         \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{extern} \textcolor{keywordtype}{int} InitDevice();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00018}00018         [DllImport(BundleName)]}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00019}00019         \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{extern} \textcolor{keywordtype}{void} SampleTranslation(ref \textcolor{keywordtype}{int} x, ref \textcolor{keywordtype}{int} y, ref \textcolor{keywordtype}{int} z);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00020}00020         [DllImport(BundleName)]}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00021}00021         \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{extern} \textcolor{keywordtype}{void} SampleRotation(ref \textcolor{keywordtype}{int} rx, ref \textcolor{keywordtype}{int} ry, ref \textcolor{keywordtype}{int} rz);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00022}00022         [DllImport(BundleName)]}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00023}00023         \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{extern} \textcolor{keywordtype}{int} DisposeDevice();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00025}00025         \textcolor{keyword}{private} \textcolor{keywordtype}{int} \_clientID;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00027}00027         \textcolor{keyword}{private} \textcolor{keyword}{const} \textcolor{keywordtype}{int} TranslationDeadzone = 30;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00028}00028         \textcolor{keyword}{private} \textcolor{keyword}{const} \textcolor{keywordtype}{int} RotationDeadzone = 30;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00030}00030         \textcolor{comment}{// Public API}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00031}00031         \textcolor{keyword}{public} \textcolor{keyword}{override} Vector3 GetTranslation() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00032}00032             \textcolor{keywordtype}{int} x = 0, y = 0, z = 0;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00033}00033             SampleTranslation(ref x, ref y, ref z);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00034}00034             \textcolor{keywordtype}{float} sensitivity = Application.isPlaying ? Settings.PlayTransSens : Settings.TransSens[Settings.CurrentGear];}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00036}00036             \textcolor{keywordflow}{return} (}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00037}00037                        \_clientID == 0 ?}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00038}00038                            Vector3.zero :}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00039}00039                            \textcolor{keyword}{new} Vector3(}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00040}00040                                Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Translation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.X) ? 0 : SubtractDeadzone(x, Settings.TransDead),}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00041}00041                                Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Translation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Y) ? 0 : SubtractDeadzone(-\/z, Settings.TransDead),}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00042}00042                                Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Translation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Z) ? 0 : SubtractDeadzone(-\/y, Settings.TransDead)) * sensitivity * TransSensScale);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00043}00043         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00044}00044         \textcolor{keyword}{public} \textcolor{keyword}{override} Quaternion GetRotation() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00045}00045             \textcolor{keywordtype}{int} rx = 0, ry = 0, rz = 0;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00046}00046             SampleRotation(ref rx, ref ry, ref rz);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00047}00047             \textcolor{keywordtype}{float} sensitivity = Application.isPlaying ? Settings.PlayRotSens : Settings.RotSens;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00049}00049             \textcolor{keywordflow}{return} (}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00050}00050                        \_clientID == 0 ?}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00051}00051                            Quaternion.identity :}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00052}00052                            Quaternion.Euler(}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00053}00053                                \textcolor{keyword}{new} Vector3(}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00054}00054                                    Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Rotation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.X) ? 0 : SubtractDeadzone(-\/rx, Settings.RotDead),}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00055}00055                                    Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Rotation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Y) ? 0 : SubtractDeadzone(rz, Settings.RotDead),}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00056}00056                                    Settings.GetLock(\mbox{\hyperlink{namespace_space_navigator_driver_a2fe86c811a0f24d7701a88585f6203e3}{DoF}}.Rotation, \mbox{\hyperlink{namespace_space_navigator_driver_a1cdaf4b0bac7b7e3532ae4736609e2a8}{Axis}}.Z) ? 0 : SubtractDeadzone(ry, Settings.RotDead)) * sensitivity * RotSensScale));}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00057}00057         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00059}00059         \textcolor{keyword}{private} \textcolor{keywordtype}{float} SubtractDeadzone(\textcolor{keywordtype}{int} value, \textcolor{keywordtype}{float} deadzone) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00060}00060             \textcolor{keywordflow}{return} value < 0}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00061}00061                 ? Math.Min(0, value + Math.Abs(deadzone))}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00062}00062                 : Math.Max(0, value -\/ Math.Abs(deadzone));}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00063}00063         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00065}00065 \textcolor{preprocessor}{\#region -\/ Singleton -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00069}00069         \textcolor{keyword}{private} SpaceNavigatorMac() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00070}00070             \_clientID = 0;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00071}00071             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00072}00072                 \_clientID = InitDevice();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00073}00073             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00074}00074             \textcolor{keywordflow}{catch} (Exception ex) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00075}00075                 Debug.LogError(ex.ToString());}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00076}00076             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00077}00077         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00079}00079         \textcolor{keyword}{public} \textcolor{keyword}{static} SpaceNavigatorMac SubInstance \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00080}00080             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \_subInstance ?? (\_subInstance = \textcolor{keyword}{new} SpaceNavigatorMac()); \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00081}00081         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00082}00082         \textcolor{keyword}{private} \textcolor{keyword}{static} SpaceNavigatorMac \_subInstance;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00083}00083 \textcolor{preprocessor}{\#endregion -\/ Singleton -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00085}00085 \textcolor{preprocessor}{\#region -\/ IDisposable -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00086}00086         \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{void} Dispose() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00087}00087             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00088}00088                 DisposeDevice();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00089}00089                 \_clientID = 0;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00090}00090             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00091}00091             \textcolor{keywordflow}{catch} (Exception ex) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00092}00092                 Debug.LogError(ex.ToString());}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00093}00093             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00094}00094         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00095}00095 \textcolor{preprocessor}{\#endregion -\/ IDisposable -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00096}00096     \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_mac_8cs_source_l00099}00099 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// UNITY\_EDITOR\_OSX || UNITY\_STANDALONE\_OSX}}
+
+\end{DoxyCode}

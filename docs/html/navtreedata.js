@@ -62,8 +62,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_build_process_8cs.html",
-"class_parent_object_script.html#adf72b93e7ef1f491c41e82c772e1e764",
-"class_spawner.html#a152c083c8d5d08f769529e75e21f6d9a"
+"class_movement_and_sensor_definition_1_1_sensor_node.html#a7bad8bf800351f64bd016a2fe7c6a689",
+"class_serialization_elements_1_1_lattice.html#a3a8378d7c3b6bd31ff5b2a2148d6c743"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

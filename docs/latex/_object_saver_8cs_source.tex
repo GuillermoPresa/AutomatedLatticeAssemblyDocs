@@ -1,0 +1,99 @@
+\hypertarget{_object_saver_8cs_source}{}\doxysection{Object\+Saver.\+cs}
+\label{_object_saver_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/ObjectSaver.cs@{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/ObjectSaver.cs}}
+\mbox{\hyperlink{_object_saver_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00004}00004 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00005}00005 \textcolor{keyword}{using }System.IO;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00006}00006 \textcolor{keyword}{using }System.Threading;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00008}00008 \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{class }ObjectSaver}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00010}00010     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} OverwriteObject(GameObject \mbox{\hyperlink{_viewport_controller_8cs_aef19bab18b9814edeef255c43e4f6bbc}{Object}} )}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00011}00011     \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00013}00013     \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00015}00015     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} SaveObject()}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00016}00016     \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00018}00018         GameObject GlobalManager = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}});}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00019}00019         \mbox{\hyperlink{class_selection_script}{SelectionScript}} SelectorScript = GlobalManager.GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00020}00020         \mbox{\hyperlink{class_references}{References}} RefereceScriptReference = GlobalManager.GetComponent<\mbox{\hyperlink{class_references}{References}}>();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00022}00022         GameObject ObjectToSave = SelectorScript.\mbox{\hyperlink{class_selection_script_ac40451363e27342cb270c0968e81ff40}{SelectedObject}};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00025}00025         (string, bool) ToSaveTuple = \mbox{\hyperlink{class_object_save_popup}{ObjectSavePopup}}.\mbox{\hyperlink{class_object_save_popup_afd0592b9b87720b49cee98e9ae95a1fc}{Init}}();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00027}00027         \textcolor{keywordtype}{string} toSaveName = ToSaveTuple.Item1;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00028}00028         \textcolor{keywordtype}{bool} Overwrite = ToSaveTuple.Item2;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00030}00030         \textcolor{keywordflow}{if} (Overwrite) \{ toSaveName = ObjectToSave.name; \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00032}00032         \textcolor{keywordtype}{string} SavePath = RefereceScriptReference.ObjectsPath +\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}}+ toSaveName;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00034}00034         \textcolor{comment}{//if(ObjectToSave)}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00035}00035         \textcolor{keywordflow}{if} (!Directory.Exists(SavePath))}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00036}00036         \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00037}00037             }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00038}00038             AssetDatabase.CreateFolder(\textcolor{stringliteral}{"{}Assets/Resources/Objects"{}}, toSaveName);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00039}00039         \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00041}00041         Mesh GeneratedMesh = Generate3DModel.GenerateModelForPathPrefab(ObjectToSave);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00043}00043         \textcolor{keywordtype}{string} SavePathPrefab = RefereceScriptReference.ObjectsPath + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + toSaveName + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + toSaveName + \textcolor{stringliteral}{"{}.prefab"{}};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00044}00044         \textcolor{keywordtype}{string} SavePathMesh = \textcolor{stringliteral}{"{}Assets/Resources/Objects/"{}} + toSaveName + \textcolor{stringliteral}{"{}/"{}} + toSaveName + \textcolor{stringliteral}{"{}Mesh.asset"{}};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00046}00046         \textcolor{keywordtype}{bool} prefabSuccess;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00047}00047         PrefabUtility.SaveAsPrefabAsset(ObjectToSave, SavePathPrefab, out prefabSuccess);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00048}00048         AssetDatabase.CreateAsset(GeneratedMesh, SavePathMesh);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00050}00050         RefereceScriptReference.UpdateFileList();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00052}00052         \textcolor{comment}{// Create the new Prefab and log whether Prefab was saved successfully.}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00053}00053         \textcolor{comment}{//Debug.Log("{}Saved Mesh to:"{} + savePath);}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00058}\mbox{\hyperlink{class_object_save_popup}{00058}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_object_save_popup}{ObjectSavePopup}} : EditorWindow}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00059}00059 \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00060}00060     \textcolor{comment}{//[MenuItem("{}Example/ShowPopup Example"{})]}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00061}\mbox{\hyperlink{class_object_save_popup_ad75eb825bd0477a7d522bb2310f320c2}{00061}}     \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_object_save_popup_ad75eb825bd0477a7d522bb2310f320c2}{SaveName}};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00062}\mbox{\hyperlink{class_object_save_popup_a8ff701b222a300244f564ec3d1f87cca}{00062}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_object_save_popup_a8ff701b222a300244f564ec3d1f87cca}{Overwrite}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00063}\mbox{\hyperlink{class_object_save_popup_ac6bd43ba104b3d73e859425969ea0462}{00063}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_object_save_popup_ac6bd43ba104b3d73e859425969ea0462}{WindowDisplaying}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00064}\mbox{\hyperlink{class_object_save_popup_afd0592b9b87720b49cee98e9ae95a1fc}{00064}}     \textcolor{keyword}{public} \textcolor{keyword}{static} (\mbox{\hyperlink{class_object_save_popup_a2cffc5b0c9f9ae232f52a793a27b02a1}{string}}, bool) \mbox{\hyperlink{class_object_save_popup_afd0592b9b87720b49cee98e9ae95a1fc}{Init}}()}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00065}00065     \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00066}00066         \textcolor{keywordflow}{if} (EditorApplication.isPlayingOrWillChangePlaymode)}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00067}00067         \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00068}00068             \mbox{\hyperlink{class_object_save_popup}{ObjectSavePopup}} window = ScriptableObject.CreateInstance<\mbox{\hyperlink{class_object_save_popup}{ObjectSavePopup}}>();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00069}00069             window.position = \textcolor{keyword}{new} Rect(Screen.width /2, Screen.height / 2, 50, 225);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00070}00070             window.maxSize = \textcolor{keyword}{new} Vector2(500f, 100f);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00071}00071             window.minSize = window.maxSize;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00072}00072             window.ShowModal();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00073}00073             \textcolor{keywordflow}{return} (window.\mbox{\hyperlink{class_object_save_popup_ad75eb825bd0477a7d522bb2310f320c2}{SaveName}}, window.\mbox{\hyperlink{class_object_save_popup_a8ff701b222a300244f564ec3d1f87cca}{Overwrite}});}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00074}00074         \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00075}00075         \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"{}No valid name given"{}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00076}00076     \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00077}00077     \textcolor{keywordtype}{void} OnGUI()}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00078}00078     \{}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00079}00079         EditorGUILayout.LabelField(\textcolor{stringliteral}{"{}Saving selected object and its merge mesh under resources/ojects"{}}, EditorStyles.wordWrappedLabel);}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00081}00081         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00082}00082         \textcolor{keywordtype}{string} label = \textcolor{stringliteral}{"{}save as: "{}};}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00083}00083         var textDimensions = GUI.skin.label.CalcSize(\textcolor{keyword}{new} GUIContent(label));}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00084}00084         EditorGUIUtility.labelWidth = textDimensions.x;}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00085}00085         \mbox{\hyperlink{class_object_save_popup_ad75eb825bd0477a7d522bb2310f320c2}{SaveName}} = EditorGUILayout.TextField(label, \mbox{\hyperlink{class_object_save_popup_ad75eb825bd0477a7d522bb2310f320c2}{SaveName}});}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00086}00086         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00087}00087         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00088}00088         \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"{}Overwrite"{}})) \{ \mbox{\hyperlink{class_object_save_popup_a8ff701b222a300244f564ec3d1f87cca}{Overwrite}} = \textcolor{keyword}{true}; this.Close(); \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00089}00089         \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"{}Save"{}})) this.Close();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00090}00090         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00091}00091     \}}
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_object_saver_8cs_source_l00093}00093 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,288 @@
+\hypertarget{_spawner_8cs_source}{}\doxysection{Spawner.\+cs}
+\label{_spawner_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Spawner.cs@{C:/Users/Guille/LatticeAssembly/Assets/Spawner.cs}}
+\mbox{\hyperlink{_spawner_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00004}00004 \textcolor{keyword}{using }System.IO;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00005}00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00006}00006 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00008}00008 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_serialization_elements}{SerializationElements}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00009}00009 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00010}\mbox{\hyperlink{class_spawner}{00010}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_spawner}{Spawner}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00011}00011 \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00013}\mbox{\hyperlink{class_spawner_a2d41d2580eb406a5061f51f73035d7ee}{00013}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_spawner_a2d41d2580eb406a5061f51f73035d7ee}{TimeStep}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00015}\mbox{\hyperlink{class_spawner_ad7138a4cb44c9d019c4b0f266d4ede34}{00015}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_ad7138a4cb44c9d019c4b0f266d4ede34}{RobotWorker}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00016}\mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{00016}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00018}00018     \textcolor{comment}{//[HideInInspector]}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00019}00019     \textcolor{comment}{//public Mesh ParentMesh;}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00021}00021     \textcolor{comment}{//public List<GameObject> SpawnedObjectList;}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00023}\mbox{\hyperlink{class_spawner_ae8e1f5477190084e50d6cbac31a3cca0}{00023}}     \textcolor{keyword}{public} Material \mbox{\hyperlink{class_spawner_ae8e1f5477190084e50d6cbac31a3cca0}{StructureMaterial}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00024}\mbox{\hyperlink{class_spawner_a95f31c8527fb46efd2fb6d70c7b4f2fb}{00024}}     \textcolor{keyword}{public} Material \mbox{\hyperlink{class_spawner_a95f31c8527fb46efd2fb6d70c7b4f2fb}{InitialStructureMaterial}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00026}\mbox{\hyperlink{class_spawner_a28207695357de1250b900deb48143fcd}{00026}}     \textcolor{keyword}{public} IDictionary<int, Material> \mbox{\hyperlink{class_spawner_a28207695357de1250b900deb48143fcd}{LatticeTypeMaterialIDict}} = \textcolor{keyword}{new} Dictionary<int, Material>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00028}\mbox{\hyperlink{class_spawner_acee78baaa62b650bfa6c8b57330f77a2}{00028}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_acee78baaa62b650bfa6c8b57330f77a2}{obj}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00030}00030     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00031}\mbox{\hyperlink{class_spawner_a87e751082eeb0dd0f99c949d40cfbccf}{00031}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_spawner_a87e751082eeb0dd0f99c949d40cfbccf}{listIdx}} = 0;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00032}00032     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00033}\mbox{\hyperlink{class_spawner_a152c083c8d5d08f769529e75e21f6d9a}{00033}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_spawner_a152c083c8d5d08f769529e75e21f6d9a}{LatticeTypeIndex}} = 0;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00034}\mbox{\hyperlink{class_spawner_ac7bea9bb037a9b00f426277765f1fd4f}{00034}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_spawner_ac7bea9bb037a9b00f426277765f1fd4f}{FileList}} = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00035}\mbox{\hyperlink{class_spawner_a1e59a9d3ec029cdf420d4d7e336e4356}{00035}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_spawner_a1e59a9d3ec029cdf420d4d7e336e4356}{LatticeTypeList}} = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00037}\mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{00037}}     \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{ObjectName}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00040}\mbox{\hyperlink{class_spawner_a23470aace6f16bfd464579e28fdd7c93}{00040}}     \textcolor{keyword}{public} List<GameObject> \mbox{\hyperlink{class_spawner_a23470aace6f16bfd464579e28fdd7c93}{LatticeList}} = \textcolor{keyword}{new} List<GameObject>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00043}00043     List<string> ObjectList = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00045}\mbox{\hyperlink{class_spawner_a75d1072dbeddd5a40c54831c958838f9}{00045}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_a75d1072dbeddd5a40c54831c958838f9}{HighlightedLattice}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00047}\mbox{\hyperlink{class_spawner_ad49b175faa405e6baac27f682e464bf8}{00047}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_ad49b175faa405e6baac27f682e464bf8}{NextLattice}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00048}\mbox{\hyperlink{class_spawner_acce205596927e14b1873339576e840a8}{00048}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_spawner_acce205596927e14b1873339576e840a8}{GetFolderNamesInDirectory}}(\textcolor{keywordtype}{string} DirectoryString)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00049}00049     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00050}00050         \textcolor{comment}{//string DirectoryString = (string)System.IO.Directory.GetCurrentDirectory() + "{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Objects"{};}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00051}00051         \textcolor{keywordtype}{string}[] dirs = Directory.GetDirectories(DirectoryString);\textcolor{comment}{//.Where(dir => dir.Contains("{}.meta"{}) is true ).ToArray();}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00053}00053         List<string> AvailableFiles = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00055}00055         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} File \textcolor{keywordflow}{in} dirs)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00056}00056         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00057}00057     }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00058}00058             Debug.Log((\textcolor{keywordtype}{string})File);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00059}00059             \textcolor{keywordtype}{string}[] SplitFile = File.Split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00060}00060             \textcolor{keywordtype}{string} FolderName = SplitFile[SplitFile.Length -\/ 1].Replace(\textcolor{stringliteral}{"{}.meta"{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00061}00061             AvailableFiles.Add(FolderName);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00062}00062         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00063}00063         \textcolor{keywordflow}{return} AvailableFiles;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00066}\mbox{\hyperlink{class_spawner_ac9c4280c41f2ad03f809a437e7976845}{00066}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_spawner_ac9c4280c41f2ad03f809a437e7976845}{GetFileNamesInDirectory}}(\textcolor{keywordtype}{string} DirectoryString)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00067}00067     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00068}00068         \textcolor{comment}{//string DirectoryString = (string)System.IO.Directory.GetCurrentDirectory() + "{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Objects"{};}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00069}00069         \textcolor{keywordtype}{string}[] dirs = Directory.GetFiles(DirectoryString).Where(dir => dir.Contains(\textcolor{stringliteral}{"{}.meta"{}}) is \textcolor{keyword}{false} ).ToArray();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00071}00071         List<string> AvailableFiles = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00073}00073         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} File \textcolor{keywordflow}{in} dirs)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00074}00074         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00075}00075             Debug.Log((\textcolor{keywordtype}{string})File);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00076}00076             \textcolor{keywordtype}{string}[] SplitFile = File.Split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00077}00077             \textcolor{keywordtype}{string} FolderName = SplitFile[SplitFile.Length -\/ 1].Split(\textcolor{stringliteral}{"{}."{}}).First();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00078}00078             AvailableFiles.Add(FolderName);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00079}00079         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00080}00080         \textcolor{keywordflow}{return} AvailableFiles;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00083}\mbox{\hyperlink{class_spawner_aad354315fa89d5ea1148d707e984ee5c}{00083}}     \textcolor{keyword}{public} List<string> \mbox{\hyperlink{class_spawner_aad354315fa89d5ea1148d707e984ee5c}{GetLatticeTypeNames}}(\textcolor{keywordtype}{string} DirectoryString)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00084}00084     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00085}00085         \textcolor{comment}{//string DirectoryString = (string)System.IO.Directory.GetCurrentDirectory() + "{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Objects"{};}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00086}00086         \textcolor{keywordtype}{string}[] dirs = Directory.GetFiles(DirectoryString);\textcolor{comment}{//.Where(dir => dir.Contains("{}.meta"{}) is true ).ToArray();}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00088}00088         List<string> AvailableFiles = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00090}00090         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} File \textcolor{keywordflow}{in} dirs)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00091}00091         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00092}00092             Debug.Log((\textcolor{keywordtype}{string})File);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00093}00093             \textcolor{keywordtype}{string}[] SplitFile = File.Split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00094}00094             \textcolor{keywordtype}{string} FolderName = SplitFile[SplitFile.Length -\/ 1].Replace(\textcolor{stringliteral}{"{}.meta"{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00095}00095             AvailableFiles.Add(FolderName);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00096}00096         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00097}00097         \textcolor{keywordflow}{return} AvailableFiles;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00099}00099     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00102}\mbox{\hyperlink{class_spawner_a7e63b2d1dbffd6577cd69b13e26af2e6}{00102}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_a7e63b2d1dbffd6577cd69b13e26af2e6}{SpawnWorker}}()}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00103}00103     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00104}00104         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spawner_a7e63b2d1dbffd6577cd69b13e26af2e6}{SpawnWorker}}(\textcolor{keyword}{new} Vector3(0.0f, 0.0f, 0.0f));}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00107}\mbox{\hyperlink{class_spawner_a54033ba32888537f2637c9530c7aff5f}{00107}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_a54033ba32888537f2637c9530c7aff5f}{SpawnWorker}}(Vector3 SpawnOrigin)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00108}00108     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00109}00109         var OriginVector = \textcolor{keyword}{new} Vector3(0f, 0f, 0f);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00110}00110         GameObject RobotWorkerItem = Instantiate(\mbox{\hyperlink{class_spawner_ad7138a4cb44c9d019c4b0f266d4ede34}{RobotWorker}}, OriginVector, Quaternion.identity);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00112}00112 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00114}00114         \textcolor{keywordflow}{return} RobotWorkerItem;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00115}00115     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00117}00117     \textcolor{comment}{//Overloaded method to use when no input parameter is specified.}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00118}\mbox{\hyperlink{class_spawner_a19c6afc7e1d1048d35073725b6830978}{00118}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_a19c6afc7e1d1048d35073725b6830978}{Spawn3DObject}}()}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00119}00119     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00121}00121         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spawner_a19c6afc7e1d1048d35073725b6830978}{Spawn3DObject}}(\textcolor{keyword}{new} Vector3(0.0f, 0.0f, 0.0f));}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00122}00122     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00124}00124     \textcolor{comment}{//Spawns a complete object from a json file}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00125}\mbox{\hyperlink{class_spawner_a2a3f46698546a64f0a2970eaacbfa228}{00125}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_spawner_a2a3f46698546a64f0a2970eaacbfa228}{Spawn3DObject}}(Vector3 SpawnOrigin)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00126}00126     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00128}00128         \mbox{\hyperlink{class_selection_script}{SelectionScript}} SelectorScript = \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00130}00130         \textcolor{comment}{//Develop list of 3D model densities (names) and another list with the models loaded. Transition from 2 sync lists to dictionary?}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00131}00131         List<string> LatticeDensityModelDirectoryList = \mbox{\hyperlink{class_spawner_aad354315fa89d5ea1148d707e984ee5c}{GetLatticeTypeNames}}((\textcolor{keywordtype}{string})System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Resources\(\backslash\)\(\backslash\)Lattice\(\backslash\)\(\backslash\)"{}} + (\textcolor{keywordtype}{string})\mbox{\hyperlink{class_spawner_a1e59a9d3ec029cdf420d4d7e336e4356}{LatticeTypeList}}[\mbox{\hyperlink{class_spawner_a152c083c8d5d08f769529e75e21f6d9a}{LatticeTypeIndex}}]);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00132}00132         List<\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}}.\mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{MeshTriplet}}> DensityMeshItems = \textcolor{keyword}{new} List<\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}}.\mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{MeshTriplet}}>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00133}00133         \textcolor{keywordflow}{foreach}(\textcolor{keywordtype}{string} LatticeDensityName \textcolor{keywordflow}{in} LatticeDensityModelDirectoryList)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00134}00134         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00135}00135             Int32.TryParse(LatticeDensityName.Split(\textcolor{stringliteral}{"{}D("{}}).Last().Split(\textcolor{stringliteral}{"{})"{}}).First(), out \textcolor{keywordtype}{int} Density);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00136}00136             \textcolor{keywordtype}{string} MeshDirectoryPath12121 = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Resources\(\backslash\)\(\backslash\)Lattice\(\backslash\)\(\backslash\)"{}} + (string)\mbox{\hyperlink{class_spawner_a1e59a9d3ec029cdf420d4d7e336e4356}{LatticeTypeList}}[\mbox{\hyperlink{class_spawner_a152c083c8d5d08f769529e75e21f6d9a}{LatticeTypeIndex}}] + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + LatticeDensityName;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00137}00137             MeshDirectoryPath12121 = \textcolor{stringliteral}{"{}Lattice\(\backslash\)\(\backslash\)"{}} + (string)\mbox{\hyperlink{class_spawner_a1e59a9d3ec029cdf420d4d7e336e4356}{LatticeTypeList}}[\mbox{\hyperlink{class_spawner_a152c083c8d5d08f769529e75e21f6d9a}{LatticeTypeIndex}}] + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + LatticeDensityName.Split(\textcolor{stringliteral}{"{}.obj"{}}).First();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00138}00138             var \mbox{\hyperlink{class_spawner_acee78baaa62b650bfa6c8b57330f77a2}{obj}} = Resources.Load<GameObject>(MeshDirectoryPath12121);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00139}00139             var childObj = \mbox{\hyperlink{class_spawner_acee78baaa62b650bfa6c8b57330f77a2}{obj}}.transform.GetChild(0);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00140}00140             var mesh = childObj.GetComponent<MeshFilter>().sharedMesh;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00142}00142             \mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{DensityMesh.MeshTriplet}} MyMesh = \textcolor{keyword}{new} \mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{DensityMesh.MeshTriplet}}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00143}00143             \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00144}00144                 Density = Density,}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00145}00145                 Model = mesh,}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00146}00146             \};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00147}00147             DensityMeshItems.Add(MyMesh);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00148}00148         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00150}00150         \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00151}00151         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{ObjectName}} = \mbox{\hyperlink{class_spawner_ac7bea9bb037a9b00f426277765f1fd4f}{FileList}}[\mbox{\hyperlink{class_spawner_a87e751082eeb0dd0f99c949d40cfbccf}{listIdx}}];}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00152}00152         \textcolor{keywordtype}{string} DirectoryString = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Objects\(\backslash\)\(\backslash\)"{}}+ \mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{ObjectName}} +\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}}+ \mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{ObjectName}}+\textcolor{stringliteral}{"{}Data.json"{}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00153}00153         Debug.Log(File.Exists(DirectoryString));}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00154}00154         \textcolor{keywordtype}{string} jsonString = File.ReadAllText(DirectoryString);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00155}00155 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00157}00157         \mbox{\hyperlink{class_serialization_elements_1_1_object_document}{ObjectDocument}} myObject = JsonUtility.FromJson<\mbox{\hyperlink{class_serialization_elements_1_1_object_document}{ObjectDocument}}>(jsonString);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00159}00159         \textcolor{keywordtype}{float} GridSize = myObject.\mbox{\hyperlink{class_serialization_elements_1_1_object_document_ad431c1c265ac22934522c37891d885b3}{Header}}.\mbox{\hyperlink{class_serialization_elements_1_1_header_a62037013094a7c0dcd2d2570616ab907}{Gridsize}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00160}00160         \textcolor{keywordtype}{int} ObjectType = myObject.\mbox{\hyperlink{class_serialization_elements_1_1_object_document_ad431c1c265ac22934522c37891d885b3}{Header}}.\mbox{\hyperlink{class_serialization_elements_1_1_header_a1167b5b3fa5774530cb98a0b5ec2d687}{ObjectType}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00162}00162         \textcolor{comment}{//Parent under which all the lattices will be instantiated}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00163}00163         GameObject Parent = Instantiate(\mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_references}{References}}>().\mbox{\hyperlink{class_references_aad351d151e3aec04eca0d82d16cd39bc}{ObjectParentPrefab}}, transform.position, Quaternion.identity);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00164}00164         Parent.name = (\mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{ObjectName}}.Split(\textcolor{stringliteral}{"{}."{}}).First()); \textcolor{comment}{//Name the parent the filename minus the extension (.json)}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00168}00168         \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_references}{References}}>().ObjectList.Add(Parent);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00170}00170         Material ObjectMaterial = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00171}00171 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00172}00172         Debug.Log(\textcolor{stringliteral}{"{}ObjectType is: "{}} + ObjectType.ToString());}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00173}00173         \textcolor{keywordflow}{foreach} (KeyValuePair<int, Material> KeyValuePair \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spawner_a28207695357de1250b900deb48143fcd}{LatticeTypeMaterialIDict}})}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00174}00174         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00175}00175             Debug.Log(\textcolor{stringliteral}{"{}Testing with key: "{}} + KeyValuePair.Key.ToString());}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00176}00176             \textcolor{keywordflow}{if} (KeyValuePair.Key == ObjectType)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00177}00177             \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00178}00178                 ObjectMaterial = KeyValuePair.Value;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00179}00179                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00180}00180             \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00181}00181         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00182}00182 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00183}00183         \textcolor{keywordflow}{if}(ObjectMaterial is \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00184}00184         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00185}00185             Debug.LogError(\textcolor{stringliteral}{"{}No object material was found"{}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00186}00186         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00187}00187 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00188}00188         Debug.Log(\textcolor{stringliteral}{"{}ObjectMaterial selected is: "{}} + ObjectMaterial.ToString());}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00192}00192         \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}} LatticeInList \textcolor{keywordflow}{in} myObject.LatticeList)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00193}00193         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00194}00194             var \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}} = Instantiate(\mbox{\hyperlink{class_spawner_acee78baaa62b650bfa6c8b57330f77a2}{obj}}, SpawnOrigin+LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a41c55969ce30d6347c87907dbcbcc6d5}{TargetXYZGrid}}.\mbox{\hyperlink{class_serialization_elements_1_1_grid_position_acc868be9f53dc9e0c5d9aa788247e747}{PositionVector}}, Quaternion.identity, Parent.transform);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00196}00196 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00197}00197             \mbox{\hyperlink{class_lattice_class}{LatticeClass}} LatticeScript = \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00199}00199             }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00200}00200 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00201}00201             LatticeScript.ID = LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a582ffa42f53fe1cda0e0f56611809f67}{ID}}.ToString();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00202}00202             LatticeScript.TimeStamp = LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a3a8378d7c3b6bd31ff5b2a2148d6c743}{TimeStamp}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00203}00203             LatticeScript.Density = LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a08fab7bff23893d0c60f800c70ea8441}{Density}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00204}00204             LatticeScript.LatticeType = LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a84d9c14d9508451e3d12d1c370750c28}{LatticeType}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00205}00205             LatticeScript.SelectionScript = SelectorScript;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00206}00206             LatticeScript.DefaultRenderMaterial = ObjectMaterial;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00207}00207 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00208}00208             \textcolor{comment}{//LatticeScript.DefaultRenderMaterial = ;}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00209}00209 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00210}00210             Lattice.name = (\textcolor{stringliteral}{"{}Lattice"{}} + LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a582ffa42f53fe1cda0e0f56611809f67}{ID}}.ToString());}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00212}00212             \textcolor{keywordtype}{float} MinDensityError = (float)100;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00213}00213             \textcolor{keywordtype}{float} DenistyError = 100;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00214}00214             \textcolor{keywordtype}{int} LastDensity = 0;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00215}00215             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}}.\mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{MeshTriplet}} MeshDensityItem in DensityMeshItems)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00216}00216             \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00217}00217                 DenistyError = Math.Abs(MeshDensityItem.Density -\/ LatticeInList.\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a08fab7bff23893d0c60f800c70ea8441}{Density}} * 100);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00218}00218                 \textcolor{keywordflow}{if} (DenistyError < MinDensityError)}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00219}00219                 \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00220}00220                     MinDensityError = DenistyError;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00221}00221                     \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().MeshForRenderer = MeshDensityItem.Model;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00222}00222                     \textcolor{comment}{//Debug.Log(MeshDensityItem.Density);}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00223}00223                 \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00224}00224                 LastDensity = (MeshDensityItem.Density);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00225}00225 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00227}00227             \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00228}00228             Debug.Log(\textcolor{stringliteral}{"{}Last density: "{}}+ LastDensity.ToString());}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00229}00229 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00230}00230             \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().UpdateMesh();}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00233}00233             \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_references}{References}}>().globalLatticeList.Add(\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00234}00234         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00235}00235 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00236}00236         \textcolor{keywordflow}{return} Parent;}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00237}00237     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00238}00238 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00239}\mbox{\hyperlink{class_spawner_af6c6907cb6c08744b2d5c7dabcdccbe4}{00239}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_spawner_af6c6907cb6c08744b2d5c7dabcdccbe4}{UpdateVisibilityTime}}()}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00240}00240     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00241}00241         \textcolor{keywordflow}{foreach}(GameObject \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}} \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_references}{References}}>().\mbox{\hyperlink{class_references_a5dc80d96f3cef19d9df9b29fae8ff03b}{globalLatticeList}})}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00242}00242         \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00243}00243             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().\mbox{\hyperlink{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}{TimeStamp}} == \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_time_manager}{TimeManager}}>().\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}})}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00244}00244             \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00245}00245                 \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00246}00246                 \mbox{\hyperlink{class_spawner_ad49b175faa405e6baac27f682e464bf8}{NextLattice}} = \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00247}00247                 \mbox{\hyperlink{class_spawner_a75d1072dbeddd5a40c54831c958838f9}{HighlightedLattice}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00248}00248                 HighlightedLattice.transform.position = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.transform.position.x, \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.transform.position.y, \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.transform.position.z);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00249}00249             \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00250}00250             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().\mbox{\hyperlink{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}{TimeStamp}} > \mbox{\hyperlink{class_spawner_ab27b102d4e0059c11b49cecb55eba073}{GlobalManager}}.GetComponent<\mbox{\hyperlink{class_time_manager}{TimeManager}}>().\mbox{\hyperlink{class_time_manager_aa8e482d3022007f3d2bab7b54668af02}{TimeStep}})}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00251}00251             \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00252}00252                 \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00253}00253             \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00254}00254             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00255}00255             \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00256}00256                 \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00257}00257             \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00258}00258         \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00259}00259     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00260}00260     }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00261}00261  }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00262}00262 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00263}00263     \textcolor{comment}{// Start is called before the first frame update}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00264}00264     \textcolor{keywordtype}{void} Start()}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00265}00265     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00266}00266         \textcolor{keywordtype}{string} DirectoryString = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Objects"{}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00267}00267         \mbox{\hyperlink{class_spawner_ac7bea9bb037a9b00f426277765f1fd4f}{FileList}} = \mbox{\hyperlink{class_spawner_acce205596927e14b1873339576e840a8}{GetFolderNamesInDirectory}}(DirectoryString);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00268}00268         DirectoryString = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Resources\(\backslash\)\(\backslash\)Lattice"{}};}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00269}00269         \mbox{\hyperlink{class_spawner_a1e59a9d3ec029cdf420d4d7e336e4356}{LatticeTypeList}} = \mbox{\hyperlink{class_spawner_acce205596927e14b1873339576e840a8}{GetFolderNamesInDirectory}}(DirectoryString);}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00270}00270         \mbox{\hyperlink{class_spawner_a75d1072dbeddd5a40c54831c958838f9}{HighlightedLattice}}.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00271}00271 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00272}00272         \mbox{\hyperlink{class_spawner_a28207695357de1250b900deb48143fcd}{LatticeTypeMaterialIDict}}.Add(1, \mbox{\hyperlink{class_spawner_ae8e1f5477190084e50d6cbac31a3cca0}{StructureMaterial}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00273}00273         \mbox{\hyperlink{class_spawner_a28207695357de1250b900deb48143fcd}{LatticeTypeMaterialIDict}}.Add(2, \mbox{\hyperlink{class_spawner_a95f31c8527fb46efd2fb6d70c7b4f2fb}{InitialStructureMaterial}});}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00274}00274 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00275}00275     \}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00276}00276 }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00277}00277     \textcolor{comment}{// Update is called once per frame}}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00278}00278     \textcolor{keywordtype}{void} Update()}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00279}00279     \{}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00280}00280         \mbox{\hyperlink{class_spawner_a2ac67c39cfd78a21e1fe62a11a1568cd}{ObjectName}} = \mbox{\hyperlink{class_spawner_ac7bea9bb037a9b00f426277765f1fd4f}{FileList}}[\mbox{\hyperlink{class_spawner_a87e751082eeb0dd0f99c949d40cfbccf}{listIdx}}];}
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00281}00281     \}   }
+\DoxyCodeLine{\Hypertarget{_spawner_8cs_source_l00282}00282 \}}
+
+\end{DoxyCode}

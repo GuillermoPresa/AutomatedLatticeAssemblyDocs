@@ -1,0 +1,96 @@
+\hypertarget{_editor_01window_8cs_source}{}\doxysection{Editor window.\+cs}
+\label{_editor_01window_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Editor window.cs@{C:/Users/Guille/LatticeAssembly/Assets/Editor window.cs}}
+\mbox{\hyperlink{_editor_01window_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00001}00001 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00002}00002 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00003}\mbox{\hyperlink{class_importer_window}{00003}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_importer_window}{ImporterWindow}} : EditorWindow}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00004}00004 \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00006}\mbox{\hyperlink{class_importer_window_ab4259026cf1fa42322fda85075ed1121}{00006}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_importer_window_ab4259026cf1fa42322fda85075ed1121}{LatticeSize}} = (float)0.1;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00007}\mbox{\hyperlink{class_importer_window_adfd7676b8e7bb1b3d1337542bab31ac6}{00007}}     \textcolor{keyword}{public} (\mbox{\hyperlink{class_importer_window_adfd7676b8e7bb1b3d1337542bab31ac6}{int}}, \mbox{\hyperlink{class_importer_window_adfd7676b8e7bb1b3d1337542bab31ac6}{int}}) \mbox{\hyperlink{class_importer_window_a4ad1ca90c9dfb2863c848018cde9be6f}{Resolution}} = (128, 64);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00008}\mbox{\hyperlink{class_importer_window_a17680b6ef92a14931afafb24da95eeb0}{00008}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_importer_window_a17680b6ef92a14931afafb24da95eeb0}{Inverse}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00009}\mbox{\hyperlink{class_importer_window_a49749dddfa1d309e6f02f7a8ca8cd95e}{00009}}     \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_importer_window_a49749dddfa1d309e6f02f7a8ca8cd95e}{Thresshold}} = 150;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00010}\mbox{\hyperlink{class_importer_window_a0a2a98c4ad0bd94c068f4fa03081b72f}{00010}}     \textcolor{keyword}{public} Material \mbox{\hyperlink{class_importer_window_a0a2a98c4ad0bd94c068f4fa03081b72f}{ObjectMaterial}};}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00011}00011     \textcolor{keywordtype}{int} listIndex = 1;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00012}\mbox{\hyperlink{class_importer_window_a309234e8d201444babd1f6e5efae54f0}{00012}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_selection_script}{SelectionScript}} \mbox{\hyperlink{class_importer_window_a309234e8d201444babd1f6e5efae54f0}{SelectionScriptReference}};}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00013}00013    }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00014}00014     \textcolor{comment}{// Start is called before the first frame update}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00016}00016     \textcolor{comment}{//Method that allows for drawing horizontal lines in the UI window.  Credit to alexanderameye from unity forum https://forum.unity.com/threads/horizontal-\/line-\/in-\/editor-\/window.520812/}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00017}\mbox{\hyperlink{class_importer_window_a634199c2362b27ab5fe4b3310e1b7d50}{00017}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_importer_window_a634199c2362b27ab5fe4b3310e1b7d50}{DrawUILine}}(Color color, \textcolor{keywordtype}{int} thickness = 2, \textcolor{keywordtype}{int} padding = 10)}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00018}00018     \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00019}00019         Rect r = EditorGUILayout.GetControlRect(GUILayout.Height(padding + thickness));}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00020}00020         r.height = thickness;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00021}00021         r.y += padding / 2;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00022}00022         r.x -\/= 2;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00023}00023         r.width += 6;}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00024}00024         EditorGUI.DrawRect(r, color);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00028}00028     [MenuItem(\textcolor{stringliteral}{"{}Window/Lattice Assembly/Model importer"{}})]}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00029}\mbox{\hyperlink{class_importer_window_af93089e621d98f95ad5a238b4ac4a98c}{00029}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_importer_window_af93089e621d98f95ad5a238b4ac4a98c}{ShowWindow}}()}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00030}00030     \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00031}00031         EditorWindow.GetWindow<\mbox{\hyperlink{class_importer_window}{ImporterWindow}}>(\textcolor{stringliteral}{"{}File importer"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00032}00032         }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00033}00033     \}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00035}\mbox{\hyperlink{class_importer_window_a96a78e7ba5c8f8025b6f81a9a853fcc2}{00035}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_importer_window_a96a78e7ba5c8f8025b6f81a9a853fcc2}{Awake}}()}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00036}00036     \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00037}00037         \mbox{\hyperlink{class_importer_window_a309234e8d201444babd1f6e5efae54f0}{SelectionScriptReference}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00040}00040     \textcolor{keywordtype}{void} OnGUI()}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00041}00041     \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00043}00043         \mbox{\hyperlink{class_importer_window_a309234e8d201444babd1f6e5efae54f0}{SelectionScriptReference}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00045}00045         GUILayout.Label(\textcolor{stringliteral}{"{}STL importer tool"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00046}00046         \mbox{\hyperlink{class_importer_window_a634199c2362b27ab5fe4b3310e1b7d50}{DrawUILine}}(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00048}00048         GUILayout.Label(\textcolor{stringliteral}{"{}Import settings"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00050}00050         GUILayout.Label(\textcolor{stringliteral}{"{}Object material"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00051}00051         \mbox{\hyperlink{class_importer_window_a0a2a98c4ad0bd94c068f4fa03081b72f}{ObjectMaterial}} = (Material)EditorGUILayout.ObjectField(\mbox{\hyperlink{class_importer_window_a0a2a98c4ad0bd94c068f4fa03081b72f}{ObjectMaterial}}, typeof(Material), \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00053}00053         GUILayout.Label(\textcolor{stringliteral}{"{}Object type"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00055}00055         GUIContent arrayList = \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00057}00057         listIndex = EditorGUILayout.Popup(arrayList, listIndex, \mbox{\hyperlink{class_importer_window_a309234e8d201444babd1f6e5efae54f0}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_ae231e638afa57d6d37e1881204db620a}{ObjectTypeList}}.ToArray());}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00059}00059         \mbox{\hyperlink{class_importer_window_a634199c2362b27ab5fe4b3310e1b7d50}{DrawUILine}}(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00060}00060         GUILayout.Label(\textcolor{stringliteral}{"{}From masked layers (chitubox)"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00062}00062         \mbox{\hyperlink{class_importer_window_a17680b6ef92a14931afafb24da95eeb0}{Inverse}} = EditorGUILayout.Toggle(\textcolor{stringliteral}{"{}Inverse"{}}, \mbox{\hyperlink{class_importer_window_a17680b6ef92a14931afafb24da95eeb0}{Inverse}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00064}00064         \mbox{\hyperlink{class_importer_window_a49749dddfa1d309e6f02f7a8ca8cd95e}{Thresshold}} = EditorGUILayout.IntField(\textcolor{stringliteral}{"{}Thresshold:"{}}, \mbox{\hyperlink{class_importer_window_a49749dddfa1d309e6f02f7a8ca8cd95e}{Thresshold}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00066}00066         Resolution.Item1 = EditorGUILayout.IntField( \textcolor{stringliteral}{"{}Resolution X:"{}}, \mbox{\hyperlink{class_importer_window_a4ad1ca90c9dfb2863c848018cde9be6f}{Resolution}}.Item1);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00067}00067         Resolution.Item2 = EditorGUILayout.IntField( \textcolor{stringliteral}{"{}Resolution Y"{}}, \mbox{\hyperlink{class_importer_window_a4ad1ca90c9dfb2863c848018cde9be6f}{Resolution}}.Item2);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00069}00069         \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"{}Browse"{}}))}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00070}00070         \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00071}00071             \textcolor{keywordtype}{string} path = EditorUtility.OpenFolderPanel(\textcolor{stringliteral}{"{}Load"{}}, \textcolor{stringliteral}{"{}"{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00072}00072             \textcolor{comment}{//string path = "{}C:\(\backslash\)\(\backslash\)Users\(\backslash\)\(\backslash\)Guille\(\backslash\)\(\backslash\)LatticeAssembly\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Objects\(\backslash\)\(\backslash\)Brige10m"{};}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00073}00073             }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00074}00074             \textcolor{comment}{//ChituboxSTLParserClass STLParser = new ChituboxSTLParserClass();}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00075}00075             Debug.Log(path);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00076}00076             \mbox{\hyperlink{class_chitubox_s_t_l_parser_class}{ChituboxSTLParserClass}}.\mbox{\hyperlink{class_chitubox_s_t_l_parser_class_a0f6c094813cdca92e7ee537bee0be3e2}{Import3DObject}}(path, \mbox{\hyperlink{class_importer_window_a17680b6ef92a14931afafb24da95eeb0}{Inverse}}, \mbox{\hyperlink{class_importer_window_a4ad1ca90c9dfb2863c848018cde9be6f}{Resolution}}, \mbox{\hyperlink{class_importer_window_a49749dddfa1d309e6f02f7a8ca8cd95e}{Thresshold}}, listIndex+1);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00078}00078             \textcolor{comment}{//Merge the created object meshes into a single mesh}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00080}00080         \}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00083}00083         \mbox{\hyperlink{class_importer_window_a634199c2362b27ab5fe4b3310e1b7d50}{DrawUILine}}(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00084}00084         GUILayout.Label(\textcolor{stringliteral}{"{}From optimization file"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00085}00085         \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"{}Browse"{}}))}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00086}00086         \{}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00087}00087             \textcolor{keywordtype}{string} path = EditorUtility.OpenFolderPanel(\textcolor{stringliteral}{"{}Load optimization file"{}}, \textcolor{stringliteral}{"{}"{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00088}00088         \}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{_editor_01window_8cs_source_l00090}00090 \}}
+
+\end{DoxyCode}

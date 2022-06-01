@@ -1,0 +1,150 @@
+\hypertarget{_control_window_8cs_source}{}\doxysection{Control\+Window.\+cs}
+\label{_control_window_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/ControlWindow.cs@{C:/Users/Guille/LatticeAssembly/Assets/ControlWindow.cs}}
+\mbox{\hyperlink{_control_window_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00001}00001 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00002}00002 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00003}00003 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00004}00004 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00006}00006 \textcolor{comment}{//Main Control window code}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00009}\mbox{\hyperlink{class_control_window}{00009}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_control_window}{ControlWindow}} : EditorWindow}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00012}\mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{00012}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_selection_script}{SelectionScript}} \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}};}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00013}\mbox{\hyperlink{class_control_window_a2ee7ba93f5ccb616c73a11f0bd925ec4}{00013}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_spawner_overlay}{SpawnerOverlay}} \mbox{\hyperlink{class_control_window_a2ee7ba93f5ccb616c73a11f0bd925ec4}{SpawnerOverlayReference}};}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00014}\mbox{\hyperlink{class_control_window_ad1cf0b2a8c6355f7b4aa7d93eed3b96d}{00014}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_spawner}{Spawner}} \mbox{\hyperlink{class_control_window_ad1cf0b2a8c6355f7b4aa7d93eed3b96d}{SpawnerReference}};}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00015}\mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{00015}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}};}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00017}00017     }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00019}\mbox{\hyperlink{class_control_window_a00ef48c696dd9462d69b37fdc717c277}{00019}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_control_window_a00ef48c696dd9462d69b37fdc717c277}{ColorCyclingActive}};}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00020}00020     }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00021}00021     [MenuItem(\textcolor{stringliteral}{"{}Window/Controls"{}})]}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00022}\mbox{\hyperlink{class_control_window_a721c067c9b54471d04efc0a7465a388a}{00022}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_control_window_a721c067c9b54471d04efc0a7465a388a}{ShowWindow}}()}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00023}00023     \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00024}00024         EditorWindow.GetWindow<\mbox{\hyperlink{class_control_window}{ControlWindow}}>(\textcolor{stringliteral}{"{}Controls"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00027}\mbox{\hyperlink{class_control_window_a1b7d9930ba6c255374b9977df2eca3be}{00027}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_control_window_a1b7d9930ba6c255374b9977df2eca3be}{ClearSelection}}()}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00028}00028     \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00030}00030     \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00032}\mbox{\hyperlink{class_control_window_af79ffcf3693929222e4a723168fdb9ad}{00032}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_control_window_af79ffcf3693929222e4a723168fdb9ad}{Awake}}()}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00033}00033     \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00035}00035     \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00037}\mbox{\hyperlink{class_control_window_ae9d596b21380d7dc65b4340833b6c687}{00037}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_control_window_ae9d596b21380d7dc65b4340833b6c687}{OnGUI}}()}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00038}00038     \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00039}00039         \textcolor{comment}{//Repaints the GUI in order to show selected objects without the need of hovering the cursor over the field.}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00040}00040         \textcolor{keywordflow}{if} (EditorApplication.isPlaying)}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00041}00041             Repaint();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00043}00043         \textcolor{comment}{//Get the script references. Needed at list during startup. This is the easies way to do thou inneficient}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00044}00044         \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00045}00045         \mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_references}{References}}>();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00046}00046         \mbox{\hyperlink{class_control_window_a2ee7ba93f5ccb616c73a11f0bd925ec4}{SpawnerOverlayReference}} = GameObject.Find(\textcolor{stringliteral}{"{}SpawnerOverlay"{}}).GetComponent<\mbox{\hyperlink{class_spawner_overlay}{SpawnerOverlay}}>();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00047}00047         \mbox{\hyperlink{class_control_window_ad1cf0b2a8c6355f7b4aa7d93eed3b96d}{SpawnerReference}} = GameObject.FindGameObjectWithTag(\textcolor{stringliteral}{"{}Spawner"{}}).GetComponent<\mbox{\hyperlink{class_spawner}{Spawner}}>();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00049}00049         \textcolor{comment}{//UITools.DrawUILine(Color.grey);}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00050}00050         \textcolor{comment}{//GUILayout.Label("{}View"{});}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00052}00052         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00053}00053         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a93939d7d68d1f7018dd8ca07ac5741dd}{ShowNavMesh}}, \textcolor{stringliteral}{"{}    Nav mesh    "{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00054}00054         UITools.TogglingCallingButtonImplementation(() => ColorCycling.EnableColorCycling(\mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_ab842e405de79d761bf61c33147179c47}{ObjectList}}), () => ColorCycling.DisableColorCycling(\mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_ab842e405de79d761bf61c33147179c47}{ObjectList}}), ref \mbox{\hyperlink{class_control_window_a00ef48c696dd9462d69b37fdc717c277}{ColorCyclingActive}}, \textcolor{stringliteral}{"{}Color cycling"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00055}00055         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00058}00058         UITools.DrawUILine(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00059}00059         GUILayout.Label(\textcolor{stringliteral}{"{}Selection"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00062}00062         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00063}00063         GUILayout.Label(\textcolor{stringliteral}{"{}Robot"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00064}00064         SelectionScriptReference.SelectedRobot = (GameObject)EditorGUILayout.ObjectField(\mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_afdcc8661d7be982ef37a323355cca79a}{SelectedRobot}}, typeof(GameObject), \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00065}00065         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_aade23c8c7a4f501322312e9b6c8cde1f}{SelectingRobot}}, \textcolor{stringliteral}{"{}Select"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00066}00066         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_aade23c8c7a4f501322312e9b6c8cde1f}{SelectingRobot}}, \textcolor{stringliteral}{"{}Clear"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00067}00067         \textcolor{comment}{//UITools.DefaultBoolButtonImplementation(ref SelectionScriptReference.SelectingObject, "{}Select robot"{});}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00068}00068         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00069}00069         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00070}00070         GUILayout.Label(\textcolor{stringliteral}{"{}Object"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00071}00071         SelectionScriptReference.SelectedObject = (GameObject)EditorGUILayout.ObjectField(\mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_ac40451363e27342cb270c0968e81ff40}{SelectedObject}}, typeof(GameObject), \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00072}00072         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a677586ac56980111840b0f3855bdb65d}{SelectingObject}}, \textcolor{stringliteral}{"{}Select"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00073}00073         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a677586ac56980111840b0f3855bdb65d}{SelectingObject}}, \textcolor{stringliteral}{"{}Clear"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00074}00074         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00075}00075         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00076}00076         GUILayout.Label(\textcolor{stringliteral}{"{}Lattice"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00077}00077         SelectionScriptReference.SelectedObject = (GameObject)EditorGUILayout.ObjectField(\mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a9b5f00951d5a6230e14877c48555d7cc}{SelectedLattice}}, typeof(GameObject), \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00078}00078         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a246f0fda7f89482ab1f3a30d8d2bcf9f}{SelectingLattice}}, \textcolor{stringliteral}{"{}Select"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00079}00079         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a246f0fda7f89482ab1f3a30d8d2bcf9f}{SelectingLattice}}, \textcolor{stringliteral}{"{}Clear"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00080}00080         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00081}00081         \textcolor{comment}{//GUILayout.BeginHorizontal();}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00082}00082         \textcolor{comment}{//UITools.TogglingBoolButtonImplementation(ref SelectionScriptReference.SelectingObject, "{}Select"{});}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00083}00083         }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00084}00084         \textcolor{comment}{//if (GUILayout.Button("{}Clear"{}))}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00085}00085         \textcolor{comment}{//\{}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00086}00086         \textcolor{comment}{//    SelectionScriptReference.SelectedObject = null;}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00087}00087         \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00088}00088         \textcolor{comment}{//GUILayout.EndHorizontal();}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00090}00090         UITools.DrawUILine(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00091}00091         GUILayout.Label(\textcolor{stringliteral}{"{}Robot controls"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00093}00093         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a7df5be6e88f1c7d0549f7c2213844e7f}{MoveToNode}}, \textcolor{stringliteral}{"{}Find path to node"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00094}00094         UITools.SingleCallingButtonImplementation(() => \mbox{\hyperlink{class_control_window_a155f48ebab60e442f9810b4e2b9b67af}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_afdcc8661d7be982ef37a323355cca79a}{SelectedRobot}}.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().MapNavigationSpace(), \textcolor{stringliteral}{"{}Recompute nav mesh"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00095}00095         }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00097}00097         UITools.DrawUILine(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00098}00098         GUILayout.Label(\textcolor{stringliteral}{"{}Object spawner"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00100}00100         \mbox{\hyperlink{class_spawner}{Spawner}} SpawnerScript = GameObject.Find(\textcolor{stringliteral}{"{}Structure spawner"{}}).GetComponent<\mbox{\hyperlink{class_spawner}{Spawner}}>();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00102}00102         GUIContent arrayList = \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00103}00103         ReferenceScriptReference.fileListIndex = EditorGUILayout.Popup(arrayList, \mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_a321f0fef18f4ad19b68ef5228a647420}{fileListIndex}}, \mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_a66407fdd67433f9e5550b831be838e6b}{fileList}}.ToArray());}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00105}00105         GUILayout.BeginHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00106}00106         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_ab842e405de79d761bf61c33147179c47}{ObjectList}}.Count>0)}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00107}00107         \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00108}00108             UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a2ee7ba93f5ccb616c73a11f0bd925ec4}{SpawnerOverlayReference}}.\mbox{\hyperlink{class_spawner_overlay_adc07a335656e813fe5e2cf3d22702765}{SpawningNow}}, \textcolor{stringliteral}{"{}As new"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00109}00109             UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a2ee7ba93f5ccb616c73a11f0bd925ec4}{SpawnerOverlayReference}}.\mbox{\hyperlink{class_spawner_overlay_a009cc590fa16dfdc752c2f6aefa8df78}{SpawningNowUnderParent}}, \textcolor{stringliteral}{"{}Under selected"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00110}00110         \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00111}00111         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00112}00112         \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00113}00113             \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"{}Spawn at origin"{}}))}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00114}00114             \{}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00115}00115                 \mbox{\hyperlink{class_spawning}{Spawning}}.\mbox{\hyperlink{class_spawning_a57fcfbd13e012327a852a78ef7ced12f}{SourceIndiferentSpawn}}();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00116}00116             \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00117}00117         \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00119}00119         GUILayout.EndHorizontal();}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00120}00120         UITools.DrawUILine(Color.grey);}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00121}00121         GUILayout.Label(\textcolor{stringliteral}{"{}Object modification"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00122}00122 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00123}00123         \textcolor{comment}{//GUILayout.Label("{}Selected object"{});}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00125}00125         \textcolor{comment}{//if (GUILayout.Button("{}Spawn latice at selection"{})) \{ \}}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00126}00126 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00127}00127         \textcolor{comment}{//if (GUILayout.Button("{}Select object node"{})) \{ \}}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00129}00129         \textcolor{comment}{//if (GUILayout.Button("{}Spawn target node"{})) \{ \}}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00131}00131         \textcolor{comment}{//DefaultCallingButtonImplementation(, "{}Save edited object"{});}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00133}00133         \textcolor{comment}{//if (GUILayout.Button("{}Save edited object"{})) \{ \}}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00134}00134         UITools.SingleCallingButtonImplementation(() => ObjectSaver.SaveObject(), \textcolor{stringliteral}{"{}Save selected object"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00136}00136         UITools.TogglingBoolButtonImplementation(ref \mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_a5691572b32aa4cfe355fb0e274d14f2c}{Building}}, \textcolor{stringliteral}{"{}Build"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00137}00137 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00138}00138         UITools.SingleCallingButtonImplementation(() => \mbox{\hyperlink{class_control_window_a3a762b51589de4efc20ba727358762cb}{ReferenceScriptReference}}.\mbox{\hyperlink{class_references_a8acd7f49260322d1d1237dc35065b7aa}{GlobalParent}}.GetComponent<\mbox{\hyperlink{class_parent_object_script}{ParentObjectScript}}>().\mbox{\hyperlink{class_parent_object_script_ae39b25c3ae0a8bbfabae1e74654df562}{ForceTimeStep}}(), \textcolor{stringliteral}{"{}Set timestep state"{}});}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00139}00139     \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00140}00140     \}}
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{_control_window_8cs_source_l00144}00144 }
+
+\end{DoxyCode}

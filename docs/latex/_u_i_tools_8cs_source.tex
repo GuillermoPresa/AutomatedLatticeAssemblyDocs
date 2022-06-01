@@ -1,0 +1,150 @@
+\hypertarget{_u_i_tools_8cs_source}{}\doxysection{UITools.\+cs}
+\label{_u_i_tools_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/UITools.cs@{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/UITools.cs}}
+\mbox{\hyperlink{_u_i_tools_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00004}00004 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00005}00005 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00007}00007 \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{class }UITools}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00009}00009     \textcolor{comment}{//Method that allows for drawing horizontal lines in the UI window.  Credit to alexanderameye from unity forum https://forum.unity.com/threads/horizontal-\/line-\/in-\/editor-\/window.520812/}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00010}00010     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} DrawUILine(Color color, \textcolor{keywordtype}{int} thickness = 2, \textcolor{keywordtype}{int} padding = 10)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00011}00011     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00012}00012         Rect r = EditorGUILayout.GetControlRect(GUILayout.Height(padding + thickness));}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00013}00013         r.height = thickness;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00014}00014         r.y += padding / 2;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00015}00015         r.x -\/= 2;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00016}00016         r.width += 6;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00017}00017         EditorGUI.DrawRect(r, color);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00018}00018     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00020}00020     \textcolor{comment}{//Allows for the creation of buttons that switch color to between white (standard) and green according to an asociated boolean representing the press status (toggle button)}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00021}00021     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{bool} CreateButtonWithBoolColor(\textcolor{keywordtype}{bool} Evaluation, \textcolor{keywordtype}{string} ButtonText, \textcolor{keywordtype}{int} SpacesPerSide = -\/1)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00022}00022     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00023}00023         GUI.backgroundColor = Color.white;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00024}00024         \textcolor{keywordflow}{if} (Evaluation)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00025}00025         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00026}00026             GUI.backgroundColor = Color.green;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00027}00027         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00029}00029         \textcolor{keywordtype}{bool} ToReturn;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00031}00031         \textcolor{keywordflow}{if} (SpacesPerSide >= 0)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00032}00032         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00033}00033             \textcolor{keywordtype}{string} SideString = \textcolor{keyword}{new} String(\textcolor{charliteral}{' '}, SpacesPerSide);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00034}00034             \textcolor{keywordtype}{float} Size = GUI.skin.label.CalcSize(\textcolor{keyword}{new} GUIContent(SideString + ButtonText + SideString)).x;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00035}00035             ToReturn = GUILayout.Button(ButtonText, GUILayout.Width(Size));}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00036}00036         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00037}00037         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00038}00038         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00039}00039             ToReturn = GUILayout.Button(ButtonText);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00040}00040         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00041}00041         }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00042}00042         }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00043}00043         GUI.backgroundColor = Color.white;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00044}00044         \textcolor{keywordflow}{return} ToReturn;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00047}00047     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{bool} ReturningBoolButtonImplementation(ref \textcolor{keywordtype}{bool} Evaluation, \textcolor{keywordtype}{string} ButtonText, \textcolor{keywordtype}{int} SpacesPerSide = -\/1)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00048}00048     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00049}00049         var ButtonClicked = CreateButtonWithBoolColor(Evaluation, ButtonText, SpacesPerSide);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00050}00050         \textcolor{keywordflow}{return} ButtonClicked;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00051}00051     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00053}00053     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} TogglingBoolButtonImplementation(ref \textcolor{keywordtype}{bool} Evaluation, \textcolor{keywordtype}{string} ButtonText, \textcolor{keywordtype}{int} SpacesPerSide = -\/1)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00054}00054     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00055}00055         var ButtonClicked = CreateButtonWithBoolColor(Evaluation, ButtonText, SpacesPerSide);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00056}00056         \textcolor{keywordflow}{if} (ButtonClicked)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00057}00057         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00058}00058             Evaluation = !Evaluation;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00059}00059         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00060}00060     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00062}00062     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} TogglingBoolButtonImplementation(ref List<bool> Evaluation, \textcolor{keywordtype}{string} ButtonText, \textcolor{keywordtype}{int} SpacesPerSide = -\/1)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00063}00063     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00064}00064         \textcolor{comment}{//The first element of the list determines the button color.}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00065}00065         var ButtonClicked = CreateButtonWithBoolColor(Evaluation[0], ButtonText, SpacesPerSide);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00066}00066         \textcolor{keywordflow}{if} (ButtonClicked)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00067}00067         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00068}00068             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<Evaluation.Count-\/1; i++)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00069}00069             \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00070}00070                 Evaluation[i] = !Evaluation[i];}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00071}00071             \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00072}00072         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00073}00073     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00075}00075     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} SingleCallingButtonImplementation(System.Action Evaluation, \textcolor{keywordtype}{string} ButtonText, \textcolor{keywordtype}{int} SpacesPerSide = -\/1)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00076}00076     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00077}00077         var ButtonClicked = CreateButtonWithBoolColor(\textcolor{keyword}{false}, ButtonText, SpacesPerSide);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00078}00078         \textcolor{keywordflow}{if} (ButtonClicked)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00079}00079         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00080}00080             Evaluation();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00081}00081         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00084}00084     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} TogglingCallingButtonImplementation(System.Action EvaluationON, System.Action EvaluationOF, ref \textcolor{keywordtype}{bool} CurrentStatus, \textcolor{keywordtype}{string} ButtonText, \textcolor{keywordtype}{int} SpacesPerSide = -\/1)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00085}00085     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00086}00086         var ButtonClicked = CreateButtonWithBoolColor(CurrentStatus, ButtonText, SpacesPerSide);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00087}00087         \textcolor{keywordflow}{if} (ButtonClicked)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00088}00088         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00089}00089             \textcolor{keywordflow}{if} (CurrentStatus) }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00090}00090             \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00091}00091                 EvaluationOF();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00092}00092             \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00093}00093             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00094}00094             \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00095}00095                 EvaluationON();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00096}00096             \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00097}00097             CurrentStatus = !CurrentStatus;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00098}00098         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00099}00099     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00101}00101     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} PopupWindowText(\textcolor{keywordtype}{string} Text)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00102}00102     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00103}00103         \mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}}.\mbox{\hyperlink{class_u_i_tools_windows_a34ef6176b16db256ff7d814fe03b7569}{InitNormal}}(Text);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00104}00104     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00106}00106     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} PopupErrorText(\textcolor{keywordtype}{string} Text)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00107}00107     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00108}00108         GUI.backgroundColor = Color.red;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00109}00109         \mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}}.\mbox{\hyperlink{class_u_i_tools_windows_a90f5c50af52037ed06359c991d8fcd37}{InitError}}(Text);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00110}00110         GUI.backgroundColor = Color.white;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00111}00111     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00112}00112 \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00114}\mbox{\hyperlink{class_u_i_tools_windows}{00114}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}} : EditorWindow}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00115}00115 \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00116}\mbox{\hyperlink{class_u_i_tools_windows_a3ab48f4aacd66bfc88038cbdc45a08b3}{00116}}     \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_u_i_tools_windows_a3ab48f4aacd66bfc88038cbdc45a08b3}{PopupText}};}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00117}\mbox{\hyperlink{class_u_i_tools_windows_a34ef6176b16db256ff7d814fe03b7569}{00117}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_tools_windows_a34ef6176b16db256ff7d814fe03b7569}{InitNormal}}(\textcolor{keywordtype}{string} TextToPopup)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00118}00118     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00119}00119         \textcolor{keywordflow}{if} (EditorApplication.isPlayingOrWillChangePlaymode)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00120}00120         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00121}00121             \mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}} window = ScriptableObject.CreateInstance<\mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}}>();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00122}00122             window.PopupText = TextToPopup;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00123}00123             window.position = \textcolor{keyword}{new} Rect(Screen.width / 2, Screen.height / 2, 250, 150);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00124}00124             window.ShowModal();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00125}00125         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00126}00126     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00128}\mbox{\hyperlink{class_u_i_tools_windows_a90f5c50af52037ed06359c991d8fcd37}{00128}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_i_tools_windows_a90f5c50af52037ed06359c991d8fcd37}{InitError}}(\textcolor{keywordtype}{string} TextToPopup)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00129}00129     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00130}00130         \textcolor{keywordflow}{if} (EditorApplication.isPlayingOrWillChangePlaymode)}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00131}00131         \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00132}00132             \mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}} window = ScriptableObject.CreateInstance<\mbox{\hyperlink{class_u_i_tools_windows}{UIToolsWindows}}>();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00133}00133             window.PopupText = TextToPopup;}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00134}00134             window.position = \textcolor{keyword}{new} Rect(Screen.width / 2, Screen.height / 2, 250, 150);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00135}00135             window.ShowModal();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00136}00136         \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00137}00137     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00139}00139     \textcolor{keyword}{private} \textcolor{keywordtype}{void} OnGUI()}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00140}00140     \{}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00141}00141         EditorGUILayout.LabelField(\mbox{\hyperlink{class_u_i_tools_windows_a3ab48f4aacd66bfc88038cbdc45a08b3}{PopupText}}, EditorStyles.wordWrappedLabel);}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00142}00142         \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"{}OK"{}})) this.Close();}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00143}00143     \}}
+\DoxyCodeLine{\Hypertarget{_u_i_tools_8cs_source_l00144}00144 \}}
+
+\end{DoxyCode}

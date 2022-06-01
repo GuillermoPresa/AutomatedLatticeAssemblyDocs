@@ -1,0 +1,67 @@
+\hypertarget{_serialization_elements_8cs_source}{}\doxysection{Serialization\+Elements.\+cs}
+\label{_serialization_elements_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Lattice/Importer/SerializationElements.cs@{C:/Users/Guille/LatticeAssembly/Assets/Lattice/Importer/SerializationElements.cs}}
+\mbox{\hyperlink{_serialization_elements_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00001}00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00005}\mbox{\hyperlink{namespace_serialization_elements}{00005}} \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_serialization_elements}{SerializationElements}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00007}00007     [Serializable]}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00008}\mbox{\hyperlink{class_serialization_elements_1_1_grid_position}{00008}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_serialization_elements_1_1_grid_position}{GridPosition}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00009}00009     \{}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00010}\mbox{\hyperlink{class_serialization_elements_1_1_grid_position_add81785509fa63855daaa7948c6fa96c}{00010}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_grid_position_add81785509fa63855daaa7948c6fa96c}{XGridPos}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00011}\mbox{\hyperlink{class_serialization_elements_1_1_grid_position_a279d36a2d8a23d49e34c5db295342656}{00011}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_grid_position_a279d36a2d8a23d49e34c5db295342656}{YGridPos}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00012}\mbox{\hyperlink{class_serialization_elements_1_1_grid_position_a765afd91b99516f1a36398ef3dc26d34}{00012}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_grid_position_a765afd91b99516f1a36398ef3dc26d34}{ZGridPos}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00013}\mbox{\hyperlink{class_serialization_elements_1_1_grid_position_acc868be9f53dc9e0c5d9aa788247e747}{00013}}         \textcolor{keyword}{public} Vector3 \mbox{\hyperlink{class_serialization_elements_1_1_grid_position_acc868be9f53dc9e0c5d9aa788247e747}{PositionVector}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00015}00015     \}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00016}00016     [Serializable]}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00017}\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{00017}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00018}00018     \{}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00020}\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a582ffa42f53fe1cda0e0f56611809f67}{00020}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_lattice_a582ffa42f53fe1cda0e0f56611809f67}{ID}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00021}\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a84d9c14d9508451e3d12d1c370750c28}{00021}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_serialization_elements_1_1_lattice_a84d9c14d9508451e3d12d1c370750c28}{LatticeType}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00022}\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a3a8378d7c3b6bd31ff5b2a2148d6c743}{00022}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_lattice_a3a8378d7c3b6bd31ff5b2a2148d6c743}{TimeStamp}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00023}\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a08fab7bff23893d0c60f800c70ea8441}{00023}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_serialization_elements_1_1_lattice_a08fab7bff23893d0c60f800c70ea8441}{Density}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00024}\mbox{\hyperlink{class_serialization_elements_1_1_lattice_a41c55969ce30d6347c87907dbcbcc6d5}{00024}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_serialization_elements_1_1_grid_position}{GridPosition}} \mbox{\hyperlink{class_serialization_elements_1_1_lattice_a41c55969ce30d6347c87907dbcbcc6d5}{TargetXYZGrid}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00028}00028     \textcolor{comment}{//public class RenderObject}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00029}00029     \textcolor{comment}{//\{}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00030}00030     \textcolor{comment}{//    public string ObjectName;}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00031}00031     \textcolor{comment}{//    public Mesh ObjectMesh;}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00032}00032     \textcolor{comment}{//    public Material ObjectMaterial;}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00033}00033     \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00035}00035     [Serializable]}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00036}\mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution}{00036}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution}{SerializationResolution}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00037}00037     \{}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00038}\mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution_a4547ea7fa585338f251953cd1b16d312}{00038}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution_a4547ea7fa585338f251953cd1b16d312}{ResX}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00039}\mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution_a04c90f0d9d8a1004763bd9121862b798}{00039}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution_a04c90f0d9d8a1004763bd9121862b798}{ResY}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00040}\mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution_af8913596f0571a25377f2a2cb82dd400}{00040}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution_af8913596f0571a25377f2a2cb82dd400}{ResZ}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00042}00042     \}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00043}00043     [Serializable]}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00044}\mbox{\hyperlink{class_serialization_elements_1_1_header}{00044}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_serialization_elements_1_1_header}{Header}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00045}00045     \{}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00046}\mbox{\hyperlink{class_serialization_elements_1_1_header_a08b8ae533851764864952bcfe47db677}{00046}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_serialization_elements_1_1_header_a08b8ae533851764864952bcfe47db677}{FileName}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00047}\mbox{\hyperlink{class_serialization_elements_1_1_header_a62037013094a7c0dcd2d2570616ab907}{00047}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_serialization_elements_1_1_header_a62037013094a7c0dcd2d2570616ab907}{Gridsize}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00048}\mbox{\hyperlink{class_serialization_elements_1_1_header_a1167b5b3fa5774530cb98a0b5ec2d687}{00048}}         \textcolor{keyword}{public} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_serialization_elements_1_1_header_a1167b5b3fa5774530cb98a0b5ec2d687}{ObjectType}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00049}\mbox{\hyperlink{class_serialization_elements_1_1_header_a89520fd2baa4e887cefae085ecfc993c}{00049}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_serialization_elements_1_1_serialization_resolution}{SerializationResolution}} \mbox{\hyperlink{class_serialization_elements_1_1_header_a89520fd2baa4e887cefae085ecfc993c}{Resolution}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00051}00051     [Serializable]}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00052}\mbox{\hyperlink{class_serialization_elements_1_1_object_document}{00052}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_serialization_elements_1_1_object_document}{ObjectDocument}}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00053}00053     \{}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00054}\mbox{\hyperlink{class_serialization_elements_1_1_object_document_ad431c1c265ac22934522c37891d885b3}{00054}}         \textcolor{keyword}{public} \mbox{\hyperlink{class_serialization_elements_1_1_header}{Header}} \mbox{\hyperlink{class_serialization_elements_1_1_object_document_ad431c1c265ac22934522c37891d885b3}{Header}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00055}\mbox{\hyperlink{class_serialization_elements_1_1_object_document_ae565547694e0ee88fc2e8bd844ec87f9}{00055}}         \textcolor{keyword}{public} List<Lattice> \mbox{\hyperlink{class_serialization_elements_1_1_object_document_ae565547694e0ee88fc2e8bd844ec87f9}{LatticeList}};}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00060}00060 \}}
+\DoxyCodeLine{\Hypertarget{_serialization_elements_8cs_source_l00061}00061 }
+
+\end{DoxyCode}

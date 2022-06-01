@@ -1,0 +1,326 @@
+\hypertarget{_r_t_s___camera_8cs_source}{}\doxysection{RTS\+\_\+\+Camera.\+cs}
+\label{_r_t_s___camera_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/RTS\_Camera/Scripts/RTS\_Camera.cs@{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/RTS\_Camera/Scripts/RTS\_Camera.cs}}
+\mbox{\hyperlink{_r_t_s___camera_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00001}00001 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00004}00004 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_r_t_s___cam}{RTS\_Cam}}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00005}00005 \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00006}00006     [RequireComponent(typeof(Camera))]}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00007}00007     [AddComponentMenu(\textcolor{stringliteral}{"{}RTS Camera"{}})]}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00008}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera}{00008}}     \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera}{RTS\_Camera}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00009}00009     \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00011}00011 \textcolor{preprocessor}{        \#region Foldouts}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00013}00013 \textcolor{preprocessor}{\#if UNITY\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00015}00015         \textcolor{keyword}{public} \textcolor{keywordtype}{int} lastTab = 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00017}00017         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} movementSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00018}00018         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} zoomingSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00019}00019         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} rotationSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00020}00020         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} heightSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00021}00021         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} mapLimitSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00022}00022         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} targetingSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00023}00023         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} inputSettingsFoldout;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00025}00025 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00027}00027 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00029}00029         \textcolor{keyword}{private} Transform m\_Transform; \textcolor{comment}{//camera tranform}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00030}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a1bbe82a518fc191d53de746f09bd060b}{00030}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a1bbe82a518fc191d53de746f09bd060b}{useFixedUpdate}} = \textcolor{keyword}{false}; \textcolor{comment}{//use FixedUpdate() or Update()}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00032}00032 \textcolor{preprocessor}{        \#region Movement}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00034}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a61d67fee21ec1da43654579e2d1ccf4a}{00034}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a61d67fee21ec1da43654579e2d1ccf4a}{keyboardMovementSpeed}} = 5f; \textcolor{comment}{//speed with keyboard movement}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00035}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a081f0a6b491d609afd7f31fba0b07d75}{00035}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a081f0a6b491d609afd7f31fba0b07d75}{screenEdgeMovementSpeed}} = 3f; \textcolor{comment}{//spee with screen edge movement}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00036}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ada43c39e29f87bb4813aaa715bc057a7}{00036}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ada43c39e29f87bb4813aaa715bc057a7}{followingSpeed}} = 5f; \textcolor{comment}{//speed when following a target}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00037}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a525802d1b41ae2affa450a14e72f590b}{00037}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a525802d1b41ae2affa450a14e72f590b}{rotationSped}} = 3f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00038}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_adde2a3299469ae8f9839c046f1fe4a37}{00038}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_adde2a3299469ae8f9839c046f1fe4a37}{panningSpeed}} = 10f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00039}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad4c67bf4dc6ea4a8357f6ac2b983ecf7}{00039}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad4c67bf4dc6ea4a8357f6ac2b983ecf7}{mouseRotationSpeed}} = 10f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00041}00041 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00043}00043 \textcolor{preprocessor}{        \#region Height}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00045}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a1ae4cec12fcf56ca65003e53253a0334}{00045}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a1ae4cec12fcf56ca65003e53253a0334}{autoHeight}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00046}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a65e32e49571d70d17a358c7626d98178}{00046}}         \textcolor{keyword}{public} LayerMask \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a65e32e49571d70d17a358c7626d98178}{groundMask}} = -\/1; \textcolor{comment}{//layermask of ground or other objects that affect height}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00048}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a21687f4825232303ea245cdf6cf3f794}{00048}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a21687f4825232303ea245cdf6cf3f794}{maxHeight}} = 10f; \textcolor{comment}{//maximal height}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00049}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a312566b04102b230195b58a70812293f}{00049}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a312566b04102b230195b58a70812293f}{minHeight}} = 15f; \textcolor{comment}{//minimnal height}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00050}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a5361864a4191fcb9c8a11fe2b02245b0}{00050}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a5361864a4191fcb9c8a11fe2b02245b0}{heightDampening}} = 5f; }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00051}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a20fdcb771d256d3ebaf3b300952c5d01}{00051}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a20fdcb771d256d3ebaf3b300952c5d01}{keyboardZoomingSensitivity}} = 2f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00052}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6373e41a296ad73c585a3fb7a02e6bc9}{00052}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6373e41a296ad73c585a3fb7a02e6bc9}{scrollWheelZoomingSensitivity}} = 25f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00054}00054         \textcolor{keyword}{private} \textcolor{keywordtype}{float} zoomPos = 0; \textcolor{comment}{//value in range (0, 1) used as t in Matf.Lerp}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00056}00056 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00058}00058 \textcolor{preprocessor}{        \#region MapLimits}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00060}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab1265f5a76a227dbe57827a0a52cb3b5}{00060}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab1265f5a76a227dbe57827a0a52cb3b5}{limitMap}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00061}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a576bca77cfc794a89785d24c360302f7}{00061}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a576bca77cfc794a89785d24c360302f7}{limitX}} = 50f; \textcolor{comment}{//x limit of map}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00062}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a033c1e8541e03760058d3ef214329d22}{00062}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a033c1e8541e03760058d3ef214329d22}{limitY}} = 50f; \textcolor{comment}{//z limit of map}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00064}00064 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00066}00066 \textcolor{preprocessor}{        \#region Targeting}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00068}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{00068}}         \textcolor{keyword}{public} Transform \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{targetFollow}}; \textcolor{comment}{//target to follow}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00069}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a12170472f5e143c57c3bc52e94f840c0}{00069}}         \textcolor{keyword}{public} Vector3 \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a12170472f5e143c57c3bc52e94f840c0}{targetOffset}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00074}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a16915eb2d3e4c086b2df0f3967ad045e}{00074}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a16915eb2d3e4c086b2df0f3967ad045e}{FollowingTarget}}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00075}00075         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00076}00076             \textcolor{keyword}{get}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00077}00077             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00078}00078                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{targetFollow}} != \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00079}00079             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00080}00080         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00082}00082 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00084}00084 \textcolor{preprocessor}{        \#region Input}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00086}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a9edb26f7f30c100559ed6e85abbdc48d}{00086}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a9edb26f7f30c100559ed6e85abbdc48d}{useScreenEdgeInput}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00087}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{00087}}         \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}} = 25f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00089}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab45eef6e177d43d14397643a4618c41c}{00089}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab45eef6e177d43d14397643a4618c41c}{useKeyboardInput}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00090}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a5417703ca4c2b6679e9ecd4a50ea75f3}{00090}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a5417703ca4c2b6679e9ecd4a50ea75f3}{horizontalAxis}} = \textcolor{stringliteral}{"{}Horizontal"{}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00091}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abe6ff46efbfee74d318b7af4df6a0f68}{00091}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abe6ff46efbfee74d318b7af4df6a0f68}{verticalAxis}} = \textcolor{stringliteral}{"{}Vertical"{}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00093}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a81d83ec86ce2321155d23f93b24a2e8b}{00093}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a81d83ec86ce2321155d23f93b24a2e8b}{usePanning}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00094}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_af23683be6e1ca566313db4f454bac500}{00094}}         \textcolor{keyword}{public} KeyCode \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_af23683be6e1ca566313db4f454bac500}{panningKey}} = KeyCode.Mouse2;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00096}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a50f82c98196ece3911ebef43b095bd17}{00096}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a50f82c98196ece3911ebef43b095bd17}{useKeyboardZooming}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00097}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a09fcb969f5c32edf714bac1cdb3dd2b2}{00097}}         \textcolor{keyword}{public} KeyCode \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a09fcb969f5c32edf714bac1cdb3dd2b2}{zoomInKey}} = KeyCode.E;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00098}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab2fe2fbd720bfd78ccfd86964826cd60}{00098}}         \textcolor{keyword}{public} KeyCode \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab2fe2fbd720bfd78ccfd86964826cd60}{zoomOutKey}} = KeyCode.Q;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00100}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a88315b678bc843a299c700948aef73f4}{00100}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a88315b678bc843a299c700948aef73f4}{useScrollwheelZooming}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00101}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6d59a3f75a5d4a5511f86c89f6924276}{00101}}         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6d59a3f75a5d4a5511f86c89f6924276}{zoomingAxis}} = \textcolor{stringliteral}{"{}Mouse ScrollWheel"{}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00102}00102 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00103}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6fff015c5d425fe38cd8c3f7201fd7b6}{00103}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6fff015c5d425fe38cd8c3f7201fd7b6}{useKeyboardRotation}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00104}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ac578e2167462df3cc0007494a26f1c7d}{00104}}         \textcolor{keyword}{public} KeyCode \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ac578e2167462df3cc0007494a26f1c7d}{rotateRightKey}} = KeyCode.X;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00105}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a2049ac383d0058f5e0feac48011e9fae}{00105}}         \textcolor{keyword}{public} KeyCode \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a2049ac383d0058f5e0feac48011e9fae}{rotateLeftKey}} = KeyCode.Z;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00107}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3cc9fe6128e043a14901282b0b0031e3}{00107}}         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3cc9fe6128e043a14901282b0b0031e3}{useMouseRotation}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00108}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad1fbedd7ea149a18a27197d5c669f39e}{00108}}         \textcolor{keyword}{public} KeyCode \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad1fbedd7ea149a18a27197d5c669f39e}{mouseRotationKey}} = KeyCode.Mouse1;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00110}00110         \textcolor{keyword}{private} Vector2 KeyboardInput}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00111}00111         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00112}00112             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab45eef6e177d43d14397643a4618c41c}{useKeyboardInput}} ? \textcolor{keyword}{new} Vector2(Input.GetAxis(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a5417703ca4c2b6679e9ecd4a50ea75f3}{horizontalAxis}}), Input.GetAxis(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abe6ff46efbfee74d318b7af4df6a0f68}{verticalAxis}})) : Vector2.zero; \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00113}00113         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00114}00114 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00115}00115         \textcolor{keyword}{private} Vector2 MouseInput}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00116}00116         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00117}00117             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} Input.mousePosition; \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00118}00118         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00119}00119 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00120}00120         \textcolor{keyword}{private} \textcolor{keywordtype}{float} ScrollWheel}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00121}00121         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00122}00122             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} Input.GetAxis(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6d59a3f75a5d4a5511f86c89f6924276}{zoomingAxis}}); \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00123}00123         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00125}00125         \textcolor{keyword}{private} Vector2 MouseAxis}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00126}00126         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00127}00127             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector2(Input.GetAxis(\textcolor{stringliteral}{"{}Mouse X"{}}), Input.GetAxis(\textcolor{stringliteral}{"{}Mouse Y"{}})); \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00128}00128         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00130}00130         \textcolor{keyword}{private} \textcolor{keywordtype}{int} ZoomDirection}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00131}00131         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00132}00132             \textcolor{keyword}{get}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00133}00133             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00134}00134                 \textcolor{keywordtype}{bool} zoomIn = Input.GetKey(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a09fcb969f5c32edf714bac1cdb3dd2b2}{zoomInKey}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00135}00135                 \textcolor{keywordtype}{bool} zoomOut = Input.GetKey(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab2fe2fbd720bfd78ccfd86964826cd60}{zoomOutKey}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00136}00136                 \textcolor{keywordflow}{if} (zoomIn \&\& zoomOut)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00137}00137                     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00138}00138                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!zoomIn \&\& zoomOut)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00139}00139                     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00140}00140                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (zoomIn \&\& !zoomOut)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00141}00141                     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00142}00142                 \textcolor{keywordflow}{else} }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00143}00143                     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00144}00144             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00145}00145         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00147}00147         \textcolor{keyword}{private} \textcolor{keywordtype}{int} RotationDirection}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00148}00148         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00149}00149             \textcolor{keyword}{get}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00150}00150             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00151}00151                 \textcolor{keywordtype}{bool} rotateRight = Input.GetKey(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ac578e2167462df3cc0007494a26f1c7d}{rotateRightKey}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00152}00152                 \textcolor{keywordtype}{bool} rotateLeft = Input.GetKey(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a2049ac383d0058f5e0feac48011e9fae}{rotateLeftKey}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00153}00153                 \textcolor{keywordflow}{if}(rotateLeft \&\& rotateRight)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00154}00154                     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00155}00155                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(rotateLeft \&\& !rotateRight)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00156}00156                     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00157}00157                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(!rotateLeft \&\& rotateRight)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00158}00158                     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00159}00159                 \textcolor{keywordflow}{else} }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00160}00160                     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00161}00161             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00162}00162         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00164}00164 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00166}00166 \textcolor{preprocessor}{        \#region Unity\_Methods}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00168}00168         \textcolor{keyword}{private} \textcolor{keywordtype}{void} Start()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00169}00169         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00170}00170             m\_Transform = transform;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00171}00171         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00172}00172 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00173}00173         \textcolor{keyword}{private} \textcolor{keywordtype}{void} Update()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00174}00174         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00175}00175             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a1bbe82a518fc191d53de746f09bd060b}{useFixedUpdate}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00176}00176                 CameraUpdate();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00177}00177         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00178}00178 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00179}00179         \textcolor{keyword}{private} \textcolor{keywordtype}{void} FixedUpdate()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00180}00180         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00181}00181             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a1bbe82a518fc191d53de746f09bd060b}{useFixedUpdate}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00182}00182                 CameraUpdate();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00183}00183         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00184}00184 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00185}00185 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00186}00186 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00187}00187 \textcolor{preprocessor}{        \#region RTSCamera\_Methods}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00192}00192         \textcolor{keyword}{private} \textcolor{keywordtype}{void} CameraUpdate()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00193}00193         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00194}00194             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a16915eb2d3e4c086b2df0f3967ad045e}{FollowingTarget}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00195}00195                 FollowTarget();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00196}00196             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00197}00197                 Move();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00198}00198 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00199}00199             HeightCalculation();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00200}00200             Rotation();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00201}00201             LimitPosition();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00202}00202         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00203}00203 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00207}00207         \textcolor{keyword}{private} \textcolor{keywordtype}{void} Move()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00208}00208         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00209}00209             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab45eef6e177d43d14397643a4618c41c}{useKeyboardInput}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00210}00210             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00211}00211                 Vector3 desiredMove = \textcolor{keyword}{new} Vector3(KeyboardInput.x, 0, KeyboardInput.y);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00213}00213                 desiredMove *= \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a61d67fee21ec1da43654579e2d1ccf4a}{keyboardMovementSpeed}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00214}00214                 desiredMove *= Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00215}00215                 desiredMove = Quaternion.Euler(\textcolor{keyword}{new} Vector3(0f, transform.eulerAngles.y, 0f)) * desiredMove;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00216}00216                 desiredMove = m\_Transform.InverseTransformDirection(desiredMove);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00218}00218                 m\_Transform.Translate(desiredMove, Space.Self);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00219}00219             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00220}00220 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00221}00221             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a9edb26f7f30c100559ed6e85abbdc48d}{useScreenEdgeInput}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00222}00222             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00223}00223                 Vector3 desiredMove = \textcolor{keyword}{new} Vector3();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00225}00225                 Rect leftRect = \textcolor{keyword}{new} Rect(0, 0, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}}, Screen.height);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00226}00226                 Rect rightRect = \textcolor{keyword}{new} Rect(Screen.width -\/ \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}}, 0, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}}, Screen.height);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00227}00227                 Rect upRect = \textcolor{keyword}{new} Rect(0, Screen.height -\/ \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}}, Screen.width, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00228}00228                 Rect downRect = \textcolor{keyword}{new} Rect(0, 0, Screen.width, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_abca7b6d2fb361f88ae63712b6369eba9}{screenEdgeBorder}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00229}00229 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00230}00230                 desiredMove.x = leftRect.Contains(MouseInput) ? -\/1 : rightRect.Contains(MouseInput) ? 1 : 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00231}00231                 desiredMove.z = upRect.Contains(MouseInput) ? 1 : downRect.Contains(MouseInput) ? -\/1 : 0;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00232}00232 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00233}00233                 desiredMove *= \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a081f0a6b491d609afd7f31fba0b07d75}{screenEdgeMovementSpeed}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00234}00234                 desiredMove *= Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00235}00235                 desiredMove = Quaternion.Euler(\textcolor{keyword}{new} Vector3(0f, transform.eulerAngles.y, 0f)) * desiredMove;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00236}00236                 desiredMove = m\_Transform.InverseTransformDirection(desiredMove);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00238}00238                 m\_Transform.Translate(desiredMove, Space.Self);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00239}00239             \}       }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00240}00240         }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00241}00241             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a81d83ec86ce2321155d23f93b24a2e8b}{usePanning}} \&\& Input.GetKey(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_af23683be6e1ca566313db4f454bac500}{panningKey}}) \&\& MouseAxis != Vector2.zero)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00242}00242             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00243}00243                 Vector3 desiredMove = \textcolor{keyword}{new} Vector3(-\/MouseAxis.x, 0, -\/MouseAxis.y);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00244}00244 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00245}00245                 desiredMove *= \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_adde2a3299469ae8f9839c046f1fe4a37}{panningSpeed}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00246}00246                 desiredMove *= Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00247}00247                 desiredMove = Quaternion.Euler(\textcolor{keyword}{new} Vector3(0f, transform.eulerAngles.y, 0f)) * desiredMove;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00248}00248                 desiredMove = m\_Transform.InverseTransformDirection(desiredMove);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00249}00249 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00250}00250                 m\_Transform.Translate(desiredMove, Space.Self);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00251}00251             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00252}00252         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00253}00253 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00257}00257         \textcolor{keyword}{private} \textcolor{keywordtype}{void} HeightCalculation()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00258}00258         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00259}00259             \textcolor{keywordtype}{float} distanceToGround = DistanceToGround();}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00260}00260             \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a88315b678bc843a299c700948aef73f4}{useScrollwheelZooming}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00261}00261                 zoomPos += ScrollWheel * Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6373e41a296ad73c585a3fb7a02e6bc9}{scrollWheelZoomingSensitivity}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00262}00262             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a50f82c98196ece3911ebef43b095bd17}{useKeyboardZooming}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00263}00263                 zoomPos += ZoomDirection * Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a20fdcb771d256d3ebaf3b300952c5d01}{keyboardZoomingSensitivity}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00264}00264 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00265}00265             zoomPos = Mathf.Clamp01(zoomPos);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00266}00266 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00267}00267             \textcolor{keywordtype}{float} targetHeight = Mathf.Lerp(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a312566b04102b230195b58a70812293f}{minHeight}}, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a21687f4825232303ea245cdf6cf3f794}{maxHeight}}, zoomPos);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00268}00268             \textcolor{keywordtype}{float} difference = 0; }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00269}00269 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00270}00270             \textcolor{keywordflow}{if}(distanceToGround != targetHeight)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00271}00271                 difference = targetHeight -\/ distanceToGround;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00272}00272 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00273}00273             m\_Transform.position = Vector3.Lerp(m\_Transform.position, }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00274}00274                 \textcolor{keyword}{new} Vector3(m\_Transform.position.x, targetHeight + difference, m\_Transform.position.z), Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a5361864a4191fcb9c8a11fe2b02245b0}{heightDampening}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00275}00275         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00276}00276 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00280}00280         \textcolor{keyword}{private} \textcolor{keywordtype}{void} Rotation()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00281}00281         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00282}00282             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a6fff015c5d425fe38cd8c3f7201fd7b6}{useKeyboardRotation}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00283}00283             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00284}00284                 transform.Rotate(Vector3.up, RotationDirection * Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a525802d1b41ae2affa450a14e72f590b}{rotationSped}}, Space.World);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00285}00285                 transform.Rotate(transform.right, RotationDirection * Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a525802d1b41ae2affa450a14e72f590b}{rotationSped}}, Space.World);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00286}00286             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00287}00287 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00288}00288             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3cc9fe6128e043a14901282b0b0031e3}{useMouseRotation}} \&\& Input.GetKey(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad1fbedd7ea149a18a27197d5c669f39e}{mouseRotationKey}}))}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00289}00289             \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00290}00290                 m\_Transform.Rotate(Vector3.up, -\/MouseAxis.x * Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad4c67bf4dc6ea4a8357f6ac2b983ecf7}{mouseRotationSpeed}}, Space.World);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00291}00291                 m\_Transform.Rotate(transform.right, -\/MouseAxis.y * Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ad4c67bf4dc6ea4a8357f6ac2b983ecf7}{mouseRotationSpeed}}, Space.World);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00292}00292                 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00293}00293             \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00294}00294                 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00295}00295         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00296}00296 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00300}00300         \textcolor{keyword}{private} \textcolor{keywordtype}{void} FollowTarget()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00301}00301         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00302}00302             Vector3 targetPos = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{targetFollow}}.position.x, m\_Transform.position.y, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{targetFollow}}.position.z) + \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a12170472f5e143c57c3bc52e94f840c0}{targetOffset}};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00303}00303             m\_Transform.position = Vector3.MoveTowards(m\_Transform.position, targetPos, Time.deltaTime * \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ada43c39e29f87bb4813aaa715bc057a7}{followingSpeed}});}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00304}00304         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00305}00305 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00309}00309         \textcolor{keyword}{private} \textcolor{keywordtype}{void} LimitPosition()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00310}00310         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00311}00311             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_ab1265f5a76a227dbe57827a0a52cb3b5}{limitMap}})}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00312}00312                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00313}00313                 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00314}00314             m\_Transform.position = \textcolor{keyword}{new} Vector3(Mathf.Clamp(m\_Transform.position.x, -\/\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a576bca77cfc794a89785d24c360302f7}{limitX}}, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a576bca77cfc794a89785d24c360302f7}{limitX}}),}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00315}00315                 m\_Transform.position.y,}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00316}00316                 Mathf.Clamp(m\_Transform.position.z, -\/\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a033c1e8541e03760058d3ef214329d22}{limitY}}, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a033c1e8541e03760058d3ef214329d22}{limitY}}));}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00317}00317         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00318}00318 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00323}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3bd3204a0c55b0a854725a2c9316c09e}{00323}}         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3bd3204a0c55b0a854725a2c9316c09e}{SetTarget}}(Transform target)}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00324}00324         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00325}00325             \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{targetFollow}} = target;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00326}00326         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00327}00327 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00331}\mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3df2d42e75bf076a61b36943dc7ecbd0}{00331}}         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a3df2d42e75bf076a61b36943dc7ecbd0}{ResetTarget}}()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00332}00332         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00333}00333             \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a551ec8455659be21b241750de191f729}{targetFollow}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00334}00334         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00335}00335 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00340}00340         \textcolor{keyword}{private} \textcolor{keywordtype}{float} DistanceToGround()}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00341}00341         \{}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00342}00342             Ray ray = \textcolor{keyword}{new} Ray(m\_Transform.position, Vector3.down);}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00343}00343             RaycastHit hit;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00344}00344             \textcolor{keywordflow}{if} (Physics.Raycast(ray, out hit, \mbox{\hyperlink{class_r_t_s___cam_1_1_r_t_s___camera_a65e32e49571d70d17a358c7626d98178}{groundMask}}.value))}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00345}00345                 \textcolor{keywordflow}{return} (hit.point -\/ m\_Transform.position).magnitude;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00346}00346 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00347}00347             \textcolor{keywordflow}{return} 0f;}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00348}00348         \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00349}00349 }
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00350}00350 \textcolor{preprocessor}{        \#endregion}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00351}00351     \}}
+\DoxyCodeLine{\Hypertarget{_r_t_s___camera_8cs_source_l00352}00352 \}}
+
+\end{DoxyCode}

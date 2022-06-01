@@ -1,0 +1,88 @@
+\hypertarget{_directory_reader_8cs_source}{}\doxysection{Directory\+Reader.\+cs}
+\label{_directory_reader_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/DirectoryReader.cs@{C:/Users/Guille/LatticeAssembly/Assets/Scripts/Static classes/DirectoryReader.cs}}
+\mbox{\hyperlink{_directory_reader_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00004}00004 \textcolor{keyword}{using }System.IO;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00005}00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00006}00006 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00007}00007 \textcolor{keyword}{using }\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}};}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00008}00008 \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{class }DirectoryReader}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00009}00009 \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00010}00010     \textcolor{comment}{// Start is called before the first frame update}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00011}00011     \textcolor{keyword}{public} \textcolor{keyword}{static} List<string> GetFolderNamesInDirectory(\textcolor{keywordtype}{string} DirectoryString)}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00014}00014         \textcolor{comment}{//Gets an array of the folders}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00015}00015         \textcolor{keywordtype}{string}[] dirs = Directory.GetDirectories(DirectoryString);\textcolor{comment}{//.Where(dir => dir.Contains("{}.meta"{}) is true ).ToArray();}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00017}00017         List<string> AvailableFiles = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00018}00018         }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00019}00019         \textcolor{comment}{//Loop throguth the array of folders, remove the .meta extension and add them to the available files list}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00020}00020         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} File \textcolor{keywordflow}{in} dirs)}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00021}00021         \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00023}00023             Debug.Log((\textcolor{keywordtype}{string})File);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00024}00024             \textcolor{keywordtype}{string}[] SplitFile = File.Split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00025}00025             \textcolor{keywordtype}{string} FolderName = SplitFile[SplitFile.Length -\/ 1].Replace(\textcolor{stringliteral}{"{}.meta"{}}, \textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00026}00026             AvailableFiles.Add(FolderName);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00027}00027         \}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00028}00028         \textcolor{keywordflow}{return} AvailableFiles;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00029}00029     \}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00031}00031     \textcolor{keyword}{public} \textcolor{keyword}{static} List<string> GetFileNamesInDirectory(\textcolor{keywordtype}{string} DirectoryString)}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00032}00032     \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00033}00033         \textcolor{comment}{//Get all the files in a directory, excluding the ones with .meta extension (due to the collaborate stuff)}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00034}00034         \textcolor{keywordtype}{string}[] dirs = Directory.GetFiles(DirectoryString).Where(dir => dir.Contains(\textcolor{stringliteral}{"{}.meta"{}}) is \textcolor{keyword}{false}).ToArray();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00036}00036         List<string> AvailableFiles = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00038}00038         \textcolor{comment}{//Loop throught the array of files and remove the extension to only get the names.}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00039}00039         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} File \textcolor{keywordflow}{in} dirs)}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00040}00040         \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00041}00041             Debug.Log((\textcolor{keywordtype}{string})File);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00042}00042             \textcolor{keywordtype}{string}[] SplitFile = File.Split(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}});}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00043}00043             \textcolor{keywordtype}{string} FolderName = SplitFile[SplitFile.Length -\/ 1].Split(\textcolor{stringliteral}{"{}."{}}).First();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00044}00044             AvailableFiles.Add(FolderName);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00045}00045         \}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00046}00046         \textcolor{keywordflow}{return} AvailableFiles;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00050}00050     \textcolor{keyword}{public} \textcolor{keyword}{static} List<\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}}.\mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{MeshTriplet}}> GetDentisyItemsList()}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00051}00051     \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00052}00052         \mbox{\hyperlink{class_references}{References}} ReferenceScriptReference = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_references}{References}}>();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00055}00055         List<\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}}.\mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{MeshTriplet}}> ModelDensityList = \textcolor{keyword}{new} List<\mbox{\hyperlink{namespace_density_mesh}{DensityMesh}}.\mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{MeshTriplet}}>();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00056}00056         List<string> LatticeDensityModelDirectoryList = DirectoryReader.GetFileNamesInDirectory(ReferenceScriptReference.\mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{LatticePath}} +\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}}+(\textcolor{keywordtype}{string})ReferenceScriptReference.\mbox{\hyperlink{class_references_adcf0c08a0ba71fde0f840afd994c568a}{latticeTypeList}}[ReferenceScriptReference.\mbox{\hyperlink{class_references_a8221734b03b76f3baa2422726b8e3ffc}{LatticeTypeIndex}}]);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00057}00057         }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00058}00058         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} LatticeDensityName \textcolor{keywordflow}{in} LatticeDensityModelDirectoryList)}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00059}00059         \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00060}00060             Int32.TryParse(LatticeDensityName.Split(\textcolor{stringliteral}{"{}D("{}}).Last().Split(\textcolor{stringliteral}{"{})"{}}).First(), out \textcolor{keywordtype}{int} Density);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00061}00061             \textcolor{keywordtype}{string} MeshDirectoryPath = (string)System.IO.Directory.GetCurrentDirectory() + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)Assets\(\backslash\)\(\backslash\)Resources\(\backslash\)\(\backslash\)Lattice\(\backslash\)\(\backslash\)"{}} + (string)ReferenceScriptReference.\mbox{\hyperlink{class_references_adcf0c08a0ba71fde0f840afd994c568a}{latticeTypeList}}[ReferenceScriptReference.\mbox{\hyperlink{class_references_a8221734b03b76f3baa2422726b8e3ffc}{LatticeTypeIndex}}] + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + LatticeDensityName;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00062}00062             MeshDirectoryPath = \textcolor{stringliteral}{"{}Lattice\(\backslash\)\(\backslash\)"{}} + (\textcolor{keywordtype}{string})ReferenceScriptReference.\mbox{\hyperlink{class_references_adcf0c08a0ba71fde0f840afd994c568a}{latticeTypeList}}[ReferenceScriptReference.\mbox{\hyperlink{class_references_a8221734b03b76f3baa2422726b8e3ffc}{LatticeTypeIndex}}] + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + LatticeDensityName.Split(\textcolor{stringliteral}{"{}.obj"{}}).First();}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00063}00063             var obj = Resources.Load<GameObject>(MeshDirectoryPath);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00064}00064             var childObj = obj.transform.GetChild(0);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00065}00065             var mesh = childObj.GetComponent<MeshFilter>().sharedMesh;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00067}00067             \mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{DensityMesh.MeshTriplet}} MyMesh = \textcolor{keyword}{new} \mbox{\hyperlink{class_density_mesh_1_1_mesh_triplet}{DensityMesh.MeshTriplet}}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00068}00068             \{}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00069}00069                 Density = Density,}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00070}00070                 Model = mesh,}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00071}00071             \};}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00072}00072             ModelDensityList.Add(MyMesh);}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00074}00074         \}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00076}00076         \textcolor{keywordflow}{return} ModelDensityList;}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00079}00079     \}}
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_directory_reader_8cs_source_l00082}00082 \}}
+
+\end{DoxyCode}

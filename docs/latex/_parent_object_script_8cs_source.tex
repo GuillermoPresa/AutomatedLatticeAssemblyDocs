@@ -1,0 +1,131 @@
+\hypertarget{_parent_object_script_8cs_source}{}\doxysection{Parent\+Object\+Script.\+cs}
+\label{_parent_object_script_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Tools/ParentObjectScript.cs@{C:/Users/Guille/LatticeAssembly/Assets/Tools/ParentObjectScript.cs}}
+\mbox{\hyperlink{_parent_object_script_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00003}00003 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00004}00004 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00005}00005 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00006}00006 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00007}00007 \textcolor{keyword}{using }System.IO;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00028}\mbox{\hyperlink{class_parent_object_script}{00028}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_parent_object_script}{ParentObjectScript}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00030}00030     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00031}\mbox{\hyperlink{class_parent_object_script_ab6ee8d484c37e9e3bf7b9e6c1ef31dbb}{00031}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_selection_script}{SelectionScript}} \mbox{\hyperlink{class_parent_object_script_ab6ee8d484c37e9e3bf7b9e6c1ef31dbb}{SelectionScriptReference}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00032}00032     [HideInInspector]}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00033}\mbox{\hyperlink{class_parent_object_script_ad3c09eab4f1499dac156fe38aee49e0d}{00033}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_parent_object_script_ad3c09eab4f1499dac156fe38aee49e0d}{GlobalManager}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00035}\mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{00035}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_lattice_collection}{LatticeCollection}} \mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{ObjectCollection}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_lattice_collection}{LatticeCollection}}();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00037}\mbox{\hyperlink{class_parent_object_script_a299939ecd1800048a88725d7c21c41cb}{00037}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_parent_object_script_a299939ecd1800048a88725d7c21c41cb}{GlobalParent}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00039}\mbox{\hyperlink{class_parent_object_script_aa6a83162350f53e29b3e627e03627683}{00039}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_parent_object_script_aa6a83162350f53e29b3e627e03627683}{MeshFilter}} \mbox{\hyperlink{class_parent_object_script_aa6a83162350f53e29b3e627e03627683}{MeshFilter}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00040}\mbox{\hyperlink{class_parent_object_script_a4b5c2a2be46aa5596ee768348e0a4792}{00040}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_parent_object_script_a4b5c2a2be46aa5596ee768348e0a4792}{MeshRenderer}} \mbox{\hyperlink{class_parent_object_script_a4b5c2a2be46aa5596ee768348e0a4792}{MeshRenderer}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00041}\mbox{\hyperlink{class_parent_object_script_a21cd07f974e7c56475a920a7664f3661}{00041}}     \textcolor{keyword}{public} \mbox{\hyperlink{class_parent_object_script_a21cd07f974e7c56475a920a7664f3661}{MeshCollider}} \mbox{\hyperlink{class_parent_object_script_a21cd07f974e7c56475a920a7664f3661}{MeshCollider}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00043}\mbox{\hyperlink{class_parent_object_script_adf72b93e7ef1f491c41e82c772e1e764}{00043}}     \textcolor{keyword}{public} Mesh \mbox{\hyperlink{class_parent_object_script_adf72b93e7ef1f491c41e82c772e1e764}{ObjectMesh}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00046}00046     \textcolor{comment}{// Start is called before the first frame update}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00047}00047     \textcolor{keywordtype}{void} Start()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00048}00048     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00049}00049         \mbox{\hyperlink{class_parent_object_script_ab6ee8d484c37e9e3bf7b9e6c1ef31dbb}{SelectionScriptReference}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}}).GetComponent<\mbox{\hyperlink{class_selection_script}{SelectionScript}}>();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00050}00050         \mbox{\hyperlink{class_parent_object_script_ad3c09eab4f1499dac156fe38aee49e0d}{GlobalManager}} = GameObject.Find(\textcolor{stringliteral}{"{}GlobalManager"{}});}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00052}00052         \textcolor{keywordtype}{string} DirectoryString = \textcolor{stringliteral}{"{}Assets\(\backslash\)\(\backslash\)Objects\(\backslash\)\(\backslash\)"{}} + this.name + \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}} + this.name + \textcolor{stringliteral}{"{}Mesh.asset"{}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00053}00053         Debug.Log(File.Exists(DirectoryString));}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00054}00054         \mbox{\hyperlink{class_parent_object_script_adf72b93e7ef1f491c41e82c772e1e764}{ObjectMesh}} = (Mesh)AssetDatabase.LoadAssetAtPath(DirectoryString, typeof(Mesh));}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00056}00056         MeshFilter.sharedMesh = \mbox{\hyperlink{class_parent_object_script_adf72b93e7ef1f491c41e82c772e1e764}{ObjectMesh}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00057}00057         MeshCollider.sharedMesh = \mbox{\hyperlink{class_parent_object_script_adf72b93e7ef1f491c41e82c772e1e764}{ObjectMesh}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00059}00059         \textcolor{comment}{//ObjectCollection = new LatticeCollection(transform.gameObject);}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00061}00061         \mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{ObjectCollection}}.\mbox{\hyperlink{class_lattice_collection_af4cc6751f352c184cc6e24a223055a6e}{SetParent}}(transform.gameObject);}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00062}00062         \mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{ObjectCollection}}.\mbox{\hyperlink{class_lattice_collection_a33f2c72139145b522070e34e24e9bd98}{RebuildFromScratch}}();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00066}\mbox{\hyperlink{class_parent_object_script_ae39b25c3ae0a8bbfabae1e74654df562}{00066}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_parent_object_script_ae39b25c3ae0a8bbfabae1e74654df562}{ForceTimeStep}}()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00067}00067     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00068}00068         \mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{ObjectCollection}}.\mbox{\hyperlink{class_lattice_collection_a33f2c72139145b522070e34e24e9bd98}{RebuildFromScratch}}();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00070}00070         \textcolor{keywordflow}{foreach} (GameObject UnplacedLattice \textcolor{keywordflow}{in} \mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{ObjectCollection}}.\mbox{\hyperlink{class_lattice_collection_ad9232b2c85255f99fb253589d984f254}{UnplacedLatticeList}})}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00071}00071         \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00072}00072             UnplacedLattice.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().UnplaceLattice();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00073}00073             \textcolor{comment}{//UnplacedLattice.GetComponent<LatticeClass>().Placed = false;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00074}00074         \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00076}00076         \textcolor{keywordflow}{foreach} (GameObject PlacedLattice \textcolor{keywordflow}{in} \mbox{\hyperlink{class_parent_object_script_a6860a2656ad85ba2157bfb7bdb3799ba}{ObjectCollection}}.\mbox{\hyperlink{class_lattice_collection_a421dec4d463539a17c0d0131ba6312a3}{PlacedLatticeList}})}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00077}00077         \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00078}00078             PlacedLattice.GetComponent<\mbox{\hyperlink{class_lattice_class}{LatticeClass}}>().PlaceLattice();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00079}00079             \textcolor{comment}{//PlacedLattice.GetComponent<LatticeClass>().Placed = true;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00080}00080         \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00084}\mbox{\hyperlink{class_parent_object_script_a4070760f0f0ea6ec4b16c6ec10163456}{00084}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_parent_object_script_a4070760f0f0ea6ec4b16c6ec10163456}{UpdateLatticesVisibility}}()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00085}00085     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00088}00088         \textcolor{comment}{//GameObject NextLattice;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00089}00089         \textcolor{comment}{//foreach (GameObject Lattice in GlobalManager.GetComponent<References>().globalLatticeList)}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00090}00090         \textcolor{comment}{//\{}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00091}00091         \textcolor{comment}{//    if (Lattice.GetComponent<LatticeClass>().TimeStamp == GlobalManager.GetComponent<TimeManager>().TimeStep)}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00092}00092         \textcolor{comment}{//    \{}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00093}00093         \textcolor{comment}{//        Lattice.SetActive(true);}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00094}00094         \textcolor{comment}{//        NextLattice = Lattice;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00095}00095         \textcolor{comment}{//        GlobalManager.GetComponent<References>().LatticeHighlighter.SetActive(true);}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00096}00096         \textcolor{comment}{//        GlobalManager.GetComponent<References>().LatticeHighlighter.transform.position = new Vector3(Lattice.transform.position.x, Lattice.transform.position.y, Lattice.transform.position.z);}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00097}00097         \textcolor{comment}{//    \}}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00098}00098         \textcolor{comment}{//    else if (Lattice.GetComponent<LatticeClass>().TimeStamp > GlobalManager.GetComponent<TimeManager>().TimeStep)}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00099}00099         \textcolor{comment}{//    \{}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00100}00100         \textcolor{comment}{//        Lattice.SetActive(false);}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00101}00101         \textcolor{comment}{//    \}}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00102}00102         \textcolor{comment}{//    else}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00103}00103         \textcolor{comment}{//    \{}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00104}00104         \textcolor{comment}{//        Lattice.SetActive(true);}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00105}00105         \textcolor{comment}{//    \}}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00106}00106         \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00109}00109     \textcolor{comment}{// Update is called once per frame}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00110}00110     \textcolor{keywordtype}{void} Update()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00111}00111     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00112}00112         \mbox{\hyperlink{class_parent_object_script_a4070760f0f0ea6ec4b16c6ec10163456}{UpdateLatticesVisibility}}();}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00113}00113         MeshCollider.enabled = \mbox{\hyperlink{class_parent_object_script_ab6ee8d484c37e9e3bf7b9e6c1ef31dbb}{SelectionScriptReference}}.\mbox{\hyperlink{class_selection_script_a677586ac56980111840b0f3855bdb65d}{SelectingObject}};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00114}00114         }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00115}00115     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00117}00117     \textcolor{keywordtype}{void} OnMouseEnter()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00118}00118     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00119}00119         MeshRenderer.enabled = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00120}00120         MeshRenderer.material.color = Color.red;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00121}00121         \textcolor{comment}{//SelectionScript.HoverLattice = Lattice;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00122}00122     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00123}00123 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00124}00124     \textcolor{keywordtype}{void} OnMouseDown()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00125}00125     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00126}00126         MeshRenderer.enabled = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00127}00127         MeshRenderer.material.color = Color.green;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00128}00128         SelectionScriptReference.SelectedObject =  this.gameObject;}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00129}00129         SelectionScriptReference.SelectingObject = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00130}00130     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00131}00131     \textcolor{keywordtype}{void} OnMouseExit()}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00132}00132     \{}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00133}00133         MeshRenderer.enabled = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00134}00134         \textcolor{comment}{//MeshRenderer.material = DefaultRenderMaterial;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00135}00135         \textcolor{comment}{//SelectionScript.SelectedLattice = null;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00136}00136         \textcolor{comment}{//SelectionScript.HoverLattice = null;}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00137}00137     \}}
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00138}00138 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00139}00139 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00140}00140 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00141}00141 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00142}00142 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{_parent_object_script_8cs_source_l00144}00144 \}}
+
+\end{DoxyCode}

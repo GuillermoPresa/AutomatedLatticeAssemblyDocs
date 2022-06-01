@@ -1,0 +1,76 @@
+\hypertarget{_movement_script_8cs_source}{}\doxysection{Movement\+Script.\+cs}
+\label{_movement_script_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Robot/SimpleRobot1/MovementScript.cs@{C:/Users/Guille/LatticeAssembly/Assets/Robot/SimpleRobot1/MovementScript.cs}}
+\mbox{\hyperlink{_movement_script_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00004}00004 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00005}00005 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00007}00007 \textcolor{comment}{//using MovementAndSensorDefinition;}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00009}\mbox{\hyperlink{class_movement_script}{00009}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_movement_script}{MovementScript}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00010}00010 \{}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00011}00011     \textcolor{comment}{//public SensorNode MovementSensor;}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00013}00013     \textcolor{comment}{//Fields so data can be input in the movement sensor from the inspector}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00014}00014     \textcolor{comment}{//Gameobject fields}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00015}\mbox{\hyperlink{class_movement_script_abae699e1409adcc8024a91a2a3d312da}{00015}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_movement_script_abae699e1409adcc8024a91a2a3d312da}{Node}};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00016}\mbox{\hyperlink{class_movement_script_ae4cc6065ebda8b42a801e4315869e644}{00016}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_movement_script_ae4cc6065ebda8b42a801e4315869e644}{ClearArea}};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00017}\mbox{\hyperlink{class_movement_script_ace3f8925b7cc57bf50055db80da2bbb7}{00017}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_movement_script_ace3f8925b7cc57bf50055db80da2bbb7}{Robot}};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00019}00019     \textcolor{comment}{//Movement parameters input}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00020}\mbox{\hyperlink{class_movement_script_aa9410b15c5593becd0c1dc687d09663d}{00020}}     \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_movement_script_aa9410b15c5593becd0c1dc687d09663d}{MovementName}};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00021}\mbox{\hyperlink{class_movement_script_a052b20632051b67aaa41d758840ae8d4}{00021}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_movement_script_a052b20632051b67aaa41d758840ae8d4}{MovementTimeCost}} = 1;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00022}\mbox{\hyperlink{class_movement_script_ac1e508695a41eb80f44d528e66e367a9}{00022}}     \textcolor{keyword}{public} \textcolor{keywordtype}{float} \mbox{\hyperlink{class_movement_script_ac1e508695a41eb80f44d528e66e367a9}{MovementEnergyCost}} = 1;}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00024}00024     \textcolor{comment}{//Internal check parameters}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00025}\mbox{\hyperlink{class_movement_script_a139d0992f897e579930d5e85a61c7a01}{00025}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_movement_script_a139d0992f897e579930d5e85a61c7a01}{MovementLegal}};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00026}\mbox{\hyperlink{class_movement_script_a9e05d9f5bd8c9017cd6f787936d7cec5}{00026}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_movement_script_a9e05d9f5bd8c9017cd6f787936d7cec5}{FreeNodeAvailable}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00030}00030     \textcolor{comment}{// Start is called before the first frame update}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00031}00031     \textcolor{keywordtype}{void} Start()}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00032}00032     \{   }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00036}\mbox{\hyperlink{class_movement_script_aa9e6f0a3197567f5645e367c6b9a2367}{00036}}     \textcolor{keyword}{public} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_movement_script_aa9e6f0a3197567f5645e367c6b9a2367}{CheckMovementLegal}}()}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00037}00037     \{}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00038}00038         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_movement_script_abae699e1409adcc8024a91a2a3d312da}{Node}}.GetComponent<\mbox{\hyperlink{class_node_sensor_script}{NodeSensorScript}}>().\mbox{\hyperlink{class_node_sensor_script_a8977aca46b2af5a5cd7c7218c607e2ed}{CheckSensorNodeConnectionAvailability}}())}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00039}00039         \{}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00040}00040             \textcolor{comment}{//if (ClearArea) \{ \}}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00041}00041             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00042}00042         \}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00043}00043         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00046}\mbox{\hyperlink{class_movement_script_ae4726b52e200bf0382dd077b90e079ef}{00046}}     \textcolor{keyword}{public} GameObject \mbox{\hyperlink{class_movement_script_ae4726b52e200bf0382dd077b90e079ef}{ReturnCollidingNode}}()}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00047}00047     \{}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00048}00048         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_movement_script_abae699e1409adcc8024a91a2a3d312da}{Node}}.GetComponent<\mbox{\hyperlink{class_node_sensor_script}{NodeSensorScript}}>().\mbox{\hyperlink{class_movement_script_ae4726b52e200bf0382dd077b90e079ef}{ReturnCollidingNode}}();}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00049}00049     \}    }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00051}00051     \textcolor{comment}{//public GameObject ReturnMovementNode()}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00052}00052     \textcolor{comment}{//\{}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00054}00054     \textcolor{comment}{//\}}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00056}00056     \textcolor{comment}{// Update is called once per frame}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00058}\mbox{\hyperlink{class_movement_script_ae2fd2ab0d1b8f150911bae1f448a90a2}{00058}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_movement_script_ae2fd2ab0d1b8f150911bae1f448a90a2}{PerformMovement}}()}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00059}00059     \{}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00060}00060         Vector3 MovementDescription = \textcolor{keyword}{new} Vector3((\textcolor{keywordtype}{float})0.1, 0, 0);}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00061}00061         Robot.transform.position = transform.position -\/ (\mbox{\hyperlink{class_movement_script_ace3f8925b7cc57bf50055db80da2bbb7}{Robot}}.GetComponent<\mbox{\hyperlink{class_robot_script}{RobotScript}}>().CurrentNodeSensor.transform.position -\/ \mbox{\hyperlink{class_movement_script_ace3f8925b7cc57bf50055db80da2bbb7}{Robot}}.transform.position);}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00064}00064     \textcolor{keywordtype}{void} Update()}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00065}00065     \{}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{_movement_script_8cs_source_l00070}00070 \}}
+
+\end{DoxyCode}

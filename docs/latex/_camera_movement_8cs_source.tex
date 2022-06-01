@@ -1,0 +1,95 @@
+\hypertarget{_camera_movement_8cs_source}{}\doxysection{Camera\+Movement.\+cs}
+\label{_camera_movement_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/CameraMovement.cs@{C:/Users/Guille/LatticeAssembly/Assets/CameraMovement.cs}}
+\mbox{\hyperlink{_camera_movement_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00001}00001 \textcolor{keyword}{using }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00005}\mbox{\hyperlink{class_camera_movement}{00005}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_camera_movement}{CameraMovement}} : MonoBehaviour}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00007}00007     \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00008}00008 \textcolor{comment}{        Writen by Windexglow 11-\/13-\/10.  Use it, edit it, steal it I don't care.  }}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00009}00009 \textcolor{comment}{        Converted to C\# 27-\/02-\/13 -\/ no credit wanted.}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00010}00010 \textcolor{comment}{        Simple flycam I made, since I couldn't find any others made public.  }}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00011}00011 \textcolor{comment}{        Made simple to use (drag and drop, done) for regular keyboard layout  }}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00012}00012 \textcolor{comment}{        wasd : basic movement}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00013}00013 \textcolor{comment}{        shift : Makes camera accelerate}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00014}00014 \textcolor{comment}{        space : Moves camera on X and Z axis only.  So camera doesn't gain any height*/}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00017}00017     \textcolor{keywordtype}{float} mainSpeed = 100.0f; \textcolor{comment}{//regular speed}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00018}00018     \textcolor{keywordtype}{float} shiftAdd = 250.0f; \textcolor{comment}{//multiplied by how long shift is held.  Basically running}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00019}00019     \textcolor{keywordtype}{float} maxShift = 1000.0f; \textcolor{comment}{//Maximum speed when holdin gshift}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00020}00020     \textcolor{keywordtype}{float} camSens = 0.25f; \textcolor{comment}{//How sensitive it with mouse}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00021}00021     \textcolor{keyword}{private} Vector3 lastMouse = \textcolor{keyword}{new} Vector3(255, 255, 255); \textcolor{comment}{//kind of in the middle of the screen, rather than at the top (play)}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00022}00022     \textcolor{keyword}{private} \textcolor{keywordtype}{float} totalRun = 1.0f;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00024}00024     \textcolor{keywordtype}{void} Update()}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00025}00025     \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00026}00026         lastMouse = Input.mousePosition -\/ lastMouse;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00027}00027         lastMouse = \textcolor{keyword}{new} Vector3(-\/lastMouse.y * camSens, lastMouse.x * camSens, 0);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00028}00028         lastMouse = \textcolor{keyword}{new} Vector3(transform.eulerAngles.x + lastMouse.x, transform.eulerAngles.y + lastMouse.y, 0);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00029}00029         transform.eulerAngles = lastMouse;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00030}00030         lastMouse = Input.mousePosition;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00031}00031         \textcolor{comment}{//Mouse  camera angle done.  }}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00033}00033         \textcolor{comment}{//Keyboard commands}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00034}00034         \textcolor{keywordtype}{float} f = 0.0f;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00035}00035         Vector3 p = GetBaseInput();}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00036}00036         \textcolor{keywordflow}{if} (p.sqrMagnitude > 0)}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00037}00037         \{ \textcolor{comment}{// only move while a direction key is pressed}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00038}00038             \textcolor{keywordflow}{if} (Input.GetKey(KeyCode.LeftShift))}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00039}00039             \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00040}00040                 totalRun += Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00041}00041                 p = p * totalRun * shiftAdd;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00042}00042                 p.x = Mathf.Clamp(p.x, -\/maxShift, maxShift);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00043}00043                 p.y = Mathf.Clamp(p.y, -\/maxShift, maxShift);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00044}00044                 p.z = Mathf.Clamp(p.z, -\/maxShift, maxShift);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00045}00045             \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00046}00046             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00047}00047             \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00048}00048                 totalRun = Mathf.Clamp(totalRun * 0.5f, 1f, 1000f);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00049}00049                 p = p * mainSpeed;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00050}00050             \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00052}00052             p = p * Time.deltaTime;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00053}00053             Vector3 newPosition = transform.position;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00054}00054             \textcolor{keywordflow}{if} (Input.GetKey(KeyCode.Space))}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00055}00055             \{ \textcolor{comment}{//If player wants to move on X and Z axis only}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00056}00056                 transform.Translate(p);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00057}00057                 newPosition.x = transform.position.x;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00058}00058                 newPosition.z = transform.position.z;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00059}00059                 transform.position = newPosition;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00060}00060             \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00061}00061             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00062}00062             \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00063}00063                 transform.Translate(p);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00064}00064             \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00065}00065         \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00066}00066     \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00068}00068     \textcolor{keyword}{private} Vector3 GetBaseInput()}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00069}00069     \{ \textcolor{comment}{//returns the basic values, if it's 0 than it's not active.}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00070}00070         Vector3 p\_Velocity = \textcolor{keyword}{new} Vector3();}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00071}00071         \textcolor{keywordflow}{if} (Input.GetKey(KeyCode.W))}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00072}00072         \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00073}00073             p\_Velocity += \textcolor{keyword}{new} Vector3(0, 0, 1);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00074}00074         \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00075}00075         \textcolor{keywordflow}{if} (Input.GetKey(KeyCode.S))}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00076}00076         \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00077}00077             p\_Velocity += \textcolor{keyword}{new} Vector3(0, 0, -\/1);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00078}00078         \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00079}00079         \textcolor{keywordflow}{if} (Input.GetKey(KeyCode.A))}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00080}00080         \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00081}00081             p\_Velocity += \textcolor{keyword}{new} Vector3(-\/1, 0, 0);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00082}00082         \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00083}00083         \textcolor{keywordflow}{if} (Input.GetKey(KeyCode.D))}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00084}00084         \{}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00085}00085             p\_Velocity += \textcolor{keyword}{new} Vector3(1, 0, 0);}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00086}00086         \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00087}00087         \textcolor{keywordflow}{return} p\_Velocity;}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00088}00088     \}}
+\DoxyCodeLine{\Hypertarget{_camera_movement_8cs_source_l00089}00089 \}}
+
+\end{DoxyCode}

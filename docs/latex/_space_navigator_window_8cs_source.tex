@@ -1,0 +1,54 @@
+\hypertarget{_space_navigator_window_8cs_source}{}\doxysection{Space\+Navigator\+Window.\+cs}
+\label{_space_navigator_window_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Editor/SpaceNavigatorWindow.cs@{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Editor/SpaceNavigatorWindow.cs}}
+\mbox{\hyperlink{_space_navigator_window_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00001}00001 \textcolor{preprocessor}{\#if UNITY\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00002}00002 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00005}00005 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_space_navigator_driver}{SpaceNavigatorDriver}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00007}00007     [Serializable]}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00008}00008     \textcolor{keyword}{public} \textcolor{keyword}{class }SpaceNavigatorWindow : EditorWindow, IDisposable \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00013}00013         [MenuItem(\textcolor{stringliteral}{"{}Window/SpaceNavigator \&s"{}})]}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00014}00014         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} Init() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00015}00015             SpaceNavigatorWindow window = GetWindow(typeof(SpaceNavigatorWindow)) as SpaceNavigatorWindow;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00017}00017             \textcolor{keywordflow}{if} (window) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00018}00018                 window.Show();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00019}00019             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00020}00020         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00022}00022         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} OnDisable() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00023}00023             \textcolor{comment}{// Write settings to PlayerPrefs when EditorWindow is closed.}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00024}00024             Settings.Write();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00027}00027         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} OnDestroy() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00028}00028             \textcolor{comment}{// Write settings to PlayerPrefs when EditorWindow is closed.}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00029}00029             Settings.Write();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00032}00032         \textcolor{comment}{// This does not get called, unfortunately...}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00033}00033         \textcolor{keyword}{public} \textcolor{keywordtype}{void} OnApplicationQuit() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00034}00034             ViewportController.OnApplicationQuit();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00037}00037         \textcolor{keyword}{public} \textcolor{keywordtype}{void} OnSelectionChange() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00038}00038             ViewportController.StoreSelectionTransforms();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00039}00039         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00041}00041         \textcolor{keyword}{public} \textcolor{keywordtype}{void} OnGUI() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00042}00042             Settings.OnGUI();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00043}00043         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00045}00045         \textcolor{keyword}{public} \textcolor{keywordtype}{void} Dispose() \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00046}00046             \textcolor{comment}{// Write settings to PlayerPrefs when EditorWindow is closed.}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00047}00047             Settings.Write();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00048}00048         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00049}00049     \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_window_8cs_source_l00051}00051 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

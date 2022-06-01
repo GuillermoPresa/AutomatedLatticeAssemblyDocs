@@ -1,0 +1,60 @@
+\hypertarget{_space_navigator_8cs_source}{}\doxysection{Space\+Navigator.\+cs}
+\label{_space_navigator_8cs_source}\index{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Plugins/SpaceNavigator.cs@{C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/SpaceNavigator/Plugins/SpaceNavigator.cs}}
+\mbox{\hyperlink{_space_navigator_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00001}00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00002}00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00003}00003 \textcolor{keyword}{using }UnityEngine;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00004}00004 \textcolor{preprocessor}{\#if UNITY\_EDITOR}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00005}00005 \textcolor{keyword}{using }UnityEditor;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00006}00006 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00008}00008 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespace_space_navigator_driver}{SpaceNavigatorDriver}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00010}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator}{00010}}     \textcolor{keyword}{public} \textcolor{keyword}{abstract} \textcolor{keyword}{class }\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator}{SpaceNavigator}} : IDisposable \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00011}00011         \textcolor{comment}{// Public runtime API}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00012}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a3711bf3e339a39496db3ebfb5fe15dac}{00012}}         \textcolor{keyword}{public} \textcolor{keyword}{static} Vector3 \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a3711bf3e339a39496db3ebfb5fe15dac}{Translation}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00013}00013             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a8807708c151a7224e862ff36554be20a}{Instance}}.\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_ad7af9dac7e11cc2c6c92c453dedb3f52}{GetTranslation}}(); \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00014}00014         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00015}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a75a315330fdfbbdee8c3105abd765ee7}{00015}}         \textcolor{keyword}{public} \textcolor{keyword}{static} Quaternion \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a75a315330fdfbbdee8c3105abd765ee7}{Rotation}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00016}00016             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a8807708c151a7224e862ff36554be20a}{Instance}}.\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a023a05a87025974560d555d2415049b2}{GetRotation}}(); \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00017}00017         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00018}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_af73715326ff0c4bdba0bfc6541749d0e}{00018}}         \textcolor{keyword}{public} \textcolor{keyword}{static} Quaternion \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_af73715326ff0c4bdba0bfc6541749d0e}{RotationInLocalCoordSys}}(Transform coordSys) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00019}00019             \textcolor{keywordflow}{return} coordSys.rotation * \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a75a315330fdfbbdee8c3105abd765ee7}{Rotation}} * Quaternion.Inverse(coordSys.rotation);}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00020}00020         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00021}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_af9dc16bdd028748d18aae9c535f91dc3}{00021}}         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_af9dc16bdd028748d18aae9c535f91dc3}{SetTranslationSensitivity}}(\textcolor{keywordtype}{float} newPlayTransSens) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00022}00022             Settings.PlayTransSens = newPlayTransSens;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00023}00023         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00024}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a94675cff4f0437ce6748ff4085d7009b}{00024}}         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a94675cff4f0437ce6748ff4085d7009b}{SetRotationSensitivity}}(\textcolor{keywordtype}{float} newPlayRotSens) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00025}00025             Settings.PlayRotSens = newPlayRotSens;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00026}00026         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00028}00028         \textcolor{comment}{// Abstract members}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00029}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_ad7af9dac7e11cc2c6c92c453dedb3f52}{00029}}         \textcolor{keyword}{public} \textcolor{keyword}{abstract} Vector3 \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_ad7af9dac7e11cc2c6c92c453dedb3f52}{GetTranslation}}();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00030}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a023a05a87025974560d555d2415049b2}{00030}}         \textcolor{keyword}{public} \textcolor{keyword}{abstract} Quaternion \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a023a05a87025974560d555d2415049b2}{GetRotation}}();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00032}00032 \textcolor{preprocessor}{        \#region -\/ Singleton -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00033}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a8807708c151a7224e862ff36554be20a}{00033}}         \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator}{SpaceNavigator}} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a8807708c151a7224e862ff36554be20a}{Instance}} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00034}00034             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00035}00035                 \textcolor{keywordflow}{if} (\_instance == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00036}00036 \textcolor{preprocessor}{\#if UNITY\_EDITOR\_WIN || UNITY\_STANDALONE\_WIN}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00037}00037                     \_instance = SpaceNavigatorWindows.SubInstance;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00038}00038 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00039}00039 \textcolor{preprocessor}{\#if UNITY\_EDITOR\_OSX || UNITY\_STANDALONE\_OSX}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00040}00040                 \_instance = SpaceNavigatorMac.SubInstance;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00041}00041 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00042}00042                 \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00043}00043                 \textcolor{keywordflow}{return} \_instance;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00044}00044             \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00045}00045             \textcolor{keyword}{set} \{ \_instance = value; \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00046}00046         \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00047}00047         \textcolor{keyword}{private} \textcolor{keyword}{static} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator}{SpaceNavigator}} \_instance;}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00048}00048 \textcolor{preprocessor}{        \#endregion -\/ Singleton -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00050}00050 \textcolor{preprocessor}{        \#region -\/ IDisposable -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00051}\mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a4193624a37cc16037dc3a001f5fa7ced}{00051}}         \textcolor{keyword}{public} \textcolor{keyword}{abstract} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_space_navigator_driver_1_1_space_navigator_a4193624a37cc16037dc3a001f5fa7ced}{Dispose}}();}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00052}00052 \textcolor{preprocessor}{        \#endregion -\/ IDisposable -\/}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{_space_navigator_8cs_source_l00054}00054 \}}
+
+\end{DoxyCode}
