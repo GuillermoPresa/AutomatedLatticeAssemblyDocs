@@ -1,0 +1,292 @@
+\hypertarget{class_lattice_class}{}\doxysection{Lattice\+Class Class Reference}
+\label{class_lattice_class}\index{LatticeClass@{LatticeClass}}
+Inheritance diagram for Lattice\+Class\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_lattice_class}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lattice_class_a8e4f9c626c700d9cb45c8af6b0e69208}{Update\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{class_lattice_class_a4a9dc8a6035eca3a9b87eabcdc3de6eb}{Place\+Lattice}} ()
+\item 
+void \mbox{\hyperlink{class_lattice_class_a8d6aed807b205bde9fced593106249ac}{Unplace\+Lattice}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_lattice_class_af16987b7c3ecb713d968b6d50a5ac627}{Parent}}
+\item 
+\mbox{\hyperlink{class_parent_object_script}{Parent\+Object\+Script}} \mbox{\hyperlink{class_lattice_class_a137591f1d1de10871e4e8ca6b62020c7}{Parent\+Script}}
+\item 
+Game\+Object \mbox{\hyperlink{class_lattice_class_a3868410548b80e54a533e83111d9543c}{Lattice}}
+\item 
+Renderer \mbox{\hyperlink{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}{Renderer}}
+\item 
+List$<$ \mbox{\hyperlink{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}{Renderer}} $>$ \mbox{\hyperlink{class_lattice_class_a972301fecbec55330982ab9a8eb82ddd}{Cube\+Renderers}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_lattice_class_af02928e1ba8ef5bee22fc00606aa1a9f}{Node\+List}} = new List$<$Game\+Object$>$()
+\item 
+Game\+Object \mbox{\hyperlink{class_lattice_class_a85c0f0a8ec1265e554dff01540a5ea19}{Renderer\+Object}}
+\item 
+\mbox{\hyperlink{class_selection_script}{Selection\+Script}} \mbox{\hyperlink{class_lattice_class_ad62b2fa5b02b62b1e4649889df41ab67}{Selection\+Script}}
+\item 
+\mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_lattice_class_a90529aaee3a5e5c04e8a2593bbeb4382}{Reference\+Script\+Reference}}
+\item 
+bool \mbox{\hyperlink{class_lattice_class_a5cf3db8f46b62c00d583a5cb15979614}{Placed}} = false
+\item 
+Vector3 \mbox{\hyperlink{class_lattice_class_aaf8ef232c805105119fca782a37f6778}{Lattice\+Location}}
+\item 
+string \mbox{\hyperlink{class_lattice_class_ac393367ef3c6a0053f11121a7a09bc3e}{ID}}
+\item 
+int \mbox{\hyperlink{class_lattice_class_a327b2a5c5502f45f56468fa868525a75}{Type}} = 0
+\item 
+Mesh \mbox{\hyperlink{class_lattice_class_aeb1568088d998696f6041b59ca437174}{Mesh\+For\+Renderer}}
+\item 
+bool \mbox{\hyperlink{class_lattice_class_a80e7144d30ffa2fc0617f1941c36a1eb}{Fixed}} = false
+\item 
+bool \mbox{\hyperlink{class_lattice_class_a185ab4de78f9d216ac9675618e505eef}{Saturated}} = false
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_lattice_class_a7867dc6554931af5d228c7e8f02594dd}{Connections}} = new int\mbox{[}6\mbox{]}
+\item 
+int \mbox{\hyperlink{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}{Time\+Stamp}}
+\item 
+float \mbox{\hyperlink{class_lattice_class_a126abca015b9a73d5ed2cf01c92e2f28}{Density}}
+\item 
+string \mbox{\hyperlink{class_lattice_class_a6d54de9cf474085899315b2822260eab}{Lattice\+Type}}
+\item 
+Material \mbox{\hyperlink{class_lattice_class_a11d02031a8adf12635bf22624abb8d79}{Default\+Render\+Material}}
+\item 
+string \mbox{\hyperlink{class_lattice_class_af7756a272194d1a69a07fa14d6ab0c85}{Lattice\+Type\+Directory}} = new Directory\+Info((string)System.\+IO.\+Directory.\+Get\+Current\+Directory()).To\+String() + \char`\"{}/Assets/\mbox{\hyperlink{class_lattice_class_a3868410548b80e54a533e83111d9543c}{Lattice}}\char`\"{}
+\item 
+Collider \mbox{\hyperlink{class_lattice_class_a7c26ede8adef5b6eb71aad97c003e579}{Obj\+Top}}
+\item 
+Collider \mbox{\hyperlink{class_lattice_class_af24b653ba426c997af114ae034b3665a}{Obj\+Bot}}
+\item 
+Collider \mbox{\hyperlink{class_lattice_class_a9a29d9ed33ce4686f5c58e11c1af0b0c}{Obj\+Front}}
+\item 
+Collider \mbox{\hyperlink{class_lattice_class_a7b72632d06a8626ed5ef169af5147732}{Obj\+Back}}
+\item 
+Collider \mbox{\hyperlink{class_lattice_class_a484d3bfeec32ca6a01ea42f167e9fe50}{Obj\+Left}}
+\item 
+Collider \mbox{\hyperlink{class_lattice_class_acc5d66ea3c4dda4f4226473498acdfc6}{Obj\+Right}}
+\item 
+Dictionary$<$ string, Dictionary$<$ Dictionary$<$ string, Vector3 $>$, Dictionary$<$ string, bool $>$ $>$ $>$ \mbox{\hyperlink{class_lattice_class_a8589420207a8c36d387f6440108f7c87}{Connections\+Dictionary}} = new Dictionary$<$string, Dictionary$<$Dictionary$<$string, Vector3$>$, Dictionary$<$string, bool$>$$>$$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Game\+Object \mbox{\hyperlink{class_lattice_class_a5a88ece44bebfb15c7f93aecdda9fa86}{Top}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lattice_class_a4a9dc8a6035eca3a9b87eabcdc3de6eb}\label{class_lattice_class_a4a9dc8a6035eca3a9b87eabcdc3de6eb}} 
+\index{LatticeClass@{LatticeClass}!PlaceLattice@{PlaceLattice}}
+\index{PlaceLattice@{PlaceLattice}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{PlaceLattice()}{PlaceLattice()}}
+{\footnotesize\ttfamily void Lattice\+Class.\+Place\+Lattice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_lattice_class_a8d6aed807b205bde9fced593106249ac}\label{class_lattice_class_a8d6aed807b205bde9fced593106249ac}} 
+\index{LatticeClass@{LatticeClass}!UnplaceLattice@{UnplaceLattice}}
+\index{UnplaceLattice@{UnplaceLattice}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{UnplaceLattice()}{UnplaceLattice()}}
+{\footnotesize\ttfamily void Lattice\+Class.\+Unplace\+Lattice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_lattice_class_a8e4f9c626c700d9cb45c8af6b0e69208}\label{class_lattice_class_a8e4f9c626c700d9cb45c8af6b0e69208}} 
+\index{LatticeClass@{LatticeClass}!UpdateMesh@{UpdateMesh}}
+\index{UpdateMesh@{UpdateMesh}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{UpdateMesh()}{UpdateMesh()}}
+{\footnotesize\ttfamily void Lattice\+Class.\+Update\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lattice_class_a7867dc6554931af5d228c7e8f02594dd}\label{class_lattice_class_a7867dc6554931af5d228c7e8f02594dd}} 
+\index{LatticeClass@{LatticeClass}!Connections@{Connections}}
+\index{Connections@{Connections}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Connections}{Connections}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Lattice\+Class.\+Connections = new int\mbox{[}6\mbox{]}}
+
+\mbox{\Hypertarget{class_lattice_class_a8589420207a8c36d387f6440108f7c87}\label{class_lattice_class_a8589420207a8c36d387f6440108f7c87}} 
+\index{LatticeClass@{LatticeClass}!ConnectionsDictionary@{ConnectionsDictionary}}
+\index{ConnectionsDictionary@{ConnectionsDictionary}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ConnectionsDictionary}{ConnectionsDictionary}}
+{\footnotesize\ttfamily Dictionary$<$string, Dictionary$<$Dictionary$<$string, Vector3$>$, Dictionary$<$string, bool$>$ $>$ $>$ Lattice\+Class.\+Connections\+Dictionary = new Dictionary$<$string, Dictionary$<$Dictionary$<$string, Vector3$>$, Dictionary$<$string, bool$>$$>$$>$()}
+
+\mbox{\Hypertarget{class_lattice_class_a972301fecbec55330982ab9a8eb82ddd}\label{class_lattice_class_a972301fecbec55330982ab9a8eb82ddd}} 
+\index{LatticeClass@{LatticeClass}!CubeRenderers@{CubeRenderers}}
+\index{CubeRenderers@{CubeRenderers}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{CubeRenderers}{CubeRenderers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}{Renderer}}$>$ Lattice\+Class.\+Cube\+Renderers}
+
+\mbox{\Hypertarget{class_lattice_class_a11d02031a8adf12635bf22624abb8d79}\label{class_lattice_class_a11d02031a8adf12635bf22624abb8d79}} 
+\index{LatticeClass@{LatticeClass}!DefaultRenderMaterial@{DefaultRenderMaterial}}
+\index{DefaultRenderMaterial@{DefaultRenderMaterial}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{DefaultRenderMaterial}{DefaultRenderMaterial}}
+{\footnotesize\ttfamily Material Lattice\+Class.\+Default\+Render\+Material}
+
+\mbox{\Hypertarget{class_lattice_class_a126abca015b9a73d5ed2cf01c92e2f28}\label{class_lattice_class_a126abca015b9a73d5ed2cf01c92e2f28}} 
+\index{LatticeClass@{LatticeClass}!Density@{Density}}
+\index{Density@{Density}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Density}{Density}}
+{\footnotesize\ttfamily float Lattice\+Class.\+Density}
+
+\mbox{\Hypertarget{class_lattice_class_a80e7144d30ffa2fc0617f1941c36a1eb}\label{class_lattice_class_a80e7144d30ffa2fc0617f1941c36a1eb}} 
+\index{LatticeClass@{LatticeClass}!Fixed@{Fixed}}
+\index{Fixed@{Fixed}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Fixed}{Fixed}}
+{\footnotesize\ttfamily bool Lattice\+Class.\+Fixed = false}
+
+\mbox{\Hypertarget{class_lattice_class_ac393367ef3c6a0053f11121a7a09bc3e}\label{class_lattice_class_ac393367ef3c6a0053f11121a7a09bc3e}} 
+\index{LatticeClass@{LatticeClass}!ID@{ID}}
+\index{ID@{ID}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ID}{ID}}
+{\footnotesize\ttfamily string Lattice\+Class.\+ID}
+
+\mbox{\Hypertarget{class_lattice_class_a3868410548b80e54a533e83111d9543c}\label{class_lattice_class_a3868410548b80e54a533e83111d9543c}} 
+\index{LatticeClass@{LatticeClass}!Lattice@{Lattice}}
+\index{Lattice@{Lattice}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Lattice}{Lattice}}
+{\footnotesize\ttfamily Game\+Object Lattice\+Class.\+Lattice}
+
+\mbox{\Hypertarget{class_lattice_class_aaf8ef232c805105119fca782a37f6778}\label{class_lattice_class_aaf8ef232c805105119fca782a37f6778}} 
+\index{LatticeClass@{LatticeClass}!LatticeLocation@{LatticeLocation}}
+\index{LatticeLocation@{LatticeLocation}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{LatticeLocation}{LatticeLocation}}
+{\footnotesize\ttfamily Vector3 Lattice\+Class.\+Lattice\+Location}
+
+\mbox{\Hypertarget{class_lattice_class_a6d54de9cf474085899315b2822260eab}\label{class_lattice_class_a6d54de9cf474085899315b2822260eab}} 
+\index{LatticeClass@{LatticeClass}!LatticeType@{LatticeType}}
+\index{LatticeType@{LatticeType}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{LatticeType}{LatticeType}}
+{\footnotesize\ttfamily string Lattice\+Class.\+Lattice\+Type}
+
+\mbox{\Hypertarget{class_lattice_class_af7756a272194d1a69a07fa14d6ab0c85}\label{class_lattice_class_af7756a272194d1a69a07fa14d6ab0c85}} 
+\index{LatticeClass@{LatticeClass}!LatticeTypeDirectory@{LatticeTypeDirectory}}
+\index{LatticeTypeDirectory@{LatticeTypeDirectory}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{LatticeTypeDirectory}{LatticeTypeDirectory}}
+{\footnotesize\ttfamily string Lattice\+Class.\+Lattice\+Type\+Directory = new Directory\+Info((string)System.\+IO.\+Directory.\+Get\+Current\+Directory()).To\+String() + \char`\"{}/Assets/\mbox{\hyperlink{class_lattice_class_a3868410548b80e54a533e83111d9543c}{Lattice}}\char`\"{}}
+
+\mbox{\Hypertarget{class_lattice_class_aeb1568088d998696f6041b59ca437174}\label{class_lattice_class_aeb1568088d998696f6041b59ca437174}} 
+\index{LatticeClass@{LatticeClass}!MeshForRenderer@{MeshForRenderer}}
+\index{MeshForRenderer@{MeshForRenderer}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{MeshForRenderer}{MeshForRenderer}}
+{\footnotesize\ttfamily Mesh Lattice\+Class.\+Mesh\+For\+Renderer}
+
+\mbox{\Hypertarget{class_lattice_class_af02928e1ba8ef5bee22fc00606aa1a9f}\label{class_lattice_class_af02928e1ba8ef5bee22fc00606aa1a9f}} 
+\index{LatticeClass@{LatticeClass}!NodeList@{NodeList}}
+\index{NodeList@{NodeList}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{NodeList}{NodeList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Lattice\+Class.\+Node\+List = new List$<$Game\+Object$>$()}
+
+\mbox{\Hypertarget{class_lattice_class_a7b72632d06a8626ed5ef169af5147732}\label{class_lattice_class_a7b72632d06a8626ed5ef169af5147732}} 
+\index{LatticeClass@{LatticeClass}!ObjBack@{ObjBack}}
+\index{ObjBack@{ObjBack}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ObjBack}{ObjBack}}
+{\footnotesize\ttfamily Collider Lattice\+Class.\+Obj\+Back}
+
+\mbox{\Hypertarget{class_lattice_class_af24b653ba426c997af114ae034b3665a}\label{class_lattice_class_af24b653ba426c997af114ae034b3665a}} 
+\index{LatticeClass@{LatticeClass}!ObjBot@{ObjBot}}
+\index{ObjBot@{ObjBot}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ObjBot}{ObjBot}}
+{\footnotesize\ttfamily Collider Lattice\+Class.\+Obj\+Bot}
+
+\mbox{\Hypertarget{class_lattice_class_a9a29d9ed33ce4686f5c58e11c1af0b0c}\label{class_lattice_class_a9a29d9ed33ce4686f5c58e11c1af0b0c}} 
+\index{LatticeClass@{LatticeClass}!ObjFront@{ObjFront}}
+\index{ObjFront@{ObjFront}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ObjFront}{ObjFront}}
+{\footnotesize\ttfamily Collider Lattice\+Class.\+Obj\+Front}
+
+\mbox{\Hypertarget{class_lattice_class_a484d3bfeec32ca6a01ea42f167e9fe50}\label{class_lattice_class_a484d3bfeec32ca6a01ea42f167e9fe50}} 
+\index{LatticeClass@{LatticeClass}!ObjLeft@{ObjLeft}}
+\index{ObjLeft@{ObjLeft}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ObjLeft}{ObjLeft}}
+{\footnotesize\ttfamily Collider Lattice\+Class.\+Obj\+Left}
+
+\mbox{\Hypertarget{class_lattice_class_acc5d66ea3c4dda4f4226473498acdfc6}\label{class_lattice_class_acc5d66ea3c4dda4f4226473498acdfc6}} 
+\index{LatticeClass@{LatticeClass}!ObjRight@{ObjRight}}
+\index{ObjRight@{ObjRight}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ObjRight}{ObjRight}}
+{\footnotesize\ttfamily Collider Lattice\+Class.\+Obj\+Right}
+
+\mbox{\Hypertarget{class_lattice_class_a7c26ede8adef5b6eb71aad97c003e579}\label{class_lattice_class_a7c26ede8adef5b6eb71aad97c003e579}} 
+\index{LatticeClass@{LatticeClass}!ObjTop@{ObjTop}}
+\index{ObjTop@{ObjTop}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ObjTop}{ObjTop}}
+{\footnotesize\ttfamily Collider Lattice\+Class.\+Obj\+Top}
+
+\mbox{\Hypertarget{class_lattice_class_af16987b7c3ecb713d968b6d50a5ac627}\label{class_lattice_class_af16987b7c3ecb713d968b6d50a5ac627}} 
+\index{LatticeClass@{LatticeClass}!Parent@{Parent}}
+\index{Parent@{Parent}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Parent}{Parent}}
+{\footnotesize\ttfamily Game\+Object Lattice\+Class.\+Parent}
+
+\mbox{\Hypertarget{class_lattice_class_a137591f1d1de10871e4e8ca6b62020c7}\label{class_lattice_class_a137591f1d1de10871e4e8ca6b62020c7}} 
+\index{LatticeClass@{LatticeClass}!ParentScript@{ParentScript}}
+\index{ParentScript@{ParentScript}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ParentScript}{ParentScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_parent_object_script}{Parent\+Object\+Script}} Lattice\+Class.\+Parent\+Script}
+
+\mbox{\Hypertarget{class_lattice_class_a5cf3db8f46b62c00d583a5cb15979614}\label{class_lattice_class_a5cf3db8f46b62c00d583a5cb15979614}} 
+\index{LatticeClass@{LatticeClass}!Placed@{Placed}}
+\index{Placed@{Placed}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Placed}{Placed}}
+{\footnotesize\ttfamily bool Lattice\+Class.\+Placed = false}
+
+\mbox{\Hypertarget{class_lattice_class_a90529aaee3a5e5c04e8a2593bbeb4382}\label{class_lattice_class_a90529aaee3a5e5c04e8a2593bbeb4382}} 
+\index{LatticeClass@{LatticeClass}!ReferenceScriptReference@{ReferenceScriptReference}}
+\index{ReferenceScriptReference@{ReferenceScriptReference}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{ReferenceScriptReference}{ReferenceScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_references}{References}} Lattice\+Class.\+Reference\+Script\+Reference}
+
+\mbox{\Hypertarget{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}\label{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}} 
+\index{LatticeClass@{LatticeClass}!Renderer@{Renderer}}
+\index{Renderer@{Renderer}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Renderer}{Renderer}}
+{\footnotesize\ttfamily Renderer Lattice\+Class.\+Renderer}
+
+\mbox{\Hypertarget{class_lattice_class_a85c0f0a8ec1265e554dff01540a5ea19}\label{class_lattice_class_a85c0f0a8ec1265e554dff01540a5ea19}} 
+\index{LatticeClass@{LatticeClass}!RendererObject@{RendererObject}}
+\index{RendererObject@{RendererObject}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{RendererObject}{RendererObject}}
+{\footnotesize\ttfamily Game\+Object Lattice\+Class.\+Renderer\+Object}
+
+\mbox{\Hypertarget{class_lattice_class_a185ab4de78f9d216ac9675618e505eef}\label{class_lattice_class_a185ab4de78f9d216ac9675618e505eef}} 
+\index{LatticeClass@{LatticeClass}!Saturated@{Saturated}}
+\index{Saturated@{Saturated}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Saturated}{Saturated}}
+{\footnotesize\ttfamily bool Lattice\+Class.\+Saturated = false}
+
+\mbox{\Hypertarget{class_lattice_class_ad62b2fa5b02b62b1e4649889df41ab67}\label{class_lattice_class_ad62b2fa5b02b62b1e4649889df41ab67}} 
+\index{LatticeClass@{LatticeClass}!SelectionScript@{SelectionScript}}
+\index{SelectionScript@{SelectionScript}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{SelectionScript}{SelectionScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Lattice\+Class.\+Selection\+Script}
+
+\mbox{\Hypertarget{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}\label{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}} 
+\index{LatticeClass@{LatticeClass}!TimeStamp@{TimeStamp}}
+\index{TimeStamp@{TimeStamp}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{TimeStamp}{TimeStamp}}
+{\footnotesize\ttfamily int Lattice\+Class.\+Time\+Stamp}
+
+\mbox{\Hypertarget{class_lattice_class_a5a88ece44bebfb15c7f93aecdda9fa86}\label{class_lattice_class_a5a88ece44bebfb15c7f93aecdda9fa86}} 
+\index{LatticeClass@{LatticeClass}!Top@{Top}}
+\index{Top@{Top}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Top}{Top}}
+{\footnotesize\ttfamily Game\+Object Lattice\+Class.\+Top\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_lattice_class_a327b2a5c5502f45f56468fa868525a75}\label{class_lattice_class_a327b2a5c5502f45f56468fa868525a75}} 
+\index{LatticeClass@{LatticeClass}!Type@{Type}}
+\index{Type@{Type}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily int Lattice\+Class.\+Type = 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Lattice/\mbox{\hyperlink{_lattice_class_8cs}{Lattice\+Class.\+cs}}\end{DoxyCompactItemize}

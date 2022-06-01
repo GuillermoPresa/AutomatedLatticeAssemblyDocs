@@ -1,0 +1,144 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_af26586373903299b29109fbdd0b93c4d}{Draw\+Mesh}} ()
+\item 
+\mbox{\hyperlink{class_graph_ab8ccb82fd216cc5a36c3887c6820428f}{Graph}} ()
+\item 
+int \mbox{\hyperlink{class_graph_aef9eec77dc196b41c6f3a957ec834a1d}{Count}} ()
+\item 
+IList$<$ \mbox{\hyperlink{class_graph_node}{Graph\+Node}} $>$ \mbox{\hyperlink{class_graph_addefede59dc24daa7d423ce7d2bbde6f}{Graph\+Nodes}} ()
+\item 
+bool \mbox{\hyperlink{class_graph_a0b4db92ff7da6b87f453bcd9d9083a16}{Add\+Node}} (Game\+Object value)
+\item 
+bool \mbox{\hyperlink{class_graph_ab8b286cfe410dc5959810e11932b6ba0}{Contains\+Edge}} (Game\+Object n1, Game\+Object n2)
+\item 
+bool \mbox{\hyperlink{class_graph_aa8d727eb1b3f711e16a6bad0b99bc18d}{Add\+Edge}} (Game\+Object n1, Game\+Object n2, float Edge\+Weight, string Movement\+Type)
+\item 
+bool \mbox{\hyperlink{class_graph_a269204d0a2158ada3f622c07484b444a}{Remove\+Node}} (Game\+Object value)
+\item 
+bool \mbox{\hyperlink{class_graph_a4086af6f607a78076fa497cdcb73b686}{Remove\+Edge}} (Game\+Object value1, Game\+Object value2)
+\item 
+void \mbox{\hyperlink{class_graph_a8a069a3c7e99a80dcbdd52a58d3ff843}{Remove\+Lattice}} (Game\+Object Lattice\+To\+Remove, Game\+Object Robot)
+\item 
+void \mbox{\hyperlink{class_graph_a13a8c565a17e7a886981cbeaf6f7fd6b}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_graph_abd05a1fcf99b131b6899c0efe57a2b08}{Reset\+Search\+Parameters}} ()
+\item 
+\mbox{\hyperlink{class_graph_node}{Graph\+Node}} \mbox{\hyperlink{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}{Find\+Graph\+Node\+From\+Node\+Object}} (Game\+Object Node)
+\item 
+\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} \mbox{\hyperlink{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}{Dijkstra\+Path}} (\mbox{\hyperlink{class_graph_node}{Graph\+Node}} Starting\+Node, \mbox{\hyperlink{class_graph_node}{Graph\+Node}} Final\+Node)
+\item 
+void \mbox{\hyperlink{class_graph_a8c8441b17f8a083c13756a85d873a15b}{Complete\+Dijkstra\+From\+Starting\+Node}} (\mbox{\hyperlink{class_graph_node}{Graph\+Node}} Starting\+Node)
+\item 
+override string \mbox{\hyperlink{class_graph_acc69e698b1d49ddbef16b7898e11e66f}{To\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_ab8ccb82fd216cc5a36c3887c6820428f}\label{class_graph_ab8ccb82fd216cc5a36c3887c6820428f}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph.\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_aa8d727eb1b3f711e16a6bad0b99bc18d}\label{class_graph_aa8d727eb1b3f711e16a6bad0b99bc18d}} 
+\index{Graph@{Graph}!AddEdge@{AddEdge}}
+\index{AddEdge@{AddEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{AddEdge()}{AddEdge()}}
+{\footnotesize\ttfamily bool Graph.\+Add\+Edge (\begin{DoxyParamCaption}\item[{Game\+Object}]{n1,  }\item[{Game\+Object}]{n2,  }\item[{float}]{Edge\+Weight,  }\item[{string}]{Movement\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a0b4db92ff7da6b87f453bcd9d9083a16}\label{class_graph_a0b4db92ff7da6b87f453bcd9d9083a16}} 
+\index{Graph@{Graph}!AddNode@{AddNode}}
+\index{AddNode@{AddNode}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{AddNode()}{AddNode()}}
+{\footnotesize\ttfamily bool Graph.\+Add\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a13a8c565a17e7a886981cbeaf6f7fd6b}\label{class_graph_a13a8c565a17e7a886981cbeaf6f7fd6b}} 
+\index{Graph@{Graph}!Clear@{Clear}}
+\index{Clear@{Clear}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Graph.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a8c8441b17f8a083c13756a85d873a15b}\label{class_graph_a8c8441b17f8a083c13756a85d873a15b}} 
+\index{Graph@{Graph}!CompleteDijkstraFromStartingNode@{CompleteDijkstraFromStartingNode}}
+\index{CompleteDijkstraFromStartingNode@{CompleteDijkstraFromStartingNode}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{CompleteDijkstraFromStartingNode()}{CompleteDijkstraFromStartingNode()}}
+{\footnotesize\ttfamily void Graph.\+Complete\+Dijkstra\+From\+Starting\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{Starting\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_ab8b286cfe410dc5959810e11932b6ba0}\label{class_graph_ab8b286cfe410dc5959810e11932b6ba0}} 
+\index{Graph@{Graph}!ContainsEdge@{ContainsEdge}}
+\index{ContainsEdge@{ContainsEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{ContainsEdge()}{ContainsEdge()}}
+{\footnotesize\ttfamily bool Graph.\+Contains\+Edge (\begin{DoxyParamCaption}\item[{Game\+Object}]{n1,  }\item[{Game\+Object}]{n2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_aef9eec77dc196b41c6f3a957ec834a1d}\label{class_graph_aef9eec77dc196b41c6f3a957ec834a1d}} 
+\index{Graph@{Graph}!Count@{Count}}
+\index{Count@{Count}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Count()}{Count()}}
+{\footnotesize\ttfamily int Graph.\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}\label{class_graph_a967bfa5ba07778a8b7c75e5030b06b38}} 
+\index{Graph@{Graph}!DijkstraPath@{DijkstraPath}}
+\index{DijkstraPath@{DijkstraPath}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{DijkstraPath()}{DijkstraPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Graph.\+Dijkstra\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{Starting\+Node,  }\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{Final\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_af26586373903299b29109fbdd0b93c4d}\label{class_graph_af26586373903299b29109fbdd0b93c4d}} 
+\index{Graph@{Graph}!DrawMesh@{DrawMesh}}
+\index{DrawMesh@{DrawMesh}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{DrawMesh()}{DrawMesh()}}
+{\footnotesize\ttfamily void Graph.\+Draw\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}\label{class_graph_a74c76324252471cf22ac1e5e1d7bbfc5}} 
+\index{Graph@{Graph}!FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}}
+\index{FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{FindGraphNodeFromNodeObject()}{FindGraphNodeFromNodeObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph_node}{Graph\+Node}} Graph.\+Find\+Graph\+Node\+From\+Node\+Object (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_addefede59dc24daa7d423ce7d2bbde6f}\label{class_graph_addefede59dc24daa7d423ce7d2bbde6f}} 
+\index{Graph@{Graph}!GraphNodes@{GraphNodes}}
+\index{GraphNodes@{GraphNodes}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{GraphNodes()}{GraphNodes()}}
+{\footnotesize\ttfamily IList$<$ \mbox{\hyperlink{class_graph_node}{Graph\+Node}} $>$ Graph.\+Graph\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a4086af6f607a78076fa497cdcb73b686}\label{class_graph_a4086af6f607a78076fa497cdcb73b686}} 
+\index{Graph@{Graph}!RemoveEdge@{RemoveEdge}}
+\index{RemoveEdge@{RemoveEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{RemoveEdge()}{RemoveEdge()}}
+{\footnotesize\ttfamily bool Graph.\+Remove\+Edge (\begin{DoxyParamCaption}\item[{Game\+Object}]{value1,  }\item[{Game\+Object}]{value2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a8a069a3c7e99a80dcbdd52a58d3ff843}\label{class_graph_a8a069a3c7e99a80dcbdd52a58d3ff843}} 
+\index{Graph@{Graph}!RemoveLattice@{RemoveLattice}}
+\index{RemoveLattice@{RemoveLattice}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{RemoveLattice()}{RemoveLattice()}}
+{\footnotesize\ttfamily void Graph.\+Remove\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Remove,  }\item[{Game\+Object}]{Robot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_a269204d0a2158ada3f622c07484b444a}\label{class_graph_a269204d0a2158ada3f622c07484b444a}} 
+\index{Graph@{Graph}!RemoveNode@{RemoveNode}}
+\index{RemoveNode@{RemoveNode}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{RemoveNode()}{RemoveNode()}}
+{\footnotesize\ttfamily bool Graph.\+Remove\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_abd05a1fcf99b131b6899c0efe57a2b08}\label{class_graph_abd05a1fcf99b131b6899c0efe57a2b08}} 
+\index{Graph@{Graph}!ResetSearchParameters@{ResetSearchParameters}}
+\index{ResetSearchParameters@{ResetSearchParameters}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{ResetSearchParameters()}{ResetSearchParameters()}}
+{\footnotesize\ttfamily void Graph.\+Reset\+Search\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_acc69e698b1d49ddbef16b7898e11e66f}\label{class_graph_acc69e698b1d49ddbef16b7898e11e66f}} 
+\index{Graph@{Graph}!ToString@{ToString}}
+\index{ToString@{ToString}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Graph.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+Simple\+Robot1/\mbox{\hyperlink{_graph_class_8cs}{Graph\+Class.\+cs}}\end{DoxyCompactItemize}

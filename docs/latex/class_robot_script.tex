@@ -1,0 +1,257 @@
+\hypertarget{class_robot_script}{}\doxysection{Robot\+Script Class Reference}
+\label{class_robot_script}\index{RobotScript@{RobotScript}}
+Inheritance diagram for Robot\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_robot_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, Game\+Object $>$ \mbox{\hyperlink{class_robot_script_aaaacc0eacd09c68f0e399dfb780c16a3}{Get\+Possible\+Movement\+Sensors}} ()
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}} $>$ \mbox{\hyperlink{class_robot_script_a51cc5a30e5f3ec516dcc3673953ead43}{Get\+Possible\+Movement\+Scripts}} ()
+\item 
+void \mbox{\hyperlink{class_robot_script_a7b1f83fb5864b8b61a85633017b2a32f}{Insert\+Lattice}} (Game\+Object Lattice\+To\+Insert)
+\item 
+void \mbox{\hyperlink{class_robot_script_ad60c507489884cf04ba589c174639649}{Map\+Navigation\+Space}} ()
+\item 
+void \mbox{\hyperlink{class_robot_script_a276491483d838ed1c2fa694985d6f5fd}{Clear\+Navigation\+Space}} ()
+\item 
+void \mbox{\hyperlink{class_robot_script_a69de43a921043364a81d249ac2bee207}{Map\+Navigation\+Space}} (Game\+Object Starting\+Node)
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_ad25a0147df08715dffc20665e66e5ecd}{Get\+Current\+Robot\+Node}} ()
+\item 
+void \mbox{\hyperlink{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}{Move\+To\+Node}} (Game\+Object End\+Node)
+\item 
+\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} \mbox{\hyperlink{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}{Find\+Path\+Between\+Nodes}} (Game\+Object End\+Node)
+\item 
+\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} \mbox{\hyperlink{class_robot_script_ab03624ce05a1b8c16f52f1f7f62b9922}{Find\+Path\+Between\+Nodes}} (Game\+Object Starting\+Node, Game\+Object End\+Node, bool Remapping=false)
+\item 
+void \mbox{\hyperlink{class_robot_script_ab791230c437d0faed84e2852d1d03456}{Move\+Robot\+Along\+Path}} (\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Fordwards\+Navigation\+Path)
+\item 
+void \mbox{\hyperlink{class_robot_script_a177722cf104b800c97505665083dd3a4}{Draw\+Nav\+Path}} (\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Fordwards\+Navigation\+Path)
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}{Lattice\+Insertion\+Possible\+Nodes}} (Game\+Object Lattice\+To\+Insert)
+\item 
+bool \mbox{\hyperlink{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6}{Check\+Insertion\+Possible}} (Game\+Object Lattice\+To\+Insert)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_a63518d2c0b94349b8fe26de307b4b701}{Spawner}}
+\item 
+\mbox{\hyperlink{class_time_manager}{Time\+Manager}} \mbox{\hyperlink{class_robot_script_a36b187850046e5707a3e2a7280b1d7e6}{Time\+Manager}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_a75e1dfe5e1ffc5db751e6ea168e80908}{Robot}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_a8e22a93df82a06cbf534832c9ec6ffea}{Current\+Robot\+Node}}
+\item 
+bool \mbox{\hyperlink{class_robot_script_a5e187f85d98439a310ed1f19a33096d2}{done}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}{Renderer\+Object}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_a38cd1606fa18e9147d86a161934a7792}{Current\+Node\+Sensor}}
+\item 
+\mbox{\hyperlink{class_selection_script}{Selection\+Script}} \mbox{\hyperlink{class_robot_script_a8df3233edad95e089ca4370271cb83ec}{Selection\+Script}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_abc18ee69238c54a59189c33ca371b3d6}{Current\+Colliding\+Node}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_robot_script_a20becf471b6850fa5bb43a859cb31510}{Visited\+Nodes}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_a5b25d3d992895535d4b9e8cef3463043}{Movement\+Sensor}}
+\item 
+Game\+Object \mbox{\hyperlink{class_robot_script_a7c5de1edc00ff4f4701458231f9de6b7}{Insertion\+Sensor}}
+\item 
+Dictionary$<$ string, Game\+Object $>$ \mbox{\hyperlink{class_robot_script_a08cd86717e5e52c9dbf591882d0e7771}{Movement\+Sensor\+Dictionary}} = new Dictionary$<$string, Game\+Object$>$()
+\item 
+Dictionary$<$ string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}} $>$ \mbox{\hyperlink{class_robot_script_ac31d2f640d06a0768206615eed9c85e8}{Movement\+Sensor\+Mov\+Script\+Dictionary}} = new Dictionary$<$string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}}$>$()
+\item 
+\mbox{\hyperlink{class_graph}{Graph}} \mbox{\hyperlink{class_robot_script_aab10dbc7234ac3fe8cd7e4fdfae83b39}{Navigation\+Mesh}} = new \mbox{\hyperlink{class_graph}{Graph}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6}\label{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6}} 
+\index{RobotScript@{RobotScript}!CheckInsertionPossible@{CheckInsertionPossible}}
+\index{CheckInsertionPossible@{CheckInsertionPossible}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{CheckInsertionPossible()}{CheckInsertionPossible()}}
+{\footnotesize\ttfamily bool Robot\+Script.\+Check\+Insertion\+Possible (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a276491483d838ed1c2fa694985d6f5fd}\label{class_robot_script_a276491483d838ed1c2fa694985d6f5fd}} 
+\index{RobotScript@{RobotScript}!ClearNavigationSpace@{ClearNavigationSpace}}
+\index{ClearNavigationSpace@{ClearNavigationSpace}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{ClearNavigationSpace()}{ClearNavigationSpace()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Clear\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a177722cf104b800c97505665083dd3a4}\label{class_robot_script_a177722cf104b800c97505665083dd3a4}} 
+\index{RobotScript@{RobotScript}!DrawNavPath@{DrawNavPath}}
+\index{DrawNavPath@{DrawNavPath}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{DrawNavPath()}{DrawNavPath()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Draw\+Nav\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}\label{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}} 
+\index{RobotScript@{RobotScript}!FindPathBetweenNodes@{FindPathBetweenNodes}}
+\index{FindPathBetweenNodes@{FindPathBetweenNodes}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{FindPathBetweenNodes()}{FindPathBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Robot\+Script.\+Find\+Path\+Between\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{End\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_ab03624ce05a1b8c16f52f1f7f62b9922}\label{class_robot_script_ab03624ce05a1b8c16f52f1f7f62b9922}} 
+\index{RobotScript@{RobotScript}!FindPathBetweenNodes@{FindPathBetweenNodes}}
+\index{FindPathBetweenNodes@{FindPathBetweenNodes}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{FindPathBetweenNodes()}{FindPathBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Robot\+Script.\+Find\+Path\+Between\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{Starting\+Node,  }\item[{Game\+Object}]{End\+Node,  }\item[{bool}]{Remapping = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_ad25a0147df08715dffc20665e66e5ecd}\label{class_robot_script_ad25a0147df08715dffc20665e66e5ecd}} 
+\index{RobotScript@{RobotScript}!GetCurrentRobotNode@{GetCurrentRobotNode}}
+\index{GetCurrentRobotNode@{GetCurrentRobotNode}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{GetCurrentRobotNode()}{GetCurrentRobotNode()}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Get\+Current\+Robot\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a51cc5a30e5f3ec516dcc3673953ead43}\label{class_robot_script_a51cc5a30e5f3ec516dcc3673953ead43}} 
+\index{RobotScript@{RobotScript}!GetPossibleMovementScripts@{GetPossibleMovementScripts}}
+\index{GetPossibleMovementScripts@{GetPossibleMovementScripts}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{GetPossibleMovementScripts()}{GetPossibleMovementScripts()}}
+{\footnotesize\ttfamily Dictionary$<$ string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}} $>$ Robot\+Script.\+Get\+Possible\+Movement\+Scripts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_aaaacc0eacd09c68f0e399dfb780c16a3}\label{class_robot_script_aaaacc0eacd09c68f0e399dfb780c16a3}} 
+\index{RobotScript@{RobotScript}!GetPossibleMovementSensors@{GetPossibleMovementSensors}}
+\index{GetPossibleMovementSensors@{GetPossibleMovementSensors}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{GetPossibleMovementSensors()}{GetPossibleMovementSensors()}}
+{\footnotesize\ttfamily Dictionary$<$ string, Game\+Object $>$ Robot\+Script.\+Get\+Possible\+Movement\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a7b1f83fb5864b8b61a85633017b2a32f}\label{class_robot_script_a7b1f83fb5864b8b61a85633017b2a32f}} 
+\index{RobotScript@{RobotScript}!InsertLattice@{InsertLattice}}
+\index{InsertLattice@{InsertLattice}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{InsertLattice()}{InsertLattice()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Insert\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}\label{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}} 
+\index{RobotScript@{RobotScript}!LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}}
+\index{LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{LatticeInsertionPossibleNodes()}{LatticeInsertionPossibleNodes()}}
+{\footnotesize\ttfamily List$<$ Game\+Object $>$ Robot\+Script.\+Lattice\+Insertion\+Possible\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_ad60c507489884cf04ba589c174639649}\label{class_robot_script_ad60c507489884cf04ba589c174639649}} 
+\index{RobotScript@{RobotScript}!MapNavigationSpace@{MapNavigationSpace}}
+\index{MapNavigationSpace@{MapNavigationSpace}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MapNavigationSpace()}{MapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Robot\+Script.\+Map\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_a69de43a921043364a81d249ac2bee207}\label{class_robot_script_a69de43a921043364a81d249ac2bee207}} 
+\index{RobotScript@{RobotScript}!MapNavigationSpace@{MapNavigationSpace}}
+\index{MapNavigationSpace@{MapNavigationSpace}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MapNavigationSpace()}{MapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Robot\+Script.\+Map\+Navigation\+Space (\begin{DoxyParamCaption}\item[{Game\+Object}]{Starting\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_ab791230c437d0faed84e2852d1d03456}\label{class_robot_script_ab791230c437d0faed84e2852d1d03456}} 
+\index{RobotScript@{RobotScript}!MoveRobotAlongPath@{MoveRobotAlongPath}}
+\index{MoveRobotAlongPath@{MoveRobotAlongPath}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MoveRobotAlongPath()}{MoveRobotAlongPath()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}\label{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}} 
+\index{RobotScript@{RobotScript}!MoveToNode@{MoveToNode}}
+\index{MoveToNode@{MoveToNode}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MoveToNode()}{MoveToNode()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Move\+To\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{End\+Node }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_robot_script_abc18ee69238c54a59189c33ca371b3d6}\label{class_robot_script_abc18ee69238c54a59189c33ca371b3d6}} 
+\index{RobotScript@{RobotScript}!CurrentCollidingNode@{CurrentCollidingNode}}
+\index{CurrentCollidingNode@{CurrentCollidingNode}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{CurrentCollidingNode}{CurrentCollidingNode}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Current\+Colliding\+Node}
+
+\mbox{\Hypertarget{class_robot_script_a38cd1606fa18e9147d86a161934a7792}\label{class_robot_script_a38cd1606fa18e9147d86a161934a7792}} 
+\index{RobotScript@{RobotScript}!CurrentNodeSensor@{CurrentNodeSensor}}
+\index{CurrentNodeSensor@{CurrentNodeSensor}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{CurrentNodeSensor}{CurrentNodeSensor}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Current\+Node\+Sensor}
+
+\mbox{\Hypertarget{class_robot_script_a8e22a93df82a06cbf534832c9ec6ffea}\label{class_robot_script_a8e22a93df82a06cbf534832c9ec6ffea}} 
+\index{RobotScript@{RobotScript}!CurrentRobotNode@{CurrentRobotNode}}
+\index{CurrentRobotNode@{CurrentRobotNode}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{CurrentRobotNode}{CurrentRobotNode}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Current\+Robot\+Node}
+
+\mbox{\Hypertarget{class_robot_script_a5e187f85d98439a310ed1f19a33096d2}\label{class_robot_script_a5e187f85d98439a310ed1f19a33096d2}} 
+\index{RobotScript@{RobotScript}!done@{done}}
+\index{done@{done}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{done}{done}}
+{\footnotesize\ttfamily bool Robot\+Script.\+done}
+
+\mbox{\Hypertarget{class_robot_script_a7c5de1edc00ff4f4701458231f9de6b7}\label{class_robot_script_a7c5de1edc00ff4f4701458231f9de6b7}} 
+\index{RobotScript@{RobotScript}!InsertionSensor@{InsertionSensor}}
+\index{InsertionSensor@{InsertionSensor}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{InsertionSensor}{InsertionSensor}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Insertion\+Sensor}
+
+\mbox{\Hypertarget{class_robot_script_a5b25d3d992895535d4b9e8cef3463043}\label{class_robot_script_a5b25d3d992895535d4b9e8cef3463043}} 
+\index{RobotScript@{RobotScript}!MovementSensor@{MovementSensor}}
+\index{MovementSensor@{MovementSensor}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MovementSensor}{MovementSensor}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Movement\+Sensor}
+
+\mbox{\Hypertarget{class_robot_script_a08cd86717e5e52c9dbf591882d0e7771}\label{class_robot_script_a08cd86717e5e52c9dbf591882d0e7771}} 
+\index{RobotScript@{RobotScript}!MovementSensorDictionary@{MovementSensorDictionary}}
+\index{MovementSensorDictionary@{MovementSensorDictionary}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MovementSensorDictionary}{MovementSensorDictionary}}
+{\footnotesize\ttfamily Dictionary$<$string, Game\+Object$>$ Robot\+Script.\+Movement\+Sensor\+Dictionary = new Dictionary$<$string, Game\+Object$>$()}
+
+\mbox{\Hypertarget{class_robot_script_ac31d2f640d06a0768206615eed9c85e8}\label{class_robot_script_ac31d2f640d06a0768206615eed9c85e8}} 
+\index{RobotScript@{RobotScript}!MovementSensorMovScriptDictionary@{MovementSensorMovScriptDictionary}}
+\index{MovementSensorMovScriptDictionary@{MovementSensorMovScriptDictionary}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MovementSensorMovScriptDictionary}{MovementSensorMovScriptDictionary}}
+{\footnotesize\ttfamily Dictionary$<$string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}}$>$ Robot\+Script.\+Movement\+Sensor\+Mov\+Script\+Dictionary = new Dictionary$<$string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}}$>$()}
+
+\mbox{\Hypertarget{class_robot_script_aab10dbc7234ac3fe8cd7e4fdfae83b39}\label{class_robot_script_aab10dbc7234ac3fe8cd7e4fdfae83b39}} 
+\index{RobotScript@{RobotScript}!NavigationMesh@{NavigationMesh}}
+\index{NavigationMesh@{NavigationMesh}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{NavigationMesh}{NavigationMesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}} Robot\+Script.\+Navigation\+Mesh = new \mbox{\hyperlink{class_graph}{Graph}}()}
+
+\mbox{\Hypertarget{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}\label{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}} 
+\index{RobotScript@{RobotScript}!RendererObject@{RendererObject}}
+\index{RendererObject@{RendererObject}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{RendererObject}{RendererObject}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Renderer\+Object}
+
+\mbox{\Hypertarget{class_robot_script_a75e1dfe5e1ffc5db751e6ea168e80908}\label{class_robot_script_a75e1dfe5e1ffc5db751e6ea168e80908}} 
+\index{RobotScript@{RobotScript}!Robot@{Robot}}
+\index{Robot@{Robot}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{Robot}{Robot}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Robot}
+
+\mbox{\Hypertarget{class_robot_script_a8df3233edad95e089ca4370271cb83ec}\label{class_robot_script_a8df3233edad95e089ca4370271cb83ec}} 
+\index{RobotScript@{RobotScript}!SelectionScript@{SelectionScript}}
+\index{SelectionScript@{SelectionScript}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{SelectionScript}{SelectionScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Robot\+Script.\+Selection\+Script}
+
+\mbox{\Hypertarget{class_robot_script_a63518d2c0b94349b8fe26de307b4b701}\label{class_robot_script_a63518d2c0b94349b8fe26de307b4b701}} 
+\index{RobotScript@{RobotScript}!Spawner@{Spawner}}
+\index{Spawner@{Spawner}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{Spawner}{Spawner}}
+{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Spawner}
+
+\mbox{\Hypertarget{class_robot_script_a36b187850046e5707a3e2a7280b1d7e6}\label{class_robot_script_a36b187850046e5707a3e2a7280b1d7e6}} 
+\index{RobotScript@{RobotScript}!TimeManager@{TimeManager}}
+\index{TimeManager@{TimeManager}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{TimeManager}{TimeManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_time_manager}{Time\+Manager}} Robot\+Script.\+Time\+Manager}
+
+\mbox{\Hypertarget{class_robot_script_a20becf471b6850fa5bb43a859cb31510}\label{class_robot_script_a20becf471b6850fa5bb43a859cb31510}} 
+\index{RobotScript@{RobotScript}!VisitedNodes@{VisitedNodes}}
+\index{VisitedNodes@{VisitedNodes}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{VisitedNodes}{VisitedNodes}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Robot\+Script.\+Visited\+Nodes}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+Simple\+Robot1/\mbox{\hyperlink{_robot_script_8cs}{Robot\+Script.\+cs}}\end{DoxyCompactItemize}

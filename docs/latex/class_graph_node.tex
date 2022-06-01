@@ -1,0 +1,165 @@
+\hypertarget{class_graph_node}{}\doxysection{Graph\+Node Class Reference}
+\label{class_graph_node}\index{GraphNode@{GraphNode}}
+Inheritance diagram for Graph\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graph_node}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_graph_node_a2d4ce49e2ee25d746821bbf527b9e4a5}{Reset\+Search\+Parameters}} ()
+\item 
+\mbox{\hyperlink{class_graph_node_aac326ec4b6615ae23ef584fbbf998628}{Graph\+Node}} (Game\+Object value)
+\item 
+override bool \mbox{\hyperlink{class_graph_node_ad24d79c581ceaf6ed31e112446f23611}{Equals}} (object other)
+\item 
+bool \mbox{\hyperlink{class_graph_node_a0aef609b5cfd7df010b3ecbcec86356f}{Add\+Neighbour}} (\mbox{\hyperlink{class_graph_node}{Graph\+Node}} neighbour, float \mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{Edge\+Weight}}, string Movement\+Type)
+\item 
+bool \mbox{\hyperlink{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}{Remove\+Neighbour}} (\mbox{\hyperlink{class_graph_node}{Graph\+Node}} neighbour)
+\item 
+bool \mbox{\hyperlink{class_graph_node_a7c81a4ea013b72f9c8459aa5f3296b5b}{Remove\+All\+Neighbours}} ()
+\item 
+override string \mbox{\hyperlink{class_graph_node_ad6631a80420b8757811616504289f4ca}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_graph_node_ace598b1b916a7ccd9eccfe4f34a68acb}{operator==}} (\mbox{\hyperlink{class_graph_node}{Graph\+Node}} obj1, \mbox{\hyperlink{class_graph_node}{Graph\+Node}} obj2)
+\item 
+static bool \mbox{\hyperlink{class_graph_node_ab87ba204e9cf0220e47ae9081e7f2d00}{operator!=}} (\mbox{\hyperlink{class_graph_node}{Graph\+Node}} obj1, \mbox{\hyperlink{class_graph_node}{Graph\+Node}} obj2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}{visited}} = false
+\item 
+float \mbox{\hyperlink{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}{Distance\+From\+Starting\+Node}} = (float)999999999
+\item 
+\mbox{\hyperlink{class_graph_node}{Graph\+Node}} \mbox{\hyperlink{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}{Previous\+Vertex}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}{Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IList$<$ \mbox{\hyperlink{class_graph_node}{Graph\+Node}} $>$ \mbox{\hyperlink{class_graph_node_ae5cc00b493c967d212963de93bb66189}{Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IList$<$ float $>$ \mbox{\hyperlink{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}{Edge\+Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_node_aac326ec4b6615ae23ef584fbbf998628}\label{class_graph_node_aac326ec4b6615ae23ef584fbbf998628}} 
+\index{GraphNode@{GraphNode}!GraphNode@{GraphNode}}
+\index{GraphNode@{GraphNode}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{GraphNode()}{GraphNode()}}
+{\footnotesize\ttfamily Graph\+Node.\+Graph\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_node_a0aef609b5cfd7df010b3ecbcec86356f}\label{class_graph_node_a0aef609b5cfd7df010b3ecbcec86356f}} 
+\index{GraphNode@{GraphNode}!AddNeighbour@{AddNeighbour}}
+\index{AddNeighbour@{AddNeighbour}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{AddNeighbour()}{AddNeighbour()}}
+{\footnotesize\ttfamily bool Graph\+Node.\+Add\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{neighbour,  }\item[{float}]{Edge\+Weight,  }\item[{string}]{Movement\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}\label{class_graph_node_a0cef5ddb7e25ca8d7a20e7270594eff5}} 
+\index{GraphNode@{GraphNode}!Clear@{Clear}}
+\index{Clear@{Clear}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Graph\+Node.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_node_ad24d79c581ceaf6ed31e112446f23611}\label{class_graph_node_ad24d79c581ceaf6ed31e112446f23611}} 
+\index{GraphNode@{GraphNode}!Equals@{Equals}}
+\index{Equals@{Equals}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool Graph\+Node.\+Equals (\begin{DoxyParamCaption}\item[{object}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_node_ab87ba204e9cf0220e47ae9081e7f2d00}\label{class_graph_node_ab87ba204e9cf0220e47ae9081e7f2d00}} 
+\index{GraphNode@{GraphNode}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Graph\+Node.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{obj1,  }\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_graph_node_ace598b1b916a7ccd9eccfe4f34a68acb}\label{class_graph_node_ace598b1b916a7ccd9eccfe4f34a68acb}} 
+\index{GraphNode@{GraphNode}!operator==@{operator==}}
+\index{operator==@{operator==}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Graph\+Node.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{obj1,  }\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_graph_node_a7c81a4ea013b72f9c8459aa5f3296b5b}\label{class_graph_node_a7c81a4ea013b72f9c8459aa5f3296b5b}} 
+\index{GraphNode@{GraphNode}!RemoveAllNeighbours@{RemoveAllNeighbours}}
+\index{RemoveAllNeighbours@{RemoveAllNeighbours}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{RemoveAllNeighbours()}{RemoveAllNeighbours()}}
+{\footnotesize\ttfamily bool Graph\+Node.\+Remove\+All\+Neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}\label{class_graph_node_adc8f138bb8ab796094560cbc4a9adc62}} 
+\index{GraphNode@{GraphNode}!RemoveNeighbour@{RemoveNeighbour}}
+\index{RemoveNeighbour@{RemoveNeighbour}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{RemoveNeighbour()}{RemoveNeighbour()}}
+{\footnotesize\ttfamily bool Graph\+Node.\+Remove\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph_node}{Graph\+Node}}}]{neighbour }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_node_a2d4ce49e2ee25d746821bbf527b9e4a5}\label{class_graph_node_a2d4ce49e2ee25d746821bbf527b9e4a5}} 
+\index{GraphNode@{GraphNode}!ResetSearchParameters@{ResetSearchParameters}}
+\index{ResetSearchParameters@{ResetSearchParameters}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{ResetSearchParameters()}{ResetSearchParameters()}}
+{\footnotesize\ttfamily void Graph\+Node.\+Reset\+Search\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_graph_node_ad6631a80420b8757811616504289f4ca}\label{class_graph_node_ad6631a80420b8757811616504289f4ca}} 
+\index{GraphNode@{GraphNode}!ToString@{ToString}}
+\index{ToString@{ToString}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Graph\+Node.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}\label{class_graph_node_a05fb18ba9bbf5c0fbd44b8255af9033a}} 
+\index{GraphNode@{GraphNode}!DistanceFromStartingNode@{DistanceFromStartingNode}}
+\index{DistanceFromStartingNode@{DistanceFromStartingNode}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{DistanceFromStartingNode}{DistanceFromStartingNode}}
+{\footnotesize\ttfamily float Graph\+Node.\+Distance\+From\+Starting\+Node = (float)999999999}
+
+\mbox{\Hypertarget{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}\label{class_graph_node_a9d70f6d24f8b0799b47a8e1f9dae064b}} 
+\index{GraphNode@{GraphNode}!PreviousVertex@{PreviousVertex}}
+\index{PreviousVertex@{PreviousVertex}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{PreviousVertex}{PreviousVertex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph_node}{Graph\+Node}} Graph\+Node.\+Previous\+Vertex = null}
+
+\mbox{\Hypertarget{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}\label{class_graph_node_a6669c521e51d47d2e2a39c4d84386e3f}} 
+\index{GraphNode@{GraphNode}!visited@{visited}}
+\index{visited@{visited}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily bool Graph\+Node.\+visited = false}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}\label{class_graph_node_aaffb3766e1688b59754ee410c51e11c2}} 
+\index{GraphNode@{GraphNode}!EdgeWeight@{EdgeWeight}}
+\index{EdgeWeight@{EdgeWeight}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{EdgeWeight}{EdgeWeight}}
+{\footnotesize\ttfamily IList$<$float$>$ Graph\+Node.\+Edge\+Weight\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_graph_node_ae5cc00b493c967d212963de93bb66189}\label{class_graph_node_ae5cc00b493c967d212963de93bb66189}} 
+\index{GraphNode@{GraphNode}!Neighbours@{Neighbours}}
+\index{Neighbours@{Neighbours}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{Neighbours}{Neighbours}}
+{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_graph_node}{Graph\+Node}}$>$ Graph\+Node.\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}\label{class_graph_node_ac43a560d3bcf6fddfbc271b4763e0dce}} 
+\index{GraphNode@{GraphNode}!Value@{Value}}
+\index{Value@{Value}!GraphNode@{GraphNode}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily Game\+Object Graph\+Node.\+Value\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+Simple\+Robot1/\mbox{\hyperlink{_graph_class_8cs}{Graph\+Class.\+cs}}\end{DoxyCompactItemize}
