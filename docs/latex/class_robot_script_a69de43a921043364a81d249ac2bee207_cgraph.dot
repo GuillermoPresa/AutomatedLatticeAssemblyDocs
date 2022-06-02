@@ -1,0 +1,32 @@
+digraph "RobotScript.MapNavigationSpace"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RobotScript.MapNavigation\lSpace",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Graph.AddEdge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graph.html#aa8d727eb1b3f711e16a6bad0b99bc18d",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Graph.FindGraphNodeFromNode\lObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graph.html#a74c76324252471cf22ac1e5e1d7bbfc5",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Graph.AddNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graph.html#a0b4db92ff7da6b87f453bcd9d9083a16",tooltip=" "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="MovementScript.CheckMovement\lLegal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_script.html#aa9e6f0a3197567f5645e367c6b9a2367",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="NodeSensorScript.CheckSensor\lNodeConnectionAvailability",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_node_sensor_script.html#a8977aca46b2af5a5cd7c7218c607e2ed",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Graph.ContainsEdge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_graph.html#ab8b286cfe410dc5959810e11932b6ba0",tooltip=" "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="RobotScript.GetCurrentRobotNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ad25a0147df08715dffc20665e66e5ecd",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="RobotScript.MapNavigation\lSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ad60c507489884cf04ba589c174639649",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="RobotScript.ClearNavigation\lSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a276491483d838ed1c2fa694985d6f5fd",tooltip=" "];
+  Node9 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="MovementScript.ReturnCollidingNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_movement_script.html#ae4726b52e200bf0382dd077b90e079ef",tooltip=" "];
+  Node11 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+}

@@ -1,0 +1,18 @@
+digraph "RobotScript.MoveToNode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RobotScript.MoveToNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="RobotScript.DrawNavPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a177722cf104b800c97505665083dd3a4",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="RobotScript.FindPathBetween\lNodes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2",tooltip=" "];
+  Node3 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="RobotScript.GetCurrentRobotNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ad25a0147df08715dffc20665e66e5ecd",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="RobotScript.MoveRobotAlongPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ab791230c437d0faed84e2852d1d03456",tooltip=" "];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+}

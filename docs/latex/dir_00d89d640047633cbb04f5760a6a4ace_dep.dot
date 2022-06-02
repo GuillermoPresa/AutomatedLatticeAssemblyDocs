@@ -1,0 +1,11 @@
+digraph "C:/Users/Guille/LatticeAssembly/Assets/Robot/SimpleRobot1"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_adbab688ab66f9820765a06a1ad19add {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Robot", fontname="Helvetica", fontsize="10", URL="dir_adbab688ab66f9820765a06a1ad19add.html"]
+  dir_00d89d640047633cbb04f5760a6a4ace [shape=box, label="SimpleRobot1", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_00d89d640047633cbb04f5760a6a4ace.html"];
+  }
+}

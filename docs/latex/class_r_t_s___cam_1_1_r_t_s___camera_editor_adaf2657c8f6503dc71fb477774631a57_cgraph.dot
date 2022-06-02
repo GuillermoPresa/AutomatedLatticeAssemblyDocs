@@ -1,0 +1,12 @@
+digraph "RTS_Cam.RTS_CameraEditor.OnInspectorGUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RTS_Cam.RTS_CameraEditor.\lOnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="TabsBlock.Draw",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tabs_block.html#ace96b271c6b50b2d66fb6ad368f1f019",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="TabsBlock.SetCurrentMethod",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tabs_block.html#a82042608488df90b05cc4ff7b58082b5",tooltip=" "];
+}

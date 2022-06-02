@@ -1,0 +1,12 @@
+digraph "ChituboxSTLParserClass.Import3DObject"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ChituboxSTLParserClass.Import3\lDObject",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ChituboxSTLParserClass.Check\lPixelConditions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_chitubox_s_t_l_parser_class.html#a1e62059bf74a1014858da0db8668422f",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ChituboxSTLParserClass.Get\lDensity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_chitubox_s_t_l_parser_class.html#a4d59bde790e987254f2a058283526a54",tooltip=" "];
+}

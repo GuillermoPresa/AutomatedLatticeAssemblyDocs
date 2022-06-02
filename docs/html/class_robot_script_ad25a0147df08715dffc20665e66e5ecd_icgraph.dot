@@ -1,0 +1,19 @@
+digraph "RobotScript.GetCurrentRobotNode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="RobotScript.GetCurrentRobotNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="RobotScript.FindPathBetween\lNodes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RobotScript.LatticeInsertion\lPossibleNodes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RobotScript.CheckInsertion\lPossible",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RobotScript.MoveToNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RobotScript.MapNavigation\lSpace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#a69de43a921043364a81d249ac2bee207",tooltip=" "];
+}

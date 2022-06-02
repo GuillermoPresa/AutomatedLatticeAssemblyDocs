@@ -1,0 +1,13 @@
+digraph "RobotScript.DrawNavPath"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="RobotScript.DrawNavPath",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="RobotScript.MoveRobotAlongPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ab791230c437d0faed84e2852d1d03456",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="RobotScript.MoveToNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

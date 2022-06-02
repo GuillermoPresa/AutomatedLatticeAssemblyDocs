@@ -1,0 +1,15 @@
+digraph "C:/Users/Guille/LatticeAssembly/Assets/Thirdparty/RTS_Camera/Scripts"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_78c445865d07a158b5bf1f70966b4ec2 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="RTS_Camera", fontname="Helvetica", fontsize="10", URL="dir_78c445865d07a158b5bf1f70966b4ec2.html"]
+  subgraph clusterdir_eb11b71308b6d0bb00878796357c62c3 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", style="filled,bold,", label="", fontname="Helvetica", fontsize="10", URL="dir_eb11b71308b6d0bb00878796357c62c3.html"]
+    dir_eb11b71308b6d0bb00878796357c62c3 [shape=plaintext, label="Scripts"];
+  dir_2aec096544aff97258092d1917fa2eac [shape=box, label="Editor", style="filled,", fillcolor="#a2b4d6", color="grey25", URL="dir_2aec096544aff97258092d1917fa2eac.html"];
+  }
+  }
+}

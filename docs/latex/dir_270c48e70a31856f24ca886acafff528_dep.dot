@@ -1,0 +1,11 @@
+digraph "C:/Users/Guille/LatticeAssembly/Assets/Tools"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  compound=true
+  subgraph clusterdir_8bc20651c52d64f68a2ad1811463e540 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", style="filled,dashed,", label="Assets", fontname="Helvetica", fontsize="10", URL="dir_8bc20651c52d64f68a2ad1811463e540.html"]
+  dir_270c48e70a31856f24ca886acafff528 [shape=box, label="Tools", style="filled,bold,", fillcolor="#edf0f7", color="grey25", URL="dir_270c48e70a31856f24ca886acafff528.html"];
+  }
+}
