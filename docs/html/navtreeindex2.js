@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"class_spawner.html#a152c083c8d5d08f769529e75e21f6d9a":[2,0,32,13],
 "class_spawner.html#a19c6afc7e1d1048d35073725b6830978":[2,0,32,3],
 "class_spawner.html#a1e59a9d3ec029cdf420d4d7e336e4356":[2,0,32,14],
 "class_spawner.html#a23470aace6f16bfd464579e28fdd7c93":[2,0,32,12],

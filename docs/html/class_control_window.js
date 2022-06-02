@@ -1,6 +1,5 @@
 var class_control_window =
 [
-    [ "Awake", "class_control_window.html#af79ffcf3693929222e4a723168fdb9ad", null ],
     [ "OnGUI", "class_control_window.html#ae9d596b21380d7dc65b4340833b6c687", null ],
     [ "ColorCyclingActive", "class_control_window.html#a00ef48c696dd9462d69b37fdc717c277", null ],
     [ "ReferenceScriptReference", "class_control_window.html#a3a762b51589de4efc20ba727358762cb", null ],
