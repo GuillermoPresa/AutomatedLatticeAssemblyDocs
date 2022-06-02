@@ -28,7 +28,9 @@ var NAVTREE =
     [ "Main page", "index.html", [
       [ "Introduction to automated lattice assembly", "index.html#intro_sec", null ],
       [ "Installation", "index.html#install_sec", [
-        [ "Operating the program", "index.html#OperatingProgram", null ]
+        [ "Operating the program", "index.html#OperatingProgram", null ],
+        [ "Architecture", "index.html#Architecture", null ],
+        [ "External Resources", "index.html#ExtResources", null ]
       ] ]
     ] ],
     [ "Packages", "namespaces.html", [
