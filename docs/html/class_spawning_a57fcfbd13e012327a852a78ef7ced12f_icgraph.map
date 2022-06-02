@@ -1,0 +1,5 @@
+<map id="Spawning.SourceIndiferentSpawn" name="Spawning.SourceIndiferentSpawn">
+<area shape="rect" id="node1" title=" " alt="" coords="257,29,432,71"/>
+<area shape="rect" id="node2" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="31,11,183,38"/>
+<area shape="rect" id="node3" href="$class_spawner_overlay.html#a06b78548d6b09750b51adfc253d68613" title=" " alt="" coords="5,62,209,89"/>
+</map>

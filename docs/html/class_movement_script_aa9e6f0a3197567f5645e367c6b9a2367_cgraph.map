@@ -1,0 +1,4 @@
+<map id="MovementScript.CheckMovementLegal" name="MovementScript.CheckMovementLegal">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,220,47"/>
+<area shape="rect" id="node2" href="$class_node_sensor_script.html#a8977aca46b2af5a5cd7c7218c607e2ed" title=" " alt="" coords="268,5,477,47"/>
+</map>

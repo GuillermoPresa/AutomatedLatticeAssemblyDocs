@@ -1,0 +1,8 @@
+<map id="RobotScript" name="RobotScript">
+<area shape="rect" id="node1" title=" " alt="" coords="55,272,146,299"/>
+<area shape="rect" id="node2" title=" " alt="" coords="52,5,162,32"/>
+<area shape="rect" id="node3" href="$class_time_manager.html" title=" " alt="" coords="13,132,113,159"/>
+<area shape="rect" id="node4" href="$class_selection_script.html" title=" " alt="" coords="160,183,270,209"/>
+<area shape="rect" id="node5" href="$class_spawner.html" title=" " alt="" coords="174,81,246,108"/>
+<area shape="rect" id="node6" href="$class_graph.html" title=" " alt="" coords="294,183,352,209"/>
+</map>

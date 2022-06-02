@@ -1,0 +1,7 @@
+<map id="ParentObjectScript" name="ParentObjectScript">
+<area shape="rect" id="node1" title=" " alt="" coords="16,260,148,287"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" href="$class_selection_script.html" title=" " alt="" coords="48,171,159,197"/>
+<area shape="rect" id="node4" href="$class_spawner.html" title=" " alt="" coords="98,81,170,108"/>
+<area shape="rect" id="node5" href="$class_lattice_collection.html" title=" " alt="" coords="204,171,323,197"/>
+</map>
