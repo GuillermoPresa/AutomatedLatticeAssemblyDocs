@@ -15,7 +15,7 @@ Collaboration diagram for Selection\+Script\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=232pt]{class_selection_script__coll__graph}
+\includegraphics[width=333pt]{class_selection_script__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -25,20 +25,33 @@ void \mbox{\hyperlink{class_selection_script_a8e6f978d6ad09a1fa6b87df54c76d213}{
 \item 
 void \mbox{\hyperlink{class_selection_script_a780d94caff0a6cc1d03f3e50a81c2b3c}{Set\+Defaults}} ()
 \end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_selection_script_a7d946f064b012db184f8670a23022dbf}{Unselect\+All\+From\+Global\+List}} (List$<$ Game\+Object $>$ Global\+Object\+List\+With\+Selectors)
+\item 
+static int \mbox{\hyperlink{class_selection_script_ab6856f1e708f6555c3714c088598e41c}{Count\+Selected\+Items\+From\+Global\+List}} (List$<$ Game\+Object $>$ Global\+Object\+List\+With\+Selectors)
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+Dictionary$<$ string, Dictionary$<$ string, Game\+Object $>$ $>$ \mbox{\hyperlink{class_selection_script_a027a41fe0350e6e61334f4a0a11c3734}{Object\+Type\+And\+Selectionreferences}} = new Dictionary$<$string, Dictionary$<$string, Game\+Object$>$$>$()
+\item 
 Game\+Object \mbox{\hyperlink{class_selection_script_acb8f93726484bd9986984116971f1e8e}{Selected\+Node}}
 \item 
-Game\+Object \mbox{\hyperlink{class_selection_script_a9b5f00951d5a6230e14877c48555d7cc}{Selected\+Lattice}}
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_selection_script_aeb70d6029066dc66b495f990c5cc3530}{Selected\+Lattice\+List}} = new List$<$Game\+Object$>$()
 \item 
 Game\+Object \mbox{\hyperlink{class_selection_script_ac40451363e27342cb270c0968e81ff40}{Selected\+Object}}
 \item 
 Game\+Object \mbox{\hyperlink{class_selection_script_afdcc8661d7be982ef37a323355cca79a}{Selected\+Robot}}
 \item 
-Game\+Object \mbox{\hyperlink{class_selection_script_aff46713921af12a79b0974eddf6ec1d4}{Quick\+Select\+Lattice}}
+Game\+Object \mbox{\hyperlink{class_selection_script_a1e3e360788e8cc50752fc1e30c86ab6a}{Clicked\+Node}}
 \item 
-Game\+Object \mbox{\hyperlink{class_selection_script_a1027b709fec8ed78c40b5a0b3ed2315b}{Quick\+Select\+Node}}
+Game\+Object \mbox{\hyperlink{class_selection_script_adc2ec3d22c84babcf674531d6d7ad325}{Clicked\+Lattice}}
+\item 
+Game\+Object \mbox{\hyperlink{class_selection_script_a3030d3e8c36edb5edddf6527fc2a0d83}{Clicked\+Object}}
+\item 
+Game\+Object \mbox{\hyperlink{class_selection_script_ac678213fe0da8b3aa511d50d9cac0e5c}{Clicked\+Robot}}
 \item 
 Game\+Object \mbox{\hyperlink{class_selection_script_ab9902d942e2517d2602e1fdf243926b5}{Hover\+Node}}
 \item 
@@ -47,6 +60,8 @@ Game\+Object \mbox{\hyperlink{class_selection_script_a0c44508ce0baf9d7dc8dd6108e
 Game\+Object \mbox{\hyperlink{class_selection_script_aec68a6ef8528835c1e1bd978598f75ac}{Hover\+Object}}
 \item 
 Game\+Object \mbox{\hyperlink{class_selection_script_acac5fe1cce4df2a0db9ddab4b7c557a7}{Hover\+Robot}}
+\item 
+int \mbox{\hyperlink{class_selection_script_a7144b4eed078af195c2c4d654fadd41d}{Control\+Window\+Selected\+Tab}} = 0
 \item 
 bool \mbox{\hyperlink{class_selection_script_a7df5be6e88f1c7d0549f7c2213844e7f}{Move\+To\+Node}} = false
 \item 
@@ -66,6 +81,8 @@ bool \mbox{\hyperlink{class_selection_script_a93939d7d68d1f7018dd8ca07ac5741dd}{
 \item 
 List$<$ Material $>$ \mbox{\hyperlink{class_selection_script_ac839851c68986c52de3b19ef15305a34}{Color\+Cycling\+Material\+List}} = new List$<$Material$>$()
 \item 
+\mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_selection_script_a9b52301bd6fd8e75bb91671aeb3efd62}{Reference\+Script\+Reference}}
+\item 
 Dictionary$<$ int, string $>$ \mbox{\hyperlink{class_selection_script_a87a8216145b4807701765078133a53ca}{Object\+Type\+Dict}} = new Dictionary$<$int, string$>$()
 \item 
 List$<$ string $>$ \mbox{\hyperlink{class_selection_script_ae231e638afa57d6d37e1881204db620a}{Object\+Type\+List}} = new List$<$string$>$()
@@ -73,6 +90,19 @@ List$<$ string $>$ \mbox{\hyperlink{class_selection_script_ae231e638afa57d6d37e1
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_selection_script_ab6856f1e708f6555c3714c088598e41c}\label{class_selection_script_ab6856f1e708f6555c3714c088598e41c}} 
+\index{SelectionScript@{SelectionScript}!CountSelectedItemsFromGlobalList@{CountSelectedItemsFromGlobalList}}
+\index{CountSelectedItemsFromGlobalList@{CountSelectedItemsFromGlobalList}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{CountSelectedItemsFromGlobalList()}{CountSelectedItemsFromGlobalList()}}
+{\footnotesize\ttfamily static int Selection\+Script.\+Count\+Selected\+Items\+From\+Global\+List (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{Global\+Object\+List\+With\+Selectors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_selection_script_ab6856f1e708f6555c3714c088598e41c_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_selection_script_a8e6f978d6ad09a1fa6b87df54c76d213}\label{class_selection_script_a8e6f978d6ad09a1fa6b87df54c76d213}} 
 \index{SelectionScript@{SelectionScript}!NullSelections@{NullSelections}}
 \index{NullSelections@{NullSelections}!SelectionScript@{SelectionScript}}
@@ -85,14 +115,57 @@ This is a comment 2\mbox{\Hypertarget{class_selection_script_a780d94caff0a6cc1d0
 \doxysubsubsection{\texorpdfstring{SetDefaults()}{SetDefaults()}}
 {\footnotesize\ttfamily void Selection\+Script.\+Set\+Defaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_selection_script_a7d946f064b012db184f8670a23022dbf}\label{class_selection_script_a7d946f064b012db184f8670a23022dbf}} 
+\index{SelectionScript@{SelectionScript}!UnselectAllFromGlobalList@{UnselectAllFromGlobalList}}
+\index{UnselectAllFromGlobalList@{UnselectAllFromGlobalList}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{UnselectAllFromGlobalList()}{UnselectAllFromGlobalList()}}
+{\footnotesize\ttfamily static void Selection\+Script.\+Unselect\+All\+From\+Global\+List (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{Global\+Object\+List\+With\+Selectors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_selection_script_a7d946f064b012db184f8670a23022dbf_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_selection_script_adc2ec3d22c84babcf674531d6d7ad325}\label{class_selection_script_adc2ec3d22c84babcf674531d6d7ad325}} 
+\index{SelectionScript@{SelectionScript}!ClickedLattice@{ClickedLattice}}
+\index{ClickedLattice@{ClickedLattice}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ClickedLattice}{ClickedLattice}}
+{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Clicked\+Lattice}
+
+\mbox{\Hypertarget{class_selection_script_a1e3e360788e8cc50752fc1e30c86ab6a}\label{class_selection_script_a1e3e360788e8cc50752fc1e30c86ab6a}} 
+\index{SelectionScript@{SelectionScript}!ClickedNode@{ClickedNode}}
+\index{ClickedNode@{ClickedNode}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ClickedNode}{ClickedNode}}
+{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Clicked\+Node}
+
+\mbox{\Hypertarget{class_selection_script_a3030d3e8c36edb5edddf6527fc2a0d83}\label{class_selection_script_a3030d3e8c36edb5edddf6527fc2a0d83}} 
+\index{SelectionScript@{SelectionScript}!ClickedObject@{ClickedObject}}
+\index{ClickedObject@{ClickedObject}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ClickedObject}{ClickedObject}}
+{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Clicked\+Object}
+
+\mbox{\Hypertarget{class_selection_script_ac678213fe0da8b3aa511d50d9cac0e5c}\label{class_selection_script_ac678213fe0da8b3aa511d50d9cac0e5c}} 
+\index{SelectionScript@{SelectionScript}!ClickedRobot@{ClickedRobot}}
+\index{ClickedRobot@{ClickedRobot}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ClickedRobot}{ClickedRobot}}
+{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Clicked\+Robot}
+
 \mbox{\Hypertarget{class_selection_script_ac839851c68986c52de3b19ef15305a34}\label{class_selection_script_ac839851c68986c52de3b19ef15305a34}} 
 \index{SelectionScript@{SelectionScript}!ColorCyclingMaterialList@{ColorCyclingMaterialList}}
 \index{ColorCyclingMaterialList@{ColorCyclingMaterialList}!SelectionScript@{SelectionScript}}
 \doxysubsubsection{\texorpdfstring{ColorCyclingMaterialList}{ColorCyclingMaterialList}}
 {\footnotesize\ttfamily List$<$Material$>$ Selection\+Script.\+Color\+Cycling\+Material\+List = new List$<$Material$>$()}
+
+\mbox{\Hypertarget{class_selection_script_a7144b4eed078af195c2c4d654fadd41d}\label{class_selection_script_a7144b4eed078af195c2c4d654fadd41d}} 
+\index{SelectionScript@{SelectionScript}!ControlWindowSelectedTab@{ControlWindowSelectedTab}}
+\index{ControlWindowSelectedTab@{ControlWindowSelectedTab}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ControlWindowSelectedTab}{ControlWindowSelectedTab}}
+{\footnotesize\ttfamily int Selection\+Script.\+Control\+Window\+Selected\+Tab = 0}
 
 \mbox{\Hypertarget{class_selection_script_a0c44508ce0baf9d7dc8dd6108ead049a}\label{class_selection_script_a0c44508ce0baf9d7dc8dd6108ead049a}} 
 \index{SelectionScript@{SelectionScript}!HoverLattice@{HoverLattice}}
@@ -124,6 +197,12 @@ This is a comment 2\mbox{\Hypertarget{class_selection_script_a780d94caff0a6cc1d0
 \doxysubsubsection{\texorpdfstring{MoveToNode}{MoveToNode}}
 {\footnotesize\ttfamily bool Selection\+Script.\+Move\+To\+Node = false}
 
+\mbox{\Hypertarget{class_selection_script_a027a41fe0350e6e61334f4a0a11c3734}\label{class_selection_script_a027a41fe0350e6e61334f4a0a11c3734}} 
+\index{SelectionScript@{SelectionScript}!ObjectTypeAndSelectionreferences@{ObjectTypeAndSelectionreferences}}
+\index{ObjectTypeAndSelectionreferences@{ObjectTypeAndSelectionreferences}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ObjectTypeAndSelectionreferences}{ObjectTypeAndSelectionreferences}}
+{\footnotesize\ttfamily Dictionary$<$string, Dictionary$<$string, Game\+Object$>$ $>$ Selection\+Script.\+Object\+Type\+And\+Selectionreferences = new Dictionary$<$string, Dictionary$<$string, Game\+Object$>$$>$()}
+
 \mbox{\Hypertarget{class_selection_script_a87a8216145b4807701765078133a53ca}\label{class_selection_script_a87a8216145b4807701765078133a53ca}} 
 \index{SelectionScript@{SelectionScript}!ObjectTypeDict@{ObjectTypeDict}}
 \index{ObjectTypeDict@{ObjectTypeDict}!SelectionScript@{SelectionScript}}
@@ -136,23 +215,17 @@ This is a comment 2\mbox{\Hypertarget{class_selection_script_a780d94caff0a6cc1d0
 \doxysubsubsection{\texorpdfstring{ObjectTypeList}{ObjectTypeList}}
 {\footnotesize\ttfamily List$<$string$>$ Selection\+Script.\+Object\+Type\+List = new List$<$string$>$()}
 
-\mbox{\Hypertarget{class_selection_script_aff46713921af12a79b0974eddf6ec1d4}\label{class_selection_script_aff46713921af12a79b0974eddf6ec1d4}} 
-\index{SelectionScript@{SelectionScript}!QuickSelectLattice@{QuickSelectLattice}}
-\index{QuickSelectLattice@{QuickSelectLattice}!SelectionScript@{SelectionScript}}
-\doxysubsubsection{\texorpdfstring{QuickSelectLattice}{QuickSelectLattice}}
-{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Quick\+Select\+Lattice}
+\mbox{\Hypertarget{class_selection_script_a9b52301bd6fd8e75bb91671aeb3efd62}\label{class_selection_script_a9b52301bd6fd8e75bb91671aeb3efd62}} 
+\index{SelectionScript@{SelectionScript}!ReferenceScriptReference@{ReferenceScriptReference}}
+\index{ReferenceScriptReference@{ReferenceScriptReference}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{ReferenceScriptReference}{ReferenceScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_references}{References}} Selection\+Script.\+Reference\+Script\+Reference}
 
-\mbox{\Hypertarget{class_selection_script_a1027b709fec8ed78c40b5a0b3ed2315b}\label{class_selection_script_a1027b709fec8ed78c40b5a0b3ed2315b}} 
-\index{SelectionScript@{SelectionScript}!QuickSelectNode@{QuickSelectNode}}
-\index{QuickSelectNode@{QuickSelectNode}!SelectionScript@{SelectionScript}}
-\doxysubsubsection{\texorpdfstring{QuickSelectNode}{QuickSelectNode}}
-{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Quick\+Select\+Node}
-
-\mbox{\Hypertarget{class_selection_script_a9b5f00951d5a6230e14877c48555d7cc}\label{class_selection_script_a9b5f00951d5a6230e14877c48555d7cc}} 
-\index{SelectionScript@{SelectionScript}!SelectedLattice@{SelectedLattice}}
-\index{SelectedLattice@{SelectedLattice}!SelectionScript@{SelectionScript}}
-\doxysubsubsection{\texorpdfstring{SelectedLattice}{SelectedLattice}}
-{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Selected\+Lattice}
+\mbox{\Hypertarget{class_selection_script_aeb70d6029066dc66b495f990c5cc3530}\label{class_selection_script_aeb70d6029066dc66b495f990c5cc3530}} 
+\index{SelectionScript@{SelectionScript}!SelectedLatticeList@{SelectedLatticeList}}
+\index{SelectedLatticeList@{SelectedLatticeList}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{SelectedLatticeList}{SelectedLatticeList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Selection\+Script.\+Selected\+Lattice\+List = new List$<$Game\+Object$>$()}
 
 \mbox{\Hypertarget{class_selection_script_acb8f93726484bd9986984116971f1e8e}\label{class_selection_script_acb8f93726484bd9986984116971f1e8e}} 
 \index{SelectionScript@{SelectionScript}!SelectedNode@{SelectedNode}}

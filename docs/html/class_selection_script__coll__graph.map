@@ -1,5 +1,6 @@
 <map id="SelectionScript" name="SelectionScript">
-<area shape="rect" id="node1" title=" " alt="" coords="11,171,121,197"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node3" href="$class_spawner.html" title=" " alt="" coords="82,81,154,108"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,116,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="35,5,145,32"/>
+<area shape="rect" id="node3" href="$class_spawner.html" title=" " alt="" coords="54,81,126,108"/>
+<area shape="rect" id="node4" href="$class_references.html" title=" " alt="" coords="156,81,243,108"/>
 </map>

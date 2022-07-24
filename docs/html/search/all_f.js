@@ -11,7 +11,7 @@ var searchData=
   ['placed_8',['Placed',['../class_lattice_class.html#a5cf3db8f46b62c00d583a5cb15979614',1,'LatticeClass']]],
   ['placedlatticelist_9',['PlacedLatticeList',['../class_lattice_collection.html#a421dec4d463539a17c0d0131ba6312a3',1,'LatticeCollection']]],
   ['placelattice_10',['PlaceLattice',['../class_lattice_class.html#a4a9dc8a6035eca3a9b87eabcdc3de6eb',1,'LatticeClass.PlaceLattice()'],['../class_lattice_collection.html#a787390dc08d549ef916d59fcae4cde25',1,'LatticeCollection.PlaceLattice()']]],
-  ['popuptext_11',['PopupText',['../class_u_i_tools_windows.html#a3ab48f4aacd66bfc88038cbdc45a08b3',1,'UIToolsWindows']]],
-  ['positionvector_12',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
-  ['previousvertex_13',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]]
+  ['positionvector_11',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
+  ['previousvertex_12',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]],
+  ['prioritydictionary_13',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]]
 ];

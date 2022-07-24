@@ -104,13 +104,13 @@ Collaboration diagram for ControlWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_control_window__coll__graph.png" border="0" usemap="#a_control_window_coll__map" alt="Collaboration graph"/></div>
 <map name="a_control_window_coll__map" id="a_control_window_coll__map">
-<area shape="rect" title=" " alt="" coords="225,349,334,376"/>
+<area shape="rect" title=" " alt="" coords="351,349,461,376"/>
 <area shape="rect" title=" " alt="" coords="5,260,108,287"/>
-<area shape="rect" href="class_selection_script.html" title=" " alt="" coords="213,171,324,197"/>
-<area shape="rect" href="class_spawner_overlay.html" title=" " alt="" coords="454,260,569,287"/>
-<area shape="rect" title=" " alt="" coords="447,5,557,32"/>
-<area shape="rect" href="class_spawner.html" title=" " alt="" coords="254,81,326,108"/>
-<area shape="rect" href="class_references.html" title=" " alt="" coords="576,171,663,197"/>
+<area shape="rect" href="class_selection_script.html" title=" " alt="" coords="673,171,784,197"/>
+<area shape="rect" href="class_spawner_overlay.html" title=" " alt="" coords="349,260,463,287"/>
+<area shape="rect" title=" " alt="" coords="419,5,529,32"/>
+<area shape="rect" href="class_spawner.html" title=" " alt="" coords="561,81,633,108"/>
+<area shape="rect" href="class_references.html" title=" " alt="" coords="319,81,405,108"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -138,6 +138,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3a762b51589de4efc20ba727358762cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ef48c696dd9462d69b37fdc717c277"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_control_window.html#a00ef48c696dd9462d69b37fdc717c277">ColorCyclingActive</a></td></tr>
 <tr class="separator:a00ef48c696dd9462d69b37fdc717c277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a8841d8981d02daabe253cc7ee9aa6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_control_window.html#a21a8841d8981d02daabe253cc7ee9aa6">Iteration</a> = 0</td></tr>
+<tr class="separator:a21a8841d8981d02daabe253cc7ee9aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811a5a917129bffbe42fdbfc39e0178e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_control_window.html#a811a5a917129bffbe42fdbfc39e0178e">MaxIteration</a></td></tr>
+<tr class="separator:a811a5a917129bffbe42fdbfc39e0178e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="ControlWindow"></a>
@@ -193,10 +197,11 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_control_window_ae9d596b21380d7dc65b4340833b6c687_cgraph.png" border="0" usemap="#aclass_control_window_ae9d596b21380d7dc65b4340833b6c687_cgraph" alt=""/></div>
 <map name="aclass_control_window_ae9d596b21380d7dc65b4340833b6c687_cgraph" id="aclass_control_window_ae9d596b21380d7dc65b4340833b6c687_cgraph">
-<area shape="rect" title=" " alt="" coords="5,58,157,85"/>
-<area shape="rect" href="class_parent_object_script.html#ae39b25c3ae0a8bbfabae1e74654df562" title=" " alt="" coords="208,5,377,47"/>
-<area shape="rect" href="class_spawning.html#a57fcfbd13e012327a852a78ef7ced12f" title=" " alt="" coords="205,95,380,136"/>
-<area shape="rect" href="class_lattice_collection.html#a33f2c72139145b522070e34e24e9bd98" title=" " alt="" coords="428,5,593,47"/>
+<area shape="rect" title=" " alt="" coords="5,135,157,162"/>
+<area shape="rect" href="class_selection_script.html#ab6856f1e708f6555c3714c088598e41c" title=" " alt="" coords="205,5,404,47"/>
+<area shape="rect" href="class_spawning.html#a57fcfbd13e012327a852a78ef7ced12f" title=" " alt="" coords="217,95,392,136"/>
+<area shape="rect" href="class_selection_script.html#a7d946f064b012db184f8670a23022dbf" title=" " alt="" coords="222,160,387,201"/>
+<area shape="rect" href="class_modifications.html#a4537fb8f1d3f88cf645a2cba46a8cd09" title=" " alt="" coords="210,225,399,267"/>
 </map>
 </div>
 
@@ -236,6 +241,34 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">bool ControlWindow.ColorCyclingActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21a8841d8981d02daabe253cc7ee9aa6" name="a21a8841d8981d02daabe253cc7ee9aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21a8841d8981d02daabe253cc7ee9aa6">&#9670;&nbsp;</a></span>Iteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ControlWindow.Iteration = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a811a5a917129bffbe42fdbfc39e0178e" name="a811a5a917129bffbe42fdbfc39e0178e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a811a5a917129bffbe42fdbfc39e0178e">&#9670;&nbsp;</a></span>MaxIteration</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ControlWindow.MaxIteration</td>
         </tr>
       </table>
 </div><div class="memdoc">

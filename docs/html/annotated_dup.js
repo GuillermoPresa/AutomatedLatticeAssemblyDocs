@@ -36,6 +36,7 @@ var annotated_dup =
     [ "LatticeClass", "class_lattice_class.html", "class_lattice_class" ],
     [ "LatticeCollection", "class_lattice_collection.html", "class_lattice_collection" ],
     [ "LayerSlider", "class_layer_slider.html", "class_layer_slider" ],
+    [ "Modifications", "class_modifications.html", null ],
     [ "MouseLatticeSelector", "class_mouse_lattice_selector.html", null ],
     [ "MovementScript", "class_movement_script.html", "class_movement_script" ],
     [ "NavigationPath", "class_navigation_path.html", "class_navigation_path" ],
@@ -48,6 +49,7 @@ var annotated_dup =
     [ "RobotCoordinator", "class_robot_coordinator.html", "class_robot_coordinator" ],
     [ "RobotScript", "class_robot_script.html", "class_robot_script" ],
     [ "ScrollviewBlock", "class_scrollview_block.html", "class_scrollview_block" ],
+    [ "Selected", "class_selected.html", "class_selected" ],
     [ "SelectionScript", "class_selection_script.html", "class_selection_script" ],
     [ "Spawner", "class_spawner.html", "class_spawner" ],
     [ "SpawnerOverlay", "class_spawner_overlay.html", "class_spawner_overlay" ],
@@ -55,7 +57,6 @@ var annotated_dup =
     [ "TabsBlock", "class_tabs_block.html", "class_tabs_block" ],
     [ "TimeManager", "class_time_manager.html", "class_time_manager" ],
     [ "TimeSlider", "class_time_slider.html", "class_time_slider" ],
-    [ "UIToolsWindows", "class_u_i_tools_windows.html", "class_u_i_tools_windows" ],
     [ "VerticalBlock", "class_vertical_block.html", "class_vertical_block" ],
     [ "WorkDefinition", "class_work_definition.html", "class_work_definition" ]
 ];

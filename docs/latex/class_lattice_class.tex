@@ -26,6 +26,8 @@ void \mbox{\hyperlink{class_lattice_class_a8e4f9c626c700d9cb45c8af6b0e69208}{Upd
 void \mbox{\hyperlink{class_lattice_class_a4a9dc8a6035eca3a9b87eabcdc3de6eb}{Place\+Lattice}} ()
 \item 
 void \mbox{\hyperlink{class_lattice_class_a8d6aed807b205bde9fced593106249ac}{Unplace\+Lattice}} ()
+\item 
+void \mbox{\hyperlink{class_lattice_class_a8faa60a24832fcfef56d4eab539ea30e}{Highlight}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -44,9 +46,11 @@ List$<$ Game\+Object $>$ \mbox{\hyperlink{class_lattice_class_af02928e1ba8ef5bee
 \item 
 Game\+Object \mbox{\hyperlink{class_lattice_class_a85c0f0a8ec1265e554dff01540a5ea19}{Renderer\+Object}}
 \item 
-\mbox{\hyperlink{class_selection_script}{Selection\+Script}} \mbox{\hyperlink{class_lattice_class_ad62b2fa5b02b62b1e4649889df41ab67}{Selection\+Script}}
+\mbox{\hyperlink{class_selected}{Selected}} \mbox{\hyperlink{class_lattice_class_a9df7d2c75844aa23b1465249b2ba2d7e}{Local\+Selection\+Script\+Reference}}
 \item 
-\mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_lattice_class_a90529aaee3a5e5c04e8a2593bbeb4382}{Reference\+Script\+Reference}}
+\mbox{\hyperlink{class_selection_script}{Selection\+Script}} \mbox{\hyperlink{class_lattice_class_a095d2ed64ba5b6fd7bbb7edc83d37e27}{Global\+Selection\+Script\+Reference}}
+\item 
+\mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_lattice_class_aabec74cd7d41bc2a3c7b5bafa55f71c2}{Global\+Reference\+Script\+Reference}}
 \item 
 bool \mbox{\hyperlink{class_lattice_class_a5cf3db8f46b62c00d583a5cb15979614}{Placed}} = false
 \item 
@@ -96,6 +100,12 @@ static Game\+Object \mbox{\hyperlink{class_lattice_class_a5a88ece44bebfb15c7f93a
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lattice_class_a8faa60a24832fcfef56d4eab539ea30e}\label{class_lattice_class_a8faa60a24832fcfef56d4eab539ea30e}} 
+\index{LatticeClass@{LatticeClass}!Highlight@{Highlight}}
+\index{Highlight@{Highlight}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{Highlight()}{Highlight()}}
+{\footnotesize\ttfamily void Lattice\+Class.\+Highlight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_lattice_class_a4a9dc8a6035eca3a9b87eabcdc3de6eb}\label{class_lattice_class_a4a9dc8a6035eca3a9b87eabcdc3de6eb}} 
 \index{LatticeClass@{LatticeClass}!PlaceLattice@{PlaceLattice}}
 \index{PlaceLattice@{PlaceLattice}!LatticeClass@{LatticeClass}}
@@ -167,6 +177,18 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{Fixed}{Fixed}}
 {\footnotesize\ttfamily bool Lattice\+Class.\+Fixed = false}
 
+\mbox{\Hypertarget{class_lattice_class_aabec74cd7d41bc2a3c7b5bafa55f71c2}\label{class_lattice_class_aabec74cd7d41bc2a3c7b5bafa55f71c2}} 
+\index{LatticeClass@{LatticeClass}!GlobalReferenceScriptReference@{GlobalReferenceScriptReference}}
+\index{GlobalReferenceScriptReference@{GlobalReferenceScriptReference}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{GlobalReferenceScriptReference}{GlobalReferenceScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_references}{References}} Lattice\+Class.\+Global\+Reference\+Script\+Reference}
+
+\mbox{\Hypertarget{class_lattice_class_a095d2ed64ba5b6fd7bbb7edc83d37e27}\label{class_lattice_class_a095d2ed64ba5b6fd7bbb7edc83d37e27}} 
+\index{LatticeClass@{LatticeClass}!GlobalSelectionScriptReference@{GlobalSelectionScriptReference}}
+\index{GlobalSelectionScriptReference@{GlobalSelectionScriptReference}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{GlobalSelectionScriptReference}{GlobalSelectionScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Lattice\+Class.\+Global\+Selection\+Script\+Reference}
+
 \mbox{\Hypertarget{class_lattice_class_ac393367ef3c6a0053f11121a7a09bc3e}\label{class_lattice_class_ac393367ef3c6a0053f11121a7a09bc3e}} 
 \index{LatticeClass@{LatticeClass}!ID@{ID}}
 \index{ID@{ID}!LatticeClass@{LatticeClass}}
@@ -196,6 +218,12 @@ Here is the call graph for this function\+:\nopagebreak
 \index{LatticeTypeDirectory@{LatticeTypeDirectory}!LatticeClass@{LatticeClass}}
 \doxysubsubsection{\texorpdfstring{LatticeTypeDirectory}{LatticeTypeDirectory}}
 {\footnotesize\ttfamily string Lattice\+Class.\+Lattice\+Type\+Directory = new Directory\+Info((string)System.\+IO.\+Directory.\+Get\+Current\+Directory()).To\+String() + \char`\"{}/Assets/\mbox{\hyperlink{class_lattice_class_a3868410548b80e54a533e83111d9543c}{Lattice}}\char`\"{}}
+
+\mbox{\Hypertarget{class_lattice_class_a9df7d2c75844aa23b1465249b2ba2d7e}\label{class_lattice_class_a9df7d2c75844aa23b1465249b2ba2d7e}} 
+\index{LatticeClass@{LatticeClass}!LocalSelectionScriptReference@{LocalSelectionScriptReference}}
+\index{LocalSelectionScriptReference@{LocalSelectionScriptReference}!LatticeClass@{LatticeClass}}
+\doxysubsubsection{\texorpdfstring{LocalSelectionScriptReference}{LocalSelectionScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selected}{Selected}} Lattice\+Class.\+Local\+Selection\+Script\+Reference}
 
 \mbox{\Hypertarget{class_lattice_class_aeb1568088d998696f6041b59ca437174}\label{class_lattice_class_aeb1568088d998696f6041b59ca437174}} 
 \index{LatticeClass@{LatticeClass}!MeshForRenderer@{MeshForRenderer}}
@@ -263,12 +291,6 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{Placed}{Placed}}
 {\footnotesize\ttfamily bool Lattice\+Class.\+Placed = false}
 
-\mbox{\Hypertarget{class_lattice_class_a90529aaee3a5e5c04e8a2593bbeb4382}\label{class_lattice_class_a90529aaee3a5e5c04e8a2593bbeb4382}} 
-\index{LatticeClass@{LatticeClass}!ReferenceScriptReference@{ReferenceScriptReference}}
-\index{ReferenceScriptReference@{ReferenceScriptReference}!LatticeClass@{LatticeClass}}
-\doxysubsubsection{\texorpdfstring{ReferenceScriptReference}{ReferenceScriptReference}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_references}{References}} Lattice\+Class.\+Reference\+Script\+Reference}
-
 \mbox{\Hypertarget{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}\label{class_lattice_class_abdb358bb06c76dc7d4715e849efd92b3}} 
 \index{LatticeClass@{LatticeClass}!Renderer@{Renderer}}
 \index{Renderer@{Renderer}!LatticeClass@{LatticeClass}}
@@ -286,12 +308,6 @@ Here is the call graph for this function\+:\nopagebreak
 \index{Saturated@{Saturated}!LatticeClass@{LatticeClass}}
 \doxysubsubsection{\texorpdfstring{Saturated}{Saturated}}
 {\footnotesize\ttfamily bool Lattice\+Class.\+Saturated = false}
-
-\mbox{\Hypertarget{class_lattice_class_ad62b2fa5b02b62b1e4649889df41ab67}\label{class_lattice_class_ad62b2fa5b02b62b1e4649889df41ab67}} 
-\index{LatticeClass@{LatticeClass}!SelectionScript@{SelectionScript}}
-\index{SelectionScript@{SelectionScript}!LatticeClass@{LatticeClass}}
-\doxysubsubsection{\texorpdfstring{SelectionScript}{SelectionScript}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Lattice\+Class.\+Selection\+Script}
 
 \mbox{\Hypertarget{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}\label{class_lattice_class_a593c362c1adb41c4e15724d1a6f9e1c1}} 
 \index{LatticeClass@{LatticeClass}!TimeStamp@{TimeStamp}}

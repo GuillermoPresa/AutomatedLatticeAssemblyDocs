@@ -1,5 +1,6 @@
 var class_lattice_class =
 [
+    [ "Highlight", "class_lattice_class.html#a8faa60a24832fcfef56d4eab539ea30e", null ],
     [ "PlaceLattice", "class_lattice_class.html#a4a9dc8a6035eca3a9b87eabcdc3de6eb", null ],
     [ "UnplaceLattice", "class_lattice_class.html#a8d6aed807b205bde9fced593106249ac", null ],
     [ "UpdateMesh", "class_lattice_class.html#a8e4f9c626c700d9cb45c8af6b0e69208", null ],
@@ -9,11 +10,14 @@ var class_lattice_class =
     [ "DefaultRenderMaterial", "class_lattice_class.html#a11d02031a8adf12635bf22624abb8d79", null ],
     [ "Density", "class_lattice_class.html#a126abca015b9a73d5ed2cf01c92e2f28", null ],
     [ "Fixed", "class_lattice_class.html#a80e7144d30ffa2fc0617f1941c36a1eb", null ],
+    [ "GlobalReferenceScriptReference", "class_lattice_class.html#aabec74cd7d41bc2a3c7b5bafa55f71c2", null ],
+    [ "GlobalSelectionScriptReference", "class_lattice_class.html#a095d2ed64ba5b6fd7bbb7edc83d37e27", null ],
     [ "ID", "class_lattice_class.html#ac393367ef3c6a0053f11121a7a09bc3e", null ],
     [ "Lattice", "class_lattice_class.html#a3868410548b80e54a533e83111d9543c", null ],
     [ "LatticeLocation", "class_lattice_class.html#aaf8ef232c805105119fca782a37f6778", null ],
     [ "LatticeType", "class_lattice_class.html#a6d54de9cf474085899315b2822260eab", null ],
     [ "LatticeTypeDirectory", "class_lattice_class.html#af7756a272194d1a69a07fa14d6ab0c85", null ],
+    [ "LocalSelectionScriptReference", "class_lattice_class.html#a9df7d2c75844aa23b1465249b2ba2d7e", null ],
     [ "MeshForRenderer", "class_lattice_class.html#aeb1568088d998696f6041b59ca437174", null ],
     [ "NodeList", "class_lattice_class.html#af02928e1ba8ef5bee22fc00606aa1a9f", null ],
     [ "ObjBack", "class_lattice_class.html#a7b72632d06a8626ed5ef169af5147732", null ],
@@ -25,11 +29,9 @@ var class_lattice_class =
     [ "Parent", "class_lattice_class.html#af16987b7c3ecb713d968b6d50a5ac627", null ],
     [ "ParentScript", "class_lattice_class.html#a137591f1d1de10871e4e8ca6b62020c7", null ],
     [ "Placed", "class_lattice_class.html#a5cf3db8f46b62c00d583a5cb15979614", null ],
-    [ "ReferenceScriptReference", "class_lattice_class.html#a90529aaee3a5e5c04e8a2593bbeb4382", null ],
     [ "Renderer", "class_lattice_class.html#abdb358bb06c76dc7d4715e849efd92b3", null ],
     [ "RendererObject", "class_lattice_class.html#a85c0f0a8ec1265e554dff01540a5ea19", null ],
     [ "Saturated", "class_lattice_class.html#a185ab4de78f9d216ac9675618e505eef", null ],
-    [ "SelectionScript", "class_lattice_class.html#ad62b2fa5b02b62b1e4649889df41ab67", null ],
     [ "TimeStamp", "class_lattice_class.html#a593c362c1adb41c4e15724d1a6f9e1c1", null ],
     [ "Type", "class_lattice_class.html#a327b2a5c5502f45f56468fa868525a75", null ]
 ];

@@ -10,8 +10,7 @@ var hierarchy =
       [ "ImporterWindow", "class_importer_window.html", null ],
       [ "LayerSlider", "class_layer_slider.html", null ],
       [ "ObjectSavePopup", "class_object_save_popup.html", null ],
-      [ "TimeSlider", "class_time_slider.html", null ],
-      [ "UIToolsWindows", "class_u_i_tools_windows.html", null ]
+      [ "TimeSlider", "class_time_slider.html", null ]
     ] ],
     [ "Graph", "class_graph.html", null ],
     [ "SerializationElements.GridPosition", "class_serialization_elements_1_1_grid_position.html", null ],
@@ -27,6 +26,7 @@ var hierarchy =
     [ "LatticeCollection", "class_lattice_collection.html", null ],
     [ "SpaceNavigatorDriver.Locks", "class_space_navigator_driver_1_1_locks.html", null ],
     [ "DensityMesh.MeshTriplet", "class_density_mesh_1_1_mesh_triplet.html", null ],
+    [ "Modifications", "class_modifications.html", null ],
     [ "MonoBehaviour", null, [
       [ "CameraMovement", "class_camera_movement.html", null ],
       [ "ClearArea", "class_clear_area.html", null ],
@@ -43,6 +43,7 @@ var hierarchy =
       [ "RobotButtons", "class_robot_buttons.html", null ],
       [ "RobotCoordinator", "class_robot_coordinator.html", null ],
       [ "RobotScript", "class_robot_script.html", null ],
+      [ "Selected", "class_selected.html", null ],
       [ "SelectionScript", "class_selection_script.html", null ],
       [ "Spawner", "class_spawner.html", null ],
       [ "SpawnerOverlay", "class_spawner_overlay.html", null ],

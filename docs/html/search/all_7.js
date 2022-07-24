@@ -16,12 +16,14 @@ var searchData=
   ['globallatticelist_13',['globalLatticeList',['../class_references.html#a5dc80d96f3cef19d9df9b29fae8ff03b',1,'References']]],
   ['globalmanager_14',['GlobalManager',['../class_spawner.html#ab27b102d4e0059c11b49cecb55eba073',1,'Spawner.GlobalManager()'],['../class_parent_object_script.html#ad3c09eab4f1499dac156fe38aee49e0d',1,'ParentObjectScript.GlobalManager()'],['../class_spawner_overlay.html#a3e15c6c1edebf3d253d1e73f35fbc242',1,'SpawnerOverlay.GlobalManager()']]],
   ['globalparent_15',['GlobalParent',['../class_references.html#a8acd7f49260322d1d1237dc35065b7aa',1,'References.GlobalParent()'],['../class_parent_object_script.html#a299939ecd1800048a88725d7c21c41cb',1,'ParentObjectScript.GlobalParent()']]],
-  ['grabmove_16',['GrabMove',['../namespace_space_navigator_driver.html#a22f4f0d3580f67525b9ee1f52d47ef4ea2d99e452cf15324089b52b2d28b0c3ee',1,'SpaceNavigatorDriver']]],
-  ['graph_17',['Graph',['../class_graph.html',1,'Graph'],['../class_graph.html#ab8ccb82fd216cc5a36c3887c6820428f',1,'Graph.Graph()']]],
-  ['graphclass_2ecs_18',['GraphClass.cs',['../_graph_class_8cs.html',1,'']]],
-  ['graphnode_19',['GraphNode',['../class_graph_node.html',1,'GraphNode'],['../class_graph_node.html#aac326ec4b6615ae23ef584fbbf998628',1,'GraphNode.GraphNode()']]],
-  ['graphnodes_20',['GraphNodes',['../class_graph.html#addefede59dc24daa7d423ce7d2bbde6f',1,'Graph']]],
-  ['gridposition_21',['GridPosition',['../class_serialization_elements_1_1_grid_position.html',1,'SerializationElements']]],
-  ['gridsize_22',['Gridsize',['../class_serialization_elements_1_1_header.html#a62037013094a7c0dcd2d2570616ab907',1,'SerializationElements::Header']]],
-  ['groundmask_23',['groundMask',['../class_r_t_s___cam_1_1_r_t_s___camera.html#a65e32e49571d70d17a358c7626d98178',1,'RTS_Cam::RTS_Camera']]]
+  ['globalreferencescriptreference_16',['GlobalReferenceScriptReference',['../class_lattice_class.html#aabec74cd7d41bc2a3c7b5bafa55f71c2',1,'LatticeClass']]],
+  ['globalselectionscriptreference_17',['GlobalSelectionScriptReference',['../class_lattice_class.html#a095d2ed64ba5b6fd7bbb7edc83d37e27',1,'LatticeClass.GlobalSelectionScriptReference()'],['../class_robot_script.html#aa31c3e033edab3ba25d4e6ca9674f6a8',1,'RobotScript.GlobalSelectionScriptReference()']]],
+  ['grabmove_18',['GrabMove',['../namespace_space_navigator_driver.html#a22f4f0d3580f67525b9ee1f52d47ef4ea2d99e452cf15324089b52b2d28b0c3ee',1,'SpaceNavigatorDriver']]],
+  ['graph_19',['Graph',['../class_graph.html',1,'Graph'],['../class_graph.html#ab8ccb82fd216cc5a36c3887c6820428f',1,'Graph.Graph()']]],
+  ['graphclass_2ecs_20',['GraphClass.cs',['../_graph_class_8cs.html',1,'']]],
+  ['graphnode_21',['GraphNode',['../class_graph_node.html',1,'GraphNode'],['../class_graph_node.html#aac326ec4b6615ae23ef584fbbf998628',1,'GraphNode.GraphNode()']]],
+  ['graphnodes_22',['GraphNodes',['../class_graph.html#addefede59dc24daa7d423ce7d2bbde6f',1,'Graph']]],
+  ['gridposition_23',['GridPosition',['../class_serialization_elements_1_1_grid_position.html',1,'SerializationElements']]],
+  ['gridsize_24',['Gridsize',['../class_serialization_elements_1_1_header.html#a62037013094a7c0dcd2d2570616ab907',1,'SerializationElements::Header']]],
+  ['groundmask_25',['groundMask',['../class_r_t_s___cam_1_1_r_t_s___camera.html#a65e32e49571d70d17a358c7626d98178',1,'RTS_Cam::RTS_Camera']]]
 ];

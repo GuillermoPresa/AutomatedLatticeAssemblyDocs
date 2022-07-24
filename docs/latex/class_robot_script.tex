@@ -27,6 +27,12 @@ Dictionary$<$ string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}}
 \item 
 void \mbox{\hyperlink{class_robot_script_a276491483d838ed1c2fa694985d6f5fd}{Clear\+Navigation\+Space}} ()
 \item 
+void \mbox{\hyperlink{class_robot_script_ad60c507489884cf04ba589c174639649}{Map\+Navigation\+Space}} ()
+\item 
+void \mbox{\hyperlink{class_robot_script_ad48832de8bb244d9f0d41dc1953135c3}{Map\+Navigation\+Space}} (bool Performance\+Measure\+Mode)
+\item 
+void \mbox{\hyperlink{class_robot_script_a69de43a921043364a81d249ac2bee207}{Map\+Navigation\+Space}} (Game\+Object Starting\+Node)
+\item 
 Game\+Object \mbox{\hyperlink{class_robot_script_ad25a0147df08715dffc20665e66e5ecd}{Get\+Current\+Robot\+Node}} ()
 \item 
 void \mbox{\hyperlink{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}{Move\+To\+Node}} (Game\+Object End\+Node)
@@ -42,6 +48,8 @@ void \mbox{\hyperlink{class_robot_script_a177722cf104b800c97505665083dd3a4}{Draw
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}{Lattice\+Insertion\+Possible\+Nodes}} (Game\+Object Lattice\+To\+Insert)
 \item 
 bool \mbox{\hyperlink{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6}{Check\+Insertion\+Possible}} (Game\+Object Lattice\+To\+Insert)
+\item 
+bool \mbox{\hyperlink{class_robot_script_a69b9facd35f27970fa1f733d6e9b3778}{Has\+Reached\+Target\+Node}} (Game\+Object Target\+Node)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -54,13 +62,19 @@ Game\+Object \mbox{\hyperlink{class_robot_script_a75e1dfe5e1ffc5db751e6ea168e809
 \item 
 Game\+Object \mbox{\hyperlink{class_robot_script_a8e22a93df82a06cbf534832c9ec6ffea}{Current\+Robot\+Node}}
 \item 
-bool \mbox{\hyperlink{class_robot_script_a5e187f85d98439a310ed1f19a33096d2}{done}}
+string \mbox{\hyperlink{class_robot_script_ab731dc54d3c1bb4a88f856f1b2046c52}{State}}
+\item 
+float \mbox{\hyperlink{class_robot_script_a69125a1b3fd2e977bf2dfe88d1509324}{step}}
+\item 
+float \mbox{\hyperlink{class_robot_script_a68a3a6f85143f75abe14685319c648af}{speed}} = (float)1
 \item 
 Game\+Object \mbox{\hyperlink{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}{Renderer\+Object}}
 \item 
 Game\+Object \mbox{\hyperlink{class_robot_script_a38cd1606fa18e9147d86a161934a7792}{Current\+Node\+Sensor}}
 \item 
-\mbox{\hyperlink{class_selection_script}{Selection\+Script}} \mbox{\hyperlink{class_robot_script_a8df3233edad95e089ca4370271cb83ec}{Selection\+Script}}
+\mbox{\hyperlink{class_selection_script}{Selection\+Script}} \mbox{\hyperlink{class_robot_script_aa31c3e033edab3ba25d4e6ca9674f6a8}{Global\+Selection\+Script\+Reference}}
+\item 
+\mbox{\hyperlink{class_selected}{Selected}} \mbox{\hyperlink{class_robot_script_a8e3a70c6c26c472e7574b4a428ab4820}{Local\+Selection\+Script\+Reference}}
 \item 
 Game\+Object \mbox{\hyperlink{class_robot_script_abc18ee69238c54a59189c33ca371b3d6}{Current\+Colliding\+Node}}
 \item 
@@ -102,19 +116,19 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ClearNavigationSpace()}{ClearNavigationSpace()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Clear\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Clears the navigation space graph/ mesh. Eliminates all previous nodes, edges, neightbours, visited nodes etc.\mbox{\Hypertarget{class_robot_script_a177722cf104b800c97505665083dd3a4}\label{class_robot_script_a177722cf104b800c97505665083dd3a4}} 
+Clears the navigation space graph/ mesh. Eliminates all previous nodes, edges, neightbours, visited nodes etc.Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_script_a276491483d838ed1c2fa694985d6f5fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_script_a177722cf104b800c97505665083dd3a4}\label{class_robot_script_a177722cf104b800c97505665083dd3a4}} 
 \index{RobotScript@{RobotScript}!DrawNavPath@{DrawNavPath}}
 \index{DrawNavPath@{DrawNavPath}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{DrawNavPath()}{DrawNavPath()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Draw\+Nav\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_robot_script_a177722cf104b800c97505665083dd3a4_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}\label{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}} 
 \index{RobotScript@{RobotScript}!FindPathBetweenNodes@{FindPathBetweenNodes}}
 \index{FindPathBetweenNodes@{FindPathBetweenNodes}!RobotScript@{RobotScript}}
@@ -141,8 +155,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{FindPathBetweenNodes()}{FindPathBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Robot\+Script.\+Find\+Path\+Between\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{Starting\+Node,  }\item[{Game\+Object}]{End\+Node,  }\item[{bool}]{Remapping = {\ttfamily false} }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -177,6 +190,12 @@ Returns the movement scripts and their name\mbox{\Hypertarget{class_robot_script
 Returns the movement sensors game objects and their name \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Trsansition to a model where the name of the movement sensor is not used and rather all information about the movement is described in a file attatched to the object. ~\newline
  \end{DoxyRefDesc}
+\mbox{\Hypertarget{class_robot_script_a69b9facd35f27970fa1f733d6e9b3778}\label{class_robot_script_a69b9facd35f27970fa1f733d6e9b3778}} 
+\index{RobotScript@{RobotScript}!HasReachedTargetNode@{HasReachedTargetNode}}
+\index{HasReachedTargetNode@{HasReachedTargetNode}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{HasReachedTargetNode()}{HasReachedTargetNode()}}
+{\footnotesize\ttfamily bool Robot\+Script.\+Has\+Reached\+Target\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target\+Node }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}\label{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}} 
 \index{RobotScript@{RobotScript}!LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}}
 \index{LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}!RobotScript@{RobotScript}}
@@ -197,26 +216,61 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_script_a95e7e1f538069a6719718ca5be6a3332_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_robot_script_ab791230c437d0faed84e2852d1d03456}\label{class_robot_script_ab791230c437d0faed84e2852d1d03456}} 
-\index{RobotScript@{RobotScript}!MoveRobotAlongPath@{MoveRobotAlongPath}}
-\index{MoveRobotAlongPath@{MoveRobotAlongPath}!RobotScript@{RobotScript}}
-\doxysubsubsection{\texorpdfstring{MoveRobotAlongPath()}{MoveRobotAlongPath()}}
-{\footnotesize\ttfamily void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_robot_script_ad60c507489884cf04ba589c174639649}\label{class_robot_script_ad60c507489884cf04ba589c174639649}} 
+\index{RobotScript@{RobotScript}!MapNavigationSpace@{MapNavigationSpace}}
+\index{MapNavigationSpace@{MapNavigationSpace}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MapNavigationSpace()}{MapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Robot\+Script.\+Map\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Overloaded Map\+Navigation\+Space method. Please refer toHere is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_robot_script_ab791230c437d0faed84e2852d1d03456_cgraph}
+\includegraphics[width=350pt]{class_robot_script_ad60c507489884cf04ba589c174639649_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_robot_script_ab791230c437d0faed84e2852d1d03456_icgraph}
+\includegraphics[width=350pt]{class_robot_script_ad60c507489884cf04ba589c174639649_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_robot_script_ad48832de8bb244d9f0d41dc1953135c3}\label{class_robot_script_ad48832de8bb244d9f0d41dc1953135c3}} 
+\index{RobotScript@{RobotScript}!MapNavigationSpace@{MapNavigationSpace}}
+\index{MapNavigationSpace@{MapNavigationSpace}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MapNavigationSpace()}{MapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Robot\+Script.\+Map\+Navigation\+Space (\begin{DoxyParamCaption}\item[{bool}]{Performance\+Measure\+Mode }\end{DoxyParamCaption})}
+
+Overloaded Map\+Navigation\+Space method that logs the performanceHere is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_script_ad48832de8bb244d9f0d41dc1953135c3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_script_a69de43a921043364a81d249ac2bee207}\label{class_robot_script_a69de43a921043364a81d249ac2bee207}} 
+\index{RobotScript@{RobotScript}!MapNavigationSpace@{MapNavigationSpace}}
+\index{MapNavigationSpace@{MapNavigationSpace}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MapNavigationSpace()}{MapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Robot\+Script.\+Map\+Navigation\+Space (\begin{DoxyParamCaption}\item[{Game\+Object}]{Starting\+Node }\end{DoxyParamCaption})}
+
+Remaps the navigation space starting at the privded node. \begin{DoxyWarning}{Warning}
+Thread blocking and slow execution. If the number of lattices is large (\texorpdfstring{$>$}{>}500) expect the main thread to be blocked for over 1 sec
+\end{DoxyWarning}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_script_a69de43a921043364a81d249ac2bee207_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_script_ab791230c437d0faed84e2852d1d03456}\label{class_robot_script_ab791230c437d0faed84e2852d1d03456}} 
+\index{RobotScript@{RobotScript}!MoveRobotAlongPath@{MoveRobotAlongPath}}
+\index{MoveRobotAlongPath@{MoveRobotAlongPath}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MoveRobotAlongPath()}{MoveRobotAlongPath()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}\label{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}} 
 \index{RobotScript@{RobotScript}!MoveToNode@{MoveToNode}}
 \index{MoveToNode@{MoveToNode}!RobotScript@{RobotScript}}
@@ -251,17 +305,23 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{CurrentRobotNode}{CurrentRobotNode}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Current\+Robot\+Node}
 
-\mbox{\Hypertarget{class_robot_script_a5e187f85d98439a310ed1f19a33096d2}\label{class_robot_script_a5e187f85d98439a310ed1f19a33096d2}} 
-\index{RobotScript@{RobotScript}!done@{done}}
-\index{done@{done}!RobotScript@{RobotScript}}
-\doxysubsubsection{\texorpdfstring{done}{done}}
-{\footnotesize\ttfamily bool Robot\+Script.\+done}
+\mbox{\Hypertarget{class_robot_script_aa31c3e033edab3ba25d4e6ca9674f6a8}\label{class_robot_script_aa31c3e033edab3ba25d4e6ca9674f6a8}} 
+\index{RobotScript@{RobotScript}!GlobalSelectionScriptReference@{GlobalSelectionScriptReference}}
+\index{GlobalSelectionScriptReference@{GlobalSelectionScriptReference}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{GlobalSelectionScriptReference}{GlobalSelectionScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Robot\+Script.\+Global\+Selection\+Script\+Reference}
 
 \mbox{\Hypertarget{class_robot_script_a7c5de1edc00ff4f4701458231f9de6b7}\label{class_robot_script_a7c5de1edc00ff4f4701458231f9de6b7}} 
 \index{RobotScript@{RobotScript}!InsertionSensor@{InsertionSensor}}
 \index{InsertionSensor@{InsertionSensor}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{InsertionSensor}{InsertionSensor}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Insertion\+Sensor}
+
+\mbox{\Hypertarget{class_robot_script_a8e3a70c6c26c472e7574b4a428ab4820}\label{class_robot_script_a8e3a70c6c26c472e7574b4a428ab4820}} 
+\index{RobotScript@{RobotScript}!LocalSelectionScriptReference@{LocalSelectionScriptReference}}
+\index{LocalSelectionScriptReference@{LocalSelectionScriptReference}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{LocalSelectionScriptReference}{LocalSelectionScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_selected}{Selected}} Robot\+Script.\+Local\+Selection\+Script\+Reference}
 
 \mbox{\Hypertarget{class_robot_script_a5b25d3d992895535d4b9e8cef3463043}\label{class_robot_script_a5b25d3d992895535d4b9e8cef3463043}} 
 \index{RobotScript@{RobotScript}!MovementSensor@{MovementSensor}}
@@ -299,17 +359,29 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{Robot}{Robot}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Robot}
 
-\mbox{\Hypertarget{class_robot_script_a8df3233edad95e089ca4370271cb83ec}\label{class_robot_script_a8df3233edad95e089ca4370271cb83ec}} 
-\index{RobotScript@{RobotScript}!SelectionScript@{SelectionScript}}
-\index{SelectionScript@{SelectionScript}!RobotScript@{RobotScript}}
-\doxysubsubsection{\texorpdfstring{SelectionScript}{SelectionScript}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Robot\+Script.\+Selection\+Script}
-
 \mbox{\Hypertarget{class_robot_script_a63518d2c0b94349b8fe26de307b4b701}\label{class_robot_script_a63518d2c0b94349b8fe26de307b4b701}} 
 \index{RobotScript@{RobotScript}!Spawner@{Spawner}}
 \index{Spawner@{Spawner}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{Spawner}{Spawner}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Spawner}
+
+\mbox{\Hypertarget{class_robot_script_a68a3a6f85143f75abe14685319c648af}\label{class_robot_script_a68a3a6f85143f75abe14685319c648af}} 
+\index{RobotScript@{RobotScript}!speed@{speed}}
+\index{speed@{speed}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Robot\+Script.\+speed = (float)1}
+
+\mbox{\Hypertarget{class_robot_script_ab731dc54d3c1bb4a88f856f1b2046c52}\label{class_robot_script_ab731dc54d3c1bb4a88f856f1b2046c52}} 
+\index{RobotScript@{RobotScript}!State@{State}}
+\index{State@{State}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily string Robot\+Script.\+State}
+
+\mbox{\Hypertarget{class_robot_script_a69125a1b3fd2e977bf2dfe88d1509324}\label{class_robot_script_a69125a1b3fd2e977bf2dfe88d1509324}} 
+\index{RobotScript@{RobotScript}!step@{step}}
+\index{step@{step}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily float Robot\+Script.\+step}
 
 \mbox{\Hypertarget{class_robot_script_a36b187850046e5707a3e2a7280b1d7e6}\label{class_robot_script_a36b187850046e5707a3e2a7280b1d7e6}} 
 \index{RobotScript@{RobotScript}!TimeManager@{TimeManager}}

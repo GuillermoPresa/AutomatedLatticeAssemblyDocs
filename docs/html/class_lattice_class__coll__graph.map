@@ -1,10 +1,11 @@
 <map id="LatticeClass" name="LatticeClass">
-<area shape="rect" id="node1" title=" " alt="" coords="234,361,329,388"/>
-<area shape="rect" id="node2" title=" " alt="" coords="111,5,222,32"/>
-<area shape="rect" id="node3" href="$class_parent_object_script.html" title=" " alt="" coords="215,272,347,299"/>
-<area shape="rect" id="node4" href="$class_selection_script.html" title=" " alt="" coords="50,183,161,209"/>
-<area shape="rect" id="node5" href="$class_spawner.html" title=" " alt="" coords="131,81,203,108"/>
-<area shape="rect" id="node7" href="$class_references.html" title=" " alt="" coords="357,132,443,159"/>
-<area shape="rect" id="node6" href="$class_lattice_collection.html" title=" " alt="" coords="309,183,427,209"/>
-<area shape="rect" id="node8" title=" " alt="" coords="503,272,558,299"/>
+<area shape="rect" id="node1" title=" " alt="" coords="435,361,530,388"/>
+<area shape="rect" id="node2" title=" " alt="" coords="214,5,325,32"/>
+<area shape="rect" id="node3" href="$class_parent_object_script.html" title=" " alt="" coords="159,272,291,299"/>
+<area shape="rect" id="node4" href="$class_selection_script.html" title=" " alt="" coords="247,183,358,209"/>
+<area shape="rect" id="node5" href="$class_spawner.html" title=" " alt="" coords="164,81,236,108"/>
+<area shape="rect" id="node6" href="$class_references.html" title=" " alt="" coords="341,81,427,108"/>
+<area shape="rect" id="node8" href="$class_selected.html" title=" " alt="" coords="663,132,737,159"/>
+<area shape="rect" id="node7" href="$class_lattice_collection.html" title=" " alt="" coords="94,183,213,209"/>
+<area shape="rect" id="node9" title=" " alt="" coords="821,272,875,299"/>
 </map>

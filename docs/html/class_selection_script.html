@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_selection_script.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_selection_script-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">SelectionScript Class Reference</div></div>
@@ -103,9 +104,10 @@ Collaboration diagram for SelectionScript:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_selection_script__coll__graph.png" border="0" usemap="#a_selection_script_coll__map" alt="Collaboration graph"/></div>
 <map name="a_selection_script_coll__map" id="a_selection_script_coll__map">
-<area shape="rect" title=" " alt="" coords="11,171,121,197"/>
-<area shape="rect" title=" " alt="" coords="5,5,116,32"/>
-<area shape="rect" href="class_spawner.html" title=" " alt="" coords="82,81,154,108"/>
+<area shape="rect" title=" " alt="" coords="5,171,116,197"/>
+<area shape="rect" title=" " alt="" coords="35,5,145,32"/>
+<area shape="rect" href="class_spawner.html" title=" " alt="" coords="54,81,126,108"/>
+<area shape="rect" href="class_references.html" title=" " alt="" coords="156,81,243,108"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -116,20 +118,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a780d94caff0a6cc1d03f3e50a81c2b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a780d94caff0a6cc1d03f3e50a81c2b3c">SetDefaults</a> ()</td></tr>
 <tr class="separator:a780d94caff0a6cc1d03f3e50a81c2b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7d946f064b012db184f8670a23022dbf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a7d946f064b012db184f8670a23022dbf">UnselectAllFromGlobalList</a> (List&lt; GameObject &gt; GlobalObjectListWithSelectors)</td></tr>
+<tr class="separator:a7d946f064b012db184f8670a23022dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6856f1e708f6555c3714c088598e41c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ab6856f1e708f6555c3714c088598e41c">CountSelectedItemsFromGlobalList</a> (List&lt; GameObject &gt; GlobalObjectListWithSelectors)</td></tr>
+<tr class="separator:ab6856f1e708f6555c3714c088598e41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a027a41fe0350e6e61334f4a0a11c3734"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, Dictionary&lt; string, GameObject &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a027a41fe0350e6e61334f4a0a11c3734">ObjectTypeAndSelectionreferences</a> = new Dictionary&lt;string, Dictionary&lt;string, GameObject&gt;&gt;()</td></tr>
+<tr class="separator:a027a41fe0350e6e61334f4a0a11c3734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb8f93726484bd9986984116971f1e8e"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#acb8f93726484bd9986984116971f1e8e">SelectedNode</a></td></tr>
 <tr class="separator:acb8f93726484bd9986984116971f1e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b5f00951d5a6230e14877c48555d7cc"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a9b5f00951d5a6230e14877c48555d7cc">SelectedLattice</a></td></tr>
-<tr class="separator:a9b5f00951d5a6230e14877c48555d7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb70d6029066dc66b495f990c5cc3530"><td class="memItemLeft" align="right" valign="top">List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530">SelectedLatticeList</a> = new List&lt;GameObject&gt;()</td></tr>
+<tr class="separator:aeb70d6029066dc66b495f990c5cc3530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac40451363e27342cb270c0968e81ff40"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ac40451363e27342cb270c0968e81ff40">SelectedObject</a></td></tr>
 <tr class="separator:ac40451363e27342cb270c0968e81ff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcc8661d7be982ef37a323355cca79a"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#afdcc8661d7be982ef37a323355cca79a">SelectedRobot</a></td></tr>
 <tr class="separator:afdcc8661d7be982ef37a323355cca79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff46713921af12a79b0974eddf6ec1d4"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#aff46713921af12a79b0974eddf6ec1d4">QuickSelectLattice</a></td></tr>
-<tr class="separator:aff46713921af12a79b0974eddf6ec1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1027b709fec8ed78c40b5a0b3ed2315b"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a1027b709fec8ed78c40b5a0b3ed2315b">QuickSelectNode</a></td></tr>
-<tr class="separator:a1027b709fec8ed78c40b5a0b3ed2315b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3e360788e8cc50752fc1e30c86ab6a"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a1e3e360788e8cc50752fc1e30c86ab6a">ClickedNode</a></td></tr>
+<tr class="separator:a1e3e360788e8cc50752fc1e30c86ab6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc2ec3d22c84babcf674531d6d7ad325"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#adc2ec3d22c84babcf674531d6d7ad325">ClickedLattice</a></td></tr>
+<tr class="separator:adc2ec3d22c84babcf674531d6d7ad325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3030d3e8c36edb5edddf6527fc2a0d83"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a3030d3e8c36edb5edddf6527fc2a0d83">ClickedObject</a></td></tr>
+<tr class="separator:a3030d3e8c36edb5edddf6527fc2a0d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac678213fe0da8b3aa511d50d9cac0e5c"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ac678213fe0da8b3aa511d50d9cac0e5c">ClickedRobot</a></td></tr>
+<tr class="separator:ac678213fe0da8b3aa511d50d9cac0e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9902d942e2517d2602e1fdf243926b5"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ab9902d942e2517d2602e1fdf243926b5">HoverNode</a></td></tr>
 <tr class="separator:ab9902d942e2517d2602e1fdf243926b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c44508ce0baf9d7dc8dd6108ead049a"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a0c44508ce0baf9d7dc8dd6108ead049a">HoverLattice</a></td></tr>
@@ -138,6 +153,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aec68a6ef8528835c1e1bd978598f75ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acac5fe1cce4df2a0db9ddab4b7c557a7"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#acac5fe1cce4df2a0db9ddab4b7c557a7">HoverRobot</a></td></tr>
 <tr class="separator:acac5fe1cce4df2a0db9ddab4b7c557a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7144b4eed078af195c2c4d654fadd41d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a7144b4eed078af195c2c4d654fadd41d">ControlWindowSelectedTab</a> = 0</td></tr>
+<tr class="separator:a7144b4eed078af195c2c4d654fadd41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df5be6e88f1c7d0549f7c2213844e7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a7df5be6e88f1c7d0549f7c2213844e7f">MoveToNode</a> = false</td></tr>
 <tr class="separator:a7df5be6e88f1c7d0549f7c2213844e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af83a2cefc4eea44666bd1e441886ce34"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#af83a2cefc4eea44666bd1e441886ce34">SpawnLatice</a></td></tr>
@@ -156,12 +173,49 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9d1b99db177609bd4e21bd6495a3b4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac839851c68986c52de3b19ef15305a34"><td class="memItemLeft" align="right" valign="top">List&lt; Material &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ac839851c68986c52de3b19ef15305a34">ColorCyclingMaterialList</a> = new List&lt;Material&gt;()</td></tr>
 <tr class="separator:ac839851c68986c52de3b19ef15305a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b52301bd6fd8e75bb91671aeb3efd62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_references.html">References</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a9b52301bd6fd8e75bb91671aeb3efd62">ReferenceScriptReference</a></td></tr>
+<tr class="separator:a9b52301bd6fd8e75bb91671aeb3efd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87a8216145b4807701765078133a53ca"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; int, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a87a8216145b4807701765078133a53ca">ObjectTypeDict</a> = new Dictionary&lt;int, string&gt;()</td></tr>
 <tr class="separator:a87a8216145b4807701765078133a53ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae231e638afa57d6d37e1881204db620a"><td class="memItemLeft" align="right" valign="top">List&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ae231e638afa57d6d37e1881204db620a">ObjectTypeList</a> = new List&lt;string&gt;()</td></tr>
 <tr class="separator:ae231e638afa57d6d37e1881204db620a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab6856f1e708f6555c3714c088598e41c" name="ab6856f1e708f6555c3714c088598e41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6856f1e708f6555c3714c088598e41c">&#9670;&nbsp;</a></span>CountSelectedItemsFromGlobalList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int SelectionScript.CountSelectedItemsFromGlobalList </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; GameObject &gt;&#160;</td>
+          <td class="paramname"><em>GlobalObjectListWithSelectors</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_selection_script_ab6856f1e708f6555c3714c088598e41c_icgraph.png" border="0" usemap="#aclass_selection_script_ab6856f1e708f6555c3714c088598e41c_icgraph" alt=""/></div>
+<map name="aclass_selection_script_ab6856f1e708f6555c3714c088598e41c_icgraph" id="aclass_selection_script_ab6856f1e708f6555c3714c088598e41c_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,404,47"/>
+<area shape="rect" href="class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,13,157,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a8e6f978d6ad09a1fa6b87df54c76d213" name="a8e6f978d6ad09a1fa6b87df54c76d213"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e6f978d6ad09a1fa6b87df54c76d213">&#9670;&nbsp;</a></span>NullSelections()</h2>
 
@@ -197,7 +251,98 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7d946f064b012db184f8670a23022dbf" name="a7d946f064b012db184f8670a23022dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d946f064b012db184f8670a23022dbf">&#9670;&nbsp;</a></span>UnselectAllFromGlobalList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void SelectionScript.UnselectAllFromGlobalList </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; GameObject &gt;&#160;</td>
+          <td class="paramname"><em>GlobalObjectListWithSelectors</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_selection_script_a7d946f064b012db184f8670a23022dbf_icgraph.png" border="0" usemap="#aclass_selection_script_a7d946f064b012db184f8670a23022dbf_icgraph" alt=""/></div>
+<map name="aclass_selection_script_a7d946f064b012db184f8670a23022dbf_icgraph" id="aclass_selection_script_a7d946f064b012db184f8670a23022dbf_icgraph">
+<area shape="rect" title=" " alt="" coords="205,5,371,47"/>
+<area shape="rect" href="class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,13,157,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="adc2ec3d22c84babcf674531d6d7ad325" name="adc2ec3d22c84babcf674531d6d7ad325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc2ec3d22c84babcf674531d6d7ad325">&#9670;&nbsp;</a></span>ClickedLattice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject SelectionScript.ClickedLattice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e3e360788e8cc50752fc1e30c86ab6a" name="a1e3e360788e8cc50752fc1e30c86ab6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e3e360788e8cc50752fc1e30c86ab6a">&#9670;&nbsp;</a></span>ClickedNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject SelectionScript.ClickedNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3030d3e8c36edb5edddf6527fc2a0d83" name="a3030d3e8c36edb5edddf6527fc2a0d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3030d3e8c36edb5edddf6527fc2a0d83">&#9670;&nbsp;</a></span>ClickedObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject SelectionScript.ClickedObject</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac678213fe0da8b3aa511d50d9cac0e5c" name="ac678213fe0da8b3aa511d50d9cac0e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac678213fe0da8b3aa511d50d9cac0e5c">&#9670;&nbsp;</a></span>ClickedRobot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject SelectionScript.ClickedRobot</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac839851c68986c52de3b19ef15305a34" name="ac839851c68986c52de3b19ef15305a34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac839851c68986c52de3b19ef15305a34">&#9670;&nbsp;</a></span>ColorCyclingMaterialList</h2>
 
@@ -206,6 +351,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">List&lt;Material&gt; SelectionScript.ColorCyclingMaterialList = new List&lt;Material&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7144b4eed078af195c2c4d654fadd41d" name="a7144b4eed078af195c2c4d654fadd41d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7144b4eed078af195c2c4d654fadd41d">&#9670;&nbsp;</a></span>ControlWindowSelectedTab</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SelectionScript.ControlWindowSelectedTab = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -282,6 +441,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a027a41fe0350e6e61334f4a0a11c3734" name="a027a41fe0350e6e61334f4a0a11c3734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027a41fe0350e6e61334f4a0a11c3734">&#9670;&nbsp;</a></span>ObjectTypeAndSelectionreferences</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;string, Dictionary&lt;string, GameObject&gt; &gt; SelectionScript.ObjectTypeAndSelectionreferences = new Dictionary&lt;string, Dictionary&lt;string, GameObject&gt;&gt;()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a87a8216145b4807701765078133a53ca" name="a87a8216145b4807701765078133a53ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87a8216145b4807701765078133a53ca">&#9670;&nbsp;</a></span>ObjectTypeDict</h2>
 
@@ -310,42 +483,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aff46713921af12a79b0974eddf6ec1d4" name="aff46713921af12a79b0974eddf6ec1d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff46713921af12a79b0974eddf6ec1d4">&#9670;&nbsp;</a></span>QuickSelectLattice</h2>
+<a id="a9b52301bd6fd8e75bb91671aeb3efd62" name="a9b52301bd6fd8e75bb91671aeb3efd62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b52301bd6fd8e75bb91671aeb3efd62">&#9670;&nbsp;</a></span>ReferenceScriptReference</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject SelectionScript.QuickSelectLattice</td>
+          <td class="memname"><a class="el" href="class_references.html">References</a> SelectionScript.ReferenceScriptReference</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1027b709fec8ed78c40b5a0b3ed2315b" name="a1027b709fec8ed78c40b5a0b3ed2315b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1027b709fec8ed78c40b5a0b3ed2315b">&#9670;&nbsp;</a></span>QuickSelectNode</h2>
+<a id="aeb70d6029066dc66b495f990c5cc3530" name="aeb70d6029066dc66b495f990c5cc3530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb70d6029066dc66b495f990c5cc3530">&#9670;&nbsp;</a></span>SelectedLatticeList</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject SelectionScript.QuickSelectNode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9b5f00951d5a6230e14877c48555d7cc" name="a9b5f00951d5a6230e14877c48555d7cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b5f00951d5a6230e14877c48555d7cc">&#9670;&nbsp;</a></span>SelectedLattice</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GameObject SelectionScript.SelectedLattice</td>
+          <td class="memname">List&lt;GameObject&gt; SelectionScript.SelectedLatticeList = new List&lt;GameObject&gt;()</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -6,6 +6,7 @@ var class_references =
     [ "UpdateFileList", "class_references.html#a4d096056921e4a05e1822f5f25396bab", null ],
     [ "AllObjectsAndWorkersList", "class_references.html#a386e193b994ba31cf9b54f9eec20e8ec", null ],
     [ "Building", "class_references.html#a5691572b32aa4cfe355fb0e274d14f2c", null ],
+    [ "ErrorsDisabled", "class_references.html#a9fe35007af72ee197e09f4ce6f61e467", null ],
     [ "fileList", "class_references.html#a66407fdd67433f9e5550b831be838e6b", null ],
     [ "fileListIndex", "class_references.html#a321f0fef18f4ad19b68ef5228a647420", null ],
     [ "globalLatticeList", "class_references.html#a5dc80d96f3cef19d9df9b29fae8ff03b", null ],
@@ -24,6 +25,8 @@ var class_references =
     [ "ObjectsPath", "class_references.html#af78ba2e50d3f68e0323493c574eefdf3", null ],
     [ "RobotWorker", "class_references.html#aa13e3df440ffcbb539ff51e5d48737d8", null ],
     [ "StructureMaterial", "class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1", null ],
+    [ "TimeMultiplyier", "class_references.html#a6d192c4617a2686dc5dc5a969994e8be", null ],
+    [ "TimeWindowBackground", "class_references.html#a7bdc6b08cec46317bcfc6623d987c7eb", null ],
     [ "UnplacedLatticeMaterial", "class_references.html#adea2e447839f404e6fb011269ada64d4", null ],
     [ "WorkerList", "class_references.html#adc8e9041aa00361f4ffce36694ab73ce", null ]
 ];

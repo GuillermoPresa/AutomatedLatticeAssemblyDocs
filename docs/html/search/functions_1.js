@@ -10,5 +10,6 @@ var searchData=
   ['coloredblock_7',['ColoredBlock',['../class_colored_block.html#a78a2ff158c9b2fd94419bc8dff591c64',1,'ColoredBlock']]],
   ['completedijkstrafromstartingnode_8',['CompleteDijkstraFromStartingNode',['../class_graph.html#a8c8441b17f8a083c13756a85d873a15b',1,'Graph']]],
   ['containsedge_9',['ContainsEdge',['../class_graph.html#ab8b286cfe410dc5959810e11932b6ba0',1,'Graph']]],
-  ['count_10',['Count',['../class_graph.html#aef9eec77dc196b41c6f3a957ec834a1d',1,'Graph']]]
+  ['count_10',['Count',['../class_graph.html#aef9eec77dc196b41c6f3a957ec834a1d',1,'Graph']]],
+  ['countselecteditemsfromgloballist_11',['CountSelectedItemsFromGlobalList',['../class_selection_script.html#ab6856f1e708f6555c3714c088598e41c',1,'SelectionScript']]]
 ];
