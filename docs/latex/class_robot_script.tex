@@ -103,7 +103,7 @@ Dictionary$<$ string, \mbox{\hyperlink{class_movement_script}{Movement\+Script}}
 \doxysubsubsection{\texorpdfstring{CheckInsertionPossible()}{CheckInsertionPossible()}}
 {\footnotesize\ttfamily bool Robot\+Script.\+Check\+Insertion\+Possible (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Check if the provided lattice can be inserted with the current navigation path. Return True if possible and false otherwiseHere is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -129,13 +129,16 @@ Clears the navigation space graph/ mesh. Eliminates all previous nodes, edges, n
 \doxysubsubsection{\texorpdfstring{DrawNavPath()}{DrawNavPath()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Draw\+Nav\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
 
+Draw the navigation path provided. \begin{DoxyWarning}{Warning}
+This function should be moved to the path or the graph class
+\end{DoxyWarning}
 \mbox{\Hypertarget{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}\label{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}} 
 \index{RobotScript@{RobotScript}!FindPathBetweenNodes@{FindPathBetweenNodes}}
 \index{FindPathBetweenNodes@{FindPathBetweenNodes}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{FindPathBetweenNodes()}{FindPathBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Robot\+Script.\+Find\+Path\+Between\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{End\+Node }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Finds the shortest fordwards navigation path \mbox{\hyperlink{class_navigation_path_NavigationPath}{Navigation\+Path}} between the current node the robot is standing on and the provided target node.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -155,7 +158,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{FindPathBetweenNodes()}{FindPathBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Robot\+Script.\+Find\+Path\+Between\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{Starting\+Node,  }\item[{Game\+Object}]{End\+Node,  }\item[{bool}]{Remapping = {\ttfamily false} }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Overloaded method. Finds the shortest fordwards navigation path \mbox{\hyperlink{class_navigation_path_NavigationPath}{Navigation\+Path}} between the provided starting node and the provided target node. An additional remapping argument is provided, allowing to remap the navigation space before path finding.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -168,7 +171,7 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{GetCurrentRobotNode()}{GetCurrentRobotNode()}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Get\+Current\+Robot\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Finds and returns the lattice node on which the robot is currently located.Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -196,13 +199,16 @@ Returns the movement sensors game objects and their name \begin{DoxyRefDesc}{Tod
 \doxysubsubsection{\texorpdfstring{HasReachedTargetNode()}{HasReachedTargetNode()}}
 {\footnotesize\ttfamily bool Robot\+Script.\+Has\+Reached\+Target\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target\+Node }\end{DoxyParamCaption})}
 
+Check if robot has reached the target node. Done to close the loop during movements. \begin{DoxyWarning}{Warning}
+While in simulatiom mode, a tolerance/ proximity value is utilized. Be mindful of said value
+\end{DoxyWarning}
 \mbox{\Hypertarget{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}\label{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}} 
 \index{RobotScript@{RobotScript}!LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}}
 \index{LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{LatticeInsertionPossibleNodes()}{LatticeInsertionPossibleNodes()}}
 {\footnotesize\ttfamily List$<$ Game\+Object $>$ Robot\+Script.\+Lattice\+Insertion\+Possible\+Nodes (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Check from which neighbouring lattices the provided lattice can be inserted and return in a list form.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -271,13 +277,13 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{MoveRobotAlongPath()}{MoveRobotAlongPath()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}\label{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}} 
+Set the robot on the provided navigation path.\mbox{\Hypertarget{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}\label{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}} 
 \index{RobotScript@{RobotScript}!MoveToNode@{MoveToNode}}
 \index{MoveToNode@{MoveToNode}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{MoveToNode()}{MoveToNode()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Move\+To\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{End\+Node }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Creates a Navigation path the provided target node and sets the robot on said path.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
