@@ -18,6 +18,7 @@ var class_robot_script =
     [ "CurrentCollidingNode", "class_robot_script.html#abc18ee69238c54a59189c33ca371b3d6", null ],
     [ "CurrentNodeSensor", "class_robot_script.html#a38cd1606fa18e9147d86a161934a7792", null ],
     [ "CurrentRobotNode", "class_robot_script.html#a8e22a93df82a06cbf534832c9ec6ffea", null ],
+    [ "DefaultRenderMaterial", "class_robot_script.html#a53b72471d6daa6bb1027f1c2ce8ba54c", null ],
     [ "GlobalSelectionScriptReference", "class_robot_script.html#aa31c3e033edab3ba25d4e6ca9674f6a8", null ],
     [ "InsertionSensor", "class_robot_script.html#a7c5de1edc00ff4f4701458231f9de6b7", null ],
     [ "LocalSelectionScriptReference", "class_robot_script.html#a8e3a70c6c26c472e7574b4a428ab4820", null ],

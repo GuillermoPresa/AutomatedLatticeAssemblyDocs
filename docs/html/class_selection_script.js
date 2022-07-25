@@ -20,12 +20,14 @@ var class_selection_script =
     [ "SelectedLatticeList", "class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530", null ],
     [ "SelectedNode", "class_selection_script.html#acb8f93726484bd9986984116971f1e8e", null ],
     [ "SelectedObject", "class_selection_script.html#ac40451363e27342cb270c0968e81ff40", null ],
-    [ "SelectedRobot", "class_selection_script.html#afdcc8661d7be982ef37a323355cca79a", null ],
+    [ "SelectedRobotList", "class_selection_script.html#a4a2516474ba1951b2346f963bf39fcdc", null ],
     [ "SelectingLattice", "class_selection_script.html#a246f0fda7f89482ab1f3a30d8d2bcf9f", null ],
     [ "SelectingObject", "class_selection_script.html#a677586ac56980111840b0f3855bdb65d", null ],
     [ "SelectingRobot", "class_selection_script.html#aade23c8c7a4f501322312e9b6c8cde1f", null ],
     [ "ShowNavMesh", "class_selection_script.html#a93939d7d68d1f7018dd8ca07ac5741dd", null ],
     [ "SpawnerReference", "class_selection_script.html#a9d1b99db177609bd4e21bd6495a3b4cd", null ],
     [ "SpawnLatice", "class_selection_script.html#af83a2cefc4eea44666bd1e441886ce34", null ],
-    [ "SpawnLattice", "class_selection_script.html#a44868cea78355bf28133df90cf62b74a", null ]
+    [ "SpawnLattice", "class_selection_script.html#a44868cea78355bf28133df90cf62b74a", null ],
+    [ "AnyLatticeSelected", "class_selection_script.html#a6f77dea60a0c57e62b27c48f94476f94", null ],
+    [ "AnyRobotSelected", "class_selection_script.html#aeee5fd5e5075b9fe25e66d322bbe877f", null ]
 ];

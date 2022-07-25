@@ -12,7 +12,7 @@ var searchData=
   ['selectedlatticelist_9',['SelectedLatticeList',['../class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530',1,'SelectionScript']]],
   ['selectednode_10',['SelectedNode',['../class_selection_script.html#acb8f93726484bd9986984116971f1e8e',1,'SelectionScript']]],
   ['selectedobject_11',['SelectedObject',['../class_selection_script.html#ac40451363e27342cb270c0968e81ff40',1,'SelectionScript']]],
-  ['selectedrobot_12',['SelectedRobot',['../class_selection_script.html#afdcc8661d7be982ef37a323355cca79a',1,'SelectionScript']]],
+  ['selectedrobotlist_12',['SelectedRobotList',['../class_selection_script.html#a4a2516474ba1951b2346f963bf39fcdc',1,'SelectionScript']]],
   ['selectinglattice_13',['SelectingLattice',['../class_selection_script.html#a246f0fda7f89482ab1f3a30d8d2bcf9f',1,'SelectionScript']]],
   ['selectingobject_14',['SelectingObject',['../class_selection_script.html#a677586ac56980111840b0f3855bdb65d',1,'SelectionScript']]],
   ['selectingrobot_15',['SelectingRobot',['../class_selection_script.html#aade23c8c7a4f501322312e9b6c8cde1f',1,'SelectionScript']]],

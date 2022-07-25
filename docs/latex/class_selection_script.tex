@@ -43,7 +43,7 @@ List$<$ Game\+Object $>$ \mbox{\hyperlink{class_selection_script_aeb70d6029066dc
 \item 
 Game\+Object \mbox{\hyperlink{class_selection_script_ac40451363e27342cb270c0968e81ff40}{Selected\+Object}}
 \item 
-Game\+Object \mbox{\hyperlink{class_selection_script_afdcc8661d7be982ef37a323355cca79a}{Selected\+Robot}}
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_selection_script_a4a2516474ba1951b2346f963bf39fcdc}{Selected\+Robot\+List}} = new List$<$Game\+Object$>$()
 \item 
 Game\+Object \mbox{\hyperlink{class_selection_script_a1e3e360788e8cc50752fc1e30c86ab6a}{Clicked\+Node}}
 \item 
@@ -86,6 +86,13 @@ List$<$ Material $>$ \mbox{\hyperlink{class_selection_script_ac839851c68986c52de
 Dictionary$<$ int, string $>$ \mbox{\hyperlink{class_selection_script_a87a8216145b4807701765078133a53ca}{Object\+Type\+Dict}} = new Dictionary$<$int, string$>$()
 \item 
 List$<$ string $>$ \mbox{\hyperlink{class_selection_script_ae231e638afa57d6d37e1881204db620a}{Object\+Type\+List}} = new List$<$string$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_selection_script_a6f77dea60a0c57e62b27c48f94476f94}{Any\+Lattice\+Selected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_selection_script_aeee5fd5e5075b9fe25e66d322bbe877f}{Any\+Robot\+Selected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
@@ -239,11 +246,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SelectedObject}{SelectedObject}}
 {\footnotesize\ttfamily Game\+Object Selection\+Script.\+Selected\+Object}
 
-\mbox{\Hypertarget{class_selection_script_afdcc8661d7be982ef37a323355cca79a}\label{class_selection_script_afdcc8661d7be982ef37a323355cca79a}} 
-\index{SelectionScript@{SelectionScript}!SelectedRobot@{SelectedRobot}}
-\index{SelectedRobot@{SelectedRobot}!SelectionScript@{SelectionScript}}
-\doxysubsubsection{\texorpdfstring{SelectedRobot}{SelectedRobot}}
-{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Selected\+Robot}
+\mbox{\Hypertarget{class_selection_script_a4a2516474ba1951b2346f963bf39fcdc}\label{class_selection_script_a4a2516474ba1951b2346f963bf39fcdc}} 
+\index{SelectionScript@{SelectionScript}!SelectedRobotList@{SelectedRobotList}}
+\index{SelectedRobotList@{SelectedRobotList}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{SelectedRobotList}{SelectedRobotList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Selection\+Script.\+Selected\+Robot\+List = new List$<$Game\+Object$>$()}
 
 \mbox{\Hypertarget{class_selection_script_a246f0fda7f89482ab1f3a30d8d2bcf9f}\label{class_selection_script_a246f0fda7f89482ab1f3a30d8d2bcf9f}} 
 \index{SelectionScript@{SelectionScript}!SelectingLattice@{SelectingLattice}}
@@ -286,6 +293,21 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{SpawnLattice@{SpawnLattice}!SelectionScript@{SelectionScript}}
 \doxysubsubsection{\texorpdfstring{SpawnLattice}{SpawnLattice}}
 {\footnotesize\ttfamily bool Selection\+Script.\+Spawn\+Lattice = false}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_selection_script_a6f77dea60a0c57e62b27c48f94476f94}\label{class_selection_script_a6f77dea60a0c57e62b27c48f94476f94}} 
+\index{SelectionScript@{SelectionScript}!AnyLatticeSelected@{AnyLatticeSelected}}
+\index{AnyLatticeSelected@{AnyLatticeSelected}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{AnyLatticeSelected}{AnyLatticeSelected}}
+{\footnotesize\ttfamily bool Selection\+Script.\+Any\+Lattice\+Selected\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_selection_script_aeee5fd5e5075b9fe25e66d322bbe877f}\label{class_selection_script_aeee5fd5e5075b9fe25e66d322bbe877f}} 
+\index{SelectionScript@{SelectionScript}!AnyRobotSelected@{AnyRobotSelected}}
+\index{AnyRobotSelected@{AnyRobotSelected}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{AnyRobotSelected}{AnyRobotSelected}}
+{\footnotesize\ttfamily bool Selection\+Script.\+Any\+Robot\+Selected\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

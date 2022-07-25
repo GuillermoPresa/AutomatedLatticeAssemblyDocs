@@ -4,13 +4,13 @@ var class_references =
     [ "Start", "class_references.html#afa18f3ec6ac4f878c28b3b4d66203270", null ],
     [ "Update", "class_references.html#a35e69fd2a60b35f1a70276b8d23f6056", null ],
     [ "UpdateFileList", "class_references.html#a4d096056921e4a05e1822f5f25396bab", null ],
-    [ "AllObjectsAndWorkersList", "class_references.html#a386e193b994ba31cf9b54f9eec20e8ec", null ],
     [ "Building", "class_references.html#a5691572b32aa4cfe355fb0e274d14f2c", null ],
     [ "ErrorsDisabled", "class_references.html#a9fe35007af72ee197e09f4ce6f61e467", null ],
     [ "fileList", "class_references.html#a66407fdd67433f9e5550b831be838e6b", null ],
     [ "fileListIndex", "class_references.html#a321f0fef18f4ad19b68ef5228a647420", null ],
-    [ "globalLatticeList", "class_references.html#a5dc80d96f3cef19d9df9b29fae8ff03b", null ],
+    [ "GlobalLatticeList", "class_references.html#aedbf0a2eb04b445058f79e12a6bdec57", null ],
     [ "GlobalParent", "class_references.html#a8acd7f49260322d1d1237dc35065b7aa", null ],
+    [ "GlobalRobotList", "class_references.html#a563c6a2dafe11f79676629448417e0a4", null ],
     [ "InitialStructureMaterial", "class_references.html#a67ded95600ec59d53ba4b5bdcaa2b315", null ],
     [ "Lattice", "class_references.html#a3760c76d3c9ef01a6fac7e3e549184f2", null ],
     [ "LatticeBoundingBoxMesh", "class_references.html#af4a195a6edf4c8d2b65783c2e6222d05", null ],
@@ -27,6 +27,5 @@ var class_references =
     [ "StructureMaterial", "class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1", null ],
     [ "TimeMultiplyier", "class_references.html#a6d192c4617a2686dc5dc5a969994e8be", null ],
     [ "TimeWindowBackground", "class_references.html#a7bdc6b08cec46317bcfc6623d987c7eb", null ],
-    [ "UnplacedLatticeMaterial", "class_references.html#adea2e447839f404e6fb011269ada64d4", null ],
-    [ "WorkerList", "class_references.html#adc8e9041aa00361f4ffce36694ab73ce", null ]
+    [ "UnplacedLatticeMaterial", "class_references.html#adea2e447839f404e6fb011269ada64d4", null ]
 ];
