@@ -8,5 +8,6 @@ var searchData=
   ['placed_5',['Placed',['../class_lattice_class.html#a5cf3db8f46b62c00d583a5cb15979614',1,'LatticeClass']]],
   ['positionvector_6',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
   ['previousvertex_7',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]],
-  ['prioritydictionary_8',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]]
+  ['prioritydictionary_8',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]],
+  ['prioritylevel_9',['PriorityLevel',['../class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9',1,'Task']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['importerwindow_0',['ImporterWindow',['../class_importer_window.html',1,'']]]
+  ['header_0',['Header',['../class_serialization_elements_1_1_header.html',1,'SerializationElements']]],
+  ['horizontalblock_1',['HorizontalBlock',['../class_horizontal_block.html',1,'']]]
 ];

@@ -59,6 +59,12 @@ var hierarchy =
     [ "MovementAndSensorDefinition.SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", null ],
     [ "SerializationElements.SerializationResolution", "class_serialization_elements_1_1_serialization_resolution.html", null ],
     [ "TabsBlock", "class_tabs_block.html", null ],
+    [ "Task", "class_task.html", [
+      [ "FollowPath", "class_follow_path.html", null ],
+      [ "InsertTask", "class_insert_task.html", null ],
+      [ "YieldTask", "class_yield_task.html", null ]
+    ] ],
     [ "SpaceNavigatorDriver.ViewportController", "class_space_navigator_driver_1_1_viewport_controller.html", null ],
-    [ "WorkDefinition", "class_work_definition.html", null ]
+    [ "WorkDefinition", "class_work_definition.html", null ],
+    [ "WorkPackage", "class_work_package.html", null ]
 ];

@@ -29,10 +29,12 @@ var annotated_dup =
     [ "ControlWindow", "class_control_window.html", "class_control_window" ],
     [ "DecalMeshHelperEditor", "class_decal_mesh_helper_editor.html", "class_decal_mesh_helper_editor" ],
     [ "EdgeDrawingScript", "class_edge_drawing_script.html", null ],
+    [ "FollowPath", "class_follow_path.html", null ],
     [ "Graph", "class_graph.html", "class_graph" ],
     [ "GraphNode", "class_graph_node.html", "class_graph_node" ],
     [ "HorizontalBlock", "class_horizontal_block.html", "class_horizontal_block" ],
     [ "ImporterWindow", "class_importer_window.html", "class_importer_window" ],
+    [ "InsertTask", "class_insert_task.html", null ],
     [ "LatticeClass", "class_lattice_class.html", "class_lattice_class" ],
     [ "LatticeCollection", "class_lattice_collection.html", "class_lattice_collection" ],
     [ "LayerSlider", "class_layer_slider.html", "class_layer_slider" ],
@@ -58,8 +60,11 @@ var annotated_dup =
     [ "SpawnerOverlay", "class_spawner_overlay.html", "class_spawner_overlay" ],
     [ "Spawning", "class_spawning.html", null ],
     [ "TabsBlock", "class_tabs_block.html", "class_tabs_block" ],
+    [ "Task", "class_task.html", "class_task" ],
     [ "TimeManager", "class_time_manager.html", "class_time_manager" ],
     [ "TimeSlider", "class_time_slider.html", "class_time_slider" ],
     [ "VerticalBlock", "class_vertical_block.html", "class_vertical_block" ],
-    [ "WorkDefinition", "class_work_definition.html", "class_work_definition" ]
+    [ "WorkDefinition", "class_work_definition.html", "class_work_definition" ],
+    [ "WorkPackage", "class_work_package.html", "class_work_package" ],
+    [ "YieldTask", "class_yield_task.html", null ]
 ];

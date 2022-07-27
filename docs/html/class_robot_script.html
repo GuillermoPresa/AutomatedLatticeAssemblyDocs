@@ -154,8 +154,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a90e7cbf825ad8049ed5b48005ba357d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa7f4e212ae89000a1ef97046a6b338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338">InsertionPosibleFromCurrentLocation</a> (GameObject LatticeToInsert)</td></tr>
 <tr class="separator:a5fa7f4e212ae89000a1ef97046a6b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39240818912f4a43a245809481029e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a39240818912f4a43a245809481029e13">TraversePathAndInsertLattice</a> ()</td></tr>
-<tr class="separator:a39240818912f4a43a245809481029e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfa6f99a0a341cb0b6ebdeca9405770"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a4dfa6f99a0a341cb0b6ebdeca9405770">MoveAndInsertLattice</a> (GameObject LatticeToInsert)</td></tr>
+<tr class="separator:a4dfa6f99a0a341cb0b6ebdeca9405770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdddd46ddc7aa4eaeb59725e1d0595d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#abdddd46ddc7aa4eaeb59725e1d0595d0">TraversePathAndInsertLattice</a> (<a class="el" href="class_navigation_path.html">NavigationPath</a> FordwardsNavigationPath, GameObject LatticeToInsert)</td></tr>
+<tr class="separator:abdddd46ddc7aa4eaeb59725e1d0595d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b9facd35f27970fa1f733d6e9b3778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a69b9facd35f27970fa1f733d6e9b3778">HasReachedTargetNode</a> (GameObject TargetNode)</td></tr>
 <tr class="separator:a69b9facd35f27970fa1f733d6e9b3778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -709,6 +711,24 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a4dfa6f99a0a341cb0b6ebdeca9405770" name="a4dfa6f99a0a341cb0b6ebdeca9405770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfa6f99a0a341cb0b6ebdeca9405770">&#9670;&nbsp;</a></span>MoveAndInsertLattice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RobotScript.MoveAndInsertLattice </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>LatticeToInsert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab791230c437d0faed84e2852d1d03456" name="ab791230c437d0faed84e2852d1d03456"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab791230c437d0faed84e2852d1d03456">&#9670;&nbsp;</a></span>MoveRobotAlongPath()</h2>
 
@@ -806,8 +826,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a39240818912f4a43a245809481029e13" name="a39240818912f4a43a245809481029e13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39240818912f4a43a245809481029e13">&#9670;&nbsp;</a></span>TraversePathAndInsertLattice()</h2>
+<a id="abdddd46ddc7aa4eaeb59725e1d0595d0" name="abdddd46ddc7aa4eaeb59725e1d0595d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdddd46ddc7aa4eaeb59725e1d0595d0">&#9670;&nbsp;</a></span>TraversePathAndInsertLattice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -815,8 +835,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void RobotScript.TraversePathAndInsertLattice </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_navigation_path.html">NavigationPath</a>&#160;</td>
+          <td class="paramname"><em>FordwardsNavigationPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>LatticeToInsert</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -11,8 +11,7 @@ Inheritance diagram for Robot\+Script\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Robot\+Script\+:
-\nopagebreak
+Collaboration diagram for Robot\+Script\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -56,7 +55,9 @@ bool \mbox{\hyperlink{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6}{Chec
 \item 
 bool \mbox{\hyperlink{class_robot_script_a5fa7f4e212ae89000a1ef97046a6b338}{Insertion\+Posible\+From\+Current\+Location}} (Game\+Object Lattice\+To\+Insert)
 \item 
-void \mbox{\hyperlink{class_robot_script_a39240818912f4a43a245809481029e13}{Traverse\+Path\+And\+Insert\+Lattice}} ()
+void \mbox{\hyperlink{class_robot_script_a4dfa6f99a0a341cb0b6ebdeca9405770}{Move\+And\+Insert\+Lattice}} (Game\+Object Lattice\+To\+Insert)
+\item 
+void \mbox{\hyperlink{class_robot_script_abdddd46ddc7aa4eaeb59725e1d0595d0}{Traverse\+Path\+And\+Insert\+Lattice}} (\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Fordwards\+Navigation\+Path, Game\+Object Lattice\+To\+Insert)
 \item 
 bool \mbox{\hyperlink{class_robot_script_a69b9facd35f27970fa1f733d6e9b3778}{Has\+Reached\+Target\+Node}} (Game\+Object Target\+Node)
 \end{DoxyCompactItemize}
@@ -144,8 +145,7 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -187,8 +187,7 @@ Finds the shortest fordwards navigation path \mbox{\hyperlink{class_navigation_p
 \includegraphics[width=350pt]{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -214,8 +213,7 @@ Overloaded method. Finds the shortest fordwards navigation path \mbox{\hyperlink
 \doxysubsubsection{\texorpdfstring{GetCurrentRobotNode()}{GetCurrentRobotNode()}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Get\+Current\+Robot\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Finds and returns the lattice node on which the robot is currently located and returns it.Here is the caller graph for this function\+:
-\nopagebreak
+Finds and returns the lattice node on which the robot is currently located and returns it.Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -246,8 +244,7 @@ Returns the movement sensors game objects and their name \begin{DoxyRefDesc}{Tod
 Check if robot has reached the target node. Done to close the loop during movements. \begin{DoxyWarning}{Warning}
 While in simulatiom mode, a tolerance/ proximity value is utilized. Be mindful of said value
 \end{DoxyWarning}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -260,8 +257,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{InsertionPosibleFromCurrentLocation()}{InsertionPosibleFromCurrentLocation()}}
 {\footnotesize\ttfamily bool Robot\+Script.\+Insertion\+Posible\+From\+Current\+Location (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -274,8 +270,7 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{InsertNeighbouringLattice()}{InsertNeighbouringLattice()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Insert\+Neighbouring\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -295,8 +290,7 @@ Check from which neighbouring lattices the provided lattice can be inserted and 
 \includegraphics[width=350pt]{class_robot_script_a95e7e1f538069a6719718ca5be6a3332_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -352,14 +346,19 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_script_a69de43a921043364a81d249ac2bee207_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_robot_script_a4dfa6f99a0a341cb0b6ebdeca9405770}\label{class_robot_script_a4dfa6f99a0a341cb0b6ebdeca9405770}} 
+\index{RobotScript@{RobotScript}!MoveAndInsertLattice@{MoveAndInsertLattice}}
+\index{MoveAndInsertLattice@{MoveAndInsertLattice}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{MoveAndInsertLattice()}{MoveAndInsertLattice()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Move\+And\+Insert\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_robot_script_ab791230c437d0faed84e2852d1d03456}\label{class_robot_script_ab791230c437d0faed84e2852d1d03456}} 
 \index{RobotScript@{RobotScript}!MoveRobotAlongPath@{MoveRobotAlongPath}}
 \index{MoveRobotAlongPath@{MoveRobotAlongPath}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{MoveRobotAlongPath()}{MoveRobotAlongPath()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
 
-Set the robot on the provided navigation path.Here is the call graph for this function\+:
-\nopagebreak
+Set the robot on the provided navigation path.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -387,27 +386,25 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SwitchState()}{SwitchState()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Switch\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_abstract_state}{Robot\+Abstract\+State}}}]{State }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_robot_script_a7a261fabc2d93643c7029033229dc12f_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_robot_script_a7a261fabc2d93643c7029033229dc12f_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_robot_script_a39240818912f4a43a245809481029e13}\label{class_robot_script_a39240818912f4a43a245809481029e13}} 
+\mbox{\Hypertarget{class_robot_script_abdddd46ddc7aa4eaeb59725e1d0595d0}\label{class_robot_script_abdddd46ddc7aa4eaeb59725e1d0595d0}} 
 \index{RobotScript@{RobotScript}!TraversePathAndInsertLattice@{TraversePathAndInsertLattice}}
 \index{TraversePathAndInsertLattice@{TraversePathAndInsertLattice}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{TraversePathAndInsertLattice()}{TraversePathAndInsertLattice()}}
-{\footnotesize\ttfamily void Robot\+Script.\+Traverse\+Path\+And\+Insert\+Lattice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Robot\+Script.\+Traverse\+Path\+And\+Insert\+Lattice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path,  }\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
 
 
 

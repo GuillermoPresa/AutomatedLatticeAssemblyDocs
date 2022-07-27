@@ -13,5 +13,6 @@ var searchData=
   ['placelattice_10',['PlaceLattice',['../class_lattice_class.html#a4a9dc8a6035eca3a9b87eabcdc3de6eb',1,'LatticeClass.PlaceLattice()'],['../class_lattice_collection.html#a787390dc08d549ef916d59fcae4cde25',1,'LatticeCollection.PlaceLattice()']]],
   ['positionvector_11',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
   ['previousvertex_12',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]],
-  ['prioritydictionary_13',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]]
+  ['prioritydictionary_13',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]],
+  ['prioritylevel_14',['PriorityLevel',['../class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9',1,'Task']]]
 ];
