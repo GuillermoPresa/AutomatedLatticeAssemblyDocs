@@ -1,0 +1,6 @@
+<map id="RobotAbstractState.ExitState" name="RobotAbstractState.ExitState">
+<area shape="rect" id="node1" title=" " alt="" coords="484,31,679,57"/>
+<area shape="rect" id="node2" href="$class_robot_script.html#a7a261fabc2d93643c7029033229dc12f" title=" " alt="" coords="272,31,436,57"/>
+<area shape="rect" id="node3" href="$class_robot_script.html#ab791230c437d0faed84e2852d1d03456" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect" id="node4" href="$class_robot_walk_state.html#a0ab23b8bdd35a14b92e975eae0b580ec" title=" " alt="" coords="18,56,211,83"/>
+</map>

@@ -15,6 +15,9 @@ var searchData=
   ['cuberenderers_12',['CubeRenderers',['../class_lattice_class.html#a972301fecbec55330982ab9a8eb82ddd',1,'LatticeClass']]],
   ['curmethodindex_13',['curMethodIndex',['../class_tabs_block.html#a0bd71aab72ae4a49f22877987ab87796',1,'TabsBlock']]],
   ['currentcollidingnode_14',['CurrentCollidingNode',['../class_robot_script.html#abc18ee69238c54a59189c33ca371b3d6',1,'RobotScript']]],
-  ['currentnodesensor_15',['CurrentNodeSensor',['../class_robot_script.html#a38cd1606fa18e9147d86a161934a7792',1,'RobotScript']]],
-  ['currentrobotnode_16',['CurrentRobotNode',['../class_robot_script.html#a8e22a93df82a06cbf534832c9ec6ffea',1,'RobotScript']]]
+  ['currentmovementpath_15',['CurrentMovementPath',['../class_robot_script.html#affd217ec106c2af138501fa4d145943b',1,'RobotScript']]],
+  ['currentmovementtarget_16',['CurrentMovementTarget',['../class_robot_script.html#a75761398bef4050bf73245a250aaf1e4',1,'RobotScript']]],
+  ['currentnodesensor_17',['CurrentNodeSensor',['../class_robot_script.html#a38cd1606fa18e9147d86a161934a7792',1,'RobotScript']]],
+  ['currentrobotnode_18',['CurrentRobotNode',['../class_robot_script.html#a8e22a93df82a06cbf534832c9ec6ffea',1,'RobotScript']]],
+  ['currentstate_19',['CurrentState',['../class_robot_script.html#a9545b7ed3e5a72283aab6c9fe3b527cd',1,'RobotScript']]]
 ];

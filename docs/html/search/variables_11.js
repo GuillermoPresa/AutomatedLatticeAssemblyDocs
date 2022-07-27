@@ -7,7 +7,7 @@ var searchData=
   ['scrollwheelzoomingsensitivity_4',['scrollWheelZoomingSensitivity',['../class_r_t_s___cam_1_1_r_t_s___camera.html#a6373e41a296ad73c585a3fb7a02e6bc9',1,'RTS_Cam::RTS_Camera']]],
   ['selectedlatticelist_5',['SelectedLatticeList',['../class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530',1,'SelectionScript']]],
   ['selectednode_6',['SelectedNode',['../class_selection_script.html#acb8f93726484bd9986984116971f1e8e',1,'SelectionScript']]],
-  ['selectedobject_7',['SelectedObject',['../class_selection_script.html#ac40451363e27342cb270c0968e81ff40',1,'SelectionScript']]],
+  ['selectedobjectlist_7',['SelectedObjectList',['../class_selection_script.html#afa175a531404f158dec8c133de50347f',1,'SelectionScript']]],
   ['selectedrobotlist_8',['SelectedRobotList',['../class_selection_script.html#a4a2516474ba1951b2346f963bf39fcdc',1,'SelectionScript']]],
   ['selectinglattice_9',['SelectingLattice',['../class_selection_script.html#a246f0fda7f89482ab1f3a30d8d2bcf9f',1,'SelectionScript']]],
   ['selectingobject_10',['SelectingObject',['../class_selection_script.html#a677586ac56980111840b0f3855bdb65d',1,'SelectionScript']]],
@@ -23,9 +23,8 @@ var searchData=
   ['spawningnowunderparent_20',['SpawningNowUnderParent',['../class_spawner_overlay.html#a009cc590fa16dfdc752c2f6aefa8df78',1,'SpawnerOverlay']]],
   ['spawnlatice_21',['SpawnLatice',['../class_selection_script.html#af83a2cefc4eea44666bd1e441886ce34',1,'SelectionScript']]],
   ['spawnlattice_22',['SpawnLattice',['../class_selection_script.html#a44868cea78355bf28133df90cf62b74a',1,'SelectionScript']]],
-  ['speed_23',['speed',['../class_robot_script.html#a68a3a6f85143f75abe14685319c648af',1,'RobotScript']]],
-  ['state_24',['State',['../class_robot_script.html#ab731dc54d3c1bb4a88f856f1b2046c52',1,'RobotScript']]],
-  ['step_25',['step',['../class_robot_script.html#a69125a1b3fd2e977bf2dfe88d1509324',1,'RobotScript']]],
-  ['string_26',['string',['../class_object_save_popup.html#a2cffc5b0c9f9ae232f52a793a27b02a1',1,'ObjectSavePopup']]],
-  ['structurematerial_27',['StructureMaterial',['../class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1',1,'References.StructureMaterial()'],['../class_spawner.html#ae8e1f5477190084e50d6cbac31a3cca0',1,'Spawner.StructureMaterial()']]]
+  ['state_23',['State',['../class_robot_script.html#ab731dc54d3c1bb4a88f856f1b2046c52',1,'RobotScript']]],
+  ['step_24',['step',['../class_robot_script.html#a69125a1b3fd2e977bf2dfe88d1509324',1,'RobotScript']]],
+  ['string_25',['string',['../class_object_save_popup.html#a2cffc5b0c9f9ae232f52a793a27b02a1',1,'ObjectSavePopup']]],
+  ['structurematerial_26',['StructureMaterial',['../class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1',1,'References.StructureMaterial()'],['../class_spawner.html#ae8e1f5477190084e50d6cbac31a3cca0',1,'Spawner.StructureMaterial()']]]
 ];

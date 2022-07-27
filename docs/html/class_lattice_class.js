@@ -26,6 +26,7 @@ var class_lattice_class =
     [ "ObjLeft", "class_lattice_class.html#a484d3bfeec32ca6a01ea42f167e9fe50", null ],
     [ "ObjRight", "class_lattice_class.html#acc5d66ea3c4dda4f4226473498acdfc6", null ],
     [ "ObjTop", "class_lattice_class.html#a7c26ede8adef5b6eb71aad97c003e579", null ],
+    [ "Owner", "class_lattice_class.html#ac3e1a18c81bc50347958a696a7df8efb", null ],
     [ "Parent", "class_lattice_class.html#af16987b7c3ecb713d968b6d50a5ac627", null ],
     [ "ParentScript", "class_lattice_class.html#a137591f1d1de10871e4e8ca6b62020c7", null ],
     [ "Placed", "class_lattice_class.html#a5cf3db8f46b62c00d583a5cb15979614", null ],

@@ -17,5 +17,6 @@ var searchData=
   ['spawnworker_14',['SpawnWorker',['../class_spawner.html#a7e63b2d1dbffd6577cd69b13e26af2e6',1,'Spawner.SpawnWorker()'],['../class_spawner.html#a54033ba32888537f2637c9530c7aff5f',1,'Spawner.SpawnWorker(Vector3 SpawnOrigin)']]],
   ['start_15',['Start',['../class_references.html#afa18f3ec6ac4f878c28b3b4d66203270',1,'References.Start()'],['../class_robot_coordinator.html#a1bd1aa98c0765f8cb744f5e8bb8cc9f1',1,'RobotCoordinator.Start()']]],
   ['storeselectiontransforms_16',['StoreSelectionTransforms',['../class_space_navigator_driver_1_1_viewport_controller.html#a2ba42dc924185626fe33f6c9b31847f0',1,'SpaceNavigatorDriver::ViewportController']]],
-  ['straightenhorizon_17',['StraightenHorizon',['../class_space_navigator_driver_1_1_viewport_controller.html#aab58c95ecc524da722f6ea0d746b6f5f',1,'SpaceNavigatorDriver::ViewportController']]]
+  ['straightenhorizon_17',['StraightenHorizon',['../class_space_navigator_driver_1_1_viewport_controller.html#aab58c95ecc524da722f6ea0d746b6f5f',1,'SpaceNavigatorDriver::ViewportController']]],
+  ['switchstate_18',['SwitchState',['../class_robot_script.html#a7a261fabc2d93643c7029033229dc12f',1,'RobotScript']]]
 ];

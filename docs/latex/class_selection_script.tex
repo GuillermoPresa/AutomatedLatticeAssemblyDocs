@@ -21,6 +21,8 @@ Collaboration diagram for Selection\+Script\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+bool \mbox{\hyperlink{class_selection_script_a8ba0bab57ac28d4716e2633142b1c91b}{Check\+Only\+One\+Object\+Selected}} ()
+\item 
 void \mbox{\hyperlink{class_selection_script_a8e6f978d6ad09a1fa6b87df54c76d213}{Null\+Selections}} ()
 \item 
 void \mbox{\hyperlink{class_selection_script_a780d94caff0a6cc1d03f3e50a81c2b3c}{Set\+Defaults}} ()
@@ -41,7 +43,7 @@ Game\+Object \mbox{\hyperlink{class_selection_script_acb8f93726484bd998698411697
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_selection_script_aeb70d6029066dc66b495f990c5cc3530}{Selected\+Lattice\+List}} = new List$<$Game\+Object$>$()
 \item 
-Game\+Object \mbox{\hyperlink{class_selection_script_ac40451363e27342cb270c0968e81ff40}{Selected\+Object}}
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_selection_script_afa175a531404f158dec8c133de50347f}{Selected\+Object\+List}} = new List$<$Game\+Object$>$()
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_selection_script_a4a2516474ba1951b2346f963bf39fcdc}{Selected\+Robot\+List}} = new List$<$Game\+Object$>$()
 \item 
@@ -92,11 +94,27 @@ List$<$ string $>$ \mbox{\hyperlink{class_selection_script_ae231e638afa57d6d37e1
 \item 
 bool \mbox{\hyperlink{class_selection_script_a6f77dea60a0c57e62b27c48f94476f94}{Any\+Lattice\+Selected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
+bool \mbox{\hyperlink{class_selection_script_aef210ff80e05b6876b4f3b7f4982660a}{Any\+Object\+Selected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 bool \mbox{\hyperlink{class_selection_script_aeee5fd5e5075b9fe25e66d322bbe877f}{Any\+Robot\+Selected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_selection_script_a8ba0bab57ac28d4716e2633142b1c91b}\label{class_selection_script_a8ba0bab57ac28d4716e2633142b1c91b}} 
+\index{SelectionScript@{SelectionScript}!CheckOnlyOneObjectSelected@{CheckOnlyOneObjectSelected}}
+\index{CheckOnlyOneObjectSelected@{CheckOnlyOneObjectSelected}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{CheckOnlyOneObjectSelected()}{CheckOnlyOneObjectSelected()}}
+{\footnotesize\ttfamily bool Selection\+Script.\+Check\+Only\+One\+Object\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_selection_script_a8ba0bab57ac28d4716e2633142b1c91b_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_selection_script_ab6856f1e708f6555c3714c088598e41c}\label{class_selection_script_ab6856f1e708f6555c3714c088598e41c}} 
 \index{SelectionScript@{SelectionScript}!CountSelectedItemsFromGlobalList@{CountSelectedItemsFromGlobalList}}
 \index{CountSelectedItemsFromGlobalList@{CountSelectedItemsFromGlobalList}!SelectionScript@{SelectionScript}}
@@ -240,11 +258,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SelectedNode}{SelectedNode}}
 {\footnotesize\ttfamily Game\+Object Selection\+Script.\+Selected\+Node}
 
-\mbox{\Hypertarget{class_selection_script_ac40451363e27342cb270c0968e81ff40}\label{class_selection_script_ac40451363e27342cb270c0968e81ff40}} 
-\index{SelectionScript@{SelectionScript}!SelectedObject@{SelectedObject}}
-\index{SelectedObject@{SelectedObject}!SelectionScript@{SelectionScript}}
-\doxysubsubsection{\texorpdfstring{SelectedObject}{SelectedObject}}
-{\footnotesize\ttfamily Game\+Object Selection\+Script.\+Selected\+Object}
+\mbox{\Hypertarget{class_selection_script_afa175a531404f158dec8c133de50347f}\label{class_selection_script_afa175a531404f158dec8c133de50347f}} 
+\index{SelectionScript@{SelectionScript}!SelectedObjectList@{SelectedObjectList}}
+\index{SelectedObjectList@{SelectedObjectList}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{SelectedObjectList}{SelectedObjectList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Selection\+Script.\+Selected\+Object\+List = new List$<$Game\+Object$>$()}
 
 \mbox{\Hypertarget{class_selection_script_a4a2516474ba1951b2346f963bf39fcdc}\label{class_selection_script_a4a2516474ba1951b2346f963bf39fcdc}} 
 \index{SelectionScript@{SelectionScript}!SelectedRobotList@{SelectedRobotList}}
@@ -302,6 +320,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{AnyLatticeSelected@{AnyLatticeSelected}!SelectionScript@{SelectionScript}}
 \doxysubsubsection{\texorpdfstring{AnyLatticeSelected}{AnyLatticeSelected}}
 {\footnotesize\ttfamily bool Selection\+Script.\+Any\+Lattice\+Selected\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_selection_script_aef210ff80e05b6876b4f3b7f4982660a}\label{class_selection_script_aef210ff80e05b6876b4f3b7f4982660a}} 
+\index{SelectionScript@{SelectionScript}!AnyObjectSelected@{AnyObjectSelected}}
+\index{AnyObjectSelected@{AnyObjectSelected}!SelectionScript@{SelectionScript}}
+\doxysubsubsection{\texorpdfstring{AnyObjectSelected}{AnyObjectSelected}}
+{\footnotesize\ttfamily bool Selection\+Script.\+Any\+Object\+Selected\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_selection_script_aeee5fd5e5075b9fe25e66d322bbe877f}\label{class_selection_script_aeee5fd5e5075b9fe25e66d322bbe877f}} 
 \index{SelectionScript@{SelectionScript}!AnyRobotSelected@{AnyRobotSelected}}

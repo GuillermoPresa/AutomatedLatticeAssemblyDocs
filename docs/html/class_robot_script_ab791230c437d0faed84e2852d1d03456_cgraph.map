@@ -1,4 +1,6 @@
 <map id="RobotScript.MoveRobotAlongPath" name="RobotScript.MoveRobotAlongPath">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,224,32"/>
-<area shape="rect" id="node2" href="$class_robot_script.html#a177722cf104b800c97505665083dd3a4" title=" " alt="" coords="272,5,443,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,224,69"/>
+<area shape="rect" id="node2" href="$class_robot_script.html#a7a261fabc2d93643c7029033229dc12f" title=" " alt="" coords="272,42,436,69"/>
+<area shape="rect" id="node3" href="$class_robot_abstract_state.html#a3c30b52e3be0cb86787ea1fb51281705" title=" " alt="" coords="496,5,667,47"/>
+<area shape="rect" id="node4" href="$class_robot_abstract_state.html#a819913b0a4dce616f79b521c32f3ade8" title=" " alt="" coords="484,71,679,98"/>
 </map>

@@ -1,5 +1,6 @@
 var class_selection_script =
 [
+    [ "CheckOnlyOneObjectSelected", "class_selection_script.html#a8ba0bab57ac28d4716e2633142b1c91b", null ],
     [ "NullSelections", "class_selection_script.html#a8e6f978d6ad09a1fa6b87df54c76d213", null ],
     [ "SetDefaults", "class_selection_script.html#a780d94caff0a6cc1d03f3e50a81c2b3c", null ],
     [ "ClickedLattice", "class_selection_script.html#adc2ec3d22c84babcf674531d6d7ad325", null ],
@@ -19,7 +20,7 @@ var class_selection_script =
     [ "ReferenceScriptReference", "class_selection_script.html#a9b52301bd6fd8e75bb91671aeb3efd62", null ],
     [ "SelectedLatticeList", "class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530", null ],
     [ "SelectedNode", "class_selection_script.html#acb8f93726484bd9986984116971f1e8e", null ],
-    [ "SelectedObject", "class_selection_script.html#ac40451363e27342cb270c0968e81ff40", null ],
+    [ "SelectedObjectList", "class_selection_script.html#afa175a531404f158dec8c133de50347f", null ],
     [ "SelectedRobotList", "class_selection_script.html#a4a2516474ba1951b2346f963bf39fcdc", null ],
     [ "SelectingLattice", "class_selection_script.html#a246f0fda7f89482ab1f3a30d8d2bcf9f", null ],
     [ "SelectingObject", "class_selection_script.html#a677586ac56980111840b0f3855bdb65d", null ],
@@ -29,5 +30,6 @@ var class_selection_script =
     [ "SpawnLatice", "class_selection_script.html#af83a2cefc4eea44666bd1e441886ce34", null ],
     [ "SpawnLattice", "class_selection_script.html#a44868cea78355bf28133df90cf62b74a", null ],
     [ "AnyLatticeSelected", "class_selection_script.html#a6f77dea60a0c57e62b27c48f94476f94", null ],
+    [ "AnyObjectSelected", "class_selection_script.html#aef210ff80e05b6876b4f3b7f4982660a", null ],
     [ "AnyRobotSelected", "class_selection_script.html#aeee5fd5e5075b9fe25e66d322bbe877f", null ]
 ];

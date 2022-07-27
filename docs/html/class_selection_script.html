@@ -114,6 +114,8 @@ Collaboration diagram for SelectionScript:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ba0bab57ac28d4716e2633142b1c91b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a8ba0bab57ac28d4716e2633142b1c91b">CheckOnlyOneObjectSelected</a> ()</td></tr>
+<tr class="separator:a8ba0bab57ac28d4716e2633142b1c91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e6f978d6ad09a1fa6b87df54c76d213"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a8e6f978d6ad09a1fa6b87df54c76d213">NullSelections</a> ()</td></tr>
 <tr class="separator:a8e6f978d6ad09a1fa6b87df54c76d213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a780d94caff0a6cc1d03f3e50a81c2b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a780d94caff0a6cc1d03f3e50a81c2b3c">SetDefaults</a> ()</td></tr>
@@ -134,8 +136,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acb8f93726484bd9986984116971f1e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb70d6029066dc66b495f990c5cc3530"><td class="memItemLeft" align="right" valign="top">List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530">SelectedLatticeList</a> = new List&lt;GameObject&gt;()</td></tr>
 <tr class="separator:aeb70d6029066dc66b495f990c5cc3530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac40451363e27342cb270c0968e81ff40"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#ac40451363e27342cb270c0968e81ff40">SelectedObject</a></td></tr>
-<tr class="separator:ac40451363e27342cb270c0968e81ff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa175a531404f158dec8c133de50347f"><td class="memItemLeft" align="right" valign="top">List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#afa175a531404f158dec8c133de50347f">SelectedObjectList</a> = new List&lt;GameObject&gt;()</td></tr>
+<tr class="separator:afa175a531404f158dec8c133de50347f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2516474ba1951b2346f963bf39fcdc"><td class="memItemLeft" align="right" valign="top">List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a4a2516474ba1951b2346f963bf39fcdc">SelectedRobotList</a> = new List&lt;GameObject&gt;()</td></tr>
 <tr class="separator:a4a2516474ba1951b2346f963bf39fcdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3e360788e8cc50752fc1e30c86ab6a"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a1e3e360788e8cc50752fc1e30c86ab6a">ClickedNode</a></td></tr>
@@ -185,10 +187,38 @@ Public Attributes</h2></td></tr>
 Properties</h2></td></tr>
 <tr class="memitem:a6f77dea60a0c57e62b27c48f94476f94"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#a6f77dea60a0c57e62b27c48f94476f94">AnyLatticeSelected</a><code> [get]</code></td></tr>
 <tr class="separator:a6f77dea60a0c57e62b27c48f94476f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef210ff80e05b6876b4f3b7f4982660a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#aef210ff80e05b6876b4f3b7f4982660a">AnyObjectSelected</a><code> [get]</code></td></tr>
+<tr class="separator:aef210ff80e05b6876b4f3b7f4982660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeee5fd5e5075b9fe25e66d322bbe877f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_selection_script.html#aeee5fd5e5075b9fe25e66d322bbe877f">AnyRobotSelected</a><code> [get]</code></td></tr>
 <tr class="separator:aeee5fd5e5075b9fe25e66d322bbe877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ba0bab57ac28d4716e2633142b1c91b" name="a8ba0bab57ac28d4716e2633142b1c91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ba0bab57ac28d4716e2633142b1c91b">&#9670;&nbsp;</a></span>CheckOnlyOneObjectSelected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SelectionScript.CheckOnlyOneObjectSelected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_selection_script_a8ba0bab57ac28d4716e2633142b1c91b_icgraph.png" border="0" usemap="#aclass_selection_script_a8ba0bab57ac28d4716e2633142b1c91b_icgraph" alt=""/></div>
+<map name="aclass_selection_script_a8ba0bab57ac28d4716e2633142b1c91b_icgraph" id="aclass_selection_script_a8ba0bab57ac28d4716e2633142b1c91b_icgraph">
+<area shape="rect" title=" " alt="" coords="257,5,436,47"/>
+<area shape="rect" href="class_spawner_overlay.html#a06b78548d6b09750b51adfc253d68613" title=" " alt="" coords="5,13,209,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ab6856f1e708f6555c3714c088598e41c" name="ab6856f1e708f6555c3714c088598e41c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6856f1e708f6555c3714c088598e41c">&#9670;&nbsp;</a></span>CountSelectedItemsFromGlobalList()</h2>
 
@@ -533,14 +563,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ac40451363e27342cb270c0968e81ff40" name="ac40451363e27342cb270c0968e81ff40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac40451363e27342cb270c0968e81ff40">&#9670;&nbsp;</a></span>SelectedObject</h2>
+<a id="afa175a531404f158dec8c133de50347f" name="afa175a531404f158dec8c133de50347f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa175a531404f158dec8c133de50347f">&#9670;&nbsp;</a></span>SelectedObjectList</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GameObject SelectionScript.SelectedObject</td>
+          <td class="memname">List&lt;GameObject&gt; SelectionScript.SelectedObjectList = new List&lt;GameObject&gt;()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -671,6 +701,28 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">bool SelectionScript.AnyLatticeSelected</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef210ff80e05b6876b4f3b7f4982660a" name="aef210ff80e05b6876b4f3b7f4982660a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef210ff80e05b6876b4f3b7f4982660a">&#9670;&nbsp;</a></span>AnyObjectSelected</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SelectionScript.AnyObjectSelected</td>
         </tr>
       </table>
   </td>

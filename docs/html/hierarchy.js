@@ -52,6 +52,10 @@ var hierarchy =
     ] ],
     [ "NavigationPath", "class_navigation_path.html", null ],
     [ "SerializationElements.ObjectDocument", "class_serialization_elements_1_1_object_document.html", null ],
+    [ "RobotAbstractState", "class_robot_abstract_state.html", [
+      [ "RobotWaitState", "class_robot_wait_state.html", null ],
+      [ "RobotWalkState", "class_robot_walk_state.html", null ]
+    ] ],
     [ "MovementAndSensorDefinition.SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", null ],
     [ "SerializationElements.SerializationResolution", "class_serialization_elements_1_1_serialization_resolution.html", null ],
     [ "TabsBlock", "class_tabs_block.html", null ],

@@ -103,14 +103,18 @@ Collaboration diagram for RobotScript:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_robot_script__coll__graph.png" border="0" usemap="#a_robot_script_coll__map" alt="Collaboration graph"/></div>
 <map name="a_robot_script_coll__map" id="a_robot_script_coll__map">
-<area shape="rect" title=" " alt="" coords="122,272,213,299"/>
-<area shape="rect" title=" " alt="" coords="114,5,224,32"/>
-<area shape="rect" href="class_time_manager.html" title=" " alt="" coords="12,132,112,159"/>
-<area shape="rect" href="class_selection_script.html" title=" " alt="" coords="164,183,275,209"/>
-<area shape="rect" href="class_spawner.html" title=" " alt="" coords="170,81,242,108"/>
-<area shape="rect" href="class_references.html" title=" " alt="" coords="272,81,359,108"/>
-<area shape="rect" href="class_selected.html" title=" " alt="" coords="483,132,556,159"/>
-<area shape="rect" href="class_graph.html" title=" " alt="" coords="582,183,639,209"/>
+<area shape="rect" title=" " alt="" coords="921,261,1012,287"/>
+<area shape="rect" title=" " alt="" coords="5,113,116,139"/>
+<area shape="rect" href="class_time_manager.html" title=" " alt="" coords="353,50,453,77"/>
+<area shape="rect" href="class_selection_script.html" title=" " alt="" coords="539,142,650,169"/>
+<area shape="rect" href="class_spawner.html" title=" " alt="" coords="197,146,269,173"/>
+<area shape="rect" href="class_references.html" title=" " alt="" coords="190,197,277,223"/>
+<area shape="rect" href="class_selected.html" title=" " alt="" coords="366,227,439,254"/>
+<area shape="rect" href="class_robot_abstract_state.html" title=" " alt="" coords="165,322,301,349"/>
+<area shape="rect" href="class_robot_wait_state.html" title=" " alt="" coords="537,322,652,349"/>
+<area shape="rect" href="class_robot_walk_state.html" title=" " alt="" coords="536,373,653,399"/>
+<area shape="rect" href="class_navigation_path.html" title=" " alt="" coords="541,423,649,450"/>
+<area shape="rect" href="class_graph.html" title=" " alt="" coords="566,474,623,501"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -120,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaaacc0eacd09c68f0e399dfb780c16a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51cc5a30e5f3ec516dcc3673953ead43"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, <a class="el" href="class_movement_script.html">MovementScript</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a51cc5a30e5f3ec516dcc3673953ead43">GetPossibleMovementScripts</a> ()</td></tr>
 <tr class="separator:a51cc5a30e5f3ec516dcc3673953ead43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a261fabc2d93643c7029033229dc12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a7a261fabc2d93643c7029033229dc12f">SwitchState</a> (<a class="el" href="class_robot_abstract_state.html">RobotAbstractState</a> <a class="el" href="class_robot_script.html#ab731dc54d3c1bb4a88f856f1b2046c52">State</a>)</td></tr>
+<tr class="separator:a7a261fabc2d93643c7029033229dc12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276491483d838ed1c2fa694985d6f5fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a276491483d838ed1c2fa694985d6f5fd">ClearNavigationSpace</a> ()</td></tr>
 <tr class="separator:a276491483d838ed1c2fa694985d6f5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60c507489884cf04ba589c174639649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ad60c507489884cf04ba589c174639649">MapNavigationSpace</a> ()</td></tr>
@@ -130,25 +136,39 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a69de43a921043364a81d249ac2bee207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad25a0147df08715dffc20665e66e5ecd"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ad25a0147df08715dffc20665e66e5ecd">GetCurrentRobotNode</a> ()</td></tr>
 <tr class="separator:ad25a0147df08715dffc20665e66e5ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74bcd3d5bda1662a2e8886403dc3eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2">MoveToNode</a> (GameObject EndNode)</td></tr>
-<tr class="separator:ad74bcd3d5bda1662a2e8886403dc3eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6141d853d8f1fabc3e5c3f61c60767f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_navigation_path.html">NavigationPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2">FindPathBetweenNodes</a> (GameObject EndNode)</td></tr>
 <tr class="separator:a6141d853d8f1fabc3e5c3f61c60767f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab03624ce05a1b8c16f52f1f7f62b9922"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_navigation_path.html">NavigationPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ab03624ce05a1b8c16f52f1f7f62b9922">FindPathBetweenNodes</a> (GameObject StartingNode, GameObject EndNode, bool Remapping=false)</td></tr>
 <tr class="separator:ab03624ce05a1b8c16f52f1f7f62b9922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74bcd3d5bda1662a2e8886403dc3eb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2">MoveToNode</a> (GameObject EndNode)</td></tr>
+<tr class="separator:ad74bcd3d5bda1662a2e8886403dc3eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab791230c437d0faed84e2852d1d03456"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ab791230c437d0faed84e2852d1d03456">MoveRobotAlongPath</a> (<a class="el" href="class_navigation_path.html">NavigationPath</a> FordwardsNavigationPath)</td></tr>
 <tr class="separator:ab791230c437d0faed84e2852d1d03456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177722cf104b800c97505665083dd3a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a177722cf104b800c97505665083dd3a4">DrawNavPath</a> (<a class="el" href="class_navigation_path.html">NavigationPath</a> FordwardsNavigationPath)</td></tr>
 <tr class="separator:a177722cf104b800c97505665083dd3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51e0f01e623e7f9d6a6051101193fea0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0">InsertNeighbouringLattice</a> (GameObject LatticeToInsert)</td></tr>
+<tr class="separator:a51e0f01e623e7f9d6a6051101193fea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e7e1f538069a6719718ca5be6a3332"><td class="memItemLeft" align="right" valign="top">List&lt; GameObject &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332">LatticeInsertionPossibleNodes</a> (GameObject LatticeToInsert)</td></tr>
 <tr class="separator:a95e7e1f538069a6719718ca5be6a3332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90e7cbf825ad8049ed5b48005ba357d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6">CheckInsertionPossible</a> (GameObject LatticeToInsert)</td></tr>
 <tr class="separator:a90e7cbf825ad8049ed5b48005ba357d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fa7f4e212ae89000a1ef97046a6b338"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338">InsertionPosibleFromCurrentLocation</a> (GameObject LatticeToInsert)</td></tr>
+<tr class="separator:a5fa7f4e212ae89000a1ef97046a6b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39240818912f4a43a245809481029e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a39240818912f4a43a245809481029e13">TraversePathAndInsertLattice</a> ()</td></tr>
+<tr class="separator:a39240818912f4a43a245809481029e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69b9facd35f27970fa1f733d6e9b3778"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a69b9facd35f27970fa1f733d6e9b3778">HasReachedTargetNode</a> (GameObject TargetNode)</td></tr>
 <tr class="separator:a69b9facd35f27970fa1f733d6e9b3778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a9545b7ed3e5a72283aab6c9fe3b527cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_robot_abstract_state.html">RobotAbstractState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a9545b7ed3e5a72283aab6c9fe3b527cd">CurrentState</a></td></tr>
+<tr class="separator:a9545b7ed3e5a72283aab6c9fe3b527cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36ca44f004607cbeaad544b7885200d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_robot_wait_state.html">RobotWaitState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a36ca44f004607cbeaad544b7885200d8">WaitState</a> = new <a class="el" href="class_robot_wait_state.html">RobotWaitState</a>()</td></tr>
+<tr class="separator:a36ca44f004607cbeaad544b7885200d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dad2908952cb3d3968fcade05f46145"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_robot_walk_state.html">RobotWalkState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a0dad2908952cb3d3968fcade05f46145">WalkState</a> = new <a class="el" href="class_robot_walk_state.html">RobotWalkState</a>()</td></tr>
+<tr class="separator:a0dad2908952cb3d3968fcade05f46145"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1349f693dfdc34f3455cf25fb1eb0b47"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a1349f693dfdc34f3455cf25fb1eb0b47">Owner</a></td></tr>
+<tr class="separator:a1349f693dfdc34f3455cf25fb1eb0b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63518d2c0b94349b8fe26de307b4b701"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a63518d2c0b94349b8fe26de307b4b701">Spawner</a></td></tr>
 <tr class="separator:a63518d2c0b94349b8fe26de307b4b701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36b187850046e5707a3e2a7280b1d7e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_time_manager.html">TimeManager</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a36b187850046e5707a3e2a7280b1d7e6">TimeManager</a></td></tr>
@@ -161,8 +181,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab731dc54d3c1bb4a88f856f1b2046c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69125a1b3fd2e977bf2dfe88d1509324"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a69125a1b3fd2e977bf2dfe88d1509324">step</a></td></tr>
 <tr class="separator:a69125a1b3fd2e977bf2dfe88d1509324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68a3a6f85143f75abe14685319c648af"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a68a3a6f85143f75abe14685319c648af">speed</a> = (float)1</td></tr>
-<tr class="separator:a68a3a6f85143f75abe14685319c648af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affd217ec106c2af138501fa4d145943b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_navigation_path.html">NavigationPath</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#affd217ec106c2af138501fa4d145943b">CurrentMovementPath</a></td></tr>
+<tr class="separator:affd217ec106c2af138501fa4d145943b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75761398bef4050bf73245a250aaf1e4"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a75761398bef4050bf73245a250aaf1e4">CurrentMovementTarget</a></td></tr>
+<tr class="separator:a75761398bef4050bf73245a250aaf1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee7130bcd1df655d2d894e3f8f6fef6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a7ee7130bcd1df655d2d894e3f8f6fef6">WalkSpeed</a></td></tr>
+<tr class="separator:a7ee7130bcd1df655d2d894e3f8f6fef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9b5945fe3bd1c2297ee45cb9c1e36ab"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#ac9b5945fe3bd1c2297ee45cb9c1e36ab">RendererObject</a></td></tr>
 <tr class="separator:ac9b5945fe3bd1c2297ee45cb9c1e36ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38cd1606fa18e9147d86a161934a7792"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_script.html#a38cd1606fa18e9147d86a161934a7792">CurrentNodeSensor</a></td></tr>
@@ -191,6 +215,11 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="RobotScriptMain"></a>
 Robot Script</h1>
+<p >Robot script and state machine manager.</p>
+<p >A high quality introduction to state machines and description of the particular implementation can be found in <a href="https://www.youtube.com/watch?v=Vt8aZDPzRjI&amp;list=PLwyUzJb_FNeTR1Q7edAQuWkTKo_Ncq9ck&amp;index=2">YT video State machine</a></p>
+<p >This state machine implementation does not allow for custom state switching that is different for every transtion but rather general enter and exit states functions are provided.</p>
+<p >State machine with states: -Waiting, Y -Yielding, N -Moving, Y -Inserting, N -Loading N -Fault N</p>
+<p >Robot defines a work volume </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a90e7cbf825ad8049ed5b48005ba357d6" name="a90e7cbf825ad8049ed5b48005ba357d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90e7cbf825ad8049ed5b48005ba357d6">&#9670;&nbsp;</a></span>CheckInsertionPossible()</h2>
@@ -207,7 +236,7 @@ Robot Script</h1>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Check if the provided lattice can be inserted with the current navigation path. Return True if possible and false otherwise</p>
+<p >Check if the provided lattice can be inserted. </p><dl class="section warning"><dt>Warning</dt><dd>Only takes into consideration if there are enought neighbouring lattices, not whether the space is already occupied... Return True if possible and false otherwise</dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -217,6 +246,17 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="233,29,416,71"/>
 <area shape="rect" href="class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="464,29,660,71"/>
 <area shape="rect" href="class_robot_script.html#ad25a0147df08715dffc20665e66e5ecd" title=" " alt="" coords="708,37,929,63"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6_icgraph.png" border="0" usemap="#aclass_robot_script_a90e7cbf825ad8049ed5b48005ba357d6_icgraph" alt=""/></div>
+<map name="aclass_robot_script_a90e7cbf825ad8049ed5b48005ba357d6_icgraph" id="aclass_robot_script_a90e7cbf825ad8049ed5b48005ba357d6_icgraph">
+<area shape="rect" title=" " alt="" coords="255,71,435,112"/>
+<area shape="rect" href="class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,5,199,47"/>
+<area shape="rect" href="class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,71,207,112"/>
+<area shape="rect" href="class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="23,137,189,163"/>
 </map>
 </div>
 
@@ -299,10 +339,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2_icgraph.png" border="0" usemap="#aclass_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2_icgraph" alt=""/></div>
 <map name="aclass_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2_icgraph" id="aclass_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2_icgraph">
-<area shape="rect" title=" " alt="" coords="464,35,660,76"/>
-<area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="233,5,416,47"/>
-<area shape="rect" href="class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2" title=" " alt="" coords="241,71,409,98"/>
-<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="5,5,185,47"/>
+<area shape="rect" title=" " alt="" coords="713,67,909,108"/>
+<area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,37,665,79"/>
+<area shape="rect" href="class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2" title=" " alt="" coords="490,103,658,130"/>
+<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,68,435,109"/>
+<area shape="rect" href="class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,5,199,47"/>
+<area shape="rect" href="class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,71,207,112"/>
+<area shape="rect" href="class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="23,137,189,163"/>
 </map>
 </div>
 
@@ -376,18 +419,21 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Finds and returns the lattice node on which the robot is currently located.</p>
+<p >Finds and returns the lattice node on which the robot is currently located and returns it.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_robot_script_ad25a0147df08715dffc20665e66e5ecd_icgraph.png" border="0" usemap="#aclass_robot_script_ad25a0147df08715dffc20665e66e5ecd_icgraph" alt=""/></div>
 <map name="aclass_robot_script_ad25a0147df08715dffc20665e66e5ecd_icgraph" id="aclass_robot_script_ad25a0147df08715dffc20665e66e5ecd_icgraph">
-<area shape="rect" title=" " alt="" coords="708,75,929,102"/>
-<area shape="rect" href="class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="464,35,660,76"/>
-<area shape="rect" href="class_robot_script.html#a69de43a921043364a81d249ac2bee207" title=" " alt="" coords="473,100,651,141"/>
-<area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="233,5,416,47"/>
-<area shape="rect" href="class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2" title=" " alt="" coords="241,71,409,98"/>
-<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="5,5,185,47"/>
+<area shape="rect" title=" " alt="" coords="957,173,1179,200"/>
+<area shape="rect" href="class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="713,107,909,149"/>
+<area shape="rect" href="class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,122,199,163"/>
+<area shape="rect" href="class_robot_script.html#a69de43a921043364a81d249ac2bee207" title=" " alt="" coords="722,225,901,266"/>
+<area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,107,665,149"/>
+<area shape="rect" href="class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2" title=" " alt="" coords="490,56,658,83"/>
+<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,57,435,98"/>
+<area shape="rect" href="class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,57,207,98"/>
+<area shape="rect" href="class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="23,5,189,32"/>
 </map>
 </div>
 
@@ -446,6 +492,75 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p >Check if robot has reached the target node. Done to close the loop during movements. </p><dl class="section warning"><dt>Warning</dt><dd>While in simulatiom mode, a tolerance/ proximity value is utilized. Be mindful of said value</dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_a69b9facd35f27970fa1f733d6e9b3778_icgraph.png" border="0" usemap="#aclass_robot_script_a69b9facd35f27970fa1f733d6e9b3778_icgraph" alt=""/></div>
+<map name="aclass_robot_script_a69b9facd35f27970fa1f733d6e9b3778_icgraph" id="aclass_robot_script_a69b9facd35f27970fa1f733d6e9b3778_icgraph">
+<area shape="rect" title=" " alt="" coords="247,5,481,32"/>
+<area shape="rect" href="class_robot_walk_state.html#a0ab23b8bdd35a14b92e975eae0b580ec" title=" " alt="" coords="5,5,199,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5fa7f4e212ae89000a1ef97046a6b338" name="a5fa7f4e212ae89000a1ef97046a6b338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fa7f4e212ae89000a1ef97046a6b338">&#9670;&nbsp;</a></span>InsertionPosibleFromCurrentLocation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotScript.InsertionPosibleFromCurrentLocation </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>LatticeToInsert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_a5fa7f4e212ae89000a1ef97046a6b338_cgraph.png" border="0" usemap="#aclass_robot_script_a5fa7f4e212ae89000a1ef97046a6b338_cgraph" alt=""/></div>
+<map name="aclass_robot_script_a5fa7f4e212ae89000a1ef97046a6b338_cgraph" id="aclass_robot_script_a5fa7f4e212ae89000a1ef97046a6b338_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,192,105"/>
+<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="240,5,420,47"/>
+<area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="468,56,651,97"/>
+<area shape="rect" href="class_robot_script.html#ad25a0147df08715dffc20665e66e5ecd" title=" " alt="" coords="943,93,1164,119"/>
+<area shape="rect" href="class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="699,56,895,97"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a51e0f01e623e7f9d6a6051101193fea0" name="a51e0f01e623e7f9d6a6051101193fea0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e0f01e623e7f9d6a6051101193fea0">&#9670;&nbsp;</a></span>InsertNeighbouringLattice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RobotScript.InsertNeighbouringLattice </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>LatticeToInsert</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_a51e0f01e623e7f9d6a6051101193fea0_cgraph.png" border="0" usemap="#aclass_robot_script_a51e0f01e623e7f9d6a6051101193fea0_cgraph" alt=""/></div>
+<map name="aclass_robot_script_a51e0f01e623e7f9d6a6051101193fea0_cgraph" id="aclass_robot_script_a51e0f01e623e7f9d6a6051101193fea0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,207,71"/>
+<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,29,435,71"/>
+<area shape="rect" href="class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,29,665,71"/>
+<area shape="rect" href="class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="713,29,909,71"/>
+<area shape="rect" href="class_robot_script.html#ad25a0147df08715dffc20665e66e5ecd" title=" " alt="" coords="957,37,1179,63"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -480,8 +595,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_robot_script_a95e7e1f538069a6719718ca5be6a3332_icgraph.png" border="0" usemap="#aclass_robot_script_a95e7e1f538069a6719718ca5be6a3332_icgraph" alt=""/></div>
 <map name="aclass_robot_script_a95e7e1f538069a6719718ca5be6a3332_icgraph" id="aclass_robot_script_a95e7e1f538069a6719718ca5be6a3332_icgraph">
-<area shape="rect" title=" " alt="" coords="233,5,416,47"/>
-<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="5,5,185,47"/>
+<area shape="rect" title=" " alt="" coords="483,39,665,80"/>
+<area shape="rect" href="class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,68,435,109"/>
+<area shape="rect" href="class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,5,199,47"/>
+<area shape="rect" href="class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,71,207,112"/>
+<area shape="rect" href="class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="23,137,189,163"/>
 </map>
 </div>
 
@@ -607,6 +725,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p >Set the robot on the provided navigation path.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_ab791230c437d0faed84e2852d1d03456_cgraph.png" border="0" usemap="#aclass_robot_script_ab791230c437d0faed84e2852d1d03456_cgraph" alt=""/></div>
+<map name="aclass_robot_script_ab791230c437d0faed84e2852d1d03456_cgraph" id="aclass_robot_script_ab791230c437d0faed84e2852d1d03456_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,224,69"/>
+<area shape="rect" href="class_robot_script.html#a7a261fabc2d93643c7029033229dc12f" title=" " alt="" coords="272,42,436,69"/>
+<area shape="rect" href="class_robot_abstract_state.html#a3c30b52e3be0cb86787ea1fb51281705" title=" " alt="" coords="496,5,667,47"/>
+<area shape="rect" href="class_robot_abstract_state.html#a819913b0a4dce616f79b521c32f3ade8" title=" " alt="" coords="484,71,679,98"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -625,7 +754,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Creates a Navigation path the provided target node and sets the robot on said path.</p>
+<p >Creates a Navigation path the provided target node and sets the robot on said path. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>TODO Change to calling funct MoveRobotAlongPath </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -639,6 +768,61 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a7a261fabc2d93643c7029033229dc12f" name="a7a261fabc2d93643c7029033229dc12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a261fabc2d93643c7029033229dc12f">&#9670;&nbsp;</a></span>SwitchState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RobotScript.SwitchState </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_robot_abstract_state.html">RobotAbstractState</a>&#160;</td>
+          <td class="paramname"><em>State</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_a7a261fabc2d93643c7029033229dc12f_cgraph.png" border="0" usemap="#aclass_robot_script_a7a261fabc2d93643c7029033229dc12f_cgraph" alt=""/></div>
+<map name="aclass_robot_script_a7a261fabc2d93643c7029033229dc12f_cgraph" id="aclass_robot_script_a7a261fabc2d93643c7029033229dc12f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,169,69"/>
+<area shape="rect" href="class_robot_abstract_state.html#a3c30b52e3be0cb86787ea1fb51281705" title=" " alt="" coords="229,5,400,47"/>
+<area shape="rect" href="class_robot_abstract_state.html#a819913b0a4dce616f79b521c32f3ade8" title=" " alt="" coords="217,71,412,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_robot_script_a7a261fabc2d93643c7029033229dc12f_icgraph.png" border="0" usemap="#aclass_robot_script_a7a261fabc2d93643c7029033229dc12f_icgraph" alt=""/></div>
+<map name="aclass_robot_script_a7a261fabc2d93643c7029033229dc12f_icgraph" id="aclass_robot_script_a7a261fabc2d93643c7029033229dc12f_icgraph">
+<area shape="rect" title=" " alt="" coords="272,31,436,57"/>
+<area shape="rect" href="class_robot_script.html#ab791230c437d0faed84e2852d1d03456" title=" " alt="" coords="5,5,224,32"/>
+<area shape="rect" href="class_robot_walk_state.html#a0ab23b8bdd35a14b92e975eae0b580ec" title=" " alt="" coords="18,56,211,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a39240818912f4a43a245809481029e13" name="a39240818912f4a43a245809481029e13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39240818912f4a43a245809481029e13">&#9670;&nbsp;</a></span>TraversePathAndInsertLattice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RobotScript.TraversePathAndInsertLattice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="abc18ee69238c54a59189c33ca371b3d6" name="abc18ee69238c54a59189c33ca371b3d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc18ee69238c54a59189c33ca371b3d6">&#9670;&nbsp;</a></span>CurrentCollidingNode</h2>
@@ -648,6 +832,34 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">GameObject RobotScript.CurrentCollidingNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affd217ec106c2af138501fa4d145943b" name="affd217ec106c2af138501fa4d145943b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affd217ec106c2af138501fa4d145943b">&#9670;&nbsp;</a></span>CurrentMovementPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_navigation_path.html">NavigationPath</a> RobotScript.CurrentMovementPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a75761398bef4050bf73245a250aaf1e4" name="a75761398bef4050bf73245a250aaf1e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75761398bef4050bf73245a250aaf1e4">&#9670;&nbsp;</a></span>CurrentMovementTarget</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject RobotScript.CurrentMovementTarget</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -676,6 +888,20 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">GameObject RobotScript.CurrentRobotNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9545b7ed3e5a72283aab6c9fe3b527cd" name="a9545b7ed3e5a72283aab6c9fe3b527cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9545b7ed3e5a72283aab6c9fe3b527cd">&#9670;&nbsp;</a></span>CurrentState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_robot_abstract_state.html">RobotAbstractState</a> RobotScript.CurrentState</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -794,6 +1020,20 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a1349f693dfdc34f3455cf25fb1eb0b47" name="a1349f693dfdc34f3455cf25fb1eb0b47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1349f693dfdc34f3455cf25fb1eb0b47">&#9670;&nbsp;</a></span>Owner</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameObject RobotScript.Owner</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac9b5945fe3bd1c2297ee45cb9c1e36ab" name="ac9b5945fe3bd1c2297ee45cb9c1e36ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9b5945fe3bd1c2297ee45cb9c1e36ab">&#9670;&nbsp;</a></span>RendererObject</h2>
 
@@ -830,20 +1070,6 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">GameObject RobotScript.Spawner</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a68a3a6f85143f75abe14685319c648af" name="a68a3a6f85143f75abe14685319c648af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68a3a6f85143f75abe14685319c648af">&#9670;&nbsp;</a></span>speed</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float RobotScript.speed = (float)1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -900,6 +1126,48 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">List&lt;GameObject&gt; RobotScript.VisitedNodes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36ca44f004607cbeaad544b7885200d8" name="a36ca44f004607cbeaad544b7885200d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36ca44f004607cbeaad544b7885200d8">&#9670;&nbsp;</a></span>WaitState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_robot_wait_state.html">RobotWaitState</a> RobotScript.WaitState = new <a class="el" href="class_robot_wait_state.html">RobotWaitState</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ee7130bcd1df655d2d894e3f8f6fef6" name="a7ee7130bcd1df655d2d894e3f8f6fef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee7130bcd1df655d2d894e3f8f6fef6">&#9670;&nbsp;</a></span>WalkSpeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float RobotScript.WalkSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0dad2908952cb3d3968fcade05f46145" name="a0dad2908952cb3d3968fcade05f46145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dad2908952cb3d3968fcade05f46145">&#9670;&nbsp;</a></span>WalkState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_robot_walk_state.html">RobotWalkState</a> RobotScript.WalkState = new <a class="el" href="class_robot_walk_state.html">RobotWalkState</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">
