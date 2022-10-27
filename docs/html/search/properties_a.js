@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rotation_0',['Rotation',['../class_space_navigator_driver_1_1_space_navigator.html#a75a315330fdfbbdee8c3105abd765ee7',1,'SpaceNavigatorDriver::SpaceNavigator']]]
+  ['movementcost_0',['MovementCost',['../class_navigation_path.html#a7b441a6d9991b9270c8f5c6d0288a0d4',1,'NavigationPath']]]
 ];

@@ -14,10 +14,12 @@ var class_selection_script =
     [ "HoverObject", "class_selection_script.html#aec68a6ef8528835c1e1bd978598f75ac", null ],
     [ "HoverRobot", "class_selection_script.html#acac5fe1cce4df2a0db9ddab4b7c557a7", null ],
     [ "MoveToNode", "class_selection_script.html#a7df5be6e88f1c7d0549f7c2213844e7f", null ],
+    [ "ObjectSelectionAndModificationSelectedTab", "class_selection_script.html#a48adf4d00fdc6eaf85dc147295c9abf2", null ],
     [ "ObjectTypeAndSelectionreferences", "class_selection_script.html#a027a41fe0350e6e61334f4a0a11c3734", null ],
     [ "ObjectTypeDict", "class_selection_script.html#a87a8216145b4807701765078133a53ca", null ],
     [ "ObjectTypeList", "class_selection_script.html#ae231e638afa57d6d37e1881204db620a", null ],
     [ "ReferenceScriptReference", "class_selection_script.html#a9b52301bd6fd8e75bb91671aeb3efd62", null ],
+    [ "SelectedEnvironment", "class_selection_script.html#a50e743cb8794a1ad8058f39b32e580b0", null ],
     [ "SelectedLatticeList", "class_selection_script.html#aeb70d6029066dc66b495f990c5cc3530", null ],
     [ "SelectedNode", "class_selection_script.html#acb8f93726484bd9986984116971f1e8e", null ],
     [ "SelectedObjectList", "class_selection_script.html#afa175a531404f158dec8c133de50347f", null ],
@@ -31,5 +33,6 @@ var class_selection_script =
     [ "SpawnLattice", "class_selection_script.html#a44868cea78355bf28133df90cf62b74a", null ],
     [ "AnyLatticeSelected", "class_selection_script.html#a6f77dea60a0c57e62b27c48f94476f94", null ],
     [ "AnyObjectSelected", "class_selection_script.html#aef210ff80e05b6876b4f3b7f4982660a", null ],
-    [ "AnyRobotSelected", "class_selection_script.html#aeee5fd5e5075b9fe25e66d322bbe877f", null ]
+    [ "AnyRobotSelected", "class_selection_script.html#aeee5fd5e5075b9fe25e66d322bbe877f", null ],
+    [ "SelectedObject", "class_selection_script.html#ad79862ba8077f570c1d7d81d1569c3a8", null ]
 ];

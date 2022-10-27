@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fly_0',['Fly',['../namespace_space_navigator_driver.html#a22f4f0d3580f67525b9ee1f52d47ef4eaac51deb7d2c3f9663a6df72c7c9b2b51',1,'SpaceNavigatorDriver']]]
+  ['camera_0',['Camera',['../namespace_space_navigator_driver.html#aa56e2ed45dc3eb4b445e50de09f03c82a967d35e40f3f95b1f538bd248640bf3b',1,'SpaceNavigatorDriver']]]
 ];

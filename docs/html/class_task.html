@@ -83,9 +83,10 @@ $(document).ready(function(){initNavTree('class_task.html',''); initResizable();
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_task-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Task Class Reference</div></div>
+  <div class="headertitle"><div class="title">Task Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -93,18 +94,55 @@ Inheritance diagram for Task:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_task__inherit__graph.png" border="0" usemap="#a_task_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_task_inherit__map" id="a_task_inherit__map">
-<area shape="rect" title=" " alt="" coords="133,5,183,32"/>
-<area shape="rect" href="class_follow_path.html" title=" " alt="" coords="5,80,92,107"/>
-<area shape="rect" href="class_insert_task.html" title=" " alt="" coords="117,80,199,107"/>
-<area shape="rect" href="class_yield_task.html" title=" " alt="" coords="224,80,303,107"/>
+<area shape="rect" title=" " alt="" coords="5,132,56,159"/>
+<area shape="rect" href="class_follow_path_task.html" title=" " alt="" coords="114,5,229,32"/>
+<area shape="rect" href="class_insert_task.html" title=" " alt="" coords="130,56,213,83"/>
+<area shape="rect" href="class_move_and_insert_task.html" title=" " alt="" coords="104,107,239,133"/>
+<area shape="rect" href="class_move_to_node_task.html" title=" " alt="" coords="109,157,233,184"/>
+<area shape="rect" href="class_neighbor_insert_task.html" title=" " alt="" coords="105,208,238,235"/>
+<area shape="rect" href="class_yield_task.html" title=" " alt="" coords="132,259,211,285"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa5f725227d110465c4f442dc3808cafc"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task.html#aa5f725227d110465c4f442dc3808cafc">ExecuteTask</a> (<a class="el" href="class_work_package.html">WorkPackage</a> context)</td></tr>
+<tr class="separator:aa5f725227d110465c4f442dc3808cafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a708ba0d7e0ef644d1e2273a549ee46f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9">PriorityLevel</a> = 0</td></tr>
 <tr class="separator:a708ba0d7e0ef644d1e2273a549ee46f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa5f725227d110465c4f442dc3808cafc" name="aa5f725227d110465c4f442dc3808cafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5f725227d110465c4f442dc3808cafc">&#9670;&nbsp;</a></span>ExecuteTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void Task.ExecuteTask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_work_package.html">WorkPackage</a>&#160;</td>
+          <td class="paramname"><em>context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_follow_path_task.html#a83a7d45e69315447d6d39f3ec9333769">FollowPathTask</a>, <a class="el" href="class_move_to_node_task.html#ac7e77bf4bf59c3e5995434b861a8fc7e">MoveToNodeTask</a>, <a class="el" href="class_neighbor_insert_task.html#a9176257668477872a6de526be8fcefb6">NeighborInsertTask</a>, <a class="el" href="class_move_and_insert_task.html#afc115ad6ec077a0ffd63bef72e2d9b40">MoveAndInsertTask</a>, <a class="el" href="class_yield_task.html#a129faf2726fbd276aeb3930d1c70a2ba">YieldTask</a>, and <a class="el" href="class_insert_task.html#aa5c32992ea8da4289094b941c9298a82">InsertTask</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a708ba0d7e0ef644d1e2273a549ee46f9" name="a708ba0d7e0ef644d1e2273a549ee46f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a708ba0d7e0ef644d1e2273a549ee46f9">&#9670;&nbsp;</a></span>PriorityLevel</h2>

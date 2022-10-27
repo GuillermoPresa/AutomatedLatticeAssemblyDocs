@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_0',['Value',['../class_graph_node.html#ac43a560d3bcf6fddfbc271b4763e0dce',1,'GraphNode']]]
+  ['placedlatticelist_0',['PlacedLatticeList',['../class_lattice_collection.html#a421dec4d463539a17c0d0131ba6312a3',1,'LatticeCollection']]]
 ];

@@ -1,7 +1,18 @@
 <map id="ControlWindow.OnGUI" name="ControlWindow.OnGUI">
-<area shape="rect" id="node1" title=" " alt="" coords="5,135,157,162"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,353,157,379"/>
 <area shape="rect" id="node2" href="$class_selection_script.html#ab6856f1e708f6555c3714c088598e41c" title=" " alt="" coords="205,5,404,47"/>
-<area shape="rect" id="node3" href="$class_spawning.html#a57fcfbd13e012327a852a78ef7ced12f" title=" " alt="" coords="217,95,392,136"/>
-<area shape="rect" id="node4" href="$class_selection_script.html#a7d946f064b012db184f8670a23022dbf" title=" " alt="" coords="222,160,387,201"/>
-<area shape="rect" id="node5" href="$class_modifications.html#a4537fb8f1d3f88cf645a2cba46a8cd09" title=" " alt="" coords="210,225,399,267"/>
+<area shape="rect" id="node4" href="$class_robot_script.html#ad60c507489884cf04ba589c174639649" title=" " alt="" coords="215,95,394,136"/>
+<area shape="rect" id="node6" href="$class_modifications.html#a054d0d05fff5bdd1e32495b3471e97a8" title=" " alt="" coords="214,161,395,187"/>
+<area shape="rect" id="node7" href="$class_modifications.html#ac7cb09ff1831117e4e808b60b8744c7f" title=" " alt="" coords="207,211,402,238"/>
+<area shape="rect" id="node8" href="$class_spawning.html#a57fcfbd13e012327a852a78ef7ced12f" title=" " alt="" coords="217,287,392,328"/>
+<area shape="rect" id="node9" href="$class_modifications.html#a5dd2746056351108a5cd3ac00f7654c5" title=" " alt="" coords="207,353,402,379"/>
+<area shape="rect" id="node10" href="$class_selection_script.html#a7d946f064b012db184f8670a23022dbf" title=" " alt="" coords="222,404,387,445"/>
+<area shape="rect" id="node11" href="$class_modifications.html#a4537fb8f1d3f88cf645a2cba46a8cd09" title=" " alt="" coords="210,469,399,511"/>
+<area shape="rect" id="node12" href="$class_modifications.html#ad01c8db37458bcb69d589abf37182511" title=" " alt="" coords="213,535,396,576"/>
+<area shape="rect" id="node13" href="$class_modifications.html#a132e0005ebc4ba4821310157aba03485" title=" " alt="" coords="213,600,396,641"/>
+<area shape="rect" id="node15" href="$class_environment_manager.html#aabcdf454cc1cd144d390e54d41417474" title=" " alt="" coords="207,665,402,707"/>
+<area shape="rect" id="node3" href="$class_selection_script.html#ad7dda4d6e30dab378ab3b97aeb0b6bc5" title=" " alt="" coords="468,5,655,47"/>
+<area shape="rect" id="node5" href="$class_robot_script.html#a276491483d838ed1c2fa694985d6f5fd" title=" " alt="" coords="470,95,653,136"/>
+<area shape="rect" id="node14" href="$class_lattice_class.html#a1b01462d3f22c4c7225e890907a36802" title=" " alt="" coords="472,600,651,641"/>
+<area shape="rect" id="node16" href="$class_environment_manager.html#a05eeedff1a61a8a54cb1ca39cf764019" title=" " alt="" coords="452,665,671,707"/>
 </map>

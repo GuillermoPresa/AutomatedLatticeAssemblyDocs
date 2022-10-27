@@ -1,5 +1,6 @@
 <map id="GraphNode.ToString" name="GraphNode.ToString">
-<area shape="rect" id="node1" title=" " alt="" coords="389,13,528,39"/>
-<area shape="rect" id="node2" href="$class_graph.html#acc69e698b1d49ddbef16b7898e11e66f" title=" " alt="" coords="232,13,341,39"/>
-<area shape="rect" id="node3" href="$class_robot_script.html#ad48832de8bb244d9f0d41dc1953135c3" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="405,31,544,57"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#a28ffcb05dc76848f758318c41d1b49d0" title=" " alt="" coords="232,5,357,32"/>
+<area shape="rect" id="node3" href="$class_graph.html#acc69e698b1d49ddbef16b7898e11e66f" title=" " alt="" coords="240,56,349,83"/>
+<area shape="rect" id="node4" href="$class_robot_script.html#ad48832de8bb244d9f0d41dc1953135c3" title=" " alt="" coords="5,49,184,90"/>
 </map>

@@ -3,6 +3,7 @@ var class_lattice_class =
     [ "Highlight", "class_lattice_class.html#a8faa60a24832fcfef56d4eab539ea30e", null ],
     [ "PlaceLattice", "class_lattice_class.html#a4a9dc8a6035eca3a9b87eabcdc3de6eb", null ],
     [ "UnplaceLattice", "class_lattice_class.html#a8d6aed807b205bde9fced593106249ac", null ],
+    [ "UpdateLatticeMaterial", "class_lattice_class.html#a1b01462d3f22c4c7225e890907a36802", null ],
     [ "UpdateMesh", "class_lattice_class.html#a8e4f9c626c700d9cb45c8af6b0e69208", null ],
     [ "Connections", "class_lattice_class.html#a7867dc6554931af5d228c7e8f02594dd", null ],
     [ "ConnectionsDictionary", "class_lattice_class.html#a8589420207a8c36d387f6440108f7c87", null ],

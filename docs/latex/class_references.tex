@@ -11,11 +11,12 @@ Inheritance diagram for References\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for References\+:\nopagebreak
+Collaboration diagram for References\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=163pt]{class_references__coll__graph}
+\includegraphics[width=350pt]{class_references__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -34,9 +35,17 @@ void \mbox{\hyperlink{class_references_a01a2db7007bf1cdf014c958da61a4172}{Sort\+
 \item 
 Texture2D \mbox{\hyperlink{class_references_a7bdc6b08cec46317bcfc6623d987c7eb}{Time\+Window\+Background}}
 \item 
-string \mbox{\hyperlink{class_references_af78ba2e50d3f68e0323493c574eefdf3}{Objects\+Path}} = (string)System.\+IO.\+Directory.\+Get\+Current\+Directory() + \char`\"{}\textbackslash{}\textbackslash{}Assets\textbackslash{}\textbackslash{}\+Resources\textbackslash{}\textbackslash{}\+Objects\char`\"{}
+string \mbox{\hyperlink{class_references_af78ba2e50d3f68e0323493c574eefdf3}{Objects\+Path}}
 \item 
-string \mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{Lattice\+Path}} = (string)System.\+IO.\+Directory.\+Get\+Current\+Directory() + \char`\"{}\textbackslash{}\textbackslash{}Assets\textbackslash{}\textbackslash{}\+Resources\textbackslash{}\textbackslash{}\+Lattice\char`\"{}
+string \mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{Lattice\+Path}}
+\item 
+Game\+Object \mbox{\hyperlink{class_references_a2fbc9c538f58b0beda41d3bb78ad292a}{Environment\+Manager\+Parent}}
+\item 
+\mbox{\hyperlink{class_environment_manager}{Environment\+Manager}} \mbox{\hyperlink{class_references_af8e054fe1c13431c880b5f31bed63e49}{Environment\+Manager\+Script\+Reference}}
+\item 
+int \mbox{\hyperlink{class_references_a582889e077f59d4fb05312eea9ef816d}{Selected\+Environment\+Index}}
+\item 
+List$<$ Color $>$ \mbox{\hyperlink{class_references_a7769ce43aa3124298d9aed48411796fd}{Nav\+Mesh\+Color\+List}} = new List$<$Color$>$ \{ Color.\+green, Color.\+red, Color.\+blue, Color.\+white, Color.\+yellow, Color.\+black, Color.\+cyan, Color.\+magenta, Color.\+cyan, Color.\+black \}
 \item 
 bool \mbox{\hyperlink{class_references_a5691572b32aa4cfe355fb0e274d14f2c}{Building}}
 \item 
@@ -144,6 +153,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{Building}{Building}}
 {\footnotesize\ttfamily bool References.\+Building}
 
+\mbox{\Hypertarget{class_references_a2fbc9c538f58b0beda41d3bb78ad292a}\label{class_references_a2fbc9c538f58b0beda41d3bb78ad292a}} 
+\index{References@{References}!EnvironmentManagerParent@{EnvironmentManagerParent}}
+\index{EnvironmentManagerParent@{EnvironmentManagerParent}!References@{References}}
+\doxysubsubsection{\texorpdfstring{EnvironmentManagerParent}{EnvironmentManagerParent}}
+{\footnotesize\ttfamily Game\+Object References.\+Environment\+Manager\+Parent}
+
+\mbox{\Hypertarget{class_references_af8e054fe1c13431c880b5f31bed63e49}\label{class_references_af8e054fe1c13431c880b5f31bed63e49}} 
+\index{References@{References}!EnvironmentManagerScriptReference@{EnvironmentManagerScriptReference}}
+\index{EnvironmentManagerScriptReference@{EnvironmentManagerScriptReference}!References@{References}}
+\doxysubsubsection{\texorpdfstring{EnvironmentManagerScriptReference}{EnvironmentManagerScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_environment_manager}{Environment\+Manager}} References.\+Environment\+Manager\+Script\+Reference}
+
 \mbox{\Hypertarget{class_references_a9fe35007af72ee197e09f4ce6f61e467}\label{class_references_a9fe35007af72ee197e09f4ce6f61e467}} 
 \index{References@{References}!ErrorsDisabled@{ErrorsDisabled}}
 \index{ErrorsDisabled@{ErrorsDisabled}!References@{References}}
@@ -214,7 +235,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{References@{References}!LatticePath@{LatticePath}}
 \index{LatticePath@{LatticePath}!References@{References}}
 \doxysubsubsection{\texorpdfstring{LatticePath}{LatticePath}}
-{\footnotesize\ttfamily string References.\+Lattice\+Path = (string)System.\+IO.\+Directory.\+Get\+Current\+Directory() + \char`\"{}\textbackslash{}\textbackslash{}Assets\textbackslash{}\textbackslash{}\+Resources\textbackslash{}\textbackslash{}\+Lattice\char`\"{}}
+{\footnotesize\ttfamily string References.\+Lattice\+Path}
 
 \mbox{\Hypertarget{class_references_a8221734b03b76f3baa2422726b8e3ffc}\label{class_references_a8221734b03b76f3baa2422726b8e3ffc}} 
 \index{References@{References}!LatticeTypeIndex@{LatticeTypeIndex}}
@@ -234,6 +255,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{LatticeTypeMaterialIDict}{LatticeTypeMaterialIDict}}
 {\footnotesize\ttfamily IDictionary$<$int, Material$>$ References.\+Lattice\+Type\+Material\+IDict = new Dictionary$<$int, Material$>$()}
 
+\mbox{\Hypertarget{class_references_a7769ce43aa3124298d9aed48411796fd}\label{class_references_a7769ce43aa3124298d9aed48411796fd}} 
+\index{References@{References}!NavMeshColorList@{NavMeshColorList}}
+\index{NavMeshColorList@{NavMeshColorList}!References@{References}}
+\doxysubsubsection{\texorpdfstring{NavMeshColorList}{NavMeshColorList}}
+{\footnotesize\ttfamily List$<$Color$>$ References.\+Nav\+Mesh\+Color\+List = new List$<$Color$>$ \{ Color.\+green, Color.\+red, Color.\+blue, Color.\+white, Color.\+yellow, Color.\+black, Color.\+cyan, Color.\+magenta, Color.\+cyan, Color.\+black \}}
+
 \mbox{\Hypertarget{class_references_aa8e873a41635ab94001b3f8bd0bf57c6}\label{class_references_aa8e873a41635ab94001b3f8bd0bf57c6}} 
 \index{References@{References}!ObjectCount@{ObjectCount}}
 \index{ObjectCount@{ObjectCount}!References@{References}}
@@ -250,13 +277,19 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{References@{References}!ObjectsPath@{ObjectsPath}}
 \index{ObjectsPath@{ObjectsPath}!References@{References}}
 \doxysubsubsection{\texorpdfstring{ObjectsPath}{ObjectsPath}}
-{\footnotesize\ttfamily string References.\+Objects\+Path = (string)System.\+IO.\+Directory.\+Get\+Current\+Directory() + \char`\"{}\textbackslash{}\textbackslash{}Assets\textbackslash{}\textbackslash{}\+Resources\textbackslash{}\textbackslash{}\+Objects\char`\"{}}
+{\footnotesize\ttfamily string References.\+Objects\+Path}
 
 \mbox{\Hypertarget{class_references_aa13e3df440ffcbb539ff51e5d48737d8}\label{class_references_aa13e3df440ffcbb539ff51e5d48737d8}} 
 \index{References@{References}!RobotWorker@{RobotWorker}}
 \index{RobotWorker@{RobotWorker}!References@{References}}
 \doxysubsubsection{\texorpdfstring{RobotWorker}{RobotWorker}}
 {\footnotesize\ttfamily Game\+Object References.\+Robot\+Worker}
+
+\mbox{\Hypertarget{class_references_a582889e077f59d4fb05312eea9ef816d}\label{class_references_a582889e077f59d4fb05312eea9ef816d}} 
+\index{References@{References}!SelectedEnvironmentIndex@{SelectedEnvironmentIndex}}
+\index{SelectedEnvironmentIndex@{SelectedEnvironmentIndex}!References@{References}}
+\doxysubsubsection{\texorpdfstring{SelectedEnvironmentIndex}{SelectedEnvironmentIndex}}
+{\footnotesize\ttfamily int References.\+Selected\+Environment\+Index}
 
 \mbox{\Hypertarget{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}\label{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}} 
 \index{References@{References}!StructureMaterial@{StructureMaterial}}

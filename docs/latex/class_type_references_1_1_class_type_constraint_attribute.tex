@@ -1,0 +1,95 @@
+\hypertarget{class_type_references_1_1_class_type_constraint_attribute}{}\doxysection{Type\+References.\+Class\+Type\+Constraint\+Attribute Class Reference}
+\label{class_type_references_1_1_class_type_constraint_attribute}\index{TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}}
+
+
+Base class for class selection constraints that can be applied when selecting a \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} with the Unity inspector.  
+
+
+
+
+Inheritance diagram for Type\+References.\+Class\+Type\+Constraint\+Attribute\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_type_references_1_1_class_type_constraint_attribute__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Type\+References.\+Class\+Type\+Constraint\+Attribute\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_type_references_1_1_class_type_constraint_attribute__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_type_references_1_1_class_type_constraint_attribute_a785cd3d3e92ed61e605aad16d3261e30}{Is\+Constraint\+Satisfied}} (Type type)
+\begin{DoxyCompactList}\small\item\em Determines whether the specified Type satisfies filter constraint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132daf}{Class\+Grouping}} \mbox{\hyperlink{class_type_references_1_1_class_type_constraint_attribute_a5e8aac10edc77e3b210f66a0db4bf7b8}{Grouping}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets grouping of selectable classes. Defaults to \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa5864ebf3f71fdab0cc3d33836208217f}{Class\+Grouping.\+By\+Namespace\+Flat}} unless explicitly specified. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_type_references_1_1_class_type_constraint_attribute_a4a5941375afb0632d951ea91c6f939d1}{Allow\+Abstract}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets whether abstract classes can be selected from drop-\/down. Defaults to a value of {\ttfamily false} unless explicitly specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for class selection constraints that can be applied when selecting a \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} with the Unity inspector. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_type_references_1_1_class_type_constraint_attribute_a785cd3d3e92ed61e605aad16d3261e30}\label{class_type_references_1_1_class_type_constraint_attribute_a785cd3d3e92ed61e605aad16d3261e30}} 
+\index{TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}!IsConstraintSatisfied@{IsConstraintSatisfied}}
+\index{IsConstraintSatisfied@{IsConstraintSatisfied}!TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}}
+\doxysubsubsection{\texorpdfstring{IsConstraintSatisfied()}{IsConstraintSatisfied()}}
+{\footnotesize\ttfamily virtual bool Type\+References.\+Class\+Type\+Constraint\+Attribute.\+Is\+Constraint\+Satisfied (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determines whether the specified Type satisfies filter constraint. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Type to test.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A bool value indicating if the type specified by {\itshape type}  satisfies this constraint and should thus be selectable. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_type_references_1_1_class_extends_attribute_a3fac75c33751cdff0b6985644b629e45}{Type\+References.\+Class\+Extends\+Attribute}}, and \mbox{\hyperlink{class_type_references_1_1_class_implements_attribute_ae10c835d834c3419ccac26664bfc5dcc}{Type\+References.\+Class\+Implements\+Attribute}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_type_references_1_1_class_type_constraint_attribute_a4a5941375afb0632d951ea91c6f939d1}\label{class_type_references_1_1_class_type_constraint_attribute_a4a5941375afb0632d951ea91c6f939d1}} 
+\index{TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}!AllowAbstract@{AllowAbstract}}
+\index{AllowAbstract@{AllowAbstract}!TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}}
+\doxysubsubsection{\texorpdfstring{AllowAbstract}{AllowAbstract}}
+{\footnotesize\ttfamily bool Type\+References.\+Class\+Type\+Constraint\+Attribute.\+Allow\+Abstract\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets whether abstract classes can be selected from drop-\/down. Defaults to a value of {\ttfamily false} unless explicitly specified. 
+
+\mbox{\Hypertarget{class_type_references_1_1_class_type_constraint_attribute_a5e8aac10edc77e3b210f66a0db4bf7b8}\label{class_type_references_1_1_class_type_constraint_attribute_a5e8aac10edc77e3b210f66a0db4bf7b8}} 
+\index{TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}!Grouping@{Grouping}}
+\index{Grouping@{Grouping}!TypeReferences.ClassTypeConstraintAttribute@{TypeReferences.ClassTypeConstraintAttribute}}
+\doxysubsubsection{\texorpdfstring{Grouping}{Grouping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132daf}{Class\+Grouping}} Type\+References.\+Class\+Type\+Constraint\+Attribute.\+Grouping\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets grouping of selectable classes. Defaults to \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa5864ebf3f71fdab0cc3d33836208217f}{Class\+Grouping.\+By\+Namespace\+Flat}} unless explicitly specified. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Unity\+Class\+Type\+Reference/\+Class\+Type\+Reference/\mbox{\hyperlink{_class_type_constraint_attribute_8cs}{Class\+Type\+Constraint\+Attribute.\+cs}}\end{DoxyCompactItemize}

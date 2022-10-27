@@ -1,5 +1,7 @@
 <map id="GraphNode.RemoveNeighbour" name="GraphNode.RemoveNeighbour">
-<area shape="rect" id="node1" title=" " alt="" coords="191,31,385,57"/>
-<area shape="rect" id="node2" href="$class_graph.html#a4086af6f607a78076fa497cdcb73b686" title=" " alt="" coords="5,5,143,32"/>
-<area shape="rect" id="node3" href="$class_graph.html#a269204d0a2158ada3f622c07484b444a" title=" " alt="" coords="5,56,143,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="207,81,401,108"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#aba3fff1c6439fbbe6a455c866e3ef1c7" title=" " alt="" coords="5,5,159,32"/>
+<area shape="rect" id="node3" href="$class_graph.html#a4086af6f607a78076fa497cdcb73b686" title=" " alt="" coords="13,56,151,83"/>
+<area shape="rect" id="node4" href="$class_illa_graph.html#a1a332f3a15e210a74c6564b102ced051" title=" " alt="" coords="5,107,159,133"/>
+<area shape="rect" id="node5" href="$class_graph.html#a269204d0a2158ada3f622c07484b444a" title=" " alt="" coords="13,157,151,184"/>
 </map>

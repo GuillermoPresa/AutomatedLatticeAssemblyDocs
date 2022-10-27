@@ -1,4 +1,5 @@
 <map id="RobotScript" name="RobotScript">
-<area shape="rect" id="node1" title=" " alt="" coords="15,80,106,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="19,155,110,181"/>
+<area shape="rect" id="node2" href="$class_robot_base_class.html" title=" " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="9,5,120,32"/>
 </map>

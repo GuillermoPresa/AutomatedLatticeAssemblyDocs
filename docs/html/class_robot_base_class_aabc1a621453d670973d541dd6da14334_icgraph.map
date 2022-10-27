@@ -1,0 +1,4 @@
+<map id="RobotBaseClass.MoveRobotAlongPath" name="RobotBaseClass.MoveRobotAlongPath">
+<area shape="rect" id="node1" title=" " alt="" coords="248,5,435,47"/>
+<area shape="rect" id="node2" href="$class_follow_path_task.html#a83a7d45e69315447d6d39f3ec9333769" title=" " alt="" coords="5,13,200,39"/>
+</map>

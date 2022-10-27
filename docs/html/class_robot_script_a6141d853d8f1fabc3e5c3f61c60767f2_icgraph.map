@@ -1,9 +1,8 @@
 <map id="RobotScript.FindPathBetweenNodes" name="RobotScript.FindPathBetweenNodes">
-<area shape="rect" id="node1" title=" " alt="" coords="713,67,909,108"/>
-<area shape="rect" id="node2" href="$class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,37,665,79"/>
-<area shape="rect" id="node7" href="$class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2" title=" " alt="" coords="490,103,658,130"/>
-<area shape="rect" id="node3" href="$class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,68,435,109"/>
+<area shape="rect" id="node1" title=" " alt="" coords="713,64,909,105"/>
+<area shape="rect" id="node2" href="$class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,35,665,76"/>
+<area shape="rect" id="node6" href="$class_robot_script.html#a9213947f626c88acf4ce793020a9ef3d" title=" " alt="" coords="490,101,658,127"/>
+<area shape="rect" id="node3" href="$class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,64,435,105"/>
 <area shape="rect" id="node4" href="$class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,5,199,47"/>
 <area shape="rect" id="node5" href="$class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,71,207,112"/>
-<area shape="rect" id="node6" href="$class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="23,137,189,163"/>
 </map>

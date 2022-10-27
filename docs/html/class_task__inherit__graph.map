@@ -1,6 +1,9 @@
 <map id="Task" name="Task">
-<area shape="rect" id="node1" title=" " alt="" coords="133,5,183,32"/>
-<area shape="rect" id="node2" href="$class_follow_path.html" title=" " alt="" coords="5,80,92,107"/>
-<area shape="rect" id="node3" href="$class_insert_task.html" title=" " alt="" coords="117,80,199,107"/>
-<area shape="rect" id="node4" href="$class_yield_task.html" title=" " alt="" coords="224,80,303,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,56,159"/>
+<area shape="rect" id="node2" href="$class_follow_path_task.html" title=" " alt="" coords="114,5,229,32"/>
+<area shape="rect" id="node3" href="$class_insert_task.html" title=" " alt="" coords="130,56,213,83"/>
+<area shape="rect" id="node4" href="$class_move_and_insert_task.html" title=" " alt="" coords="104,107,239,133"/>
+<area shape="rect" id="node5" href="$class_move_to_node_task.html" title=" " alt="" coords="109,157,233,184"/>
+<area shape="rect" id="node6" href="$class_neighbor_insert_task.html" title=" " alt="" coords="105,208,238,235"/>
+<area shape="rect" id="node7" href="$class_yield_task.html" title=" " alt="" coords="132,259,211,285"/>
 </map>

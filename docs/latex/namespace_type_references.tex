@@ -1,0 +1,55 @@
+\hypertarget{namespace_type_references}{}\doxysection{Type\+References Namespace Reference}
+\label{namespace_type_references}\index{TypeReferences@{TypeReferences}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_type_references_1_1_class_extends_attribute}{Class\+Extends\+Attribute}}
+\begin{DoxyCompactList}\small\item\em Constraint that allows selection of classes that extend a specific class when selecting a \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} with the Unity inspector. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_type_references_1_1_class_implements_attribute}{Class\+Implements\+Attribute}}
+\begin{DoxyCompactList}\small\item\em Constraint that allows selection of classes that implement a specific interface when selecting a \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} with the Unity inspector. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_type_references_1_1_class_type_constraint_attribute}{Class\+Type\+Constraint\+Attribute}}
+\begin{DoxyCompactList}\small\item\em Base class for class selection constraints that can be applied when selecting a \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} with the Unity inspector. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}}
+\begin{DoxyCompactList}\small\item\em Reference to a class System.\+Type with support for Unity serialization. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_type_references_1_1_class_type_reference_property_drawer}{Class\+Type\+Reference\+Property\+Drawer}}
+\begin{DoxyCompactList}\small\item\em Custom property drawer for \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132daf}{Class\+Grouping}} \{ \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa2de4caed897f507fd774641dcbbf8118}{By\+Namespace}}
+, \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa5864ebf3f71fdab0cc3d33836208217f}{By\+Namespace\+Flat}}
+, \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafadf20ee2d71e68e769c5b5438daa3df92}{By\+Add\+Component\+Menu}}
+ \}
+\begin{DoxyCompactList}\small\item\em Indicates how selectable classes should be collated in drop-\/down menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_type_references_a9f456560e7d5594a3c814c7bb9132daf}\label{namespace_type_references_a9f456560e7d5594a3c814c7bb9132daf}} 
+\index{TypeReferences@{TypeReferences}!ClassGrouping@{ClassGrouping}}
+\index{ClassGrouping@{ClassGrouping}!TypeReferences@{TypeReferences}}
+\doxysubsubsection{\texorpdfstring{ClassGrouping}{ClassGrouping}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_type_references_a9f456560e7d5594a3c814c7bb9132daf}{Type\+References.\+Class\+Grouping}}}
+
+
+
+Indicates how selectable classes should be collated in drop-\/down menu. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!TypeReferences@{TypeReferences}}\index{TypeReferences@{TypeReferences}!None@{None}}}\mbox{\Hypertarget{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa6adf97f83acf6453d4a6a4b1070f3754}\label{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&No grouping, just show type names in a list; for instance, \char`\"{}\+Some.\+Nested.\+Namespace.\+Special\+Class\char`\"{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ByNamespace@{ByNamespace}!TypeReferences@{TypeReferences}}\index{TypeReferences@{TypeReferences}!ByNamespace@{ByNamespace}}}\mbox{\Hypertarget{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa2de4caed897f507fd774641dcbbf8118}\label{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa2de4caed897f507fd774641dcbbf8118}} 
+By\+Namespace&Group classes by namespace and show foldout menus for nested namespaces; for instance, \char`\"{}\+Some $>$ Nested $>$ Namespace $>$ Special\+Class\char`\"{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ByNamespaceFlat@{ByNamespaceFlat}!TypeReferences@{TypeReferences}}\index{TypeReferences@{TypeReferences}!ByNamespaceFlat@{ByNamespaceFlat}}}\mbox{\Hypertarget{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa5864ebf3f71fdab0cc3d33836208217f}\label{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafa5864ebf3f71fdab0cc3d33836208217f}} 
+By\+Namespace\+Flat&Group classes by namespace; for instance, \char`\"{}\+Some.\+Nested.\+Namespace $>$ Special\+Class\char`\"{}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ByAddComponentMenu@{ByAddComponentMenu}!TypeReferences@{TypeReferences}}\index{TypeReferences@{TypeReferences}!ByAddComponentMenu@{ByAddComponentMenu}}}\mbox{\Hypertarget{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafadf20ee2d71e68e769c5b5438daa3df92}\label{namespace_type_references_a9f456560e7d5594a3c814c7bb9132dafadf20ee2d71e68e769c5b5438daa3df92}} 
+By\+Add\+Component\+Menu&Group classes in the same way as Unity does for its component menu. This grouping method must only be used for Mono\+Behaviour types. \\
+\hline
+
+\end{DoxyEnumFields}

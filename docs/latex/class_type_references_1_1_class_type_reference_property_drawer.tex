@@ -1,0 +1,101 @@
+\hypertarget{class_type_references_1_1_class_type_reference_property_drawer}{}\doxysection{Type\+References.\+Class\+Type\+Reference\+Property\+Drawer Class Reference}
+\label{class_type_references_1_1_class_type_reference_property_drawer}\index{TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}}
+
+
+Custom property drawer for \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} properties.  
+
+
+
+
+Inheritance diagram for Type\+References.\+Class\+Type\+Reference\+Property\+Drawer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_type_references_1_1_class_type_reference_property_drawer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Type\+References.\+Class\+Type\+Reference\+Property\+Drawer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_type_references_1_1_class_type_reference_property_drawer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override float \mbox{\hyperlink{class_type_references_1_1_class_type_reference_property_drawer_ab2b18cc32e0821a096a0cff1883148f1}{Get\+Property\+Height}} (Serialized\+Property property, GUIContent label)
+\item 
+override void \mbox{\hyperlink{class_type_references_1_1_class_type_reference_property_drawer_a1c2011f9e0adc75ea91e01eabcbe06b1}{On\+GUI}} (Rect position, Serialized\+Property property, GUIContent label)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static Func$<$ ICollection$<$ Type $>$ $>$ \mbox{\hyperlink{class_type_references_1_1_class_type_reference_property_drawer_a2617fc02c31afa250493d1a556e675f3}{Excluded\+Type\+Collection\+Getter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a function that returns a collection of types that are to be excluded from drop-\/down. A value of {\ttfamily null} specifies that no types are to be excluded. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Custom property drawer for \mbox{\hyperlink{class_type_references_1_1_class_type_reference}{Class\+Type\+Reference}} properties. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_type_references_1_1_class_type_reference_property_drawer_ab2b18cc32e0821a096a0cff1883148f1}\label{class_type_references_1_1_class_type_reference_property_drawer_ab2b18cc32e0821a096a0cff1883148f1}} 
+\index{TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}!GetPropertyHeight@{GetPropertyHeight}}
+\index{GetPropertyHeight@{GetPropertyHeight}!TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}}
+\doxysubsubsection{\texorpdfstring{GetPropertyHeight()}{GetPropertyHeight()}}
+{\footnotesize\ttfamily override float Type\+References.\+Class\+Type\+Reference\+Property\+Drawer.\+Get\+Property\+Height (\begin{DoxyParamCaption}\item[{Serialized\+Property}]{property,  }\item[{GUIContent}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_type_references_1_1_class_type_reference_property_drawer_a1c2011f9e0adc75ea91e01eabcbe06b1}\label{class_type_references_1_1_class_type_reference_property_drawer_a1c2011f9e0adc75ea91e01eabcbe06b1}} 
+\index{TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}!OnGUI@{OnGUI}}
+\index{OnGUI@{OnGUI}!TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}}
+\doxysubsubsection{\texorpdfstring{OnGUI()}{OnGUI()}}
+{\footnotesize\ttfamily override void Type\+References.\+Class\+Type\+Reference\+Property\+Drawer.\+On\+GUI (\begin{DoxyParamCaption}\item[{Rect}]{position,  }\item[{Serialized\+Property}]{property,  }\item[{GUIContent}]{label }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_type_references_1_1_class_type_reference_property_drawer_a2617fc02c31afa250493d1a556e675f3}\label{class_type_references_1_1_class_type_reference_property_drawer_a2617fc02c31afa250493d1a556e675f3}} 
+\index{TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}!ExcludedTypeCollectionGetter@{ExcludedTypeCollectionGetter}}
+\index{ExcludedTypeCollectionGetter@{ExcludedTypeCollectionGetter}!TypeReferences.ClassTypeReferencePropertyDrawer@{TypeReferences.ClassTypeReferencePropertyDrawer}}
+\doxysubsubsection{\texorpdfstring{ExcludedTypeCollectionGetter}{ExcludedTypeCollectionGetter}}
+{\footnotesize\ttfamily Func$<$ICollection$<$Type$>$ $>$ Type\+References.\+Class\+Type\+Reference\+Property\+Drawer.\+Excluded\+Type\+Collection\+Getter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a function that returns a collection of types that are to be excluded from drop-\/down. A value of {\ttfamily null} specifies that no types are to be excluded. 
+
+This property must be set immediately before presenting a class type reference property field using Editor\+GUI.\+Property\+Field or Editor\+GUILayout.\+Property\+Field since the value of this property is reset to {\ttfamily null} each time the control is drawn.
+
+Since filtering makes extensive use of ICollection$<$\+Type$>$.\+Contains it is recommended to use a collection that is optimized for fast lookups such as Hash\+Set$<$\+Type$>$ for better performance.
+
+Exclude a specific type from being selected\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{private} SerializedProperty \_someClassTypeReferenceProperty;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{void} OnInspectorGUI() \{}
+\DoxyCodeLine{    serializedObject.Update();}
+\DoxyCodeLine{}
+\DoxyCodeLine{    ClassTypeReferencePropertyDrawer.ExcludedTypeCollectionGetter = GetExcludedTypeCollection;}
+\DoxyCodeLine{    EditorGUILayout.PropertyField(\_someClassTypeReferenceProperty);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    serializedObject.ApplyModifiedProperties();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private} ICollection\(\backslash\)<Type\(\backslash\)> GetExcludedTypeCollection() \{}
+\DoxyCodeLine{    var \textcolor{keyword}{set} = \textcolor{keyword}{new} HashSet\(\backslash\)<Type\(\backslash\)>();}
+\DoxyCodeLine{    \textcolor{keyword}{set}.Add(typeof(SpecialClassToHideInDropdown));}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} \textcolor{keyword}{set};}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Unity\+Class\+Type\+Reference/\+Class\+Type\+Reference/\+Editor/\mbox{\hyperlink{_class_type_reference_property_drawer_8cs}{Class\+Type\+Reference\+Property\+Drawer.\+cs}}\end{DoxyCompactItemize}

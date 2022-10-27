@@ -217,6 +217,17 @@ Selected</h1>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >This class is attatched to GameObjects to make them interacteable in the selection drop down menues. Additionally the object needs to be appended to the adequate global list (robot/ lattice/ object). Lastly click interactions (selection on click), that behaviour needs to be built into the object itself (for now).</p>
+<p >If color modifications are wanted please drag the component containing the mesh filter and mesh renderer in RendererObject and specify the desired colors.</p>
+<p >Properties:</p><ul>
+<li>Behaviour modification: -HighligtingOnSelectionEnabled: Allows for color modifications when the target is selected or selected in the dropdown menu -OnlyOnWhenOnTabInt: Limits color modifications to when the user is on certain tabs in the control window menu.</li>
+<li>Colors: Colors are modified when the object is selected or highlighted in the dropdown menu. Colors are a part of the material, all other material properties remain unchanged (transparency, metallic appearance, emmisivity...)<ol type="1">
+<li>HighlightColorSelected</li>
+<li>HighlightColorSelectedInDropDown</li>
+<li>OriginalColor </li>
+</ol>
+</li>
+</ul>
 
 </div>
 </div>

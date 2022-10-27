@@ -1,0 +1,6 @@
+<map id="TypeReferences.ClassTypeConstraintAttribute" name="TypeReferences.ClassTypeConstraintAttribute">
+<area shape="rect" id="node1" title="Base class for class selection constraints that can be applied when selecting a ClassTypeReference wi..." alt="" coords="131,80,311,121"/>
+<area shape="rect" id="node3" href="$class_type_references_1_1_class_extends_attribute.html" title="Constraint that allows selection of classes that extend a specific class when selecting a ClassTypeRe..." alt="" coords="5,169,205,211"/>
+<area shape="rect" id="node4" href="$class_type_references_1_1_class_implements_attribute.html" title="Constraint that allows selection of classes that implement a specific interface when selecting a Clas..." alt="" coords="229,169,448,211"/>
+<area shape="rect" id="node2" title=" " alt="" coords="161,5,281,32"/>
+</map>

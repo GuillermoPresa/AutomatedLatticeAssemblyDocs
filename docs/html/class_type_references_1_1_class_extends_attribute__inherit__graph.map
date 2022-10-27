@@ -1,0 +1,5 @@
+<map id="TypeReferences.ClassExtendsAttribute" name="TypeReferences.ClassExtendsAttribute">
+<area shape="rect" id="node1" title="Constraint that allows selection of classes that extend a specific class when selecting a ClassTypeRe..." alt="" coords="5,155,205,196"/>
+<area shape="rect" id="node2" href="$class_type_references_1_1_class_type_constraint_attribute.html" title="Base class for class selection constraints that can be applied when selecting a ClassTypeReference wi..." alt="" coords="10,80,201,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="45,5,165,32"/>
+</map>

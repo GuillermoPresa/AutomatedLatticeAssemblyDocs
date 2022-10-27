@@ -1,0 +1,9 @@
+<map id="RobotBussyState.UpdateState" name="RobotBussyState.UpdateState">
+<area shape="rect" id="node1" title=" " alt="" coords="5,85,205,112"/>
+<area shape="rect" id="node2" href="$class_work_package.html#a19f0f19ce950c84430c4c09d37bc9a19" title=" " alt="" coords="253,49,479,90"/>
+<area shape="rect" id="node5" href="$class_robot_script.html#a7a261fabc2d93643c7029033229dc12f" title=" " alt="" coords="284,115,448,141"/>
+<area shape="rect" id="node3" href="$class_work_package.html#a71488866ee3ecf4735e26fda3db3c6f4" title=" " alt="" coords="527,5,745,32"/>
+<area shape="rect" id="node4" href="$class_work_package.html#a0797640aa46f15e26039cc948a73c19a" title=" " alt="" coords="529,56,743,83"/>
+<area shape="rect" id="node6" href="$class_robot_abstract_state.html#a3c30b52e3be0cb86787ea1fb51281705" title=" " alt="" coords="551,107,721,149"/>
+<area shape="rect" id="node7" href="$class_robot_abstract_state.html#a819913b0a4dce616f79b521c32f3ade8" title=" " alt="" coords="539,173,733,200"/>
+</map>

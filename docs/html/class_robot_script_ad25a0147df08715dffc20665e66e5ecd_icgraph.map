@@ -1,11 +1,10 @@
 <map id="RobotScript.GetCurrentRobotNode" name="RobotScript.GetCurrentRobotNode">
-<area shape="rect" id="node1" title=" " alt="" coords="957,173,1179,200"/>
-<area shape="rect" id="node2" href="$class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="713,107,909,149"/>
-<area shape="rect" id="node5" href="$class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,122,199,163"/>
-<area shape="rect" id="node9" href="$class_robot_script.html#a69de43a921043364a81d249ac2bee207" title=" " alt="" coords="722,225,901,266"/>
-<area shape="rect" id="node3" href="$class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,107,665,149"/>
-<area shape="rect" id="node8" href="$class_robot_script.html#ad74bcd3d5bda1662a2e8886403dc3eb2" title=" " alt="" coords="490,56,658,83"/>
-<area shape="rect" id="node4" href="$class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,57,435,98"/>
-<area shape="rect" id="node6" href="$class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,57,207,98"/>
-<area shape="rect" id="node7" href="$class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="23,5,189,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="957,125,1179,151"/>
+<area shape="rect" id="node2" href="$class_robot_script.html#a6141d853d8f1fabc3e5c3f61c60767f2" title=" " alt="" coords="713,59,909,100"/>
+<area shape="rect" id="node5" href="$class_robot_script.html#a5fa7f4e212ae89000a1ef97046a6b338" title=" " alt="" coords="13,71,199,112"/>
+<area shape="rect" id="node8" href="$class_robot_script.html#a69de43a921043364a81d249ac2bee207" title=" " alt="" coords="722,176,901,217"/>
+<area shape="rect" id="node3" href="$class_robot_script.html#a95e7e1f538069a6719718ca5be6a3332" title=" " alt="" coords="483,59,665,100"/>
+<area shape="rect" id="node7" href="$class_robot_script.html#a9213947f626c88acf4ce793020a9ef3d" title=" " alt="" coords="490,7,658,34"/>
+<area shape="rect" id="node4" href="$class_robot_script.html#a90e7cbf825ad8049ed5b48005ba357d6" title=" " alt="" coords="255,8,435,49"/>
+<area shape="rect" id="node6" href="$class_robot_script.html#a51e0f01e623e7f9d6a6051101193fea0" title=" " alt="" coords="5,5,207,47"/>
 </map>

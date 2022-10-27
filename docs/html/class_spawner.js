@@ -20,7 +20,9 @@ var class_spawner =
     [ "NextLattice", "class_spawner.html#ad49b175faa405e6baac27f682e464bf8", null ],
     [ "obj", "class_spawner.html#acee78baaa62b650bfa6c8b57330f77a2", null ],
     [ "ObjectName", "class_spawner.html#a2ac67c39cfd78a21e1fe62a11a1568cd", null ],
+    [ "ReferenceScriptReference", "class_spawner.html#ae32a80d63fb614bd87ea9006e08e8683", null ],
     [ "RobotWorker", "class_spawner.html#ad7138a4cb44c9d019c4b0f266d4ede34", null ],
+    [ "SelectionScriptReference", "class_spawner.html#a990cb8bea5116f8a87e58185953543a4", null ],
     [ "StructureMaterial", "class_spawner.html#ae8e1f5477190084e50d6cbac31a3cca0", null ],
     [ "TimeStep", "class_spawner.html#a2d41d2580eb406a5061f51f73035d7ee", null ]
 ];

@@ -2,16 +2,18 @@
 \label{class_robot_script}\index{RobotScript@{RobotScript}}
 
 
-Inheritance diagram for Robot\+Script\+:\nopagebreak
+Inheritance diagram for Robot\+Script\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=163pt]{class_robot_script__inherit__graph}
+\includegraphics[width=169pt]{class_robot_script__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Robot\+Script\+:\nopagebreak
+Collaboration diagram for Robot\+Script\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -41,13 +43,17 @@ Game\+Object \mbox{\hyperlink{class_robot_script_ad25a0147df08715dffc20665e66e5e
 \item 
 \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} \mbox{\hyperlink{class_robot_script_ab03624ce05a1b8c16f52f1f7f62b9922}{Find\+Path\+Between\+Nodes}} (Game\+Object Starting\+Node, Game\+Object End\+Node, bool Remapping=false)
 \item 
-void \mbox{\hyperlink{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}{Move\+To\+Node}} (Game\+Object End\+Node)
+override void \mbox{\hyperlink{class_robot_script_a9213947f626c88acf4ce793020a9ef3d}{Move\+To\+Node}} (Game\+Object End\+Node)
 \item 
-void \mbox{\hyperlink{class_robot_script_ab791230c437d0faed84e2852d1d03456}{Move\+Robot\+Along\+Path}} (\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Fordwards\+Navigation\+Path)
+override void \mbox{\hyperlink{class_robot_script_ade18f1ef7c5677440f436426684dd6db}{Move\+Robot\+Along\+Path}} (\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Fordwards\+Navigation\+Path)
 \item 
 void \mbox{\hyperlink{class_robot_script_a177722cf104b800c97505665083dd3a4}{Draw\+Nav\+Path}} (\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Fordwards\+Navigation\+Path)
 \item 
+void \mbox{\hyperlink{class_robot_script_a0ff7dbe62951a6cc35aea98b3701d563}{Execute\+Work\+Package}} (\mbox{\hyperlink{class_work_package}{Work\+Package}} Package\+To\+Execute)
+\item 
 void \mbox{\hyperlink{class_robot_script_a51e0f01e623e7f9d6a6051101193fea0}{Insert\+Neighbouring\+Lattice}} (Game\+Object Lattice\+To\+Insert)
+\item 
+override void \mbox{\hyperlink{class_robot_script_a56addff5daa6cf8f24359459971fce01}{Insert\+Node}} (Game\+Object Lattice\+To\+Insert)
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}{Lattice\+Insertion\+Possible\+Nodes}} (Game\+Object Lattice\+To\+Insert)
 \item 
@@ -70,6 +76,10 @@ bool \mbox{\hyperlink{class_robot_script_a69b9facd35f27970fa1f733d6e9b3778}{Has\
 \item 
 \mbox{\hyperlink{class_robot_walk_state}{Robot\+Walk\+State}} \mbox{\hyperlink{class_robot_script_a0dad2908952cb3d3968fcade05f46145}{Walk\+State}} = new \mbox{\hyperlink{class_robot_walk_state}{Robot\+Walk\+State}}()
 \item 
+\mbox{\hyperlink{class_robot_bussy_state}{Robot\+Bussy\+State}} \mbox{\hyperlink{class_robot_script_a9d38baa2b43de34ad49337dc3b201de9}{Bussy\+State}} = new \mbox{\hyperlink{class_robot_bussy_state}{Robot\+Bussy\+State}}()
+\item 
+\mbox{\hyperlink{class_work_package}{Work\+Package}} \mbox{\hyperlink{class_robot_script_a2c689e9d8537e1a588f4f648709a6ac1}{Current\+Work\+Package}}
+\item 
 Game\+Object \mbox{\hyperlink{class_robot_script_a1349f693dfdc34f3455cf25fb1eb0b47}{Owner}}
 \item 
 Game\+Object \mbox{\hyperlink{class_robot_script_a63518d2c0b94349b8fe26de307b4b701}{Spawner}}
@@ -89,8 +99,6 @@ float \mbox{\hyperlink{class_robot_script_a69125a1b3fd2e977bf2dfe88d1509324}{ste
 Game\+Object \mbox{\hyperlink{class_robot_script_a75761398bef4050bf73245a250aaf1e4}{Current\+Movement\+Target}}
 \item 
 float \mbox{\hyperlink{class_robot_script_a7ee7130bcd1df655d2d894e3f8f6fef6}{Walk\+Speed}}
-\item 
-Game\+Object \mbox{\hyperlink{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}{Renderer\+Object}}
 \item 
 Game\+Object \mbox{\hyperlink{class_robot_script_a38cd1606fa18e9147d86a161934a7792}{Current\+Node\+Sensor}}
 \item 
@@ -145,7 +153,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_script_a90e7cbf825ad8049ed5b48005ba357d6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -158,7 +167,8 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ClearNavigationSpace()}{ClearNavigationSpace()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Clear\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Clears the navigation space graph/ mesh. Eliminates all previous nodes, edges, neightbours, visited nodes etc.Here is the caller graph for this function\+:\nopagebreak
+Clears the navigation space graph/ mesh. Eliminates all previous nodes, edges, neightbours, visited nodes etc.Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -174,6 +184,20 @@ Clears the navigation space graph/ mesh. Eliminates all previous nodes, edges, n
 Draw the navigation path provided. \begin{DoxyWarning}{Warning}
 This function should be moved to the path or the graph class
 \end{DoxyWarning}
+\mbox{\Hypertarget{class_robot_script_a0ff7dbe62951a6cc35aea98b3701d563}\label{class_robot_script_a0ff7dbe62951a6cc35aea98b3701d563}} 
+\index{RobotScript@{RobotScript}!ExecuteWorkPackage@{ExecuteWorkPackage}}
+\index{ExecuteWorkPackage@{ExecuteWorkPackage}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{ExecuteWorkPackage()}{ExecuteWorkPackage()}}
+{\footnotesize\ttfamily void Robot\+Script.\+Execute\+Work\+Package (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_work_package}{Work\+Package}}}]{Package\+To\+Execute }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_script_a0ff7dbe62951a6cc35aea98b3701d563_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}\label{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2}} 
 \index{RobotScript@{RobotScript}!FindPathBetweenNodes@{FindPathBetweenNodes}}
 \index{FindPathBetweenNodes@{FindPathBetweenNodes}!RobotScript@{RobotScript}}
@@ -187,7 +211,8 @@ Finds the shortest fordwards navigation path \mbox{\hyperlink{class_navigation_p
 \includegraphics[width=350pt]{class_robot_script_a6141d853d8f1fabc3e5c3f61c60767f2_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -213,7 +238,8 @@ Overloaded method. Finds the shortest fordwards navigation path \mbox{\hyperlink
 \doxysubsubsection{\texorpdfstring{GetCurrentRobotNode()}{GetCurrentRobotNode()}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Get\+Current\+Robot\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Finds and returns the lattice node on which the robot is currently located and returns it.Here is the caller graph for this function\+:\nopagebreak
+Finds and returns the lattice node on which the robot is currently located and returns it.Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -277,6 +303,16 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_script_a51e0f01e623e7f9d6a6051101193fea0_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_robot_script_a56addff5daa6cf8f24359459971fce01}\label{class_robot_script_a56addff5daa6cf8f24359459971fce01}} 
+\index{RobotScript@{RobotScript}!InsertNode@{InsertNode}}
+\index{InsertNode@{InsertNode}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{InsertNode()}{InsertNode()}}
+{\footnotesize\ttfamily override void Robot\+Script.\+Insert\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_robot_base_class_a6bb87129866e4c9114270e0b0bf5629c}{Robot\+Base\+Class}}.
+
 \mbox{\Hypertarget{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}\label{class_robot_script_a95e7e1f538069a6719718ca5be6a3332}} 
 \index{RobotScript@{RobotScript}!LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}}
 \index{LatticeInsertionPossibleNodes@{LatticeInsertionPossibleNodes}!RobotScript@{RobotScript}}
@@ -290,7 +326,8 @@ Check from which neighbouring lattices the provided lattice can be inserted and 
 \includegraphics[width=350pt]{class_robot_script_a95e7e1f538069a6719718ca5be6a3332_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -310,7 +347,8 @@ Overloaded Map\+Navigation\+Space method. Please refer toHere is the call graph 
 \includegraphics[width=350pt]{class_robot_script_ad60c507489884cf04ba589c174639649_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -352,32 +390,42 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{MoveAndInsertLattice()}{MoveAndInsertLattice()}}
 {\footnotesize\ttfamily void Robot\+Script.\+Move\+And\+Insert\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Insert }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_robot_script_ab791230c437d0faed84e2852d1d03456}\label{class_robot_script_ab791230c437d0faed84e2852d1d03456}} 
+\mbox{\Hypertarget{class_robot_script_ade18f1ef7c5677440f436426684dd6db}\label{class_robot_script_ade18f1ef7c5677440f436426684dd6db}} 
 \index{RobotScript@{RobotScript}!MoveRobotAlongPath@{MoveRobotAlongPath}}
 \index{MoveRobotAlongPath@{MoveRobotAlongPath}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{MoveRobotAlongPath()}{MoveRobotAlongPath()}}
-{\footnotesize\ttfamily void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily override void Robot\+Script.\+Move\+Robot\+Along\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}}}]{Fordwards\+Navigation\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
-Set the robot on the provided navigation path.Here is the call graph for this function\+:\nopagebreak
+Set the robot on the provided navigation path.
+
+Implements \mbox{\hyperlink{class_robot_base_class_aabc1a621453d670973d541dd6da14334}{Robot\+Base\+Class}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_robot_script_ab791230c437d0faed84e2852d1d03456_cgraph}
+\includegraphics[width=350pt]{class_robot_script_ade18f1ef7c5677440f436426684dd6db_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}\label{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2}} 
+\mbox{\Hypertarget{class_robot_script_a9213947f626c88acf4ce793020a9ef3d}\label{class_robot_script_a9213947f626c88acf4ce793020a9ef3d}} 
 \index{RobotScript@{RobotScript}!MoveToNode@{MoveToNode}}
 \index{MoveToNode@{MoveToNode}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{MoveToNode()}{MoveToNode()}}
-{\footnotesize\ttfamily void Robot\+Script.\+Move\+To\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{End\+Node }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily override void Robot\+Script.\+Move\+To\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{End\+Node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 Creates a Navigation path the provided target node and sets the robot on said path. \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000002}{Todo}}]TODO Change to calling funct Move\+Robot\+Along\+Path \end{DoxyRefDesc}
-Here is the call graph for this function\+:\nopagebreak
+
+
+Implements \mbox{\hyperlink{class_robot_base_class_a5eac1571b67aa525e7ef7cd592b1ef03}{Robot\+Base\+Class}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_robot_script_ad74bcd3d5bda1662a2e8886403dc3eb2_cgraph}
+\includegraphics[width=350pt]{class_robot_script_a9213947f626c88acf4ce793020a9ef3d_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_robot_script_a7a261fabc2d93643c7029033229dc12f}\label{class_robot_script_a7a261fabc2d93643c7029033229dc12f}} 
@@ -393,7 +441,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_script_a7a261fabc2d93643c7029033229dc12f_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -409,6 +458,12 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_robot_script_a9d38baa2b43de34ad49337dc3b201de9}\label{class_robot_script_a9d38baa2b43de34ad49337dc3b201de9}} 
+\index{RobotScript@{RobotScript}!BussyState@{BussyState}}
+\index{BussyState@{BussyState}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{BussyState}{BussyState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_robot_bussy_state}{Robot\+Bussy\+State}} Robot\+Script.\+Bussy\+State = new \mbox{\hyperlink{class_robot_bussy_state}{Robot\+Bussy\+State}}()}
+
 \mbox{\Hypertarget{class_robot_script_abc18ee69238c54a59189c33ca371b3d6}\label{class_robot_script_abc18ee69238c54a59189c33ca371b3d6}} 
 \index{RobotScript@{RobotScript}!CurrentCollidingNode@{CurrentCollidingNode}}
 \index{CurrentCollidingNode@{CurrentCollidingNode}!RobotScript@{RobotScript}}
@@ -444,6 +499,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{CurrentState@{CurrentState}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{CurrentState}{CurrentState}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_robot_abstract_state}{Robot\+Abstract\+State}} Robot\+Script.\+Current\+State}
+
+\mbox{\Hypertarget{class_robot_script_a2c689e9d8537e1a588f4f648709a6ac1}\label{class_robot_script_a2c689e9d8537e1a588f4f648709a6ac1}} 
+\index{RobotScript@{RobotScript}!CurrentWorkPackage@{CurrentWorkPackage}}
+\index{CurrentWorkPackage@{CurrentWorkPackage}!RobotScript@{RobotScript}}
+\doxysubsubsection{\texorpdfstring{CurrentWorkPackage}{CurrentWorkPackage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_work_package}{Work\+Package}} Robot\+Script.\+Current\+Work\+Package}
 
 \mbox{\Hypertarget{class_robot_script_a53b72471d6daa6bb1027f1c2ce8ba54c}\label{class_robot_script_a53b72471d6daa6bb1027f1c2ce8ba54c}} 
 \index{RobotScript@{RobotScript}!DefaultRenderMaterial@{DefaultRenderMaterial}}
@@ -498,12 +559,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{Owner@{Owner}!RobotScript@{RobotScript}}
 \doxysubsubsection{\texorpdfstring{Owner}{Owner}}
 {\footnotesize\ttfamily Game\+Object Robot\+Script.\+Owner}
-
-\mbox{\Hypertarget{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}\label{class_robot_script_ac9b5945fe3bd1c2297ee45cb9c1e36ab}} 
-\index{RobotScript@{RobotScript}!RendererObject@{RendererObject}}
-\index{RendererObject@{RendererObject}!RobotScript@{RobotScript}}
-\doxysubsubsection{\texorpdfstring{RendererObject}{RendererObject}}
-{\footnotesize\ttfamily Game\+Object Robot\+Script.\+Renderer\+Object}
 
 \mbox{\Hypertarget{class_robot_script_a75e1dfe5e1ffc5db751e6ea168e80908}\label{class_robot_script_a75e1dfe5e1ffc5db751e6ea168e80908}} 
 \index{RobotScript@{RobotScript}!Robot@{Robot}}

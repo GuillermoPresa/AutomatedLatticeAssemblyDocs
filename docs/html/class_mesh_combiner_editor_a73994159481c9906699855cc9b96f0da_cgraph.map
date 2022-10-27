@@ -1,0 +1,4 @@
+<map id="MeshCombinerEditor.OnInspectorGUI" name="MeshCombinerEditor.OnInspectorGUI">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,244,32"/>
+<area shape="rect" id="node2" href="$class_mesh_combiner.html#aa03d4fe172841197362d025474725577" title="Combine children&#39;s Meshes into one Mesh. Set &#39;showCreatedMeshInfo&#39; to true if want to show info about..." alt="" coords="292,5,503,32"/>
+</map>
