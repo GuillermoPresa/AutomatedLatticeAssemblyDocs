@@ -1,0 +1,235 @@
+\hypertarget{class_illa_graph_node}{}\doxysection{Illa\+Graph\+Node Class Reference}
+\label{class_illa_graph_node}\index{IllaGraphNode@{IllaGraphNode}}
+
+
+Inheritance diagram for Illa\+Graph\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_illa_graph_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Illa\+Graph\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_illa_graph_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef}{Reset\+Search\+Parameters}} ()
+\item 
+\mbox{\hyperlink{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}{Illa\+Graph\+Node}} (Game\+Object value)
+\item 
+override bool \mbox{\hyperlink{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}{Equals}} (object other)
+\item 
+bool \mbox{\hyperlink{class_illa_graph_node_aff8b9c31799260e6c06c8a1cd8ab0c36}{Add\+Neighbour}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} neighbour, float \mbox{\hyperlink{class_illa_graph_node_a31665e169c5c1ae3c7d03e5eb112a198}{Edge\+Weight}}, string Movement\+Type)
+\item 
+bool \mbox{\hyperlink{class_illa_graph_node_a818a25e07a3d48dbf100600f8de89638}{Remove\+Neighbour}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} neighbour)
+\item 
+bool \mbox{\hyperlink{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}{Remove\+All\+Neighbours}} ()
+\item 
+override string \mbox{\hyperlink{class_illa_graph_node_ae99e75a74c7d92ea88ec27f842d0181a}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_illa_graph_node_a715f737f50eb3fed47ec0c0bbc60ea2a}{operator==}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} obj1, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} obj2)
+\item 
+static bool \mbox{\hyperlink{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c1427}{operator!=}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} obj1, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} obj2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}{visited}} = false
+\item 
+float \mbox{\hyperlink{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}{Distance\+From\+Starting\+Node}} = (float)999999999
+\item 
+\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} \mbox{\hyperlink{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}{Previous\+Vertex}} = null
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_illa_graph_node_a127a6a46d778aeb6ed1a4f363ef11c67}{Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}{Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IList$<$ float $>$ \mbox{\hyperlink{class_illa_graph_node_a31665e169c5c1ae3c7d03e5eb112a198}{Edge\+Weight}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}\label{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}} 
+\index{IllaGraphNode@{IllaGraphNode}!IllaGraphNode@{IllaGraphNode}}
+\index{IllaGraphNode@{IllaGraphNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{IllaGraphNode()}{IllaGraphNode()}}
+{\footnotesize\ttfamily Illa\+Graph\+Node.\+Illa\+Graph\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_illa_graph_node_aff8b9c31799260e6c06c8a1cd8ab0c36}\label{class_illa_graph_node_aff8b9c31799260e6c06c8a1cd8ab0c36}} 
+\index{IllaGraphNode@{IllaGraphNode}!AddNeighbour@{AddNeighbour}}
+\index{AddNeighbour@{AddNeighbour}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{AddNeighbour()}{AddNeighbour()}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+Add\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{neighbour,  }\item[{float}]{Edge\+Weight,  }\item[{string}]{Movement\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6}\label{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6}} 
+\index{IllaGraphNode@{IllaGraphNode}!Clear@{Clear}}
+\index{Clear@{Clear}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}\label{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}} 
+\index{IllaGraphNode@{IllaGraphNode}!Equals@{Equals}}
+\index{Equals@{Equals}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool Illa\+Graph\+Node.\+Equals (\begin{DoxyParamCaption}\item[{object}]{other }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c1427}\label{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c1427}} 
+\index{IllaGraphNode@{IllaGraphNode}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Illa\+Graph\+Node.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{obj1,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_a715f737f50eb3fed47ec0c0bbc60ea2a}\label{class_illa_graph_node_a715f737f50eb3fed47ec0c0bbc60ea2a}} 
+\index{IllaGraphNode@{IllaGraphNode}!operator==@{operator==}}
+\index{operator==@{operator==}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Illa\+Graph\+Node.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{obj1,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}\label{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}} 
+\index{IllaGraphNode@{IllaGraphNode}!RemoveAllNeighbours@{RemoveAllNeighbours}}
+\index{RemoveAllNeighbours@{RemoveAllNeighbours}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{RemoveAllNeighbours()}{RemoveAllNeighbours()}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+Remove\+All\+Neighbours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_illa_graph_node_a818a25e07a3d48dbf100600f8de89638}\label{class_illa_graph_node_a818a25e07a3d48dbf100600f8de89638}} 
+\index{IllaGraphNode@{IllaGraphNode}!RemoveNeighbour@{RemoveNeighbour}}
+\index{RemoveNeighbour@{RemoveNeighbour}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{RemoveNeighbour()}{RemoveNeighbour()}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+Remove\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{neighbour }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a818a25e07a3d48dbf100600f8de89638_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef}\label{class_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef}} 
+\index{IllaGraphNode@{IllaGraphNode}!ResetSearchParameters@{ResetSearchParameters}}
+\index{ResetSearchParameters@{ResetSearchParameters}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{ResetSearchParameters()}{ResetSearchParameters()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Reset\+Search\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_ae99e75a74c7d92ea88ec27f842d0181a}\label{class_illa_graph_node_ae99e75a74c7d92ea88ec27f842d0181a}} 
+\index{IllaGraphNode@{IllaGraphNode}!ToString@{ToString}}
+\index{ToString@{ToString}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Illa\+Graph\+Node.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_illa_graph_node_ae99e75a74c7d92ea88ec27f842d0181a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}\label{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}} 
+\index{IllaGraphNode@{IllaGraphNode}!DistanceFromStartingNode@{DistanceFromStartingNode}}
+\index{DistanceFromStartingNode@{DistanceFromStartingNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{DistanceFromStartingNode}{DistanceFromStartingNode}}
+{\footnotesize\ttfamily float Illa\+Graph\+Node.\+Distance\+From\+Starting\+Node = (float)999999999}
+
+\mbox{\Hypertarget{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}\label{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}} 
+\index{IllaGraphNode@{IllaGraphNode}!PreviousVertex@{PreviousVertex}}
+\index{PreviousVertex@{PreviousVertex}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{PreviousVertex}{PreviousVertex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} Illa\+Graph\+Node.\+Previous\+Vertex = null}
+
+\mbox{\Hypertarget{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}\label{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}} 
+\index{IllaGraphNode@{IllaGraphNode}!visited@{visited}}
+\index{visited@{visited}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+visited = false}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_illa_graph_node_a31665e169c5c1ae3c7d03e5eb112a198}\label{class_illa_graph_node_a31665e169c5c1ae3c7d03e5eb112a198}} 
+\index{IllaGraphNode@{IllaGraphNode}!EdgeWeight@{EdgeWeight}}
+\index{EdgeWeight@{EdgeWeight}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{EdgeWeight}{EdgeWeight}}
+{\footnotesize\ttfamily IList$<$float$>$ Illa\+Graph\+Node.\+Edge\+Weight\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}\label{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}} 
+\index{IllaGraphNode@{IllaGraphNode}!Neighbours@{Neighbours}}
+\index{Neighbours@{Neighbours}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{Neighbours}{Neighbours}}
+{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}$>$ Illa\+Graph\+Node.\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_a127a6a46d778aeb6ed1a4f363ef11c67}\label{class_illa_graph_node_a127a6a46d778aeb6ed1a4f363ef11c67}} 
+\index{IllaGraphNode@{IllaGraphNode}!Value@{Value}}
+\index{Value@{Value}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{Value}{Value}}
+{\footnotesize\ttfamily Game\+Object Illa\+Graph\+Node.\+Value\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+ILLA (\+Inchworm locomotion lattice assembler)/\mbox{\hyperlink{_illa_graph_8cs}{Illa\+Graph.\+cs}}\end{DoxyCompactItemize}

@@ -23,7 +23,7 @@ var searchData=
   ['classtypereference_2ecs_20',['ClassTypeReference.cs',['../_class_type_reference_8cs.html',1,'']]],
   ['classtypereferencepropertydrawer_21',['ClassTypeReferencePropertyDrawer',['../class_type_references_1_1_class_type_reference_property_drawer.html',1,'TypeReferences']]],
   ['classtypereferencepropertydrawer_2ecs_22',['ClassTypeReferencePropertyDrawer.cs',['../_class_type_reference_property_drawer_8cs.html',1,'']]],
-  ['clear_23',['Clear',['../class_u_dictionary.html#af486e91557cc1018246f42a01756fb32',1,'UDictionary.Clear()'],['../class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3',1,'IllaGraph.Clear()'],['../class_graph_node.html#a0cef5ddb7e25ca8d7a20e7270594eff5',1,'GraphNode.Clear()'],['../class_graph.html#a13a8c565a17e7a886981cbeaf6f7fd6b',1,'Graph.Clear()'],['../class_lattice_collection.html#a691bb725fb55930d95e7388dd5c98558',1,'LatticeCollection.Clear()']]],
+  ['clear_23',['Clear',['../class_u_dictionary.html#af486e91557cc1018246f42a01756fb32',1,'UDictionary.Clear()'],['../class_illa_graph_node.html#a3f4e900afbf7c330eeb9849944d149c6',1,'IllaGraphNode.Clear()'],['../class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3',1,'IllaGraph.Clear()'],['../class_graph_node.html#a0cef5ddb7e25ca8d7a20e7270594eff5',1,'GraphNode.Clear()'],['../class_graph.html#a13a8c565a17e7a886981cbeaf6f7fd6b',1,'Graph.Clear()'],['../class_lattice_collection.html#a691bb725fb55930d95e7388dd5c98558',1,'LatticeCollection.Clear()']]],
   ['cleararea_24',['ClearArea',['../class_clear_area.html',1,'ClearArea'],['../class_movement_script.html#ae4cc6065ebda8b42a801e4315869e644',1,'MovementScript.ClearArea()'],['../class_movement_and_sensor_definition_1_1_sensor_node.html#ac1d7ca542652d4712ca95f649fde3c90',1,'MovementAndSensorDefinition.SensorNode.ClearArea()']]],
   ['cleararea_2ecs_25',['ClearArea.cs',['../_clear_area_8cs.html',1,'']]],
   ['clearnavigationspace_26',['ClearNavigationSpace',['../class_robot_script.html#a276491483d838ed1c2fa694985d6f5fd',1,'RobotScript']]],
@@ -42,7 +42,7 @@ var searchData=
   ['coloredblock_39',['ColoredBlock',['../class_colored_block.html',1,'ColoredBlock'],['../class_colored_block.html#a78a2ff158c9b2fd94419bc8dff591c64',1,'ColoredBlock.ColoredBlock()']]],
   ['combineinactivechildren_40',['CombineInactiveChildren',['../class_mesh_combiner.html#a689f903c0f7491abe28abede4173e652',1,'MeshCombiner']]],
   ['combinemeshes_41',['CombineMeshes',['../class_mesh_combiner.html#aa03d4fe172841197362d025474725577',1,'MeshCombiner']]],
-  ['completedijkstrafromstartingnode_42',['CompleteDijkstraFromStartingNode',['../class_illa_graph.html#ad90d543b53df2f95ecab490f69e76d40',1,'IllaGraph.CompleteDijkstraFromStartingNode()'],['../class_graph.html#a8c8441b17f8a083c13756a85d873a15b',1,'Graph.CompleteDijkstraFromStartingNode()']]],
+  ['completedijkstrafromstartingnode_42',['CompleteDijkstraFromStartingNode',['../class_illa_graph.html#ad750c89a1b125a357a4a84bb47da4f7d',1,'IllaGraph.CompleteDijkstraFromStartingNode()'],['../class_graph.html#a8c8441b17f8a083c13756a85d873a15b',1,'Graph.CompleteDijkstraFromStartingNode()']]],
   ['connected_43',['Connected',['../class_node_class.html#aaedd6d60032fe3dd0154062cf28db157',1,'NodeClass']]],
   ['connections_44',['Connections',['../class_lattice_class.html#a7867dc6554931af5d228c7e8f02594dd',1,'LatticeClass']]],
   ['connectionsdictionary_45',['ConnectionsDictionary',['../class_lattice_class.html#a8589420207a8c36d387f6440108f7c87',1,'LatticeClass']]],
@@ -67,8 +67,9 @@ var searchData=
   ['currentmovementtarget_64',['CurrentMovementTarget',['../class_robot_script.html#a75761398bef4050bf73245a250aaf1e4',1,'RobotScript']]],
   ['currentnodesensor_65',['CurrentNodeSensor',['../class_robot_script.html#a38cd1606fa18e9147d86a161934a7792',1,'RobotScript']]],
   ['currentposj_66',['CurrentPosJ',['../class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e',1,'InchwormRobotController']]],
-  ['currentrobotnode_67',['CurrentRobotNode',['../class_robot_script.html#a8e22a93df82a06cbf534832c9ec6ffea',1,'RobotScript']]],
-  ['currentstate_68',['CurrentState',['../class_robot_script.html#a9545b7ed3e5a72283aab6c9fe3b527cd',1,'RobotScript']]],
-  ['currentworkpackage_69',['CurrentWorkPackage',['../class_robot_script.html#a2c689e9d8537e1a588f4f648709a6ac1',1,'RobotScript']]],
-  ['cylinderelement_70',['CylinderElement',['../class_joint_script.html#a5a86d3dfef80f3b090aab330734cf0e0',1,'JointScript']]]
+  ['currentrobotconfiguration_67',['CurrentRobotConfiguration',['../class_inchworm_robot_controller.html#a915f4c76c8623ef825aaa4bd77217548',1,'InchwormRobotController']]],
+  ['currentrobotnode_68',['CurrentRobotNode',['../class_robot_script.html#a8e22a93df82a06cbf534832c9ec6ffea',1,'RobotScript']]],
+  ['currentstate_69',['CurrentState',['../class_robot_script.html#a9545b7ed3e5a72283aab6c9fe3b527cd',1,'RobotScript']]],
+  ['currentworkpackage_70',['CurrentWorkPackage',['../class_robot_script.html#a2c689e9d8537e1a588f4f648709a6ac1',1,'RobotScript']]],
+  ['cylinderelement_71',['CylinderElement',['../class_joint_script.html#a5a86d3dfef80f3b090aab330734cf0e0',1,'JointScript']]]
 ];

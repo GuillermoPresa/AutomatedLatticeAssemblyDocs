@@ -10,5 +10,6 @@ var searchData=
   ['workpackage_7',['WorkPackage',['../class_work_package.html',1,'']]],
   ['workpackage_2ecs_8',['WorkPackage.cs',['../_work_package_8cs.html',1,'']]],
   ['world_9',['World',['../namespace_space_navigator_driver.html#aa56e2ed45dc3eb4b445e50de09f03c82af5a7924e621e84c9280a9a27e1bcb7f6',1,'SpaceNavigatorDriver']]],
-  ['write_10',['Write',['../class_space_navigator_driver_1_1_locks.html#ac716adf5de733e0f07cdc1a57c434901',1,'SpaceNavigatorDriver::Locks']]]
+  ['wristjointtargetangle_10',['WristJointTargetAngle',['../class_inchworm_robot_controller.html#af50cfcf0a810440633ba61650ab06aa5',1,'InchwormRobotController']]],
+  ['write_11',['Write',['../class_space_navigator_driver_1_1_locks.html#ac716adf5de733e0f07cdc1a57c434901',1,'SpaceNavigatorDriver::Locks']]]
 ];

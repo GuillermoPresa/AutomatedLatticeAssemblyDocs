@@ -6,7 +6,7 @@ var searchData=
   ['operator_20classtypereference_3',['operator ClassTypeReference',['../class_type_references_1_1_class_type_reference.html#a12476baddf6140237620b2fc0052a00a',1,'TypeReferences::ClassTypeReference']]],
   ['operator_20string_4',['operator string',['../class_type_references_1_1_class_type_reference.html#a0bbc3c32c5b741b1edd01111d630b343',1,'TypeReferences::ClassTypeReference']]],
   ['operator_20type_5',['operator Type',['../class_type_references_1_1_class_type_reference.html#a38925831a42ed724214d1b0cccc8360b',1,'TypeReferences::ClassTypeReference']]],
-  ['operator_21_3d_6',['operator!=',['../class_graph_node.html#ab87ba204e9cf0220e47ae9081e7f2d00',1,'GraphNode']]],
-  ['operator_3d_3d_7',['operator==',['../class_graph_node.html#ace598b1b916a7ccd9eccfe4f34a68acb',1,'GraphNode']]],
+  ['operator_21_3d_6',['operator!=',['../class_illa_graph_node.html#ac6a0f005a431c9f95af7fde2857c1427',1,'IllaGraphNode.operator!=()'],['../class_graph_node.html#ab87ba204e9cf0220e47ae9081e7f2d00',1,'GraphNode.operator!=()']]],
+  ['operator_3d_3d_7',['operator==',['../class_illa_graph_node.html#a715f737f50eb3fed47ec0c0bbc60ea2a',1,'IllaGraphNode.operator==()'],['../class_graph_node.html#ace598b1b916a7ccd9eccfe4f34a68acb',1,'GraphNode.operator==()']]],
   ['overlayobject_8',['OverLayObject',['../class_spawner_overlay.html#a06b78548d6b09750b51adfc253d68613',1,'SpawnerOverlay']]]
 ];

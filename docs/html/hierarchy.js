@@ -37,6 +37,7 @@ var hierarchy =
       [ "Example.DefaultGreetingLogger", "class_example_1_1_default_greeting_logger.html", null ]
     ] ],
     [ "IllaGraph", "class_illa_graph.html", null ],
+    [ "IllaNavigationPath", "class_illa_navigation_path.html", null ],
     [ "ISerializationCallbackReceiver", null, [
       [ "TypeReferences.ClassTypeReference", "class_type_references_1_1_class_type_reference.html", null ]
     ] ],
@@ -53,6 +54,7 @@ var hierarchy =
       [ "EnvironmentManager", "class_environment_manager.html", null ],
       [ "Example.ExampleBehaviour", "class_example_1_1_example_behaviour.html", null ],
       [ "GraphNode", "class_graph_node.html", null ],
+      [ "IllaGraphNode", "class_illa_graph_node.html", null ],
       [ "InchwormRobotController", "class_inchworm_robot_controller.html", null ],
       [ "JointScript", "class_joint_script.html", null ],
       [ "LatticeClass", "class_lattice_class.html", null ],

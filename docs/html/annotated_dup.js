@@ -51,6 +51,8 @@ var annotated_dup =
     [ "GraphNode", "class_graph_node.html", "class_graph_node" ],
     [ "HorizontalBlock", "class_horizontal_block.html", "class_horizontal_block" ],
     [ "IllaGraph", "class_illa_graph.html", "class_illa_graph" ],
+    [ "IllaGraphNode", "class_illa_graph_node.html", "class_illa_graph_node" ],
+    [ "IllaNavigationPath", "class_illa_navigation_path.html", "class_illa_navigation_path" ],
     [ "ImporterWindow", "class_importer_window.html", "class_importer_window" ],
     [ "InchwormRobotController", "class_inchworm_robot_controller.html", "class_inchworm_robot_controller" ],
     [ "InsertTask", "class_insert_task.html", "class_insert_task" ],

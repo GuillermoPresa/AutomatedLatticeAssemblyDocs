@@ -8,7 +8,7 @@ var class_inchworm_robot_controller =
     [ "IsPoseColliding", "class_inchworm_robot_controller.html#a434da4643498bd898d99a63678492ae4", null ],
     [ "MapNavigationSpace", "class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920", null ],
     [ "MoveToPosJ", "class_inchworm_robot_controller.html#ad1bc86743cc75c1da51c29540853e744", null ],
-    [ "PossibleMovements", "class_inchworm_robot_controller.html#a50da0900a334169a4637e1daa2d118ec", null ],
+    [ "PossibleMovements", "class_inchworm_robot_controller.html#a70f269d65cbdebe0b38cb8e0c8b5320f", null ],
     [ "ReachTargetNode", "class_inchworm_robot_controller.html#a39307cafbd598a847237855040c2e159", null ],
     [ "RefreshAllAnlges", "class_inchworm_robot_controller.html#ac4670ca90e8cce6094d05b2783cf2457", null ],
     [ "SetTargetAngleToPosJ", "class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa", null ],
@@ -28,7 +28,7 @@ var class_inchworm_robot_controller =
     [ "Joint3", "class_inchworm_robot_controller.html#a97e44e5026f4f719f9f76e2032f3c5ea", null ],
     [ "Joint4", "class_inchworm_robot_controller.html#a2a13aceeaa0507f7bdf9ae078877f9cc", null ],
     [ "Joint5", "class_inchworm_robot_controller.html#a6545d6c26a4fcb5cc78aa23c7702a72e", null ],
-    [ "NavigationMesh", "class_inchworm_robot_controller.html#a8b174c9f8a1ed0237dfbeed2d831da99", null ],
+    [ "NavigationMesh", "class_inchworm_robot_controller.html#afb776d80e2b5cc1008d2078765357688", null ],
     [ "RigidBodyParentCollisionDetector", "class_inchworm_robot_controller.html#a7acf8098f8e06bc28e6dc225706f602b", null ],
     [ "RobotReachRadius", "class_inchworm_robot_controller.html#a80eb154e86fcd9efe0d16213afeb13ce", null ],
     [ "Strut1Inverted", "class_inchworm_robot_controller.html#a6a13f6e548fd804c38ab8f1be3292782", null ],
@@ -37,6 +37,9 @@ var class_inchworm_robot_controller =
     [ "Strut2NoInvert", "class_inchworm_robot_controller.html#a72e80afbdab2608af2c6bbaaf307a920", null ],
     [ "ToGrab", "class_inchworm_robot_controller.html#ab3d3bf20626d553c00aeb2f6bdb8c6ef", null ],
     [ "VisitedNodes", "class_inchworm_robot_controller.html#ab6622d1fba8f6a79ade4c11c13f4e277", null ],
+    [ "BaseJointTargetAngle", "class_inchworm_robot_controller.html#a51c989a5d3fdecdf9849620576185caa", null ],
+    [ "CurrentRobotConfiguration", "class_inchworm_robot_controller.html#a915f4c76c8623ef825aaa4bd77217548", null ],
+    [ "GripperJointTargetAngle", "class_inchworm_robot_controller.html#af082f1f2ad3b9467eb476504797a8bd5", null ],
     [ "Joint1CurrentAngle", "class_inchworm_robot_controller.html#ada4112cbff2708d23b2d0a101b04ccb6", null ],
     [ "Joint1TargetAngle", "class_inchworm_robot_controller.html#abaff5ec91793aa8061d366e08d764635", null ],
     [ "Joint2CurrentAngle", "class_inchworm_robot_controller.html#a6648a665c808209ce633ea4b580aff87", null ],
@@ -46,5 +49,7 @@ var class_inchworm_robot_controller =
     [ "Joint4CurrentAngle", "class_inchworm_robot_controller.html#ad2c792f715ce53c449a1dd2c1c4e4af6", null ],
     [ "Joint4TargetAngle", "class_inchworm_robot_controller.html#ac7755e5b3c540641afec002a4a6be24a", null ],
     [ "Joint5CurrentAngle", "class_inchworm_robot_controller.html#aeb5f37fc005321282a52032fd8f71e8e", null ],
-    [ "Joint5TargetAngle", "class_inchworm_robot_controller.html#ab5416aa9c4b91f8759e92f09593baa11", null ]
+    [ "Joint5TargetAngle", "class_inchworm_robot_controller.html#ab5416aa9c4b91f8759e92f09593baa11", null ],
+    [ "ShoulderJointTargetAngle", "class_inchworm_robot_controller.html#a8108558ecc425c556061a6e071fcdc7c", null ],
+    [ "WristJointTargetAngle", "class_inchworm_robot_controller.html#af50cfcf0a810440633ba61650ab06aa5", null ]
 ];
