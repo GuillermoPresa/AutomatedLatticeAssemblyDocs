@@ -1,10 +1,11 @@
 <map id="InchwormRobotController.IsPoseColliding" name="InchwormRobotController.IsPoseColliding">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,176,112"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a16e3f2aa78e630678c39857bc2375427" title=" " alt="" coords="224,5,395,47"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="224,71,395,112"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="224,136,395,177"/>
-<area shape="rect" id="node5" href="$class_joint_script.html#a74b80f3745fd5d662ad55c535807b040" title=" " alt="" coords="449,114,607,141"/>
-<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="443,165,613,207"/>
-<area shape="rect" id="node6" href="$class_joint_script.html#acc803a7009633a3a3d007d163e4605d6" title=" " alt="" coords="665,114,829,141"/>
-<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="661,165,832,207"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,176,135"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb" title=" " alt="" coords="240,5,411,47"/>
+<area shape="rect" id="node3" href="$class_collision_sensor.html#aedfbc18399b9dfd9b9ac4cb040de10d5" title=" " alt="" coords="224,71,427,98"/>
+<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="240,123,411,164"/>
+<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="240,188,411,229"/>
+<area shape="rect" id="node6" href="$class_joint_script.html#a74b80f3745fd5d662ad55c535807b040" title=" " alt="" coords="481,166,639,193"/>
+<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="475,217,645,259"/>
+<area shape="rect" id="node7" href="$class_joint_script.html#acc803a7009633a3a3d007d163e4605d6" title=" " alt="" coords="697,166,861,193"/>
+<area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="693,217,864,259"/>
 </map>

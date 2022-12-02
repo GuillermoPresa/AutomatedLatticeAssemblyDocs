@@ -1,0 +1,194 @@
+\hypertarget{class_collision_detection_scene}{}\doxysection{Collision\+Detection\+Scene Class Reference}
+\label{class_collision_detection_scene}\index{CollisionDetectionScene@{CollisionDetectionScene}}
+
+
+Inheritance diagram for Collision\+Detection\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{class_collision_detection_scene__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collision\+Detection\+Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{class_collision_detection_scene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c}{Collision\+Detection\+Scene}} (Game\+Object Illa\+Robot, Game\+Object Collision\+Prefab)
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a2347b35838dc2a38cbdc282cf847427f}{Update\+Illa\+Position}} (Game\+Object Illa\+Robot)
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a1ce9ca50b6d7dd4daf500103304fcf7c}{Update\+Illa\+Configuration}} (\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Illa\+Configuration)
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a76a028f4e0aa77e49611b6491c0cdca2}{Add\+Collision\+Prefab}} (Game\+Object Obstacle)
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a40fd2ea7c76fa09108f6b72a6d8f1995}{Add\+Lattice\+Obstacle}} (Game\+Object Collision\+Prefab, Game\+Object \mbox{\hyperlink{class_serialization_elements_1_1_lattice}{Lattice}})
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a3f3b14a23ef9a0d415cea89ba92af371}{Add\+Lattice\+List\+Obstacles}} (Game\+Object Collision\+Prefab, List$<$ Game\+Object $>$ Lattice\+List)
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a0d7c7181001607effc83766c460f3426}{Destroy\+Instantiated\+Prefabs}} ()
+\item 
+bool \mbox{\hyperlink{class_collision_detection_scene_a79ed7add5c1f8b4671835006de9e7229}{Check\+Collisions}} ()
+\item 
+bool \mbox{\hyperlink{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b}{Check\+Collision\+Permanent\+Prefabs}} (Game\+Object Collision\+Prefab, List$<$ Game\+Object $>$ Lattice\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Unity\+Engine.\+Scene\+Management.\+Scene \mbox{\hyperlink{class_collision_detection_scene_a20fa6730ae32a5c77156a56ca29b5495}{Original\+Scene}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_collision_detection_scene_a4ad18adeb6292c5cc593378e2b6e8d92}{Permanent\+Collision\+Prefabs}} = new List$<$Game\+Object$>$()
+\item 
+int \mbox{\hyperlink{class_collision_detection_scene_a12737d9f58754cd958e6b18ee7debfa0}{Number\+Of\+Permanent\+Prefabs}} = 16
+\item 
+Game\+Object \mbox{\hyperlink{class_collision_detection_scene_a63b34236e09d12e69bdd1f126270bd87}{Collision\+Prefab\+Type\+Reference}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c}\label{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CollisionDetectionScene()}{CollisionDetectionScene()}}
+{\footnotesize\ttfamily Collision\+Detection\+Scene.\+Collision\+Detection\+Scene (\begin{DoxyParamCaption}\item[{Game\+Object}]{Illa\+Robot,  }\item[{Game\+Object}]{Collision\+Prefab }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_detection_scene_a76a028f4e0aa77e49611b6491c0cdca2}\label{class_collision_detection_scene_a76a028f4e0aa77e49611b6491c0cdca2}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!AddCollisionPrefab@{AddCollisionPrefab}}
+\index{AddCollisionPrefab@{AddCollisionPrefab}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{AddCollisionPrefab()}{AddCollisionPrefab()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Add\+Collision\+Prefab (\begin{DoxyParamCaption}\item[{Game\+Object}]{Obstacle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a3f3b14a23ef9a0d415cea89ba92af371}\label{class_collision_detection_scene_a3f3b14a23ef9a0d415cea89ba92af371}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!AddLatticeListObstacles@{AddLatticeListObstacles}}
+\index{AddLatticeListObstacles@{AddLatticeListObstacles}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{AddLatticeListObstacles()}{AddLatticeListObstacles()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Add\+Lattice\+List\+Obstacles (\begin{DoxyParamCaption}\item[{Game\+Object}]{Collision\+Prefab,  }\item[{List$<$ Game\+Object $>$}]{Lattice\+List }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a3f3b14a23ef9a0d415cea89ba92af371_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_detection_scene_a40fd2ea7c76fa09108f6b72a6d8f1995}\label{class_collision_detection_scene_a40fd2ea7c76fa09108f6b72a6d8f1995}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!AddLatticeObstacle@{AddLatticeObstacle}}
+\index{AddLatticeObstacle@{AddLatticeObstacle}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{AddLatticeObstacle()}{AddLatticeObstacle()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Add\+Lattice\+Obstacle (\begin{DoxyParamCaption}\item[{Game\+Object}]{Collision\+Prefab,  }\item[{Game\+Object}]{Lattice }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a40fd2ea7c76fa09108f6b72a6d8f1995_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b}\label{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CheckCollisionPermanentPrefabs@{CheckCollisionPermanentPrefabs}}
+\index{CheckCollisionPermanentPrefabs@{CheckCollisionPermanentPrefabs}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionPermanentPrefabs()}{CheckCollisionPermanentPrefabs()}}
+{\footnotesize\ttfamily bool Collision\+Detection\+Scene.\+Check\+Collision\+Permanent\+Prefabs (\begin{DoxyParamCaption}\item[{Game\+Object}]{Collision\+Prefab,  }\item[{List$<$ Game\+Object $>$}]{Lattice\+List }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_detection_scene_a79ed7add5c1f8b4671835006de9e7229}\label{class_collision_detection_scene_a79ed7add5c1f8b4671835006de9e7229}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CheckCollisions@{CheckCollisions}}
+\index{CheckCollisions@{CheckCollisions}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CheckCollisions()}{CheckCollisions()}}
+{\footnotesize\ttfamily bool Collision\+Detection\+Scene.\+Check\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a79ed7add5c1f8b4671835006de9e7229_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_detection_scene_a0d7c7181001607effc83766c460f3426}\label{class_collision_detection_scene_a0d7c7181001607effc83766c460f3426}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!DestroyInstantiatedPrefabs@{DestroyInstantiatedPrefabs}}
+\index{DestroyInstantiatedPrefabs@{DestroyInstantiatedPrefabs}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{DestroyInstantiatedPrefabs()}{DestroyInstantiatedPrefabs()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Destroy\+Instantiated\+Prefabs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a1ce9ca50b6d7dd4daf500103304fcf7c}\label{class_collision_detection_scene_a1ce9ca50b6d7dd4daf500103304fcf7c}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!UpdateIllaConfiguration@{UpdateIllaConfiguration}}
+\index{UpdateIllaConfiguration@{UpdateIllaConfiguration}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{UpdateIllaConfiguration()}{UpdateIllaConfiguration()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Update\+Illa\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Illa\+Configuration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a2347b35838dc2a38cbdc282cf847427f}\label{class_collision_detection_scene_a2347b35838dc2a38cbdc282cf847427f}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!UpdateIllaPosition@{UpdateIllaPosition}}
+\index{UpdateIllaPosition@{UpdateIllaPosition}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{UpdateIllaPosition()}{UpdateIllaPosition()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Update\+Illa\+Position (\begin{DoxyParamCaption}\item[{Game\+Object}]{Illa\+Robot }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collision_detection_scene_a63b34236e09d12e69bdd1f126270bd87}\label{class_collision_detection_scene_a63b34236e09d12e69bdd1f126270bd87}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionPrefabTypeReference@{CollisionPrefabTypeReference}}
+\index{CollisionPrefabTypeReference@{CollisionPrefabTypeReference}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CollisionPrefabTypeReference}{CollisionPrefabTypeReference}}
+{\footnotesize\ttfamily Game\+Object Collision\+Detection\+Scene.\+Collision\+Prefab\+Type\+Reference}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a12737d9f58754cd958e6b18ee7debfa0}\label{class_collision_detection_scene_a12737d9f58754cd958e6b18ee7debfa0}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!NumberOfPermanentPrefabs@{NumberOfPermanentPrefabs}}
+\index{NumberOfPermanentPrefabs@{NumberOfPermanentPrefabs}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{NumberOfPermanentPrefabs}{NumberOfPermanentPrefabs}}
+{\footnotesize\ttfamily int Collision\+Detection\+Scene.\+Number\+Of\+Permanent\+Prefabs = 16}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a20fa6730ae32a5c77156a56ca29b5495}\label{class_collision_detection_scene_a20fa6730ae32a5c77156a56ca29b5495}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!OriginalScene@{OriginalScene}}
+\index{OriginalScene@{OriginalScene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{OriginalScene}{OriginalScene}}
+{\footnotesize\ttfamily Unity\+Engine.\+Scene\+Management.\+Scene Collision\+Detection\+Scene.\+Original\+Scene}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a4ad18adeb6292c5cc593378e2b6e8d92}\label{class_collision_detection_scene_a4ad18adeb6292c5cc593378e2b6e8d92}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!PermanentCollisionPrefabs@{PermanentCollisionPrefabs}}
+\index{PermanentCollisionPrefabs@{PermanentCollisionPrefabs}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{PermanentCollisionPrefabs}{PermanentCollisionPrefabs}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Collision\+Detection\+Scene.\+Permanent\+Collision\+Prefabs = new List$<$Game\+Object$>$()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+ILLA (\+Inchworm locomotion lattice assembler)/\mbox{\hyperlink{_inchworm_robot_controller_8cs}{Inchworm\+Robot\+Controller.\+cs}}\end{DoxyCompactItemize}

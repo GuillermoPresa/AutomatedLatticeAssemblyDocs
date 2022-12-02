@@ -1,5 +1,6 @@
 var class_lattice_class =
 [
+    [ "AddToGlobalManagerReferences", "class_lattice_class.html#a57ce03db92ab6725c05cedcee6910829", null ],
     [ "Highlight", "class_lattice_class.html#a8faa60a24832fcfef56d4eab539ea30e", null ],
     [ "PlaceLattice", "class_lattice_class.html#a4a9dc8a6035eca3a9b87eabcdc3de6eb", null ],
     [ "UnplaceLattice", "class_lattice_class.html#a8d6aed807b205bde9fced593106249ac", null ],

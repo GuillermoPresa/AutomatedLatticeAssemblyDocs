@@ -1,14 +1,3 @@
 <map id="InchwormRobotController.PossibleMovements" name="InchwormRobotController.PossibleMovements">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,176,145"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a293f6f55b028e1fa15432f03eb92ecd0" title=" " alt="" coords="224,39,395,80"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a434da4643498bd898d99a63678492ae4" title=" " alt="" coords="224,104,395,145"/>
-<area shape="rect" id="node11" href="$class_inchworm_robot_controller.html#a39307cafbd598a847237855040c2e159" title=" " alt="" coords="224,169,395,211"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a16e3f2aa78e630678c39857bc2375427" title=" " alt="" coords="443,5,613,47"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="443,71,613,112"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="443,136,613,177"/>
-<area shape="rect" id="node7" href="$class_joint_script.html#a74b80f3745fd5d662ad55c535807b040" title=" " alt="" coords="667,114,826,141"/>
-<area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="661,165,832,207"/>
-<area shape="rect" id="node8" href="$class_joint_script.html#acc803a7009633a3a3d007d163e4605d6" title=" " alt="" coords="883,114,1047,141"/>
-<area shape="rect" id="node10" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="880,165,1051,207"/>
-<area shape="rect" id="node12" href="$class_inchworm_robot_controller.html#aa41ef5b2597e1bb605e98b0a066fffe5" title=" " alt="" coords="443,201,613,243"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,29,176,71"/>
 </map>

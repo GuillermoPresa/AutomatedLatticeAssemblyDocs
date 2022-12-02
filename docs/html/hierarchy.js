@@ -55,6 +55,7 @@ var hierarchy =
       [ "Example.ExampleBehaviour", "class_example_1_1_example_behaviour.html", null ],
       [ "GraphNode", "class_graph_node.html", null ],
       [ "IllaGraphNode", "class_illa_graph_node.html", null ],
+      [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", null ],
       [ "InchwormRobotController", "class_inchworm_robot_controller.html", null ],
       [ "JointScript", "class_joint_script.html", null ],
       [ "LatticeClass", "class_lattice_class.html", null ],
@@ -75,6 +76,9 @@ var hierarchy =
       [ "RobotCoordinator", "class_robot_coordinator.html", null ],
       [ "Selected", "class_selected.html", null ],
       [ "SelectionScript", "class_selection_script.html", null ],
+      [ "SimulationScene", "class_simulation_scene.html", [
+        [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ]
+      ] ],
       [ "Spawner", "class_spawner.html", null ],
       [ "SpawnerOverlay", "class_spawner_overlay.html", null ],
       [ "Spawning", "class_spawning.html", null ],

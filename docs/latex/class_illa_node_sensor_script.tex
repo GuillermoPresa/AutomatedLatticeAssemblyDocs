@@ -1,0 +1,82 @@
+\hypertarget{class_illa_node_sensor_script}{}\doxysection{Illa\+Node\+Sensor\+Script Class Reference}
+\label{class_illa_node_sensor_script}\index{IllaNodeSensorScript@{IllaNodeSensorScript}}
+
+
+Inheritance diagram for Illa\+Node\+Sensor\+Script\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_illa_node_sensor_script__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Illa\+Node\+Sensor\+Script\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_illa_node_sensor_script__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_illa_node_sensor_script_ad81a0f9fb05688425185cfd7d7bd53fe}{Check\+Sensor\+Node\+Connection\+Availability}} ()
+\item 
+Game\+Object \mbox{\hyperlink{class_illa_node_sensor_script_ab30de6ea684239af86cfac74c830f42a}{Return\+Colliding\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_illa_node_sensor_script_a5f2dbc3337e196dc2cfbc161b331d30d}{Parent}}
+\item 
+Box\+Collider \mbox{\hyperlink{class_illa_node_sensor_script_aadbafe4682d0adae3cb3949e5d9d5cc9}{Node\+Sensor\+Box\+Collider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Illa node sensor. Utilized to sense the presence of nodes that can be gripped by the base and the gripper. \begin{DoxyWarning}{Warning}
+Do NOT paralellice 
+
+Do NOT access its properties directly. In order to prevent issues with the collision detection, the collider of this node sensor is inactive until the moment of checking. Requires the processing of a physics frame. 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Transition to propietary bounds intersection system to improve performance and user friendliness \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_illa_node_sensor_script_ad81a0f9fb05688425185cfd7d7bd53fe}\label{class_illa_node_sensor_script_ad81a0f9fb05688425185cfd7d7bd53fe}} 
+\index{IllaNodeSensorScript@{IllaNodeSensorScript}!CheckSensorNodeConnectionAvailability@{CheckSensorNodeConnectionAvailability}}
+\index{CheckSensorNodeConnectionAvailability@{CheckSensorNodeConnectionAvailability}!IllaNodeSensorScript@{IllaNodeSensorScript}}
+\doxysubsubsection{\texorpdfstring{CheckSensorNodeConnectionAvailability()}{CheckSensorNodeConnectionAvailability()}}
+{\footnotesize\ttfamily bool Illa\+Node\+Sensor\+Script.\+Check\+Sensor\+Node\+Connection\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_illa_node_sensor_script_ab30de6ea684239af86cfac74c830f42a}\label{class_illa_node_sensor_script_ab30de6ea684239af86cfac74c830f42a}} 
+\index{IllaNodeSensorScript@{IllaNodeSensorScript}!ReturnCollidingNode@{ReturnCollidingNode}}
+\index{ReturnCollidingNode@{ReturnCollidingNode}!IllaNodeSensorScript@{IllaNodeSensorScript}}
+\doxysubsubsection{\texorpdfstring{ReturnCollidingNode()}{ReturnCollidingNode()}}
+{\footnotesize\ttfamily Game\+Object Illa\+Node\+Sensor\+Script.\+Return\+Colliding\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+Inneficient process. Checks collisions with the bounds of all the nodes in the public node list. Bad scaling.
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_illa_node_sensor_script_aadbafe4682d0adae3cb3949e5d9d5cc9}\label{class_illa_node_sensor_script_aadbafe4682d0adae3cb3949e5d9d5cc9}} 
+\index{IllaNodeSensorScript@{IllaNodeSensorScript}!NodeSensorBoxCollider@{NodeSensorBoxCollider}}
+\index{NodeSensorBoxCollider@{NodeSensorBoxCollider}!IllaNodeSensorScript@{IllaNodeSensorScript}}
+\doxysubsubsection{\texorpdfstring{NodeSensorBoxCollider}{NodeSensorBoxCollider}}
+{\footnotesize\ttfamily Box\+Collider Illa\+Node\+Sensor\+Script.\+Node\+Sensor\+Box\+Collider}
+
+\mbox{\Hypertarget{class_illa_node_sensor_script_a5f2dbc3337e196dc2cfbc161b331d30d}\label{class_illa_node_sensor_script_a5f2dbc3337e196dc2cfbc161b331d30d}} 
+\index{IllaNodeSensorScript@{IllaNodeSensorScript}!Parent@{Parent}}
+\index{Parent@{Parent}!IllaNodeSensorScript@{IllaNodeSensorScript}}
+\doxysubsubsection{\texorpdfstring{Parent}{Parent}}
+{\footnotesize\ttfamily Game\+Object Illa\+Node\+Sensor\+Script.\+Parent}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+ILLA (\+Inchworm locomotion lattice assembler)/\mbox{\hyperlink{_illa_node_sensor_script_8cs}{Illa\+Node\+Sensor\+Script.\+cs}}\end{DoxyCompactItemize}

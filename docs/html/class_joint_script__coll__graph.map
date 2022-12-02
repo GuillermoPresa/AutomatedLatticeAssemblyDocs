@@ -1,4 +1,5 @@
 <map id="JointScript" name="JointScript">
-<area shape="rect" id="node1" title=" " alt="" coords="19,80,102,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="25,171,107,197"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" href="$class_illa_node_sensor_script.html" title=" " alt="" coords="83,81,225,108"/>
 </map>

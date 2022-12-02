@@ -1,9 +1,14 @@
 <map id="IllaGraph.FindGraphNodeFromNodeObject" name="IllaGraph.FindGraphNodeFromNodeObject">
-<area shape="rect" id="node1" title=" " alt="" coords="435,78,632,119"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#a42645018b2e8322eb8c851fb693bc20f" title=" " alt="" coords="240,9,371,36"/>
-<area shape="rect" id="node5" href="$class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="240,60,371,87"/>
-<area shape="rect" id="node6" href="$class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="226,111,385,137"/>
-<area shape="rect" id="node7" href="$class_illa_graph.html#aca620313cf9e321b0d940db52cfac32e" title=" " alt="" coords="224,161,387,188"/>
-<area shape="rect" id="node3" href="$class_illa_graph.html#a7c3f4705f8985b035204321b10413c03" title=" " alt="" coords="25,5,156,32"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="5,57,176,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="937,154,1135,195"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="743,9,873,36"/>
+<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="489,122,679,163"/>
+<area shape="rect" id="node8" href="$class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="743,60,873,87"/>
+<area shape="rect" id="node9" href="$class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="729,111,887,137"/>
+<area shape="rect" id="node10" href="$class_illa_graph.html#afdd310edd33d4d160a295d0ab61a7625" title=" " alt="" coords="729,263,887,289"/>
+<area shape="rect" id="node11" href="$class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="729,161,887,188"/>
+<area shape="rect" id="node12" href="$class_illa_graph.html#aca620313cf9e321b0d940db52cfac32e" title=" " alt="" coords="727,313,889,340"/>
+<area shape="rect" id="node3" href="$class_illa_graph.html#adce9b902dd00be64c8904a1c49375e83" title=" " alt="" coords="519,5,649,32"/>
+<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="499,57,669,98"/>
+<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="261,122,441,163"/>
+<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,122,213,163"/>
 </map>

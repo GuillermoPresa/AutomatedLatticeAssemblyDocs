@@ -11,6 +11,7 @@ var class_references =
     [ "fileList", "class_references.html#a66407fdd67433f9e5550b831be838e6b", null ],
     [ "fileListIndex", "class_references.html#a321f0fef18f4ad19b68ef5228a647420", null ],
     [ "GlobalLatticeList", "class_references.html#aedbf0a2eb04b445058f79e12a6bdec57", null ],
+    [ "GlobalNodeList", "class_references.html#a0b94c56483a58f81fa57793c853122a4", null ],
     [ "GlobalObjectList", "class_references.html#a0b22854b70da902bfdb09255b698b1d7", null ],
     [ "GlobalParent", "class_references.html#a8acd7f49260322d1d1237dc35065b7aa", null ],
     [ "GlobalRobotList", "class_references.html#a563c6a2dafe11f79676629448417e0a4", null ],

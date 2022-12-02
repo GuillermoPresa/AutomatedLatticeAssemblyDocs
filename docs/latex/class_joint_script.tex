@@ -15,7 +15,7 @@ Collaboration diagram for Joint\+Script\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=163pt]{class_joint_script__coll__graph}
+\includegraphics[width=288pt]{class_joint_script__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
@@ -29,6 +29,10 @@ void \mbox{\hyperlink{class_joint_script_a5a6655a4f6c5b323e5dfffc673d4165e}{Inve
 \item 
 void \mbox{\hyperlink{class_joint_script_a5a160d136ef7a4b66cf09c9f5829fc3a}{Make\+Base}} ()
 \item 
+void \mbox{\hyperlink{class_joint_script_a42e19fbe965c5b143549c06fe183a509}{Make\+Base}} (Game\+Object Node)
+\item 
+void \mbox{\hyperlink{class_joint_script_a46b964a11db85f028db2c701559a9ea4}{Make\+Base}} (Vector3 Additional\+Position\+Offset)
+\item 
 void \mbox{\hyperlink{class_joint_script_a74b80f3745fd5d662ad55c535807b040}{Refresh\+Joint}} ()
 \item 
 void \mbox{\hyperlink{class_joint_script_ab3681959678c089535043a238009e439}{Refresh\+Joint}} (float Movement\+Speed)
@@ -38,8 +42,6 @@ void \mbox{\hyperlink{class_joint_script_acc803a7009633a3a3d007d163e4605d6}{Move
 void \mbox{\hyperlink{class_joint_script_ad6d76410bfbd57ca3b4d666f799df0e5}{Move\+To\+Angle}} (float Target\+Angle, float Angular\+Speed\+Factor)
 \item 
 void \mbox{\hyperlink{class_joint_script_aee0a1f15796f1108caf97d31fd001f8a}{Rotate\+By\+Degrees}} (float Angle\+To\+Rotate)
-\item 
-void \mbox{\hyperlink{class_joint_script_acd950013f1d661d7952d9d11a1ba8688}{Set\+Goal\+Angle}} (float Goal)
 \item 
 bool \mbox{\hyperlink{class_joint_script_a22457831ffc2cefb92981fcb9fe02798}{Goal\+Reached}} ()
 \end{DoxyCompactItemize}
@@ -65,6 +67,10 @@ Game\+Object \mbox{\hyperlink{class_joint_script_a863d4b5acca4305cf084fd67ed0088
 \item 
 Game\+Object \mbox{\hyperlink{class_joint_script_ae734062ccd4a9d148158cbcc53ab597f}{Next\+Joint}}
 \item 
+Game\+Object \mbox{\hyperlink{class_joint_script_a5407e40750f433303cb102e0eabf2f7f}{Node\+Sensor\+Referece}}
+\item 
+\mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} \mbox{\hyperlink{class_joint_script_a8cab17e3668b33598b6ae2640af4e3f9}{Node\+Sensor\+Script\+Reference}}
+\item 
 Vector3 \mbox{\hyperlink{class_joint_script_abd6b6498b88a0feb8ecbb05c7def9b81}{Assembly\+Rotation}} = new Vector3()
 \item 
 Vector3 \mbox{\hyperlink{class_joint_script_a09f174a74f049553b7a5daf271162059}{Assemblyposition}} = new Vector3()
@@ -80,6 +86,8 @@ bool \mbox{\hyperlink{class_joint_script_a1fb5c126bdf6aa2b19039367d21b774d}{Is\+
 Quaternion \mbox{\hyperlink{class_joint_script_a62d7bba784328b7f1a47a7d56e13c0f0}{Base\+Quaternion\+Offset}} = Quaternion.\+identity
 \item 
 Vector3 \mbox{\hyperlink{class_joint_script_a22396506bc4379981888c6c7fe5c7ada}{Base\+Vector\+Offset}} = new Vector3(0,0,0)
+\item 
+float \mbox{\hyperlink{class_joint_script_a8012f340a660d8acb825b6275eda421b}{Angular\+Offset}} = 0
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -130,16 +138,43 @@ Here is the caller graph for this function\+:\nopagebreak
 \mbox{\Hypertarget{class_joint_script_a5a160d136ef7a4b66cf09c9f5829fc3a}\label{class_joint_script_a5a160d136ef7a4b66cf09c9f5829fc3a}} 
 \index{JointScript@{JointScript}!MakeBase@{MakeBase}}
 \index{MakeBase@{MakeBase}!JointScript@{JointScript}}
-\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily void Joint\+Script.\+Make\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{class_joint_script_a5a160d136ef7a4b66cf09c9f5829fc3a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_joint_script_a5a160d136ef7a4b66cf09c9f5829fc3a_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_joint_script_a42e19fbe965c5b143549c06fe183a509}\label{class_joint_script_a42e19fbe965c5b143549c06fe183a509}} 
+\index{JointScript@{JointScript}!MakeBase@{MakeBase}}
+\index{MakeBase@{MakeBase}!JointScript@{JointScript}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Joint\+Script.\+Make\+Base (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_joint_script_a42e19fbe965c5b143549c06fe183a509_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_script_a46b964a11db85f028db2c701559a9ea4}\label{class_joint_script_a46b964a11db85f028db2c701559a9ea4}} 
+\index{JointScript@{JointScript}!MakeBase@{MakeBase}}
+\index{MakeBase@{MakeBase}!JointScript@{JointScript}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Joint\+Script.\+Make\+Base (\begin{DoxyParamCaption}\item[{Vector3}]{Additional\+Position\+Offset }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_joint_script_acc803a7009633a3a3d007d163e4605d6}\label{class_joint_script_acc803a7009633a3a3d007d163e4605d6}} 
 \index{JointScript@{JointScript}!MoveToAngle@{MoveToAngle}}
 \index{MoveToAngle@{MoveToAngle}!JointScript@{JointScript}}
@@ -220,15 +255,15 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{RotateByDegrees()}{RotateByDegrees()}}
 {\footnotesize\ttfamily void Joint\+Script.\+Rotate\+By\+Degrees (\begin{DoxyParamCaption}\item[{float}]{Angle\+To\+Rotate }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_joint_script_acd950013f1d661d7952d9d11a1ba8688}\label{class_joint_script_acd950013f1d661d7952d9d11a1ba8688}} 
-\index{JointScript@{JointScript}!SetGoalAngle@{SetGoalAngle}}
-\index{SetGoalAngle@{SetGoalAngle}!JointScript@{JointScript}}
-\doxysubsubsection{\texorpdfstring{SetGoalAngle()}{SetGoalAngle()}}
-{\footnotesize\ttfamily void Joint\+Script.\+Set\+Goal\+Angle (\begin{DoxyParamCaption}\item[{float}]{Goal }\end{DoxyParamCaption})}
-
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_joint_script_a8012f340a660d8acb825b6275eda421b}\label{class_joint_script_a8012f340a660d8acb825b6275eda421b}} 
+\index{JointScript@{JointScript}!AngularOffset@{AngularOffset}}
+\index{AngularOffset@{AngularOffset}!JointScript@{JointScript}}
+\doxysubsubsection{\texorpdfstring{AngularOffset}{AngularOffset}}
+{\footnotesize\ttfamily float Joint\+Script.\+Angular\+Offset = 0}
+
 \mbox{\Hypertarget{class_joint_script_ab8f6c1c2c289e8006d928ce2703fe501}\label{class_joint_script_ab8f6c1c2c289e8006d928ce2703fe501}} 
 \index{JointScript@{JointScript}!AngularVelocity@{AngularVelocity}}
 \index{AngularVelocity@{AngularVelocity}!JointScript@{JointScript}}
@@ -300,6 +335,18 @@ Here is the call graph for this function\+:\nopagebreak
 \index{NextJoint@{NextJoint}!JointScript@{JointScript}}
 \doxysubsubsection{\texorpdfstring{NextJoint}{NextJoint}}
 {\footnotesize\ttfamily Game\+Object Joint\+Script.\+Next\+Joint}
+
+\mbox{\Hypertarget{class_joint_script_a5407e40750f433303cb102e0eabf2f7f}\label{class_joint_script_a5407e40750f433303cb102e0eabf2f7f}} 
+\index{JointScript@{JointScript}!NodeSensorReferece@{NodeSensorReferece}}
+\index{NodeSensorReferece@{NodeSensorReferece}!JointScript@{JointScript}}
+\doxysubsubsection{\texorpdfstring{NodeSensorReferece}{NodeSensorReferece}}
+{\footnotesize\ttfamily Game\+Object Joint\+Script.\+Node\+Sensor\+Referece}
+
+\mbox{\Hypertarget{class_joint_script_a8cab17e3668b33598b6ae2640af4e3f9}\label{class_joint_script_a8cab17e3668b33598b6ae2640af4e3f9}} 
+\index{JointScript@{JointScript}!NodeSensorScriptReference@{NodeSensorScriptReference}}
+\index{NodeSensorScriptReference@{NodeSensorScriptReference}!JointScript@{JointScript}}
+\doxysubsubsection{\texorpdfstring{NodeSensorScriptReference}{NodeSensorScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} Joint\+Script.\+Node\+Sensor\+Script\+Reference}
 
 \mbox{\Hypertarget{class_joint_script_a863d4b5acca4305cf084fd67ed008894}\label{class_joint_script_a863d4b5acca4305cf084fd67ed008894}} 
 \index{JointScript@{JointScript}!PreviousJoint@{PreviousJoint}}

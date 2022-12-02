@@ -12,7 +12,7 @@ Collaboration diagram for Movement\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_movement_ab285a517320861065441a7fe11534ddb}{Movement}} (Game\+Object Target, List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ Solution\+Pos\+JList, \mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} Inchworm\+Robot\+Script\+Reference)
+\mbox{\hyperlink{class_movement_ac127471ad5170bb344ea4cbc32e3ac19}{Movement}} (Game\+Object Target, List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ Solution\+Pos\+JList, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Initial\+Config)
 \item 
 void \mbox{\hyperlink{class_movement_a47e2906baf3b92be8fbd054231192ca4}{Add\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JTo\+Add)
 \end{DoxyCompactItemize}
@@ -40,12 +40,15 @@ bool \mbox{\hyperlink{class_movement_a3ca0c2663c9c86ecddbfa6ed4e9c4a58}{Is\+Comp
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+A movement is a class that represents a particular robotic movement. It consists of a starting robot configuration (starting \mbox{\hyperlink{class_pos_j}{PosJ}} and base location), a target \mbox{\hyperlink{class_pos_x}{PosX}}, and a list of possible Pos\+Js to reach the target. At the time of executing the movement one of the target Pos\+Js can be selected according to a cost calculation. 
+
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_movement_ab285a517320861065441a7fe11534ddb}\label{class_movement_ab285a517320861065441a7fe11534ddb}} 
+\mbox{\Hypertarget{class_movement_ac127471ad5170bb344ea4cbc32e3ac19}\label{class_movement_ac127471ad5170bb344ea4cbc32e3ac19}} 
 \index{Movement@{Movement}!Movement@{Movement}}
 \index{Movement@{Movement}!Movement@{Movement}}
 \doxysubsubsection{\texorpdfstring{Movement()}{Movement()}}
-{\footnotesize\ttfamily Movement.\+Movement (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target,  }\item[{List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$}]{Solution\+Pos\+JList,  }\item[{\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}}}]{Inchworm\+Robot\+Script\+Reference }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Movement.\+Movement (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target,  }\item[{List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$}]{Solution\+Pos\+JList,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Initial\+Config }\end{DoxyParamCaption})}
 
 
 

@@ -2,7 +2,7 @@ var searchData=
 [
   ['edgedrawingscript_0',['EdgeDrawingScript',['../class_edge_drawing_script.html',1,'']]],
   ['edgedrawingscript_2ecs_1',['EdgeDrawingScript.cs',['../_edge_drawing_script_8cs.html',1,'']]],
-  ['edgeweight_2',['EdgeWeight',['../class_illa_graph_node.html#a31665e169c5c1ae3c7d03e5eb112a198',1,'IllaGraphNode.EdgeWeight()'],['../class_graph_node.html#aaffb3766e1688b59754ee410c51e11c2',1,'GraphNode.EdgeWeight()']]],
+  ['edgeweight_2',['EdgeWeight',['../class_graph_node.html#aaffb3766e1688b59754ee410c51e11c2',1,'GraphNode']]],
   ['editor_20window_2ecs_3',['Editor window.cs',['../_editor_01window_8cs.html',1,'']]],
   ['editorlayerslider_2ecs_4',['EditorLayerSlider.cs',['../_editor_layer_slider_8cs.html',1,'']]],
   ['editortimeslider_2ecs_5',['EditorTimeSlider.cs',['../_editor_time_slider_8cs.html',1,'']]],

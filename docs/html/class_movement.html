@@ -104,8 +104,8 @@ Collaboration diagram for Movement:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab285a517320861065441a7fe11534ddb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#ab285a517320861065441a7fe11534ddb">Movement</a> (GameObject Target, List&lt; <a class="el" href="class_pos_j.html">PosJ</a> &gt; SolutionPosJList, <a class="el" href="class_inchworm_robot_controller.html">InchwormRobotController</a> InchwormRobotScriptReference)</td></tr>
-<tr class="separator:ab285a517320861065441a7fe11534ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac127471ad5170bb344ea4cbc32e3ac19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19">Movement</a> (GameObject Target, List&lt; <a class="el" href="class_pos_j.html">PosJ</a> &gt; SolutionPosJList, <a class="el" href="class_robot_configuration.html">RobotConfiguration</a> InitialConfig)</td></tr>
+<tr class="separator:ac127471ad5170bb344ea4cbc32e3ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47e2906baf3b92be8fbd054231192ca4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4">AddPosJ</a> (<a class="el" href="class_pos_j.html">PosJ</a> PosJToAdd)</td></tr>
 <tr class="separator:a47e2906baf3b92be8fbd054231192ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -131,9 +131,11 @@ Properties</h2></td></tr>
 <tr class="memitem:a3ca0c2663c9c86ecddbfa6ed4e9c4a58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#a3ca0c2663c9c86ecddbfa6ed4e9c4a58">IsComplete</a><code> [get]</code></td></tr>
 <tr class="separator:a3ca0c2663c9c86ecddbfa6ed4e9c4a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab285a517320861065441a7fe11534ddb" name="ab285a517320861065441a7fe11534ddb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab285a517320861065441a7fe11534ddb">&#9670;&nbsp;</a></span>Movement()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >A movement is a class that represents a particular robotic movement. It consists of a starting robot configuration (starting <a class="el" href="class_pos_j.html">PosJ</a> and base location), a target <a class="el" href="class_pos_x.html">PosX</a>, and a list of possible PosJs to reach the target. At the time of executing the movement one of the target PosJs can be selected according to a cost calculation. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac127471ad5170bb344ea4cbc32e3ac19" name="ac127471ad5170bb344ea4cbc32e3ac19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac127471ad5170bb344ea4cbc32e3ac19">&#9670;&nbsp;</a></span>Movement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,8 +155,8 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_inchworm_robot_controller.html">InchwormRobotController</a>&#160;</td>
-          <td class="paramname"><em>InchwormRobotScriptReference</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_robot_configuration.html">RobotConfiguration</a>&#160;</td>
+          <td class="paramname"><em>InitialConfig</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -20,5 +20,5 @@ var searchData=
   ['movementsensordictionary_17',['MovementSensorDictionary',['../class_robot_script.html#a08cd86717e5e52c9dbf591882d0e7771',1,'RobotScript']]],
   ['movementsensormovscriptdictionary_18',['MovementSensorMovScriptDictionary',['../class_robot_script.html#ac31d2f640d06a0768206615eed9c85e8',1,'RobotScript']]],
   ['movementtimecost_19',['MovementTimeCost',['../class_movement_script.html#a052b20632051b67aaa41d758840ae8d4',1,'MovementScript.MovementTimeCost()'],['../class_movement_and_sensor_definition_1_1_sensor_node.html#a7bad8bf800351f64bd016a2fe7c6a689',1,'MovementAndSensorDefinition.SensorNode.MovementTimeCost()']]],
-  ['movetonode_20',['MoveToNode',['../class_selection_script.html#a7df5be6e88f1c7d0549f7c2213844e7f',1,'SelectionScript']]]
+  ['movetonode_20',['MoveToNode',['../class_inchworm_robot_controller.html#a7044ba036fe31c1bb8ed6267a176913b',1,'InchwormRobotController.MoveToNode()'],['../class_selection_script.html#a7df5be6e88f1c7d0549f7c2213844e7f',1,'SelectionScript.MoveToNode()']]]
 ];

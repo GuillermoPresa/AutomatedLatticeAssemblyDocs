@@ -1,5 +1,4 @@
 <map id="IllaNavigationPath.InverseNavigationPath" name="IllaNavigationPath.InverseNavigationPath">
-<area shape="rect" id="node1" title=" " alt="" coords="461,22,629,63"/>
-<area shape="rect" id="node2" href="$class_illa_navigation_path.html#abad18de9f28b9227f2b076154e43a8f5" title=" " alt="" coords="201,22,413,63"/>
-<area shape="rect" id="node3" href="$class_illa_graph.html#ac4b8ed57c4b651d296086f8bc138ecb1" title=" " alt="" coords="5,29,153,56"/>
+<area shape="rect" id="node1" title=" " alt="" coords="265,5,433,47"/>
+<area shape="rect" id="node2" href="$class_illa_navigation_path.html#abad18de9f28b9227f2b076154e43a8f5" title=" " alt="" coords="5,5,217,47"/>
 </map>
