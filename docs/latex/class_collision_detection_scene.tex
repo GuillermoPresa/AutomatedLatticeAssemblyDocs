@@ -2,28 +2,23 @@
 \label{class_collision_detection_scene}\index{CollisionDetectionScene@{CollisionDetectionScene}}
 
 
-Inheritance diagram for Collision\+Detection\+Scene\+:
-\nopagebreak
+Collaboration diagram for Collision\+Detection\+Scene\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=202pt]{class_collision_detection_scene__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Collision\+Detection\+Scene\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=260pt]{class_collision_detection_scene__coll__graph}
+\includegraphics[width=205pt]{class_collision_detection_scene__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c}{Collision\+Detection\+Scene}} (Game\+Object Illa\+Robot, Game\+Object Collision\+Prefab)
+void \mbox{\hyperlink{class_collision_detection_scene_a2f82439049469dfbb4962be8b3e6c192}{Create\+Scene\+With\+Illa}} (Game\+Object Illa\+Robot)
+\item 
+\mbox{\hyperlink{class_collision_detection_scene_a9aacc6dc43304d358c69a60c1c62480d}{Collision\+Detection\+Scene}} ()
+\item 
+\mbox{\hyperlink{class_collision_detection_scene_a8a1a9afcd21ab61c2b9d67b39ccf85ea}{Collision\+Detection\+Scene}} (Game\+Object Illa\+Robot, Game\+Object Collision\+Prefab, Material Collision\+Prefab\+Material)
+\item 
+void \mbox{\hyperlink{class_collision_detection_scene_a1e4826d87b5767626bee8a068d5ed1fe}{Populate\+Detection\+Scene}} (Game\+Object Illa\+Robot, Game\+Object Collision\+Prefab)
 \item 
 void \mbox{\hyperlink{class_collision_detection_scene_a2347b35838dc2a38cbdc282cf847427f}{Update\+Illa\+Position}} (Game\+Object Illa\+Robot)
 \item 
@@ -39,10 +34,16 @@ void \mbox{\hyperlink{class_collision_detection_scene_a0d7c7181001607effc83766c4
 \item 
 bool \mbox{\hyperlink{class_collision_detection_scene_a79ed7add5c1f8b4671835006de9e7229}{Check\+Collisions}} ()
 \item 
+bool \mbox{\hyperlink{class_collision_detection_scene_abda86524ae64a6855b1ddb2316249fe1}{Check\+Collision\+Batch}} (List$<$ Game\+Object $>$ Lattice\+Batch)
+\item 
 bool \mbox{\hyperlink{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b}{Check\+Collision\+Permanent\+Prefabs}} (Game\+Object Collision\+Prefab, List$<$ Game\+Object $>$ Lattice\+List)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
+\item 
+Unity\+Engine.\+Scene\+Management.\+Scene \mbox{\hyperlink{class_collision_detection_scene_a5e92a1bbe181945639dd4603b2f9f2eb}{scene}}
+\item 
+Game\+Object \mbox{\hyperlink{class_collision_detection_scene_a55c097f8515d5472087eae94277ae8d9}{slave\+Illa}}
 \item 
 Unity\+Engine.\+Scene\+Management.\+Scene \mbox{\hyperlink{class_collision_detection_scene_a20fa6730ae32a5c77156a56ca29b5495}{Original\+Scene}}
 \item 
@@ -55,18 +56,23 @@ Game\+Object \mbox{\hyperlink{class_collision_detection_scene_a63b34236e09d12e69
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c}\label{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c}} 
+\mbox{\Hypertarget{class_collision_detection_scene_a9aacc6dc43304d358c69a60c1c62480d}\label{class_collision_detection_scene_a9aacc6dc43304d358c69a60c1c62480d}} 
 \index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
 \index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
-\doxysubsubsection{\texorpdfstring{CollisionDetectionScene()}{CollisionDetectionScene()}}
-{\footnotesize\ttfamily Collision\+Detection\+Scene.\+Collision\+Detection\+Scene (\begin{DoxyParamCaption}\item[{Game\+Object}]{Illa\+Robot,  }\item[{Game\+Object}]{Collision\+Prefab }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{CollisionDetectionScene()}{CollisionDetectionScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Collision\+Detection\+Scene.\+Collision\+Detection\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+\mbox{\Hypertarget{class_collision_detection_scene_a8a1a9afcd21ab61c2b9d67b39ccf85ea}\label{class_collision_detection_scene_a8a1a9afcd21ab61c2b9d67b39ccf85ea}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CollisionDetectionScene()}{CollisionDetectionScene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Collision\+Detection\+Scene.\+Collision\+Detection\+Scene (\begin{DoxyParamCaption}\item[{Game\+Object}]{Illa\+Robot,  }\item[{Game\+Object}]{Collision\+Prefab,  }\item[{Material}]{Collision\+Prefab\+Material }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_collision_detection_scene_a1cbd66d9d2f4c309787d19635761e54c_cgraph}
+\includegraphics[width=350pt]{class_collision_detection_scene_a8a1a9afcd21ab61c2b9d67b39ccf85ea_cgraph}
 \end{center}
 \end{figure}
 
@@ -84,8 +90,7 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{AddLatticeListObstacles()}{AddLatticeListObstacles()}}
 {\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Add\+Lattice\+List\+Obstacles (\begin{DoxyParamCaption}\item[{Game\+Object}]{Collision\+Prefab,  }\item[{List$<$ Game\+Object $>$}]{Lattice\+List }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -98,12 +103,31 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{AddLatticeObstacle()}{AddLatticeObstacle()}}
 {\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Add\+Lattice\+Obstacle (\begin{DoxyParamCaption}\item[{Game\+Object}]{Collision\+Prefab,  }\item[{Game\+Object}]{Lattice }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_collision_detection_scene_a40fd2ea7c76fa09108f6b72a6d8f1995_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_detection_scene_abda86524ae64a6855b1ddb2316249fe1}\label{class_collision_detection_scene_abda86524ae64a6855b1ddb2316249fe1}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CheckCollisionBatch@{CheckCollisionBatch}}
+\index{CheckCollisionBatch@{CheckCollisionBatch}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CheckCollisionBatch()}{CheckCollisionBatch()}}
+{\footnotesize\ttfamily bool Collision\+Detection\+Scene.\+Check\+Collision\+Batch (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{Lattice\+Batch }\end{DoxyParamCaption})}
+
+Check for collisions with a bath of latticesHere is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_abda86524ae64a6855b1ddb2316249fe1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_abda86524ae64a6855b1ddb2316249fe1_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b}\label{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b}} 
@@ -112,16 +136,28 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{CheckCollisionPermanentPrefabs()}{CheckCollisionPermanentPrefabs()}}
 {\footnotesize\ttfamily bool Collision\+Detection\+Scene.\+Check\+Collision\+Permanent\+Prefabs (\begin{DoxyParamCaption}\item[{Game\+Object}]{Collision\+Prefab,  }\item[{List$<$ Game\+Object $>$}]{Lattice\+List }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Check for collisions between a list of game objects and a collision prefab.
+
+This function checks for collisions between a list of game objects (Lattice\+List) and a collision prefab (Collision\+Prefab). It splits the Lattice\+List into smaller batches and checks for collisions between the collision prefab and each batch using the Check\+Collision\+Batch function. If any collisions are detected, it returns true. Otherwise, it returns false.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collision\+Prefab} & The collision prefab to use for the collision check. \\
+\hline
+{\em Lattice\+List} & The list of game objects to check for collisions with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if any collisions are detected, false otherwise.
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_collision_detection_scene_a8e0b2470e6f3ec066178d0e16abe976b_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -134,12 +170,24 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{CheckCollisions()}{CheckCollisions()}}
 {\footnotesize\ttfamily bool Collision\+Detection\+Scene.\+Check\+Collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_collision_detection_scene_a79ed7add5c1f8b4671835006de9e7229_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_collision_detection_scene_a2f82439049469dfbb4962be8b3e6c192}\label{class_collision_detection_scene_a2f82439049469dfbb4962be8b3e6c192}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!CreateSceneWithIlla@{CreateSceneWithIlla}}
+\index{CreateSceneWithIlla@{CreateSceneWithIlla}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{CreateSceneWithIlla()}{CreateSceneWithIlla()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Create\+Scene\+With\+Illa (\begin{DoxyParamCaption}\item[{Game\+Object}]{Illa\+Robot }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a2f82439049469dfbb4962be8b3e6c192_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_collision_detection_scene_a0d7c7181001607effc83766c460f3426}\label{class_collision_detection_scene_a0d7c7181001607effc83766c460f3426}} 
@@ -148,6 +196,19 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{DestroyInstantiatedPrefabs()}{DestroyInstantiatedPrefabs()}}
 {\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Destroy\+Instantiated\+Prefabs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_collision_detection_scene_a1e4826d87b5767626bee8a068d5ed1fe}\label{class_collision_detection_scene_a1e4826d87b5767626bee8a068d5ed1fe}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!PopulateDetectionScene@{PopulateDetectionScene}}
+\index{PopulateDetectionScene@{PopulateDetectionScene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{PopulateDetectionScene()}{PopulateDetectionScene()}}
+{\footnotesize\ttfamily void Collision\+Detection\+Scene.\+Populate\+Detection\+Scene (\begin{DoxyParamCaption}\item[{Game\+Object}]{Illa\+Robot,  }\item[{Game\+Object}]{Collision\+Prefab }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_collision_detection_scene_a1e4826d87b5767626bee8a068d5ed1fe_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_collision_detection_scene_a1ce9ca50b6d7dd4daf500103304fcf7c}\label{class_collision_detection_scene_a1ce9ca50b6d7dd4daf500103304fcf7c}} 
 \index{CollisionDetectionScene@{CollisionDetectionScene}!UpdateIllaConfiguration@{UpdateIllaConfiguration}}
 \index{UpdateIllaConfiguration@{UpdateIllaConfiguration}!CollisionDetectionScene@{CollisionDetectionScene}}
@@ -186,6 +247,18 @@ Here is the caller graph for this function\+:
 \index{PermanentCollisionPrefabs@{PermanentCollisionPrefabs}!CollisionDetectionScene@{CollisionDetectionScene}}
 \doxysubsubsection{\texorpdfstring{PermanentCollisionPrefabs}{PermanentCollisionPrefabs}}
 {\footnotesize\ttfamily List$<$Game\+Object$>$ Collision\+Detection\+Scene.\+Permanent\+Collision\+Prefabs = new List$<$Game\+Object$>$()}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a5e92a1bbe181945639dd4603b2f9f2eb}\label{class_collision_detection_scene_a5e92a1bbe181945639dd4603b2f9f2eb}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!scene@{scene}}
+\index{scene@{scene}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{scene}{scene}}
+{\footnotesize\ttfamily Unity\+Engine.\+Scene\+Management.\+Scene Collision\+Detection\+Scene.\+scene}
+
+\mbox{\Hypertarget{class_collision_detection_scene_a55c097f8515d5472087eae94277ae8d9}\label{class_collision_detection_scene_a55c097f8515d5472087eae94277ae8d9}} 
+\index{CollisionDetectionScene@{CollisionDetectionScene}!slaveIlla@{slaveIlla}}
+\index{slaveIlla@{slaveIlla}!CollisionDetectionScene@{CollisionDetectionScene}}
+\doxysubsubsection{\texorpdfstring{slaveIlla}{slaveIlla}}
+{\footnotesize\ttfamily Game\+Object Collision\+Detection\+Scene.\+slave\+Illa}
 
 
 

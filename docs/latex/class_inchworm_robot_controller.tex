@@ -11,8 +11,7 @@ Inheritance diagram for Inchworm\+Robot\+Controller\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Inchworm\+Robot\+Controller\+:
-\nopagebreak
+Collaboration diagram for Inchworm\+Robot\+Controller\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,6 +33,8 @@ void \mbox{\hyperlink{class_inchworm_robot_controller_ac4670ca90e8cce6094d05b278
 \item 
 void \mbox{\hyperlink{class_inchworm_robot_controller_ab6c28045565b0c26d756cf855fec1f81}{Force\+Joint\+Angle}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Force\+PosJ)
 \item 
+void \mbox{\hyperlink{class_inchworm_robot_controller_a61c0fc06c5a3746e21b157ad210e38da}{Force\+Robot\+Configuration}} (\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} configuration\+To\+Force)
+\item 
 void \mbox{\hyperlink{class_inchworm_robot_controller_a0170a030f1c979d876456b9df54f9b44}{Force\+Joint\+Angle\+Maintain\+Target}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Force\+PosJ)
 \item 
 void \mbox{\hyperlink{class_inchworm_robot_controller_a43bc27d67f9d06266400939dc05f6c07}{Swap\+Base}} ()
@@ -52,13 +53,17 @@ void \mbox{\hyperlink{class_inchworm_robot_controller_a6e57fc7ae1c3ea7b6eeb874ea
 \item 
 void \mbox{\hyperlink{class_inchworm_robot_controller_ad1bc86743cc75c1da51c29540853e744}{Move\+To\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_inchworm_robot_controller_ad24593b4615b03510973e64e3b577dd7}{Target\+PosJ}})
 \item 
-List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ \mbox{\hyperlink{class_inchworm_robot_controller_a39307cafbd598a847237855040c2e159}{Reach\+Target\+Node}} (Game\+Object Target\+Node)
+\mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_inchworm_robot_controller_aef25c4406eee3b8269338e20151a61ad}{Reach\+Target\+Node}} (Game\+Object Target\+Node)
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_inchworm_robot_controller_a293f6f55b028e1fa15432f03eb92ecd0}{All\+Nodes\+In\+Range}} ()
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_inchworm_robot_controller_a25bcbedbea280f11080eae7bd7e5c3cb}{All\+Lattices\+In\+Range}} (float Range\+Multiplier=(float) 1.\+3)
 \item 
 bool \mbox{\hyperlink{class_inchworm_robot_controller_a307dd0c5be6478c36ec022d874f60dc7}{Is\+Pose\+Colliding\+Separate\+Scene}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Pose\+To\+Check)
+\item 
+bool \mbox{\hyperlink{class_inchworm_robot_controller_afa6febcb6ad65e1c9bf630257cdc05ad}{Is\+Pose\+Colliding\+Separate\+Scene}} (\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Configuration\+To\+Check)
+\item 
+\mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_inchworm_robot_controller_a65806d94422f68079d1b3b0d410b8ed2}{Eliminate\+Colliding\+States}} (\mbox{\hyperlink{class_movement}{Movement}} Collision\+Full\+Movement)
 \item 
 bool \mbox{\hyperlink{class_inchworm_robot_controller_abb28346e2220380a514b0cc9ac9334ca}{Is\+Pose\+Colliding}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Pose\+To\+Check, bool Separate\+Scene)
 \item 
@@ -83,9 +88,13 @@ void \mbox{\hyperlink{class_inchworm_robot_controller_a07fb7f74f3dd3292cfdb55369
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{class_inchworm_robot_controller_a686bc1e90a2819b5dc92355f95285cfe}{Slave}} = false
+bool \mbox{\hyperlink{class_inchworm_robot_controller_a92bcf909f9599e286f7ec21f80cf6cc5}{is\+Slave}} = false
 \item 
 bool \mbox{\hyperlink{class_inchworm_robot_controller_a3cf1c87be77138250182fd793bf90d4c}{Simulation\+Mode}} = false
+\item 
+Material \mbox{\hyperlink{class_inchworm_robot_controller_a9e061bf98ef49c49c0f1304a569ff1df}{Replacement\+Material}}
+\item 
+Material \mbox{\hyperlink{class_inchworm_robot_controller_ac58e0160a20dd33dfe107cf6498c90b5}{Collision\+Prefab\+Material}}
 \item 
 bool \mbox{\hyperlink{class_inchworm_robot_controller_a58dc6cae714ff5e0f9b01f08b264bd2e}{Separate\+Scene\+Check}} = true
 \item 
@@ -112,8 +121,6 @@ Game\+Object \mbox{\hyperlink{class_inchworm_robot_controller_a97e44e5026f4f719f
 Game\+Object \mbox{\hyperlink{class_inchworm_robot_controller_a2a13aceeaa0507f7bdf9ae078877f9cc}{Joint4}}
 \item 
 Game\+Object \mbox{\hyperlink{class_inchworm_robot_controller_a6545d6c26a4fcb5cc78aa23c7702a72e}{Joint5}}
-\item 
-Game\+Object \mbox{\hyperlink{class_inchworm_robot_controller_a87145afe4413da9dfb905a480103d867}{Base\+Node}}
 \item 
 \mbox{\hyperlink{class_joint_script}{Joint\+Script}} \mbox{\hyperlink{class_inchworm_robot_controller_a723687ef061656fd75bbf715b96fb5cf}{Base\+Joint\+Script}}
 \item 
@@ -151,6 +158,8 @@ bool \mbox{\hyperlink{class_inchworm_robot_controller_a7044ba036fe31c1bb8ed6267a
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_inchworm_robot_controller_a87145afe4413da9dfb905a480103d867}{Base\+Node}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 double \mbox{\hyperlink{class_inchworm_robot_controller_abaff5ec91793aa8061d366e08d764635}{Joint1\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
@@ -206,8 +215,7 @@ Illa is based on Inverse Kinnematics and high flexibility. It has the capability
 \doxysubsubsection{\texorpdfstring{AllLatticesInRange()}{AllLatticesInRange()}}
 {\footnotesize\ttfamily List$<$ Game\+Object $>$ Inchworm\+Robot\+Controller.\+All\+Lattices\+In\+Range (\begin{DoxyParamCaption}\item[{float}]{Range\+Multiplier = {\ttfamily (float)1.3} }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -220,8 +228,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{AllNodesInRange()}{AllNodesInRange()}}
 {\footnotesize\ttfamily List$<$ Game\+Object $>$ Inchworm\+Robot\+Controller.\+All\+Nodes\+In\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -234,8 +241,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{CurrentPosJ()}{CurrentPosJ()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Inchworm\+Robot\+Controller.\+Current\+PosJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -248,12 +254,31 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{CurrentTargetPosJ()}{CurrentTargetPosJ()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Inchworm\+Robot\+Controller.\+Current\+Target\+PosJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a7fbf83e95aeda9834725fd0feb502afc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inchworm_robot_controller_a65806d94422f68079d1b3b0d410b8ed2}\label{class_inchworm_robot_controller_a65806d94422f68079d1b3b0d410b8ed2}} 
+\index{InchwormRobotController@{InchwormRobotController}!EliminateCollidingStates@{EliminateCollidingStates}}
+\index{EliminateCollidingStates@{EliminateCollidingStates}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{EliminateCollidingStates()}{EliminateCollidingStates()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Inchworm\+Robot\+Controller.\+Eliminate\+Colliding\+States (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{Collision\+Full\+Movement }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inchworm_robot_controller_a65806d94422f68079d1b3b0d410b8ed2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inchworm_robot_controller_a65806d94422f68079d1b3b0d410b8ed2_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_inchworm_robot_controller_ab6c28045565b0c26d756cf855fec1f81}\label{class_inchworm_robot_controller_ab6c28045565b0c26d756cf855fec1f81}} 
@@ -272,8 +297,7 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_inchworm_robot_controller_ab6c28045565b0c26d756cf855fec1f81_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -286,30 +310,33 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{ForceJointAngleMaintainTarget()}{ForceJointAngleMaintainTarget()}}
 {\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Force\+Joint\+Angle\+Maintain\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Force\+PosJ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a0170a030f1c979d876456b9df54f9b44_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_inchworm_robot_controller_a61c0fc06c5a3746e21b157ad210e38da}\label{class_inchworm_robot_controller_a61c0fc06c5a3746e21b157ad210e38da}} 
+\index{InchwormRobotController@{InchwormRobotController}!ForceRobotConfiguration@{ForceRobotConfiguration}}
+\index{ForceRobotConfiguration@{ForceRobotConfiguration}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{ForceRobotConfiguration()}{ForceRobotConfiguration()}}
+{\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Force\+Robot\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{configuration\+To\+Force }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_inchworm_robot_controller_a81f2e6fb04bd74422fd7747a0507f624}\label{class_inchworm_robot_controller_a81f2e6fb04bd74422fd7747a0507f624}} 
 \index{InchwormRobotController@{InchwormRobotController}!FrameMapNavigationSpace@{FrameMapNavigationSpace}}
 \index{FrameMapNavigationSpace@{FrameMapNavigationSpace}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{FrameMapNavigationSpace()}{FrameMapNavigationSpace()}}
 {\footnotesize\ttfamily IEnumerator Inchworm\+Robot\+Controller.\+Frame\+Map\+Navigation\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Starting\+Configuration }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a81f2e6fb04bd74422fd7747a0507f624_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -322,7 +349,15 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{InvertHierarchyAllJoints()}{InvertHierarchyAllJoints()}}
 {\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Invert\+Hierarchy\+All\+Joints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Inverts the hierarchy of all joints in the robotic arm.
+
+This method first calls the \mbox{\hyperlink{class_inchworm_robot_controller_a8b1c158383c6f7e4cb467ebdca463289}{Invert\+Hierarchy()}} method on each of the five joints, reversing the order in which they are connected to one another. The method then sets the Is\+Base property of the first and last joints to false, indicating that they are not the base of the arm.
+
+Next, the method saves the current target angles for each joint in temporary variables, and then flips the Is\+Inverted flag. If the flag is now true, the method sets the Base\+Joint, Shoulder\+Joint, Wrist\+Joint, and Gripper\+Joint variables to the last, third-\/to-\/last, second-\/to-\/last, and first joints, respectively. It also sets the corresponding \mbox{\hyperlink{class_joint_script}{Joint\+Script}} variables to the script components attached to those joints. The method then disables the \char`\"{}\+Strut1\+No\+Invert\char`\"{} and \char`\"{}\+Strut2\+No\+Invert\char`\"{} game objects, and enables the \char`\"{}\+Strut1\+Inverted\char`\"{} and \char`\"{}\+Strut2\+Inverted\char`\"{} game objects.
+
+If the Is\+Inverted flag is not set (i.\+e., it is false), the method sets the Base\+Joint, Shoulder\+Joint, Wrist\+Joint, and Gripper\+Joint variables to the first, second, fourth, and fifth joints, respectively. It also sets the corresponding \mbox{\hyperlink{class_joint_script}{Joint\+Script}} variables to the script components attached to those joints. The method then enables the \char`\"{}\+Strut1\+No\+Invert\char`\"{} and \char`\"{}\+Strut2\+No\+Invert\char`\"{} game objects, and disables the \char`\"{}\+Strut1\+Inverted\char`\"{} and \char`\"{}\+Strut2\+Inverted\char`\"{} game objects.
+
+Finally, the method calls the Make\+Base() method on the Base\+Joint\+Script variable, which sets the base joint as the root of the robotic arm hierarchy.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -357,8 +392,7 @@ Collisions between meshes are expensive to compute.
 
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Check collision for a robot configuration. \end{DoxyRefDesc}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -371,52 +405,46 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{IsPoseColliding()}{IsPoseColliding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+Is\+Pose\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pose\+To\+Check,  }\item[{bool}]{Separate\+Scene }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_abb28346e2220380a514b0cc9ac9334ca_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_inchworm_robot_controller_abb28346e2220380a514b0cc9ac9334ca_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_inchworm_robot_controller_a307dd0c5be6478c36ec022d874f60dc7}\label{class_inchworm_robot_controller_a307dd0c5be6478c36ec022d874f60dc7}} 
 \index{InchwormRobotController@{InchwormRobotController}!IsPoseCollidingSeparateScene@{IsPoseCollidingSeparateScene}}
 \index{IsPoseCollidingSeparateScene@{IsPoseCollidingSeparateScene}!InchwormRobotController@{InchwormRobotController}}
-\doxysubsubsection{\texorpdfstring{IsPoseCollidingSeparateScene()}{IsPoseCollidingSeparateScene()}}
+\doxysubsubsection{\texorpdfstring{IsPoseCollidingSeparateScene()}{IsPoseCollidingSeparateScene()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+Is\+Pose\+Colliding\+Separate\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pose\+To\+Check }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a307dd0c5be6478c36ec022d874f60dc7_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a307dd0c5be6478c36ec022d874f60dc7_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_inchworm_robot_controller_afa6febcb6ad65e1c9bf630257cdc05ad}\label{class_inchworm_robot_controller_afa6febcb6ad65e1c9bf630257cdc05ad}} 
+\index{InchwormRobotController@{InchwormRobotController}!IsPoseCollidingSeparateScene@{IsPoseCollidingSeparateScene}}
+\index{IsPoseCollidingSeparateScene@{IsPoseCollidingSeparateScene}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{IsPoseCollidingSeparateScene()}{IsPoseCollidingSeparateScene()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+Is\+Pose\+Colliding\+Separate\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Configuration\+To\+Check }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_inchworm_robot_controller_a1997a2fbba1b2b7a1aef51e33fe1ebaf}\label{class_inchworm_robot_controller_a1997a2fbba1b2b7a1aef51e33fe1ebaf}} 
 \index{InchwormRobotController@{InchwormRobotController}!MapNavigationSpace@{MapNavigationSpace}}
 \index{MapNavigationSpace@{MapNavigationSpace}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{MapNavigationSpace()}{MapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Map\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -439,8 +467,7 @@ Here is the caller graph for this function\+:\nopagebreak
 Maps the navigation space starting at the provided node. \begin{DoxyWarning}{Warning}
 Thread blocking and slow execution.
 \end{DoxyWarning}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -466,16 +493,14 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{MultiFrameMapNavigationSpace()}{MultiFrameMapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Multi\+Frame\+Map\+Navigation\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a8748b1488b66e0aea734ff0acf4a82fb_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -488,8 +513,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{MultiFrameMapNavigationSpace()}{MultiFrameMapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Multi\+Frame\+Map\+Navigation\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Starting\+Configuration }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -502,16 +526,14 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{NonDeepeningMapNavSpace()}{NonDeepeningMapNavSpace()}}
 {\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} $>$ Inchworm\+Robot\+Controller.\+Non\+Deepening\+Map\+Nav\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Starting\+Configuration }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a3fed768281ab580855f7c5fbf7c9ba5b_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -524,16 +546,24 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{PossibleMovements()}{PossibleMovements()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_movement}{Movement}} $>$ Inchworm\+Robot\+Controller.\+Possible\+Movements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Configuration }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Returns a list of possible movements for a robot based on its current configuration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Configuration} & The current configuration of the robot. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of possible movements for the robot.
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=208pt]{class_inchworm_robot_controller_a70f269d65cbdebe0b38cb8e0c8b5320f_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -546,33 +576,50 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{PossibleMovements()}{PossibleMovements()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_movement}{Movement}} $>$ Inchworm\+Robot\+Controller.\+Possible\+Movements (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Configuration,  }\item[{bool}]{Check\+Collisions }\end{DoxyParamCaption})}
 
-Returns all possible movements from an initial robot configuration in the form of a list of movements. Each movement represents the move to a new \mbox{\hyperlink{class_pos_x}{PosX}} and can be represented by more than one \mbox{\hyperlink{class_pos_j}{PosJ}}. The possible movements are those that reach any node from the current node dont result in collisions.Here is the call graph for this function\+:
-\nopagebreak
+Compute the possible movements for a robot from a given configuration.
+
+This function computes the possible movements for a robot from a given configuration, where the configuration is specified by a \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} object (Configuration) and includes the robot\textquotesingle{}s current position, orientation, and joint angles. The function returns a list of possible movements in the form of \mbox{\hyperlink{class_movement}{Movement}} objects, each of which represents a possible sequence of joint angles and end effector positions that the robot can use to move to a specific target node in the lattice.
+
+If the Check\+Collisions flag is set to true, the function will check for collisions between the robot and any obstacles in the environment during the movements. If a collision is detected, the function will eliminate the movement from the list of possible movements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Configuration} & The robot\textquotesingle{}s current configuration. \\
+\hline
+{\em Check\+Collisions} & A flag indicating whether to check for collisions during the movements. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of possible movements for the robot.
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_inchworm_robot_controller_ab40b636922009970daf25226e1c0cbf8_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_inchworm_robot_controller_a39307cafbd598a847237855040c2e159}\label{class_inchworm_robot_controller_a39307cafbd598a847237855040c2e159}} 
+\mbox{\Hypertarget{class_inchworm_robot_controller_aef25c4406eee3b8269338e20151a61ad}\label{class_inchworm_robot_controller_aef25c4406eee3b8269338e20151a61ad}} 
 \index{InchwormRobotController@{InchwormRobotController}!ReachTargetNode@{ReachTargetNode}}
 \index{ReachTargetNode@{ReachTargetNode}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{ReachTargetNode()}{ReachTargetNode()}}
-{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ Inchworm\+Robot\+Controller.\+Reach\+Target\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target\+Node }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Inchworm\+Robot\+Controller.\+Reach\+Target\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target\+Node }\end{DoxyParamCaption})}
 
+Returns a movement (Starting config + List$<$\+Pos\+J$>$) detailing how to reach the target node. \begin{DoxyWarning}{Warning}
+Does not validate the \mbox{\hyperlink{class_movement}{Movement}} solutions for collisions
+\end{DoxyWarning}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_inchworm_robot_controller_a39307cafbd598a847237855040c2e159_cgraph}
+\includegraphics[width=350pt]{class_inchworm_robot_controller_aef25c4406eee3b8269338e20151a61ad_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_inchworm_robot_controller_a39307cafbd598a847237855040c2e159_icgraph}
+\includegraphics[width=350pt]{class_inchworm_robot_controller_aef25c4406eee3b8269338e20151a61ad_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_inchworm_robot_controller_ac4670ca90e8cce6094d05b2783cf2457}\label{class_inchworm_robot_controller_ac4670ca90e8cce6094d05b2783cf2457}} 
@@ -588,8 +635,7 @@ Refreshes all joints without modifying the target angles or angular velocities.H
 \includegraphics[width=350pt]{class_inchworm_robot_controller_ac4670ca90e8cce6094d05b2783cf2457_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -609,8 +655,7 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a7ad61afe292174a038f637038e706364_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -630,8 +675,7 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a6e57fc7ae1c3ea7b6eeb874ea2e0cafa_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -686,8 +730,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{TargetPosJ()}{TargetPosJ()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Inchworm\+Robot\+Controller.\+Target\+PosJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -706,8 +749,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{ToCylinder()}{ToCylinder()}}
 {\footnotesize\ttfamily Vector3 Inchworm\+Robot\+Controller.\+To\+Cylinder (\begin{DoxyParamCaption}\item[{Vector3}]{position }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -723,12 +765,6 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{BaseJointScript}{BaseJointScript}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_joint_script}{Joint\+Script}} Inchworm\+Robot\+Controller.\+Base\+Joint\+Script}
 
-\mbox{\Hypertarget{class_inchworm_robot_controller_a87145afe4413da9dfb905a480103d867}\label{class_inchworm_robot_controller_a87145afe4413da9dfb905a480103d867}} 
-\index{InchwormRobotController@{InchwormRobotController}!BaseNode@{BaseNode}}
-\index{BaseNode@{BaseNode}!InchwormRobotController@{InchwormRobotController}}
-\doxysubsubsection{\texorpdfstring{BaseNode}{BaseNode}}
-{\footnotesize\ttfamily Game\+Object Inchworm\+Robot\+Controller.\+Base\+Node}
-
 \mbox{\Hypertarget{class_inchworm_robot_controller_ad2f7964897d9c6e2d4d401b9e469bfb3}\label{class_inchworm_robot_controller_ad2f7964897d9c6e2d4d401b9e469bfb3}} 
 \index{InchwormRobotController@{InchwormRobotController}!CheckForCollisionsOnce@{CheckForCollisionsOnce}}
 \index{CheckForCollisionsOnce@{CheckForCollisionsOnce}!InchwormRobotController@{InchwormRobotController}}
@@ -740,6 +776,12 @@ Here is the caller graph for this function\+:
 \index{CollisionPrefab@{CollisionPrefab}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{CollisionPrefab}{CollisionPrefab}}
 {\footnotesize\ttfamily Game\+Object Inchworm\+Robot\+Controller.\+Collision\+Prefab}
+
+\mbox{\Hypertarget{class_inchworm_robot_controller_ac58e0160a20dd33dfe107cf6498c90b5}\label{class_inchworm_robot_controller_ac58e0160a20dd33dfe107cf6498c90b5}} 
+\index{InchwormRobotController@{InchwormRobotController}!CollisionPrefabMaterial@{CollisionPrefabMaterial}}
+\index{CollisionPrefabMaterial@{CollisionPrefabMaterial}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{CollisionPrefabMaterial}{CollisionPrefabMaterial}}
+{\footnotesize\ttfamily Material Inchworm\+Robot\+Controller.\+Collision\+Prefab\+Material}
 
 \mbox{\Hypertarget{class_inchworm_robot_controller_a5418c499f5f0c6edf0c9242d3fb4c8ad}\label{class_inchworm_robot_controller_a5418c499f5f0c6edf0c9242d3fb4c8ad}} 
 \index{InchwormRobotController@{InchwormRobotController}!CostCheckCollisions@{CostCheckCollisions}}
@@ -789,6 +831,12 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{IsInverted}{IsInverted}}
 {\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+Is\+Inverted = false}
 
+\mbox{\Hypertarget{class_inchworm_robot_controller_a92bcf909f9599e286f7ec21f80cf6cc5}\label{class_inchworm_robot_controller_a92bcf909f9599e286f7ec21f80cf6cc5}} 
+\index{InchwormRobotController@{InchwormRobotController}!isSlave@{isSlave}}
+\index{isSlave@{isSlave}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{isSlave}{isSlave}}
+{\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+is\+Slave = false}
+
 \mbox{\Hypertarget{class_inchworm_robot_controller_a2f166a3dbc289217f7c53e6deeea63f3}\label{class_inchworm_robot_controller_a2f166a3dbc289217f7c53e6deeea63f3}} 
 \index{InchwormRobotController@{InchwormRobotController}!Joint1@{Joint1}}
 \index{Joint1@{Joint1}!InchwormRobotController@{InchwormRobotController}}
@@ -831,6 +879,12 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{NavigationMesh}{NavigationMesh}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph}{Illa\+Graph}} Inchworm\+Robot\+Controller.\+Navigation\+Mesh = new \mbox{\hyperlink{class_illa_graph}{Illa\+Graph}}()}
 
+\mbox{\Hypertarget{class_inchworm_robot_controller_a9e061bf98ef49c49c0f1304a569ff1df}\label{class_inchworm_robot_controller_a9e061bf98ef49c49c0f1304a569ff1df}} 
+\index{InchwormRobotController@{InchwormRobotController}!ReplacementMaterial@{ReplacementMaterial}}
+\index{ReplacementMaterial@{ReplacementMaterial}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{ReplacementMaterial}{ReplacementMaterial}}
+{\footnotesize\ttfamily Material Inchworm\+Robot\+Controller.\+Replacement\+Material}
+
 \mbox{\Hypertarget{class_inchworm_robot_controller_a2abd5b4b400ab8f5b34030f01f543a4b}\label{class_inchworm_robot_controller_a2abd5b4b400ab8f5b34030f01f543a4b}} 
 \index{InchwormRobotController@{InchwormRobotController}!RigidBodyCollisionScriptReference@{RigidBodyCollisionScriptReference}}
 \index{RigidBodyCollisionScriptReference@{RigidBodyCollisionScriptReference}!InchwormRobotController@{InchwormRobotController}}
@@ -866,12 +920,6 @@ Here is the caller graph for this function\+:
 \index{SimulationMode@{SimulationMode}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{SimulationMode}{SimulationMode}}
 {\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+Simulation\+Mode = false}
-
-\mbox{\Hypertarget{class_inchworm_robot_controller_a686bc1e90a2819b5dc92355f95285cfe}\label{class_inchworm_robot_controller_a686bc1e90a2819b5dc92355f95285cfe}} 
-\index{InchwormRobotController@{InchwormRobotController}!Slave@{Slave}}
-\index{Slave@{Slave}!InchwormRobotController@{InchwormRobotController}}
-\doxysubsubsection{\texorpdfstring{Slave}{Slave}}
-{\footnotesize\ttfamily bool Inchworm\+Robot\+Controller.\+Slave = false}
 
 \mbox{\Hypertarget{class_inchworm_robot_controller_a8eb61831463a8bab635c55eec62d585d}\label{class_inchworm_robot_controller_a8eb61831463a8bab635c55eec62d585d}} 
 \index{InchwormRobotController@{InchwormRobotController}!stopProcess@{stopProcess}}
@@ -923,6 +971,12 @@ Here is the caller graph for this function\+:
 \index{BaseJointTargetAngle@{BaseJointTargetAngle}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{BaseJointTargetAngle}{BaseJointTargetAngle}}
 {\footnotesize\ttfamily double Inchworm\+Robot\+Controller.\+Base\+Joint\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_inchworm_robot_controller_a87145afe4413da9dfb905a480103d867}\label{class_inchworm_robot_controller_a87145afe4413da9dfb905a480103d867}} 
+\index{InchwormRobotController@{InchwormRobotController}!BaseNode@{BaseNode}}
+\index{BaseNode@{BaseNode}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{BaseNode}{BaseNode}}
+{\footnotesize\ttfamily Game\+Object Inchworm\+Robot\+Controller.\+Base\+Node\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_inchworm_robot_controller_aaa45b885b6844d60c8da482ca798427e}\label{class_inchworm_robot_controller_aaa45b885b6844d60c8da482ca798427e}} 
 \index{InchwormRobotController@{InchwormRobotController}!CanClampTool@{CanClampTool}}

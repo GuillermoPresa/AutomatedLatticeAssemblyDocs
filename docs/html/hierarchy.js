@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "ChituboxSTLParserClass", "class_chitubox_s_t_l_parser_class.html", null ],
+    [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ],
     [ "Editor", null, [
       [ "DecalMeshHelperEditor", "class_decal_mesh_helper_editor.html", null ],
       [ "MeshCombinerEditor", "class_mesh_combiner_editor.html", null ],
@@ -76,9 +77,6 @@ var hierarchy =
       [ "RobotCoordinator", "class_robot_coordinator.html", null ],
       [ "Selected", "class_selected.html", null ],
       [ "SelectionScript", "class_selection_script.html", null ],
-      [ "SimulationScene", "class_simulation_scene.html", [
-        [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ]
-      ] ],
       [ "Spawner", "class_spawner.html", null ],
       [ "SpawnerOverlay", "class_spawner_overlay.html", null ],
       [ "Spawning", "class_spawning.html", null ],

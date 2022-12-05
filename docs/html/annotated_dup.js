@@ -93,7 +93,6 @@ var annotated_dup =
     [ "ScrollviewBlock", "class_scrollview_block.html", "class_scrollview_block" ],
     [ "Selected", "class_selected.html", "class_selected" ],
     [ "SelectionScript", "class_selection_script.html", "class_selection_script" ],
-    [ "SimulationScene", "class_simulation_scene.html", "class_simulation_scene" ],
     [ "Spawner", "class_spawner.html", "class_spawner" ],
     [ "SpawnerOverlay", "class_spawner_overlay.html", "class_spawner_overlay" ],
     [ "Spawning", "class_spawning.html", null ],
