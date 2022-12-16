@@ -125,6 +125,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adf602d79b553173ec449a8659d57b410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acce37b4f311b3e074b0e0bb47f1cf7f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6">FindGraphNodeFromNodeObject</a> (GameObject Node)</td></tr>
 <tr class="separator:acce37b4f311b3e074b0e0bb47f1cf7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f513419177900b8e9a2ad3867597cc"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#ab2f513419177900b8e9a2ad3867597cc">FindGraphNodeFromNodeObject</a> (List&lt; GameObject &gt; NodeList)</td></tr>
+<tr class="separator:ab2f513419177900b8e9a2ad3867597cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2834308c0d4ffdebe6f3a0f3d86865b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#af2834308c0d4ffdebe6f3a0f3d86865b">FindPathToNode</a> (List&lt; GameObject &gt; goalNodes, GameObject startingNode, bool OptimalPlan=true)</td></tr>
+<tr class="separator:af2834308c0d4ffdebe6f3a0f3d86865b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89098e7e3c923bf0de3e9f0cc6fe0b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#a89098e7e3c923bf0de3e9f0cc6fe0b63">VisitNode</a> ()</td></tr>
+<tr class="separator:a89098e7e3c923bf0de3e9f0cc6fe0b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b060411ab327ca53f230021a322a5e1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#a3b060411ab327ca53f230021a322a5e1">CostFromInitialNode</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> nodeToEvaluate)</td></tr>
+<tr class="separator:a3b060411ab327ca53f230021a322a5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5496ffbb8946aa6ba54c1f990e89aaf"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#ae5496ffbb8946aa6ba54c1f990e89aaf">DijkstraCostFunctional</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> nodeToEvaluate)</td></tr>
+<tr class="separator:ae5496ffbb8946aa6ba54c1f990e89aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6111a315d90f9849ccd6b7d3d31fa0f4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph.html#a6111a315d90f9849ccd6b7d3d31fa0f4">AStarCostFunctional</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> nodeToEvaluate, float admissibilityCriterion)</td></tr>
+<tr class="separator:a6111a315d90f9849ccd6b7d3d31fa0f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad62efbb6977d71c1322572af8a0fe8b" name="aad62efbb6977d71c1322572af8a0fe8b"></a>
@@ -268,6 +280,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a6111a315d90f9849ccd6b7d3d31fa0f4" name="a6111a315d90f9849ccd6b7d3d31fa0f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6111a315d90f9849ccd6b7d3d31fa0f4">&#9670;&nbsp;</a></span>AStarCostFunctional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraph.AStarCostFunctional </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td>
+          <td class="paramname"><em>nodeToEvaluate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>admissibilityCriterion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa65722543ec7942bce5f947d6cf973d3" name="aa65722543ec7942bce5f947d6cf973d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa65722543ec7942bce5f947d6cf973d3">&#9670;&nbsp;</a></span>Clear()</h2>
 
@@ -381,6 +421,24 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a3b060411ab327ca53f230021a322a5e1" name="a3b060411ab327ca53f230021a322a5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b060411ab327ca53f230021a322a5e1">&#9670;&nbsp;</a></span>CostFromInitialNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraph.CostFromInitialNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td>
+          <td class="paramname"><em>nodeToEvaluate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7c1c673824b1268429f5547d602d24a7" name="a7c1c673824b1268429f5547d602d24a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c1c673824b1268429f5547d602d24a7">&#9670;&nbsp;</a></span>Count()</h2>
 
@@ -391,6 +449,24 @@ Here is the call graph for this function:</div>
           <td class="memname">int IllaGraph.Count </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5496ffbb8946aa6ba54c1f990e89aaf" name="ae5496ffbb8946aa6ba54c1f990e89aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5496ffbb8946aa6ba54c1f990e89aaf">&#9670;&nbsp;</a></span>DijkstraCostFunctional()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraph.DijkstraCostFunctional </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td>
+          <td class="paramname"><em>nodeToEvaluate</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -416,7 +492,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="acce37b4f311b3e074b0e0bb47f1cf7f6" name="acce37b4f311b3e074b0e0bb47f1cf7f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acce37b4f311b3e074b0e0bb47f1cf7f6">&#9670;&nbsp;</a></span>FindGraphNodeFromNodeObject()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acce37b4f311b3e074b0e0bb47f1cf7f6">&#9670;&nbsp;</a></span>FindGraphNodeFromNodeObject() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,18 +511,112 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6_icgraph.png" border="0" usemap="#aclass_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6_icgraph" alt=""/></div>
 <map name="aclass_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6_icgraph" id="aclass_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6_icgraph">
-<area shape="rect" title=" " alt="" coords="937,154,1135,195"/>
-<area shape="rect" href="class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="743,9,873,36"/>
+<area shape="rect" title=" " alt="" coords="972,205,1169,246"/>
+<area shape="rect" href="class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="760,9,891,36"/>
 <area shape="rect" href="class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="489,122,679,163"/>
-<area shape="rect" href="class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="743,60,873,87"/>
-<area shape="rect" href="class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="729,111,887,137"/>
-<area shape="rect" href="class_illa_graph.html#afdd310edd33d4d160a295d0ab61a7625" title=" " alt="" coords="729,263,887,289"/>
-<area shape="rect" href="class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="729,161,887,188"/>
-<area shape="rect" href="class_illa_graph.html#aca620313cf9e321b0d940db52cfac32e" title=" " alt="" coords="727,313,889,340"/>
+<area shape="rect" href="class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="760,60,891,87"/>
+<area shape="rect" href="class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="746,111,905,137"/>
+<area shape="rect" href="class_illa_graph.html#afdd310edd33d4d160a295d0ab61a7625" title=" " alt="" coords="746,263,905,289"/>
+<area shape="rect" href="class_illa_graph.html#ab2f513419177900b8e9a2ad3867597cc" title=" " alt="" coords="727,314,924,355"/>
+<area shape="rect" href="class_illa_graph.html#af2834308c0d4ffdebe6f3a0f3d86865b" title=" " alt="" coords="739,380,912,407"/>
+<area shape="rect" href="class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="747,161,904,188"/>
+<area shape="rect" href="class_illa_graph.html#aca620313cf9e321b0d940db52cfac32e" title=" " alt="" coords="744,431,907,457"/>
 <area shape="rect" href="class_illa_graph.html#adce9b902dd00be64c8904a1c49375e83" title=" " alt="" coords="519,5,649,32"/>
 <area shape="rect" href="class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="499,57,669,98"/>
 <area shape="rect" href="class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="261,122,441,163"/>
 <area shape="rect" href="class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,122,213,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab2f513419177900b8e9a2ad3867597cc" name="ab2f513419177900b8e9a2ad3867597cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f513419177900b8e9a2ad3867597cc">&#9670;&nbsp;</a></span>FindGraphNodeFromNodeObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> &gt; IllaGraph.FindGraphNodeFromNodeObject </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; GameObject &gt;&#160;</td>
+          <td class="paramname"><em>NodeList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph.png" border="0" usemap="#aclass_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph" id="aclass_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,203,47"/>
+<area shape="rect" href="class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="251,5,448,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af2834308c0d4ffdebe6f3a0f3d86865b" name="af2834308c0d4ffdebe6f3a0f3d86865b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2834308c0d4ffdebe6f3a0f3d86865b">&#9670;&nbsp;</a></span>FindPathToNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IllaGraph.FindPathToNode </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; GameObject &gt;&#160;</td>
+          <td class="paramname"><em>goalNodes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>startingNode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>OptimalPlan</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Planning on the graph:</p>
+<pre class="fragment"> Planning is the reasoning side of acting.</pre><p >Utilizing the dynamic programming principle based on Bellman's principle of optimality:</p>
+<pre class="fragment"> An optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the
+ state resulting from the first decision.</pre><p ><b>Process:</b></p>
+<p >At any point in the search, we can classify the states into 3 groups; Unvisited, dead or alive <br  />
+ <em>Unvisited:</em> states that have not been visited yet <br  />
+ <em>Dead:</em> States that have been visited togeather with every possible next state <br  />
+ <em>Alive:</em> State that has been visited but whose possible next states have yet to be visited <br  />
+ <b>Notation:</b> <br  />
+ States are denoted by the letter X.</p>
+<p >X: states <br  />
+ X_goal <br  />
+ X_initial <br  />
+</p>
+<p ><b>Search algorithms:</b> <br  />
+ f(x) = g(x) + e h(x) <br  />
+ f(x): Cost utilized for evaluated the priority of the priority queue. Deternubes which nodes will be visited next. <br  />
+ g(x): Cost of the path from the starting state x_{i} to the current state_{x} <br  />
+ h(x): Heuristic function that aproximates the cost from the current state x to the goal state x_{g} <br  />
+ e: Admissibility criterion </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b_cgraph.png" border="0" usemap="#aclass_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b_cgraph" id="aclass_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,179,69"/>
+<area shape="rect" href="class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="237,5,435,47"/>
+<area shape="rect" href="class_illa_graph.html#adf602d79b553173ec449a8659d57b410" title=" " alt="" coords="227,71,445,98"/>
+<area shape="rect" href="class_illa_graph_node.html#a17bbcb583eda13d6f62f9fabcde44bef" title=" " alt="" coords="493,64,676,105"/>
 </map>
 </div>
 
@@ -632,6 +802,15 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_illa_graph_node.html#a17bbcb583eda13d6f62f9fabcde44bef" title=" " alt="" coords="272,5,455,47"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_adf602d79b553173ec449a8659d57b410_icgraph.png" border="0" usemap="#aclass_illa_graph_adf602d79b553173ec449a8659d57b410_icgraph" alt=""/></div>
+<map name="aclass_illa_graph_adf602d79b553173ec449a8659d57b410_icgraph" id="aclass_illa_graph_adf602d79b553173ec449a8659d57b410_icgraph">
+<area shape="rect" title=" " alt="" coords="227,5,445,32"/>
+<area shape="rect" href="class_illa_graph.html#af2834308c0d4ffdebe6f3a0f3d86865b" title=" " alt="" coords="5,5,179,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -660,6 +839,23 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,82,157,109"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a89098e7e3c923bf0de3e9f0cc6fe0b63" name="a89098e7e3c923bf0de3e9f0cc6fe0b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89098e7e3c923bf0de3e9f0cc6fe0b63">&#9670;&nbsp;</a></span>VisitNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IllaGraph.VisitNode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

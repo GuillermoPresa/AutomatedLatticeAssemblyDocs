@@ -37,8 +37,24 @@ var hierarchy =
       [ "Example.AnotherGreetingLogger", "class_example_1_1_another_greeting_logger.html", null ],
       [ "Example.DefaultGreetingLogger", "class_example_1_1_default_greeting_logger.html", null ]
     ] ],
+    [ "IJobParallelFor", null, [
+      [ "InchwormRobotController.MyParallelJob", "struct_inchworm_robot_controller_1_1_my_parallel_job.html", null ]
+    ] ],
     [ "IllaGraph", "class_illa_graph.html", null ],
     [ "IllaNavigationPath", "class_illa_navigation_path.html", null ],
+    [ "IPrototype< T >", "interface_i_prototype.html", null ],
+    [ "IPrototype< Movement >", "interface_i_prototype.html", [
+      [ "Movement", "class_movement.html", null ]
+    ] ],
+    [ "IPrototype< PosJ >", "interface_i_prototype.html", [
+      [ "PosJ", "class_pos_j.html", null ]
+    ] ],
+    [ "IPrototype< PosX >", "interface_i_prototype.html", [
+      [ "PosX", "class_pos_x.html", null ]
+    ] ],
+    [ "IPrototype< RobotConfiguration >", "interface_i_prototype.html", [
+      [ "RobotConfiguration", "class_robot_configuration.html", null ]
+    ] ],
     [ "ISerializationCallbackReceiver", null, [
       [ "TypeReferences.ClassTypeReference", "class_type_references_1_1_class_type_reference.html", null ]
     ] ],
@@ -84,11 +100,8 @@ var hierarchy =
       [ "TimeManager", "class_time_manager.html", null ],
       [ "UDictionaryTest", "class_u_dictionary_test.html", null ]
     ] ],
-    [ "Movement", "class_movement.html", null ],
     [ "NavigationPath", "class_navigation_path.html", null ],
     [ "SerializationElements.ObjectDocument", "class_serialization_elements_1_1_object_document.html", null ],
-    [ "PosJ", "class_pos_j.html", null ],
-    [ "PosX", "class_pos_x.html", null ],
     [ "PropertyAttribute", null, [
       [ "TypeReferences.ClassTypeConstraintAttribute", "class_type_references_1_1_class_type_constraint_attribute.html", [
         [ "TypeReferences.ClassExtendsAttribute", "class_type_references_1_1_class_extends_attribute.html", null ],
@@ -104,7 +117,6 @@ var hierarchy =
       [ "RobotWaitState", "class_robot_wait_state.html", null ],
       [ "RobotWalkState", "class_robot_walk_state.html", null ]
     ] ],
-    [ "RobotConfiguration", "class_robot_configuration.html", null ],
     [ "MovementAndSensorDefinition.SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", null ],
     [ "SerializationElements.SerializationResolution", "class_serialization_elements_1_1_serialization_resolution.html", null ],
     [ "TabsBlock", "class_tabs_block.html", null ],

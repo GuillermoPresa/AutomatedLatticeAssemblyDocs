@@ -1,8 +1,4 @@
 <map id="CollisionDetectionScene.CheckCollisionBatch" name="CollisionDetectionScene.CheckCollisionBatch">
-<area shape="rect" id="node1" title=" " alt="" coords="953,39,1120,80"/>
-<area shape="rect" id="node2" href="$class_collision_detection_scene.html#a8e0b2470e6f3ec066178d0e16abe976b" title=" " alt="" coords="691,39,905,80"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a307dd0c5be6478c36ec022d874f60dc7" title=" " alt="" coords="443,39,643,80"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="224,5,395,47"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#abb28346e2220380a514b0cc9ac9334ca" title=" " alt="" coords="224,71,395,112"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="268,5,435,47"/>
+<area shape="rect" id="node2" href="$class_collision_detection_scene.html#a8e0b2470e6f3ec066178d0e16abe976b" title=" " alt="" coords="5,5,220,47"/>
 </map>

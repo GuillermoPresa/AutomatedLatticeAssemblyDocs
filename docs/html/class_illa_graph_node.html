@@ -140,6 +140,8 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ace8039c347b503ff2f20f0f014f8db2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ace8039c347b503ff2f20f0f014f8db2d">visited</a> = false</td></tr>
 <tr class="separator:ace8039c347b503ff2f20f0f014f8db2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb367d587435c5c0929fd96d41f85aba"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#acb367d587435c5c0929fd96d41f85aba">DistanceFromStartingNode</a> = (float)999999999</td></tr>
+<tr class="separator:acb367d587435c5c0929fd96d41f85aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a129f4b46c9f7cae6321d5fd20803e3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a129f4b46c9f7cae6321d5fd20803e3eb">PreviousVertex</a> = null</td></tr>
 <tr class="separator:a129f4b46c9f7cae6321d5fd20803e3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -150,7 +152,13 @@ Properties</h2></td></tr>
 <tr class="memitem:aafa65da9e9ea72adf03f10fdbb5d43fb"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#aafa65da9e9ea72adf03f10fdbb5d43fb">Neighbours</a><code> [get]</code></td></tr>
 <tr class="separator:aafa65da9e9ea72adf03f10fdbb5d43fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Navigation graph for ILLA inchowrm locomotion lattice assemblers that employ inverse kinnematics and dont have preprogramed movements.</p>
+<p >The navigation graph is directional, nmeaning that neighbours are not necesarily symmetric. For this reason there exists both: <br  />
+ *_neighbours: * Stores the neoigbour of a node. (outgoing edge) <br  />
+*_isNeighbourOf: * Stores what nodes have the current node as neighbour (incoming edge) <br  />
+ This allows traversal of the graph using fordward and bidirectional search instead on just backwards without a large computational headroom (at the cost of additional memory) </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c58815dfb87c59cf24adcdf3a24dfc6" name="a2c58815dfb87c59cf24adcdf3a24dfc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c58815dfb87c59cf24adcdf3a24dfc6">&#9670;&nbsp;</a></span>IllaGraphNode()</h2>
 
@@ -204,6 +212,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_node_ad415df3fd267254b8e4d0693164282bc_cgraph.png" border="0" usemap="#aclass_illa_graph_node_ad415df3fd267254b8e4d0693164282bc_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_ad415df3fd267254b8e4d0693164282bc_cgraph" id="aclass_illa_graph_node_ad415df3fd267254b8e4d0693164282bc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,193,32"/>
+<area shape="rect" href="interface_i_prototype.html#af8fdf15a9898d4527f66ba1f3f3e533a" title=" " alt="" coords="241,5,424,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -407,8 +424,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph.png" border="0" usemap="#aclass_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph" alt=""/></div>
 <map name="aclass_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph" id="aclass_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph">
-<area shape="rect" title=" " alt="" coords="272,5,455,47"/>
-<area shape="rect" href="class_illa_graph.html#adf602d79b553173ec449a8659d57b410" title=" " alt="" coords="5,13,224,39"/>
+<area shape="rect" title=" " alt="" coords="493,5,676,47"/>
+<area shape="rect" href="class_illa_graph.html#adf602d79b553173ec449a8659d57b410" title=" " alt="" coords="227,13,445,39"/>
+<area shape="rect" href="class_illa_graph.html#af2834308c0d4ffdebe6f3a0f3d86865b" title=" " alt="" coords="5,13,179,39"/>
 </map>
 </div>
 
@@ -432,6 +450,20 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="acb367d587435c5c0929fd96d41f85aba" name="acb367d587435c5c0929fd96d41f85aba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb367d587435c5c0929fd96d41f85aba">&#9670;&nbsp;</a></span>DistanceFromStartingNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraphNode.DistanceFromStartingNode = (float)999999999</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a129f4b46c9f7cae6321d5fd20803e3eb" name="a129f4b46c9f7cae6321d5fd20803e3eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a129f4b46c9f7cae6321d5fd20803e3eb">&#9670;&nbsp;</a></span>PreviousVertex</h2>
 

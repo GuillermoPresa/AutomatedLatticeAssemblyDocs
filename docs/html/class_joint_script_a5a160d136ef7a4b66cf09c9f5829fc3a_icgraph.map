@@ -1,9 +1,10 @@
 <map id="JointScript.MakeBase" name="JointScript.MakeBase">
-<area shape="rect" id="node1" title=" " alt="" coords="643,78,792,105"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a1435c5d5ea8519d902996b073f7c737d" title=" " alt="" coords="424,5,595,47"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a7ad61afe292174a038f637038e706364" title=" " alt="" coords="424,71,595,112"/>
-<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#aae82b1885ef4f5145015159039826eea" title=" " alt="" coords="424,136,595,177"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a43bc27d67f9d06266400939dc05f6c07" title=" " alt="" coords="205,5,376,47"/>
-<area shape="rect" id="node4" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,13,157,39"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="205,71,376,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="661,130,811,157"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#ae0d31585a1de9d61559b15049639da8b" title=" " alt="" coords="443,57,613,99"/>
+<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a1435c5d5ea8519d902996b073f7c737d" title=" " alt="" coords="443,123,613,164"/>
+<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#aae82b1885ef4f5145015159039826eea" title=" " alt="" coords="443,188,613,229"/>
+<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="224,5,395,47"/>
+<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="5,35,176,76"/>
+<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#a43bc27d67f9d06266400939dc05f6c07" title=" " alt="" coords="224,123,395,164"/>
+<area shape="rect" id="node7" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="15,130,167,157"/>
 </map>

@@ -19,6 +19,7 @@ var class_joint_script =
     [ "BaseQuaternionOffset", "class_joint_script.html#a62d7bba784328b7f1a47a7d56e13c0f0", null ],
     [ "BaseVectorOffset", "class_joint_script.html#a22396506bc4379981888c6c7fe5c7ada", null ],
     [ "ClampedNode", "class_joint_script.html#a19672f189b78adcad1922b224cc10213", null ],
+    [ "CollisionCollider", "class_joint_script.html#a46a269f1b81c60ac4c6e79c31c0558b6", null ],
     [ "CurrentAngle", "class_joint_script.html#aeb3c2b1d453dc008bfc90ccfedec8ef9", null ],
     [ "CylinderElement", "class_joint_script.html#a5a86d3dfef80f3b090aab330734cf0e0", null ],
     [ "GoalAngle", "class_joint_script.html#ae80b35221c9c840393788c59921d07a1", null ],

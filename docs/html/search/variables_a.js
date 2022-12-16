@@ -10,6 +10,7 @@ var searchData=
   ['joint4angle_7',['Joint4Angle',['../class_pos_j.html#ae3361e13cee83709c7e8062a142bb0d3',1,'PosJ']]],
   ['joint5_8',['Joint5',['../class_inchworm_robot_controller.html#a6545d6c26a4fcb5cc78aa23c7702a72e',1,'InchwormRobotController']]],
   ['joint5angle_9',['Joint5Angle',['../class_pos_j.html#a98b7a8d2a9de94fa2c1117bd5649739d',1,'PosJ']]],
-  ['jointobjectparent_10',['JointObjectParent',['../class_joint_script.html#a7eaec584ce7d9270bafe2846ef02d5e0',1,'JointScript']]],
-  ['jointpose_11',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
+  ['jointcapsulecolliders_10',['JointCapsuleColliders',['../class_inchworm_robot_controller.html#af4ba978dba222ad49c05edacbaa1b1f1',1,'InchwormRobotController']]],
+  ['jointobjectparent_11',['JointObjectParent',['../class_joint_script.html#a7eaec584ce7d9270bafe2846ef02d5e0',1,'JointScript']]],
+  ['jointpose_12',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
 ];

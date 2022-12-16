@@ -25,9 +25,11 @@ var searchData=
   ['containskey_22',['ContainsKey',['../class_u_dictionary.html#a4a20de19d21c36cd00531f634e509889',1,'UDictionary']]],
   ['containsnode_23',['ContainsNode',['../class_illa_graph.html#afdd310edd33d4d160a295d0ab61a7625',1,'IllaGraph']]],
   ['copyto_24',['CopyTo',['../class_u_dictionary.html#a26f067c43233a0df309d3ea5c5efcc90',1,'UDictionary']]],
-  ['count_25',['Count',['../class_illa_graph.html#a7c1c673824b1268429f5547d602d24a7',1,'IllaGraph.Count()'],['../class_graph.html#aef9eec77dc196b41c6f3a957ec834a1d',1,'Graph.Count()']]],
-  ['countselecteditemsfromgloballist_26',['CountSelectedItemsFromGlobalList',['../class_selection_script.html#ab6856f1e708f6555c3714c088598e41c',1,'SelectionScript']]],
-  ['createscenewithilla_27',['CreateSceneWithIlla',['../class_collision_detection_scene.html#a2f82439049469dfbb4962be8b3e6c192',1,'CollisionDetectionScene']]],
-  ['currentposj_28',['CurrentPosJ',['../class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e',1,'InchwormRobotController']]],
-  ['currenttargetposj_29',['CurrentTargetPosJ',['../class_inchworm_robot_controller.html#a7fbf83e95aeda9834725fd0feb502afc',1,'InchwormRobotController']]]
+  ['costfrominitialnode_25',['CostFromInitialNode',['../class_illa_graph.html#a3b060411ab327ca53f230021a322a5e1',1,'IllaGraph']]],
+  ['count_26',['Count',['../class_illa_graph.html#a7c1c673824b1268429f5547d602d24a7',1,'IllaGraph.Count()'],['../class_graph.html#aef9eec77dc196b41c6f3a957ec834a1d',1,'Graph.Count()']]],
+  ['countselecteditemsfromgloballist_27',['CountSelectedItemsFromGlobalList',['../class_selection_script.html#ab6856f1e708f6555c3714c088598e41c',1,'SelectionScript']]],
+  ['createdeepcopy_28',['CreateDeepCopy',['../interface_i_prototype.html#af8fdf15a9898d4527f66ba1f3f3e533a',1,'IPrototype.CreateDeepCopy()'],['../class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb',1,'PosJ.CreateDeepCopy()'],['../class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e',1,'PosX.CreateDeepCopy()'],['../class_robot_configuration.html#a0817e1175838763ce38925ef860723ce',1,'RobotConfiguration.CreateDeepCopy()']]],
+  ['createscenewithilla_29',['CreateSceneWithIlla',['../class_collision_detection_scene.html#a2f82439049469dfbb4962be8b3e6c192',1,'CollisionDetectionScene']]],
+  ['currentposj_30',['CurrentPosJ',['../class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e',1,'InchwormRobotController']]],
+  ['currenttargetposj_31',['CurrentTargetPosJ',['../class_inchworm_robot_controller.html#a7fbf83e95aeda9834725fd0feb502afc',1,'InchwormRobotController']]]
 ];

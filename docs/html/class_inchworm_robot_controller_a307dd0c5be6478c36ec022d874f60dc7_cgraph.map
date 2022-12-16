@@ -1,13 +1,5 @@
 <map id="InchwormRobotController.IsPoseCollidingSeparateScene" name="InchwormRobotController.IsPoseCollidingSeparateScene">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,205,145"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb" title=" " alt="" coords="275,5,446,47"/>
-<area shape="rect" id="node3" href="$class_collision_detection_scene.html#a8e0b2470e6f3ec066178d0e16abe976b" title=" " alt="" coords="253,71,468,112"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="275,136,446,177"/>
-<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="275,201,446,243"/>
-<area shape="rect" id="node4" href="$class_collision_detection_scene.html#abda86524ae64a6855b1ddb2316249fe1" title=" " alt="" coords="518,36,685,77"/>
-<area shape="rect" id="node5" href="$class_collision_detection_scene.html#a79ed7add5c1f8b4671835006de9e7229" title=" " alt="" coords="737,57,903,99"/>
-<area shape="rect" id="node8" href="$class_joint_script.html#a74b80f3745fd5d662ad55c535807b040" title=" " alt="" coords="522,169,681,195"/>
-<area shape="rect" id="node10" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="516,220,687,261"/>
-<area shape="rect" id="node9" href="$class_joint_script.html#acc803a7009633a3a3d007d163e4605d6" title=" " alt="" coords="738,169,902,195"/>
-<area shape="rect" id="node11" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="735,220,905,261"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,205,80"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb" title=" " alt="" coords="253,5,424,47"/>
+<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="253,71,424,112"/>
 </map>

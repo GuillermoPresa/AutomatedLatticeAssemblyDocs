@@ -8,6 +8,7 @@ var class_illa_graph_node =
     [ "RemoveNeighbour", "class_illa_graph_node.html#a818a25e07a3d48dbf100600f8de89638", null ],
     [ "ResetSearchParameters", "class_illa_graph_node.html#a17bbcb583eda13d6f62f9fabcde44bef", null ],
     [ "ToString", "class_illa_graph_node.html#ae99e75a74c7d92ea88ec27f842d0181a", null ],
+    [ "DistanceFromStartingNode", "class_illa_graph_node.html#acb367d587435c5c0929fd96d41f85aba", null ],
     [ "PreviousVertex", "class_illa_graph_node.html#a129f4b46c9f7cae6321d5fd20803e3eb", null ],
     [ "visited", "class_illa_graph_node.html#ace8039c347b503ff2f20f0f014f8db2d", null ],
     [ "Neighbours", "class_illa_graph_node.html#aafa65da9e9ea72adf03f10fdbb5d43fb", null ],

@@ -49,6 +49,8 @@ static bool \mbox{\hyperlink{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c
 \item 
 bool \mbox{\hyperlink{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}{visited}} = false
 \item 
+float \mbox{\hyperlink{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}{Distance\+From\+Starting\+Node}} = (float)999999999
+\item 
 \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} \mbox{\hyperlink{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}{Previous\+Vertex}} = null
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
@@ -59,6 +61,14 @@ Game\+Object \mbox{\hyperlink{class_illa_graph_node_a127a6a46d778aeb6ed1a4f363ef
 IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}{Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Navigation graph for ILLA inchowrm locomotion lattice assemblers that employ inverse kinnematics and dont have preprogramed movements.
+
+The navigation graph is directional, nmeaning that neighbours are not necesarily symmetric. For this reason there exists both\+: ~\newline
+ $\ast$\+\_\+neighbours\+: $\ast$ Stores the neoigbour of a node. (outgoing edge) ~\newline
+$\ast$\+\_\+is\+Neighbour\+Of\+: $\ast$ Stores what nodes have the current node as neighbour (incoming edge) ~\newline
+ This allows traversal of the graph using fordward and bidirectional search instead on just backwards without a large computational headroom (at the cost of additional memory) 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}\label{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}} 
@@ -83,6 +93,13 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{AddNeighbour()}{AddNeighbour()}}
 {\footnotesize\ttfamily bool Illa\+Graph\+Node.\+Add\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{neighbour,  }\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{Target\+Movement }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_ad415df3fd267254b8e4d0693164282bc_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6}\label{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6}} 
 \index{IllaGraphNode@{IllaGraphNode}!Clear@{Clear}}
 \index{Clear@{Clear}!IllaGraphNode@{IllaGraphNode}}
@@ -169,6 +186,12 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}\label{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}} 
+\index{IllaGraphNode@{IllaGraphNode}!DistanceFromStartingNode@{DistanceFromStartingNode}}
+\index{DistanceFromStartingNode@{DistanceFromStartingNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{DistanceFromStartingNode}{DistanceFromStartingNode}}
+{\footnotesize\ttfamily float Illa\+Graph\+Node.\+Distance\+From\+Starting\+Node = (float)999999999}
+
 \mbox{\Hypertarget{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}\label{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}} 
 \index{IllaGraphNode@{IllaGraphNode}!PreviousVertex@{PreviousVertex}}
 \index{PreviousVertex@{PreviousVertex}!IllaGraphNode@{IllaGraphNode}}

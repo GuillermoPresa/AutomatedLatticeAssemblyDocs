@@ -5,10 +5,11 @@ var searchData=
   ['robotbaseinterface_2ecs_2',['RobotBaseInterface.cs',['../_robot_base_interface_8cs.html',1,'']]],
   ['robotbussystate_2ecs_3',['RobotBussyState.cs',['../_robot_bussy_state_8cs.html',1,'']]],
   ['robotbuttons_2ecs_4',['RobotButtons.cs',['../_robot_buttons_8cs.html',1,'']]],
-  ['robotcoordinator_2ecs_5',['RobotCoordinator.cs',['../_robot_coordinator_8cs.html',1,'']]],
-  ['robotscript_2ecs_6',['RobotScript.cs',['../_robot_script_8cs.html',1,'']]],
-  ['robotwaitstate_2ecs_7',['RobotWaitState.cs',['../_robot_wait_state_8cs.html',1,'']]],
-  ['robotwalkstate_2ecs_8',['RobotWalkState.cs',['../_robot_walk_state_8cs.html',1,'']]],
-  ['rts_5fcamera_2ecs_9',['RTS_Camera.cs',['../_r_t_s___camera_8cs.html',1,'']]],
-  ['rts_5fcameraeditor_2ecs_10',['RTS_CameraEditor.cs',['../_r_t_s___camera_editor_8cs.html',1,'']]]
+  ['robotclasses_2ecs_5',['RobotClasses.cs',['../_robot_classes_8cs.html',1,'']]],
+  ['robotcoordinator_2ecs_6',['RobotCoordinator.cs',['../_robot_coordinator_8cs.html',1,'']]],
+  ['robotscript_2ecs_7',['RobotScript.cs',['../_robot_script_8cs.html',1,'']]],
+  ['robotwaitstate_2ecs_8',['RobotWaitState.cs',['../_robot_wait_state_8cs.html',1,'']]],
+  ['robotwalkstate_2ecs_9',['RobotWalkState.cs',['../_robot_walk_state_8cs.html',1,'']]],
+  ['rts_5fcamera_2ecs_10',['RTS_Camera.cs',['../_r_t_s___camera_8cs.html',1,'']]],
+  ['rts_5fcameraeditor_2ecs_11',['RTS_CameraEditor.cs',['../_r_t_s___camera_editor_8cs.html',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var class_pos_x =
 [
     [ "PosX", "class_pos_x.html#acb32feca5a6223846a79a1e264914638", null ],
+    [ "CreateDeepCopy", "class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e", null ],
     [ "Position", "class_pos_x.html#abb161f63543b38e02f6427570c61891f", null ],
     [ "Rotation", "class_pos_x.html#a3457738bf9fa04b5f29a3f9cc6bbf913", null ],
     [ "TargetNode", "class_pos_x.html#a929af9ab69f115c435bdd5637968e752", null ],

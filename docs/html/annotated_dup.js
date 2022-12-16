@@ -58,6 +58,7 @@ var annotated_dup =
     [ "ImporterWindow", "class_importer_window.html", "class_importer_window" ],
     [ "InchwormRobotController", "class_inchworm_robot_controller.html", "class_inchworm_robot_controller" ],
     [ "InsertTask", "class_insert_task.html", "class_insert_task" ],
+    [ "IPrototype", "interface_i_prototype.html", "interface_i_prototype" ],
     [ "JointScript", "class_joint_script.html", "class_joint_script" ],
     [ "LatticeClass", "class_lattice_class.html", "class_lattice_class" ],
     [ "LatticeCollection", "class_lattice_collection.html", "class_lattice_collection" ],
