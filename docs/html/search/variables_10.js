@@ -8,12 +8,13 @@ var searchData=
   ['path_5',['path',['../namespace_image_to_video.html#ad307f3c1eccb744b9484bfaeeb068eb7',1,'ImageToVideo']]],
   ['permanentcollisionprefabs_6',['PermanentCollisionPrefabs',['../class_collision_detection_scene.html#a4ad18adeb6292c5cc593378e2b6e8d92',1,'CollisionDetectionScene']]],
   ['placed_7',['Placed',['../class_lattice_class.html#a5cf3db8f46b62c00d583a5cb15979614',1,'LatticeClass']]],
-  ['position_8',['Position',['../class_pos_x.html#abb161f63543b38e02f6427570c61891f',1,'PosX']]],
-  ['positionvector_9',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
-  ['posjcostdictionary_10',['PosJCostDictionary',['../class_movement.html#a79a16b0af892714639e126da6c2e119b',1,'Movement']]],
-  ['posjlist_11',['PosJList',['../class_movement.html#a34ce3cd8d3bf888c53a4c580f233f662',1,'Movement']]],
-  ['previousjoint_12',['PreviousJoint',['../class_joint_script.html#a863d4b5acca4305cf084fd67ed008894',1,'JointScript']]],
-  ['previousvertex_13',['PreviousVertex',['../class_illa_graph_node.html#a129f4b46c9f7cae6321d5fd20803e3eb',1,'IllaGraphNode.PreviousVertex()'],['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode.PreviousVertex()']]],
-  ['prioritydictionary_14',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]],
-  ['prioritylevel_15',['PriorityLevel',['../class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9',1,'Task']]]
+  ['pose_8',['pose',['../struct_illa_graph_node_1_1_cost_struct.html#a662eefc473dbf01b2d4cd8c3228f4ec2',1,'IllaGraphNode::CostStruct']]],
+  ['position_9',['Position',['../class_pos_x.html#abb161f63543b38e02f6427570c61891f',1,'PosX']]],
+  ['positionvector_10',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
+  ['posjcostdictionary_11',['PosJCostDictionary',['../class_movement.html#a79a16b0af892714639e126da6c2e119b',1,'Movement']]],
+  ['posjlist_12',['PosJList',['../class_movement.html#a34ce3cd8d3bf888c53a4c580f233f662',1,'Movement']]],
+  ['previousjoint_13',['PreviousJoint',['../class_joint_script.html#a863d4b5acca4305cf084fd67ed008894',1,'JointScript']]],
+  ['previousvertex_14',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]],
+  ['prioritydictionary_15',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]],
+  ['prioritylevel_16',['PriorityLevel',['../class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9',1,'Task']]]
 ];

@@ -11,5 +11,6 @@ var searchData=
   ['collisiondetectionscene_8',['CollisionDetectionScene',['../class_collision_detection_scene.html',1,'']]],
   ['collisionsensor_9',['CollisionSensor',['../class_collision_sensor.html',1,'']]],
   ['coloredblock_10',['ColoredBlock',['../class_colored_block.html',1,'']]],
-  ['controlwindow_11',['ControlWindow',['../class_control_window.html',1,'']]]
+  ['controlwindow_11',['ControlWindow',['../class_control_window.html',1,'']]],
+  ['coststruct_12',['CostStruct',['../struct_illa_graph_node_1_1_cost_struct.html',1,'IllaGraphNode']]]
 ];

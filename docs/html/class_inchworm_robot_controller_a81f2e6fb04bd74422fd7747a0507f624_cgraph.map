@@ -1,11 +1,14 @@
 <map id="InchwormRobotController.FrameMapNavigationSpace" name="InchwormRobotController.FrameMapNavigationSpace">
-<area shape="rect" id="node1" title=" " alt="" coords="5,150,185,191"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="233,150,423,191"/>
-<area shape="rect" id="node3" href="$class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="491,5,621,32"/>
-<area shape="rect" id="node4" href="$class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="689,99,887,141"/>
-<area shape="rect" id="node5" href="$class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="491,107,621,133"/>
-<area shape="rect" id="node6" href="$class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="477,157,635,184"/>
-<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="471,209,641,250"/>
-<area shape="rect" id="node8" href="$class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="477,275,635,301"/>
-<area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#a70f269d65cbdebe0b38cb8e0c8b5320f" title=" " alt="" coords="471,350,641,391"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,175,185,217"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="233,175,423,217"/>
+<area shape="rect" id="node3" href="$class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="504,157,635,184"/>
+<area shape="rect" id="node4" href="$class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="727,99,924,141"/>
+<area shape="rect" id="node5" href="$class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="504,5,635,32"/>
+<area shape="rect" id="node6" href="$class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="490,56,649,83"/>
+<area shape="rect" id="node7" href="$class_movement.html#aabdac3fb4e86360b2749dba8c5d8d17a" title=" " alt="" coords="471,325,668,366"/>
+<area shape="rect" id="node10" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="484,259,655,301"/>
+<area shape="rect" id="node11" href="$class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="491,107,648,133"/>
+<area shape="rect" id="node12" href="$class_inchworm_robot_controller.html#a70f269d65cbdebe0b38cb8e0c8b5320f" title=" " alt="" coords="484,414,655,455"/>
+<area shape="rect" id="node8" href="$class_pos_j.html#ad34358d7097fad2ccb516cac2fc2fa9f" title=" " alt="" coords="716,332,935,359"/>
+<area shape="rect" id="node9" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="983,332,1117,359"/>
 </map>

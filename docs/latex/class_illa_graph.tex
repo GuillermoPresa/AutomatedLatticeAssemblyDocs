@@ -39,15 +39,17 @@ void \mbox{\hyperlink{class_illa_graph_adf602d79b553173ec449a8659d57b410}{Reset\
 \item 
 List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc}{Find\+Graph\+Node\+From\+Node\+Object}} (List$<$ Game\+Object $>$ Node\+List)
 \item 
-void \mbox{\hyperlink{class_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b}{Find\+Path\+To\+Node}} (List$<$ Game\+Object $>$ goal\+Nodes, Game\+Object starting\+Node, bool Optimal\+Plan=true)
+\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} \mbox{\hyperlink{class_illa_graph_a216634c667161206181daf8d39dcf9a2}{Find\+Path\+To\+Node}} (Game\+Object goal\+Node, Game\+Object starting\+Node, Func$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, float, float $>$ cost\+Functional=null, bool Optimal\+Plan=true)
 \item 
-void \mbox{\hyperlink{class_illa_graph_a89098e7e3c923bf0de3e9f0cc6fe0b63}{Visit\+Node}} ()
+\mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} \mbox{\hyperlink{class_illa_graph_a720002fcb76c0205c1fb28c066ac260e}{Reconstruct\+Nagigation\+Path}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} initial\+Node, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} goal\+Node)
 \item 
-float \mbox{\hyperlink{class_illa_graph_a3b060411ab327ca53f230021a322a5e1}{Cost\+From\+Initial\+Node}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate)
+Key\+Value\+Pair$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, float $>$ \mbox{\hyperlink{class_illa_graph_ac3b5601f0f8952b5765ab864c6641a46}{Cost\+From\+Initial\+Node}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate)
 \item 
-float \mbox{\hyperlink{class_illa_graph_ae5496ffbb8946aa6ba54c1f990e89aaf}{Dijkstra\+Cost\+Functional}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate)
+float \mbox{\hyperlink{class_illa_graph_a172aa46430cfbb284725456dededa0f8}{Estimated\+Cost\+Based\+On\+Distance}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} target\+Node, float Distance\+Weight=1f)
 \item 
-float \mbox{\hyperlink{class_illa_graph_a6111a315d90f9849ccd6b7d3d31fa0f4}{AStar\+Cost\+Functional}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate, float admissibility\+Criterion)
+float \mbox{\hyperlink{class_illa_graph_a7ac2ccc69b609f681b3e28f899e8e7c9}{Dijkstra\+Cost\+Functional}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} target\+Node=null, float admissibility\+Criterion=0)
+\item 
+float \mbox{\hyperlink{class_illa_graph_a8183b7d088fe4dbe897452a81c6887f6}{AStar\+Cost\+Functional}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} node\+To\+Evaluate, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} target\+Node, float admissibility\+Criterion=1)
 \end{DoxyCompactItemize}
 
 
@@ -114,12 +116,19 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_a66a87d5b2bb9a5a40c217b701c6bbc99_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_a6111a315d90f9849ccd6b7d3d31fa0f4}\label{class_illa_graph_a6111a315d90f9849ccd6b7d3d31fa0f4}} 
+\mbox{\Hypertarget{class_illa_graph_a8183b7d088fe4dbe897452a81c6887f6}\label{class_illa_graph_a8183b7d088fe4dbe897452a81c6887f6}} 
 \index{IllaGraph@{IllaGraph}!AStarCostFunctional@{AStarCostFunctional}}
 \index{AStarCostFunctional@{AStarCostFunctional}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{AStarCostFunctional()}{AStarCostFunctional()}}
-{\footnotesize\ttfamily float Illa\+Graph.\+AStar\+Cost\+Functional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate,  }\item[{float}]{admissibility\+Criterion }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Illa\+Graph.\+AStar\+Cost\+Functional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{target\+Node,  }\item[{float}]{admissibility\+Criterion = {\ttfamily 1} }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a8183b7d088fe4dbe897452a81c6887f6_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_aa65722543ec7942bce5f947d6cf973d3}\label{class_illa_graph_aa65722543ec7942bce5f947d6cf973d3}} 
 \index{IllaGraph@{IllaGraph}!Clear@{Clear}}
 \index{Clear@{Clear}!IllaGraph@{IllaGraph}}
@@ -173,30 +182,84 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_afdd310edd33d4d160a295d0ab61a7625_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_a3b060411ab327ca53f230021a322a5e1}\label{class_illa_graph_a3b060411ab327ca53f230021a322a5e1}} 
+\mbox{\Hypertarget{class_illa_graph_ac3b5601f0f8952b5765ab864c6641a46}\label{class_illa_graph_ac3b5601f0f8952b5765ab864c6641a46}} 
 \index{IllaGraph@{IllaGraph}!CostFromInitialNode@{CostFromInitialNode}}
 \index{CostFromInitialNode@{CostFromInitialNode}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{CostFromInitialNode()}{CostFromInitialNode()}}
-{\footnotesize\ttfamily float Illa\+Graph.\+Cost\+From\+Initial\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Key\+Value\+Pair$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, float $>$ Illa\+Graph.\+Cost\+From\+Initial\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate }\end{DoxyParamCaption})}
 
+Calculates the cost to reach the specified node from the initial node in the graph. The initial node\textquotesingle{}s definition is implicit in the costs that have already been assigned to the nodes. The graph nodes must be correctly populated
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+To\+Evaluate} & The node to evaluate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Key\+Value\+Pair containing the previous node with the minimum cost to reach the specified node, and this minimum cost.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+\+: Memory leak. Do not run for extended periods of time. If stuck check ram consumption. Be aware of possible hard drive damage! 
+\end{DoxyWarning}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_ac3b5601f0f8952b5765ab864c6641a46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_ac3b5601f0f8952b5765ab864c6641a46_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_a7c1c673824b1268429f5547d602d24a7}\label{class_illa_graph_a7c1c673824b1268429f5547d602d24a7}} 
 \index{IllaGraph@{IllaGraph}!Count@{Count}}
 \index{Count@{Count}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{Count()}{Count()}}
 {\footnotesize\ttfamily int Illa\+Graph.\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_illa_graph_ae5496ffbb8946aa6ba54c1f990e89aaf}\label{class_illa_graph_ae5496ffbb8946aa6ba54c1f990e89aaf}} 
+\mbox{\Hypertarget{class_illa_graph_a7ac2ccc69b609f681b3e28f899e8e7c9}\label{class_illa_graph_a7ac2ccc69b609f681b3e28f899e8e7c9}} 
 \index{IllaGraph@{IllaGraph}!DijkstraCostFunctional@{DijkstraCostFunctional}}
 \index{DijkstraCostFunctional@{DijkstraCostFunctional}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{DijkstraCostFunctional()}{DijkstraCostFunctional()}}
-{\footnotesize\ttfamily float Illa\+Graph.\+Dijkstra\+Cost\+Functional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float Illa\+Graph.\+Dijkstra\+Cost\+Functional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{target\+Node = {\ttfamily null},  }\item[{float}]{admissibility\+Criterion = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a7ac2ccc69b609f681b3e28f899e8e7c9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a7ac2ccc69b609f681b3e28f899e8e7c9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_a6017ffa189e27169af89c3b36049823d}\label{class_illa_graph_a6017ffa189e27169af89c3b36049823d}} 
 \index{IllaGraph@{IllaGraph}!DrawMesh@{DrawMesh}}
 \index{DrawMesh@{DrawMesh}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{DrawMesh()}{DrawMesh()}}
 {\footnotesize\ttfamily void Illa\+Graph.\+Draw\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_illa_graph_a172aa46430cfbb284725456dededa0f8}\label{class_illa_graph_a172aa46430cfbb284725456dededa0f8}} 
+\index{IllaGraph@{IllaGraph}!EstimatedCostBasedOnDistance@{EstimatedCostBasedOnDistance}}
+\index{EstimatedCostBasedOnDistance@{EstimatedCostBasedOnDistance}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{EstimatedCostBasedOnDistance()}{EstimatedCostBasedOnDistance()}}
+{\footnotesize\ttfamily float Illa\+Graph.\+Estimated\+Cost\+Based\+On\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{node\+To\+Evaluate,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{target\+Node,  }\item[{float}]{Distance\+Weight = {\ttfamily 1f} }\end{DoxyParamCaption})}
+
+Todo. This does not use goedesic distance but just purely the distance. Could be improved. Also weight it properly with the movement costHere is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a172aa46430cfbb284725456dededa0f8_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6}\label{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6}} 
 \index{IllaGraph@{IllaGraph}!FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}}
 \index{FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}!IllaGraph@{IllaGraph}}
@@ -223,11 +286,11 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b}\label{class_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b}} 
+\mbox{\Hypertarget{class_illa_graph_a216634c667161206181daf8d39dcf9a2}\label{class_illa_graph_a216634c667161206181daf8d39dcf9a2}} 
 \index{IllaGraph@{IllaGraph}!FindPathToNode@{FindPathToNode}}
 \index{FindPathToNode@{FindPathToNode}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{FindPathToNode()}{FindPathToNode()}}
-{\footnotesize\ttfamily void Illa\+Graph.\+Find\+Path\+To\+Node (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{goal\+Nodes,  }\item[{Game\+Object}]{starting\+Node,  }\item[{bool}]{Optimal\+Plan = {\ttfamily true} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Illa\+Graph.\+Find\+Path\+To\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{goal\+Node,  }\item[{Game\+Object}]{starting\+Node,  }\item[{Func$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, float, float $>$}]{cost\+Functional = {\ttfamily null},  }\item[{bool}]{Optimal\+Plan = {\ttfamily true} }\end{DoxyParamCaption})}
 
 Planning on the graph\+:
 
@@ -263,7 +326,7 @@ X\+: states ~\newline
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_graph_af2834308c0d4ffdebe6f3a0f3d86865b_cgraph}
+\includegraphics[width=350pt]{class_illa_graph_a216634c667161206181daf8d39dcf9a2_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_graph_acdfb644d57d63847867a558433d8c567}\label{class_illa_graph_acdfb644d57d63847867a558433d8c567}} 
@@ -290,6 +353,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_a720002fcb76c0205c1fb28c066ac260e}\label{class_illa_graph_a720002fcb76c0205c1fb28c066ac260e}} 
+\index{IllaGraph@{IllaGraph}!ReconstructNagigationPath@{ReconstructNagigationPath}}
+\index{ReconstructNagigationPath@{ReconstructNagigationPath}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{ReconstructNagigationPath()}{ReconstructNagigationPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_navigation_path}{Navigation\+Path}} Illa\+Graph.\+Reconstruct\+Nagigation\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{initial\+Node,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{goal\+Node }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a720002fcb76c0205c1fb28c066ac260e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a720002fcb76c0205c1fb28c066ac260e_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_graph_aba3fff1c6439fbbe6a455c866e3ef1c7}\label{class_illa_graph_aba3fff1c6439fbbe6a455c866e3ef1c7}} 
@@ -364,12 +447,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_a28ffcb05dc76848f758318c41d1b49d0_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_a89098e7e3c923bf0de3e9f0cc6fe0b63}\label{class_illa_graph_a89098e7e3c923bf0de3e9f0cc6fe0b63}} 
-\index{IllaGraph@{IllaGraph}!VisitNode@{VisitNode}}
-\index{VisitNode@{VisitNode}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{VisitNode()}{VisitNode()}}
-{\footnotesize\ttfamily void Illa\+Graph.\+Visit\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

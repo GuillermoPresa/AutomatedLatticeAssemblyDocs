@@ -45,6 +45,7 @@ var class_inchworm_robot_controller =
     [ "CostCollisionInstantiateDestroy", "class_inchworm_robot_controller.html#a24c9b783be2f8c311ec69b5c1bda9c40", null ],
     [ "CostGetPossibleMovements", "class_inchworm_robot_controller.html#ad7c0264b889d534d25150ba18c43bb40", null ],
     [ "CostProcessMovement", "class_inchworm_robot_controller.html#a40f74779c5bf4fff42d377b414dabb96", null ],
+    [ "FindPathToNode", "class_inchworm_robot_controller.html#a76a763a3648359e419895ad26d11d2da", null ],
     [ "GrabObject", "class_inchworm_robot_controller.html#a18382c1f10ffd4bf2850c66432a8b287", null ],
     [ "InvertHierarchy", "class_inchworm_robot_controller.html#a8b1c158383c6f7e4cb467ebdca463289", null ],
     [ "IsColliding", "class_inchworm_robot_controller.html#a2fb9ea536177f88a5c081de96607edb2", null ],

@@ -8,7 +8,7 @@ var class_graph_node =
     [ "RemoveNeighbour", "class_graph_node.html#adc8f138bb8ab796094560cbc4a9adc62", null ],
     [ "ResetSearchParameters", "class_graph_node.html#a2d4ce49e2ee25d746821bbf527b9e4a5", null ],
     [ "ToString", "class_graph_node.html#ad6631a80420b8757811616504289f4ca", null ],
-    [ "DistanceFromStartingNode", "class_graph_node.html#a05fb18ba9bbf5c0fbd44b8255af9033a", null ],
+    [ "costToReachFromStartingNode", "class_graph_node.html#a7514f63bae86355909b9c188ee129a06", null ],
     [ "PreviousVertex", "class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b", null ],
     [ "visited", "class_graph_node.html#a6669c521e51d47d2e2a39c4d84386e3f", null ],
     [ "EdgeWeight", "class_graph_node.html#aaffb3766e1688b59754ee410c51e11c2", null ],

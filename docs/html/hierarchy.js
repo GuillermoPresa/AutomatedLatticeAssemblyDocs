@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "ChituboxSTLParserClass", "class_chitubox_s_t_l_parser_class.html", null ],
     [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ],
+    [ "IllaGraphNode.CostStruct", "struct_illa_graph_node_1_1_cost_struct.html", null ],
     [ "Editor", null, [
       [ "DecalMeshHelperEditor", "class_decal_mesh_helper_editor.html", null ],
       [ "MeshCombinerEditor", "class_mesh_combiner_editor.html", null ],

@@ -24,6 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LatticeAssemblylogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">Automated lattice assembly
    </div>
@@ -111,6 +112,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ClickedNode&#160;:&#160;<a class="el" href="class_selection_script.html#a1e3e360788e8cc50752fc1e30c86ab6a">SelectionScript</a></li>
 <li>ClickedObject&#160;:&#160;<a class="el" href="class_selection_script.html#a3030d3e8c36edb5edddf6527fc2a0d83">SelectionScript</a></li>
 <li>ClickedRobot&#160;:&#160;<a class="el" href="class_selection_script.html#ac678213fe0da8b3aa511d50d9cac0e5c">SelectionScript</a></li>
+<li>closestPreviousNode&#160;:&#160;<a class="el" href="class_illa_graph_node.html#ad10bdcd90870e22e6b41260777a72e7b">IllaGraphNode</a></li>
 <li>CollisionCollider&#160;:&#160;<a class="el" href="class_joint_script.html#a46a269f1b81c60ac4c6e79c31c0558b6">JointScript</a></li>
 <li>CollisionDetectionScene()&#160;:&#160;<a class="el" href="class_collision_detection_scene.html#a9aacc6dc43304d358c69a60c1c62480d">CollisionDetectionScene</a></li>
 <li>CollisionMaterial&#160;:&#160;<a class="el" href="class_collision_sensor.html#ad0228d607a8fa3f6f0ee18ac2a5ba54f">CollisionSensor</a></li>
@@ -126,6 +128,7 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>CombineInactiveChildren&#160;:&#160;<a class="el" href="class_mesh_combiner.html#a689f903c0f7491abe28abede4173e652">MeshCombiner</a></li>
 <li>CombineMeshes()&#160;:&#160;<a class="el" href="class_mesh_combiner.html#aa03d4fe172841197362d025474725577">MeshCombiner</a></li>
 <li>CompleteDijkstraFromStartingNode()&#160;:&#160;<a class="el" href="class_graph.html#a8c8441b17f8a083c13756a85d873a15b">Graph</a></li>
+<li>ComputeCostToReachFromOrigin()&#160;:&#160;<a class="el" href="class_illa_graph_node.html#a7853b86ae96bb189df73071c935c4e9c">IllaGraphNode</a></li>
 <li>Connected&#160;:&#160;<a class="el" href="class_node_class.html#aaedd6d60032fe3dd0154062cf28db157">NodeClass</a></li>
 <li>Connections&#160;:&#160;<a class="el" href="class_lattice_class.html#a7867dc6554931af5d228c7e8f02594dd">LatticeClass</a></li>
 <li>ConnectionsDictionary&#160;:&#160;<a class="el" href="class_lattice_class.html#a8589420207a8c36d387f6440108f7c87">LatticeClass</a></li>
@@ -136,12 +139,15 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <li>ContainsNode()&#160;:&#160;<a class="el" href="class_illa_graph.html#afdd310edd33d4d160a295d0ab61a7625">IllaGraph</a></li>
 <li>ControlWindowSelectedTab&#160;:&#160;<a class="el" href="class_selection_script.html#a7144b4eed078af195c2c4d654fadd41d">SelectionScript</a></li>
 <li>CopyTo()&#160;:&#160;<a class="el" href="class_u_dictionary.html#a26f067c43233a0df309d3ea5c5efcc90">UDictionary&lt; TKey, TValue &gt;</a></li>
+<li>costBasedOnAngleMovement()&#160;:&#160;<a class="el" href="class_movement.html#aabdac3fb4e86360b2749dba8c5d8d17a">Movement</a></li>
 <li>CostBasedOnDistance&#160;:&#160;<a class="el" href="class_movement.html#a09e436250973593312f94ff1db716d73">Movement</a></li>
 <li>CostCheckCollisions&#160;:&#160;<a class="el" href="class_inchworm_robot_controller.html#a5418c499f5f0c6edf0c9242d3fb4c8ad">InchwormRobotController</a></li>
 <li>CostCollisionInstantiateDestroy&#160;:&#160;<a class="el" href="class_inchworm_robot_controller.html#a24c9b783be2f8c311ec69b5c1bda9c40">InchwormRobotController</a></li>
-<li>CostFromInitialNode()&#160;:&#160;<a class="el" href="class_illa_graph.html#a3b060411ab327ca53f230021a322a5e1">IllaGraph</a></li>
+<li>CostFromInitialNode()&#160;:&#160;<a class="el" href="class_illa_graph.html#ac3b5601f0f8952b5765ab864c6641a46">IllaGraph</a></li>
+<li>costFromOrigin&#160;:&#160;<a class="el" href="struct_illa_graph_node_1_1_cost_struct.html#a683c9f2fd06f74f237b5daf88965265b">IllaGraphNode.CostStruct</a></li>
 <li>CostGetPossibleMovements&#160;:&#160;<a class="el" href="class_inchworm_robot_controller.html#ad7c0264b889d534d25150ba18c43bb40">InchwormRobotController</a></li>
 <li>CostProcessMovement&#160;:&#160;<a class="el" href="class_inchworm_robot_controller.html#a40f74779c5bf4fff42d377b414dabb96">InchwormRobotController</a></li>
+<li>costToReachFromStartingNode&#160;:&#160;<a class="el" href="class_graph_node.html#a7514f63bae86355909b9c188ee129a06">GraphNode</a>, <a class="el" href="class_illa_graph_node.html#afd7263a51f0bdb3da2bfc7b3c3e5ada2">IllaGraphNode</a></li>
 <li>Count()&#160;:&#160;<a class="el" href="class_graph.html#aef9eec77dc196b41c6f3a957ec834a1d">Graph</a>, <a class="el" href="class_illa_graph.html#a7c1c673824b1268429f5547d602d24a7">IllaGraph</a>, <a class="el" href="class_u_dictionary.html#ac79bcd5454c044f7284a339b1449400e">UDictionary&lt; TKey, TValue &gt;</a></li>
 <li>CountSelectedItemsFromGlobalList()&#160;:&#160;<a class="el" href="class_selection_script.html#ab6856f1e708f6555c3714c088598e41c">SelectionScript</a></li>
 <li>CreateDeepCopy()&#160;:&#160;<a class="el" href="interface_i_prototype.html#af8fdf15a9898d4527f66ba1f3f3e533a">IPrototype&lt; T &gt;</a>, <a class="el" href="class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb">PosJ</a>, <a class="el" href="class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e">PosX</a>, <a class="el" href="class_robot_configuration.html#a0817e1175838763ce38925ef860723ce">RobotConfiguration</a></li>

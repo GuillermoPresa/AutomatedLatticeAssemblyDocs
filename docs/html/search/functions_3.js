@@ -1,7 +1,7 @@
 var searchData=
 [
   ['destroyinstantiatedprefabs_0',['DestroyInstantiatedPrefabs',['../class_collision_detection_scene.html#a0d7c7181001607effc83766c460f3426',1,'CollisionDetectionScene']]],
-  ['dijkstracostfunctional_1',['DijkstraCostFunctional',['../class_illa_graph.html#ae5496ffbb8946aa6ba54c1f990e89aaf',1,'IllaGraph']]],
+  ['dijkstracostfunctional_1',['DijkstraCostFunctional',['../class_illa_graph.html#a7ac2ccc69b609f681b3e28f899e8e7c9',1,'IllaGraph']]],
   ['dijkstrapath_2',['DijkstraPath',['../class_graph.html#a967bfa5ba07778a8b7c75e5030b06b38',1,'Graph']]],
   ['dispose_3',['Dispose',['../class_vertical_block.html#ac5c10930e034faeddd754307a2bee083',1,'VerticalBlock.Dispose()'],['../class_scrollview_block.html#afaa4c1524a57f1a3d2d8388168c206e9',1,'ScrollviewBlock.Dispose()'],['../class_horizontal_block.html#a89e1f070115864040a117abd1d553428',1,'HorizontalBlock.Dispose()'],['../class_colored_block.html#ab76d620d28e731a183637d49adf3531e',1,'ColoredBlock.Dispose()'],['../class_space_navigator_driver_1_1_space_navigator.html#a4193624a37cc16037dc3a001f5fa7ced',1,'SpaceNavigatorDriver.SpaceNavigator.Dispose()']]],
   ['draw_4',['Draw',['../class_tabs_block.html#ace96b271c6b50b2d66fb6ad368f1f019',1,'TabsBlock']]],

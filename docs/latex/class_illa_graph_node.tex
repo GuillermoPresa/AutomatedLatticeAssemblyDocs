@@ -15,9 +15,14 @@ Collaboration diagram for Illa\+Graph\+Node\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=247pt]{class_illa_graph_node__coll__graph}
+\includegraphics[width=272pt]{class_illa_graph_node__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_illa_graph_node_1_1_cost_struct}{Cost\+Struct}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -36,6 +41,8 @@ bool \mbox{\hyperlink{class_illa_graph_node_a818a25e07a3d48dbf100600f8de89638}{R
 bool \mbox{\hyperlink{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}{Remove\+All\+Neighbours}} ()
 \item 
 override string \mbox{\hyperlink{class_illa_graph_node_ae99e75a74c7d92ea88ec27f842d0181a}{To\+String}} ()
+\item 
+float \mbox{\hyperlink{class_illa_graph_node_a7853b86ae96bb189df73071c935c4e9c}{Compute\+Cost\+To\+Reach\+From\+Origin}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -49,9 +56,11 @@ static bool \mbox{\hyperlink{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c
 \item 
 bool \mbox{\hyperlink{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}{visited}} = false
 \item 
-float \mbox{\hyperlink{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}{Distance\+From\+Starting\+Node}} = (float)999999999
+float \mbox{\hyperlink{class_illa_graph_node_afd7263a51f0bdb3da2bfc7b3c3e5ada2}{cost\+To\+Reach\+From\+Starting\+Node}} = (float)999999999
 \item 
-\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} \mbox{\hyperlink{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}{Previous\+Vertex}} = null
+\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} \mbox{\hyperlink{class_illa_graph_node_ad10bdcd90870e22e6b41260777a72e7b}{closest\+Previous\+Node}} = null
+\item 
+float \mbox{\hyperlink{class_illa_graph_node_a79df5c2a8e1d0d17c3e4052a6d9d9776}{estimated\+Cost\+Functional}} = (float)99999999999
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -59,6 +68,10 @@ float \mbox{\hyperlink{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}{
 Game\+Object \mbox{\hyperlink{class_illa_graph_node_a127a6a46d778aeb6ed1a4f363ef11c67}{Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}{Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_a20d6fd22f17e84da2f01473e45e90925}{Incomming\+Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, \mbox{\hyperlink{class_movement}{Movement}} $>$ \mbox{\hyperlink{class_illa_graph_node_a2ff0fdf58a54640339642c6f2420ef1f}{Neighbour\+Cost\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
@@ -67,8 +80,28 @@ Navigation graph for ILLA inchowrm locomotion lattice assemblers that employ inv
 
 The navigation graph is directional, nmeaning that neighbours are not necesarily symmetric. For this reason there exists both\+: ~\newline
  $\ast$\+\_\+neighbours\+: $\ast$ Stores the neoigbour of a node. (outgoing edge) ~\newline
-$\ast$\+\_\+is\+Neighbour\+Of\+: $\ast$ Stores what nodes have the current node as neighbour (incoming edge) ~\newline
- This allows traversal of the graph using fordward and bidirectional search instead on just backwards without a large computational headroom (at the cost of additional memory) 
+$\ast$\+\_\+incoming\+Neighbours\+: $\ast$ Stores what nodes have the current node as neighbour (incoming edge) ~\newline
+ This allows traversal of the graph using fordward and bidirectional search instead on just backwards without a large computational headroom (at the cost of additional memory) ~\newline
+ ~\newline
+~\newline
+ The edge weight depends on the initial conditions, meaning that no predefined cost can be stablished and that each edge´s cost depends on the robot´s history. ~\newline
+ In order to account for this during path planning and be able to find the shortest path regardless of initial conditions the following procedure is utilized. ~\newline
+ An example is presented below\+: ~\newline
+ Here a 3-\/1-\/1 node configuration graph can be seen. The blue states represent the dead states. The green are the alive states. and the grey is the unvisited state. We are investigating the fastest way to reach the goal (g) state.~\newline
+ It must be noted that depending on the route the robot takes to reach to node c, the joint configuration in that node will be different, thus, the cost of the c-\/\texorpdfstring{$>$}{>}g edge is different according to the robot´s hystogram. ~\newline
+ This is taken into accound in the path planning. And this is only further complicated by the existance of more incomming neighbours to the goal state.
+
+
+
+~\newline
+ ~\newline
+
+
+The \+\_\+incoming\+Neighbour\+Cost\+Dictionary, stores for incomming neighbours, the previous node, inital \mbox{\hyperlink{class_pos_j}{PosJ}} and the cost to reach the goal node from the origin. ~\newline
+ The incomming neighbours previous node, initial \mbox{\hyperlink{class_pos_j}{PosJ}} and cost to reach are stored in the form of a \mbox{\hyperlink{struct_illa_graph_node_1_1_cost_struct}{Cost\+Struct}}
+
+The structu Pos\+JAnd\+Cost is utilized to store this information\+: ~\newline
+ Compute\+Cost\+To\+Reach\+From\+Origin populates this dictionary and structs and returns the path with the minimal cost. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}\label{class_illa_graph_node_a2c58815dfb87c59cf24adcdf3a24dfc6}} 
@@ -120,6 +153,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_a7853b86ae96bb189df73071c935c4e9c}\label{class_illa_graph_node_a7853b86ae96bb189df73071c935c4e9c}} 
+\index{IllaGraphNode@{IllaGraphNode}!ComputeCostToReachFromOrigin@{ComputeCostToReachFromOrigin}}
+\index{ComputeCostToReachFromOrigin@{ComputeCostToReachFromOrigin}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{ComputeCostToReachFromOrigin()}{ComputeCostToReachFromOrigin()}}
+{\footnotesize\ttfamily float Illa\+Graph\+Node.\+Compute\+Cost\+To\+Reach\+From\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}\label{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}} 
 \index{IllaGraphNode@{IllaGraphNode}!Equals@{Equals}}
 \index{Equals@{Equals}!IllaGraphNode@{IllaGraphNode}}
@@ -186,17 +225,23 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}\label{class_illa_graph_node_acb367d587435c5c0929fd96d41f85aba}} 
-\index{IllaGraphNode@{IllaGraphNode}!DistanceFromStartingNode@{DistanceFromStartingNode}}
-\index{DistanceFromStartingNode@{DistanceFromStartingNode}!IllaGraphNode@{IllaGraphNode}}
-\doxysubsubsection{\texorpdfstring{DistanceFromStartingNode}{DistanceFromStartingNode}}
-{\footnotesize\ttfamily float Illa\+Graph\+Node.\+Distance\+From\+Starting\+Node = (float)999999999}
+\mbox{\Hypertarget{class_illa_graph_node_ad10bdcd90870e22e6b41260777a72e7b}\label{class_illa_graph_node_ad10bdcd90870e22e6b41260777a72e7b}} 
+\index{IllaGraphNode@{IllaGraphNode}!closestPreviousNode@{closestPreviousNode}}
+\index{closestPreviousNode@{closestPreviousNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{closestPreviousNode}{closestPreviousNode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} Illa\+Graph\+Node.\+closest\+Previous\+Node = null}
 
-\mbox{\Hypertarget{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}\label{class_illa_graph_node_a129f4b46c9f7cae6321d5fd20803e3eb}} 
-\index{IllaGraphNode@{IllaGraphNode}!PreviousVertex@{PreviousVertex}}
-\index{PreviousVertex@{PreviousVertex}!IllaGraphNode@{IllaGraphNode}}
-\doxysubsubsection{\texorpdfstring{PreviousVertex}{PreviousVertex}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} Illa\+Graph\+Node.\+Previous\+Vertex = null}
+\mbox{\Hypertarget{class_illa_graph_node_afd7263a51f0bdb3da2bfc7b3c3e5ada2}\label{class_illa_graph_node_afd7263a51f0bdb3da2bfc7b3c3e5ada2}} 
+\index{IllaGraphNode@{IllaGraphNode}!costToReachFromStartingNode@{costToReachFromStartingNode}}
+\index{costToReachFromStartingNode@{costToReachFromStartingNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{costToReachFromStartingNode}{costToReachFromStartingNode}}
+{\footnotesize\ttfamily float Illa\+Graph\+Node.\+cost\+To\+Reach\+From\+Starting\+Node = (float)999999999}
+
+\mbox{\Hypertarget{class_illa_graph_node_a79df5c2a8e1d0d17c3e4052a6d9d9776}\label{class_illa_graph_node_a79df5c2a8e1d0d17c3e4052a6d9d9776}} 
+\index{IllaGraphNode@{IllaGraphNode}!estimatedCostFunctional@{estimatedCostFunctional}}
+\index{estimatedCostFunctional@{estimatedCostFunctional}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{estimatedCostFunctional}{estimatedCostFunctional}}
+{\footnotesize\ttfamily float Illa\+Graph\+Node.\+estimated\+Cost\+Functional = (float)99999999999}
 
 \mbox{\Hypertarget{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}\label{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}} 
 \index{IllaGraphNode@{IllaGraphNode}!visited@{visited}}
@@ -207,6 +252,18 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_illa_graph_node_a20d6fd22f17e84da2f01473e45e90925}\label{class_illa_graph_node_a20d6fd22f17e84da2f01473e45e90925}} 
+\index{IllaGraphNode@{IllaGraphNode}!IncommingNeighbours@{IncommingNeighbours}}
+\index{IncommingNeighbours@{IncommingNeighbours}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{IncommingNeighbours}{IncommingNeighbours}}
+{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}$>$ Illa\+Graph\+Node.\+Incomming\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_a2ff0fdf58a54640339642c6f2420ef1f}\label{class_illa_graph_node_a2ff0fdf58a54640339642c6f2420ef1f}} 
+\index{IllaGraphNode@{IllaGraphNode}!NeighbourCostDictionary@{NeighbourCostDictionary}}
+\index{NeighbourCostDictionary@{NeighbourCostDictionary}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{NeighbourCostDictionary}{NeighbourCostDictionary}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, \mbox{\hyperlink{class_movement}{Movement}}$>$ Illa\+Graph\+Node.\+Neighbour\+Cost\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
+
 \mbox{\Hypertarget{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}\label{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}} 
 \index{IllaGraphNode@{IllaGraphNode}!Neighbours@{Neighbours}}
 \index{Neighbours@{Neighbours}!IllaGraphNode@{IllaGraphNode}}

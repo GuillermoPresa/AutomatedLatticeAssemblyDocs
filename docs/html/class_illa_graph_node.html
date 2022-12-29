@@ -24,6 +24,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="LatticeAssemblylogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">Automated lattice assembly
    </div>
@@ -83,6 +84,7 @@ $(document).ready(function(){initNavTree('class_illa_graph_node.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -110,6 +112,11 @@ Collaboration diagram for IllaGraphNode:</div>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_illa_graph_node_1_1_cost_struct.html">CostStruct</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f4e900afbf7c330eeb9849944d149c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a3f4e900afbf7c330eeb9849944d149c6">Clear</a> ()</td></tr>
@@ -128,6 +135,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87d68c4a225f8d1194c1f422c9b199a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99e75a74c7d92ea88ec27f842d0181a"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ae99e75a74c7d92ea88ec27f842d0181a">ToString</a> ()</td></tr>
 <tr class="separator:ae99e75a74c7d92ea88ec27f842d0181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7853b86ae96bb189df73071c935c4e9c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a7853b86ae96bb189df73071c935c4e9c">ComputeCostToReachFromOrigin</a> ()</td></tr>
+<tr class="separator:a7853b86ae96bb189df73071c935c4e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -140,10 +149,12 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ace8039c347b503ff2f20f0f014f8db2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ace8039c347b503ff2f20f0f014f8db2d">visited</a> = false</td></tr>
 <tr class="separator:ace8039c347b503ff2f20f0f014f8db2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb367d587435c5c0929fd96d41f85aba"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#acb367d587435c5c0929fd96d41f85aba">DistanceFromStartingNode</a> = (float)999999999</td></tr>
-<tr class="separator:acb367d587435c5c0929fd96d41f85aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a129f4b46c9f7cae6321d5fd20803e3eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a129f4b46c9f7cae6321d5fd20803e3eb">PreviousVertex</a> = null</td></tr>
-<tr class="separator:a129f4b46c9f7cae6321d5fd20803e3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd7263a51f0bdb3da2bfc7b3c3e5ada2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#afd7263a51f0bdb3da2bfc7b3c3e5ada2">costToReachFromStartingNode</a> = (float)999999999</td></tr>
+<tr class="separator:afd7263a51f0bdb3da2bfc7b3c3e5ada2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10bdcd90870e22e6b41260777a72e7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ad10bdcd90870e22e6b41260777a72e7b">closestPreviousNode</a> = null</td></tr>
+<tr class="separator:ad10bdcd90870e22e6b41260777a72e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79df5c2a8e1d0d17c3e4052a6d9d9776"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a79df5c2a8e1d0d17c3e4052a6d9d9776">estimatedCostFunctional</a> = (float)99999999999</td></tr>
+<tr class="separator:a79df5c2a8e1d0d17c3e4052a6d9d9776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -151,13 +162,36 @@ Properties</h2></td></tr>
 <tr class="separator:a127a6a46d778aeb6ed1a4f363ef11c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafa65da9e9ea72adf03f10fdbb5d43fb"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#aafa65da9e9ea72adf03f10fdbb5d43fb">Neighbours</a><code> [get]</code></td></tr>
 <tr class="separator:aafa65da9e9ea72adf03f10fdbb5d43fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d6fd22f17e84da2f01473e45e90925"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a20d6fd22f17e84da2f01473e45e90925">IncommingNeighbours</a><code> [get]</code></td></tr>
+<tr class="separator:a20d6fd22f17e84da2f01473e45e90925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff0fdf58a54640339642c6f2420ef1f"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, <a class="el" href="class_movement.html">Movement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a2ff0fdf58a54640339642c6f2420ef1f">NeighbourCostDictionary</a><code> [get]</code></td></tr>
+<tr class="separator:a2ff0fdf58a54640339642c6f2420ef1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Navigation graph for ILLA inchowrm locomotion lattice assemblers that employ inverse kinnematics and dont have preprogramed movements.</p>
 <p >The navigation graph is directional, nmeaning that neighbours are not necesarily symmetric. For this reason there exists both: <br  />
  *_neighbours: * Stores the neoigbour of a node. (outgoing edge) <br  />
-*_isNeighbourOf: * Stores what nodes have the current node as neighbour (incoming edge) <br  />
- This allows traversal of the graph using fordward and bidirectional search instead on just backwards without a large computational headroom (at the cost of additional memory) </p>
+*_incomingNeighbours: * Stores what nodes have the current node as neighbour (incoming edge) <br  />
+ This allows traversal of the graph using fordward and bidirectional search instead on just backwards without a large computational headroom (at the cost of additional memory) <br  />
+ <br  />
+<br  />
+ The edge weight depends on the initial conditions, meaning that no predefined cost can be stablished and that each edge´s cost depends on the robot´s history. <br  />
+ In order to account for this during path planning and be able to find the shortest path regardless of initial conditions the following procedure is utilized. <br  />
+ An example is presented below: <br  />
+ Here a 3-1-1 node configuration graph can be seen. The blue states represent the dead states. The green are the alive states. and the grey is the unvisited state. We are investigating the fastest way to reach the goal (g) state.<br  />
+ It must be noted that depending on the route the robot takes to reach to node c, the joint configuration in that node will be different, thus, the cost of the c-&gt;g edge is different according to the robot´s hystogram. <br  />
+ This is taken into accound in the path planning. And this is only further complicated by the existance of more incomming neighbours to the goal state.</p>
+<div class="image">
+<img src="https://raw.githubusercontent.com/GuillermoPresa/AutomatedLatticeAssemblyDocs/main/docs/Images/3-1-1_NodeGraph.png" alt=""/>
+<div class="caption">
+3-1-1 Node Graph</div></div>
+<p ><br  />
+ <br  />
+</p>
+<p >The _incomingNeighbourCostDictionary, stores for incomming neighbours, the previous node, inital <a class="el" href="class_pos_j.html">PosJ</a> and the cost to reach the goal node from the origin. <br  />
+ The incomming neighbours previous node, initial <a class="el" href="class_pos_j.html">PosJ</a> and cost to reach are stored in the form of a <a class="el" href="struct_illa_graph_node_1_1_cost_struct.html">CostStruct</a></p>
+<p >The structu PosJAndCost is utilized to store this information: <br  />
+ ComputeCostToReachFromOrigin populates this dictionary and structs and returns the path with the minimal cost. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c58815dfb87c59cf24adcdf3a24dfc6" name="a2c58815dfb87c59cf24adcdf3a24dfc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c58815dfb87c59cf24adcdf3a24dfc6">&#9670;&nbsp;</a></span>IllaGraphNode()</h2>
@@ -258,6 +292,23 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,82,157,109"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a7853b86ae96bb189df73071c935c4e9c" name="a7853b86ae96bb189df73071c935c4e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7853b86ae96bb189df73071c935c4e9c">&#9670;&nbsp;</a></span>ComputeCostToReachFromOrigin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraphNode.ComputeCostToReachFromOrigin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -426,7 +477,7 @@ Here is the caller graph for this function:</div>
 <map name="aclass_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph" id="aclass_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef_icgraph">
 <area shape="rect" title=" " alt="" coords="493,5,676,47"/>
 <area shape="rect" href="class_illa_graph.html#adf602d79b553173ec449a8659d57b410" title=" " alt="" coords="227,13,445,39"/>
-<area shape="rect" href="class_illa_graph.html#af2834308c0d4ffdebe6f3a0f3d86865b" title=" " alt="" coords="5,13,179,39"/>
+<area shape="rect" href="class_illa_graph.html#a216634c667161206181daf8d39dcf9a2" title=" " alt="" coords="5,13,179,39"/>
 </map>
 </div>
 
@@ -450,28 +501,42 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="acb367d587435c5c0929fd96d41f85aba" name="acb367d587435c5c0929fd96d41f85aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb367d587435c5c0929fd96d41f85aba">&#9670;&nbsp;</a></span>DistanceFromStartingNode</h2>
+<a id="ad10bdcd90870e22e6b41260777a72e7b" name="ad10bdcd90870e22e6b41260777a72e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10bdcd90870e22e6b41260777a72e7b">&#9670;&nbsp;</a></span>closestPreviousNode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float IllaGraphNode.DistanceFromStartingNode = (float)999999999</td>
+          <td class="memname"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> IllaGraphNode.closestPreviousNode = null</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a129f4b46c9f7cae6321d5fd20803e3eb" name="a129f4b46c9f7cae6321d5fd20803e3eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a129f4b46c9f7cae6321d5fd20803e3eb">&#9670;&nbsp;</a></span>PreviousVertex</h2>
+<a id="afd7263a51f0bdb3da2bfc7b3c3e5ada2" name="afd7263a51f0bdb3da2bfc7b3c3e5ada2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd7263a51f0bdb3da2bfc7b3c3e5ada2">&#9670;&nbsp;</a></span>costToReachFromStartingNode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> IllaGraphNode.PreviousVertex = null</td>
+          <td class="memname">float IllaGraphNode.costToReachFromStartingNode = (float)999999999</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a79df5c2a8e1d0d17c3e4052a6d9d9776" name="a79df5c2a8e1d0d17c3e4052a6d9d9776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79df5c2a8e1d0d17c3e4052a6d9d9776">&#9670;&nbsp;</a></span>estimatedCostFunctional</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraphNode.estimatedCostFunctional = (float)99999999999</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -493,6 +558,50 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a id="a20d6fd22f17e84da2f01473e45e90925" name="a20d6fd22f17e84da2f01473e45e90925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d6fd22f17e84da2f01473e45e90925">&#9670;&nbsp;</a></span>IncommingNeighbours</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IList&lt;<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&gt; IllaGraphNode.IncommingNeighbours</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2ff0fdf58a54640339642c6f2420ef1f" name="a2ff0fdf58a54640339642c6f2420ef1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff0fdf58a54640339642c6f2420ef1f">&#9670;&nbsp;</a></span>NeighbourCostDictionary</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dictionary&lt;<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, <a class="el" href="class_movement.html">Movement</a>&gt; IllaGraphNode.NeighbourCostDictionary</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aafa65da9e9ea72adf03f10fdbb5d43fb" name="aafa65da9e9ea72adf03f10fdbb5d43fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aafa65da9e9ea72adf03f10fdbb5d43fb">&#9670;&nbsp;</a></span>Neighbours</h2>
 
