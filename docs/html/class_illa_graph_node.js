@@ -1,7 +1,7 @@
 var class_illa_graph_node =
 [
     [ "CostStruct", "struct_illa_graph_node_1_1_cost_struct.html", "struct_illa_graph_node_1_1_cost_struct" ],
-    [ "IllaGraphNode", "class_illa_graph_node.html#a2c58815dfb87c59cf24adcdf3a24dfc6", null ],
+    [ "IllaGraphNode", "class_illa_graph_node.html#a7211b14dc30796fdecd736fa1f49989e", null ],
     [ "AddNeighbour", "class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc", null ],
     [ "Clear", "class_illa_graph_node.html#a3f4e900afbf7c330eeb9849944d149c6", null ],
     [ "ComputeCostToReachFromOrigin", "class_illa_graph_node.html#a7853b86ae96bb189df73071c935c4e9c", null ],
@@ -15,7 +15,8 @@ var class_illa_graph_node =
     [ "estimatedCostFunctional", "class_illa_graph_node.html#a79df5c2a8e1d0d17c3e4052a6d9d9776", null ],
     [ "visited", "class_illa_graph_node.html#ace8039c347b503ff2f20f0f014f8db2d", null ],
     [ "IncommingNeighbours", "class_illa_graph_node.html#a20d6fd22f17e84da2f01473e45e90925", null ],
-    [ "NeighbourCostDictionary", "class_illa_graph_node.html#a2ff0fdf58a54640339642c6f2420ef1f", null ],
+    [ "neighbourMovementDictionary", "class_illa_graph_node.html#a61d13fb39c644b44d7f22de0df5c915a", null ],
     [ "Neighbours", "class_illa_graph_node.html#aafa65da9e9ea72adf03f10fdbb5d43fb", null ],
+    [ "parentGraph", "class_illa_graph_node.html#a9c03a4ef6d6d21ca2894b1d153e6f058", null ],
     [ "Value", "class_illa_graph_node.html#a127a6a46d778aeb6ed1a4f363ef11c67", null ]
 ];

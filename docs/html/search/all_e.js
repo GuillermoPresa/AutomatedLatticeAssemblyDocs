@@ -4,7 +4,7 @@ var searchData=
   ['navigationpath_1',['NavigationPath',['../class_navigation_path.html',1,'']]],
   ['navmeshcolorlist_2',['NavMeshColorList',['../class_references.html#a7769ce43aa3124298d9aed48411796fd',1,'References']]],
   ['neighborinserttask_3',['NeighborInsertTask',['../class_neighbor_insert_task.html',1,'NeighborInsertTask'],['../class_neighbor_insert_task.html#aa7bdea7992401000cdfd3329198e48be',1,'NeighborInsertTask.NeighborInsertTask()']]],
-  ['neighbourcostdictionary_4',['NeighbourCostDictionary',['../class_illa_graph_node.html#a2ff0fdf58a54640339642c6f2420ef1f',1,'IllaGraphNode']]],
+  ['neighbourmovementdictionary_4',['neighbourMovementDictionary',['../class_illa_graph_node.html#a61d13fb39c644b44d7f22de0df5c915a',1,'IllaGraphNode']]],
   ['neighbours_5',['Neighbours',['../class_illa_graph_node.html#aafa65da9e9ea72adf03f10fdbb5d43fb',1,'IllaGraphNode.Neighbours()'],['../class_graph_node.html#ae5cc00b493c967d212963de93bb66189',1,'GraphNode.Neighbours()']]],
   ['nextjoint_6',['NextJoint',['../class_joint_script.html#ae734062ccd4a9d148158cbcc53ab597f',1,'JointScript']]],
   ['nextlattice_7',['NextLattice',['../class_spawner.html#ad49b175faa405e6baac27f682e464bf8',1,'Spawner']]],
