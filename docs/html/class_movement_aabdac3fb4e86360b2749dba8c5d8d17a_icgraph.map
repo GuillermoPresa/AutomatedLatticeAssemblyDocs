@@ -1,10 +1,5 @@
 <map id="Movement.costBasedOnAngleMovement" name="Movement.costBasedOnAngleMovement">
-<area shape="rect" id="node1" title=" " alt="" coords="760,78,957,119"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#ac3b5601f0f8952b5765ab864c6641a46" title=" " alt="" coords="517,56,712,83"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="520,107,709,149"/>
-<area shape="rect" id="node3" href="$class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6" title=" " alt="" coords="267,5,464,32"/>
-<area shape="rect" id="node4" href="$class_illa_graph.html#a7ac2ccc69b609f681b3e28f899e8e7c9" title=" " alt="" coords="261,56,469,83"/>
-<area shape="rect" id="node5" href="$class_illa_graph.html#a216634c667161206181daf8d39dcf9a2" title=" " alt="" coords="23,56,196,83"/>
-<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="275,107,455,149"/>
-<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,107,213,149"/>
+<area shape="rect" id="node1" title=" " alt="" coords="509,5,707,47"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#a5066635e98a01c4322da5bb8c1095de2" title=" " alt="" coords="227,13,461,39"/>
+<area shape="rect" id="node3" href="$class_illa_graph.html#abd8d7d4227661b992ec074dac72e76c2" title=" " alt="" coords="5,13,179,39"/>
 </map>

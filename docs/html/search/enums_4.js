@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_0',['Type',['../class_selected.html#aa27d1dd94887c63887fc51fcd1b80e38',1,'Selected']]]
+  ['operationmode_0',['OperationMode',['../namespace_space_navigator_driver.html#a22f4f0d3580f67525b9ee1f52d47ef4e',1,'SpaceNavigatorDriver']]]
 ];

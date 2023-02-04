@@ -17,6 +17,7 @@ var namespaces_dup =
       [ "transparency", "namespace_image_to_video.html#a55f4293053b62e557b43555f317ea911", null ]
     ] ],
     [ "MovementAndSensorDefinition", "namespace_movement_and_sensor_definition.html", "namespace_movement_and_sensor_definition" ],
+    [ "MStudio", "namespace_m_studio.html", "namespace_m_studio" ],
     [ "RTS_Cam", "namespace_r_t_s___cam.html", "namespace_r_t_s___cam" ],
     [ "SerializationElements", "namespace_serialization_elements.html", "namespace_serialization_elements" ],
     [ "SpaceNavigatorDriver", "namespace_space_navigator_driver.html", "namespace_space_navigator_driver" ],

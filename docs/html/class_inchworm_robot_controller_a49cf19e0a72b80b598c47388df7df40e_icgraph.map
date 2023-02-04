@@ -1,10 +1,11 @@
 <map id="InchwormRobotController.CurrentPosJ" name="InchwormRobotController.CurrentPosJ">
-<area shape="rect" id="node1" title=" " alt="" coords="787,136,957,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="787,169,957,211"/>
 <area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a434da4643498bd898d99a63678492ae4" title=" " alt="" coords="553,5,724,47"/>
 <area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a100dd9e46406eb831a6f8a71f3611939" title=" " alt="" coords="553,71,724,112"/>
 <area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#a307dd0c5be6478c36ec022d874f60dc7" title=" " alt="" coords="539,136,739,177"/>
 <area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="553,201,724,243"/>
 <area shape="rect" id="node10" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="544,267,733,308"/>
+<area shape="rect" id="node13" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="563,333,715,359"/>
 <area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="291,5,461,47"/>
 <area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#abb28346e2220380a514b0cc9ac9334ca" title=" " alt="" coords="291,71,461,112"/>
 <area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a170bd0f58a81dd7164c973138f8e1c53" title=" " alt="" coords="261,136,491,177"/>

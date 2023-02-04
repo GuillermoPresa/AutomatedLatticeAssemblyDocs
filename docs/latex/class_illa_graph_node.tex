@@ -32,9 +32,13 @@ void \mbox{\hyperlink{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6}{C
 \item 
 void \mbox{\hyperlink{class_illa_graph_node_a17bbcb583eda13d6f62f9fabcde44bef}{Reset\+Search\+Parameters}} ()
 \item 
+void \mbox{\hyperlink{class_illa_graph_node_a829203e841dcd579d7c7f0f96b954026}{Make\+Initial\+Node}} (\mbox{\hyperlink{class_pos_j}{PosJ}} starting\+Pose)
+\item 
 override bool \mbox{\hyperlink{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}{Equals}} (object other)
 \item 
 bool \mbox{\hyperlink{class_illa_graph_node_ad415df3fd267254b8e4d0693164282bc}{Add\+Neighbour}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} neighbour, \mbox{\hyperlink{class_movement}{Movement}} Target\+Movement)
+\item 
+void \mbox{\hyperlink{class_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039}{Discover\+Previous\+Nodes}} ()
 \item 
 bool \mbox{\hyperlink{class_illa_graph_node_a818a25e07a3d48dbf100600f8de89638}{Remove\+Neighbour}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} neighbour)
 \item 
@@ -42,7 +46,13 @@ bool \mbox{\hyperlink{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}{R
 \item 
 override string \mbox{\hyperlink{class_illa_graph_node_ae99e75a74c7d92ea88ec27f842d0181a}{To\+String}} ()
 \item 
+void \mbox{\hyperlink{class_illa_graph_node_a536aace3c5276651d6870f318f897e02}{Order\+Dictionary\+Reach\+From\+Origin}} ()
+\item 
 float \mbox{\hyperlink{class_illa_graph_node_a7853b86ae96bb189df73071c935c4e9c}{Compute\+Cost\+To\+Reach\+From\+Origin}} ()
+\item 
+void \mbox{\hyperlink{class_illa_graph_node_a45916d7fbe80e625282af61598c02fea}{Draw\+Costless\+Outgoing\+Edges}} ()
+\item 
+void \mbox{\hyperlink{class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85}{Draw\+Outgoing\+Edges\+With\+Cost}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} previous\+Node\+To\+Draw)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -56,6 +66,10 @@ static bool \mbox{\hyperlink{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c
 \item 
 bool \mbox{\hyperlink{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}{visited}} = false
 \item 
+bool \mbox{\hyperlink{class_illa_graph_node_a71296d4ee3c25014f9e0936456edcbc7}{is\+Starting\+Node}} = false
+\item 
+bool \mbox{\hyperlink{class_illa_graph_node_a34421db1e995a87ff81a3f74741e48b0}{is\+Goal\+Node}} = false
+\item 
 float \mbox{\hyperlink{class_illa_graph_node_afd7263a51f0bdb3da2bfc7b3c3e5ada2}{cost\+To\+Reach\+From\+Starting\+Node}} = (float)999999999
 \item 
 \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} \mbox{\hyperlink{class_illa_graph_node_ad10bdcd90870e22e6b41260777a72e7b}{closest\+Previous\+Node}} = null
@@ -65,15 +79,19 @@ float \mbox{\hyperlink{class_illa_graph_node_a79df5c2a8e1d0d17c3e4052a6d9d9776}{
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_illa_graph}{Illa\+Graph}} \mbox{\hyperlink{class_illa_graph_node_a9c03a4ef6d6d21ca2894b1d153e6f058}{parent\+Graph}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 Game\+Object \mbox{\hyperlink{class_illa_graph_node_a127a6a46d778aeb6ed1a4f363ef11c67}{Value}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}{Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_a8b420aa110e396aa178510be36ab2f1d}{neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_a20d6fd22f17e84da2f01473e45e90925}{Incomming\+Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\hyperlink{class_illa_graph_node_a878d7fb8673283c02dd4e5b7f3af717a}{incomming\+Neighbours}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Dictionary$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, \mbox{\hyperlink{class_movement}{Movement}} $>$ \mbox{\hyperlink{class_illa_graph_node_a61d13fb39c644b44d7f22de0df5c915a}{neighbour\+Movement\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\hyperlink{class_illa_graph}{Illa\+Graph}} \mbox{\hyperlink{class_illa_graph_node_a9c03a4ef6d6d21ca2894b1d153e6f058}{parent\+Graph}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Dictionary$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, List$<$ \mbox{\hyperlink{struct_illa_graph_node_1_1_cost_struct}{Cost\+Struct}} $>$ $>$ \mbox{\hyperlink{class_illa_graph_node_ab8d7fcb5dc27d4767a83832025d2ebd2}{incoming\+Neighbour\+Cost\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_illa_graph_node_a272391aa7445c44a1b5c3f0b62f03e8d}{incoming\+Neighbour\+Cost\+Dict\+Discovered}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
@@ -103,7 +121,12 @@ The \+\_\+incoming\+Neighbour\+Cost\+Dictionary, stores for incomming neighbours
  The incomming neighbours previous node, initial \mbox{\hyperlink{class_pos_j}{PosJ}} and cost to reach are stored in the form of a \mbox{\hyperlink{struct_illa_graph_node_1_1_cost_struct}{Cost\+Struct}}
 
 The structu Pos\+JAnd\+Cost is utilized to store this information\+: ~\newline
- Compute\+Cost\+To\+Reach\+From\+Origin populates this dictionary and structs and returns the path with the minimal cost. 
+ Compute\+Cost\+To\+Reach\+From\+Origin populates this dictionary and structs and returns the path with the minimal cost.
+
+\begin{DoxyWarning}{Warning}
+$\ast$\+Starting node has to be assigned an incomming cost struct with itself as the previous incomming node. This way the search algorithm can compute its initial cost. $\ast$ In essence the definition of the initial node can be that of a node whose previous node is itself (in a movement of zero cost). 
+\end{DoxyWarning}
+
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_illa_graph_node_a7211b14dc30796fdecd736fa1f49989e}\label{class_illa_graph_node_a7211b14dc30796fdecd736fa1f49989e}} 
@@ -148,7 +171,8 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=183pt]{class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -161,6 +185,59 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ComputeCostToReachFromOrigin()}{ComputeCostToReachFromOrigin()}}
 {\footnotesize\ttfamily float Illa\+Graph\+Node.\+Compute\+Cost\+To\+Reach\+From\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+!!!!!\+RN the incoming neigbours are either visited or have a populated prev node cost structu. Never both!!!!!!!!! (Since at first we look at the initial node so obvHere is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a7853b86ae96bb189df73071c935c4e9c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a7853b86ae96bb189df73071c935c4e9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039}\label{class_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039}} 
+\index{IllaGraphNode@{IllaGraphNode}!DiscoverPreviousNodes@{DiscoverPreviousNodes}}
+\index{DiscoverPreviousNodes@{DiscoverPreviousNodes}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{DiscoverPreviousNodes()}{DiscoverPreviousNodes()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Discover\+Previous\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_a45916d7fbe80e625282af61598c02fea}\label{class_illa_graph_node_a45916d7fbe80e625282af61598c02fea}} 
+\index{IllaGraphNode@{IllaGraphNode}!DrawCostlessOutgoingEdges@{DrawCostlessOutgoingEdges}}
+\index{DrawCostlessOutgoingEdges@{DrawCostlessOutgoingEdges}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{DrawCostlessOutgoingEdges()}{DrawCostlessOutgoingEdges()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Draw\+Costless\+Outgoing\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85}\label{class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85}} 
+\index{IllaGraphNode@{IllaGraphNode}!DrawOutgoingEdgesWithCost@{DrawOutgoingEdgesWithCost}}
+\index{DrawOutgoingEdgesWithCost@{DrawOutgoingEdgesWithCost}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{DrawOutgoingEdgesWithCost()}{DrawOutgoingEdgesWithCost()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Draw\+Outgoing\+Edges\+With\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{previous\+Node\+To\+Draw }\end{DoxyParamCaption})}
+
+\begin{DoxyWarning}{Warning}
+Requieres node to have been visited. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}\label{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4}} 
 \index{IllaGraphNode@{IllaGraphNode}!Equals@{Equals}}
 \index{Equals@{Equals}!IllaGraphNode@{IllaGraphNode}}
@@ -172,6 +249,20 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_node_a829203e841dcd579d7c7f0f96b954026}\label{class_illa_graph_node_a829203e841dcd579d7c7f0f96b954026}} 
+\index{IllaGraphNode@{IllaGraphNode}!MakeInitialNode@{MakeInitialNode}}
+\index{MakeInitialNode@{MakeInitialNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{MakeInitialNode()}{MakeInitialNode()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Make\+Initial\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{starting\+Pose }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a829203e841dcd579d7c7f0f96b954026_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c1427}\label{class_illa_graph_node_ac6a0f005a431c9f95af7fde2857c1427}} 
@@ -186,6 +277,22 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
 {\footnotesize\ttfamily static bool Illa\+Graph\+Node.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{obj1,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+\mbox{\Hypertarget{class_illa_graph_node_a536aace3c5276651d6870f318f897e02}\label{class_illa_graph_node_a536aace3c5276651d6870f318f897e02}} 
+\index{IllaGraphNode@{IllaGraphNode}!OrderDictionaryReachFromOrigin@{OrderDictionaryReachFromOrigin}}
+\index{OrderDictionaryReachFromOrigin@{OrderDictionaryReachFromOrigin}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{OrderDictionaryReachFromOrigin()}{OrderDictionaryReachFromOrigin()}}
+{\footnotesize\ttfamily void Illa\+Graph\+Node.\+Order\+Dictionary\+Reach\+From\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]OPTIMIAZTION\+: only compute the cost of the elements that are not already checked. \end{DoxyRefDesc}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_node_a536aace3c5276651d6870f318f897e02_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}\label{class_illa_graph_node_a87d68c4a225f8d1194c1f422c9b199a3}} 
 \index{IllaGraphNode@{IllaGraphNode}!RemoveAllNeighbours@{RemoveAllNeighbours}}
 \index{RemoveAllNeighbours@{RemoveAllNeighbours}!IllaGraphNode@{IllaGraphNode}}
@@ -211,7 +318,8 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ResetSearchParameters()}{ResetSearchParameters()}}
 {\footnotesize\ttfamily void Illa\+Graph\+Node.\+Reset\+Search\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -245,6 +353,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{estimatedCostFunctional}{estimatedCostFunctional}}
 {\footnotesize\ttfamily float Illa\+Graph\+Node.\+estimated\+Cost\+Functional = (float)99999999999}
 
+\mbox{\Hypertarget{class_illa_graph_node_a34421db1e995a87ff81a3f74741e48b0}\label{class_illa_graph_node_a34421db1e995a87ff81a3f74741e48b0}} 
+\index{IllaGraphNode@{IllaGraphNode}!isGoalNode@{isGoalNode}}
+\index{isGoalNode@{isGoalNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{isGoalNode}{isGoalNode}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+is\+Goal\+Node = false}
+
+\mbox{\Hypertarget{class_illa_graph_node_a71296d4ee3c25014f9e0936456edcbc7}\label{class_illa_graph_node_a71296d4ee3c25014f9e0936456edcbc7}} 
+\index{IllaGraphNode@{IllaGraphNode}!isStartingNode@{isStartingNode}}
+\index{isStartingNode@{isStartingNode}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{isStartingNode}{isStartingNode}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+is\+Starting\+Node = false}
+
 \mbox{\Hypertarget{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}\label{class_illa_graph_node_ace8039c347b503ff2f20f0f014f8db2d}} 
 \index{IllaGraphNode@{IllaGraphNode}!visited@{visited}}
 \index{visited@{visited}!IllaGraphNode@{IllaGraphNode}}
@@ -254,11 +374,23 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Property Documentation}
-\mbox{\Hypertarget{class_illa_graph_node_a20d6fd22f17e84da2f01473e45e90925}\label{class_illa_graph_node_a20d6fd22f17e84da2f01473e45e90925}} 
-\index{IllaGraphNode@{IllaGraphNode}!IncommingNeighbours@{IncommingNeighbours}}
-\index{IncommingNeighbours@{IncommingNeighbours}!IllaGraphNode@{IllaGraphNode}}
-\doxysubsubsection{\texorpdfstring{IncommingNeighbours}{IncommingNeighbours}}
-{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}$>$ Illa\+Graph\+Node.\+Incomming\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_illa_graph_node_a272391aa7445c44a1b5c3f0b62f03e8d}\label{class_illa_graph_node_a272391aa7445c44a1b5c3f0b62f03e8d}} 
+\index{IllaGraphNode@{IllaGraphNode}!incomingNeighbourCostDictDiscovered@{incomingNeighbourCostDictDiscovered}}
+\index{incomingNeighbourCostDictDiscovered@{incomingNeighbourCostDictDiscovered}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{incomingNeighbourCostDictDiscovered}{incomingNeighbourCostDictDiscovered}}
+{\footnotesize\ttfamily bool Illa\+Graph\+Node.\+incoming\+Neighbour\+Cost\+Dict\+Discovered\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_ab8d7fcb5dc27d4767a83832025d2ebd2}\label{class_illa_graph_node_ab8d7fcb5dc27d4767a83832025d2ebd2}} 
+\index{IllaGraphNode@{IllaGraphNode}!incomingNeighbourCostDictionary@{incomingNeighbourCostDictionary}}
+\index{incomingNeighbourCostDictionary@{incomingNeighbourCostDictionary}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{incomingNeighbourCostDictionary}{incomingNeighbourCostDictionary}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, List$<$\mbox{\hyperlink{struct_illa_graph_node_1_1_cost_struct}{Cost\+Struct}}$>$ $>$ Illa\+Graph\+Node.\+incoming\+Neighbour\+Cost\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_graph_node_a878d7fb8673283c02dd4e5b7f3af717a}\label{class_illa_graph_node_a878d7fb8673283c02dd4e5b7f3af717a}} 
+\index{IllaGraphNode@{IllaGraphNode}!incommingNeighbours@{incommingNeighbours}}
+\index{incommingNeighbours@{incommingNeighbours}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{incommingNeighbours}{incommingNeighbours}}
+{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}$>$ Illa\+Graph\+Node.\+incomming\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_graph_node_a61d13fb39c644b44d7f22de0df5c915a}\label{class_illa_graph_node_a61d13fb39c644b44d7f22de0df5c915a}} 
 \index{IllaGraphNode@{IllaGraphNode}!neighbourMovementDictionary@{neighbourMovementDictionary}}
@@ -266,11 +398,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{neighbourMovementDictionary}{neighbourMovementDictionary}}
 {\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}, \mbox{\hyperlink{class_movement}{Movement}}$>$ Illa\+Graph\+Node.\+neighbour\+Movement\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}\label{class_illa_graph_node_aafa65da9e9ea72adf03f10fdbb5d43fb}} 
-\index{IllaGraphNode@{IllaGraphNode}!Neighbours@{Neighbours}}
-\index{Neighbours@{Neighbours}!IllaGraphNode@{IllaGraphNode}}
-\doxysubsubsection{\texorpdfstring{Neighbours}{Neighbours}}
-{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}$>$ Illa\+Graph\+Node.\+Neighbours\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_illa_graph_node_a8b420aa110e396aa178510be36ab2f1d}\label{class_illa_graph_node_a8b420aa110e396aa178510be36ab2f1d}} 
+\index{IllaGraphNode@{IllaGraphNode}!neighbours@{neighbours}}
+\index{neighbours@{neighbours}!IllaGraphNode@{IllaGraphNode}}
+\doxysubsubsection{\texorpdfstring{neighbours}{neighbours}}
+{\footnotesize\ttfamily IList$<$\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}$>$ Illa\+Graph\+Node.\+neighbours\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_graph_node_a9c03a4ef6d6d21ca2894b1d153e6f058}\label{class_illa_graph_node_a9c03a4ef6d6d21ca2894b1d153e6f058}} 
 \index{IllaGraphNode@{IllaGraphNode}!parentGraph@{parentGraph}}

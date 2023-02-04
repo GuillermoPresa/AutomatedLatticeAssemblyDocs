@@ -1,5 +1,6 @@
 <map id="PosJ.PosJ" name="PosJ.PosJ">
-<area shape="rect" id="node1" title=" " alt="" coords="428,13,512,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="428,38,512,65"/>
 <area shape="rect" id="node2" href="$class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb" title=" " alt="" coords="227,13,380,39"/>
+<area shape="rect" id="node4" href="$class_pos_j.html#a7fc62b6256d78c83cfb5136427ea1efb" title=" " alt="" coords="239,63,367,90"/>
 <area shape="rect" id="node3" href="$class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="5,5,179,47"/>
 </map>

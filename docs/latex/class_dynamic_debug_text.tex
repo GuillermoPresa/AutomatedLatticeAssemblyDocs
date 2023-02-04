@@ -1,0 +1,306 @@
+\hypertarget{class_dynamic_debug_text}{}\doxysection{Dynamic\+Debug\+Text Class Reference}
+\label{class_dynamic_debug_text}\index{DynamicDebugText@{DynamicDebugText}}
+
+
+Inheritance diagram for Dynamic\+Debug\+Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_dynamic_debug_text__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dynamic\+Debug\+Text\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_dynamic_debug_text__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_a5ef0b781878188e25abc7f5080faa0eb}{Add\+Debug\+Item}} (Func$<$ string $>$ input\+Func, string item\+Name=null)
+\begin{DoxyCompactList}\small\item\em Adds a debug item.\end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_dynamic_debug_text_a4729b8bcd05f55a60cb1c7b7276615c0}{Remove\+Debug\+Item}} (string item\+Name)
+\item 
+virtual bool \mbox{\hyperlink{class_dynamic_debug_text_a1d27c8542a575450e9a78653bf4cd299}{Remove\+Debug\+Item}} (int item\+Index)
+\begin{DoxyCompactList}\small\item\em Removes a debug item.\end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_ac35c28651102eeaa18942900fa31c82e}{Update\+Spacing}} ()
+\begin{DoxyCompactList}\small\item\em Updates the spacing between Debug Items.\end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_a21ca69a920e6b05e04ba004ee92deaa5}{Set\+Debug\+Text\+Size}} (float input\+Size)
+\begin{DoxyCompactList}\small\item\em Sets the size of all Debug Items.\end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_af66be9d266e76cf2a5784e275e2b2123}{Set\+Debug\+Item\+Color}} (Color input\+Color)
+\begin{DoxyCompactList}\small\item\em Sets the color of all Debug Items.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_dynamic_debug_text_aeedde7588e2f0c9100c4a249223852ab}{Bill\+Board\+Text}} = true
+\item 
+Transform \mbox{\hyperlink{class_dynamic_debug_text_a2da9ac527c0e79ff3c71f67ca7efc454}{Debug\+Item\+Holder}}
+\item 
+Game\+Object \mbox{\hyperlink{class_dynamic_debug_text_a584dd95123fbaff8a371b321cde479c3}{Debug\+Item\+Prefab}}
+\item 
+Vector3 \mbox{\hyperlink{class_dynamic_debug_text_af50b63aa47c01a90cf68bae0d14b1b84}{Debug\+Items\+Offset}}
+\item 
+float \mbox{\hyperlink{class_dynamic_debug_text_a6e4d2932583bff97fc3ab0d83565dbca}{Debug\+Item\+Spacing}} = 0.\+5f
+\item 
+Color \mbox{\hyperlink{class_dynamic_debug_text_aea6a1fca4a244d29f130eaefd5735994}{Debug\+Item\+Color}} = Color.\+white
+\item 
+Camera \mbox{\hyperlink{class_dynamic_debug_text_aa21a6ec31bf5e1bc3ca2fe918afb800a}{Main\+Camera}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_a34aa283c3bffca7b8f5262c2e4986d1e}{Start}} ()
+\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_a985f57a40da1d3d9e9d0c356f494c262}{Update}} ()
+\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_ae438a2df900bced7823ecbd459ef519f}{Perform\+Debug\+Actions}} ()
+\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_afa4bed370825a4e6dfc7a6c72d405110}{Set\+Debug\+Items\+Visibility}} (bool input\+Value)
+\begin{DoxyCompactList}\small\item\em Sets Debug Items visibility.\end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_dynamic_debug_text_a023ab9c488721aff72406a5d1c700040}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Destroys all Debug Items.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_dynamic_debug_text_ae70b66a4df23a2fdef137fb7ab9ebd83}{Debugging}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dynamic_debug_text_a5ef0b781878188e25abc7f5080faa0eb}\label{class_dynamic_debug_text_a5ef0b781878188e25abc7f5080faa0eb}} 
+\index{DynamicDebugText@{DynamicDebugText}!AddDebugItem@{AddDebugItem}}
+\index{AddDebugItem@{AddDebugItem}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{AddDebugItem()}{AddDebugItem()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Add\+Debug\+Item (\begin{DoxyParamCaption}\item[{Func$<$ string $>$}]{input\+Func,  }\item[{string}]{item\+Name = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a debug item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Func} & The input function. {\bfseries{\mbox{\hyperlink{namespace_example}{Example}}}}\+: () =\texorpdfstring{$>$}{>} \{ return \char`\"{}\+Pos\+: \char`\"{}+Items\mbox{[}Index\mbox{]}.game\+Object.\+transform.\+position.\+To\+String(); \};\\
+\hline
+{\em item\+Name} & Name of the item.\\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dynamic_debug_text_a5ef0b781878188e25abc7f5080faa0eb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dynamic_debug_text_ae438a2df900bced7823ecbd459ef519f}\label{class_dynamic_debug_text_ae438a2df900bced7823ecbd459ef519f}} 
+\index{DynamicDebugText@{DynamicDebugText}!PerformDebugActions@{PerformDebugActions}}
+\index{PerformDebugActions@{PerformDebugActions}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{PerformDebugActions()}{PerformDebugActions()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Perform\+Debug\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dynamic_debug_text_ae438a2df900bced7823ecbd459ef519f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dynamic_debug_text_a1d27c8542a575450e9a78653bf4cd299}\label{class_dynamic_debug_text_a1d27c8542a575450e9a78653bf4cd299}} 
+\index{DynamicDebugText@{DynamicDebugText}!RemoveDebugItem@{RemoveDebugItem}}
+\index{RemoveDebugItem@{RemoveDebugItem}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{RemoveDebugItem()}{RemoveDebugItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bool Dynamic\+Debug\+Text.\+Remove\+Debug\+Item (\begin{DoxyParamCaption}\item[{int}]{item\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a debug item.
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Index} & Index of the item.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if item was found and removed, {\ttfamily false} otherwise.
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dynamic_debug_text_a1d27c8542a575450e9a78653bf4cd299_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dynamic_debug_text_a4729b8bcd05f55a60cb1c7b7276615c0}\label{class_dynamic_debug_text_a4729b8bcd05f55a60cb1c7b7276615c0}} 
+\index{DynamicDebugText@{DynamicDebugText}!RemoveDebugItem@{RemoveDebugItem}}
+\index{RemoveDebugItem@{RemoveDebugItem}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{RemoveDebugItem()}{RemoveDebugItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bool Dynamic\+Debug\+Text.\+Remove\+Debug\+Item (\begin{DoxyParamCaption}\item[{string}]{item\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dynamic_debug_text_a4729b8bcd05f55a60cb1c7b7276615c0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dynamic_debug_text_a023ab9c488721aff72406a5d1c700040}\label{class_dynamic_debug_text_a023ab9c488721aff72406a5d1c700040}} 
+\index{DynamicDebugText@{DynamicDebugText}!Reset@{Reset}}
+\index{Reset@{Reset}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Destroys all Debug Items.
+
+\mbox{\Hypertarget{class_dynamic_debug_text_af66be9d266e76cf2a5784e275e2b2123}\label{class_dynamic_debug_text_af66be9d266e76cf2a5784e275e2b2123}} 
+\index{DynamicDebugText@{DynamicDebugText}!SetDebugItemColor@{SetDebugItemColor}}
+\index{SetDebugItemColor@{SetDebugItemColor}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{SetDebugItemColor()}{SetDebugItemColor()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Set\+Debug\+Item\+Color (\begin{DoxyParamCaption}\item[{Color}]{input\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the color of all Debug Items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Color} & Color of the text.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_debug_text_afa4bed370825a4e6dfc7a6c72d405110}\label{class_dynamic_debug_text_afa4bed370825a4e6dfc7a6c72d405110}} 
+\index{DynamicDebugText@{DynamicDebugText}!SetDebugItemsVisibility@{SetDebugItemsVisibility}}
+\index{SetDebugItemsVisibility@{SetDebugItemsVisibility}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{SetDebugItemsVisibility()}{SetDebugItemsVisibility()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Set\+Debug\+Items\+Visibility (\begin{DoxyParamCaption}\item[{bool}]{input\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Sets Debug Items visibility.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Value} & If set to true, shows all Debug Items. Hides them otherwise.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_debug_text_a21ca69a920e6b05e04ba004ee92deaa5}\label{class_dynamic_debug_text_a21ca69a920e6b05e04ba004ee92deaa5}} 
+\index{DynamicDebugText@{DynamicDebugText}!SetDebugTextSize@{SetDebugTextSize}}
+\index{SetDebugTextSize@{SetDebugTextSize}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{SetDebugTextSize()}{SetDebugTextSize()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Set\+Debug\+Text\+Size (\begin{DoxyParamCaption}\item[{float}]{input\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the size of all Debug Items.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Size} & Size of the text.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_dynamic_debug_text_a34aa283c3bffca7b8f5262c2e4986d1e}\label{class_dynamic_debug_text_a34aa283c3bffca7b8f5262c2e4986d1e}} 
+\index{DynamicDebugText@{DynamicDebugText}!Start@{Start}}
+\index{Start@{Start}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_a985f57a40da1d3d9e9d0c356f494c262}\label{class_dynamic_debug_text_a985f57a40da1d3d9e9d0c356f494c262}} 
+\index{DynamicDebugText@{DynamicDebugText}!Update@{Update}}
+\index{Update@{Update}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dynamic_debug_text_a985f57a40da1d3d9e9d0c356f494c262_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dynamic_debug_text_ac35c28651102eeaa18942900fa31c82e}\label{class_dynamic_debug_text_ac35c28651102eeaa18942900fa31c82e}} 
+\index{DynamicDebugText@{DynamicDebugText}!UpdateSpacing@{UpdateSpacing}}
+\index{UpdateSpacing@{UpdateSpacing}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{UpdateSpacing()}{UpdateSpacing()}}
+{\footnotesize\ttfamily virtual void Dynamic\+Debug\+Text.\+Update\+Spacing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the spacing between Debug Items.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dynamic_debug_text_ac35c28651102eeaa18942900fa31c82e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dynamic_debug_text_aeedde7588e2f0c9100c4a249223852ab}\label{class_dynamic_debug_text_aeedde7588e2f0c9100c4a249223852ab}} 
+\index{DynamicDebugText@{DynamicDebugText}!BillBoardText@{BillBoardText}}
+\index{BillBoardText@{BillBoardText}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{BillBoardText}{BillBoardText}}
+{\footnotesize\ttfamily bool Dynamic\+Debug\+Text.\+Bill\+Board\+Text = true}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_aea6a1fca4a244d29f130eaefd5735994}\label{class_dynamic_debug_text_aea6a1fca4a244d29f130eaefd5735994}} 
+\index{DynamicDebugText@{DynamicDebugText}!DebugItemColor@{DebugItemColor}}
+\index{DebugItemColor@{DebugItemColor}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{DebugItemColor}{DebugItemColor}}
+{\footnotesize\ttfamily Color Dynamic\+Debug\+Text.\+Debug\+Item\+Color = Color.\+white}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_a2da9ac527c0e79ff3c71f67ca7efc454}\label{class_dynamic_debug_text_a2da9ac527c0e79ff3c71f67ca7efc454}} 
+\index{DynamicDebugText@{DynamicDebugText}!DebugItemHolder@{DebugItemHolder}}
+\index{DebugItemHolder@{DebugItemHolder}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{DebugItemHolder}{DebugItemHolder}}
+{\footnotesize\ttfamily Transform Dynamic\+Debug\+Text.\+Debug\+Item\+Holder}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_a584dd95123fbaff8a371b321cde479c3}\label{class_dynamic_debug_text_a584dd95123fbaff8a371b321cde479c3}} 
+\index{DynamicDebugText@{DynamicDebugText}!DebugItemPrefab@{DebugItemPrefab}}
+\index{DebugItemPrefab@{DebugItemPrefab}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{DebugItemPrefab}{DebugItemPrefab}}
+{\footnotesize\ttfamily Game\+Object Dynamic\+Debug\+Text.\+Debug\+Item\+Prefab}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_af50b63aa47c01a90cf68bae0d14b1b84}\label{class_dynamic_debug_text_af50b63aa47c01a90cf68bae0d14b1b84}} 
+\index{DynamicDebugText@{DynamicDebugText}!DebugItemsOffset@{DebugItemsOffset}}
+\index{DebugItemsOffset@{DebugItemsOffset}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{DebugItemsOffset}{DebugItemsOffset}}
+{\footnotesize\ttfamily Vector3 Dynamic\+Debug\+Text.\+Debug\+Items\+Offset}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_a6e4d2932583bff97fc3ab0d83565dbca}\label{class_dynamic_debug_text_a6e4d2932583bff97fc3ab0d83565dbca}} 
+\index{DynamicDebugText@{DynamicDebugText}!DebugItemSpacing@{DebugItemSpacing}}
+\index{DebugItemSpacing@{DebugItemSpacing}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{DebugItemSpacing}{DebugItemSpacing}}
+{\footnotesize\ttfamily float Dynamic\+Debug\+Text.\+Debug\+Item\+Spacing = 0.\+5f}
+
+\mbox{\Hypertarget{class_dynamic_debug_text_aa21a6ec31bf5e1bc3ca2fe918afb800a}\label{class_dynamic_debug_text_aa21a6ec31bf5e1bc3ca2fe918afb800a}} 
+\index{DynamicDebugText@{DynamicDebugText}!MainCamera@{MainCamera}}
+\index{MainCamera@{MainCamera}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{MainCamera}{MainCamera}}
+{\footnotesize\ttfamily Camera Dynamic\+Debug\+Text.\+Main\+Camera}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_dynamic_debug_text_ae70b66a4df23a2fdef137fb7ab9ebd83}\label{class_dynamic_debug_text_ae70b66a4df23a2fdef137fb7ab9ebd83}} 
+\index{DynamicDebugText@{DynamicDebugText}!Debugging@{Debugging}}
+\index{Debugging@{Debugging}!DynamicDebugText@{DynamicDebugText}}
+\doxysubsubsection{\texorpdfstring{Debugging}{Debugging}}
+{\footnotesize\ttfamily bool Dynamic\+Debug\+Text.\+Debugging\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Dynamic\+Debug\+Text/\+Scripts/\mbox{\hyperlink{_dynamic_debug_text_8cs}{Dynamic\+Debug\+Text.\+cs}}\end{DoxyCompactItemize}

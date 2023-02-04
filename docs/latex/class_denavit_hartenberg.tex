@@ -1,0 +1,439 @@
+\hypertarget{class_denavit_hartenberg}{}\doxysection{Denavit\+Hartenberg Class Reference}
+\label{class_denavit_hartenberg}\index{DenavitHartenberg@{DenavitHartenberg}}
+
+
+Inheritance diagram for Denavit\+Hartenberg\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_denavit_hartenberg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Denavit\+Hartenberg\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734}{Create\+Matrix}} ()
+\item 
+\mbox{\hyperlink{class_denavit_hartenberg_aa54a8af90320fa111ec74521eef41b23}{Denavit\+Hartenberg}} (\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} \mbox{\hyperlink{class_robot_script}{Robot\+Script}})
+\item 
+void \mbox{\hyperlink{class_denavit_hartenberg_a782acb7e2a97f669896a06434fa0aa13}{Update\+Joint\+Angles}} ()
+\item 
+double \mbox{\hyperlink{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993}{ci}} (int i)
+\item 
+double \mbox{\hyperlink{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34}{si}} (int i)
+\item 
+double \mbox{\hyperlink{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581}{cai}} (int i)
+\item 
+double \mbox{\hyperlink{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5}{sai}} (int i)
+\item 
+double \mbox{\hyperlink{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574}{cijk}} (int i, int j, int k)
+\item 
+double \mbox{\hyperlink{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa}{sijk}} (int i, int j, int k)
+\item 
+Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac}{Ai\+Trans\+Matrix}} (int i)
+\item 
+Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8}{T5\+Trans\+Matrix}} ()
+\item 
+Vector3 \mbox{\hyperlink{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4}{P5\+Gripper\+Vector}} ()
+\item 
+string \mbox{\hyperlink{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238}{Joint\+Name\+Stringbv}} (\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} Join\+DHpar\+Indx1)
+\item 
+override string \mbox{\hyperlink{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} \mbox{\hyperlink{class_denavit_hartenberg_a56b27198539a87f971cdbf1f9b751185}{robot\+Script}}
+\item 
+int \mbox{\hyperlink{class_denavit_hartenberg_aaa212e8483aaa8419904e0cac2baa463}{joint\+Count}} = 5
+\item 
+\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}\mbox{[},\mbox{]} \mbox{\hyperlink{class_denavit_hartenberg_a41f960579776b382ed85dbe8e50d3ac6}{DHMatrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a8dd175cb7713e27c4c0beed02009da0c}{Join1\+DHpar}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_aa813ff3383eede00413888a8b463ef1c}{Join2\+DHpar}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a5292cd6830f0e9bf6cdef3f351db3775}{Join3\+DHpar}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a322ac044f22af38566763bebc39d7ee4}{Join4\+DHpar}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a328bbca88308317c481b6f9ff6bca0a1}{Join5\+DHpar}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a8aa2b6029cba51b65cef275ef6ff9b7b}{qi}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_af2c293dc86f9f1f2ac7e0057a846537a}{alphai}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a0751035b2ed13bbbb0c71ab83961c62c}{ai}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} $>$ \mbox{\hyperlink{class_denavit_hartenberg_a92f569075b27cbad721f90affab1fad3}{di}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+\+: Guillermo Presa 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+\+: 01-\/2023 Denavit Hartenberg parameters. Tailored for this 5 axis robot. Some generalizations would be required to extend it to more general aplications. 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_denavit_hartenberg_aa54a8af90320fa111ec74521eef41b23}\label{class_denavit_hartenberg_aa54a8af90320fa111ec74521eef41b23}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!DenavitHartenberg@{DenavitHartenberg}}
+\index{DenavitHartenberg@{DenavitHartenberg}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{DenavitHartenberg()}{DenavitHartenberg()}}
+{\footnotesize\ttfamily Denavit\+Hartenberg.\+Denavit\+Hartenberg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}}}]{Robot\+Script }\end{DoxyParamCaption})}
+
+WIP. Work in progress. Automatically constructs the Denavit Hartenberg matrix given an ILLA robot script \begin{DoxyWarning}{Warning}
+Unfinished 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_aa54a8af90320fa111ec74521eef41b23_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac}\label{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!AiTransMatrix@{AiTransMatrix}}
+\index{AiTransMatrix@{AiTransMatrix}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{AiTransMatrix()}{AiTransMatrix()}}
+{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg.\+Ai\+Trans\+Matrix (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Returns the transformation matrix for the ith joint 
+\begin{DoxyParams}{Parameters}
+{\em i} & The joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transformation matrix for the ith joint
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581}\label{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!cai@{cai}}
+\index{cai@{cai}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{cai()}{cai()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+cai (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Returns the cosine of the ith relavie assembly angle alpha\+\_\+i 
+\begin{DoxyParams}{Parameters}
+{\em i} & The joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cosine of the ith assembly angle alpha\+\_\+i
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993}\label{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!ci@{ci}}
+\index{ci@{ci}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{ci()}{ci()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+ci (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Returns the cosine of the ith joint angle 
+\begin{DoxyParams}{Parameters}
+{\em i} & The joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cosine of the ith joint angle
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574}\label{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!cijk@{cijk}}
+\index{cijk@{cijk}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{cijk()}{cijk()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+cijk (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Returns the cosine of the sum of the ith, jth and kth joint angles 
+\begin{DoxyParams}{Parameters}
+{\em i} & The first joint number \\
+\hline
+{\em j} & The second joint number \\
+\hline
+{\em k} & The third joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cosine of the sum of the ith, jth and kth joint angles
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734}\label{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!CreateMatrix@{CreateMatrix}}
+\index{CreateMatrix@{CreateMatrix}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{CreateMatrix()}{CreateMatrix()}}
+{\footnotesize\ttfamily void Denavit\+Hartenberg.\+Create\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Matrix has 6 columns and joint\+Count rows. I, J, qi, alphai, ai, di Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238}\label{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!JointNameStringbv@{JointNameStringbv}}
+\index{JointNameStringbv@{JointNameStringbv}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{JointNameStringbv()}{JointNameStringbv()}}
+{\footnotesize\ttfamily string Denavit\+Hartenberg.\+Joint\+Name\+Stringbv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}}]{Join\+DHpar\+Indx1 }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4}\label{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!P5GripperVector@{P5GripperVector}}
+\index{P5GripperVector@{P5GripperVector}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{P5GripperVector()}{P5GripperVector()}}
+{\footnotesize\ttfamily Vector3 Denavit\+Hartenberg.\+P5\+Gripper\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the position of the gripper in the base frame \begin{DoxyReturn}{Returns}
+The position of the gripper in the base frame
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5}\label{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!sai@{sai}}
+\index{sai@{sai}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{sai()}{sai()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+sai (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Returns the sine of the ith relavie assembly angle alpha\+\_\+i 
+\begin{DoxyParams}{Parameters}
+{\em i} & The joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sine of the ith assembly angle alpha\+\_\+i
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34}\label{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!si@{si}}
+\index{si@{si}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{si()}{si()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+si (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+Returns the sine of the ith joint angle 
+\begin{DoxyParams}{Parameters}
+{\em i} & The joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sine of the ith joint angle
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa}\label{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!sijk@{sijk}}
+\index{sijk@{sijk}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{sijk()}{sijk()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+sijk (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Returns the sine of the sum of the ith, jth and kth joint angles 
+\begin{DoxyParams}{Parameters}
+{\em i} & The first joint number \\
+\hline
+{\em j} & The second joint number \\
+\hline
+{\em k} & The third joint number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sine of the sum of the ith, jth and kth joint angles
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8}\label{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!T5TransMatrix@{T5TransMatrix}}
+\index{T5TransMatrix@{T5TransMatrix}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{T5TransMatrix()}{T5TransMatrix()}}
+{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg.\+T5\+Trans\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9}\label{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!ToString@{ToString}}
+\index{ToString@{ToString}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Denavit\+Hartenberg.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_a782acb7e2a97f669896a06434fa0aa13}\label{class_denavit_hartenberg_a782acb7e2a97f669896a06434fa0aa13}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!UpdateJointAngles@{UpdateJointAngles}}
+\index{UpdateJointAngles@{UpdateJointAngles}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{UpdateJointAngles()}{UpdateJointAngles()}}
+{\footnotesize\ttfamily void Denavit\+Hartenberg.\+Update\+Joint\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the joint angles qi in the DH matrix
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_denavit_hartenberg_a41f960579776b382ed85dbe8e50d3ac6}\label{class_denavit_hartenberg_a41f960579776b382ed85dbe8e50d3ac6}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!DHMatrix@{DHMatrix}}
+\index{DHMatrix@{DHMatrix}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{DHMatrix}{DHMatrix}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} \mbox{[},\mbox{]} Denavit\+Hartenberg.\+DHMatrix}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_aaa212e8483aaa8419904e0cac2baa463}\label{class_denavit_hartenberg_aaa212e8483aaa8419904e0cac2baa463}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!jointCount@{jointCount}}
+\index{jointCount@{jointCount}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{jointCount}{jointCount}}
+{\footnotesize\ttfamily int Denavit\+Hartenberg.\+joint\+Count = 5}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a56b27198539a87f971cdbf1f9b751185}\label{class_denavit_hartenberg_a56b27198539a87f971cdbf1f9b751185}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!robotScript@{robotScript}}
+\index{robotScript@{robotScript}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{robotScript}{robotScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} Denavit\+Hartenberg.\+robot\+Script}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_denavit_hartenberg_a0751035b2ed13bbbb0c71ab83961c62c}\label{class_denavit_hartenberg_a0751035b2ed13bbbb0c71ab83961c62c}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!ai@{ai}}
+\index{ai@{ai}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{ai}{ai}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+ai\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_af2c293dc86f9f1f2ac7e0057a846537a}\label{class_denavit_hartenberg_af2c293dc86f9f1f2ac7e0057a846537a}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!alphai@{alphai}}
+\index{alphai@{alphai}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{alphai}{alphai}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+alphai\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a92f569075b27cbad721f90affab1fad3}\label{class_denavit_hartenberg_a92f569075b27cbad721f90affab1fad3}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!di@{di}}
+\index{di@{di}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{di}{di}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+di\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a8dd175cb7713e27c4c0beed02009da0c}\label{class_denavit_hartenberg_a8dd175cb7713e27c4c0beed02009da0c}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!Join1DHpar@{Join1DHpar}}
+\index{Join1DHpar@{Join1DHpar}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{Join1DHpar}{Join1DHpar}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+Join1\+DHpar\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_aa813ff3383eede00413888a8b463ef1c}\label{class_denavit_hartenberg_aa813ff3383eede00413888a8b463ef1c}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!Join2DHpar@{Join2DHpar}}
+\index{Join2DHpar@{Join2DHpar}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{Join2DHpar}{Join2DHpar}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+Join2\+DHpar\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a5292cd6830f0e9bf6cdef3f351db3775}\label{class_denavit_hartenberg_a5292cd6830f0e9bf6cdef3f351db3775}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!Join3DHpar@{Join3DHpar}}
+\index{Join3DHpar@{Join3DHpar}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{Join3DHpar}{Join3DHpar}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+Join3\+DHpar\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a322ac044f22af38566763bebc39d7ee4}\label{class_denavit_hartenberg_a322ac044f22af38566763bebc39d7ee4}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!Join4DHpar@{Join4DHpar}}
+\index{Join4DHpar@{Join4DHpar}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{Join4DHpar}{Join4DHpar}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+Join4\+DHpar\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a328bbca88308317c481b6f9ff6bca0a1}\label{class_denavit_hartenberg_a328bbca88308317c481b6f9ff6bca0a1}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!Join5DHpar@{Join5DHpar}}
+\index{Join5DHpar@{Join5DHpar}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{Join5DHpar}{Join5DHpar}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+Join5\+DHpar\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_denavit_hartenberg_a8aa2b6029cba51b65cef275ef6ff9b7b}\label{class_denavit_hartenberg_a8aa2b6029cba51b65cef275ef6ff9b7b}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!qi@{qi}}
+\index{qi@{qi}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{qi}{qi}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}}$>$ Denavit\+Hartenberg.\+qi\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Robot/\+ILLA (\+Inchworm locomotion lattice assembler)/\mbox{\hyperlink{_denavit_hartenberg_8cs}{Denavit\+Hartenberg.\+cs}}\end{DoxyCompactItemize}

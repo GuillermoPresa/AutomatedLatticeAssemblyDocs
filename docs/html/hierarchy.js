@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "ChituboxSTLParserClass", "class_chitubox_s_t_l_parser_class.html", null ],
     [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ],
+    [ "MStudio.ColorDesign", "class_m_studio_1_1_color_design.html", null ],
     [ "IllaGraphNode.CostStruct", "struct_illa_graph_node_1_1_cost_struct.html", null ],
     [ "Editor", null, [
       [ "DecalMeshHelperEditor", "class_decal_mesh_helper_editor.html", null ],
@@ -17,7 +18,8 @@ var hierarchy =
       [ "ImporterWindow", "class_importer_window.html", null ],
       [ "LayerSlider", "class_layer_slider.html", null ],
       [ "ObjectSavePopup", "class_object_save_popup.html", null ],
-      [ "TimeSlider", "class_time_slider.html", null ]
+      [ "TimeSlider", "class_time_slider.html", null ],
+      [ "UIToolsPopupWindows", "class_u_i_tools_popup_windows.html", null ]
     ] ],
     [ "Graph", "class_graph.html", null ],
     [ "SerializationElements.GridPosition", "class_serialization_elements_1_1_grid_position.html", null ],
@@ -60,33 +62,39 @@ var hierarchy =
       [ "TypeReferences.ClassTypeReference", "class_type_references_1_1_class_type_reference.html", null ]
     ] ],
     [ "UDictionaryTest.Key", "class_u_dictionary_test_1_1_key.html", null ],
+    [ "TextGizmos.LabelStruct", "struct_text_gizmos_1_1_label_struct.html", null ],
     [ "SerializationElements.Lattice", "class_serialization_elements_1_1_lattice.html", null ],
     [ "LatticeCollection", "class_lattice_collection.html", null ],
     [ "SpaceNavigatorDriver.Locks", "class_space_navigator_driver_1_1_locks.html", null ],
     [ "DensityMesh.MeshTriplet", "class_density_mesh_1_1_mesh_triplet.html", null ],
     [ "MonoBehaviour", null, [
+      [ "BasicTest", "class_basic_test.html", null ],
       [ "CameraMovement", "class_camera_movement.html", null ],
+      [ "CapsuleMover", "class_capsule_mover.html", null ],
       [ "ClearArea", "class_clear_area.html", null ],
       [ "CollisionSensor", "class_collision_sensor.html", null ],
+      [ "DenavitHartenberg", "class_denavit_hartenberg.html", null ],
+      [ "DynamicDebugText", "class_dynamic_debug_text.html", null ],
       [ "EdgeDrawingScript", "class_edge_drawing_script.html", null ],
       [ "EnvironmentManager", "class_environment_manager.html", null ],
       [ "Example.ExampleBehaviour", "class_example_1_1_example_behaviour.html", null ],
+      [ "ExtensionTest", "class_extension_test.html", null ],
       [ "GraphNode", "class_graph_node.html", null ],
       [ "IllaGraphNode", "class_illa_graph_node.html", null ],
       [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", null ],
       [ "InchwormRobotController", "class_inchworm_robot_controller.html", null ],
-      [ "JointScript", "class_joint_script.html", null ],
+      [ "JointClass", "class_joint_class.html", null ],
       [ "LatticeClass", "class_lattice_class.html", null ],
       [ "MaterialCollectionEnvironment", "class_material_collection_environment.html", null ],
       [ "MeshCombiner", "class_mesh_combiner.html", null ],
       [ "Modifications", "class_modifications.html", null ],
-      [ "MouseLatticeSelector", "class_mouse_lattice_selector.html", null ],
       [ "MovementScript", "class_movement_script.html", null ],
       [ "NodeClass", "class_node_class.html", null ],
       [ "NodeSensorScript", "class_node_sensor_script.html", null ],
       [ "ParentObjectScript", "class_parent_object_script.html", null ],
       [ "RTS_Cam.RTS_Camera", "class_r_t_s___cam_1_1_r_t_s___camera.html", null ],
       [ "References", "class_references.html", null ],
+      [ "RemoveItemTest", "class_remove_item_test.html", null ],
       [ "RobotBaseClass", "class_robot_base_class.html", [
         [ "RobotScript", "class_robot_script.html", null ]
       ] ],
@@ -94,16 +102,22 @@ var hierarchy =
       [ "RobotCoordinator", "class_robot_coordinator.html", null ],
       [ "Selected", "class_selected.html", null ],
       [ "SelectionScript", "class_selection_script.html", null ],
+      [ "SimplerCameraController", "class_simpler_camera_controller.html", null ],
       [ "Spawner", "class_spawner.html", null ],
       [ "SpawnerOverlay", "class_spawner_overlay.html", null ],
       [ "Spawning", "class_spawning.html", null ],
       [ "SphericalNodeSensor", "class_spherical_node_sensor.html", null ],
+      [ "TextGizmos", "class_text_gizmos.html", null ],
       [ "TimeManager", "class_time_manager.html", null ],
       [ "UDictionaryTest", "class_u_dictionary_test.html", null ]
     ] ],
     [ "NavigationPath", "class_navigation_path.html", null ],
     [ "SerializationElements.ObjectDocument", "class_serialization_elements_1_1_object_document.html", null ],
+    [ "PopupWindowContent", null, [
+      [ "UIToolsPopupFromObjectList", "class_u_i_tools_popup_from_object_list.html", null ]
+    ] ],
     [ "PropertyAttribute", null, [
+      [ "GetSetAttribute", "class_get_set_attribute.html", null ],
       [ "TypeReferences.ClassTypeConstraintAttribute", "class_type_references_1_1_class_type_constraint_attribute.html", [
         [ "TypeReferences.ClassExtendsAttribute", "class_type_references_1_1_class_extends_attribute.html", null ],
         [ "TypeReferences.ClassImplementsAttribute", "class_type_references_1_1_class_implements_attribute.html", null ]
@@ -111,6 +125,7 @@ var hierarchy =
       [ "UDictionary< TKey, TValue >.SplitAttribute", "class_u_dictionary_1_1_split_attribute.html", null ]
     ] ],
     [ "PropertyDrawer", null, [
+      [ "GetSetDrawer", "class_get_set_drawer.html", null ],
       [ "TypeReferences.ClassTypeReferencePropertyDrawer", "class_type_references_1_1_class_type_reference_property_drawer.html", null ]
     ] ],
     [ "RobotAbstractState", "class_robot_abstract_state.html", [
@@ -118,8 +133,12 @@ var hierarchy =
       [ "RobotWaitState", "class_robot_wait_state.html", null ],
       [ "RobotWalkState", "class_robot_walk_state.html", null ]
     ] ],
+    [ "ScriptableObject", null, [
+      [ "MStudio.ColorPalette", "class_m_studio_1_1_color_palette.html", null ]
+    ] ],
     [ "MovementAndSensorDefinition.SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", null ],
     [ "SerializationElements.SerializationResolution", "class_serialization_elements_1_1_serialization_resolution.html", null ],
+    [ "MStudio.StyleHierarchy", "class_m_studio_1_1_style_hierarchy.html", null ],
     [ "TabsBlock", "class_tabs_block.html", null ],
     [ "Task", "class_task.html", [
       [ "FollowPathTask", "class_follow_path_task.html", null ],
@@ -129,6 +148,8 @@ var hierarchy =
       [ "NeighborInsertTask", "class_neighbor_insert_task.html", null ],
       [ "YieldTask", "class_yield_task.html", null ]
     ] ],
+    [ "TextGizmoStyle", "class_text_gizmo_style.html", null ],
+    [ "References.TextureRenderingJobs", "struct_references_1_1_texture_rendering_jobs.html", null ],
     [ "UDictionary< Component, Vector3 >", "class_u_dictionary.html", [
       [ "UDictionaryTest.UDictionary3", "class_u_dictionary_test_1_1_u_dictionary3.html", null ]
     ] ],

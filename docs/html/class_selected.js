@@ -13,6 +13,8 @@ var class_selected =
     [ "IsSelectedInDropDown", "class_selected.html#a89b35a05e7876e68b9c9db06fcc99b7e", null ],
     [ "OnlyOnWhenOnTabInt", "class_selected.html#a2b5c8109d60d55b2caac3c087f92b026", null ],
     [ "OriginalColor", "class_selected.html#a41ea0f16479e35840085aa6a4a3c180f", null ],
+    [ "overrrideColor", "class_selected.html#a5d369e92ad43bd3c93f948ee356d7afa", null ],
     [ "RenderComponent", "class_selected.html#a85f79c3bfb4700b7e5ec49ce4c9585b6", null ],
-    [ "RendererObject", "class_selected.html#a4acc860b233783b5c8dda402c45c6343", null ]
+    [ "RendererObject", "class_selected.html#a4acc860b233783b5c8dda402c45c6343", null ],
+    [ "singleFrameOverride", "class_selected.html#a262a2a1751e1d5fdd28203f7bd447a8e", null ]
 ];

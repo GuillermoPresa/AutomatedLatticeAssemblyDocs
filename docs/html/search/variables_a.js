@@ -11,6 +11,7 @@ var searchData=
   ['joint5_8',['Joint5',['../class_inchworm_robot_controller.html#a6545d6c26a4fcb5cc78aa23c7702a72e',1,'InchwormRobotController']]],
   ['joint5angle_9',['Joint5Angle',['../class_pos_j.html#a98b7a8d2a9de94fa2c1117bd5649739d',1,'PosJ']]],
   ['jointcapsulecolliders_10',['JointCapsuleColliders',['../class_inchworm_robot_controller.html#af4ba978dba222ad49c05edacbaa1b1f1',1,'InchwormRobotController']]],
-  ['jointobjectparent_11',['JointObjectParent',['../class_joint_script.html#a7eaec584ce7d9270bafe2846ef02d5e0',1,'JointScript']]],
-  ['jointpose_12',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
+  ['jointcount_11',['jointCount',['../class_denavit_hartenberg.html#aaa212e8483aaa8419904e0cac2baa463',1,'DenavitHartenberg']]],
+  ['jointobjectparent_12',['JointObjectParent',['../class_joint_class.html#a8db4d54fb2d0f194c4a6ad47613df86e',1,'JointClass']]],
+  ['jointpose_13',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
 ];

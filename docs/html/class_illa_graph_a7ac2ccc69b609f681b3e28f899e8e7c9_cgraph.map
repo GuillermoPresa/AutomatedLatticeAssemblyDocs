@@ -1,7 +1,6 @@
 <map id="IllaGraph.DijkstraCostFunctional" name="IllaGraph.DijkstraCostFunctional">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,213,39"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#ac3b5601f0f8952b5765ab864c6641a46" title=" " alt="" coords="261,13,456,39"/>
-<area shape="rect" id="node3" href="$class_movement.html#aabdac3fb4e86360b2749dba8c5d8d17a" title=" " alt="" coords="504,5,701,47"/>
-<area shape="rect" id="node4" href="$class_pos_j.html#ad34358d7097fad2ccb516cac2fc2fa9f" title=" " alt="" coords="749,13,968,39"/>
-<area shape="rect" id="node5" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="1016,13,1151,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,213,73"/>
+<area shape="rect" id="node2" href="$class_illa_graph_node.html#a7853b86ae96bb189df73071c935c4e9c" title=" " alt="" coords="261,39,448,80"/>
+<area shape="rect" id="node3" href="$class_illa_graph_node.html#ae3350de7e61dd1f9698e7452447c5039" title=" " alt="" coords="496,5,701,47"/>
+<area shape="rect" id="node4" href="$class_illa_graph_node.html#a536aace3c5276651d6870f318f897e02" title=" " alt="" coords="500,71,697,112"/>
 </map>

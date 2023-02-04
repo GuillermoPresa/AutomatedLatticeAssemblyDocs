@@ -1,7 +1,7 @@
 <map id="InchwormRobotController.ForceJointAngle" name="InchwormRobotController.ForceJointAngle">
 <area shape="rect" id="node1" title=" " alt="" coords="5,51,176,93"/>
-<area shape="rect" id="node2" href="$class_joint_script.html#a74b80f3745fd5d662ad55c535807b040" title=" " alt="" coords="230,29,389,56"/>
+<area shape="rect" id="node2" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="231,29,388,56"/>
 <area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="224,81,395,122"/>
-<area shape="rect" id="node3" href="$class_joint_script.html#acc803a7009633a3a3d007d163e4605d6" title=" " alt="" coords="446,29,610,56"/>
+<area shape="rect" id="node3" href="$class_joint_class.html#a3cd6ea8e6602502cbe7700a1f86aba26" title=" " alt="" coords="447,29,609,56"/>
 <area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="443,81,613,122"/>
 </map>

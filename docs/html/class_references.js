@@ -1,5 +1,6 @@
 var class_references =
 [
+    [ "TextureRenderingJobs", "struct_references_1_1_texture_rendering_jobs.html", "struct_references_1_1_texture_rendering_jobs" ],
     [ "SortAndAddToObjectList", "class_references.html#a01a2db7007bf1cdf014c958da61a4172", null ],
     [ "Start", "class_references.html#afa18f3ec6ac4f878c28b3b4d66203270", null ],
     [ "Update", "class_references.html#a35e69fd2a60b35f1a70276b8d23f6056", null ],
@@ -15,6 +16,7 @@ var class_references =
     [ "GlobalObjectList", "class_references.html#a0b22854b70da902bfdb09255b698b1d7", null ],
     [ "GlobalParent", "class_references.html#a8acd7f49260322d1d1237dc35065b7aa", null ],
     [ "GlobalRobotList", "class_references.html#a563c6a2dafe11f79676629448417e0a4", null ],
+    [ "heatmapTexture", "class_references.html#ad09689e5e7c0b72181f061c4877604fd", null ],
     [ "InitialStructureMaterial", "class_references.html#a67ded95600ec59d53ba4b5bdcaa2b315", null ],
     [ "Lattice", "class_references.html#a3760c76d3c9ef01a6fac7e3e549184f2", null ],
     [ "LatticeBoundingBoxMesh", "class_references.html#af4a195a6edf4c8d2b65783c2e6222d05", null ],
@@ -27,6 +29,7 @@ var class_references =
     [ "ObjectCount", "class_references.html#aa8e873a41635ab94001b3f8bd0bf57c6", null ],
     [ "ObjectParentPrefab", "class_references.html#aad351d151e3aec04eca0d82d16cd39bc", null ],
     [ "ObjectsPath", "class_references.html#af78ba2e50d3f68e0323493c574eefdf3", null ],
+    [ "RenderingJobQueue", "class_references.html#a183bf8d1ecc6580326f829b6056ced32", null ],
     [ "RobotWorker", "class_references.html#aa13e3df440ffcbb539ff51e5d48737d8", null ],
     [ "SelectedEnvironmentIndex", "class_references.html#a582889e077f59d4fb05312eea9ef816d", null ],
     [ "StructureMaterial", "class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1", null ],

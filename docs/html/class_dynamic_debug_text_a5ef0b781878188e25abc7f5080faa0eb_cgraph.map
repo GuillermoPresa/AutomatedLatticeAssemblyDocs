@@ -1,0 +1,4 @@
+<map id="DynamicDebugText.AddDebugItem" name="DynamicDebugText.AddDebugItem">
+<area shape="rect" id="node1" title="Adds a debug item." alt="" coords="5,5,229,32"/>
+<area shape="rect" id="node2" href="$class_dynamic_debug_text.html#ac35c28651102eeaa18942900fa31c82e" title="Updates the spacing between Debug Items." alt="" coords="277,5,504,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="IllaGraph" name="IllaGraph">
+<area shape="rect" id="node1" title=" " alt="" coords="53,261,126,288"/>
+<area shape="rect" id="node2" href="$class_text_gizmos.html" title=" " alt="" coords="117,157,209,184"/>
+<area shape="rect" id="node3" title=" " alt="" coords="454,81,565,108"/>
+<area shape="rect" id="node4" href="$class_references.html" title=" " alt="" coords="346,157,433,184"/>
+<area shape="rect" id="node5" href="$class_environment_manager.html" title=" " alt="" coords="665,261,808,288"/>
+<area shape="rect" id="node10" href="$class_material_collection_environment.html" title=" " alt="" coords="708,157,904,184"/>
+<area shape="rect" id="node6" href="$class_default_environment.html" title=" " alt="" coords="928,157,1062,184"/>
+<area shape="rect" id="node7" href="$class_abstract_environment_class.html" title=" " alt="" coords="953,81,1128,108"/>
+<area shape="rect" id="node9" href="$class_moon_environment.html" title=" " alt="" coords="1086,157,1211,184"/>
+<area shape="rect" id="node8" title=" " alt="" coords="989,5,1092,32"/>
+</map>
