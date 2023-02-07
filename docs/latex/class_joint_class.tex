@@ -104,6 +104,10 @@ Vector3 \mbox{\hyperlink{class_joint_class_a99f65bc78ef96f30d4f097a31ebc6419}{Ba
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
+Vector3 \mbox{\hyperlink{class_joint_class_a4d5489f30c42d20c574243b200ed5cb9}{base\+Vect\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_a8bb3f5168d22dae15460b6b91b2f1a2e}{base\+Quat\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 Game\+Object \mbox{\hyperlink{class_joint_class_ac125931a4cd703f53a48e23150689467}{hierarchy\+Agnostic\+Next\+Node}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Game\+Object \mbox{\hyperlink{class_joint_class_a683e2cfcea6a7abcd47b1f19c139150c}{hierarchy\+Agnostic\+Previous\+Node}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
@@ -114,18 +118,58 @@ Vector3 \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\
 \item 
 Vector3 \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-Quaternion \mbox{\hyperlink{class_joint_class_a2b05048ffe74adf304052e4e46a6161c}{HARelative\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Quaternion \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Quaternion \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
+Quaternion \mbox{\hyperlink{class_joint_class_a5599284d81e99fc20e1566e0f3452ef4}{h\+AAbsolute\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 Quaternion \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_af5f1b1285f388d0a43a274c7443ecabe}{h\+AAbsolute\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Vector3 \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
+Quaternion \mbox{\hyperlink{class_joint_class_afe1d2edd3cf2058d4a30e6a1703f962b}{h\+ACurrent\+Orientation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 Quaternion \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_ab55dfddbfe955228483d4b1dda3607e8}{h\+ACurrent\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Vector3 \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_joint_class}{Joint\+Class}} controls the behaviour of the robot joints.
+
+\begin{DoxyWarning}{Warning}
+Outdated. HA hier agnostic absolute properties are wrong. The is\+Base criterion is not reliable in Hierarchy agnostic 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
+\hypertarget{class_joint_class_autotoc_md0}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md0}
+The assembly constraint of the joint is defined by the following properties\+:
+
+\mbox{\hyperlink{class_joint_class_a7fa77b5ff5029346a004632255672c3d}{assembly\+Position}} \+: Vector3 with (x,y,z) assembly constraint of the current node wrt base joint ~\newline
+\mbox{\hyperlink{class_joint_class_a867568b3ac94a93e8cb4b5979a45790e}{assembly\+Rotation}} \+: Vector3 with euler angles (x,y,z) of the assembly constraint of the current node wrt base joint. ~\newline
+ The assembly constraints are provided in {\bfseries{Hierarchy agnosntic}}, {\bfseries{Absolute frame}}. This is more convinient for the user when defining a robot as it allows to build the robot within Unity prefab editor and copy paste the assembly constraints. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
+\hypertarget{class_joint_class_autotoc_md1}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md1}
+The frame of the joint (position and orientation) can be defined with respect to the base joint (aboslute) or previous joint (relative)
+
+{\bfseries{Relative frame\+:}} The joint is defined in a relative frame, with respect to the previous joint. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}
+
+{\bfseries{Absolute frame\+:}} The joint is defined in a relative frame, with respect to the base joint. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md2}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md2}
+When the robot hierarchy is inverted, the next node and previous node to control will be different than that of the assembly definition.
+
+{\bfseries{Hierarchy agnostic (HA)\+:}} Hierachy agnostic properties are those that are not affected by the hierarchy inversion such that the next and previous node are always the same and dont change, always representing the assembly constraints. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}
+
+{\bfseries{Hierarchy dependent (HD)\+:}} Hierarchy dependent properties are those that are affected by the the hierarchy inversion such that the next and previous node swap after a hierarchy inversion. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md3}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md3}
 
 
 \doxysubsection{Member Function Documentation}
@@ -353,7 +397,7 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{IllaRobotControllerReference}{IllaRobotControllerReference}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} Joint\+Class.\+Illa\+Robot\+Controller\+Reference}
 
-\mbox{\hyperlink{class_joint_class}{Joint\+Class}} controls the behaviour of the robot joints. \mbox{\Hypertarget{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}\label{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}} 
+\mbox{\Hypertarget{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}\label{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}} 
 \index{JointClass@{JointClass}!IsBase@{IsBase}}
 \index{IsBase@{IsBase}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{IsBase}{IsBase}}
@@ -446,17 +490,53 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{assemblyRotationQuat}{assemblyRotationQuat}}
 {\footnotesize\ttfamily Quaternion Joint\+Class.\+assembly\+Rotation\+Quat\hspace{0.3cm}{\ttfamily [get]}}
 
+\mbox{\Hypertarget{class_joint_class_a8bb3f5168d22dae15460b6b91b2f1a2e}\label{class_joint_class_a8bb3f5168d22dae15460b6b91b2f1a2e}} 
+\index{JointClass@{JointClass}!baseQuatOffset@{baseQuatOffset}}
+\index{baseQuatOffset@{baseQuatOffset}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{baseQuatOffset}{baseQuatOffset}}
+{\footnotesize\ttfamily Vector3 Joint\+Class.\+base\+Quat\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a4d5489f30c42d20c574243b200ed5cb9}\label{class_joint_class_a4d5489f30c42d20c574243b200ed5cb9}} 
+\index{JointClass@{JointClass}!baseVectOffset@{baseVectOffset}}
+\index{baseVectOffset@{baseVectOffset}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{baseVectOffset}{baseVectOffset}}
+{\footnotesize\ttfamily Vector3 Joint\+Class.\+base\+Vect\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_af5f1b1285f388d0a43a274c7443ecabe}\label{class_joint_class_af5f1b1285f388d0a43a274c7443ecabe}} 
+\index{JointClass@{JointClass}!hAAbsoluteAssemblyPosition@{hAAbsoluteAssemblyPosition}}
+\index{hAAbsoluteAssemblyPosition@{hAAbsoluteAssemblyPosition}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hAAbsoluteAssemblyPosition}{hAAbsoluteAssemblyPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class.\+h\+AAbsolute\+Assembly\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a5599284d81e99fc20e1566e0f3452ef4}\label{class_joint_class_a5599284d81e99fc20e1566e0f3452ef4}} 
+\index{JointClass@{JointClass}!hAAbsoluteAssemblyRotation@{hAAbsoluteAssemblyRotation}}
+\index{hAAbsoluteAssemblyRotation@{hAAbsoluteAssemblyRotation}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hAAbsoluteAssemblyRotation}{hAAbsoluteAssemblyRotation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class.\+h\+AAbsolute\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_afe1d2edd3cf2058d4a30e6a1703f962b}\label{class_joint_class_afe1d2edd3cf2058d4a30e6a1703f962b}} 
+\index{JointClass@{JointClass}!hACurrentOrientation@{hACurrentOrientation}}
+\index{hACurrentOrientation@{hACurrentOrientation}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hACurrentOrientation}{hACurrentOrientation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class.\+h\+ACurrent\+Orientation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_ab55dfddbfe955228483d4b1dda3607e8}\label{class_joint_class_ab55dfddbfe955228483d4b1dda3607e8}} 
+\index{JointClass@{JointClass}!hACurrentPosition@{hACurrentPosition}}
+\index{hACurrentPosition@{hACurrentPosition}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hACurrentPosition}{hACurrentPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class.\+h\+ACurrent\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
 \mbox{\Hypertarget{class_joint_class_a16251669280600c4cf765ab808521723}\label{class_joint_class_a16251669280600c4cf765ab808521723}} 
 \index{JointClass@{JointClass}!hARelativeAssemblyPosition@{hARelativeAssemblyPosition}}
 \index{hARelativeAssemblyPosition@{hARelativeAssemblyPosition}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{hARelativeAssemblyPosition}{hARelativeAssemblyPosition}}
 {\footnotesize\ttfamily Vector3 Joint\+Class.\+h\+ARelative\+Assembly\+Position\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_joint_class_a2b05048ffe74adf304052e4e46a6161c}\label{class_joint_class_a2b05048ffe74adf304052e4e46a6161c}} 
-\index{JointClass@{JointClass}!HARelativeAssemblyRotation@{HARelativeAssemblyRotation}}
-\index{HARelativeAssemblyRotation@{HARelativeAssemblyRotation}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{HARelativeAssemblyRotation}{HARelativeAssemblyRotation}}
-{\footnotesize\ttfamily Quaternion Joint\+Class.\+HARelative\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}\label{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}} 
+\index{JointClass@{JointClass}!hARelativeAssemblyRotation@{hARelativeAssemblyRotation}}
+\index{hARelativeAssemblyRotation@{hARelativeAssemblyRotation}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hARelativeAssemblyRotation}{hARelativeAssemblyRotation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class.\+h\+ARelative\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_joint_class_ae04f07dda07185647379a126f4459e27}\label{class_joint_class_ae04f07dda07185647379a126f4459e27}} 
 \index{JointClass@{JointClass}!hDAbsoluteAssemblyPosition@{hDAbsoluteAssemblyPosition}}

@@ -1,9 +1,11 @@
 <map id="DenavitHartenberg.P5GripperVector" name="DenavitHartenberg.P5GripperVector">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,195,115"/>
-<area shape="rect" id="node2" href="$class_denavit_hartenberg.html#a436c4bb21d98a3c0597ae89d1a5cd5a8" title=" " alt="" coords="243,74,420,115"/>
-<area shape="rect" id="node3" href="$class_denavit_hartenberg.html#aade8fcd62f4676adc3fa6f81914f2aac" title=" " alt="" coords="468,74,643,115"/>
-<area shape="rect" id="node4" href="$class_denavit_hartenberg.html#aa405c599b417d4946dadeddf53426581" title=" " alt="" coords="691,5,839,32"/>
-<area shape="rect" id="node5" href="$class_denavit_hartenberg.html#a03c92a93f70c61b0905e6a0705c11993" title=" " alt="" coords="694,56,835,83"/>
-<area shape="rect" id="node6" href="$class_denavit_hartenberg.html#ae02001e94064c1e771ef731f8eab30e5" title=" " alt="" coords="691,107,839,133"/>
-<area shape="rect" id="node7" href="$class_denavit_hartenberg.html#ae06fc3a781219d077776879bf01ebb34" title=" " alt="" coords="694,157,835,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,125,195,166"/>
+<area shape="rect" id="node2" href="$class_denavit_hartenberg.html#a436c4bb21d98a3c0597ae89d1a5cd5a8" title=" " alt="" coords="243,125,420,166"/>
+<area shape="rect" id="node3" href="$class_denavit_hartenberg.html#aade8fcd62f4676adc3fa6f81914f2aac" title=" " alt="" coords="468,125,643,166"/>
+<area shape="rect" id="node4" href="$class_denavit_hartenberg.html#a2615ab09b4d828781f4917d930ad7732" title=" " alt="" coords="694,5,835,32"/>
+<area shape="rect" id="node5" href="$class_denavit_hartenberg.html#aa405c599b417d4946dadeddf53426581" title=" " alt="" coords="691,56,839,83"/>
+<area shape="rect" id="node6" href="$class_denavit_hartenberg.html#a03c92a93f70c61b0905e6a0705c11993" title=" " alt="" coords="694,107,835,133"/>
+<area shape="rect" id="node7" href="$class_denavit_hartenberg.html#a975f167e5b0c53f879cf32095c5ba93c" title=" " alt="" coords="694,157,835,184"/>
+<area shape="rect" id="node8" href="$class_denavit_hartenberg.html#ae02001e94064c1e771ef731f8eab30e5" title=" " alt="" coords="691,208,839,235"/>
+<area shape="rect" id="node9" href="$class_denavit_hartenberg.html#ae06fc3a781219d077776879bf01ebb34" title=" " alt="" coords="694,259,835,285"/>
 </map>

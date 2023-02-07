@@ -105,22 +105,24 @@ Collaboration diagram for JointClass:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_joint_class__coll__graph.png" border="0" usemap="#a_joint_class_coll__map" alt="Collaboration graph"/></div>
 <map name="a_joint_class_coll__map" id="a_joint_class_coll__map">
-<area shape="rect" title=" " alt="" coords="1996,263,2079,289"/>
-<area shape="rect" href="class_inchworm_robot_controller.html" title=" " alt="" coords="1565,353,1731,380"/>
-<area shape="rect" title=" " alt="" coords="1407,81,1518,108"/>
-<area shape="rect" href="class_selection_script.html" title=" " alt="" coords="1086,263,1197,289"/>
-<area shape="rect" href="class_spawner.html" title=" " alt="" coords="987,353,1059,380"/>
-<area shape="rect" href="class_references.html" title=" " alt="" coords="983,157,1070,184"/>
-<area shape="rect" href="class_environment_manager.html" title=" " alt="" coords="426,263,569,289"/>
-<area shape="rect" href="class_material_collection_environment.html" title=" " alt="" coords="339,157,535,184"/>
-<area shape="rect" href="class_text_gizmos.html" title=" " alt="" coords="1526,157,1618,184"/>
-<area shape="rect" href="class_collision_sensor.html" title=" " alt="" coords="1704,209,1816,236"/>
-<area shape="rect" href="class_illa_node_sensor_script.html" title=" " alt="" coords="1738,157,1881,184"/>
-<area shape="rect" href="class_illa_graph.html" title=" " alt="" coords="1475,263,1549,289"/>
-<area shape="rect" href="class_default_environment.html" title=" " alt="" coords="155,157,288,184"/>
-<area shape="rect" href="class_abstract_environment_class.html" title=" " alt="" coords="43,81,218,108"/>
-<area shape="rect" href="class_moon_environment.html" title=" " alt="" coords="5,157,131,184"/>
-<area shape="rect" title=" " alt="" coords="79,5,182,32"/>
+<area shape="rect" title=" " alt="" coords="117,263,200,289"/>
+<area shape="rect" href="class_inchworm_robot_controller.html" title=" " alt="" coords="479,353,646,380"/>
+<area shape="rect" title=" " alt="" coords="782,81,893,108"/>
+<area shape="rect" href="class_denavit_hartenberg.html" title=" " alt="" coords="1037,443,1163,469"/>
+<area shape="rect" href="class_selection_script.html" title=" " alt="" coords="849,263,959,289"/>
+<area shape="rect" href="class_spawner.html" title=" " alt="" coords="1049,353,1121,380"/>
+<area shape="rect" href="class_references.html" title=" " alt="" coords="1089,157,1175,184"/>
+<area shape="rect" href="class_environment_manager.html" title=" " alt="" coords="1578,263,1721,289"/>
+<area shape="rect" href="class_material_collection_environment.html" title=" " alt="" coords="1659,157,1855,184"/>
+<area shape="rect" href="class_text_gizmos.html" title=" " alt="" coords="473,157,565,184"/>
+<area shape="rect" href="class_collision_sensor.html" title=" " alt="" coords="655,209,767,236"/>
+<area shape="rect" href="class_illa_node_sensor_script.html" title=" " alt="" coords="74,157,217,184"/>
+<area shape="rect" title=" " alt="" coords="1145,353,1212,380"/>
+<area shape="rect" href="class_illa_graph.html" title=" " alt="" coords="675,263,749,289"/>
+<area shape="rect" href="class_default_environment.html" title=" " alt="" coords="1880,157,2013,184"/>
+<area shape="rect" href="class_abstract_environment_class.html" title=" " alt="" coords="1987,81,2162,108"/>
+<area shape="rect" href="class_moon_environment.html" title=" " alt="" coords="2139,157,2264,184"/>
+<area shape="rect" title=" " alt="" coords="2023,5,2126,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -209,6 +211,10 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a4d5489f30c42d20c574243b200ed5cb9"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a4d5489f30c42d20c574243b200ed5cb9">baseVectOffset</a><code> [get]</code></td></tr>
+<tr class="separator:a4d5489f30c42d20c574243b200ed5cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb3f5168d22dae15460b6b91b2f1a2e"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a8bb3f5168d22dae15460b6b91b2f1a2e">baseQuatOffset</a><code> [get]</code></td></tr>
+<tr class="separator:a8bb3f5168d22dae15460b6b91b2f1a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac125931a4cd703f53a48e23150689467"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#ac125931a4cd703f53a48e23150689467">hierarchyAgnosticNextNode</a><code> [get]</code></td></tr>
 <tr class="separator:ac125931a4cd703f53a48e23150689467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683e2cfcea6a7abcd47b1f19c139150c"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a683e2cfcea6a7abcd47b1f19c139150c">hierarchyAgnosticPreviousNode</a><code> [get]</code></td></tr>
@@ -219,20 +225,54 @@ Properties</h2></td></tr>
 <tr class="separator:a16251669280600c4cf765ab808521723"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52493eaa308fcf78059a7cdd7c414426"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a52493eaa308fcf78059a7cdd7c414426">hDRelativeAssemblyPosition</a><code> [get]</code></td></tr>
 <tr class="separator:a52493eaa308fcf78059a7cdd7c414426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b05048ffe74adf304052e4e46a6161c"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a2b05048ffe74adf304052e4e46a6161c">HARelativeAssemblyRotation</a><code> [get]</code></td></tr>
-<tr class="separator:a2b05048ffe74adf304052e4e46a6161c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1abeaee76f243b67145d4cf3c6d1a817"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a1abeaee76f243b67145d4cf3c6d1a817">hARelativeAssemblyRotation</a><code> [get]</code></td></tr>
+<tr class="separator:a1abeaee76f243b67145d4cf3c6d1a817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7583c0c9387456e3161c77c065e2517"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#ac7583c0c9387456e3161c77c065e2517">hDRelativeAssemblyRotation</a><code> [get]</code></td></tr>
 <tr class="separator:ac7583c0c9387456e3161c77c065e2517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5599284d81e99fc20e1566e0f3452ef4"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a5599284d81e99fc20e1566e0f3452ef4">hAAbsoluteAssemblyRotation</a><code> [get]</code></td></tr>
+<tr class="separator:a5599284d81e99fc20e1566e0f3452ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f9a4b50070af3f87fd48d324ba30c7a"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#a1f9a4b50070af3f87fd48d324ba30c7a">hDAbsoluteAssemblyRotation</a><code> [get]</code></td></tr>
 <tr class="separator:a1f9a4b50070af3f87fd48d324ba30c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f1b1285f388d0a43a274c7443ecabe"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#af5f1b1285f388d0a43a274c7443ecabe">hAAbsoluteAssemblyPosition</a><code> [get]</code></td></tr>
+<tr class="separator:af5f1b1285f388d0a43a274c7443ecabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04f07dda07185647379a126f4459e27"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#ae04f07dda07185647379a126f4459e27">hDAbsoluteAssemblyPosition</a><code> [get]</code></td></tr>
 <tr class="separator:ae04f07dda07185647379a126f4459e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1d2edd3cf2058d4a30e6a1703f962b"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#afe1d2edd3cf2058d4a30e6a1703f962b">hACurrentOrientation</a><code> [get]</code></td></tr>
+<tr class="separator:afe1d2edd3cf2058d4a30e6a1703f962b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb9deb2ba3a4695301a57854e3b4770"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#abeb9deb2ba3a4695301a57854e3b4770">hDCurrentOrientation</a><code> [get]</code></td></tr>
 <tr class="separator:abeb9deb2ba3a4695301a57854e3b4770"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab55dfddbfe955228483d4b1dda3607e8"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#ab55dfddbfe955228483d4b1dda3607e8">hACurrentPosition</a><code> [get]</code></td></tr>
+<tr class="separator:ab55dfddbfe955228483d4b1dda3607e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca3a9203cc20262b6ea6b10f95acdbac"><td class="memItemLeft" align="right" valign="top">Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joint_class.html#aca3a9203cc20262b6ea6b10f95acdbac">hDCurrentPosition</a><code> [get]</code></td></tr>
 <tr class="separator:aca3a9203cc20262b6ea6b10f95acdbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p ><a class="el" href="class_joint_class.html">JointClass</a> controls the behaviour of the robot joints.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Outdated. HA hier agnostic absolute properties are wrong. The isBase criterion is not reliable in Hierarchy agnostic </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>update this doc section. <a class="el" href="class_references.html">References</a> to fuinctions in the frame definition and hierarchy dependence stuff</dd></dl>
+<h2><a class="anchor" id="autotoc_md0"></a>
+Assembly definition</h2>
+<p >The assembly constraint of the joint is defined by the following properties:</p>
+<p ><a class="el" href="class_joint_class.html#a7fa77b5ff5029346a004632255672c3d">assemblyPosition</a> : Vector3 with (x,y,z) assembly constraint of the current node wrt base joint <br  />
+<a class="el" href="class_joint_class.html#a867568b3ac94a93e8cb4b5979a45790e">assemblyRotation</a> : Vector3 with euler angles (x,y,z) of the assembly constraint of the current node wrt base joint. <br  />
+ The assembly constraints are provided in <b>Hierarchy agnosntic</b>, <b>Absolute frame</b>. This is more convinient for the user when defining a robot as it allows to build the robot within Unity prefab editor and copy paste the assembly constraints. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.</dd></dl>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Frame definition</h2>
+<p >The frame of the joint (position and orientation) can be defined with respect to the base joint (aboslute) or previous joint (relative)</p>
+<p ><b>Relative frame:</b> The joint is defined in a relative frame, with respect to the previous joint. <br  />
+Used in: <a class="el" href="class_joint_class.html#a16251669280600c4cf765ab808521723">hARelativeAssemblyPosition</a>, <a class="el" href="class_joint_class.html#a1abeaee76f243b67145d4cf3c6d1a817">hARelativeAssemblyRotation</a>, <a class="el" href="class_joint_class.html#a52493eaa308fcf78059a7cdd7c414426">hDRelativeAssemblyPosition</a>, <a class="el" href="class_joint_class.html#ac7583c0c9387456e3161c77c065e2517">hDRelativeAssemblyRotation</a></p>
+<p ><b>Absolute frame:</b> The joint is defined in a relative frame, with respect to the base joint. <br  />
+Used in: <a class="el" href="class_joint_class.html#a1f9a4b50070af3f87fd48d324ba30c7a">hDAbsoluteAssemblyRotation</a>, <a class="el" href="class_joint_class.html#ae04f07dda07185647379a126f4459e27">hDAbsoluteAssemblyPosition</a>, <a class="el" href="class_joint_class.html#abeb9deb2ba3a4695301a57854e3b4770">hDCurrentOrientation</a>??, <a class="el" href="class_joint_class.html#aca3a9203cc20262b6ea6b10f95acdbac">hDCurrentPosition</a>??</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Hierarchy dependence</h2>
+<p >When the robot hierarchy is inverted, the next node and previous node to control will be different than that of the assembly definition.</p>
+<p ><b>Hierarchy agnostic (HA):</b> Hierachy agnostic properties are those that are not affected by the hierarchy inversion such that the next and previous node are always the same and dont change, always representing the assembly constraints. <br  />
+Used in: <a class="el" href="class_joint_class.html#a16251669280600c4cf765ab808521723">hARelativeAssemblyPosition</a>, <a class="el" href="class_joint_class.html#a1abeaee76f243b67145d4cf3c6d1a817">hARelativeAssemblyRotation</a></p>
+<p ><b>Hierarchy dependent (HD):</b> Hierarchy dependent properties are those that are affected by the the hierarchy inversion such that the next and previous node swap after a hierarchy inversion. <br  />
+Used in: <a class="el" href="class_joint_class.html#a52493eaa308fcf78059a7cdd7c414426">hDRelativeAssemblyPosition</a>, <a class="el" href="class_joint_class.html#ac7583c0c9387456e3161c77c065e2517">hDRelativeAssemblyRotation</a>, <a class="el" href="class_joint_class.html#a1f9a4b50070af3f87fd48d324ba30c7a">hDAbsoluteAssemblyRotation</a>, <a class="el" href="class_joint_class.html#ae04f07dda07185647379a126f4459e27">hDAbsoluteAssemblyPosition</a></p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Internal definitions</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae26948670feb55022cbe6b5b051d6c5f" name="ae26948670feb55022cbe6b5b051d6c5f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae26948670feb55022cbe6b5b051d6c5f">&#9670;&nbsp;</a></span>Clamp0360()</h2>
 
@@ -748,7 +788,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p ><a class="el" href="class_joint_class.html">JointClass</a> controls the behaviour of the robot joints. </p>
 
 </div>
 </div>
@@ -971,6 +1010,138 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a8bb3f5168d22dae15460b6b91b2f1a2e" name="a8bb3f5168d22dae15460b6b91b2f1a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb3f5168d22dae15460b6b91b2f1a2e">&#9670;&nbsp;</a></span>baseQuatOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 JointClass.baseQuatOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d5489f30c42d20c574243b200ed5cb9" name="a4d5489f30c42d20c574243b200ed5cb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d5489f30c42d20c574243b200ed5cb9">&#9670;&nbsp;</a></span>baseVectOffset</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 JointClass.baseVectOffset</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5f1b1285f388d0a43a274c7443ecabe" name="af5f1b1285f388d0a43a274c7443ecabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f1b1285f388d0a43a274c7443ecabe">&#9670;&nbsp;</a></span>hAAbsoluteAssemblyPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 JointClass.hAAbsoluteAssemblyPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5599284d81e99fc20e1566e0f3452ef4" name="a5599284d81e99fc20e1566e0f3452ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5599284d81e99fc20e1566e0f3452ef4">&#9670;&nbsp;</a></span>hAAbsoluteAssemblyRotation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion JointClass.hAAbsoluteAssemblyRotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afe1d2edd3cf2058d4a30e6a1703f962b" name="afe1d2edd3cf2058d4a30e6a1703f962b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1d2edd3cf2058d4a30e6a1703f962b">&#9670;&nbsp;</a></span>hACurrentOrientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion JointClass.hACurrentOrientation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab55dfddbfe955228483d4b1dda3607e8" name="ab55dfddbfe955228483d4b1dda3607e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab55dfddbfe955228483d4b1dda3607e8">&#9670;&nbsp;</a></span>hACurrentPosition</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 JointClass.hACurrentPosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a16251669280600c4cf765ab808521723" name="a16251669280600c4cf765ab808521723"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16251669280600c4cf765ab808521723">&#9670;&nbsp;</a></span>hARelativeAssemblyPosition</h2>
 
@@ -993,8 +1164,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a2b05048ffe74adf304052e4e46a6161c" name="a2b05048ffe74adf304052e4e46a6161c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b05048ffe74adf304052e4e46a6161c">&#9670;&nbsp;</a></span>HARelativeAssemblyRotation</h2>
+<a id="a1abeaee76f243b67145d4cf3c6d1a817" name="a1abeaee76f243b67145d4cf3c6d1a817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1abeaee76f243b67145d4cf3c6d1a817">&#9670;&nbsp;</a></span>hARelativeAssemblyRotation</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1003,7 +1174,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Quaternion JointClass.HARelativeAssemblyRotation</td>
+          <td class="memname">Quaternion JointClass.hARelativeAssemblyRotation</td>
         </tr>
       </table>
   </td>

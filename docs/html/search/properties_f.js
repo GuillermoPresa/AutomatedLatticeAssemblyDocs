@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qi_0',['qi',['../class_denavit_hartenberg.html#a8aa2b6029cba51b65cef275ef6ff9b7b',1,'DenavitHartenberg']]]
+  ['qlist_0',['qList',['../class_denavit_hartenberg.html#aee6f998897b452201989a38caa4478c7',1,'DenavitHartenberg']]]
 ];

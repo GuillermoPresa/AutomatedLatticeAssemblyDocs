@@ -12,10 +12,11 @@ var searchData=
   ['addpackage_9',['AddPackage',['../class_work_package.html#ae624e21d2fd51879c0b0b35def8272b2',1,'WorkPackage']]],
   ['addposj_10',['AddPosJ',['../class_movement.html#a47e2906baf3b92be8fbd054231192ca4',1,'Movement']]],
   ['addtoglobalmanagerreferences_11',['AddToGlobalManagerReferences',['../class_lattice_class.html#a57ce03db92ab6725c05cedcee6910829',1,'LatticeClass']]],
-  ['aitransmatrix_12',['AiTransMatrix',['../class_denavit_hartenberg.html#aade8fcd62f4676adc3fa6f81914f2aac',1,'DenavitHartenberg']]],
-  ['alllatticesinbounds_13',['AllLatticesInBounds',['../class_inchworm_robot_controller.html#a4213e697ae17789b06700c3bd3117b79',1,'InchwormRobotController']]],
-  ['alllatticesinrange_14',['AllLatticesInRange',['../class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb',1,'InchwormRobotController']]],
-  ['allnodesinrange_15',['AllNodesInRange',['../class_inchworm_robot_controller.html#a293f6f55b028e1fa15432f03eb92ecd0',1,'InchwormRobotController']]],
-  ['astarcostfunctional_16',['AStarCostFunctional',['../class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6',1,'IllaGraph']]],
-  ['awake_17',['Awake',['../class_importer_window.html#a96a78e7ba5c8f8025b6f81a9a853fcc2',1,'ImporterWindow']]]
+  ['ai_12',['ai',['../class_denavit_hartenberg.html#a2615ab09b4d828781f4917d930ad7732',1,'DenavitHartenberg']]],
+  ['aitransmatrix_13',['AiTransMatrix',['../class_denavit_hartenberg.html#aade8fcd62f4676adc3fa6f81914f2aac',1,'DenavitHartenberg']]],
+  ['alllatticesinbounds_14',['AllLatticesInBounds',['../class_inchworm_robot_controller.html#a4213e697ae17789b06700c3bd3117b79',1,'InchwormRobotController']]],
+  ['alllatticesinrange_15',['AllLatticesInRange',['../class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb',1,'InchwormRobotController']]],
+  ['allnodesinrange_16',['AllNodesInRange',['../class_inchworm_robot_controller.html#a293f6f55b028e1fa15432f03eb92ecd0',1,'InchwormRobotController']]],
+  ['astarcostfunctional_17',['AStarCostFunctional',['../class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6',1,'IllaGraph']]],
+  ['awake_18',['Awake',['../class_importer_window.html#a96a78e7ba5c8f8025b6f81a9a853fcc2',1,'ImporterWindow']]]
 ];

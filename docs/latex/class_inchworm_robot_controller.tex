@@ -60,7 +60,7 @@ void \mbox{\hyperlink{class_inchworm_robot_controller_ad1bc86743cc75c1da51c29540
 \item 
 \mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_inchworm_robot_controller_af0dfce4ef84abb88f868c1a47d515208}{Reach\+Target\+Node}} (Game\+Object Target\+Node, bool debug\+Gizmos=true)
 \item 
-void \mbox{\hyperlink{class_inchworm_robot_controller_ac08595e5345a5c6dc6d8a03d549e704a}{Iliukhin\+FKSolution}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Test\+PosJ)
+Vector3 \mbox{\hyperlink{class_inchworm_robot_controller_a60220e45d46a3a07dfc87452ce0328e2}{Fwd\+Kin\+DHparam\+GlobF}} ()
 \item 
 \mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_inchworm_robot_controller_a3c49dd64deb7528dd964a7efb1c45e06}{Iliukhin\+IKSolution}} (Game\+Object Target\+Node, bool debug\+Gizmos=true)
 \item 
@@ -114,6 +114,12 @@ bool \mbox{\hyperlink{class_inchworm_robot_controller_a3cf1c87be77138250182fd793
 bool \mbox{\hyperlink{class_inchworm_robot_controller_a3899e4b917cc64c3c94ab4b26c336d61}{Draw\+Outgoing\+Edges\+With\+Cost}} = false
 \item 
 bool \mbox{\hyperlink{class_inchworm_robot_controller_a20ba15542e2d1d22a941ddbead05a72d}{Draw\+Heatmap}} = false
+\item 
+Vector3 \mbox{\hyperlink{class_inchworm_robot_controller_aa8ff7e79a7d6e9794c34f1d59408a68f}{base\+Offset\+Vector}} = new Vector3()
+\item 
+Vector3 \mbox{\hyperlink{class_inchworm_robot_controller_a2a8218c511f07a3c4aef131fa4dbcbeb}{base\+Offset\+Quat}} = new Vector3()
+\item 
+\mbox{\hyperlink{class_denavit_hartenberg}{Denavit\+Hartenberg}} \mbox{\hyperlink{class_inchworm_robot_controller_aee0298ae104fe523bd31d37c19cb04d4}{dh\+Params}}
 \item 
 int \mbox{\hyperlink{class_inchworm_robot_controller_a79b0810263fd949a1cc79504a8a98c60}{max\+Thread\+Locking\+Time}} = 250
 \item 
@@ -427,12 +433,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_inchworm_robot_controller_a81f2e6fb04bd74422fd7747a0507f624_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_inchworm_robot_controller_ac08595e5345a5c6dc6d8a03d549e704a}\label{class_inchworm_robot_controller_ac08595e5345a5c6dc6d8a03d549e704a}} 
-\index{InchwormRobotController@{InchwormRobotController}!IliukhinFKSolution@{IliukhinFKSolution}}
-\index{IliukhinFKSolution@{IliukhinFKSolution}!InchwormRobotController@{InchwormRobotController}}
-\doxysubsubsection{\texorpdfstring{IliukhinFKSolution()}{IliukhinFKSolution()}}
-{\footnotesize\ttfamily void Inchworm\+Robot\+Controller.\+Iliukhin\+FKSolution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Test\+PosJ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_inchworm_robot_controller_a60220e45d46a3a07dfc87452ce0328e2}\label{class_inchworm_robot_controller_a60220e45d46a3a07dfc87452ce0328e2}} 
+\index{InchwormRobotController@{InchwormRobotController}!FwdKinDHparamGlobF@{FwdKinDHparamGlobF}}
+\index{FwdKinDHparamGlobF@{FwdKinDHparamGlobF}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{FwdKinDHparamGlobF()}{FwdKinDHparamGlobF()}}
+{\footnotesize\ttfamily Vector3 Inchworm\+Robot\+Controller.\+Fwd\+Kin\+DHparam\+GlobF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Kinnematic solution based on multiplication of the axis to axis transformation matrices developed from the Denavit-\/\+Hartenberg parameters.Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inchworm_robot_controller_a60220e45d46a3a07dfc87452ce0328e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inchworm_robot_controller_a60220e45d46a3a07dfc87452ce0328e2_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_inchworm_robot_controller_a3c49dd64deb7528dd964a7efb1c45e06}\label{class_inchworm_robot_controller_a3c49dd64deb7528dd964a7efb1c45e06}} 
 \index{InchwormRobotController@{InchwormRobotController}!IliukhinIKSolution@{IliukhinIKSolution}}
 \index{IliukhinIKSolution@{IliukhinIKSolution}!InchwormRobotController@{InchwormRobotController}}
@@ -444,7 +464,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \end{DoxyWarning}
 Based on\+:
 
-V.\+N. Iliukhin, K.\+B. Mitkovskii, D.\+A. Bizyanova, A.\+A. Akopyan, The Modeling of Inverse Kinematics for 5 DOF Manipulator, Procedia Engineering, Volume 176, 2017, Pages 498-\/505, ISSN 1877-\/7058, \href{https://doi.org/10.1016/j.proeng.2017.02.349}{\texttt{ https\+://doi.\+org/10.\+1016/j.\+proeng.\+2017.\+02.\+349}}. \mbox{\Hypertarget{class_inchworm_robot_controller_a98166ff4d0d281ef0f705e677b5b4c4f}\label{class_inchworm_robot_controller_a98166ff4d0d281ef0f705e677b5b4c4f}} 
+V.\+N. Iliukhin, K.\+B. Mitkovskii, D.\+A. Bizyanova, A.\+A. Akopyan, The Modeling of Inverse Kinematics for 5 DOF Manipulator, Procedia Engineering, Volume 176, 2017, Pages 498-\/505, ISSN 1877-\/7058, \href{https://doi.org/10.1016/j.proeng.2017.02.349}{\texttt{ https\+://doi.\+org/10.\+1016/j.\+proeng.\+2017.\+02.\+349}}. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_inchworm_robot_controller_a3c49dd64deb7528dd964a7efb1c45e06_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_inchworm_robot_controller_a98166ff4d0d281ef0f705e677b5b4c4f}\label{class_inchworm_robot_controller_a98166ff4d0d281ef0f705e677b5b4c4f}} 
 \index{InchwormRobotController@{InchwormRobotController}!IllaMesh@{IllaMesh}}
 \index{IllaMesh@{IllaMesh}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{IllaMesh()}{IllaMesh()}}
@@ -933,6 +960,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{BaseJointScript}{BaseJointScript}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_joint_class}{Joint\+Class}} Inchworm\+Robot\+Controller.\+Base\+Joint\+Script}
 
+\mbox{\Hypertarget{class_inchworm_robot_controller_a2a8218c511f07a3c4aef131fa4dbcbeb}\label{class_inchworm_robot_controller_a2a8218c511f07a3c4aef131fa4dbcbeb}} 
+\index{InchwormRobotController@{InchwormRobotController}!baseOffsetQuat@{baseOffsetQuat}}
+\index{baseOffsetQuat@{baseOffsetQuat}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{baseOffsetQuat}{baseOffsetQuat}}
+{\footnotesize\ttfamily Vector3 Inchworm\+Robot\+Controller.\+base\+Offset\+Quat = new Vector3()}
+
+\mbox{\Hypertarget{class_inchworm_robot_controller_aa8ff7e79a7d6e9794c34f1d59408a68f}\label{class_inchworm_robot_controller_aa8ff7e79a7d6e9794c34f1d59408a68f}} 
+\index{InchwormRobotController@{InchwormRobotController}!baseOffsetVector@{baseOffsetVector}}
+\index{baseOffsetVector@{baseOffsetVector}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{baseOffsetVector}{baseOffsetVector}}
+{\footnotesize\ttfamily Vector3 Inchworm\+Robot\+Controller.\+base\+Offset\+Vector = new Vector3()}
+
 \mbox{\Hypertarget{class_inchworm_robot_controller_ad2f7964897d9c6e2d4d401b9e469bfb3}\label{class_inchworm_robot_controller_ad2f7964897d9c6e2d4d401b9e469bfb3}} 
 \index{InchwormRobotController@{InchwormRobotController}!CheckForCollisionsOnce@{CheckForCollisionsOnce}}
 \index{CheckForCollisionsOnce@{CheckForCollisionsOnce}!InchwormRobotController@{InchwormRobotController}}
@@ -980,6 +1019,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{DHmat@{DHmat}!InchwormRobotController@{InchwormRobotController}}
 \doxysubsubsection{\texorpdfstring{DHmat}{DHmat}}
 {\footnotesize\ttfamily float \mbox{[},\mbox{]} Inchworm\+Robot\+Controller.\+DHmat = new float\mbox{[}4,6\mbox{]}}
+
+\mbox{\Hypertarget{class_inchworm_robot_controller_aee0298ae104fe523bd31d37c19cb04d4}\label{class_inchworm_robot_controller_aee0298ae104fe523bd31d37c19cb04d4}} 
+\index{InchwormRobotController@{InchwormRobotController}!dhParams@{dhParams}}
+\index{dhParams@{dhParams}!InchwormRobotController@{InchwormRobotController}}
+\doxysubsubsection{\texorpdfstring{dhParams}{dhParams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_denavit_hartenberg}{Denavit\+Hartenberg}} Inchworm\+Robot\+Controller.\+dh\+Params}
 
 \mbox{\Hypertarget{class_inchworm_robot_controller_a20ba15542e2d1d22a941ddbead05a72d}\label{class_inchworm_robot_controller_a20ba15542e2d1d22a941ddbead05a72d}} 
 \index{InchwormRobotController@{InchwormRobotController}!DrawHeatmap@{DrawHeatmap}}
