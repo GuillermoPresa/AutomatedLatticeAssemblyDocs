@@ -323,9 +323,23 @@ X\+: states ~\newline
 \doxysubsubsection{\texorpdfstring{Heatmap()}{Heatmap()}}
 {\footnotesize\ttfamily void Illa\+Graph.\+Heatmap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\begin{DoxyWarning}{Warning}
-\+: Must have searched a path 
-\end{DoxyWarning}
+Generates a heatmap on the nodes of the graph based on their cost to reach from starting node.
+
+This function generates a heatmap visualization on the nodes of a graph by assigning a color to each node based on its cost to reach from the starting node.
+
+It uses the Visited\+Nodes list to filter out the visited nodes of the graph, and then sorts the nodes based on their cost. After that, it assigns a heatmap color to each node based on its cost by using the get\+Heatmap\+Color\+By\+Value function from the UITools class. Finally, it overrides the color of the node\textquotesingle{}s parent Game\+Object with the generated heatmap color, and adds the heatmap texture to the rendering job queue of the reference\+Script\+Reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None.} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The graph must be initialized with nodes and edges before calling this function.
+\end{DoxyNote}
 \mbox{\Hypertarget{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd}\label{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd}} 
 \index{IllaGraph@{IllaGraph}!IsNodeVisited@{IsNodeVisited}}
 \index{IsNodeVisited@{IsNodeVisited}!IllaGraph@{IllaGraph}}

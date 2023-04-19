@@ -1,0 +1,10 @@
+<map id="IllaControllerV3.IsPoseColliding" name="IllaControllerV3.IsPoseColliding">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,208,123"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a8ef860f36dbe143f07937f3dad57aa5b" title=" " alt="" coords="270,5,445,47"/>
+<area shape="rect" id="node3" href="$class_collision_sensor.html#aedfbc18399b9dfd9b9ac4cb040de10d5" title=" " alt="" coords="256,71,459,98"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ac847777f5ba3184282fc7a946d654ca9" title=" " alt="" coords="265,122,449,149"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a1e2c29d983713ebff5420123395fa607" title=" " alt="" coords="271,173,444,215"/>
+<area shape="rect" id="node6" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="513,151,670,178"/>
+<area shape="rect" id="node8" href="$class_illa_controller_v3.html#a8fd6af7eead84415b892a86113da3257" title=" " alt="" coords="507,203,676,244"/>
+<area shape="rect" id="node7" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="724,151,905,178"/>
+</map>

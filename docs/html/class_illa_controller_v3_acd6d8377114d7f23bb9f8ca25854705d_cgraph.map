@@ -1,0 +1,5 @@
+<map id="IllaControllerV3.DrawRobotTargetConfig" name="IllaControllerV3.DrawRobotTargetConfig">
+<area shape="rect" id="node1" title=" " alt="" coords="5,51,181,93"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a4e9872c51a9f1cb104fb4905293eb795" title=" " alt="" coords="229,29,405,56"/>
+<area shape="rect" id="node3" href="$class_denavit_hartenberg_illa3.html#ac7145518189fc07793035a9d458c6acf" title=" " alt="" coords="230,81,405,122"/>
+</map>

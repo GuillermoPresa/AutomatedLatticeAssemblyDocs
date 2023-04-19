@@ -1,2 +1,94 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><meta http-equiv=Refresh content="0;url=html/index.html"></head></html>
+public void MoveToAngle(float TargetAngle, float AngularSpeedFactor)
+    {
+
+        //OUTRelativePosition = transform.position-IllaRobotControllerReference.BaseJointScript.transform.position;
+        OUTRelativePosition = hDRelativeAssemblyPosition;
+        OUTRelativeRotation = hDRelativeAssemblyRotation.eulerAngles;
+
+        OutAbsolutePosition = hDAbsoluteAssemblyPosition;
+        OUTAbsoluteRotation = hDAbsoluteAssemblyRotation.eulerAngles;
+
+
+        //if (IsInverted)
+        //{
+        //    TargetAngle = -TargetAngle;
+        //}
+
+
+        Quaternion PreviousJointLocalQuat = Quaternion.Euler(0, 0, 0);
+        Vector3 PreviousJointPosition = new Vector3(0, 0, 0);
+        Vector3 JointDifferenceVector = assemblyPosition;
+
+
+        float MaximumAngularRotation = AngularSpeedFactor * 3.14f / 180;
+        float AngularDifference = (float)TargetAngle - (float)CurrentAngle;
+        
+
+        float RotationInframe = 0;
+
+        if (Math.Abs(AngularDifference)<=Math.Abs(MaximumAngularRotation))
+        {
+            RotationInframe = AngularDifference + CurrentAngle;
+        }
+        else
+        {
+            RotationInframe = Math.Sign(AngularDifference) * MaximumAngularRotation + CurrentAngle;
+        }
+        //Thread.Sleep(25);
+
+        if (PreviousJoint != null)
+        {
+            if (PreviousJoint.GetComponent<JointClass>().IsBase)
+            {
+                //PreviousJointLocalQuat = PreviousJoint.transform.rotation * Quaternion.Inverse(PreviousJoint.GetComponent<JointClass>().BaseQuaternionOffset);
+
+                PreviousJointLocalQuat = PreviousJoint.GetComponent<JointClass>().hDCurrentOrientation * Quaternion.Inverse(PreviousJoint.GetComponent<JointClass>().BaseQuaternionOffset);
+            }
+            else
+            {
+                //PreviousJointLocalQuat = PreviousJoint.transform.rotation * Quaternion.Inverse(PreviousJoint.GetComponent<JointClass>().assemblyRotationQuat);
+
+                PreviousJointLocalQuat = PreviousJoint.GetComponent<JointClass>().hDCurrentOrientation *Quaternion.Inverse(PreviousJoint.GetComponent<JointClass>().assemblyRotationQuat);
+            }
+
+
+            PreviousJointPosition = PreviousJoint.transform.position;
+
+
+        }
+
+        if (IsBase) //Why do we have previous joint terms on the base???
+        {
+            JointObjectParent.transform.position = RobotObjectReference.transform.position + BaseVectorOffset;// + PreviousJointPosition + PreviousJointLocalQuat * JointDifferenceVector;
+            JointObjectParent.transform.rotation = BaseQuaternionOffset * hDRelativeAssemblyRotation * Quaternion.Euler(0, (float)RotationInframe, 0);
+        }
+        else
+        {
+            JointObjectParent.transform.position = PreviousJointPosition + PreviousJointLocalQuat * hDRelativeAssemblyPosition;
+
+            JointObjectParent.transform.position = PreviousJoint.GetComponent<JointClass>().hDCurrentPosition + PreviousJointLocalQuat * hDRelativeAssemblyPosition;
+
+            JointObjectParent.transform.position = hDCurrentPosition;
+
+            //DrawArrow.ForDebug(PreviousJointPosition, JointObjectParent.transform.position- PreviousJointPosition, Color.white, 0.02f, 15f);
+
+            Debug.Log(this+"hDCurrentOrientation: " + hDCurrentOrientation.eulerAngles);
+            DrawArrow.ForDebug(PreviousJointPosition, PreviousJoint.GetComponent<JointClass>().hDCurrentOrientation * hDRelativeAssemblyPosition, Color.white, 0.02f, 15f);
+
+
+            //JointObjectParent.transform.rotation =  (PreviousJointLocalQuat * assemblyRotationQuat) * Quaternion.Euler(0, (float)RotationInframe, 0);
+
+            //JointObjectParent.transform.rotation = (PreviousJoint.transform.rotation * hDRelativeAssemblyRotation) * Quaternion.Euler(0, (float)RotationInframe, 0);
+            //JointObjectParent.transform.rotation = (PreviousJoint.GetComponent<JointClass>().hDCurrentOrientation * hDRelativeAssemblyRotation) * Quaternion.Euler(0, (float)RotationInframe, 0);
+            JointObjectParent.transform.rotation = hDCurrentOrientation;
+
+
+            //JointObjectParent.transform.rotation = (PreviousJoint.transform.rotation * Quaternion.Inverse(PreviousJoint.GetComponent<JointClass>().assemblyRotationQuat) * assemblyRotationQuat) * Quaternion.Euler(0, (float)RotationInframe, 0);
+
+        }
+
+        CurrentAngle = RotationInframe;
+        TargetSetTime = Time.time;
+
+        DrawAxisGizmos();
+    }

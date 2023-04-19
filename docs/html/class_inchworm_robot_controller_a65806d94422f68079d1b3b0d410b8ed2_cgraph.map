@@ -4,11 +4,11 @@
 <area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#ae0d31585a1de9d61559b15049639da8b" title=" " alt="" coords="230,81,401,122"/>
 <area shape="rect" id="node10" href="$class_inchworm_robot_controller.html#a100dd9e46406eb831a6f8a71f3611939" title=" " alt="" coords="230,146,401,187"/>
 <area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="455,81,625,122"/>
-<area shape="rect" id="node9" href="$class_joint_class.html#a33089e5b3e425a0e3aeea5e62424494f" title=" " alt="" coords="466,29,614,56"/>
+<area shape="rect" id="node9" href="$class_joint_class.html#aa7a0837248628938579dd5061b331d31" title=" " alt="" coords="466,29,614,56"/>
 <area shape="rect" id="node5" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="680,59,837,85"/>
 <area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="673,110,844,151"/>
-<area shape="rect" id="node6" href="$class_joint_class.html#a3cd6ea8e6602502cbe7700a1f86aba26" title=" " alt="" coords="896,59,1059,85"/>
-<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="892,110,1063,151"/>
+<area shape="rect" id="node6" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="892,59,1073,85"/>
+<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="897,110,1068,151"/>
 <area shape="rect" id="node11" href="$class_inchworm_robot_controller.html#a4213e697ae17789b06700c3bd3117b79" title=" " alt="" coords="455,146,625,187"/>
 <area shape="rect" id="node12" href="$class_inchworm_robot_controller.html#a49cf19e0a72b80b598c47388df7df40e" title=" " alt="" coords="455,211,625,253"/>
 <area shape="rect" id="node13" href="$class_inchworm_robot_controller.html#a98166ff4d0d281ef0f705e677b5b4c4f" title=" " alt="" coords="455,277,625,318"/>

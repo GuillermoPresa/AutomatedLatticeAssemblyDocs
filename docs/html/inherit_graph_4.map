@@ -1,12 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,183,108,209"/>
-<area shape="rect" id="node2" href="$class_abstract_environment_class.html" title=" " alt="" coords="156,31,331,57"/>
-<area shape="rect" id="node5" href="$class_control_window.html" title=" " alt="" coords="189,81,298,108"/>
-<area shape="rect" id="node6" href="$class_importer_window.html" title=" " alt="" coords="186,132,301,159"/>
-<area shape="rect" id="node7" href="$class_layer_slider.html" title=" " alt="" coords="200,183,287,209"/>
-<area shape="rect" id="node8" href="$class_object_save_popup.html" title=" " alt="" coords="181,233,306,260"/>
-<area shape="rect" id="node9" href="$class_time_slider.html" title=" " alt="" coords="202,284,285,311"/>
-<area shape="rect" id="node10" href="$class_u_i_tools_popup_windows.html" title=" " alt="" coords="166,335,321,361"/>
-<area shape="rect" id="node3" href="$class_default_environment.html" title=" " alt="" coords="379,5,512,32"/>
-<area shape="rect" id="node4" href="$class_moon_environment.html" title=" " alt="" coords="383,56,508,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,61,83"/>
+<area shape="rect" id="node2" href="$class_decal_mesh_helper_editor.html" title=" " alt="" coords="128,5,287,32"/>
+<area shape="rect" id="node3" href="$class_mesh_combiner_editor.html" title=" " alt="" coords="136,56,279,83"/>
+<area shape="rect" id="node4" href="$class_r_t_s___cam_1_1_r_t_s___camera_editor.html" title=" " alt="" coords="109,107,305,133"/>
 </map>

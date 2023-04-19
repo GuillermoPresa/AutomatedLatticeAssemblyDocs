@@ -1,4 +1,4 @@
 <map id="JointClass.RefreshJoint" name="JointClass.RefreshJoint">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,163,56"/>
-<area shape="rect" id="node2" href="$class_joint_class.html#a3cd6ea8e6602502cbe7700a1f86aba26" title=" " alt="" coords="211,29,373,56"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node2" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="211,5,392,32"/>
 </map>

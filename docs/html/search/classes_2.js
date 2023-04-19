@@ -11,9 +11,11 @@ var searchData=
   ['cleararea_8',['ClearArea',['../class_clear_area.html',1,'']]],
   ['collisiondetectionscene_9',['CollisionDetectionScene',['../class_collision_detection_scene.html',1,'']]],
   ['collisionsensor_10',['CollisionSensor',['../class_collision_sensor.html',1,'']]],
-  ['colordesign_11',['ColorDesign',['../class_m_studio_1_1_color_design.html',1,'MStudio']]],
-  ['coloredblock_12',['ColoredBlock',['../class_colored_block.html',1,'']]],
-  ['colorpalette_13',['ColorPalette',['../class_m_studio_1_1_color_palette.html',1,'MStudio']]],
-  ['controlwindow_14',['ControlWindow',['../class_control_window.html',1,'']]],
-  ['coststruct_15',['CostStruct',['../struct_illa_graph_node_1_1_cost_struct.html',1,'IllaGraphNode']]]
+  ['collisiontestresult_11',['CollisionTestResult',['../class_collision_test_result.html',1,'']]],
+  ['colordesign_12',['ColorDesign',['../class_m_studio_1_1_color_design.html',1,'MStudio']]],
+  ['coloredblock_13',['ColoredBlock',['../class_colored_block.html',1,'']]],
+  ['colorpalette_14',['ColorPalette',['../class_m_studio_1_1_color_palette.html',1,'MStudio']]],
+  ['computepenetrationcosttest_15',['ComputePenetrationCostTest',['../class_compute_penetration_cost_test.html',1,'']]],
+  ['controlwindow_16',['ControlWindow',['../class_control_window.html',1,'']]],
+  ['coststruct_17',['CostStruct',['../struct_illa_graph_node_1_1_cost_struct.html',1,'IllaGraphNode']]]
 ];

@@ -1,0 +1,6 @@
+<map id="JointClassIlla3.RefreshJoint" name="JointClassIlla3.RefreshJoint">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,185,73"/>
+<area shape="rect" id="node2" href="$class_joint_class_illa3.html#a263c79b35d78d5411befae39c0d44a16" title=" " alt="" coords="233,39,404,80"/>
+<area shape="rect" id="node3" href="$class_joint_class_illa3.html#a4fbf60505eaacecb2f14c7da06d2462b" title=" " alt="" coords="452,5,616,47"/>
+<area shape="rect" id="node4" href="$class_joint_class_illa3.html#a38727ca51248e9bd2f50687e5d859e0d" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="455,71,613,112"/>
+</map>

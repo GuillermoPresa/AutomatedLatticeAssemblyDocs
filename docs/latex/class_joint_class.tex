@@ -21,13 +21,9 @@ Collaboration diagram for Joint\+Class\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{class_joint_class_a1a80a5edc836c388ceb01ea2faae0e8f}{Draw\+Axis\+Gizmos}} ()
-\item 
-void \mbox{\hyperlink{class_joint_class_ac464df2c3a8b68a73bcc04a89b77631f}{Refresh\+Current\+Angle}} ()
+void \mbox{\hyperlink{class_joint_class_a41177ce4e2f96561bf3e4da5dc648525}{Rotate\+Joint}} (float Angle)
 \item 
 void \mbox{\hyperlink{class_joint_class_ae5925b66f76b519b3dca01efdeb5aff0}{Invert\+Hierarchy}} ()
-\item 
-void \mbox{\hyperlink{class_joint_class_a33089e5b3e425a0e3aeea5e62424494f}{Make\+Base}} ()
 \item 
 void \mbox{\hyperlink{class_joint_class_aa7a0837248628938579dd5061b331d31}{Make\+Base}} (Game\+Object Node)
 \item 
@@ -37,23 +33,14 @@ void \mbox{\hyperlink{class_joint_class_aa8beec144d7e7861c0838b6f5c6f6360}{Refre
 \item 
 void \mbox{\hyperlink{class_joint_class_a697f7bb3b81f22e2573759b12690782c}{Refresh\+Joint}} (float Movement\+Speed)
 \item 
-void \mbox{\hyperlink{class_joint_class_a3cd6ea8e6602502cbe7700a1f86aba26}{Move\+To\+Angle}} (float Target\+Angle)
-\item 
-void \mbox{\hyperlink{class_joint_class_af2c01228f95f2ef1c1a3ab067c48242b}{Move\+To\+Angle}} (float Target\+Angle, float Angular\+Speed\+Factor)
-\item 
-void \mbox{\hyperlink{class_joint_class_aa8262e85db2151ca9dda0259746043d9}{Rotate\+By\+Degrees}} (float Angle\+To\+Rotate)
-\item 
-bool \mbox{\hyperlink{class_joint_class_a823c0238b7e527902b1178f150e4ea5a}{Goal\+Reached}} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Static Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-static float \mbox{\hyperlink{class_joint_class_ae26948670feb55022cbe6b5b051d6c5f}{Clamp0360}} (float euler\+Angles)
+float \mbox{\hyperlink{class_joint_class_ab0b3a0e8258c21534b61276cae558522}{Rotation\+In\+Frame}} (float Target\+Angle, float Angular\+Speed\+Factor)
+\begin{DoxyCompactList}\small\item\em Calculates the rotation in a frame given a target angle and an angular speed factor. The function takes two parameters, the target angle and the angular speed factor. It calculates the maximum angular rotation based on the angular speed factor, calculates the angular difference between the target angle and the current angle, and calculates the rotation in the frame accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joint_class_a5af2c8505e84e2a92d17f8f44bd0557c}{HDMove\+To\+Angle}} (float Target\+Angle, float Angular\+Speed\+Factor)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} \mbox{\hyperlink{class_joint_class_aa879aafa21e0d774fb820229e57e590b}{Illa\+Robot\+Controller\+Reference}}
+\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} \mbox{\hyperlink{class_joint_class_a9f8342b5d5002a4fd38f5769620ca794}{Illa\+Robot\+Controller\+Reference}}
 \item 
 Game\+Object \mbox{\hyperlink{class_joint_class_ad6c83b38da47dc7b43afb2fc6dccb8e9}{Robot\+Object\+Reference}}
 \item 
@@ -65,17 +52,21 @@ Game\+Object \mbox{\hyperlink{class_joint_class_a8eabcc8b6c320d0fc9502c35ad14453
 \item 
 \mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} \mbox{\hyperlink{class_joint_class_a0412941b5c6e11522e81e04dbc2e15ce}{Node\+Sensor\+Script\+Reference}}
 \item 
-Game\+Object \mbox{\hyperlink{class_joint_class_a3b7c2bd09c927a6b7241fd4ceadd21d4}{Previous\+Joint}}
+Game\+Object \mbox{\hyperlink{class_joint_class_a882630b2977f0c7361f137b184ed3fba}{Stationary\+Part}}
 \item 
-Game\+Object \mbox{\hyperlink{class_joint_class_a1c60902aa46d1e1d7e43d8cb37bd7837}{Next\+Joint}}
+Game\+Object \mbox{\hyperlink{class_joint_class_a4ab932ea7860ae56bb5eb69b8f39328f}{Moving\+Part}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_a5e185acdfa2c5fe03208c3d27ec7f029}{\+\_\+previous\+Joint}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_a69e954b49fa9eb6c21d1bc4f0a70be6c}{\+\_\+next\+Joint}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_ad1ec34d032c1b9382e95407fc202e0fe}{is\+Assembly\+Base}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_ad5bb5b5ac95d2d9816feef456428ade2}{is\+Assembly\+Gripper}}
 \item 
 float \mbox{\hyperlink{class_joint_class_a390a0c67e18fbecfcdd401cb6f99ab44}{Target}}
 \item 
 bool \mbox{\hyperlink{class_joint_class_a9495b532589b68b1c210f6889dabac55}{Is\+Inverted}} = false
-\item 
-bool \mbox{\hyperlink{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}{Is\+Base}} = false
-\item 
-bool \mbox{\hyperlink{class_joint_class_a5e2ee1399d3ac0496df601c6f1351946}{Is\+Gripper}} = false
 \item 
 Game\+Object \mbox{\hyperlink{class_joint_class_aa8c76cf5f0e6d6f7e3f7769efeab43f1}{Clamped\+Node}}
 \item 
@@ -83,19 +74,11 @@ float \mbox{\hyperlink{class_joint_class_a0837c6693d39a845966f2a946d728633}{Curr
 \item 
 float \mbox{\hyperlink{class_joint_class_a6ff3b36d62600e79cbff29f059c61459}{Goal\+Angle}} = 0
 \item 
-float \mbox{\hyperlink{class_joint_class_a8ae6d6737a8cf4289acb86b05863701d}{Angular\+Velocity}} = 0.\+00000003f
+float \mbox{\hyperlink{class_joint_class_a8ae6d6737a8cf4289acb86b05863701d}{Angular\+Velocity}} = 0.\+00013f
 \item 
 Vector3 \mbox{\hyperlink{class_joint_class_a7fa77b5ff5029346a004632255672c3d}{assembly\+Position}} = new Vector3()
 \item 
 Vector3 \mbox{\hyperlink{class_joint_class_a867568b3ac94a93e8cb4b5979a45790e}{assembly\+Rotation}} = new Vector3()
-\item 
-Vector3 \mbox{\hyperlink{class_joint_class_adde8480a8778da6037e570824830be08}{OUTRelative\+Position}} = new Vector3()
-\item 
-Vector3 \mbox{\hyperlink{class_joint_class_acb06ec7e434047a2cd280015eff81833}{OUTRelative\+Rotation}} = new Vector3()
-\item 
-Vector3 \mbox{\hyperlink{class_joint_class_a88258397d1346c5f8b0d16d4c4f868bd}{Out\+Absolute\+Position}} = new Vector3()
-\item 
-Vector3 \mbox{\hyperlink{class_joint_class_a67bfcce687c4d379ba402e6c13821b6c}{OUTAbsolute\+Rotation}} = new Vector3()
 \item 
 Quaternion \mbox{\hyperlink{class_joint_class_a48478f077703813efdccc71e5c115955}{Base\+Quaternion\+Offset}} = Quaternion.\+identity
 \item 
@@ -106,11 +89,23 @@ Vector3 \mbox{\hyperlink{class_joint_class_a99f65bc78ef96f30d4f097a31ebc6419}{Ba
 \item 
 Vector3 \mbox{\hyperlink{class_joint_class_a4d5489f30c42d20c574243b200ed5cb9}{base\+Vect\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-Vector3 \mbox{\hyperlink{class_joint_class_a8bb3f5168d22dae15460b6b91b2f1a2e}{base\+Quat\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Quaternion \mbox{\hyperlink{class_joint_class_aafc5d6813f5c1df7da43c70465b154ae}{Base\+Quat\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-Game\+Object \mbox{\hyperlink{class_joint_class_ac125931a4cd703f53a48e23150689467}{hierarchy\+Agnostic\+Next\+Node}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Game\+Object \mbox{\hyperlink{class_joint_class_ad8e646f56fb8d4b5dc3c078d54bec362}{h\+ANext\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-Game\+Object \mbox{\hyperlink{class_joint_class_a683e2cfcea6a7abcd47b1f19c139150c}{hierarchy\+Agnostic\+Previous\+Node}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+Game\+Object \mbox{\hyperlink{class_joint_class_a3d4849acf79e256bdff3df5ee0085330}{h\+APrevious\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_a650257d4a99df738d4ddaac96caa5a9e}{h\+DNext\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_a7603b49099b1923608d1d13910ed87f5}{h\+DPrevious\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_ac3700cecd960e43cfbd2a216dd0170aa}{hd\+Is\+Base}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_a511916993c9f09adc3b1cbd7faca4f69}{ha\+Is\+Base}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_ae968efd4a508723a4985f18fe9036510}{ha\+Is\+Gripper}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_joint_class_a28ae9dd992e220cb6b9a19d5b05d3ae3}{Current\+Angle\+Signed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Quaternion \mbox{\hyperlink{class_joint_class_ae356a46603c508c9c81365742ed2c1d5}{assembly\+Rotation\+Quat}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
@@ -141,159 +136,95 @@ Vector3 \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\
 
 
 \doxysubsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]Add individual joint controls for speed, energy etc... 
+
+Clean the inspector. Make some things private variables. Use inspector atributes to make it clean and nice\end{DoxyRefDesc}
+
+
 \mbox{\hyperlink{class_joint_class}{Joint\+Class}} controls the behaviour of the robot joints.
 
 \begin{DoxyWarning}{Warning}
 Outdated. HA hier agnostic absolute properties are wrong. The is\+Base criterion is not reliable in Hierarchy agnostic 
 \end{DoxyWarning}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
-\hypertarget{class_joint_class_autotoc_md0}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md0}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
+\hypertarget{class_joint_class_autotoc_md4}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md4}
 The assembly constraint of the joint is defined by the following properties\+:
 
 \mbox{\hyperlink{class_joint_class_a7fa77b5ff5029346a004632255672c3d}{assembly\+Position}} \+: Vector3 with (x,y,z) assembly constraint of the current node wrt base joint ~\newline
 \mbox{\hyperlink{class_joint_class_a867568b3ac94a93e8cb4b5979a45790e}{assembly\+Rotation}} \+: Vector3 with euler angles (x,y,z) of the assembly constraint of the current node wrt base joint. ~\newline
  The assembly constraints are provided in {\bfseries{Hierarchy agnosntic}}, {\bfseries{Absolute frame}}. This is more convinient for the user when defining a robot as it allows to build the robot within Unity prefab editor and copy paste the assembly constraints. \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
-\hypertarget{class_joint_class_autotoc_md1}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md1}
+\item[\mbox{\hyperlink{todo__todo000015}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
+\hypertarget{class_joint_class_autotoc_md5}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md5}
 The frame of the joint (position and orientation) can be defined with respect to the base joint (aboslute) or previous joint (relative)
 
 {\bfseries{Relative frame\+:}} The joint is defined in a relative frame, with respect to the previous joint. ~\newline
 Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}
 
 {\bfseries{Absolute frame\+:}} The joint is defined in a relative frame, with respect to the base joint. ~\newline
-Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md2}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md2}
+Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md6}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md6}
 When the robot hierarchy is inverted, the next node and previous node to control will be different than that of the assembly definition.
 
 {\bfseries{Hierarchy agnostic (HA)\+:}} Hierachy agnostic properties are those that are not affected by the hierarchy inversion such that the next and previous node are always the same and dont change, always representing the assembly constraints. ~\newline
 Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}
 
 {\bfseries{Hierarchy dependent (HD)\+:}} Hierarchy dependent properties are those that are affected by the the hierarchy inversion such that the next and previous node swap after a hierarchy inversion. ~\newline
-Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md3}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md3}
+Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md7}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md7}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_joint_class_ae26948670feb55022cbe6b5b051d6c5f}\label{class_joint_class_ae26948670feb55022cbe6b5b051d6c5f}} 
-\index{JointClass@{JointClass}!Clamp0360@{Clamp0360}}
-\index{Clamp0360@{Clamp0360}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{Clamp0360()}{Clamp0360()}}
-{\footnotesize\ttfamily static float Joint\+Class.\+Clamp0360 (\begin{DoxyParamCaption}\item[{float}]{euler\+Angles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{class_joint_class_a5af2c8505e84e2a92d17f8f44bd0557c}\label{class_joint_class_a5af2c8505e84e2a92d17f8f44bd0557c}} 
+\index{JointClass@{JointClass}!HDMoveToAngle@{HDMoveToAngle}}
+\index{HDMoveToAngle@{HDMoveToAngle}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{HDMoveToAngle()}{HDMoveToAngle()}}
+{\footnotesize\ttfamily void Joint\+Class.\+HDMove\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_joint_class_a1a80a5edc836c388ceb01ea2faae0e8f}\label{class_joint_class_a1a80a5edc836c388ceb01ea2faae0e8f}} 
-\index{JointClass@{JointClass}!DrawAxisGizmos@{DrawAxisGizmos}}
-\index{DrawAxisGizmos@{DrawAxisGizmos}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{DrawAxisGizmos()}{DrawAxisGizmos()}}
-{\footnotesize\ttfamily void Joint\+Class.\+Draw\+Axis\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_joint_class_a1a80a5edc836c388ceb01ea2faae0e8f_icgraph}
+\includegraphics[width=350pt]{class_joint_class_a5af2c8505e84e2a92d17f8f44bd0557c_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_joint_class_a823c0238b7e527902b1178f150e4ea5a}\label{class_joint_class_a823c0238b7e527902b1178f150e4ea5a}} 
-\index{JointClass@{JointClass}!GoalReached@{GoalReached}}
-\index{GoalReached@{GoalReached}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{GoalReached()}{GoalReached()}}
-{\footnotesize\ttfamily bool Joint\+Class.\+Goal\+Reached (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{class_joint_class_ae5925b66f76b519b3dca01efdeb5aff0}\label{class_joint_class_ae5925b66f76b519b3dca01efdeb5aff0}} 
 \index{JointClass@{JointClass}!InvertHierarchy@{InvertHierarchy}}
 \index{InvertHierarchy@{InvertHierarchy}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{InvertHierarchy()}{InvertHierarchy()}}
 {\footnotesize\ttfamily void Joint\+Class.\+Invert\+Hierarchy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Inverts the hierarchy of the joint. This entails two parts\+:
-
-1) The previous joint and next joint are swapped around. 2) The current assembly rotation its updated to it\textquotesingle{}s correct value.
-
-Additionally the Is\+Inverted flag is set to the new status. Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_joint_class_ae5925b66f76b519b3dca01efdeb5aff0_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_joint_class_a33089e5b3e425a0e3aeea5e62424494f}\label{class_joint_class_a33089e5b3e425a0e3aeea5e62424494f}} 
-\index{JointClass@{JointClass}!MakeBase@{MakeBase}}
-\index{MakeBase@{MakeBase}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily void Joint\+Class.\+Make\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=191pt]{class_joint_class_a33089e5b3e425a0e3aeea5e62424494f_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_joint_class_a33089e5b3e425a0e3aeea5e62424494f_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_joint_class_aa7a0837248628938579dd5061b331d31}\label{class_joint_class_aa7a0837248628938579dd5061b331d31}} 
 \index{JointClass@{JointClass}!MakeBase@{MakeBase}}
 \index{MakeBase@{MakeBase}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Joint\+Class.\+Make\+Base (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=338pt]{class_joint_class_aa7a0837248628938579dd5061b331d31_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_joint_class_acbfea0921978f6e792149f7d6ee7d8bd}\label{class_joint_class_acbfea0921978f6e792149f7d6ee7d8bd}} 
-\index{JointClass@{JointClass}!MakeBase@{MakeBase}}
-\index{MakeBase@{MakeBase}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily void Joint\+Class.\+Make\+Base (\begin{DoxyParamCaption}\item[{Vector3}]{Additional\+Position\+Offset }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_joint_class_a3cd6ea8e6602502cbe7700a1f86aba26}\label{class_joint_class_a3cd6ea8e6602502cbe7700a1f86aba26}} 
-\index{JointClass@{JointClass}!MoveToAngle@{MoveToAngle}}
-\index{MoveToAngle@{MoveToAngle}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{MoveToAngle()}{MoveToAngle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Joint\+Class.\+Move\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle }\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=202pt]{class_joint_class_a3cd6ea8e6602502cbe7700a1f86aba26_cgraph}
+\includegraphics[width=191pt]{class_joint_class_aa7a0837248628938579dd5061b331d31_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_joint_class_a3cd6ea8e6602502cbe7700a1f86aba26_icgraph}
+\includegraphics[width=350pt]{class_joint_class_aa7a0837248628938579dd5061b331d31_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_joint_class_af2c01228f95f2ef1c1a3ab067c48242b}\label{class_joint_class_af2c01228f95f2ef1c1a3ab067c48242b}} 
-\index{JointClass@{JointClass}!MoveToAngle@{MoveToAngle}}
-\index{MoveToAngle@{MoveToAngle}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{MoveToAngle()}{MoveToAngle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void Joint\+Class.\+Move\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
-
-Sets the transform.\+position and transform.\+location of the joint according teh the position of the other joints in the robot.
-
-Takes into consideration the hierarchy of the robot and whether the nodes are inverted or not. Applies base offsets...... Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_joint_class_af2c01228f95f2ef1c1a3ab067c48242b_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_joint_class_ac464df2c3a8b68a73bcc04a89b77631f}\label{class_joint_class_ac464df2c3a8b68a73bcc04a89b77631f}} 
-\index{JointClass@{JointClass}!RefreshCurrentAngle@{RefreshCurrentAngle}}
-\index{RefreshCurrentAngle@{RefreshCurrentAngle}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{RefreshCurrentAngle()}{RefreshCurrentAngle()}}
-{\footnotesize\ttfamily void Joint\+Class.\+Refresh\+Current\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_joint_class_acbfea0921978f6e792149f7d6ee7d8bd}\label{class_joint_class_acbfea0921978f6e792149f7d6ee7d8bd}} 
+\index{JointClass@{JointClass}!MakeBase@{MakeBase}}
+\index{MakeBase@{MakeBase}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Joint\+Class.\+Make\+Base (\begin{DoxyParamCaption}\item[{Vector3}]{Additional\+Position\+Offset }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_joint_class_aa8beec144d7e7861c0838b6f5c6f6360}\label{class_joint_class_aa8beec144d7e7861c0838b6f5c6f6360}} 
 \index{JointClass@{JointClass}!RefreshJoint@{RefreshJoint}}
@@ -328,20 +259,59 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_joint_class_a697f7bb3b81f22e2573759b12690782c_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_joint_class_aa8262e85db2151ca9dda0259746043d9}\label{class_joint_class_aa8262e85db2151ca9dda0259746043d9}} 
-\index{JointClass@{JointClass}!RotateByDegrees@{RotateByDegrees}}
-\index{RotateByDegrees@{RotateByDegrees}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{RotateByDegrees()}{RotateByDegrees()}}
-{\footnotesize\ttfamily void Joint\+Class.\+Rotate\+By\+Degrees (\begin{DoxyParamCaption}\item[{float}]{Angle\+To\+Rotate }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_joint_class_a41177ce4e2f96561bf3e4da5dc648525}\label{class_joint_class_a41177ce4e2f96561bf3e4da5dc648525}} 
+\index{JointClass@{JointClass}!RotateJoint@{RotateJoint}}
+\index{RotateJoint@{RotateJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{RotateJoint()}{RotateJoint()}}
+{\footnotesize\ttfamily void Joint\+Class.\+Rotate\+Joint (\begin{DoxyParamCaption}\item[{float}]{Angle }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_joint_class_ab0b3a0e8258c21534b61276cae558522}\label{class_joint_class_ab0b3a0e8258c21534b61276cae558522}} 
+\index{JointClass@{JointClass}!RotationInFrame@{RotationInFrame}}
+\index{RotationInFrame@{RotationInFrame}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{RotationInFrame()}{RotationInFrame()}}
+{\footnotesize\ttfamily float Joint\+Class.\+Rotation\+In\+Frame (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
+
+
+
+Calculates the rotation in a frame given a target angle and an angular speed factor. The function takes two parameters, the target angle and the angular speed factor. It calculates the maximum angular rotation based on the angular speed factor, calculates the angular difference between the target angle and the current angle, and calculates the rotation in the frame accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target\+Angle} & The target angle for the rotation. \\
+\hline
+{\em Angular\+Speed\+Factor} & The factor that affects the maximum angular speed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rotation\+Inframe The rotation in the frame calculated from the target angle and angular speed factor. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_ab0b3a0e8258c21534b61276cae558522_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_joint_class_a69e954b49fa9eb6c21d1bc4f0a70be6c}\label{class_joint_class_a69e954b49fa9eb6c21d1bc4f0a70be6c}} 
+\index{JointClass@{JointClass}!\_nextJoint@{\_nextJoint}}
+\index{\_nextJoint@{\_nextJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{\_nextJoint}{\_nextJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+\_\+next\+Joint}
+
+\mbox{\Hypertarget{class_joint_class_a5e185acdfa2c5fe03208c3d27ec7f029}\label{class_joint_class_a5e185acdfa2c5fe03208c3d27ec7f029}} 
+\index{JointClass@{JointClass}!\_previousJoint@{\_previousJoint}}
+\index{\_previousJoint@{\_previousJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{\_previousJoint}{\_previousJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+\_\+previous\+Joint}
+
 \mbox{\Hypertarget{class_joint_class_a8ae6d6737a8cf4289acb86b05863701d}\label{class_joint_class_a8ae6d6737a8cf4289acb86b05863701d}} 
 \index{JointClass@{JointClass}!AngularVelocity@{AngularVelocity}}
 \index{AngularVelocity@{AngularVelocity}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{AngularVelocity}{AngularVelocity}}
-{\footnotesize\ttfamily float Joint\+Class.\+Angular\+Velocity = 0.\+00000003f}
+{\footnotesize\ttfamily float Joint\+Class.\+Angular\+Velocity = 0.\+00013f}
 
 \mbox{\Hypertarget{class_joint_class_a7fa77b5ff5029346a004632255672c3d}\label{class_joint_class_a7fa77b5ff5029346a004632255672c3d}} 
 \index{JointClass@{JointClass}!assemblyPosition@{assemblyPosition}}
@@ -391,23 +361,23 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{GoalAngle}{GoalAngle}}
 {\footnotesize\ttfamily float Joint\+Class.\+Goal\+Angle = 0}
 
-\mbox{\Hypertarget{class_joint_class_aa879aafa21e0d774fb820229e57e590b}\label{class_joint_class_aa879aafa21e0d774fb820229e57e590b}} 
+\mbox{\Hypertarget{class_joint_class_a9f8342b5d5002a4fd38f5769620ca794}\label{class_joint_class_a9f8342b5d5002a4fd38f5769620ca794}} 
 \index{JointClass@{JointClass}!IllaRobotControllerReference@{IllaRobotControllerReference}}
 \index{IllaRobotControllerReference@{IllaRobotControllerReference}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{IllaRobotControllerReference}{IllaRobotControllerReference}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} Joint\+Class.\+Illa\+Robot\+Controller\+Reference}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Joint\+Class.\+Illa\+Robot\+Controller\+Reference}
 
-\mbox{\Hypertarget{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}\label{class_joint_class_acbb36bd917f5cfa3312dd00132c8afbd}} 
-\index{JointClass@{JointClass}!IsBase@{IsBase}}
-\index{IsBase@{IsBase}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{IsBase}{IsBase}}
-{\footnotesize\ttfamily bool Joint\+Class.\+Is\+Base = false}
+\mbox{\Hypertarget{class_joint_class_ad1ec34d032c1b9382e95407fc202e0fe}\label{class_joint_class_ad1ec34d032c1b9382e95407fc202e0fe}} 
+\index{JointClass@{JointClass}!isAssemblyBase@{isAssemblyBase}}
+\index{isAssemblyBase@{isAssemblyBase}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{isAssemblyBase}{isAssemblyBase}}
+{\footnotesize\ttfamily bool Joint\+Class.\+is\+Assembly\+Base}
 
-\mbox{\Hypertarget{class_joint_class_a5e2ee1399d3ac0496df601c6f1351946}\label{class_joint_class_a5e2ee1399d3ac0496df601c6f1351946}} 
-\index{JointClass@{JointClass}!IsGripper@{IsGripper}}
-\index{IsGripper@{IsGripper}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{IsGripper}{IsGripper}}
-{\footnotesize\ttfamily bool Joint\+Class.\+Is\+Gripper = false}
+\mbox{\Hypertarget{class_joint_class_ad5bb5b5ac95d2d9816feef456428ade2}\label{class_joint_class_ad5bb5b5ac95d2d9816feef456428ade2}} 
+\index{JointClass@{JointClass}!isAssemblyGripper@{isAssemblyGripper}}
+\index{isAssemblyGripper@{isAssemblyGripper}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{isAssemblyGripper}{isAssemblyGripper}}
+{\footnotesize\ttfamily bool Joint\+Class.\+is\+Assembly\+Gripper}
 
 \mbox{\Hypertarget{class_joint_class_a9495b532589b68b1c210f6889dabac55}\label{class_joint_class_a9495b532589b68b1c210f6889dabac55}} 
 \index{JointClass@{JointClass}!IsInverted@{IsInverted}}
@@ -421,11 +391,11 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{JointObjectParent}{JointObjectParent}}
 {\footnotesize\ttfamily Game\+Object Joint\+Class.\+Joint\+Object\+Parent}
 
-\mbox{\Hypertarget{class_joint_class_a1c60902aa46d1e1d7e43d8cb37bd7837}\label{class_joint_class_a1c60902aa46d1e1d7e43d8cb37bd7837}} 
-\index{JointClass@{JointClass}!NextJoint@{NextJoint}}
-\index{NextJoint@{NextJoint}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{NextJoint}{NextJoint}}
-{\footnotesize\ttfamily Game\+Object Joint\+Class.\+Next\+Joint}
+\mbox{\Hypertarget{class_joint_class_a4ab932ea7860ae56bb5eb69b8f39328f}\label{class_joint_class_a4ab932ea7860ae56bb5eb69b8f39328f}} 
+\index{JointClass@{JointClass}!MovingPart@{MovingPart}}
+\index{MovingPart@{MovingPart}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{MovingPart}{MovingPart}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+Moving\+Part}
 
 \mbox{\Hypertarget{class_joint_class_a8eabcc8b6c320d0fc9502c35ad144536}\label{class_joint_class_a8eabcc8b6c320d0fc9502c35ad144536}} 
 \index{JointClass@{JointClass}!NodeSensorReferece@{NodeSensorReferece}}
@@ -439,41 +409,17 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{NodeSensorScriptReference}{NodeSensorScriptReference}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} Joint\+Class.\+Node\+Sensor\+Script\+Reference}
 
-\mbox{\Hypertarget{class_joint_class_a88258397d1346c5f8b0d16d4c4f868bd}\label{class_joint_class_a88258397d1346c5f8b0d16d4c4f868bd}} 
-\index{JointClass@{JointClass}!OutAbsolutePosition@{OutAbsolutePosition}}
-\index{OutAbsolutePosition@{OutAbsolutePosition}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{OutAbsolutePosition}{OutAbsolutePosition}}
-{\footnotesize\ttfamily Vector3 Joint\+Class.\+Out\+Absolute\+Position = new Vector3()}
-
-\mbox{\Hypertarget{class_joint_class_a67bfcce687c4d379ba402e6c13821b6c}\label{class_joint_class_a67bfcce687c4d379ba402e6c13821b6c}} 
-\index{JointClass@{JointClass}!OUTAbsoluteRotation@{OUTAbsoluteRotation}}
-\index{OUTAbsoluteRotation@{OUTAbsoluteRotation}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{OUTAbsoluteRotation}{OUTAbsoluteRotation}}
-{\footnotesize\ttfamily Vector3 Joint\+Class.\+OUTAbsolute\+Rotation = new Vector3()}
-
-\mbox{\Hypertarget{class_joint_class_adde8480a8778da6037e570824830be08}\label{class_joint_class_adde8480a8778da6037e570824830be08}} 
-\index{JointClass@{JointClass}!OUTRelativePosition@{OUTRelativePosition}}
-\index{OUTRelativePosition@{OUTRelativePosition}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{OUTRelativePosition}{OUTRelativePosition}}
-{\footnotesize\ttfamily Vector3 Joint\+Class.\+OUTRelative\+Position = new Vector3()}
-
-\mbox{\Hypertarget{class_joint_class_acb06ec7e434047a2cd280015eff81833}\label{class_joint_class_acb06ec7e434047a2cd280015eff81833}} 
-\index{JointClass@{JointClass}!OUTRelativeRotation@{OUTRelativeRotation}}
-\index{OUTRelativeRotation@{OUTRelativeRotation}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{OUTRelativeRotation}{OUTRelativeRotation}}
-{\footnotesize\ttfamily Vector3 Joint\+Class.\+OUTRelative\+Rotation = new Vector3()}
-
-\mbox{\Hypertarget{class_joint_class_a3b7c2bd09c927a6b7241fd4ceadd21d4}\label{class_joint_class_a3b7c2bd09c927a6b7241fd4ceadd21d4}} 
-\index{JointClass@{JointClass}!PreviousJoint@{PreviousJoint}}
-\index{PreviousJoint@{PreviousJoint}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{PreviousJoint}{PreviousJoint}}
-{\footnotesize\ttfamily Game\+Object Joint\+Class.\+Previous\+Joint}
-
 \mbox{\Hypertarget{class_joint_class_ad6c83b38da47dc7b43afb2fc6dccb8e9}\label{class_joint_class_ad6c83b38da47dc7b43afb2fc6dccb8e9}} 
 \index{JointClass@{JointClass}!RobotObjectReference@{RobotObjectReference}}
 \index{RobotObjectReference@{RobotObjectReference}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{RobotObjectReference}{RobotObjectReference}}
 {\footnotesize\ttfamily Game\+Object Joint\+Class.\+Robot\+Object\+Reference}
+
+\mbox{\Hypertarget{class_joint_class_a882630b2977f0c7361f137b184ed3fba}\label{class_joint_class_a882630b2977f0c7361f137b184ed3fba}} 
+\index{JointClass@{JointClass}!StationaryPart@{StationaryPart}}
+\index{StationaryPart@{StationaryPart}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{StationaryPart}{StationaryPart}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+Stationary\+Part}
 
 \mbox{\Hypertarget{class_joint_class_a390a0c67e18fbecfcdd401cb6f99ab44}\label{class_joint_class_a390a0c67e18fbecfcdd401cb6f99ab44}} 
 \index{JointClass@{JointClass}!Target@{Target}}
@@ -490,17 +436,23 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{assemblyRotationQuat}{assemblyRotationQuat}}
 {\footnotesize\ttfamily Quaternion Joint\+Class.\+assembly\+Rotation\+Quat\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_joint_class_a8bb3f5168d22dae15460b6b91b2f1a2e}\label{class_joint_class_a8bb3f5168d22dae15460b6b91b2f1a2e}} 
-\index{JointClass@{JointClass}!baseQuatOffset@{baseQuatOffset}}
-\index{baseQuatOffset@{baseQuatOffset}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{baseQuatOffset}{baseQuatOffset}}
-{\footnotesize\ttfamily Vector3 Joint\+Class.\+base\+Quat\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+\mbox{\Hypertarget{class_joint_class_aafc5d6813f5c1df7da43c70465b154ae}\label{class_joint_class_aafc5d6813f5c1df7da43c70465b154ae}} 
+\index{JointClass@{JointClass}!BaseQuatOffset@{BaseQuatOffset}}
+\index{BaseQuatOffset@{BaseQuatOffset}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{BaseQuatOffset}{BaseQuatOffset}}
+{\footnotesize\ttfamily Quaternion Joint\+Class.\+Base\+Quat\+Offset\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_joint_class_a4d5489f30c42d20c574243b200ed5cb9}\label{class_joint_class_a4d5489f30c42d20c574243b200ed5cb9}} 
 \index{JointClass@{JointClass}!baseVectOffset@{baseVectOffset}}
 \index{baseVectOffset@{baseVectOffset}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{baseVectOffset}{baseVectOffset}}
 {\footnotesize\ttfamily Vector3 Joint\+Class.\+base\+Vect\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a28ae9dd992e220cb6b9a19d5b05d3ae3}\label{class_joint_class_a28ae9dd992e220cb6b9a19d5b05d3ae3}} 
+\index{JointClass@{JointClass}!CurrentAngleSigned@{CurrentAngleSigned}}
+\index{CurrentAngleSigned@{CurrentAngleSigned}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{CurrentAngleSigned}{CurrentAngleSigned}}
+{\footnotesize\ttfamily float Joint\+Class.\+Current\+Angle\+Signed\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_joint_class_af5f1b1285f388d0a43a274c7443ecabe}\label{class_joint_class_af5f1b1285f388d0a43a274c7443ecabe}} 
 \index{JointClass@{JointClass}!hAAbsoluteAssemblyPosition@{hAAbsoluteAssemblyPosition}}
@@ -525,6 +477,30 @@ Here is the call graph for this function\+:\nopagebreak
 \index{hACurrentPosition@{hACurrentPosition}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{hACurrentPosition}{hACurrentPosition}}
 {\footnotesize\ttfamily Vector3 Joint\+Class.\+h\+ACurrent\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a511916993c9f09adc3b1cbd7faca4f69}\label{class_joint_class_a511916993c9f09adc3b1cbd7faca4f69}} 
+\index{JointClass@{JointClass}!haIsBase@{haIsBase}}
+\index{haIsBase@{haIsBase}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{haIsBase}{haIsBase}}
+{\footnotesize\ttfamily bool Joint\+Class.\+ha\+Is\+Base\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_ae968efd4a508723a4985f18fe9036510}\label{class_joint_class_ae968efd4a508723a4985f18fe9036510}} 
+\index{JointClass@{JointClass}!haIsGripper@{haIsGripper}}
+\index{haIsGripper@{haIsGripper}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{haIsGripper}{haIsGripper}}
+{\footnotesize\ttfamily bool Joint\+Class.\+ha\+Is\+Gripper\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_ad8e646f56fb8d4b5dc3c078d54bec362}\label{class_joint_class_ad8e646f56fb8d4b5dc3c078d54bec362}} 
+\index{JointClass@{JointClass}!hANextJoint@{hANextJoint}}
+\index{hANextJoint@{hANextJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hANextJoint}{hANextJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+h\+ANext\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a3d4849acf79e256bdff3df5ee0085330}\label{class_joint_class_a3d4849acf79e256bdff3df5ee0085330}} 
+\index{JointClass@{JointClass}!hAPreviousJoint@{hAPreviousJoint}}
+\index{hAPreviousJoint@{hAPreviousJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hAPreviousJoint}{hAPreviousJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+h\+APrevious\+Joint\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_joint_class_a16251669280600c4cf765ab808521723}\label{class_joint_class_a16251669280600c4cf765ab808521723}} 
 \index{JointClass@{JointClass}!hARelativeAssemblyPosition@{hARelativeAssemblyPosition}}
@@ -562,6 +538,24 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{hDCurrentPosition}{hDCurrentPosition}}
 {\footnotesize\ttfamily Vector3 Joint\+Class.\+h\+DCurrent\+Position\hspace{0.3cm}{\ttfamily [get]}}
 
+\mbox{\Hypertarget{class_joint_class_ac3700cecd960e43cfbd2a216dd0170aa}\label{class_joint_class_ac3700cecd960e43cfbd2a216dd0170aa}} 
+\index{JointClass@{JointClass}!hdIsBase@{hdIsBase}}
+\index{hdIsBase@{hdIsBase}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hdIsBase}{hdIsBase}}
+{\footnotesize\ttfamily bool Joint\+Class.\+hd\+Is\+Base\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a650257d4a99df738d4ddaac96caa5a9e}\label{class_joint_class_a650257d4a99df738d4ddaac96caa5a9e}} 
+\index{JointClass@{JointClass}!hDNextJoint@{hDNextJoint}}
+\index{hDNextJoint@{hDNextJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hDNextJoint}{hDNextJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+h\+DNext\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_a7603b49099b1923608d1d13910ed87f5}\label{class_joint_class_a7603b49099b1923608d1d13910ed87f5}} 
+\index{JointClass@{JointClass}!hDPreviousJoint@{hDPreviousJoint}}
+\index{hDPreviousJoint@{hDPreviousJoint}!JointClass@{JointClass}}
+\doxysubsubsection{\texorpdfstring{hDPreviousJoint}{hDPreviousJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class.\+h\+DPrevious\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
 \mbox{\Hypertarget{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}\label{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}} 
 \index{JointClass@{JointClass}!hDRelativeAssemblyPosition@{hDRelativeAssemblyPosition}}
 \index{hDRelativeAssemblyPosition@{hDRelativeAssemblyPosition}!JointClass@{JointClass}}
@@ -573,18 +567,6 @@ Here is the call graph for this function\+:\nopagebreak
 \index{hDRelativeAssemblyRotation@{hDRelativeAssemblyRotation}!JointClass@{JointClass}}
 \doxysubsubsection{\texorpdfstring{hDRelativeAssemblyRotation}{hDRelativeAssemblyRotation}}
 {\footnotesize\ttfamily Quaternion Joint\+Class.\+h\+DRelative\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_joint_class_ac125931a4cd703f53a48e23150689467}\label{class_joint_class_ac125931a4cd703f53a48e23150689467}} 
-\index{JointClass@{JointClass}!hierarchyAgnosticNextNode@{hierarchyAgnosticNextNode}}
-\index{hierarchyAgnosticNextNode@{hierarchyAgnosticNextNode}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{hierarchyAgnosticNextNode}{hierarchyAgnosticNextNode}}
-{\footnotesize\ttfamily Game\+Object Joint\+Class.\+hierarchy\+Agnostic\+Next\+Node\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_joint_class_a683e2cfcea6a7abcd47b1f19c139150c}\label{class_joint_class_a683e2cfcea6a7abcd47b1f19c139150c}} 
-\index{JointClass@{JointClass}!hierarchyAgnosticPreviousNode@{hierarchyAgnosticPreviousNode}}
-\index{hierarchyAgnosticPreviousNode@{hierarchyAgnosticPreviousNode}!JointClass@{JointClass}}
-\doxysubsubsection{\texorpdfstring{hierarchyAgnosticPreviousNode}{hierarchyAgnosticPreviousNode}}
-{\footnotesize\ttfamily Game\+Object Joint\+Class.\+hierarchy\+Agnostic\+Previous\+Node\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

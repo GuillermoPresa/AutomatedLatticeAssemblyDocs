@@ -6,6 +6,6 @@
 <area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="240,188,411,229"/>
 <area shape="rect" id="node6" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="481,166,639,193"/>
 <area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="475,217,645,259"/>
-<area shape="rect" id="node7" href="$class_joint_class.html#a3cd6ea8e6602502cbe7700a1f86aba26" title=" " alt="" coords="697,166,860,193"/>
-<area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="693,217,864,259"/>
+<area shape="rect" id="node7" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="693,166,875,193"/>
+<area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="699,217,869,259"/>
 </map>

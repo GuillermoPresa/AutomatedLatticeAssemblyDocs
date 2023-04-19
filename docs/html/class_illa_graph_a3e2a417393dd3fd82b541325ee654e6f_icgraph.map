@@ -1,7 +1,10 @@
 <map id="IllaGraph.ContainsEdge" name="IllaGraph.ContainsEdge">
-<area shape="rect" id="node1" title=" " alt="" coords="727,46,885,73"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="499,5,669,47"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="489,71,679,112"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="261,71,441,112"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,71,213,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="735,78,893,105"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="503,5,673,47"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="489,71,687,112"/>
+<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="493,136,683,177"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="264,71,439,112"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="20,71,199,112"/>
+<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="261,136,441,177"/>
+<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,136,213,177"/>
 </map>

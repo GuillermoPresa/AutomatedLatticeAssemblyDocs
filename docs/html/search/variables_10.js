@@ -10,14 +10,13 @@ var searchData=
   ['permanentcollisionprefabs_7',['PermanentCollisionPrefabs',['../class_collision_detection_scene.html#a4ad18adeb6292c5cc593378e2b6e8d92',1,'CollisionDetectionScene']]],
   ['placed_8',['Placed',['../class_lattice_class.html#a5cf3db8f46b62c00d583a5cb15979614',1,'LatticeClass']]],
   ['popuptext_9',['PopupText',['../class_u_i_tools_popup_windows.html#a1f928059ba0f29bd130c4bcc6485be84',1,'UIToolsPopupWindows']]],
-  ['position_10',['Position',['../class_pos_x.html#abb161f63543b38e02f6427570c61891f',1,'PosX']]],
-  ['position_11',['position',['../struct_references_1_1_texture_rendering_jobs.html#ad307b68d054c5d704dfb6db6517c0c6d',1,'References.TextureRenderingJobs.position()'],['../struct_text_gizmos_1_1_label_struct.html#a84b8f0efbf91df4b988af8fa17c3356c',1,'TextGizmos.LabelStruct.position()']]],
+  ['position_10',['position',['../struct_references_1_1_texture_rendering_jobs.html#ad307b68d054c5d704dfb6db6517c0c6d',1,'References.TextureRenderingJobs.position()'],['../struct_text_gizmos_1_1_label_struct.html#a84b8f0efbf91df4b988af8fa17c3356c',1,'TextGizmos.LabelStruct.position()']]],
+  ['position_11',['Position',['../class_pos_x.html#abb161f63543b38e02f6427570c61891f',1,'PosX']]],
   ['positionlerptime_12',['positionLerpTime',['../class_simpler_camera_controller.html#a555a0ad9b57f1ca83621422e787512b3',1,'SimplerCameraController']]],
   ['positionvector_13',['PositionVector',['../class_serialization_elements_1_1_grid_position.html#acc868be9f53dc9e0c5d9aa788247e747',1,'SerializationElements::GridPosition']]],
   ['posjcostdictionary_14',['PosJCostDictionary',['../class_movement.html#a79a16b0af892714639e126da6c2e119b',1,'Movement']]],
   ['posjlist_15',['PosJList',['../class_movement.html#a34ce3cd8d3bf888c53a4c580f233f662',1,'Movement']]],
-  ['previousjoint_16',['PreviousJoint',['../class_joint_class.html#a3b7c2bd09c927a6b7241fd4ceadd21d4',1,'JointClass']]],
-  ['previousvertex_17',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]],
-  ['prioritydictionary_18',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]],
-  ['prioritylevel_19',['PriorityLevel',['../class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9',1,'Task']]]
+  ['previousvertex_16',['PreviousVertex',['../class_graph_node.html#a9d70f6d24f8b0799b47a8e1f9dae064b',1,'GraphNode']]],
+  ['prioritydictionary_17',['PriorityDictionary',['../class_robot_coordinator.html#a0570e89a355c29100e9cc4b539dcb43c',1,'RobotCoordinator']]],
+  ['prioritylevel_18',['PriorityLevel',['../class_task.html#a708ba0d7e0ef644d1e2273a549ee46f9',1,'Task']]]
 ];

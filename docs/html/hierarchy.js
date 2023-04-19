@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "ChituboxSTLParserClass", "class_chitubox_s_t_l_parser_class.html", null ],
     [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ],
+    [ "CollisionTestResult", "class_collision_test_result.html", null ],
     [ "MStudio.ColorDesign", "class_m_studio_1_1_color_design.html", null ],
     [ "IllaGraphNode.CostStruct", "struct_illa_graph_node_1_1_cost_struct.html", null ],
     [ "Editor", null, [
@@ -40,9 +41,6 @@ var hierarchy =
       [ "Example.AnotherGreetingLogger", "class_example_1_1_another_greeting_logger.html", null ],
       [ "Example.DefaultGreetingLogger", "class_example_1_1_default_greeting_logger.html", null ]
     ] ],
-    [ "IJobParallelFor", null, [
-      [ "InchwormRobotController.MyParallelJob", "struct_inchworm_robot_controller_1_1_my_parallel_job.html", null ]
-    ] ],
     [ "IllaGraph", "class_illa_graph.html", null ],
     [ "IllaNavigationPath", "class_illa_navigation_path.html", null ],
     [ "IPrototype< T >", "interface_i_prototype.html", null ],
@@ -66,6 +64,7 @@ var hierarchy =
     [ "SerializationElements.Lattice", "class_serialization_elements_1_1_lattice.html", null ],
     [ "LatticeCollection", "class_lattice_collection.html", null ],
     [ "SpaceNavigatorDriver.Locks", "class_space_navigator_driver_1_1_locks.html", null ],
+    [ "MathGeo", "class_math_geo.html", null ],
     [ "DensityMesh.MeshTriplet", "class_density_mesh_1_1_mesh_triplet.html", null ],
     [ "MonoBehaviour", null, [
       [ "BasicTest", "class_basic_test.html", null ],
@@ -73,17 +72,21 @@ var hierarchy =
       [ "CapsuleMover", "class_capsule_mover.html", null ],
       [ "ClearArea", "class_clear_area.html", null ],
       [ "CollisionSensor", "class_collision_sensor.html", null ],
+      [ "ComputePenetrationCostTest", "class_compute_penetration_cost_test.html", null ],
       [ "DenavitHartenberg", "class_denavit_hartenberg.html", null ],
+      [ "DenavitHartenbergIlla3", "class_denavit_hartenberg_illa3.html", null ],
       [ "DynamicDebugText", "class_dynamic_debug_text.html", null ],
       [ "EdgeDrawingScript", "class_edge_drawing_script.html", null ],
       [ "EnvironmentManager", "class_environment_manager.html", null ],
       [ "Example.ExampleBehaviour", "class_example_1_1_example_behaviour.html", null ],
       [ "ExtensionTest", "class_extension_test.html", null ],
       [ "GraphNode", "class_graph_node.html", null ],
+      [ "IllaControllerV3", "class_illa_controller_v3.html", null ],
       [ "IllaGraphNode", "class_illa_graph_node.html", null ],
       [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", null ],
       [ "InchwormRobotController", "class_inchworm_robot_controller.html", null ],
       [ "JointClass", "class_joint_class.html", null ],
+      [ "JointClassIlla3", "class_joint_class_illa3.html", null ],
       [ "LatticeClass", "class_lattice_class.html", null ],
       [ "MaterialCollectionEnvironment", "class_material_collection_environment.html", null ],
       [ "MeshCombiner", "class_mesh_combiner.html", null ],
@@ -107,6 +110,7 @@ var hierarchy =
       [ "SpawnerOverlay", "class_spawner_overlay.html", null ],
       [ "Spawning", "class_spawning.html", null ],
       [ "SphericalNodeSensor", "class_spherical_node_sensor.html", null ],
+      [ "TestRotationMatrices", "class_test_rotation_matrices.html", null ],
       [ "TextGizmos", "class_text_gizmos.html", null ],
       [ "TimeManager", "class_time_manager.html", null ],
       [ "UDictionaryTest", "class_u_dictionary_test.html", null ]

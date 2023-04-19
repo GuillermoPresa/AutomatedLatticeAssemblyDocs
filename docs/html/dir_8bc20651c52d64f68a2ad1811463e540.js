@@ -3,6 +3,7 @@ var dir_8bc20651c52d64f68a2ad1811463e540 =
     [ "Documentation", "dir_1a89d4f46d77e07550347a72b955f11a.html", "dir_1a89d4f46d77e07550347a72b955f11a" ],
     [ "Editor", "dir_47cfa00e3c09a76f83aa8e5284dcebee.html", "dir_47cfa00e3c09a76f83aa8e5284dcebee" ],
     [ "Lattice", "dir_dd1ae9e70e0cb1e566297bb504f92561.html", "dir_dd1ae9e70e0cb1e566297bb504f92561" ],
+    [ "Resources", "dir_94d1e71b125e9ae89a525e8432fa3fa4.html", "dir_94d1e71b125e9ae89a525e8432fa3fa4" ],
     [ "Robot", "dir_adbab688ab66f9820765a06a1ad19add.html", "dir_adbab688ab66f9820765a06a1ad19add" ],
     [ "Scripts", "dir_8b334d4bc44019ddcb41f2eee47d37ea.html", "dir_8b334d4bc44019ddcb41f2eee47d37ea" ],
     [ "Thirdparty", "dir_b53d104748b4418309010f795378930e.html", "dir_b53d104748b4418309010f795378930e" ],

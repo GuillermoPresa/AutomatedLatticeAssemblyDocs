@@ -1,0 +1,14 @@
+<map id="IllaControllerV3.EliminateCollidingStates" name="IllaControllerV3.EliminateCollidingStates">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,172,122"/>
+<area shape="rect" id="node2" href="$interface_i_prototype.html#af8fdf15a9898d4527f66ba1f3f3e533a" title=" " alt="" coords="239,37,422,64"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a1a802e93b60146e60f331bf584bbf313" title=" " alt="" coords="220,88,441,115"/>
+<area shape="rect" id="node9" href="$class_illa_controller_v3.html#ab9299c8badd9a7805305b53500418b7c" title=" " alt="" coords="229,146,432,187"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#a1e2c29d983713ebff5420123395fa607" title=" " alt="" coords="495,81,668,122"/>
+<area shape="rect" id="node8" href="$class_joint_class.html#aa7a0837248628938579dd5061b331d31" title=" " alt="" coords="507,29,655,56"/>
+<area shape="rect" id="node5" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="727,59,885,85"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a8fd6af7eead84415b892a86113da3257" title=" " alt="" coords="721,110,891,151"/>
+<area shape="rect" id="node6" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="939,59,1120,85"/>
+<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23" title=" " alt="" coords="494,146,669,187"/>
+<area shape="rect" id="node11" href="$class_illa_controller_v3.html#ac847777f5ba3184282fc7a946d654ca9" title=" " alt="" coords="489,212,673,239"/>
+<area shape="rect" id="node12" href="$class_illa_controller_v3.html#adb1fa8e0b6707e4064d776a998dd1601" title=" " alt="" coords="501,263,662,289"/>
+</map>

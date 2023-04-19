@@ -1,0 +1,7 @@
+<map id="IllaControllerV3.MoveToPosJ" name="IllaControllerV3.MoveToPosJ">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,192,73"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a58d67aa7bb5e1f897f8b344eee2176ad" title=" " alt="" coords="246,5,403,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a8fd6af7eead84415b892a86113da3257" title=" " alt="" coords="240,71,409,112"/>
+<area shape="rect" id="node3" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="457,13,615,39"/>
+<area shape="rect" id="node4" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="663,13,844,39"/>
+</map>

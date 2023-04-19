@@ -1,6 +1,7 @@
 <map id="IllaGraph.Clear" name="IllaGraph.Clear">
-<area shape="rect" id="node1" title=" " alt="" coords="461,82,568,109"/>
+<area shape="rect" id="node1" title=" " alt="" coords="461,126,568,153"/>
 <area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a1997a2fbba1b2b7a1aef51e33fe1ebaf" title=" " alt="" coords="224,29,395,71"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a8748b1488b66e0aea734ff0acf4a82fb" title=" " alt="" coords="205,119,413,160"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ae3c1a21d9501cd2723ca0ffba3e99b63" title=" " alt="" coords="220,119,399,160"/>
+<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a8748b1488b66e0aea734ff0acf4a82fb" title=" " alt="" coords="205,208,413,249"/>
 <area shape="rect" id="node4" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,126,157,153"/>
 </map>

@@ -1,0 +1,656 @@
+\hypertarget{class_joint_class_illa3}{}\doxysection{Joint\+Class\+Illa3 Class Reference}
+\label{class_joint_class_illa3}\index{JointClassIlla3@{JointClassIlla3}}
+
+
+Inheritance diagram for Joint\+Class\+Illa3\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_joint_class_illa3__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Joint\+Class\+Illa3\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a4fbf60505eaacecb2f14c7da06d2462b}{Draw\+Axis\+Gizmos}} ()
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a4992bbfb8687ad14f487c3c3836fbcf3}{Refresh\+Current\+Angle}} ()
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a4cfae1168316fd62581c655286fd5687}{Invert\+Hierarchy}} ()
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a9a42bcef72347f8ca1dba74fed801138}{Make\+Base}} ()
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_aea3243b268ac727ddff3e248523832b1}{Make\+Base}} (Game\+Object Node)
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_af17de88eb76a96fd2f6fdbf5353edea5}{Make\+Base}} (Vector3 Additional\+Position\+Offset)
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a40f8569eaa4da962c04d37ea6e2861ff}{Refresh\+Joint}} ()
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_abd4ba12c1a6b9a484979b17e93a874d9}{Refresh\+Joint}} (float Movement\+Speed)
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a6078a439be666b5b43dcf27d213492ee}{Move\+To\+Angle}} (float Target\+Angle)
+\item 
+float \mbox{\hyperlink{class_joint_class_illa3_a38727ca51248e9bd2f50687e5d859e0d}{Rotation\+In\+Frame}} (float Target\+Angle, float Angular\+Speed\+Factor)
+\begin{DoxyCompactList}\small\item\em Calculates the rotation in a frame given a target angle and an angular speed factor. The function takes two parameters, the target angle and the angular speed factor. It calculates the maximum angular rotation based on the angular speed factor, calculates the angular difference between the target angle and the current angle, and calculates the rotation in the frame accordingly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joint_class_illa3_ac98f00a739266bfde4bf2dcf6151282b}{HAMove\+To\+Angle}} (float Target\+Angle, float Angular\+Speed\+Factor)
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_a263c79b35d78d5411befae39c0d44a16}{HDMove\+To\+Angle}} (float Target\+Angle, float Angular\+Speed\+Factor)
+\item 
+void \mbox{\hyperlink{class_joint_class_illa3_add0c101dff2c9ccbe7730dd4dbea3e8e}{Rotate\+By\+Degrees}} (float Angle\+To\+Rotate)
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_a993446d49b7a01bec655e01bf8c96828}{Goal\+Reached}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_joint_class_illa3_a202799bc8b2ddf464b9eeacd07b7b25d}{Clamp0360}} (float euler\+Angles)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} \mbox{\hyperlink{class_joint_class_illa3_a38faf4a2afc8e8289d49f3a2e479ef1e}{Illa\+Robot\+Controller\+Reference}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a2556ad9f35ddc37e98a5f7f94b936472}{Robot\+Object\+Reference}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a933fe5371ec2cb4f4d01236064bd2484}{Joint\+Object\+Parent}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_ac7db4a25f31dad305fdd3f414db966f5}{Cylinder\+Element}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a8d36f07b2ab53860fa634bca3ca246c8}{Node\+Sensor\+Referece}}
+\item 
+\mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} \mbox{\hyperlink{class_joint_class_illa3_a88a6a0493282e0b307f44302ce6efd69}{Node\+Sensor\+Script\+Reference}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_af94868644506c77b634e885468a81a15}{\+\_\+previous\+Joint}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a22367245251b827d02be5493a5052a87}{\+\_\+next\+Joint}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_a1c126804f0f378cb0d2a3a99d92c031c}{is\+Assembly\+Base}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_ac6ac9f13e4094bab5b13e2ce742d0c94}{is\+Assembly\+Gripper}}
+\item 
+float \mbox{\hyperlink{class_joint_class_illa3_a00e97ae4e2e8ba7c53972039fac8174f}{Target}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_a504bde72b148d95fba6bb57dda8c18ff}{Is\+Inverted}} = false
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a1e6cb5466f8de7c46a7087e0e82cbe91}{Clamped\+Node}}
+\item 
+float \mbox{\hyperlink{class_joint_class_illa3_ab03c8e9edf232ff21ae6b6bb03a90d19}{Current\+Angle}} = 0
+\item 
+float \mbox{\hyperlink{class_joint_class_illa3_aff8e7e48b544a56d55e158d9fa5e2c19}{Goal\+Angle}} = 0
+\item 
+float \mbox{\hyperlink{class_joint_class_illa3_a3a6409978fd43f5926fced848451899b}{Angular\+Velocity}} = 0.\+00000013f
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_aef74b184b8effe6ba43cbff5b8cbde48}{assembly\+Position}} = new Vector3()
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a33527f9e3cf243f61ad256eee4ba619e}{assembly\+Rotation}} = new Vector3()
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_aa9a3e443af9205825d934f5a8d93c85a}{Base\+Quaternion\+Offset}} = Quaternion.\+identity
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a3de1030241e9caaa52cb5e267db5d721}{Base\+Vector\+Offset}} = new Vector3(0, 0, 0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a387325bc9d3948547e418d839bb031c4}{base\+Vect\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_a041d76b4e99902a5312752b77650c26f}{Base\+Quat\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a16ec04b197b856672f7c14dea3fbe42a}{h\+ANext\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a9bb54e5831a71f79fda013891cecc0fe}{h\+APrevious\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_a2ffd473cef62ef4bb6c3d964dfd8ebc7}{h\+DNext\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Game\+Object \mbox{\hyperlink{class_joint_class_illa3_aaadef5a5d170d9518ae016ceab1fa2ba}{h\+DPrevious\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_aedf70cc1e21d787ce70019d2b62ecfef}{hd\+Is\+Base}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_a318ef913db0db9750ec769f7d507a3a9}{ha\+Is\+Base}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_joint_class_illa3_a8735b0bdb3dbb3f7cf918ff38b9ab98c}{ha\+Is\+Gripper}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_joint_class_illa3_a97d57ec2d0860702ec5102e319806d00}{Current\+Angle\+Signed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_a81f865a2eed99f824cacf9afc6e15fba}{assembly\+Rotation\+Quat}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a6b6375df0d7dc193f2cbd4de565823a9}{h\+ARelative\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a8d8c07e6e6165d2fb0ad3ec8cb186d42}{h\+DRelative\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_a55e15361cd3562d21e003ff7132ecfc7}{h\+ARelative\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_a7f2c335424430bd17710f726c4b93da8}{h\+DRelative\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_ac74215ea32d3ad6c25242829e747d999}{h\+AAbsolute\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_a9cbc9a470b2416e5e12b311d6e1ed9b4}{h\+DAbsolute\+Assembly\+Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a58c5fc4b34b2cb3d5bdb7eb165bb7ac3}{h\+AAbsolute\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_ad708eba7811233e93ce3c4932271486c}{h\+DAbsolute\+Assembly\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_ad7e18cbc6aeba3f314ffc0788408fff5}{h\+ACurrent\+Orientation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Quaternion \mbox{\hyperlink{class_joint_class_illa3_a3bcd7ec2f949105dde9b38ea4c68c3c4}{h\+DCurrent\+Orientation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a64af7d71e68cb0633e1c82a452ee9a8c}{h\+ACurrent\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_joint_class_illa3_a84f9f74543e1bbe885aa4f729ecd3ab1}{h\+DCurrent\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000005}{Todo}}]Add individual joint controls for speed, energy etc... 
+
+Clean the inspector. Make some things private variables. Use inspector atributes to make it clean and nice\end{DoxyRefDesc}
+
+
+\mbox{\hyperlink{class_joint_class}{Joint\+Class}} controls the behaviour of the robot joints.
+
+\begin{DoxyWarning}{Warning}
+Outdated. HA hier agnostic absolute properties are wrong. The is\+Base criterion is not reliable in Hierarchy agnostic 
+\end{DoxyWarning}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
+\hypertarget{class_joint_class_illa3_autotoc_md0}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_illa3_autotoc_md0}
+The assembly constraint of the joint is defined by the following properties\+:
+
+\mbox{\hyperlink{class_joint_class_illa3_aef74b184b8effe6ba43cbff5b8cbde48}{assembly\+Position}} \+: Vector3 with (x,y,z) assembly constraint of the current node wrt base joint ~\newline
+\mbox{\hyperlink{class_joint_class_illa3_a33527f9e3cf243f61ad256eee4ba619e}{assembly\+Rotation}} \+: Vector3 with euler angles (x,y,z) of the assembly constraint of the current node wrt base joint. ~\newline
+ The assembly constraints are provided in {\bfseries{Hierarchy agnosntic}}, {\bfseries{Absolute frame}}. This is more convinient for the user when defining a robot as it allows to build the robot within Unity prefab editor and copy paste the assembly constraints. \begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
+\hypertarget{class_joint_class_illa3_autotoc_md1}{}\doxysubsubsection{Frame definition}\label{class_joint_class_illa3_autotoc_md1}
+The frame of the joint (position and orientation) can be defined with respect to the base joint (aboslute) or previous joint (relative)
+
+{\bfseries{Relative frame\+:}} The joint is defined in a relative frame, with respect to the previous joint. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_illa3_a6b6375df0d7dc193f2cbd4de565823a9}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_illa3_a55e15361cd3562d21e003ff7132ecfc7}{h\+ARelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_illa3_a8d8c07e6e6165d2fb0ad3ec8cb186d42}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_illa3_a7f2c335424430bd17710f726c4b93da8}{h\+DRelative\+Assembly\+Rotation}}
+
+{\bfseries{Absolute frame\+:}} The joint is defined in a relative frame, with respect to the base joint. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_illa3_a9cbc9a470b2416e5e12b311d6e1ed9b4}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_illa3_ad708eba7811233e93ce3c4932271486c}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_illa3_a3bcd7ec2f949105dde9b38ea4c68c3c4}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_illa3_a84f9f74543e1bbe885aa4f729ecd3ab1}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_illa3_autotoc_md2}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_illa3_autotoc_md2}
+When the robot hierarchy is inverted, the next node and previous node to control will be different than that of the assembly definition.
+
+{\bfseries{Hierarchy agnostic (HA)\+:}} Hierachy agnostic properties are those that are not affected by the hierarchy inversion such that the next and previous node are always the same and dont change, always representing the assembly constraints. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_illa3_a6b6375df0d7dc193f2cbd4de565823a9}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_illa3_a55e15361cd3562d21e003ff7132ecfc7}{h\+ARelative\+Assembly\+Rotation}}
+
+{\bfseries{Hierarchy dependent (HD)\+:}} Hierarchy dependent properties are those that are affected by the the hierarchy inversion such that the next and previous node swap after a hierarchy inversion. ~\newline
+Used in\+: \mbox{\hyperlink{class_joint_class_illa3_a8d8c07e6e6165d2fb0ad3ec8cb186d42}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_illa3_a7f2c335424430bd17710f726c4b93da8}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_illa3_a9cbc9a470b2416e5e12b311d6e1ed9b4}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_illa3_ad708eba7811233e93ce3c4932271486c}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_illa3_autotoc_md3}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_illa3_autotoc_md3}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_joint_class_illa3_a202799bc8b2ddf464b9eeacd07b7b25d}\label{class_joint_class_illa3_a202799bc8b2ddf464b9eeacd07b7b25d}} 
+\index{JointClassIlla3@{JointClassIlla3}!Clamp0360@{Clamp0360}}
+\index{Clamp0360@{Clamp0360}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{Clamp0360()}{Clamp0360()}}
+{\footnotesize\ttfamily static float Joint\+Class\+Illa3.\+Clamp0360 (\begin{DoxyParamCaption}\item[{float}]{euler\+Angles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a4fbf60505eaacecb2f14c7da06d2462b}\label{class_joint_class_illa3_a4fbf60505eaacecb2f14c7da06d2462b}} 
+\index{JointClassIlla3@{JointClassIlla3}!DrawAxisGizmos@{DrawAxisGizmos}}
+\index{DrawAxisGizmos@{DrawAxisGizmos}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{DrawAxisGizmos()}{DrawAxisGizmos()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Draw\+Axis\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a4fbf60505eaacecb2f14c7da06d2462b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_a993446d49b7a01bec655e01bf8c96828}\label{class_joint_class_illa3_a993446d49b7a01bec655e01bf8c96828}} 
+\index{JointClassIlla3@{JointClassIlla3}!GoalReached@{GoalReached}}
+\index{GoalReached@{GoalReached}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{GoalReached()}{GoalReached()}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+Goal\+Reached (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ac98f00a739266bfde4bf2dcf6151282b}\label{class_joint_class_illa3_ac98f00a739266bfde4bf2dcf6151282b}} 
+\index{JointClassIlla3@{JointClassIlla3}!HAMoveToAngle@{HAMoveToAngle}}
+\index{HAMoveToAngle@{HAMoveToAngle}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{HAMoveToAngle()}{HAMoveToAngle()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+HAMove\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
+
+Hierarchy agnostic move to angle. Independently on the robot hierarchy performs a move to angle from J1 to J5. The base is offset by the negative fordwards kinnematics position vector solution in order to locate the base joint (J1 or J5) at the correct base node. Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_ac98f00a739266bfde4bf2dcf6151282b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_a263c79b35d78d5411befae39c0d44a16}\label{class_joint_class_illa3_a263c79b35d78d5411befae39c0d44a16}} 
+\index{JointClassIlla3@{JointClassIlla3}!HDMoveToAngle@{HDMoveToAngle}}
+\index{HDMoveToAngle@{HDMoveToAngle}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{HDMoveToAngle()}{HDMoveToAngle()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+HDMove\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000001}{Deprecated}}]transitioned to hierarchy agnostic operations\end{DoxyRefDesc}
+
+
+Sets the transform.\+position and transform.\+location of the joint according teh the position of the other joints in the robot.
+
+Takes into consideration the hierarchy of the robot and whether the nodes are inverted or not. Applies base offsets...... Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a263c79b35d78d5411befae39c0d44a16_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a263c79b35d78d5411befae39c0d44a16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_a4cfae1168316fd62581c655286fd5687}\label{class_joint_class_illa3_a4cfae1168316fd62581c655286fd5687}} 
+\index{JointClassIlla3@{JointClassIlla3}!InvertHierarchy@{InvertHierarchy}}
+\index{InvertHierarchy@{InvertHierarchy}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{InvertHierarchy()}{InvertHierarchy()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Invert\+Hierarchy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Inverts the hierarchy of the joint. This entails two parts\+:
+
+1) The previous joint and next joint are swapped around. 2) The current assembly rotation its updated to it\textquotesingle{}s correct value.
+
+Additionally the Is\+Inverted flag is set to the new status. \mbox{\Hypertarget{class_joint_class_illa3_a9a42bcef72347f8ca1dba74fed801138}\label{class_joint_class_illa3_a9a42bcef72347f8ca1dba74fed801138}} 
+\index{JointClassIlla3@{JointClassIlla3}!MakeBase@{MakeBase}}
+\index{MakeBase@{MakeBase}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Make\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_joint_class_illa3_a9a42bcef72347f8ca1dba74fed801138_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_joint_class_illa3_a9a42bcef72347f8ca1dba74fed801138_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_aea3243b268ac727ddff3e248523832b1}\label{class_joint_class_illa3_aea3243b268ac727ddff3e248523832b1}} 
+\index{JointClassIlla3@{JointClassIlla3}!MakeBase@{MakeBase}}
+\index{MakeBase@{MakeBase}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Make\+Base (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_aea3243b268ac727ddff3e248523832b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_af17de88eb76a96fd2f6fdbf5353edea5}\label{class_joint_class_illa3_af17de88eb76a96fd2f6fdbf5353edea5}} 
+\index{JointClassIlla3@{JointClassIlla3}!MakeBase@{MakeBase}}
+\index{MakeBase@{MakeBase}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Make\+Base (\begin{DoxyParamCaption}\item[{Vector3}]{Additional\+Position\+Offset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a6078a439be666b5b43dcf27d213492ee}\label{class_joint_class_illa3_a6078a439be666b5b43dcf27d213492ee}} 
+\index{JointClassIlla3@{JointClassIlla3}!MoveToAngle@{MoveToAngle}}
+\index{MoveToAngle@{MoveToAngle}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{MoveToAngle()}{MoveToAngle()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Move\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a6078a439be666b5b43dcf27d213492ee_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a6078a439be666b5b43dcf27d213492ee_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_a4992bbfb8687ad14f487c3c3836fbcf3}\label{class_joint_class_illa3_a4992bbfb8687ad14f487c3c3836fbcf3}} 
+\index{JointClassIlla3@{JointClassIlla3}!RefreshCurrentAngle@{RefreshCurrentAngle}}
+\index{RefreshCurrentAngle@{RefreshCurrentAngle}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{RefreshCurrentAngle()}{RefreshCurrentAngle()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Refresh\+Current\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a40f8569eaa4da962c04d37ea6e2861ff}\label{class_joint_class_illa3_a40f8569eaa4da962c04d37ea6e2861ff}} 
+\index{JointClassIlla3@{JointClassIlla3}!RefreshJoint@{RefreshJoint}}
+\index{RefreshJoint@{RefreshJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{RefreshJoint()}{RefreshJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Refresh\+Joint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a40f8569eaa4da962c04d37ea6e2861ff_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_abd4ba12c1a6b9a484979b17e93a874d9}\label{class_joint_class_illa3_abd4ba12c1a6b9a484979b17e93a874d9}} 
+\index{JointClassIlla3@{JointClassIlla3}!RefreshJoint@{RefreshJoint}}
+\index{RefreshJoint@{RefreshJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{RefreshJoint()}{RefreshJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Refresh\+Joint (\begin{DoxyParamCaption}\item[{float}]{Movement\+Speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_abd4ba12c1a6b9a484979b17e93a874d9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_joint_class_illa3_add0c101dff2c9ccbe7730dd4dbea3e8e}\label{class_joint_class_illa3_add0c101dff2c9ccbe7730dd4dbea3e8e}} 
+\index{JointClassIlla3@{JointClassIlla3}!RotateByDegrees@{RotateByDegrees}}
+\index{RotateByDegrees@{RotateByDegrees}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{RotateByDegrees()}{RotateByDegrees()}}
+{\footnotesize\ttfamily void Joint\+Class\+Illa3.\+Rotate\+By\+Degrees (\begin{DoxyParamCaption}\item[{float}]{Angle\+To\+Rotate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a38727ca51248e9bd2f50687e5d859e0d}\label{class_joint_class_illa3_a38727ca51248e9bd2f50687e5d859e0d}} 
+\index{JointClassIlla3@{JointClassIlla3}!RotationInFrame@{RotationInFrame}}
+\index{RotationInFrame@{RotationInFrame}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{RotationInFrame()}{RotationInFrame()}}
+{\footnotesize\ttfamily float Joint\+Class\+Illa3.\+Rotation\+In\+Frame (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
+
+
+
+Calculates the rotation in a frame given a target angle and an angular speed factor. The function takes two parameters, the target angle and the angular speed factor. It calculates the maximum angular rotation based on the angular speed factor, calculates the angular difference between the target angle and the current angle, and calculates the rotation in the frame accordingly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Target\+Angle} & The target angle for the rotation. \\
+\hline
+{\em Angular\+Speed\+Factor} & The factor that affects the maximum angular speed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rotation\+Inframe The rotation in the frame calculated from the target angle and angular speed factor. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_joint_class_illa3_a38727ca51248e9bd2f50687e5d859e0d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_joint_class_illa3_a22367245251b827d02be5493a5052a87}\label{class_joint_class_illa3_a22367245251b827d02be5493a5052a87}} 
+\index{JointClassIlla3@{JointClassIlla3}!\_nextJoint@{\_nextJoint}}
+\index{\_nextJoint@{\_nextJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{\_nextJoint}{\_nextJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+\_\+next\+Joint}
+
+\mbox{\Hypertarget{class_joint_class_illa3_af94868644506c77b634e885468a81a15}\label{class_joint_class_illa3_af94868644506c77b634e885468a81a15}} 
+\index{JointClassIlla3@{JointClassIlla3}!\_previousJoint@{\_previousJoint}}
+\index{\_previousJoint@{\_previousJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{\_previousJoint}{\_previousJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+\_\+previous\+Joint}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a3a6409978fd43f5926fced848451899b}\label{class_joint_class_illa3_a3a6409978fd43f5926fced848451899b}} 
+\index{JointClassIlla3@{JointClassIlla3}!AngularVelocity@{AngularVelocity}}
+\index{AngularVelocity@{AngularVelocity}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{AngularVelocity}{AngularVelocity}}
+{\footnotesize\ttfamily float Joint\+Class\+Illa3.\+Angular\+Velocity = 0.\+00000013f}
+
+\mbox{\Hypertarget{class_joint_class_illa3_aef74b184b8effe6ba43cbff5b8cbde48}\label{class_joint_class_illa3_aef74b184b8effe6ba43cbff5b8cbde48}} 
+\index{JointClassIlla3@{JointClassIlla3}!assemblyPosition@{assemblyPosition}}
+\index{assemblyPosition@{assemblyPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{assemblyPosition}{assemblyPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+assembly\+Position = new Vector3()}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a33527f9e3cf243f61ad256eee4ba619e}\label{class_joint_class_illa3_a33527f9e3cf243f61ad256eee4ba619e}} 
+\index{JointClassIlla3@{JointClassIlla3}!assemblyRotation@{assemblyRotation}}
+\index{assemblyRotation@{assemblyRotation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{assemblyRotation}{assemblyRotation}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+assembly\+Rotation = new Vector3()}
+
+\mbox{\Hypertarget{class_joint_class_illa3_aa9a3e443af9205825d934f5a8d93c85a}\label{class_joint_class_illa3_aa9a3e443af9205825d934f5a8d93c85a}} 
+\index{JointClassIlla3@{JointClassIlla3}!BaseQuaternionOffset@{BaseQuaternionOffset}}
+\index{BaseQuaternionOffset@{BaseQuaternionOffset}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{BaseQuaternionOffset}{BaseQuaternionOffset}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+Base\+Quaternion\+Offset = Quaternion.\+identity}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a3de1030241e9caaa52cb5e267db5d721}\label{class_joint_class_illa3_a3de1030241e9caaa52cb5e267db5d721}} 
+\index{JointClassIlla3@{JointClassIlla3}!BaseVectorOffset@{BaseVectorOffset}}
+\index{BaseVectorOffset@{BaseVectorOffset}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{BaseVectorOffset}{BaseVectorOffset}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+Base\+Vector\+Offset = new Vector3(0, 0, 0)}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a1e6cb5466f8de7c46a7087e0e82cbe91}\label{class_joint_class_illa3_a1e6cb5466f8de7c46a7087e0e82cbe91}} 
+\index{JointClassIlla3@{JointClassIlla3}!ClampedNode@{ClampedNode}}
+\index{ClampedNode@{ClampedNode}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{ClampedNode}{ClampedNode}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+Clamped\+Node}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ab03c8e9edf232ff21ae6b6bb03a90d19}\label{class_joint_class_illa3_ab03c8e9edf232ff21ae6b6bb03a90d19}} 
+\index{JointClassIlla3@{JointClassIlla3}!CurrentAngle@{CurrentAngle}}
+\index{CurrentAngle@{CurrentAngle}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{CurrentAngle}{CurrentAngle}}
+{\footnotesize\ttfamily float Joint\+Class\+Illa3.\+Current\+Angle = 0}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ac7db4a25f31dad305fdd3f414db966f5}\label{class_joint_class_illa3_ac7db4a25f31dad305fdd3f414db966f5}} 
+\index{JointClassIlla3@{JointClassIlla3}!CylinderElement@{CylinderElement}}
+\index{CylinderElement@{CylinderElement}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{CylinderElement}{CylinderElement}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+Cylinder\+Element}
+
+\mbox{\Hypertarget{class_joint_class_illa3_aff8e7e48b544a56d55e158d9fa5e2c19}\label{class_joint_class_illa3_aff8e7e48b544a56d55e158d9fa5e2c19}} 
+\index{JointClassIlla3@{JointClassIlla3}!GoalAngle@{GoalAngle}}
+\index{GoalAngle@{GoalAngle}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{GoalAngle}{GoalAngle}}
+{\footnotesize\ttfamily float Joint\+Class\+Illa3.\+Goal\+Angle = 0}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a38faf4a2afc8e8289d49f3a2e479ef1e}\label{class_joint_class_illa3_a38faf4a2afc8e8289d49f3a2e479ef1e}} 
+\index{JointClassIlla3@{JointClassIlla3}!IllaRobotControllerReference@{IllaRobotControllerReference}}
+\index{IllaRobotControllerReference@{IllaRobotControllerReference}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{IllaRobotControllerReference}{IllaRobotControllerReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Joint\+Class\+Illa3.\+Illa\+Robot\+Controller\+Reference}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a1c126804f0f378cb0d2a3a99d92c031c}\label{class_joint_class_illa3_a1c126804f0f378cb0d2a3a99d92c031c}} 
+\index{JointClassIlla3@{JointClassIlla3}!isAssemblyBase@{isAssemblyBase}}
+\index{isAssemblyBase@{isAssemblyBase}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{isAssemblyBase}{isAssemblyBase}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+is\+Assembly\+Base}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ac6ac9f13e4094bab5b13e2ce742d0c94}\label{class_joint_class_illa3_ac6ac9f13e4094bab5b13e2ce742d0c94}} 
+\index{JointClassIlla3@{JointClassIlla3}!isAssemblyGripper@{isAssemblyGripper}}
+\index{isAssemblyGripper@{isAssemblyGripper}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{isAssemblyGripper}{isAssemblyGripper}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+is\+Assembly\+Gripper}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a504bde72b148d95fba6bb57dda8c18ff}\label{class_joint_class_illa3_a504bde72b148d95fba6bb57dda8c18ff}} 
+\index{JointClassIlla3@{JointClassIlla3}!IsInverted@{IsInverted}}
+\index{IsInverted@{IsInverted}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{IsInverted}{IsInverted}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+Is\+Inverted = false}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a933fe5371ec2cb4f4d01236064bd2484}\label{class_joint_class_illa3_a933fe5371ec2cb4f4d01236064bd2484}} 
+\index{JointClassIlla3@{JointClassIlla3}!JointObjectParent@{JointObjectParent}}
+\index{JointObjectParent@{JointObjectParent}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{JointObjectParent}{JointObjectParent}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+Joint\+Object\+Parent}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a8d36f07b2ab53860fa634bca3ca246c8}\label{class_joint_class_illa3_a8d36f07b2ab53860fa634bca3ca246c8}} 
+\index{JointClassIlla3@{JointClassIlla3}!NodeSensorReferece@{NodeSensorReferece}}
+\index{NodeSensorReferece@{NodeSensorReferece}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{NodeSensorReferece}{NodeSensorReferece}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+Node\+Sensor\+Referece}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a88a6a0493282e0b307f44302ce6efd69}\label{class_joint_class_illa3_a88a6a0493282e0b307f44302ce6efd69}} 
+\index{JointClassIlla3@{JointClassIlla3}!NodeSensorScriptReference@{NodeSensorScriptReference}}
+\index{NodeSensorScriptReference@{NodeSensorScriptReference}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{NodeSensorScriptReference}{NodeSensorScriptReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} Joint\+Class\+Illa3.\+Node\+Sensor\+Script\+Reference}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a2556ad9f35ddc37e98a5f7f94b936472}\label{class_joint_class_illa3_a2556ad9f35ddc37e98a5f7f94b936472}} 
+\index{JointClassIlla3@{JointClassIlla3}!RobotObjectReference@{RobotObjectReference}}
+\index{RobotObjectReference@{RobotObjectReference}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{RobotObjectReference}{RobotObjectReference}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+Robot\+Object\+Reference}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a00e97ae4e2e8ba7c53972039fac8174f}\label{class_joint_class_illa3_a00e97ae4e2e8ba7c53972039fac8174f}} 
+\index{JointClassIlla3@{JointClassIlla3}!Target@{Target}}
+\index{Target@{Target}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily float Joint\+Class\+Illa3.\+Target}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_joint_class_illa3_a81f865a2eed99f824cacf9afc6e15fba}\label{class_joint_class_illa3_a81f865a2eed99f824cacf9afc6e15fba}} 
+\index{JointClassIlla3@{JointClassIlla3}!assemblyRotationQuat@{assemblyRotationQuat}}
+\index{assemblyRotationQuat@{assemblyRotationQuat}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{assemblyRotationQuat}{assemblyRotationQuat}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+assembly\+Rotation\+Quat\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a041d76b4e99902a5312752b77650c26f}\label{class_joint_class_illa3_a041d76b4e99902a5312752b77650c26f}} 
+\index{JointClassIlla3@{JointClassIlla3}!BaseQuatOffset@{BaseQuatOffset}}
+\index{BaseQuatOffset@{BaseQuatOffset}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{BaseQuatOffset}{BaseQuatOffset}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+Base\+Quat\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a387325bc9d3948547e418d839bb031c4}\label{class_joint_class_illa3_a387325bc9d3948547e418d839bb031c4}} 
+\index{JointClassIlla3@{JointClassIlla3}!baseVectOffset@{baseVectOffset}}
+\index{baseVectOffset@{baseVectOffset}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{baseVectOffset}{baseVectOffset}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+base\+Vect\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a97d57ec2d0860702ec5102e319806d00}\label{class_joint_class_illa3_a97d57ec2d0860702ec5102e319806d00}} 
+\index{JointClassIlla3@{JointClassIlla3}!CurrentAngleSigned@{CurrentAngleSigned}}
+\index{CurrentAngleSigned@{CurrentAngleSigned}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{CurrentAngleSigned}{CurrentAngleSigned}}
+{\footnotesize\ttfamily float Joint\+Class\+Illa3.\+Current\+Angle\+Signed\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a58c5fc4b34b2cb3d5bdb7eb165bb7ac3}\label{class_joint_class_illa3_a58c5fc4b34b2cb3d5bdb7eb165bb7ac3}} 
+\index{JointClassIlla3@{JointClassIlla3}!hAAbsoluteAssemblyPosition@{hAAbsoluteAssemblyPosition}}
+\index{hAAbsoluteAssemblyPosition@{hAAbsoluteAssemblyPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hAAbsoluteAssemblyPosition}{hAAbsoluteAssemblyPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+h\+AAbsolute\+Assembly\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ac74215ea32d3ad6c25242829e747d999}\label{class_joint_class_illa3_ac74215ea32d3ad6c25242829e747d999}} 
+\index{JointClassIlla3@{JointClassIlla3}!hAAbsoluteAssemblyRotation@{hAAbsoluteAssemblyRotation}}
+\index{hAAbsoluteAssemblyRotation@{hAAbsoluteAssemblyRotation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hAAbsoluteAssemblyRotation}{hAAbsoluteAssemblyRotation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+h\+AAbsolute\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ad7e18cbc6aeba3f314ffc0788408fff5}\label{class_joint_class_illa3_ad7e18cbc6aeba3f314ffc0788408fff5}} 
+\index{JointClassIlla3@{JointClassIlla3}!hACurrentOrientation@{hACurrentOrientation}}
+\index{hACurrentOrientation@{hACurrentOrientation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hACurrentOrientation}{hACurrentOrientation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+h\+ACurrent\+Orientation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a64af7d71e68cb0633e1c82a452ee9a8c}\label{class_joint_class_illa3_a64af7d71e68cb0633e1c82a452ee9a8c}} 
+\index{JointClassIlla3@{JointClassIlla3}!hACurrentPosition@{hACurrentPosition}}
+\index{hACurrentPosition@{hACurrentPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hACurrentPosition}{hACurrentPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+h\+ACurrent\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a318ef913db0db9750ec769f7d507a3a9}\label{class_joint_class_illa3_a318ef913db0db9750ec769f7d507a3a9}} 
+\index{JointClassIlla3@{JointClassIlla3}!haIsBase@{haIsBase}}
+\index{haIsBase@{haIsBase}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{haIsBase}{haIsBase}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+ha\+Is\+Base\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a8735b0bdb3dbb3f7cf918ff38b9ab98c}\label{class_joint_class_illa3_a8735b0bdb3dbb3f7cf918ff38b9ab98c}} 
+\index{JointClassIlla3@{JointClassIlla3}!haIsGripper@{haIsGripper}}
+\index{haIsGripper@{haIsGripper}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{haIsGripper}{haIsGripper}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+ha\+Is\+Gripper\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a16ec04b197b856672f7c14dea3fbe42a}\label{class_joint_class_illa3_a16ec04b197b856672f7c14dea3fbe42a}} 
+\index{JointClassIlla3@{JointClassIlla3}!hANextJoint@{hANextJoint}}
+\index{hANextJoint@{hANextJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hANextJoint}{hANextJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+h\+ANext\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a9bb54e5831a71f79fda013891cecc0fe}\label{class_joint_class_illa3_a9bb54e5831a71f79fda013891cecc0fe}} 
+\index{JointClassIlla3@{JointClassIlla3}!hAPreviousJoint@{hAPreviousJoint}}
+\index{hAPreviousJoint@{hAPreviousJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hAPreviousJoint}{hAPreviousJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+h\+APrevious\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a6b6375df0d7dc193f2cbd4de565823a9}\label{class_joint_class_illa3_a6b6375df0d7dc193f2cbd4de565823a9}} 
+\index{JointClassIlla3@{JointClassIlla3}!hARelativeAssemblyPosition@{hARelativeAssemblyPosition}}
+\index{hARelativeAssemblyPosition@{hARelativeAssemblyPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hARelativeAssemblyPosition}{hARelativeAssemblyPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+h\+ARelative\+Assembly\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a55e15361cd3562d21e003ff7132ecfc7}\label{class_joint_class_illa3_a55e15361cd3562d21e003ff7132ecfc7}} 
+\index{JointClassIlla3@{JointClassIlla3}!hARelativeAssemblyRotation@{hARelativeAssemblyRotation}}
+\index{hARelativeAssemblyRotation@{hARelativeAssemblyRotation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hARelativeAssemblyRotation}{hARelativeAssemblyRotation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+h\+ARelative\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_ad708eba7811233e93ce3c4932271486c}\label{class_joint_class_illa3_ad708eba7811233e93ce3c4932271486c}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDAbsoluteAssemblyPosition@{hDAbsoluteAssemblyPosition}}
+\index{hDAbsoluteAssemblyPosition@{hDAbsoluteAssemblyPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDAbsoluteAssemblyPosition}{hDAbsoluteAssemblyPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+h\+DAbsolute\+Assembly\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a9cbc9a470b2416e5e12b311d6e1ed9b4}\label{class_joint_class_illa3_a9cbc9a470b2416e5e12b311d6e1ed9b4}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDAbsoluteAssemblyRotation@{hDAbsoluteAssemblyRotation}}
+\index{hDAbsoluteAssemblyRotation@{hDAbsoluteAssemblyRotation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDAbsoluteAssemblyRotation}{hDAbsoluteAssemblyRotation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+h\+DAbsolute\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a3bcd7ec2f949105dde9b38ea4c68c3c4}\label{class_joint_class_illa3_a3bcd7ec2f949105dde9b38ea4c68c3c4}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDCurrentOrientation@{hDCurrentOrientation}}
+\index{hDCurrentOrientation@{hDCurrentOrientation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDCurrentOrientation}{hDCurrentOrientation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+h\+DCurrent\+Orientation\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a84f9f74543e1bbe885aa4f729ecd3ab1}\label{class_joint_class_illa3_a84f9f74543e1bbe885aa4f729ecd3ab1}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDCurrentPosition@{hDCurrentPosition}}
+\index{hDCurrentPosition@{hDCurrentPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDCurrentPosition}{hDCurrentPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+h\+DCurrent\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_aedf70cc1e21d787ce70019d2b62ecfef}\label{class_joint_class_illa3_aedf70cc1e21d787ce70019d2b62ecfef}} 
+\index{JointClassIlla3@{JointClassIlla3}!hdIsBase@{hdIsBase}}
+\index{hdIsBase@{hdIsBase}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hdIsBase}{hdIsBase}}
+{\footnotesize\ttfamily bool Joint\+Class\+Illa3.\+hd\+Is\+Base\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a2ffd473cef62ef4bb6c3d964dfd8ebc7}\label{class_joint_class_illa3_a2ffd473cef62ef4bb6c3d964dfd8ebc7}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDNextJoint@{hDNextJoint}}
+\index{hDNextJoint@{hDNextJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDNextJoint}{hDNextJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+h\+DNext\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_aaadef5a5d170d9518ae016ceab1fa2ba}\label{class_joint_class_illa3_aaadef5a5d170d9518ae016ceab1fa2ba}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDPreviousJoint@{hDPreviousJoint}}
+\index{hDPreviousJoint@{hDPreviousJoint}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDPreviousJoint}{hDPreviousJoint}}
+{\footnotesize\ttfamily Game\+Object Joint\+Class\+Illa3.\+h\+DPrevious\+Joint\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a8d8c07e6e6165d2fb0ad3ec8cb186d42}\label{class_joint_class_illa3_a8d8c07e6e6165d2fb0ad3ec8cb186d42}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDRelativeAssemblyPosition@{hDRelativeAssemblyPosition}}
+\index{hDRelativeAssemblyPosition@{hDRelativeAssemblyPosition}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDRelativeAssemblyPosition}{hDRelativeAssemblyPosition}}
+{\footnotesize\ttfamily Vector3 Joint\+Class\+Illa3.\+h\+DRelative\+Assembly\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_joint_class_illa3_a7f2c335424430bd17710f726c4b93da8}\label{class_joint_class_illa3_a7f2c335424430bd17710f726c4b93da8}} 
+\index{JointClassIlla3@{JointClassIlla3}!hDRelativeAssemblyRotation@{hDRelativeAssemblyRotation}}
+\index{hDRelativeAssemblyRotation@{hDRelativeAssemblyRotation}!JointClassIlla3@{JointClassIlla3}}
+\doxysubsubsection{\texorpdfstring{hDRelativeAssemblyRotation}{hDRelativeAssemblyRotation}}
+{\footnotesize\ttfamily Quaternion Joint\+Class\+Illa3.\+h\+DRelative\+Assembly\+Rotation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Resources/\+Objects/\+ILLAV3/\mbox{\hyperlink{_joint_class_illa3_8cs}{Joint\+Class\+Illa3.\+cs}}\end{DoxyCompactItemize}

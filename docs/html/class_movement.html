@@ -117,6 +117,8 @@ Collaboration diagram for Movement:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a888fd1350e071cd874e7e587ab95c032"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#a888fd1350e071cd874e7e587ab95c032">Movement</a> (GameObject Target, <a class="el" href="class_robot_configuration.html">RobotConfiguration</a> InitialConfig)</td></tr>
+<tr class="separator:a888fd1350e071cd874e7e587ab95c032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac127471ad5170bb344ea4cbc32e3ac19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19">Movement</a> (GameObject Target, List&lt; <a class="el" href="class_pos_j.html">PosJ</a> &gt; SolutionPosJList, <a class="el" href="class_robot_configuration.html">RobotConfiguration</a> InitialConfig)</td></tr>
 <tr class="separator:ac127471ad5170bb344ea4cbc32e3ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabdac3fb4e86360b2749dba8c5d8d17a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#aabdac3fb4e86360b2749dba8c5d8d17a">costBasedOnAngleMovement</a> ()</td></tr>
@@ -148,13 +150,43 @@ Properties</h2></td></tr>
 <tr class="separator:a87f9b74c84ea9a18791a38ae30f10713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca0c2663c9c86ecddbfa6ed4e9c4a58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#a3ca0c2663c9c86ecddbfa6ed4e9c4a58">IsComplete</a><code> [get]</code></td></tr>
 <tr class="separator:a3ca0c2663c9c86ecddbfa6ed4e9c4a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5de4a9260957877f4c4a671becf1c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_movement.html#adf5de4a9260957877f4c4a671becf1c8">HasContent</a><code> [get]</code></td></tr>
+<tr class="separator:adf5de4a9260957877f4c4a671becf1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A movement is a class that represents a particular robotic movement. It consists of a starting robot configuration (starting <a class="el" href="class_pos_j.html">PosJ</a> and base location), a target <a class="el" href="class_pos_x.html">PosX</a>, and a list of possible PosJs to reach the target. At the time of executing the movement one of the target PosJs can be selected according to a cost calculation.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>eliminate ambiguity List form and Dictionary form. Add a method to convert to list form and only </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>eliminate ambiguity List form and Dictionary form. Add a method to convert to list form and only </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a888fd1350e071cd874e7e587ab95c032" name="a888fd1350e071cd874e7e587ab95c032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888fd1350e071cd874e7e587ab95c032">&#9670;&nbsp;</a></span>Movement() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Movement.Movement </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>Target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_robot_configuration.html">RobotConfiguration</a>&#160;</td>
+          <td class="paramname"><em>InitialConfig</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac127471ad5170bb344ea4cbc32e3ac19" name="ac127471ad5170bb344ea4cbc32e3ac19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac127471ad5170bb344ea4cbc32e3ac19">&#9670;&nbsp;</a></span>Movement()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac127471ad5170bb344ea4cbc32e3ac19">&#9670;&nbsp;</a></span>Movement() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,6 +366,28 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">float Movement.CostBasedOnDistance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf5de4a9260957877f4c4a671becf1c8" name="adf5de4a9260957877f4c4a671becf1c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5de4a9260957877f4c4a671becf1c8">&#9670;&nbsp;</a></span>HasContent</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Movement.HasContent</td>
         </tr>
       </table>
   </td>

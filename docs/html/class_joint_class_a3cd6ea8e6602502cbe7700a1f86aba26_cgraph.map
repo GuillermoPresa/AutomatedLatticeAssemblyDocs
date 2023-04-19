@@ -1,3 +1,5 @@
 <map id="JointClass.MoveToAngle" name="JointClass.MoveToAngle">
-<area shape="rect" id="node1" title=" " alt="" coords="5,29,168,56"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$class_joint_class.html#a5af2c8505e84e2a92d17f8f44bd0557c" title=" " alt="" coords="216,5,397,32"/>
+<area shape="rect" id="node3" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="445,5,627,32"/>
 </map>

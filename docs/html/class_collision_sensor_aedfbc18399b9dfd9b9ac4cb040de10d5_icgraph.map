@@ -1,4 +1,5 @@
 <map id="CollisionSensor.CheckCollision" name="CollisionSensor.CheckCollision">
-<area shape="rect" id="node1" title=" " alt="" coords="224,13,427,39"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a434da4643498bd898d99a63678492ae4" title=" " alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="256,35,459,61"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a8cf1cf2655a3174e928f8b3f161a4b2f" title=" " alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a434da4643498bd898d99a63678492ae4" title=" " alt="" coords="21,57,192,98"/>
 </map>

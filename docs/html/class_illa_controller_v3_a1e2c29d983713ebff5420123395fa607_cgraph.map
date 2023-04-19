@@ -1,0 +1,6 @@
+<map id="IllaControllerV3.ForceJointAngle" name="IllaControllerV3.ForceJointAngle">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,179,69"/>
+<area shape="rect" id="node2" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="233,5,390,32"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#a8fd6af7eead84415b892a86113da3257" title=" " alt="" coords="227,57,396,98"/>
+<area shape="rect" id="node3" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="444,5,625,32"/>
+</map>

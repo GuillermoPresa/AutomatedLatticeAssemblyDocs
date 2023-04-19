@@ -25,7 +25,9 @@ void \mbox{\hyperlink{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734
 \item 
 \mbox{\hyperlink{class_denavit_hartenberg_aa54a8af90320fa111ec74521eef41b23}{Denavit\+Hartenberg}} (\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}} \mbox{\hyperlink{class_robot_script}{Robot\+Script}})
 \item 
-void \mbox{\hyperlink{class_denavit_hartenberg_a782acb7e2a97f669896a06434fa0aa13}{Update\+Joint\+Angles}} ()
+void \mbox{\hyperlink{class_denavit_hartenberg_aae8c7f2102ce8c2098bd02908c316256}{Update\+Joint\+Angles\+Current\+Val}} ()
+\item 
+void \mbox{\hyperlink{class_denavit_hartenberg_a21bc55d51a5690bc740a1d11bfb01e24}{Update\+Joint\+Angles\+To\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Joint\+Configuration)
 \item 
 double \mbox{\hyperlink{class_denavit_hartenberg_af930ffb36a06a4a65c35b3ce95195d5b}{qi}} (int i)
 \item 
@@ -41,15 +43,17 @@ double \mbox{\hyperlink{class_denavit_hartenberg_aa405c599b417d4946dadeddf534265
 \item 
 double \mbox{\hyperlink{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5}{sai}} (int i)
 \item 
-double \mbox{\hyperlink{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574}{cijk}} (int i, int j, int k)
+double \mbox{\hyperlink{class_denavit_hartenberg_ab2d6744b7bd5b05387f761ee6dfa9463}{c234}} ()
 \item 
-double \mbox{\hyperlink{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa}{sijk}} (int i, int j, int k)
+double \mbox{\hyperlink{class_denavit_hartenberg_a47f028f2584bccd64a5ef85810134521}{s234}} ()
 \item 
-Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac}{Ai\+Trans\+Matrix}} (int i)
+Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_acdfdb548c8a0347d420c255b956b02d3}{T05\+Trans\+Matrix}} ()
 \item 
-Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8}{T5\+Trans\+Matrix}} ()
+Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_a7b2a1d1bc50de1af887809d4be53e89e}{T50\+Trans\+Matrix}} ()
 \item 
-Vector3 \mbox{\hyperlink{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4}{P5\+Gripper\+Vector}} ()
+Vector3 \mbox{\hyperlink{class_denavit_hartenberg_ae5e8b5d0572268f2041bc53ef289ca9c}{P05\+Gripper\+Vector}} ()
+\item 
+Vector3 \mbox{\hyperlink{class_denavit_hartenberg_aea8585e23fb8354534e64ed01894a6c2}{P50\+Gripper\+Vector}} ()
 \item 
 string \mbox{\hyperlink{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238}{Joint\+Name\+Stringbv}} (\mbox{\hyperlink{_u_dictionary_test_8cs_aef19bab18b9814edeef255c43e4f6bbc}{System.\+Object}} Join\+DHpar\+Indx1)
 \item 
@@ -103,10 +107,7 @@ Guillermo Presa
 \doxysubsubsection{\texorpdfstring{DenavitHartenberg()}{DenavitHartenberg()}}
 {\footnotesize\ttfamily Denavit\+Hartenberg.\+Denavit\+Hartenberg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inchworm_robot_controller}{Inchworm\+Robot\+Controller}}}]{Robot\+Script }\end{DoxyParamCaption})}
 
-WIP. Work in progress. Automatically constructs the Denavit Hartenberg matrix given an ILLA robot script \begin{DoxyWarning}{Warning}
-Unfinished 
-\end{DoxyWarning}
-Here is the call graph for this function\+:\nopagebreak
+Auto generation of DH parameters from the assembly positions. Advised to removed this. Bodge on joint 5. Preferred to define them by hand and simplify everything significantly.Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -130,41 +131,12 @@ Returns the distance between the ith and (i-\/1)th joint
 \begin{DoxyReturn}{Returns}
 The distance between the ith and (i-\/1)th joint
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_a2615ab09b4d828781f4917d930ad7732_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac}\label{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac}} 
-\index{DenavitHartenberg@{DenavitHartenberg}!AiTransMatrix@{AiTransMatrix}}
-\index{AiTransMatrix@{AiTransMatrix}!DenavitHartenberg@{DenavitHartenberg}}
-\doxysubsubsection{\texorpdfstring{AiTransMatrix()}{AiTransMatrix()}}
-{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg.\+Ai\+Trans\+Matrix (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_denavit_hartenberg_ab2d6744b7bd5b05387f761ee6dfa9463}\label{class_denavit_hartenberg_ab2d6744b7bd5b05387f761ee6dfa9463}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!c234@{c234}}
+\index{c234@{c234}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{c234()}{c234()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+c234 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the transformation matrix for the ith joint 
-\begin{DoxyParams}{Parameters}
-{\em i} & The joint number \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The transformation matrix for the ith joint
-\end{DoxyReturn}
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_aade8fcd62f4676adc3fa6f81914f2aac_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581}\label{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581}} 
 \index{DenavitHartenberg@{DenavitHartenberg}!cai@{cai}}
 \index{cai@{cai}!DenavitHartenberg@{DenavitHartenberg}}
@@ -179,13 +151,6 @@ Returns the cosine of the ith relavie assembly angle alpha\+\_\+i
 \begin{DoxyReturn}{Returns}
 The cosine of the ith assembly angle alpha\+\_\+i
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_aa405c599b417d4946dadeddf53426581_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993}\label{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993}} 
 \index{DenavitHartenberg@{DenavitHartenberg}!ci@{ci}}
 \index{ci@{ci}!DenavitHartenberg@{DenavitHartenberg}}
@@ -200,38 +165,6 @@ Returns the cosine of the ith joint angle
 \begin{DoxyReturn}{Returns}
 The cosine of the ith joint angle
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_a03c92a93f70c61b0905e6a0705c11993_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574}\label{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574}} 
-\index{DenavitHartenberg@{DenavitHartenberg}!cijk@{cijk}}
-\index{cijk@{cijk}!DenavitHartenberg@{DenavitHartenberg}}
-\doxysubsubsection{\texorpdfstring{cijk()}{cijk()}}
-{\footnotesize\ttfamily double Denavit\+Hartenberg.\+cijk (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
-
-Returns the cosine of the sum of the ith, jth and kth joint angles 
-\begin{DoxyParams}{Parameters}
-{\em i} & The first joint number \\
-\hline
-{\em j} & The second joint number \\
-\hline
-{\em k} & The third joint number \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The cosine of the sum of the ith, jth and kth joint angles
-\end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_af6b6baf38c32ee72fc87aba5f38a5574_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734}\label{class_denavit_hartenberg_ab2ce5ebe28a1a2375c6620526d8cd734}} 
 \index{DenavitHartenberg@{DenavitHartenberg}!CreateMatrix@{CreateMatrix}}
 \index{CreateMatrix@{CreateMatrix}!DenavitHartenberg@{DenavitHartenberg}}
@@ -259,13 +192,6 @@ Returns the distance between the ith and (i-\/1)th joint
 \begin{DoxyReturn}{Returns}
 The distance between the ith and (i-\/1)th joint
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_a975f167e5b0c53f879cf32095c5ba93c_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238}\label{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238}} 
 \index{DenavitHartenberg@{DenavitHartenberg}!JointNameStringbv@{JointNameStringbv}}
 \index{JointNameStringbv@{JointNameStringbv}!DenavitHartenberg@{DenavitHartenberg}}
@@ -279,27 +205,44 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_denavit_hartenberg_a2a5b7e6d731a553df1197d6da3f75238_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4}\label{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4}} 
-\index{DenavitHartenberg@{DenavitHartenberg}!P5GripperVector@{P5GripperVector}}
-\index{P5GripperVector@{P5GripperVector}!DenavitHartenberg@{DenavitHartenberg}}
-\doxysubsubsection{\texorpdfstring{P5GripperVector()}{P5GripperVector()}}
-{\footnotesize\ttfamily Vector3 Denavit\+Hartenberg.\+P5\+Gripper\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_denavit_hartenberg_ae5e8b5d0572268f2041bc53ef289ca9c}\label{class_denavit_hartenberg_ae5e8b5d0572268f2041bc53ef289ca9c}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!P05GripperVector@{P05GripperVector}}
+\index{P05GripperVector@{P05GripperVector}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{P05GripperVector()}{P05GripperVector()}}
+{\footnotesize\ttfamily Vector3 Denavit\+Hartenberg.\+P05\+Gripper\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the position of the gripper in the base frame \begin{DoxyReturn}{Returns}
-The position of the gripper in the base frame
-\end{DoxyReturn}
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4_cgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_ae5e8b5d0572268f2041bc53ef289ca9c_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_ad710bf9c5f3e027a7305ddd8a7815cc4_icgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_ae5e8b5d0572268f2041bc53ef289ca9c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_aea8585e23fb8354534e64ed01894a6c2}\label{class_denavit_hartenberg_aea8585e23fb8354534e64ed01894a6c2}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!P50GripperVector@{P50GripperVector}}
+\index{P50GripperVector@{P50GripperVector}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{P50GripperVector()}{P50GripperVector()}}
+{\footnotesize\ttfamily Vector3 Denavit\+Hartenberg.\+P50\+Gripper\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_aea8585e23fb8354534e64ed01894a6c2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_aea8585e23fb8354534e64ed01894a6c2_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_af930ffb36a06a4a65c35b3ce95195d5b}\label{class_denavit_hartenberg_af930ffb36a06a4a65c35b3ce95195d5b}} 
@@ -316,13 +259,12 @@ Returns the ith joint angle
 \begin{DoxyReturn}{Returns}
 The ith joint angle
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_af930ffb36a06a4a65c35b3ce95195d5b_icgraph}
-\end{center}
-\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_a47f028f2584bccd64a5ef85810134521}\label{class_denavit_hartenberg_a47f028f2584bccd64a5ef85810134521}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!s234@{s234}}
+\index{s234@{s234}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{s234()}{s234()}}
+{\footnotesize\ttfamily double Denavit\+Hartenberg.\+s234 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5}\label{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5}} 
 \index{DenavitHartenberg@{DenavitHartenberg}!sai@{sai}}
 \index{sai@{sai}!DenavitHartenberg@{DenavitHartenberg}}
@@ -337,13 +279,6 @@ Returns the sine of the ith relavie assembly angle alpha\+\_\+i
 \begin{DoxyReturn}{Returns}
 The sine of the ith assembly angle alpha\+\_\+i
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_ae02001e94064c1e771ef731f8eab30e5_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34}\label{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34}} 
 \index{DenavitHartenberg@{DenavitHartenberg}!si@{si}}
 \index{si@{si}!DenavitHartenberg@{DenavitHartenberg}}
@@ -358,56 +293,30 @@ Returns the sine of the ith joint angle
 \begin{DoxyReturn}{Returns}
 The sine of the ith joint angle
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_ae06fc3a781219d077776879bf01ebb34_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa}\label{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa}} 
-\index{DenavitHartenberg@{DenavitHartenberg}!sijk@{sijk}}
-\index{sijk@{sijk}!DenavitHartenberg@{DenavitHartenberg}}
-\doxysubsubsection{\texorpdfstring{sijk()}{sijk()}}
-{\footnotesize\ttfamily double Denavit\+Hartenberg.\+sijk (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_denavit_hartenberg_acdfdb548c8a0347d420c255b956b02d3}\label{class_denavit_hartenberg_acdfdb548c8a0347d420c255b956b02d3}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!T05TransMatrix@{T05TransMatrix}}
+\index{T05TransMatrix@{T05TransMatrix}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{T05TransMatrix()}{T05TransMatrix()}}
+{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg.\+T05\+Trans\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Returns the sine of the sum of the ith, jth and kth joint angles 
-\begin{DoxyParams}{Parameters}
-{\em i} & The first joint number \\
-\hline
-{\em j} & The second joint number \\
-\hline
-{\em k} & The third joint number \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The sine of the sum of the ith, jth and kth joint angles
-\end{DoxyReturn}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_a81a3e4c57b792838b15abfff8d22e7fa_icgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_acdfdb548c8a0347d420c255b956b02d3_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8}\label{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8}} 
-\index{DenavitHartenberg@{DenavitHartenberg}!T5TransMatrix@{T5TransMatrix}}
-\index{T5TransMatrix@{T5TransMatrix}!DenavitHartenberg@{DenavitHartenberg}}
-\doxysubsubsection{\texorpdfstring{T5TransMatrix()}{T5TransMatrix()}}
-{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg.\+T5\+Trans\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_denavit_hartenberg_a7b2a1d1bc50de1af887809d4be53e89e}\label{class_denavit_hartenberg_a7b2a1d1bc50de1af887809d4be53e89e}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!T50TransMatrix@{T50TransMatrix}}
+\index{T50TransMatrix@{T50TransMatrix}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{T50TransMatrix()}{T50TransMatrix()}}
+{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg.\+T50\+Trans\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_a436c4bb21d98a3c0597ae89d1a5cd5a8_icgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_a7b2a1d1bc50de1af887809d4be53e89e_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9}\label{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9}} 
@@ -423,13 +332,29 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_denavit_hartenberg_a17be03a259e848cbe37af94383b525b9_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_a782acb7e2a97f669896a06434fa0aa13}\label{class_denavit_hartenberg_a782acb7e2a97f669896a06434fa0aa13}} 
-\index{DenavitHartenberg@{DenavitHartenberg}!UpdateJointAngles@{UpdateJointAngles}}
-\index{UpdateJointAngles@{UpdateJointAngles}!DenavitHartenberg@{DenavitHartenberg}}
-\doxysubsubsection{\texorpdfstring{UpdateJointAngles()}{UpdateJointAngles()}}
-{\footnotesize\ttfamily void Denavit\+Hartenberg.\+Update\+Joint\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_denavit_hartenberg_aae8c7f2102ce8c2098bd02908c316256}\label{class_denavit_hartenberg_aae8c7f2102ce8c2098bd02908c316256}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!UpdateJointAnglesCurrentVal@{UpdateJointAnglesCurrentVal}}
+\index{UpdateJointAnglesCurrentVal@{UpdateJointAnglesCurrentVal}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{UpdateJointAnglesCurrentVal()}{UpdateJointAnglesCurrentVal()}}
+{\footnotesize\ttfamily void Denavit\+Hartenberg.\+Update\+Joint\+Angles\+Current\+Val (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Updates the joint angles qi in the DH matrix
+Updates the joint angles qi in the Denativ-\/\+Hartenberg matrix to the current values.\mbox{\Hypertarget{class_denavit_hartenberg_a21bc55d51a5690bc740a1d11bfb01e24}\label{class_denavit_hartenberg_a21bc55d51a5690bc740a1d11bfb01e24}} 
+\index{DenavitHartenberg@{DenavitHartenberg}!UpdateJointAnglesToPosJ@{UpdateJointAnglesToPosJ}}
+\index{UpdateJointAnglesToPosJ@{UpdateJointAnglesToPosJ}!DenavitHartenberg@{DenavitHartenberg}}
+\doxysubsubsection{\texorpdfstring{UpdateJointAnglesToPosJ()}{UpdateJointAnglesToPosJ()}}
+{\footnotesize\ttfamily void Denavit\+Hartenberg.\+Update\+Joint\+Angles\+To\+PosJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Joint\+Configuration }\end{DoxyParamCaption})}
+
+Updates the joint angles qi in the Denativ-\/\+Hartenberg matrix to match the provided \mbox{\hyperlink{class_pos_j}{PosJ}} \begin{DoxyWarning}{Warning}
+\+: If the \mbox{\hyperlink{class_pos_j}{PosJ}} provided does not match the current configuration these parameters will loose their similarity with reality until synced again with the non overloaded method.
+\end{DoxyWarning}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_a21bc55d51a5690bc740a1d11bfb01e24_icgraph}
+\end{center}
+\end{figure}
+
 
 \doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_denavit_hartenberg_a41f960579776b382ed85dbe8e50d3ac6}\label{class_denavit_hartenberg_a41f960579776b382ed85dbe8e50d3ac6}} 

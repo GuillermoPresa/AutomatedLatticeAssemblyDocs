@@ -1,8 +1,11 @@
 <map id="IllaGraph.AddEdge" name="IllaGraph.AddEdge">
-<area shape="rect" id="node1" title=" " alt="" coords="727,64,857,91"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#adce9b902dd00be64c8904a1c49375e83" title=" " alt="" coords="519,5,649,32"/>
-<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="499,57,669,98"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="489,122,679,163"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="261,122,441,163"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,122,213,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="735,97,865,124"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#adce9b902dd00be64c8904a1c49375e83" title=" " alt="" coords="523,5,653,32"/>
+<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a07fb7f74f3dd3292cfdb553696131920" title=" " alt="" coords="503,57,673,98"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="489,122,687,163"/>
+<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a3fed768281ab580855f7c5fbf7c9ba5b" title=" " alt="" coords="493,187,683,229"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="264,122,439,163"/>
+<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="20,122,199,163"/>
+<area shape="rect" id="node8" href="$class_inchworm_robot_controller.html#a81f2e6fb04bd74422fd7747a0507f624" title=" " alt="" coords="261,187,441,229"/>
+<area shape="rect" id="node9" href="$class_inchworm_robot_controller.html#a1e1ffd2dd46cbe0bb592b053bb900099" title=" " alt="" coords="5,187,213,229"/>
 </map>
