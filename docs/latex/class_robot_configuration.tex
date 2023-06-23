@@ -15,13 +15,17 @@ Collaboration diagram for Robot\+Configuration\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=329pt]{class_robot_configuration__coll__graph}
+\includegraphics[width=350pt]{class_robot_configuration__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_robot_configuration_a1ae7e50b7050ac542ce5fb59d329c81e}{Robot\+Configuration}} (Game\+Object Node\+Base, \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JConfiguration)
+\item 
+\mbox{\hyperlink{class_robot_configuration_aee92a32bb632f982624c0f5857209b3e}{Robot\+Configuration}} (Game\+Object Node\+Base, \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JConfiguration, \mbox{\hyperlink{class_pos_x}{PosX}} Pos\+XConfiguration)
+\item 
+\mbox{\hyperlink{class_robot_configuration_a2f40ecae837c71e79d6a054bc7d82654}{Robot\+Configuration}} (Game\+Object Node\+Base, \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JConfiguration, Game\+Object Target\+Node)
 \item 
 override string \mbox{\hyperlink{class_robot_configuration_a9739fbf50930a68f64f98e44d3a06bfc}{To\+String}} ()
 \item 
@@ -30,9 +34,15 @@ override string \mbox{\hyperlink{class_robot_configuration_a9739fbf50930a68f64f9
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+Game\+Object \mbox{\hyperlink{class_robot_configuration_a9901b9b40815445603816ce706119e50}{Base\+Node}}
+\item 
+Quaternion \mbox{\hyperlink{class_robot_configuration_a4af5ec90de18bdb8965ff5a756a7ae1d}{Base\+Orientation}}
+\item 
 \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_robot_configuration_a9051807c27c377218ac5238cdf23fcb8}{Joint\+Pose}}
 \item 
-Game\+Object \mbox{\hyperlink{class_robot_configuration_a9901b9b40815445603816ce706119e50}{Base\+Node}}
+\mbox{\hyperlink{class_pos_x}{PosX}} \mbox{\hyperlink{class_robot_configuration_aff3d3aa724a1e8eab4c0c6042e98dd39}{PosX}}
+\item 
+bool \mbox{\hyperlink{class_robot_configuration_a5cc7509d8bb369efbcadd5643a4a0dd1}{Is\+Inverted}}
 \end{DoxyCompactItemize}
 
 
@@ -43,7 +53,7 @@ Robot configuration is the full representation of a robot position. It consists 
 \mbox{\Hypertarget{class_robot_configuration_a1ae7e50b7050ac542ce5fb59d329c81e}\label{class_robot_configuration_a1ae7e50b7050ac542ce5fb59d329c81e}} 
 \index{RobotConfiguration@{RobotConfiguration}!RobotConfiguration@{RobotConfiguration}}
 \index{RobotConfiguration@{RobotConfiguration}!RobotConfiguration@{RobotConfiguration}}
-\doxysubsubsection{\texorpdfstring{RobotConfiguration()}{RobotConfiguration()}}
+\doxysubsubsection{\texorpdfstring{RobotConfiguration()}{RobotConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Robot\+Configuration.\+Robot\+Configuration (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node\+Base,  }\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pos\+JConfiguration }\end{DoxyParamCaption})}
 
 Here is the caller graph for this function\+:\nopagebreak
@@ -53,6 +63,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_robot_configuration_a1ae7e50b7050ac542ce5fb59d329c81e_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_robot_configuration_aee92a32bb632f982624c0f5857209b3e}\label{class_robot_configuration_aee92a32bb632f982624c0f5857209b3e}} 
+\index{RobotConfiguration@{RobotConfiguration}!RobotConfiguration@{RobotConfiguration}}
+\index{RobotConfiguration@{RobotConfiguration}!RobotConfiguration@{RobotConfiguration}}
+\doxysubsubsection{\texorpdfstring{RobotConfiguration()}{RobotConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Robot\+Configuration.\+Robot\+Configuration (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node\+Base,  }\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pos\+JConfiguration,  }\item[{\mbox{\hyperlink{class_pos_x}{PosX}}}]{Pos\+XConfiguration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_robot_configuration_a2f40ecae837c71e79d6a054bc7d82654}\label{class_robot_configuration_a2f40ecae837c71e79d6a054bc7d82654}} 
+\index{RobotConfiguration@{RobotConfiguration}!RobotConfiguration@{RobotConfiguration}}
+\index{RobotConfiguration@{RobotConfiguration}!RobotConfiguration@{RobotConfiguration}}
+\doxysubsubsection{\texorpdfstring{RobotConfiguration()}{RobotConfiguration()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Robot\+Configuration.\+Robot\+Configuration (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node\+Base,  }\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pos\+JConfiguration,  }\item[{Game\+Object}]{Target\+Node }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Function Documentation}
@@ -91,11 +113,29 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{BaseNode}{BaseNode}}
 {\footnotesize\ttfamily Game\+Object Robot\+Configuration.\+Base\+Node}
 
+\mbox{\Hypertarget{class_robot_configuration_a4af5ec90de18bdb8965ff5a756a7ae1d}\label{class_robot_configuration_a4af5ec90de18bdb8965ff5a756a7ae1d}} 
+\index{RobotConfiguration@{RobotConfiguration}!BaseOrientation@{BaseOrientation}}
+\index{BaseOrientation@{BaseOrientation}!RobotConfiguration@{RobotConfiguration}}
+\doxysubsubsection{\texorpdfstring{BaseOrientation}{BaseOrientation}}
+{\footnotesize\ttfamily Quaternion Robot\+Configuration.\+Base\+Orientation}
+
+\mbox{\Hypertarget{class_robot_configuration_a5cc7509d8bb369efbcadd5643a4a0dd1}\label{class_robot_configuration_a5cc7509d8bb369efbcadd5643a4a0dd1}} 
+\index{RobotConfiguration@{RobotConfiguration}!IsInverted@{IsInverted}}
+\index{IsInverted@{IsInverted}!RobotConfiguration@{RobotConfiguration}}
+\doxysubsubsection{\texorpdfstring{IsInverted}{IsInverted}}
+{\footnotesize\ttfamily bool Robot\+Configuration.\+Is\+Inverted}
+
 \mbox{\Hypertarget{class_robot_configuration_a9051807c27c377218ac5238cdf23fcb8}\label{class_robot_configuration_a9051807c27c377218ac5238cdf23fcb8}} 
 \index{RobotConfiguration@{RobotConfiguration}!JointPose@{JointPose}}
 \index{JointPose@{JointPose}!RobotConfiguration@{RobotConfiguration}}
 \doxysubsubsection{\texorpdfstring{JointPose}{JointPose}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Robot\+Configuration.\+Joint\+Pose}
+
+\mbox{\Hypertarget{class_robot_configuration_aff3d3aa724a1e8eab4c0c6042e98dd39}\label{class_robot_configuration_aff3d3aa724a1e8eab4c0c6042e98dd39}} 
+\index{RobotConfiguration@{RobotConfiguration}!PosX@{PosX}}
+\index{PosX@{PosX}!RobotConfiguration@{RobotConfiguration}}
+\doxysubsubsection{\texorpdfstring{PosX}{PosX}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pos_x}{PosX}} Robot\+Configuration.\+PosX}
 
 
 

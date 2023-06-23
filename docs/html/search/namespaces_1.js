@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_0',['Example',['../namespace_example.html',1,'']]]
+  ['densitymesh_0',['DensityMesh',['../namespace_density_mesh.html',1,'']]]
 ];

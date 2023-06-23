@@ -1,0 +1,6 @@
+<map id="ILLAServo.Action" name="ILLAServo.Action">
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,127,69"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="175,5,380,47"/>
+<area shape="rect" id="node4" href="$class_virtual_servo.html#aeb8e11ee91a28f7d672097ee21e105fe" title=" " alt="" coords="211,71,343,98"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="428,13,679,39"/>
+</map>

@@ -27,12 +27,13 @@ var searchData=
   ['joint5targetangle_24',['Joint5TargetAngle',['../class_illa_controller_v3.html#a5a5294fab3e04a2b32a86ea77c0fa30c',1,'IllaControllerV3.Joint5TargetAngle()'],['../class_inchworm_robot_controller.html#ab5416aa9c4b91f8759e92f09593baa11',1,'InchwormRobotController.Joint5TargetAngle()']]],
   ['jointcapsulecolliders_25',['JointCapsuleColliders',['../class_illa_controller_v3.html#a0973d62713c5268f7c3288e71225339b',1,'IllaControllerV3.JointCapsuleColliders()'],['../class_inchworm_robot_controller.html#af4ba978dba222ad49c05edacbaa1b1f1',1,'InchwormRobotController.JointCapsuleColliders()']]],
   ['jointclass_26',['JointClass',['../class_joint_class.html',1,'']]],
-  ['jointclass_2ecs_27',['JointClass.cs',['../_joint_class_8cs.html',1,'']]],
-  ['jointclassilla3_28',['JointClassIlla3',['../class_joint_class_illa3.html',1,'']]],
-  ['jointclassilla3_2ecs_29',['JointClassIlla3.cs',['../_joint_class_illa3_8cs.html',1,'']]],
-  ['jointcount_30',['jointCount',['../class_denavit_hartenberg.html#aaa212e8483aaa8419904e0cac2baa463',1,'DenavitHartenberg']]],
-  ['jointlistfixedorder_31',['JointListFixedorder',['../class_inchworm_robot_controller.html#a5500cd5197cbcc6e75acad874b67dc03',1,'InchwormRobotController']]],
-  ['jointnamestringbv_32',['JointNameStringbv',['../class_denavit_hartenberg.html#a2a5b7e6d731a553df1197d6da3f75238',1,'DenavitHartenberg']]],
-  ['jointobjectparent_33',['JointObjectParent',['../class_joint_class_illa3.html#a933fe5371ec2cb4f4d01236064bd2484',1,'JointClassIlla3.JointObjectParent()'],['../class_joint_class.html#a8db4d54fb2d0f194c4a6ad47613df86e',1,'JointClass.JointObjectParent()']]],
-  ['jointpose_34',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
+  ['jointclass_27',['jointClass',['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#afb818de89c3b39417cf8764b577b1afa',1,'Lynxmotion.Robotics.LssServo.jointClass()'],['../class_virtual_servo.html#a111c81f6068b4f367477907f1bba0049',1,'VirtualServo.jointClass()']]],
+  ['jointclass_2ecs_28',['JointClass.cs',['../_joint_class_8cs.html',1,'']]],
+  ['jointclassv3_29',['JointClassV3',['../class_joint_class_v3.html',1,'']]],
+  ['jointclassv3_2ecs_30',['JointClassV3.cs',['../_joint_class_v3_8cs.html',1,'']]],
+  ['jointcount_31',['jointCount',['../class_denavit_hartenberg.html#aaa212e8483aaa8419904e0cac2baa463',1,'DenavitHartenberg']]],
+  ['jointlistfixedorder_32',['JointListFixedorder',['../class_inchworm_robot_controller.html#a5500cd5197cbcc6e75acad874b67dc03',1,'InchwormRobotController']]],
+  ['jointnamestringbv_33',['JointNameStringbv',['../class_denavit_hartenberg.html#a2a5b7e6d731a553df1197d6da3f75238',1,'DenavitHartenberg']]],
+  ['jointobjectparent_34',['JointObjectParent',['../class_joint_class.html#a8db4d54fb2d0f194c4a6ad47613df86e',1,'JointClass']]],
+  ['jointpose_35',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
 ];

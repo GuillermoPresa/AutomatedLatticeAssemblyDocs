@@ -1,0 +1,128 @@
+\hypertarget{class_abstract_serial_thread}{}\doxysection{Abstract\+Serial\+Thread Class Reference}
+\label{class_abstract_serial_thread}\index{AbstractSerialThread@{AbstractSerialThread}}
+
+
+Inheritance diagram for Abstract\+Serial\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_abstract_serial_thread__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_abstract_serial_thread_a5f7db2c87837f7da63cb004b20879188}{Abstract\+Serial\+Thread}} (string port\+Name, int baud\+Rate, int delay\+Before\+Reconnecting, int max\+Unread\+Messages, bool enqueue\+Status\+Messages)
+\item 
+void \mbox{\hyperlink{class_abstract_serial_thread_a083f719148846a78204c9d911f692960}{Request\+Stop}} ()
+\item 
+object \mbox{\hyperlink{class_abstract_serial_thread_acdc705e75027ff2720107e5f51ac23d9}{Read\+Message}} ()
+\item 
+void \mbox{\hyperlink{class_abstract_serial_thread_af3f527c6d84fcf6033d4b9c962a8b999}{Send\+Message}} (object message)
+\item 
+void \mbox{\hyperlink{class_abstract_serial_thread_ae3c2b1a9a3d9a207039c18ee08f0609a}{Run\+Forever}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_abstract_serial_thread_a5ba1b18ce91f25463693fc49fef38f78}{Send\+To\+Wire}} (object message, Serial\+Port serial\+Port)
+\item 
+abstract object \mbox{\hyperlink{class_abstract_serial_thread_a3c7a8cd18513ce35c68215c3c473c76e}{Read\+From\+Wire}} (Serial\+Port serial\+Port)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains methods that must be run from inside a thread and others that must be invoked from Unity. Both types of methods are clearly marked in the code, although you, the final user of this library, don\textquotesingle{}t need to even open this file unless you are introducing incompatibilities for upcoming versions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_serial_thread_a5f7db2c87837f7da63cb004b20879188}\label{class_abstract_serial_thread_a5f7db2c87837f7da63cb004b20879188}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!AbstractSerialThread@{AbstractSerialThread}}
+\index{AbstractSerialThread@{AbstractSerialThread}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{AbstractSerialThread()}{AbstractSerialThread()}}
+{\footnotesize\ttfamily Abstract\+Serial\+Thread.\+Abstract\+Serial\+Thread (\begin{DoxyParamCaption}\item[{string}]{port\+Name,  }\item[{int}]{baud\+Rate,  }\item[{int}]{delay\+Before\+Reconnecting,  }\item[{int}]{max\+Unread\+Messages,  }\item[{bool}]{enqueue\+Status\+Messages }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_serial_thread_a3c7a8cd18513ce35c68215c3c473c76e}\label{class_abstract_serial_thread_a3c7a8cd18513ce35c68215c3c473c76e}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!ReadFromWire@{ReadFromWire}}
+\index{ReadFromWire@{ReadFromWire}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{ReadFromWire()}{ReadFromWire()}}
+{\footnotesize\ttfamily abstract object Abstract\+Serial\+Thread.\+Read\+From\+Wire (\begin{DoxyParamCaption}\item[{Serial\+Port}]{serial\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_serial_thread_binary_delimited_a410a37732481e7410c1c1f4527faead8}{Serial\+Thread\+Binary\+Delimited}}, and \mbox{\hyperlink{class_serial_thread_lines_aa32aeaa17fa69b574c0d9745a72db591}{Serial\+Thread\+Lines}}.
+
+\mbox{\Hypertarget{class_abstract_serial_thread_acdc705e75027ff2720107e5f51ac23d9}\label{class_abstract_serial_thread_acdc705e75027ff2720107e5f51ac23d9}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!ReadMessage@{ReadMessage}}
+\index{ReadMessage@{ReadMessage}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{ReadMessage()}{ReadMessage()}}
+{\footnotesize\ttfamily object Abstract\+Serial\+Thread.\+Read\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_serial_thread_acdc705e75027ff2720107e5f51ac23d9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_serial_thread_a083f719148846a78204c9d911f692960}\label{class_abstract_serial_thread_a083f719148846a78204c9d911f692960}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!RequestStop@{RequestStop}}
+\index{RequestStop@{RequestStop}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{RequestStop()}{RequestStop()}}
+{\footnotesize\ttfamily void Abstract\+Serial\+Thread.\+Request\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_abstract_serial_thread_ae3c2b1a9a3d9a207039c18ee08f0609a}\label{class_abstract_serial_thread_ae3c2b1a9a3d9a207039c18ee08f0609a}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!RunForever@{RunForever}}
+\index{RunForever@{RunForever}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{RunForever()}{RunForever()}}
+{\footnotesize\ttfamily void Abstract\+Serial\+Thread.\+Run\+Forever (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_serial_thread_ae3c2b1a9a3d9a207039c18ee08f0609a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_serial_thread_af3f527c6d84fcf6033d4b9c962a8b999}\label{class_abstract_serial_thread_af3f527c6d84fcf6033d4b9c962a8b999}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!SendMessage@{SendMessage}}
+\index{SendMessage@{SendMessage}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{SendMessage()}{SendMessage()}}
+{\footnotesize\ttfamily void Abstract\+Serial\+Thread.\+Send\+Message (\begin{DoxyParamCaption}\item[{object}]{message }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_serial_thread_af3f527c6d84fcf6033d4b9c962a8b999_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_serial_thread_a5ba1b18ce91f25463693fc49fef38f78}\label{class_abstract_serial_thread_a5ba1b18ce91f25463693fc49fef38f78}} 
+\index{AbstractSerialThread@{AbstractSerialThread}!SendToWire@{SendToWire}}
+\index{SendToWire@{SendToWire}!AbstractSerialThread@{AbstractSerialThread}}
+\doxysubsubsection{\texorpdfstring{SendToWire()}{SendToWire()}}
+{\footnotesize\ttfamily abstract void Abstract\+Serial\+Thread.\+Send\+To\+Wire (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{Serial\+Port}]{serial\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_serial_thread_binary_delimited_a273ee6a806ee0576e7988348232cdafb}{Serial\+Thread\+Binary\+Delimited}}, and \mbox{\hyperlink{class_serial_thread_lines_ab6f626a737a5a02bd170ac48efb6da02}{Serial\+Thread\+Lines}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_serial_thread_a5ba1b18ce91f25463693fc49fef38f78_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Ardity/\+Scripts/\+Threads/\mbox{\hyperlink{_abstract_serial_thread_8cs}{Abstract\+Serial\+Thread.\+cs}}\end{DoxyCompactItemize}

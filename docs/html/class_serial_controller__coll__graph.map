@@ -1,0 +1,6 @@
+<map id="SerialController" name="SerialController">
+<area shape="rect" id="node1" title=" " alt="" coords="27,171,137,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node3" href="$class_serial_thread_lines.html" title=" " alt="" coords="141,81,266,108"/>
+<area shape="rect" id="node4" href="$class_abstract_serial_thread.html" title=" " alt="" coords="132,5,275,32"/>
+</map>

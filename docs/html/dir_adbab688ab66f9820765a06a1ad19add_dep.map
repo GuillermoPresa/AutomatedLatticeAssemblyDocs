@@ -1,5 +1,6 @@
 <map id="C:/Users/Guille/LatticeAssembly/Assets/Robot" name="C:/Users/Guille/LatticeAssembly/Assets/Robot">
-<area shape="rect" id="node2" href="dir_588b046a5cc6c747247d439520b91858.html" title="ILLA (Inchworm locomotion lattice assembler)" alt="" coords="37,63,323,111"/>
-<area shape="rect" id="clust2" href="dir_adbab688ab66f9820765a06a1ad19add.html" alt="" coords="27,52,429,121"/>
-<area shape="rect" id="clust1" href="dir_8bc20651c52d64f68a2ad1811463e540.html" title="Assets" alt="" coords="16,16,440,132"/>
+<area shape="rect" id="node2" href="dir_0fb3bc470d3ed522c40e9b71e7eb169b.html" title="Dynamixel control" alt="" coords="347,63,474,111"/>
+<area shape="rect" id="node3" href="dir_588b046a5cc6c747247d439520b91858.html" title="ILLA (Inchworm locomotion lattice assembler)" alt="" coords="37,63,323,111"/>
+<area shape="rect" id="clust2" href="dir_adbab688ab66f9820765a06a1ad19add.html" alt="" coords="27,52,581,121"/>
+<area shape="rect" id="clust1" href="dir_8bc20651c52d64f68a2ad1811463e540.html" title="Assets" alt="" coords="16,16,592,132"/>
 </map>

@@ -1,0 +1,157 @@
+\hypertarget{class_serial_controller_custom_delimiter}{}\doxysection{Serial\+Controller\+Custom\+Delimiter Class Reference}
+\label{class_serial_controller_custom_delimiter}\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+
+
+Inheritance diagram for Serial\+Controller\+Custom\+Delimiter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_serial_controller_custom_delimiter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Serial\+Controller\+Custom\+Delimiter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_serial_controller_custom_delimiter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_serial_controller_custom_delimiter_abb5d08c4a990bea5e480d7b9a6549c8a}{Read\+Serial\+Message}} ()
+\item 
+void \mbox{\hyperlink{class_serial_controller_custom_delimiter_adc7ccfdc0ec0b5f9bd8100dc9a04278d}{Send\+Serial\+Message}} (byte\mbox{[}$\,$\mbox{]} message)
+\item 
+delegate void \mbox{\hyperlink{class_serial_controller_custom_delimiter_a67feffef537cf8654ae23e75514ae21c}{Tear\+Down\+Function}} ()
+\item 
+void \mbox{\hyperlink{class_serial_controller_custom_delimiter_ae83871f6d5b2aec79c79e897457582b7}{Set\+Tear\+Down\+Function}} (\mbox{\hyperlink{class_serial_controller_custom_delimiter_a67feffef537cf8654ae23e75514ae21c}{Tear\+Down\+Function}} user\+Function)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_serial_controller_custom_delimiter_ae9d0b0ce6dd8a1614e91e8b7c92b8ee0}{port\+Name}} = \char`\"{}COM3\char`\"{}
+\item 
+int \mbox{\hyperlink{class_serial_controller_custom_delimiter_a3544b667a0b593bf40b9bc46823b3d02}{baud\+Rate}} = 9600
+\item 
+Game\+Object \mbox{\hyperlink{class_serial_controller_custom_delimiter_abc1d31ab591d2e52f90ef9b07c3893e3}{message\+Listener}}
+\item 
+int \mbox{\hyperlink{class_serial_controller_custom_delimiter_a25ddc1a2bf4b5544846ec5239b9528c0}{reconnection\+Delay}} = 1000
+\item 
+int \mbox{\hyperlink{class_serial_controller_custom_delimiter_aa76e4124730b5c8e31f479029965a920}{max\+Unread\+Messages}} = 1
+\item 
+byte \mbox{\hyperlink{class_serial_controller_custom_delimiter_afd6e543188f2643b42978fd91f4ef759}{separator}} = 90
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Thread \mbox{\hyperlink{class_serial_controller_custom_delimiter_a3ba8c1268e93079f7da717b59ef3e608}{thread}}
+\item 
+\mbox{\hyperlink{class_serial_thread_binary_delimited}{Serial\+Thread\+Binary\+Delimited}} \mbox{\hyperlink{class_serial_controller_custom_delimiter_aa2fa0470ffe76e1a43e108861972cd24}{serial\+Thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+While \textquotesingle{}\mbox{\hyperlink{class_serial_controller}{Serial\+Controller}}\textquotesingle{} only allows reading/sending text data that is terminated by new-\/lines, this class allows reading/sending messages using a binary protocol where each message is separated from the next by a 1-\/char delimiter. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_abb5d08c4a990bea5e480d7b9a6549c8a}\label{class_serial_controller_custom_delimiter_abb5d08c4a990bea5e480d7b9a6549c8a}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!ReadSerialMessage@{ReadSerialMessage}}
+\index{ReadSerialMessage@{ReadSerialMessage}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{ReadSerialMessage()}{ReadSerialMessage()}}
+{\footnotesize\ttfamily byte\mbox{[}$\,$\mbox{]} Serial\+Controller\+Custom\+Delimiter.\+Read\+Serial\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_controller_custom_delimiter_abb5d08c4a990bea5e480d7b9a6549c8a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_adc7ccfdc0ec0b5f9bd8100dc9a04278d}\label{class_serial_controller_custom_delimiter_adc7ccfdc0ec0b5f9bd8100dc9a04278d}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!SendSerialMessage@{SendSerialMessage}}
+\index{SendSerialMessage@{SendSerialMessage}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{SendSerialMessage()}{SendSerialMessage()}}
+{\footnotesize\ttfamily void Serial\+Controller\+Custom\+Delimiter.\+Send\+Serial\+Message (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{message }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_controller_custom_delimiter_adc7ccfdc0ec0b5f9bd8100dc9a04278d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_ae83871f6d5b2aec79c79e897457582b7}\label{class_serial_controller_custom_delimiter_ae83871f6d5b2aec79c79e897457582b7}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!SetTearDownFunction@{SetTearDownFunction}}
+\index{SetTearDownFunction@{SetTearDownFunction}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{SetTearDownFunction()}{SetTearDownFunction()}}
+{\footnotesize\ttfamily void Serial\+Controller\+Custom\+Delimiter.\+Set\+Tear\+Down\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_serial_controller_custom_delimiter_a67feffef537cf8654ae23e75514ae21c}{Tear\+Down\+Function}}}]{user\+Function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_a67feffef537cf8654ae23e75514ae21c}\label{class_serial_controller_custom_delimiter_a67feffef537cf8654ae23e75514ae21c}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!TearDownFunction@{TearDownFunction}}
+\index{TearDownFunction@{TearDownFunction}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{TearDownFunction()}{TearDownFunction()}}
+{\footnotesize\ttfamily delegate void Serial\+Controller\+Custom\+Delimiter.\+Tear\+Down\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_a3544b667a0b593bf40b9bc46823b3d02}\label{class_serial_controller_custom_delimiter_a3544b667a0b593bf40b9bc46823b3d02}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!baudRate@{baudRate}}
+\index{baudRate@{baudRate}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{baudRate}{baudRate}}
+{\footnotesize\ttfamily int Serial\+Controller\+Custom\+Delimiter.\+baud\+Rate = 9600}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_aa76e4124730b5c8e31f479029965a920}\label{class_serial_controller_custom_delimiter_aa76e4124730b5c8e31f479029965a920}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!maxUnreadMessages@{maxUnreadMessages}}
+\index{maxUnreadMessages@{maxUnreadMessages}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{maxUnreadMessages}{maxUnreadMessages}}
+{\footnotesize\ttfamily int Serial\+Controller\+Custom\+Delimiter.\+max\+Unread\+Messages = 1}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_abc1d31ab591d2e52f90ef9b07c3893e3}\label{class_serial_controller_custom_delimiter_abc1d31ab591d2e52f90ef9b07c3893e3}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!messageListener@{messageListener}}
+\index{messageListener@{messageListener}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{messageListener}{messageListener}}
+{\footnotesize\ttfamily Game\+Object Serial\+Controller\+Custom\+Delimiter.\+message\+Listener}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_ae9d0b0ce6dd8a1614e91e8b7c92b8ee0}\label{class_serial_controller_custom_delimiter_ae9d0b0ce6dd8a1614e91e8b7c92b8ee0}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!portName@{portName}}
+\index{portName@{portName}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{portName}{portName}}
+{\footnotesize\ttfamily string Serial\+Controller\+Custom\+Delimiter.\+port\+Name = \char`\"{}COM3\char`\"{}}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_a25ddc1a2bf4b5544846ec5239b9528c0}\label{class_serial_controller_custom_delimiter_a25ddc1a2bf4b5544846ec5239b9528c0}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!reconnectionDelay@{reconnectionDelay}}
+\index{reconnectionDelay@{reconnectionDelay}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{reconnectionDelay}{reconnectionDelay}}
+{\footnotesize\ttfamily int Serial\+Controller\+Custom\+Delimiter.\+reconnection\+Delay = 1000}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_afd6e543188f2643b42978fd91f4ef759}\label{class_serial_controller_custom_delimiter_afd6e543188f2643b42978fd91f4ef759}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!separator@{separator}}
+\index{separator@{separator}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{separator}{separator}}
+{\footnotesize\ttfamily byte Serial\+Controller\+Custom\+Delimiter.\+separator = 90}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_aa2fa0470ffe76e1a43e108861972cd24}\label{class_serial_controller_custom_delimiter_aa2fa0470ffe76e1a43e108861972cd24}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!serialThread@{serialThread}}
+\index{serialThread@{serialThread}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{serialThread}{serialThread}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_serial_thread_binary_delimited}{Serial\+Thread\+Binary\+Delimited}} Serial\+Controller\+Custom\+Delimiter.\+serial\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_serial_controller_custom_delimiter_a3ba8c1268e93079f7da717b59ef3e608}\label{class_serial_controller_custom_delimiter_a3ba8c1268e93079f7da717b59ef3e608}} 
+\index{SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}!thread@{thread}}
+\index{thread@{thread}!SerialControllerCustomDelimiter@{SerialControllerCustomDelimiter}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily Thread Serial\+Controller\+Custom\+Delimiter.\+thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Ardity/\+Scripts/\mbox{\hyperlink{_serial_controller_custom_delimiter_8cs}{Serial\+Controller\+Custom\+Delimiter.\+cs}}\end{DoxyCompactItemize}

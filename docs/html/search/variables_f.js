@@ -24,10 +24,11 @@ var searchData=
   ['objtop_21',['ObjTop',['../class_lattice_class.html#a7c26ede8adef5b6eb71aad97c003e579',1,'LatticeClass']]],
   ['onlyonwhenontabint_22',['OnlyOnWhenOnTabInt',['../class_selected.html#a2b5c8109d60d55b2caac3c087f92b026',1,'Selected']]],
   ['onlytopnodes_23',['OnlyTopNodes',['../class_illa_controller_v3.html#afbc6d8d9d74906f6dd5ccbd8f3a8c3f3',1,'IllaControllerV3']]],
-  ['optimize_24',['optimize',['../namespace_image_to_video.html#a101dc1d8e784ab39bc7d0eecbc938b30',1,'ImageToVideo']]],
-  ['originalcolor_25',['OriginalColor',['../class_selected.html#a41ea0f16479e35840085aa6a4a3c180f',1,'Selected']]],
-  ['originalscene_26',['OriginalScene',['../class_collision_detection_scene.html#a20fa6730ae32a5c77156a56ca29b5495',1,'CollisionDetectionScene']]],
-  ['overrridecolor_27',['overrrideColor',['../class_selected.html#a5d369e92ad43bd3c93f948ee356d7afa',1,'Selected']]],
-  ['overwrite_28',['Overwrite',['../class_object_save_popup.html#a8ff701b222a300244f564ec3d1f87cca',1,'ObjectSavePopup']]],
-  ['owner_29',['Owner',['../class_lattice_class.html#ac3e1a18c81bc50347958a696a7df8efb',1,'LatticeClass.Owner()'],['../class_robot_script.html#a1349f693dfdc34f3455cf25fb1eb0b47',1,'RobotScript.Owner()']]]
+  ['ops_24',['Ops',['../class_lynxmotion_1_1_robotics_1_1_channel_multi_op.html#ab3b824ea531c32a269e212e771a78e67',1,'Lynxmotion::Robotics::ChannelMultiOp']]],
+  ['optimize_25',['optimize',['../namespace_image_to_video.html#a101dc1d8e784ab39bc7d0eecbc938b30',1,'ImageToVideo']]],
+  ['originalcolor_26',['OriginalColor',['../class_selected.html#a41ea0f16479e35840085aa6a4a3c180f',1,'Selected']]],
+  ['originalscene_27',['OriginalScene',['../class_collision_detection_scene.html#a20fa6730ae32a5c77156a56ca29b5495',1,'CollisionDetectionScene']]],
+  ['overrridecolor_28',['overrrideColor',['../class_selected.html#a5d369e92ad43bd3c93f948ee356d7afa',1,'Selected']]],
+  ['overwrite_29',['Overwrite',['../class_object_save_popup.html#a8ff701b222a300244f564ec3d1f87cca',1,'ObjectSavePopup']]],
+  ['owner_30',['Owner',['../class_lattice_class.html#ac3e1a18c81bc50347958a696a7df8efb',1,'LatticeClass.Owner()'],['../class_robot_script.html#a1349f693dfdc34f3455cf25fb1eb0b47',1,'RobotScript.Owner()']]]
 ];

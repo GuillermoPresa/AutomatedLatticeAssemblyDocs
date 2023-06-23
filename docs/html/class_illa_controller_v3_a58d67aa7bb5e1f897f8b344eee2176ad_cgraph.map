@@ -1,5 +1,4 @@
 <map id="IllaControllerV3.RefreshAllAnlges" name="IllaControllerV3.RefreshAllAnlges">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,163,47"/>
 <area shape="rect" id="node2" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="211,13,368,39"/>
-<area shape="rect" id="node3" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="416,13,597,39"/>
 </map>

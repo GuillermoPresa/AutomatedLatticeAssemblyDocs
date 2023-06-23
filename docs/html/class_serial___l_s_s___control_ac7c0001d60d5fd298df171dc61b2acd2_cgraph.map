@@ -1,0 +1,6 @@
+<map id="Serial_LSS_Control.RunFrame" name="Serial_LSS_Control.RunFrame">
+<area shape="rect" id="node1" title=" " alt="" coords="5,37,204,63"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="252,29,472,71"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#adda627f61d8e22ac12577101475c6da6" title=" " alt="" coords="520,29,740,71"/>
+<area shape="rect" id="node4" href="$class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="788,29,983,71"/>
+</map>

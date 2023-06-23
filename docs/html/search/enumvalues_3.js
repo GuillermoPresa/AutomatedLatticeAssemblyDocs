@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['grabmove_0',['GrabMove',['../namespace_space_navigator_driver.html#a22f4f0d3580f67525b9ee1f52d47ef4ea2d99e452cf15324089b52b2d28b0c3ee',1,'SpaceNavigatorDriver']]]
+  ['deccelerating_0',['Deccelerating',['../namespace_lynxmotion_1_1_robotics.html#aa3e0732739743fc416840f09d52a1a1dacbc37bd91c5f4564c4e0bd98798152b0',1,'Lynxmotion::Robotics']]]
 ];

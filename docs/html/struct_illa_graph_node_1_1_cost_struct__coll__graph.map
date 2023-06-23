@@ -1,7 +1,13 @@
 <map id="IllaGraphNode.CostStruct" name="IllaGraphNode.CostStruct">
-<area shape="rect" id="node1" title=" " alt="" coords="100,185,269,212"/>
-<area shape="rect" id="node2" href="$class_illa_graph_node.html" title=" " alt="" coords="9,81,112,108"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node4" href="$class_pos_j.html" title=" " alt="" coords="286,81,337,108"/>
-<area shape="rect" id="node5" href="$interface_i_prototype.html" title=" " alt="" coords="244,5,379,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="115,349,284,376"/>
+<area shape="rect" id="node2" href="$class_illa_graph_node.html" title=" " alt="" coords="16,260,119,287"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,171,116,197"/>
+<area shape="rect" id="node4" href="$class_movement.html" title=" " alt="" coords="305,260,387,287"/>
+<area shape="rect" id="node5" href="$interface_i_prototype.html" title=" " alt="" coords="140,171,304,197"/>
+<area shape="rect" id="node6" href="$class_pos_x.html" title=" " alt="" coords="497,81,549,108"/>
+<area shape="rect" id="node8" href="$class_robot_configuration.html" title=" " alt="" coords="329,171,459,197"/>
+<area shape="rect" id="node7" href="$interface_i_prototype.html" title=" " alt="" coords="463,5,597,32"/>
+<area shape="rect" id="node9" href="$interface_i_prototype.html" title=" " alt="" coords="112,81,327,108"/>
+<area shape="rect" id="node10" href="$class_pos_j.html" title=" " alt="" coords="351,81,402,108"/>
+<area shape="rect" id="node11" href="$interface_i_prototype.html" title=" " alt="" coords="304,5,439,32"/>
 </map>

@@ -13,6 +13,7 @@ var dir_8bc20651c52d64f68a2ad1811463e540 =
     [ "Editor window.cs", "_editor_01window_8cs.html", "_editor_01window_8cs" ],
     [ "EditorLayerSlider.cs", "_editor_layer_slider_8cs.html", "_editor_layer_slider_8cs" ],
     [ "EditorTimeSlider.cs", "_editor_time_slider_8cs.html", "_editor_time_slider_8cs" ],
+    [ "LSS_Controller_script.cs", "_l_s_s___controller__script_8cs.html", "_l_s_s___controller__script_8cs" ],
     [ "References.cs", "_references_8cs.html", "_references_8cs" ],
     [ "RobotCoordinator.cs", "_robot_coordinator_8cs.html", "_robot_coordinator_8cs" ],
     [ "SelectionScript.cs", "_selection_script_8cs.html", "_selection_script_8cs" ],

@@ -1,5 +1,8 @@
 var class_illa_navigation_path =
 [
+    [ "IllaNavigationPath", "class_illa_navigation_path.html#a2879d235d7bf88e0e69a353d3e24a39d", null ],
+    [ "IllaNavigationPath", "class_illa_navigation_path.html#a533acc10511a0db47215c168cc52e773", null ],
+    [ "DrawPath", "class_illa_navigation_path.html#a780a2814ec9055d224722851752242c1", null ],
     [ "InverseNavigationPath", "class_illa_navigation_path.html#ac05468c91ac4d9be84bfcd2924da9497", null ],
     [ "RemoveFirstMovement", "class_illa_navigation_path.html#a32df8fb87415053a2b3b820e86ca443b", null ],
     [ "SetBackwardsMovement", "class_illa_navigation_path.html#abad18de9f28b9227f2b076154e43a8f5", null ],

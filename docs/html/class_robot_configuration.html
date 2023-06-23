@@ -103,10 +103,12 @@ Collaboration diagram for RobotConfiguration:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_robot_configuration__coll__graph.png" border="0" usemap="#a_robot_configuration_coll__map" alt="Collaboration graph"/></div>
 <map name="a_robot_configuration_coll__map" id="a_robot_configuration_coll__map">
-<area shape="rect" title=" " alt="" coords="69,171,199,197"/>
+<area shape="rect" title=" " alt="" coords="205,171,335,197"/>
 <area shape="rect" href="interface_i_prototype.html" title=" " alt="" coords="5,81,220,108"/>
 <area shape="rect" href="class_pos_j.html" title=" " alt="" coords="245,81,295,108"/>
-<area shape="rect" href="interface_i_prototype.html" title=" " alt="" coords="203,5,337,32"/>
+<area shape="rect" href="interface_i_prototype.html" title=" " alt="" coords="195,5,329,32"/>
+<area shape="rect" href="class_pos_x.html" title=" " alt="" coords="379,81,431,108"/>
+<area shape="rect" href="interface_i_prototype.html" title=" " alt="" coords="353,5,488,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -114,6 +116,10 @@ Collaboration diagram for RobotConfiguration:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ae7e50b7050ac542ce5fb59d329c81e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a1ae7e50b7050ac542ce5fb59d329c81e">RobotConfiguration</a> (GameObject NodeBase, <a class="el" href="class_pos_j.html">PosJ</a> PosJConfiguration)</td></tr>
 <tr class="separator:a1ae7e50b7050ac542ce5fb59d329c81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee92a32bb632f982624c0f5857209b3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#aee92a32bb632f982624c0f5857209b3e">RobotConfiguration</a> (GameObject NodeBase, <a class="el" href="class_pos_j.html">PosJ</a> PosJConfiguration, <a class="el" href="class_pos_x.html">PosX</a> PosXConfiguration)</td></tr>
+<tr class="separator:aee92a32bb632f982624c0f5857209b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f40ecae837c71e79d6a054bc7d82654"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a2f40ecae837c71e79d6a054bc7d82654">RobotConfiguration</a> (GameObject NodeBase, <a class="el" href="class_pos_j.html">PosJ</a> PosJConfiguration, GameObject TargetNode)</td></tr>
+<tr class="separator:a2f40ecae837c71e79d6a054bc7d82654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9739fbf50930a68f64f98e44d3a06bfc"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a9739fbf50930a68f64f98e44d3a06bfc">ToString</a> ()</td></tr>
 <tr class="separator:a9739fbf50930a68f64f98e44d3a06bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0817e1175838763ce38925ef860723ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_robot_configuration.html">RobotConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a0817e1175838763ce38925ef860723ce">CreateDeepCopy</a> ()</td></tr>
@@ -124,16 +130,22 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9051807c27c377218ac5238cdf23fcb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8">JointPose</a></td></tr>
-<tr class="separator:a9051807c27c377218ac5238cdf23fcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9901b9b40815445603816ce706119e50"><td class="memItemLeft" align="right" valign="top">GameObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a9901b9b40815445603816ce706119e50">BaseNode</a></td></tr>
 <tr class="separator:a9901b9b40815445603816ce706119e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af5ec90de18bdb8965ff5a756a7ae1d"><td class="memItemLeft" align="right" valign="top">Quaternion&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a4af5ec90de18bdb8965ff5a756a7ae1d">BaseOrientation</a></td></tr>
+<tr class="separator:a4af5ec90de18bdb8965ff5a756a7ae1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9051807c27c377218ac5238cdf23fcb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8">JointPose</a></td></tr>
+<tr class="separator:a9051807c27c377218ac5238cdf23fcb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3d3aa724a1e8eab4c0c6042e98dd39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_x.html">PosX</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#aff3d3aa724a1e8eab4c0c6042e98dd39">PosX</a></td></tr>
+<tr class="separator:aff3d3aa724a1e8eab4c0c6042e98dd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc7509d8bb369efbcadd5643a4a0dd1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_configuration.html#a5cc7509d8bb369efbcadd5643a4a0dd1">IsInverted</a></td></tr>
+<tr class="separator:a5cc7509d8bb369efbcadd5643a4a0dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Robot configuration is the full representation of a robot position. It consists on a <a class="el" href="class_pos_j.html">PosJ</a> and a Baselocation. Realize that <a class="el" href="class_pos_j.html">PosJ</a> just represents a configuration of the tool with respect to the base but in robots where the base can also move a full description must provide the base position. The base position is stored in the form of the Node the base is clamped to. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1ae7e50b7050ac542ce5fb59d329c81e" name="a1ae7e50b7050ac542ce5fb59d329c81e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ae7e50b7050ac542ce5fb59d329c81e">&#9670;&nbsp;</a></span>RobotConfiguration()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae7e50b7050ac542ce5fb59d329c81e">&#9670;&nbsp;</a></span>RobotConfiguration() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +178,74 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="5,5,179,47"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="aee92a32bb632f982624c0f5857209b3e" name="aee92a32bb632f982624c0f5857209b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee92a32bb632f982624c0f5857209b3e">&#9670;&nbsp;</a></span>RobotConfiguration() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RobotConfiguration.RobotConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>NodeBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>PosJConfiguration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pos_x.html">PosX</a>&#160;</td>
+          <td class="paramname"><em>PosXConfiguration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f40ecae837c71e79d6a054bc7d82654" name="a2f40ecae837c71e79d6a054bc7d82654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f40ecae837c71e79d6a054bc7d82654">&#9670;&nbsp;</a></span>RobotConfiguration() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RobotConfiguration.RobotConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>NodeBase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>PosJConfiguration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GameObject&#160;</td>
+          <td class="paramname"><em>TargetNode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -239,6 +319,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a4af5ec90de18bdb8965ff5a756a7ae1d" name="a4af5ec90de18bdb8965ff5a756a7ae1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af5ec90de18bdb8965ff5a756a7ae1d">&#9670;&nbsp;</a></span>BaseOrientation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Quaternion RobotConfiguration.BaseOrientation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cc7509d8bb369efbcadd5643a4a0dd1" name="a5cc7509d8bb369efbcadd5643a4a0dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc7509d8bb369efbcadd5643a4a0dd1">&#9670;&nbsp;</a></span>IsInverted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RobotConfiguration.IsInverted</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9051807c27c377218ac5238cdf23fcb8" name="a9051807c27c377218ac5238cdf23fcb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9051807c27c377218ac5238cdf23fcb8">&#9670;&nbsp;</a></span>JointPose</h2>
 
@@ -247,6 +355,20 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_pos_j.html">PosJ</a> RobotConfiguration.JointPose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aff3d3aa724a1e8eab4c0c6042e98dd39" name="aff3d3aa724a1e8eab4c0c6042e98dd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff3d3aa724a1e8eab4c0c6042e98dd39">&#9670;&nbsp;</a></span>PosX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pos_x.html">PosX</a> RobotConfiguration.PosX</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,0 +1,76 @@
+\hypertarget{class_serial_thread_lines}{}\doxysection{Serial\+Thread\+Lines Class Reference}
+\label{class_serial_thread_lines}\index{SerialThreadLines@{SerialThreadLines}}
+
+
+Inheritance diagram for Serial\+Thread\+Lines\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_serial_thread_lines__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Serial\+Thread\+Lines\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_serial_thread_lines__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_serial_thread_lines_a5068e1a152f2b43c3549f61a82762203}{Serial\+Thread\+Lines}} (string port\+Name, int baud\+Rate, int delay\+Before\+Reconnecting, int max\+Unread\+Messages)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_serial_thread_lines_ab6f626a737a5a02bd170ac48efb6da02}{Send\+To\+Wire}} (object message, Serial\+Port serial\+Port)
+\item 
+override object \mbox{\hyperlink{class_serial_thread_lines_aa32aeaa17fa69b574c0d9745a72db591}{Read\+From\+Wire}} (Serial\+Port serial\+Port)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains methods that must be run from inside a thread and others that must be invoked from Unity. Both types of methods are clearly marked in the code, although you, the final user of this library, don\textquotesingle{}t need to even open this file unless you are introducing incompatibilities for upcoming versions.
+
+For method comments, refer to the base class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_serial_thread_lines_a5068e1a152f2b43c3549f61a82762203}\label{class_serial_thread_lines_a5068e1a152f2b43c3549f61a82762203}} 
+\index{SerialThreadLines@{SerialThreadLines}!SerialThreadLines@{SerialThreadLines}}
+\index{SerialThreadLines@{SerialThreadLines}!SerialThreadLines@{SerialThreadLines}}
+\doxysubsubsection{\texorpdfstring{SerialThreadLines()}{SerialThreadLines()}}
+{\footnotesize\ttfamily Serial\+Thread\+Lines.\+Serial\+Thread\+Lines (\begin{DoxyParamCaption}\item[{string}]{port\+Name,  }\item[{int}]{baud\+Rate,  }\item[{int}]{delay\+Before\+Reconnecting,  }\item[{int}]{max\+Unread\+Messages }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_serial_thread_lines_aa32aeaa17fa69b574c0d9745a72db591}\label{class_serial_thread_lines_aa32aeaa17fa69b574c0d9745a72db591}} 
+\index{SerialThreadLines@{SerialThreadLines}!ReadFromWire@{ReadFromWire}}
+\index{ReadFromWire@{ReadFromWire}!SerialThreadLines@{SerialThreadLines}}
+\doxysubsubsection{\texorpdfstring{ReadFromWire()}{ReadFromWire()}}
+{\footnotesize\ttfamily override object Serial\+Thread\+Lines.\+Read\+From\+Wire (\begin{DoxyParamCaption}\item[{Serial\+Port}]{serial\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_serial_thread_a3c7a8cd18513ce35c68215c3c473c76e}{Abstract\+Serial\+Thread}}.
+
+\mbox{\Hypertarget{class_serial_thread_lines_ab6f626a737a5a02bd170ac48efb6da02}\label{class_serial_thread_lines_ab6f626a737a5a02bd170ac48efb6da02}} 
+\index{SerialThreadLines@{SerialThreadLines}!SendToWire@{SendToWire}}
+\index{SendToWire@{SendToWire}!SerialThreadLines@{SerialThreadLines}}
+\doxysubsubsection{\texorpdfstring{SendToWire()}{SendToWire()}}
+{\footnotesize\ttfamily override void Serial\+Thread\+Lines.\+Send\+To\+Wire (\begin{DoxyParamCaption}\item[{object}]{message,  }\item[{Serial\+Port}]{serial\+Port }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_serial_thread_a5ba1b18ce91f25463693fc49fef38f78}{Abstract\+Serial\+Thread}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Ardity/\+Scripts/\+Threads/\mbox{\hyperlink{_serial_thread_lines_8cs}{Serial\+Thread\+Lines.\+cs}}\end{DoxyCompactItemize}

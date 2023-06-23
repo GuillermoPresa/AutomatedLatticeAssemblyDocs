@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operationmode_0',['OperationMode',['../namespace_space_navigator_driver.html#a22f4f0d3580f67525b9ee1f52d47ef4e',1,'SpaceNavigatorDriver']]]
+  ['ledcolor_0',['LEDColor',['../namespace_lynxmotion_1_1_robotics.html#a94d07209e0e54eca36ddccaf79920ba7',1,'Lynxmotion::Robotics']]]
 ];

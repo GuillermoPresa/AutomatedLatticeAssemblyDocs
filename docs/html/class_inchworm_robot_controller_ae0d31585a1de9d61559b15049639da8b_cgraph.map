@@ -1,9 +1,8 @@
 <map id="InchwormRobotController.ForceConfiguration" name="InchwormRobotController.ForceConfiguration">
-<area shape="rect" id="node1" title=" " alt="" coords="5,69,176,110"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,176,98"/>
 <area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#ab6c28045565b0c26d756cf855fec1f81" title=" " alt="" coords="224,27,395,69"/>
-<area shape="rect" id="node7" href="$class_joint_class.html#aa7a0837248628938579dd5061b331d31" title=" " alt="" coords="235,117,383,144"/>
+<area shape="rect" id="node6" href="$class_joint_class.html#aa7a0837248628938579dd5061b331d31" title=" " alt="" coords="235,93,383,120"/>
 <area shape="rect" id="node3" href="$class_joint_class.html#aa8beec144d7e7861c0838b6f5c6f6360" title=" " alt="" coords="449,5,607,32"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="443,57,613,98"/>
-<area shape="rect" id="node4" href="$class_joint_class.html#ab0b3a0e8258c21534b61276cae558522" title="Calculates the rotation in a frame given a target angle and an angular speed factor...." alt="" coords="661,5,843,32"/>
-<area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="667,57,837,98"/>
+<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a6e57fc7ae1c3ea7b6eeb874ea2e0cafa" title=" " alt="" coords="443,57,613,98"/>
+<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#ad24593b4615b03510973e64e3b577dd7" title=" " alt="" coords="661,57,832,98"/>
 </map>

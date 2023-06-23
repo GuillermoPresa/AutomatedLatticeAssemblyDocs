@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['parentgraph_0',['parentGraph',['../class_illa_graph_node.html#a9c03a4ef6d6d21ca2894b1d153e6f058',1,'IllaGraphNode']]],
-  ['placedlatticelist_1',['PlacedLatticeList',['../class_lattice_collection.html#a421dec4d463539a17c0d0131ba6312a3',1,'LatticeCollection']]]
+  ['object1_0',['object1',['../class_collision_test_result.html#a0636cdeef4d5b860ba85c4e6ef7f0c17',1,'CollisionTestResult']]],
+  ['object2_1',['object2',['../class_collision_test_result.html#a564a682f6b8a791cb00a1c520178cf3f',1,'CollisionTestResult']]],
+  ['objectcount_2',['ObjectCount',['../class_lattice_collection.html#a6394473a6cf13a279ff3a65febf171bf',1,'LatticeCollection']]],
+  ['originoffset_3',['OriginOffset',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a60cfa9c9ca4d7e8f69766a4bbca24905',1,'Lynxmotion::Robotics::LssSettings']]]
 ];

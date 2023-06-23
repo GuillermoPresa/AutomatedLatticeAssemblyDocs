@@ -1,16 +1,28 @@
 <map id="DenavitHartenbergIlla3.ci" name="DenavitHartenbergIlla3.ci">
-<area shape="rect" id="node1" title=" " alt="" coords="1385,151,1549,177"/>
-<area shape="rect" id="node2" href="$class_denavit_hartenberg_illa3.html#a51e94d8268cc1c803eae94b65d311151" title=" " alt="" coords="1171,143,1337,185"/>
-<area shape="rect" id="node3" href="$class_denavit_hartenberg_illa3.html#a0fc23d1f1aa46d0bc2419e4fd83b136b" title=" " alt="" coords="941,78,1123,119"/>
-<area shape="rect" id="node11" href="$class_denavit_hartenberg_illa3.html#abda1fe18dc5f4d2c7afe6b5fd706963a" title=" " alt="" coords="945,143,1119,185"/>
-<area shape="rect" id="node13" href="$class_denavit_hartenberg_illa3.html#ab178a297454b20d70b634c2c202b2941" title=" " alt="" coords="945,209,1119,250"/>
-<area shape="rect" id="node4" href="$class_denavit_hartenberg_illa3.html#adeda4fbe7e1d0f0e909aa065cbd231dd" title=" " alt="" coords="680,89,888,116"/>
-<area shape="rect" id="node10" href="$class_denavit_hartenberg_illa3.html#a8cf39b65a84666274567ba5e6c067de0" title=" " alt="" coords="675,39,893,65"/>
-<area shape="rect" id="node5" href="$class_illa_controller_v3.html#acdd0781856c0b80dc4112b4122f62571" title=" " alt="" coords="439,5,615,32"/>
-<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ad539036b8f571bb908bd557a0c52f8f8" title=" " alt="" coords="428,174,627,215"/>
-<area shape="rect" id="node8" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,152,157,179"/>
-<area shape="rect" id="node9" href="$class_illa_controller_v3.html#aaf0fafcb41fac2f411575672a76d362a" title=" " alt="" coords="437,57,618,98"/>
-<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a7967190b78402df4825808d3682b4097" title=" " alt="" coords="205,177,380,204"/>
-<area shape="rect" id="node12" href="$class_denavit_hartenberg_illa3.html#a51511ecb0496ede8aaf62860b6cce800" title=" " alt="" coords="695,143,873,185"/>
-<area shape="rect" id="node14" href="$class_denavit_hartenberg_illa3.html#a371b76a011c7a2327c71b0f822a005f7" title=" " alt="" coords="695,209,873,250"/>
+<area shape="rect" id="node1" title=" " alt="" coords="2848,191,3012,218"/>
+<area shape="rect" id="node2" href="$class_denavit_hartenberg_illa3.html#a51e94d8268cc1c803eae94b65d311151" title=" " alt="" coords="2633,184,2800,225"/>
+<area shape="rect" id="node3" href="$class_denavit_hartenberg_illa3.html#acfb2eb55a05fa5e235db0d4cd01d3698" title=" " alt="" coords="2404,119,2585,160"/>
+<area shape="rect" id="node23" href="$class_denavit_hartenberg_illa3.html#abda1fe18dc5f4d2c7afe6b5fd706963a" title=" " alt="" coords="2407,184,2582,225"/>
+<area shape="rect" id="node25" href="$class_denavit_hartenberg_illa3.html#ab178a297454b20d70b634c2c202b2941" title=" " alt="" coords="2407,249,2582,291"/>
+<area shape="rect" id="node4" href="$class_denavit_hartenberg_illa3.html#a968b561c340e5e425b14fb96adf5de42" title=" " alt="" coords="2175,64,2356,105"/>
+<area shape="rect" id="node18" href="$class_denavit_hartenberg_illa3.html#a6a55538c82c136742b17f5ebfa951a41" title=" " alt="" coords="1913,130,2121,157"/>
+<area shape="rect" id="node5" href="$class_denavit_hartenberg_illa3.html#a8cf39b65a84666274567ba5e6c067de0" title=" " alt="" coords="1908,71,2127,98"/>
+<area shape="rect" id="node6" href="$class_illa_controller_v3.html#acdd0781856c0b80dc4112b4122f62571" title=" " alt="" coords="1681,130,1857,157"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#aaf0fafcb41fac2f411575672a76d362a" title=" " alt="" coords="1678,64,1859,105"/>
+<area shape="rect" id="node8" href="$class_illa_controller_v3.html#a1e2c29d983713ebff5420123395fa607" title=" " alt="" coords="1443,64,1617,105"/>
+<area shape="rect" id="node9" href="$class_illa_controller_v3.html#a1a802e93b60146e60f331bf584bbf313" title=" " alt="" coords="1161,13,1383,39"/>
+<area shape="rect" id="node15" href="$class_illa_controller_v3.html#a8cf1cf2655a3174e928f8b3f161a4b2f" title=" " alt="" coords="1171,130,1373,157"/>
+<area shape="rect" id="node16" href="$class_illa_controller_v3.html#ab9299c8badd9a7805305b53500418b7c" title=" " alt="" coords="1171,64,1373,105"/>
+<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a12325bf389518fc7c8e8473a7718089d" title=" " alt="" coords="929,35,1095,76"/>
+<area shape="rect" id="node11" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="700,5,863,47"/>
+<area shape="rect" id="node12" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="455,5,652,47"/>
+<area shape="rect" id="node13" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="232,5,407,47"/>
+<area shape="rect" id="node14" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node17" href="$class_illa_controller_v3.html#afa519e39218f16f59837fc1bef63782d" title=" " alt="" coords="911,101,1113,127"/>
+<area shape="rect" id="node19" href="$class_denavit_hartenberg_illa3.html#afd774dbdf96d49e62c738d4ec53e8f9a" title=" " alt="" coords="1677,181,1860,223"/>
+<area shape="rect" id="node20" href="$class_illa_controller_v3.html#ad539036b8f571bb908bd557a0c52f8f8" title=" " alt="" coords="1431,181,1629,223"/>
+<area shape="rect" id="node21" href="$class_illa_controller_v3.html#a7967190b78402df4825808d3682b4097" title=" " alt="" coords="1185,189,1359,215"/>
+<area shape="rect" id="node22" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="936,189,1088,215"/>
+<area shape="rect" id="node24" href="$class_denavit_hartenberg_illa3.html#a51511ecb0496ede8aaf62860b6cce800" title=" " alt="" coords="2177,184,2354,225"/>
+<area shape="rect" id="node26" href="$class_denavit_hartenberg_illa3.html#a371b76a011c7a2327c71b0f822a005f7" title=" " alt="" coords="2177,249,2354,291"/>
 </map>

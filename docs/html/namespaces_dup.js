@@ -1,5 +1,6 @@
 var namespaces_dup =
 [
+    [ "Assets", "namespace_assets.html", "namespace_assets" ],
     [ "DensityMesh", "namespace_density_mesh.html", "namespace_density_mesh" ],
     [ "Example", "namespace_example.html", "namespace_example" ],
     [ "ImageToVideo", "namespace_image_to_video.html", [
@@ -16,6 +17,7 @@ var namespaces_dup =
       [ "save_all", "namespace_image_to_video.html#ac439b509e637168389d54e4b1272ae88", null ],
       [ "transparency", "namespace_image_to_video.html#a55f4293053b62e557b43555f317ea911", null ]
     ] ],
+    [ "Lynxmotion", "namespace_lynxmotion.html", "namespace_lynxmotion" ],
     [ "MovementAndSensorDefinition", "namespace_movement_and_sensor_definition.html", "namespace_movement_and_sensor_definition" ],
     [ "MStudio", "namespace_m_studio.html", "namespace_m_studio" ],
     [ "RTS_Cam", "namespace_r_t_s___cam.html", "namespace_r_t_s___cam" ],

@@ -1,0 +1,180 @@
+\hypertarget{class_serial_controller}{}\doxysection{Serial\+Controller Class Reference}
+\label{class_serial_controller}\index{SerialController@{SerialController}}
+
+
+Inheritance diagram for Serial\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{class_serial_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Serial\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_serial_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_serial_controller_a3ee3d8cb03b75c4cc4927808ae905ee5}{Read\+Serial\+Message}} ()
+\item 
+void \mbox{\hyperlink{class_serial_controller_a62dec0dd5c20d661d483186420308b06}{Send\+Serial\+Message}} (string message)
+\item 
+delegate void \mbox{\hyperlink{class_serial_controller_a82a49db5679bb0984e06d9b2b41b11e6}{Tear\+Down\+Function}} ()
+\item 
+void \mbox{\hyperlink{class_serial_controller_a6eee92cd9c47fb526537b0be47279b96}{Set\+Tear\+Down\+Function}} (\mbox{\hyperlink{class_serial_controller_a82a49db5679bb0984e06d9b2b41b11e6}{Tear\+Down\+Function}} user\+Function)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_serial_controller_afd06697d77f9bf30567820f957c5dca6}{port\+Name}} = \char`\"{}COM3\char`\"{}
+\item 
+int \mbox{\hyperlink{class_serial_controller_a96535d826c1065405c906c8a15f332bc}{baud\+Rate}} = 9600
+\item 
+Game\+Object \mbox{\hyperlink{class_serial_controller_a6958893f79c7401eb18e7431b583be61}{message\+Listener}}
+\item 
+int \mbox{\hyperlink{class_serial_controller_adea1c9d6a21b7563f7670a156ad310ee}{reconnection\+Delay}} = 1000
+\item 
+int \mbox{\hyperlink{class_serial_controller_a76a3941149b84538fa0762060989faeb}{max\+Unread\+Messages}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_serial_controller_a0f0008965b514f27f1f9b630f114bf24}{SERIAL\+\_\+\+DEVICE\+\_\+\+CONNECTED}} = \char`\"{}\+\_\+\+\_\+\+Connected\+\_\+\+\_\+\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_serial_controller_a47cca5bc52d5b6596479bf5cc915a862}{SERIAL\+\_\+\+DEVICE\+\_\+\+DISCONNECTED}} = \char`\"{}\+\_\+\+\_\+\+Disconnected\+\_\+\+\_\+\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Thread \mbox{\hyperlink{class_serial_controller_ae94838595a95a315f85ca3f8cf08090d}{thread}}
+\item 
+\mbox{\hyperlink{class_serial_thread_lines}{Serial\+Thread\+Lines}} \mbox{\hyperlink{class_serial_controller_a91c721f499fe0def847c975c48556175}{serial\+Thread}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class allows a Unity program to continually check for messages from a serial device.
+
+It creates a Thread that communicates with the serial port and continually polls the messages on the wire. That Thread puts all the messages inside a Queue, and this \mbox{\hyperlink{class_serial_controller}{Serial\+Controller}} class polls that queue by means of invoking Serial\+Thread.\+Get\+Serial\+Message().
+
+The serial device must send its messages separated by a newline character. Neither the \mbox{\hyperlink{class_serial_controller}{Serial\+Controller}} nor the \mbox{\hyperlink{class_serial_thread}{Serial\+Thread}} perform any validation on the integrity of the message. It\textquotesingle{}s up to the one that makes sense of the data. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_serial_controller_a3ee3d8cb03b75c4cc4927808ae905ee5}\label{class_serial_controller_a3ee3d8cb03b75c4cc4927808ae905ee5}} 
+\index{SerialController@{SerialController}!ReadSerialMessage@{ReadSerialMessage}}
+\index{ReadSerialMessage@{ReadSerialMessage}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{ReadSerialMessage()}{ReadSerialMessage()}}
+{\footnotesize\ttfamily string Serial\+Controller.\+Read\+Serial\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_controller_a3ee3d8cb03b75c4cc4927808ae905ee5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_controller_a62dec0dd5c20d661d483186420308b06}\label{class_serial_controller_a62dec0dd5c20d661d483186420308b06}} 
+\index{SerialController@{SerialController}!SendSerialMessage@{SendSerialMessage}}
+\index{SendSerialMessage@{SendSerialMessage}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{SendSerialMessage()}{SendSerialMessage()}}
+{\footnotesize\ttfamily void Serial\+Controller.\+Send\+Serial\+Message (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_controller_a62dec0dd5c20d661d483186420308b06_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_controller_a62dec0dd5c20d661d483186420308b06_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial_controller_a6eee92cd9c47fb526537b0be47279b96}\label{class_serial_controller_a6eee92cd9c47fb526537b0be47279b96}} 
+\index{SerialController@{SerialController}!SetTearDownFunction@{SetTearDownFunction}}
+\index{SetTearDownFunction@{SetTearDownFunction}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{SetTearDownFunction()}{SetTearDownFunction()}}
+{\footnotesize\ttfamily void Serial\+Controller.\+Set\+Tear\+Down\+Function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_serial_controller_a82a49db5679bb0984e06d9b2b41b11e6}{Tear\+Down\+Function}}}]{user\+Function }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_serial_controller_a82a49db5679bb0984e06d9b2b41b11e6}\label{class_serial_controller_a82a49db5679bb0984e06d9b2b41b11e6}} 
+\index{SerialController@{SerialController}!TearDownFunction@{TearDownFunction}}
+\index{TearDownFunction@{TearDownFunction}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{TearDownFunction()}{TearDownFunction()}}
+{\footnotesize\ttfamily delegate void Serial\+Controller.\+Tear\+Down\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_serial_controller_a96535d826c1065405c906c8a15f332bc}\label{class_serial_controller_a96535d826c1065405c906c8a15f332bc}} 
+\index{SerialController@{SerialController}!baudRate@{baudRate}}
+\index{baudRate@{baudRate}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{baudRate}{baudRate}}
+{\footnotesize\ttfamily int Serial\+Controller.\+baud\+Rate = 9600}
+
+\mbox{\Hypertarget{class_serial_controller_a76a3941149b84538fa0762060989faeb}\label{class_serial_controller_a76a3941149b84538fa0762060989faeb}} 
+\index{SerialController@{SerialController}!maxUnreadMessages@{maxUnreadMessages}}
+\index{maxUnreadMessages@{maxUnreadMessages}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{maxUnreadMessages}{maxUnreadMessages}}
+{\footnotesize\ttfamily int Serial\+Controller.\+max\+Unread\+Messages = 1}
+
+\mbox{\Hypertarget{class_serial_controller_a6958893f79c7401eb18e7431b583be61}\label{class_serial_controller_a6958893f79c7401eb18e7431b583be61}} 
+\index{SerialController@{SerialController}!messageListener@{messageListener}}
+\index{messageListener@{messageListener}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{messageListener}{messageListener}}
+{\footnotesize\ttfamily Game\+Object Serial\+Controller.\+message\+Listener}
+
+\mbox{\Hypertarget{class_serial_controller_afd06697d77f9bf30567820f957c5dca6}\label{class_serial_controller_afd06697d77f9bf30567820f957c5dca6}} 
+\index{SerialController@{SerialController}!portName@{portName}}
+\index{portName@{portName}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{portName}{portName}}
+{\footnotesize\ttfamily string Serial\+Controller.\+port\+Name = \char`\"{}COM3\char`\"{}}
+
+\mbox{\Hypertarget{class_serial_controller_adea1c9d6a21b7563f7670a156ad310ee}\label{class_serial_controller_adea1c9d6a21b7563f7670a156ad310ee}} 
+\index{SerialController@{SerialController}!reconnectionDelay@{reconnectionDelay}}
+\index{reconnectionDelay@{reconnectionDelay}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{reconnectionDelay}{reconnectionDelay}}
+{\footnotesize\ttfamily int Serial\+Controller.\+reconnection\+Delay = 1000}
+
+\mbox{\Hypertarget{class_serial_controller_a0f0008965b514f27f1f9b630f114bf24}\label{class_serial_controller_a0f0008965b514f27f1f9b630f114bf24}} 
+\index{SerialController@{SerialController}!SERIAL\_DEVICE\_CONNECTED@{SERIAL\_DEVICE\_CONNECTED}}
+\index{SERIAL\_DEVICE\_CONNECTED@{SERIAL\_DEVICE\_CONNECTED}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{SERIAL\_DEVICE\_CONNECTED}{SERIAL\_DEVICE\_CONNECTED}}
+{\footnotesize\ttfamily const string Serial\+Controller.\+SERIAL\+\_\+\+DEVICE\+\_\+\+CONNECTED = \char`\"{}\+\_\+\+\_\+\+Connected\+\_\+\+\_\+\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_serial_controller_a47cca5bc52d5b6596479bf5cc915a862}\label{class_serial_controller_a47cca5bc52d5b6596479bf5cc915a862}} 
+\index{SerialController@{SerialController}!SERIAL\_DEVICE\_DISCONNECTED@{SERIAL\_DEVICE\_DISCONNECTED}}
+\index{SERIAL\_DEVICE\_DISCONNECTED@{SERIAL\_DEVICE\_DISCONNECTED}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{SERIAL\_DEVICE\_DISCONNECTED}{SERIAL\_DEVICE\_DISCONNECTED}}
+{\footnotesize\ttfamily const string Serial\+Controller.\+SERIAL\+\_\+\+DEVICE\+\_\+\+DISCONNECTED = \char`\"{}\+\_\+\+\_\+\+Disconnected\+\_\+\+\_\+\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_serial_controller_a91c721f499fe0def847c975c48556175}\label{class_serial_controller_a91c721f499fe0def847c975c48556175}} 
+\index{SerialController@{SerialController}!serialThread@{serialThread}}
+\index{serialThread@{serialThread}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{serialThread}{serialThread}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_serial_thread_lines}{Serial\+Thread\+Lines}} Serial\+Controller.\+serial\+Thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_serial_controller_ae94838595a95a315f85ca3f8cf08090d}\label{class_serial_controller_ae94838595a95a315f85ca3f8cf08090d}} 
+\index{SerialController@{SerialController}!thread@{thread}}
+\index{thread@{thread}!SerialController@{SerialController}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily Thread Serial\+Controller.\+thread\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Thirdparty/\+Ardity/\+Scripts/\mbox{\hyperlink{_serial_controller_8cs}{Serial\+Controller.\+cs}}\end{DoxyCompactItemize}

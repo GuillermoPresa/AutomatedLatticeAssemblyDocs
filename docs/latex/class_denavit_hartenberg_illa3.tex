@@ -53,11 +53,15 @@ Vector3 \mbox{\hyperlink{class_denavit_hartenberg_illa3_a51511ecb0496ede8aaf6286
 \item 
 Vector3 \mbox{\hyperlink{class_denavit_hartenberg_illa3_a371b76a011c7a2327c71b0f822a005f7}{P50\+Gripper\+Vector}} ()
 \item 
-Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_illa3_a0fc23d1f1aa46d0bc2419e4fd83b136b}{Hom\+Trans\+Matrix\+Ja}} (int Ja)
+Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_illa3_a968b561c340e5e425b14fb96adf5de42}{Hom\+Trans\+Matrix\+Ja\+Origin}} (int Ja)
+\item 
+Matrix4x4 \mbox{\hyperlink{class_denavit_hartenberg_illa3_acfb2eb55a05fa5e235db0d4cd01d3698}{Hom\+Trans\+Matrix\+Ja\+Jb}} (int Ja, int Jb)
 \item 
 Vector3 \mbox{\hyperlink{class_denavit_hartenberg_illa3_a8cf39b65a84666274567ba5e6c067de0}{Vector\+Ja\+Jb}} (int Ja)
 \item 
-Quaternion \mbox{\hyperlink{class_denavit_hartenberg_illa3_adeda4fbe7e1d0f0e909aa065cbd231dd}{Quat\+Ja\+Jb}} (int Ja)
+Quaternion \mbox{\hyperlink{class_denavit_hartenberg_illa3_afd774dbdf96d49e62c738d4ec53e8f9a}{Quat\+Ja\+Origin}} (int Ja)
+\item 
+Quaternion \mbox{\hyperlink{class_denavit_hartenberg_illa3_a6a55538c82c136742b17f5ebfa951a41}{Quat\+Ja\+Jb}} (int Ja, int Jb)
 \item 
 override string \mbox{\hyperlink{class_denavit_hartenberg_illa3_ad130154982f82848a32e373f0aec760f}{To\+String}} ()
 \end{DoxyCompactItemize}
@@ -235,24 +239,44 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_denavit_hartenberg_illa3_ae9265820eba0912eb4741f322be09687_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_denavit_hartenberg_illa3_a0fc23d1f1aa46d0bc2419e4fd83b136b}\label{class_denavit_hartenberg_illa3_a0fc23d1f1aa46d0bc2419e4fd83b136b}} 
-\index{DenavitHartenbergIlla3@{DenavitHartenbergIlla3}!HomTransMatrixJa@{HomTransMatrixJa}}
-\index{HomTransMatrixJa@{HomTransMatrixJa}!DenavitHartenbergIlla3@{DenavitHartenbergIlla3}}
-\doxysubsubsection{\texorpdfstring{HomTransMatrixJa()}{HomTransMatrixJa()}}
-{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg\+Illa3.\+Hom\+Trans\+Matrix\+Ja (\begin{DoxyParamCaption}\item[{int}]{Ja }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_denavit_hartenberg_illa3_acfb2eb55a05fa5e235db0d4cd01d3698}\label{class_denavit_hartenberg_illa3_acfb2eb55a05fa5e235db0d4cd01d3698}} 
+\index{DenavitHartenbergIlla3@{DenavitHartenbergIlla3}!HomTransMatrixJaJb@{HomTransMatrixJaJb}}
+\index{HomTransMatrixJaJb@{HomTransMatrixJaJb}!DenavitHartenbergIlla3@{DenavitHartenbergIlla3}}
+\doxysubsubsection{\texorpdfstring{HomTransMatrixJaJb()}{HomTransMatrixJaJb()}}
+{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg\+Illa3.\+Hom\+Trans\+Matrix\+Ja\+Jb (\begin{DoxyParamCaption}\item[{int}]{Ja,  }\item[{int}]{Jb }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_a0fc23d1f1aa46d0bc2419e4fd83b136b_cgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_acfb2eb55a05fa5e235db0d4cd01d3698_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_a0fc23d1f1aa46d0bc2419e4fd83b136b_icgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_acfb2eb55a05fa5e235db0d4cd01d3698_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_illa3_a968b561c340e5e425b14fb96adf5de42}\label{class_denavit_hartenberg_illa3_a968b561c340e5e425b14fb96adf5de42}} 
+\index{DenavitHartenbergIlla3@{DenavitHartenbergIlla3}!HomTransMatrixJaOrigin@{HomTransMatrixJaOrigin}}
+\index{HomTransMatrixJaOrigin@{HomTransMatrixJaOrigin}!DenavitHartenbergIlla3@{DenavitHartenbergIlla3}}
+\doxysubsubsection{\texorpdfstring{HomTransMatrixJaOrigin()}{HomTransMatrixJaOrigin()}}
+{\footnotesize\ttfamily Matrix4x4 Denavit\+Hartenberg\+Illa3.\+Hom\+Trans\+Matrix\+Ja\+Origin (\begin{DoxyParamCaption}\item[{int}]{Ja }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_a968b561c340e5e425b14fb96adf5de42_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_a968b561c340e5e425b14fb96adf5de42_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_illa3_a51511ecb0496ede8aaf62860b6cce800}\label{class_denavit_hartenberg_illa3_a51511ecb0496ede8aaf62860b6cce800}} 
@@ -295,24 +319,44 @@ Accesses the ith joint angle
 \begin{DoxyReturn}{Returns}
 The ith joint angle
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_denavit_hartenberg_illa3_adeda4fbe7e1d0f0e909aa065cbd231dd}\label{class_denavit_hartenberg_illa3_adeda4fbe7e1d0f0e909aa065cbd231dd}} 
+\mbox{\Hypertarget{class_denavit_hartenberg_illa3_a6a55538c82c136742b17f5ebfa951a41}\label{class_denavit_hartenberg_illa3_a6a55538c82c136742b17f5ebfa951a41}} 
 \index{DenavitHartenbergIlla3@{DenavitHartenbergIlla3}!QuatJaJb@{QuatJaJb}}
 \index{QuatJaJb@{QuatJaJb}!DenavitHartenbergIlla3@{DenavitHartenbergIlla3}}
 \doxysubsubsection{\texorpdfstring{QuatJaJb()}{QuatJaJb()}}
-{\footnotesize\ttfamily Quaternion Denavit\+Hartenberg\+Illa3.\+Quat\+Ja\+Jb (\begin{DoxyParamCaption}\item[{int}]{Ja }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Quaternion Denavit\+Hartenberg\+Illa3.\+Quat\+Ja\+Jb (\begin{DoxyParamCaption}\item[{int}]{Ja,  }\item[{int}]{Jb }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_adeda4fbe7e1d0f0e909aa065cbd231dd_cgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_a6a55538c82c136742b17f5ebfa951a41_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_adeda4fbe7e1d0f0e909aa065cbd231dd_icgraph}
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_a6a55538c82c136742b17f5ebfa951a41_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_denavit_hartenberg_illa3_afd774dbdf96d49e62c738d4ec53e8f9a}\label{class_denavit_hartenberg_illa3_afd774dbdf96d49e62c738d4ec53e8f9a}} 
+\index{DenavitHartenbergIlla3@{DenavitHartenbergIlla3}!QuatJaOrigin@{QuatJaOrigin}}
+\index{QuatJaOrigin@{QuatJaOrigin}!DenavitHartenbergIlla3@{DenavitHartenbergIlla3}}
+\doxysubsubsection{\texorpdfstring{QuatJaOrigin()}{QuatJaOrigin()}}
+{\footnotesize\ttfamily Quaternion Denavit\+Hartenberg\+Illa3.\+Quat\+Ja\+Origin (\begin{DoxyParamCaption}\item[{int}]{Ja }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_afd774dbdf96d49e62c738d4ec53e8f9a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_denavit_hartenberg_illa3_afd774dbdf96d49e62c738d4ec53e8f9a_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_denavit_hartenberg_illa3_a51cc6ff7a484bb888ca4250e777509de}\label{class_denavit_hartenberg_illa3_a51cc6ff7a484bb888ca4250e777509de}} 

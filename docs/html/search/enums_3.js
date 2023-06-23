@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['movetype_0',['MoveType',['../class_capsule_mover.html#a61eb8315ab5c9054ed488786daf19377',1,'CapsuleMover']]]
+  ['flags_0',['Flags',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a2f12675c178cf90dfb1ca9c481c1c3df',1,'Lynxmotion::Robotics::LssSettings']]]
 ];

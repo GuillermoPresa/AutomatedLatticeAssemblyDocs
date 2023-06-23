@@ -8,13 +8,12 @@ var searchData=
   ['globalreferencescriptreference_5',['GlobalReferenceScriptReference',['../class_lattice_class.html#aabec74cd7d41bc2a3c7b5bafa55f71c2',1,'LatticeClass']]],
   ['globalrobotlist_6',['GlobalRobotList',['../class_references.html#a563c6a2dafe11f79676629448417e0a4',1,'References']]],
   ['globalselectionscriptreference_7',['GlobalSelectionScriptReference',['../class_lattice_class.html#a095d2ed64ba5b6fd7bbb7edc83d37e27',1,'LatticeClass.GlobalSelectionScriptReference()'],['../class_robot_script.html#aa31c3e033edab3ba25d4e6ca9674f6a8',1,'RobotScript.GlobalSelectionScriptReference()']]],
-  ['goalangle_8',['GoalAngle',['../class_joint_class_illa3.html#aff8e7e48b544a56d55e158d9fa5e2c19',1,'JointClassIlla3.GoalAngle()'],['../class_joint_class.html#a6ff3b36d62600e79cbff29f059c61459',1,'JointClass.GoalAngle()']]],
+  ['goalangle_8',['GoalAngle',['../class_joint_class_v3.html#a3fbf7c61a30e775cd2f9644a1d188be5',1,'JointClassV3.GoalAngle()'],['../class_joint_class.html#a6ff3b36d62600e79cbff29f059c61459',1,'JointClass.GoalAngle()']]],
   ['grabobject_9',['GrabObject',['../class_illa_controller_v3.html#aabcb76b134c3149f7c3703646ae17d8a',1,'IllaControllerV3.GrabObject()'],['../class_inchworm_robot_controller.html#a18382c1f10ffd4bf2850c66432a8b287',1,'InchwormRobotController.GrabObject()']]],
   ['grabobjectposeindex_10',['GrabObjectPoseIndex',['../class_illa_controller_v3.html#a7c79b90a30f279e8c343d803b10ad781',1,'IllaControllerV3']]],
   ['greetingloggertype_11',['greetingLoggerType',['../class_example_1_1_example_behaviour.html#a7a06c634b325de6db30a8b6d8f56723b',1,'Example::ExampleBehaviour']]],
   ['gridsize_12',['Gridsize',['../class_serialization_elements_1_1_header.html#a62037013094a7c0dcd2d2570616ab907',1,'SerializationElements::Header']]],
-  ['gripperjoint_13',['GripperJoint',['../class_illa_controller_v3.html#af27d32a2f69df6be85be18908e13ff6e',1,'IllaControllerV3']]],
-  ['grounded_14',['Grounded',['../class_basic_test.html#a140db0df75f39cb3c7cf99cbf38c1a3f',1,'BasicTest']]],
-  ['groundmask_15',['groundMask',['../class_r_t_s___cam_1_1_r_t_s___camera.html#a65e32e49571d70d17a358c7626d98178',1,'RTS_Cam::RTS_Camera']]],
-  ['guistyle_16',['guiStyle',['../struct_text_gizmos_1_1_label_struct.html#a79e5fc28ec6c4336276b92dc4028b231',1,'TextGizmos::LabelStruct']]]
+  ['grounded_13',['Grounded',['../class_basic_test.html#a140db0df75f39cb3c7cf99cbf38c1a3f',1,'BasicTest']]],
+  ['groundmask_14',['groundMask',['../class_r_t_s___cam_1_1_r_t_s___camera.html#a65e32e49571d70d17a358c7626d98178',1,'RTS_Cam::RTS_Camera']]],
+  ['guistyle_15',['guiStyle',['../struct_text_gizmos_1_1_label_struct.html#a79e5fc28ec6c4336276b92dc4028b231',1,'TextGizmos::LabelStruct']]]
 ];

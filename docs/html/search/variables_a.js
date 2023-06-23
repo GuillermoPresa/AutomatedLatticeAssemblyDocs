@@ -11,7 +11,8 @@ var searchData=
   ['joint5_8',['Joint5',['../class_illa_controller_v3.html#aae1edb6b2a6e048a8ef653ea97cef7b5',1,'IllaControllerV3.Joint5()'],['../class_inchworm_robot_controller.html#a6545d6c26a4fcb5cc78aa23c7702a72e',1,'InchwormRobotController.Joint5()']]],
   ['joint5angle_9',['Joint5Angle',['../class_pos_j.html#a98b7a8d2a9de94fa2c1117bd5649739d',1,'PosJ']]],
   ['jointcapsulecolliders_10',['JointCapsuleColliders',['../class_illa_controller_v3.html#a0973d62713c5268f7c3288e71225339b',1,'IllaControllerV3.JointCapsuleColliders()'],['../class_inchworm_robot_controller.html#af4ba978dba222ad49c05edacbaa1b1f1',1,'InchwormRobotController.JointCapsuleColliders()']]],
-  ['jointcount_11',['jointCount',['../class_denavit_hartenberg.html#aaa212e8483aaa8419904e0cac2baa463',1,'DenavitHartenberg']]],
-  ['jointobjectparent_12',['JointObjectParent',['../class_joint_class_illa3.html#a933fe5371ec2cb4f4d01236064bd2484',1,'JointClassIlla3.JointObjectParent()'],['../class_joint_class.html#a8db4d54fb2d0f194c4a6ad47613df86e',1,'JointClass.JointObjectParent()']]],
-  ['jointpose_13',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
+  ['jointclass_11',['jointClass',['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#afb818de89c3b39417cf8764b577b1afa',1,'Lynxmotion.Robotics.LssServo.jointClass()'],['../class_virtual_servo.html#a111c81f6068b4f367477907f1bba0049',1,'VirtualServo.jointClass()']]],
+  ['jointcount_12',['jointCount',['../class_denavit_hartenberg.html#aaa212e8483aaa8419904e0cac2baa463',1,'DenavitHartenberg']]],
+  ['jointobjectparent_13',['JointObjectParent',['../class_joint_class.html#a8db4d54fb2d0f194c4a6ad47613df86e',1,'JointClass']]],
+  ['jointpose_14',['JointPose',['../class_robot_configuration.html#a9051807c27c377218ac5238cdf23fcb8',1,'RobotConfiguration']]]
 ];

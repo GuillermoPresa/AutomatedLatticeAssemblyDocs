@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['targetnode_0',['TargetNode',['../class_movement.html#a87f9b74c84ea9a18791a38ae30f10713',1,'Movement']]],
-  ['testcasenumber_1',['testCaseNumber',['../class_collision_test_result.html#aff1fb62cb3a5457c6a9ca94a1116538e',1,'CollisionTestResult']]],
-  ['this_5btkey_20key_5d_2',['this[TKey key]',['../class_u_dictionary.html#a92ccaf17a534558b6351991e64ebc67a',1,'UDictionary']]],
-  ['timecost_3',['timeCost',['../class_collision_test_result.html#a014614f3076771e1da15857e590b3c12',1,'CollisionTestResult']]],
-  ['translation_4',['Translation',['../class_space_navigator_driver_1_1_space_navigator.html#a3711bf3e339a39496db3ebfb5fe15dac',1,'SpaceNavigatorDriver::SpaceNavigator']]],
-  ['type_5',['Type',['../class_type_references_1_1_class_type_reference.html#aa219af128e79a1d3cbffdb868e589756',1,'TypeReferences::ClassTypeReference']]]
+  ['selectedobject_0',['SelectedObject',['../class_selection_script.html#ad79862ba8077f570c1d7d81d1569c3a8',1,'SelectionScript']]],
+  ['serialmac_1',['SerialMAC',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a86b33d29b1734b4cd590d7d5993300f8',1,'Lynxmotion::Robotics::LssSettings']]],
+  ['serialnumber_2',['SerialNumber',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a7a472805aeb5fb7ce32ec7dd0f604b05',1,'Lynxmotion::Robotics::LssSettings']]],
+  ['shoulderjoint_3',['ShoulderJoint',['../class_illa_controller_v3.html#ae7ea6d7c70884af1560c57418736f0b4',1,'IllaControllerV3']]],
+  ['shoulderjointcurrentangle_4',['ShoulderJointCurrentAngle',['../class_illa_controller_v3.html#a2b5b78a258e2e1776cc1fb71c371e761',1,'IllaControllerV3.ShoulderJointCurrentAngle()'],['../class_inchworm_robot_controller.html#a677376382bd18204d878ac2ba893d484',1,'InchwormRobotController.ShoulderJointCurrentAngle()']]],
+  ['shoulderjointscript_5',['ShoulderJointScript',['../class_illa_controller_v3.html#aab70241d1ab93b69227ed248d4fd431b',1,'IllaControllerV3']]],
+  ['shoulderjointtargetangle_6',['ShoulderJointTargetAngle',['../class_illa_controller_v3.html#a665df27200eb434d933e43661311885a',1,'IllaControllerV3.ShoulderJointTargetAngle()'],['../class_inchworm_robot_controller.html#a8108558ecc425c556061a6e071fcdc7c',1,'InchwormRobotController.ShoulderJointTargetAngle()']]],
+  ['stiffness_7',['Stiffness',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a8173ae9e98358b72fb98614ad2486c9f',1,'Lynxmotion::Robotics::LssSettings']]]
 ];

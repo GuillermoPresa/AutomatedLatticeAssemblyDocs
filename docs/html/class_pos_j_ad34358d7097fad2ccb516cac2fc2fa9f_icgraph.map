@@ -1,6 +1,6 @@
 <map id="PosJ.MaxRotationFromInitialPose" name="PosJ.MaxRotationFromInitialPose">
-<area shape="rect" id="node1" title=" " alt="" coords="755,13,973,39"/>
-<area shape="rect" id="node2" href="$class_movement.html#aabdac3fb4e86360b2749dba8c5d8d17a" title=" " alt="" coords="509,5,707,47"/>
-<area shape="rect" id="node3" href="$class_illa_graph.html#a5066635e98a01c4322da5bb8c1095de2" title=" " alt="" coords="227,13,461,39"/>
-<area shape="rect" id="node4" href="$class_illa_graph.html#abd8d7d4227661b992ec074dac72e76c2" title=" " alt="" coords="5,13,179,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="272,64,491,91"/>
+<area shape="rect" id="node2" href="$class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="46,5,183,32"/>
+<area shape="rect" id="node3" href="$class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="5,57,224,98"/>
+<area shape="rect" id="node4" href="$class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="43,123,187,149"/>
 </map>

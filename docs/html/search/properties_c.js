@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['neighbourmovementdictionary_0',['neighbourMovementDictionary',['../class_illa_graph_node.html#a61d13fb39c644b44d7f22de0df5c915a',1,'IllaGraphNode']]],
-  ['neighbours_1',['Neighbours',['../class_graph_node.html#ae5cc00b493c967d212963de93bb66189',1,'GraphNode']]],
-  ['neighbours_2',['neighbours',['../class_illa_graph_node.html#a8b420aa110e396aa178510be36ab2f1d',1,'IllaGraphNode']]],
-  ['nexttarget_3',['NextTarget',['../class_illa_navigation_path.html#a79ff2da30f6074ceaf40846dcbe99025',1,'IllaNavigationPath.NextTarget()'],['../class_navigation_path.html#a20dc33367570d2e7ad48a04485243d7c',1,'NavigationPath.NextTarget()']]]
+  ['maxspeed_0',['MaxSpeed',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#abc080a7e290f12eaacc4937f7cf4aca8',1,'Lynxmotion::Robotics::LssSettings']]],
+  ['model_1',['Model',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a83f10dacecc4fe92a2bf7db116ac7b54',1,'Lynxmotion::Robotics::LssSettings']]],
+  ['movementcost_2',['MovementCost',['../class_illa_navigation_path.html#a4d98d5744794f8d0358be49fd13897f3',1,'IllaNavigationPath.MovementCost()'],['../class_navigation_path.html#a7b441a6d9991b9270c8f5c6d0288a0d4',1,'NavigationPath.MovementCost()']]]
 ];

@@ -8,5 +8,6 @@ var searchData=
   ['dhmatrix_5',['DHMatrix',['../class_denavit_hartenberg_illa3.html#ada89f4b1f78d593f2b3a2113bf60fb15',1,'DenavitHartenbergIlla3']]],
   ['dhparams_6',['dhParams',['../class_illa_controller_v3.html#ab828067d680220f3ce4ecdec7d1cd32d',1,'IllaControllerV3']]],
   ['dictionary_7',['Dictionary',['../class_u_dictionary.html#a45f742bbbc6218810bc404f144136f7f',1,'UDictionary']]],
-  ['dlist_8',['dList',['../class_denavit_hartenberg_illa3.html#af202223a600225c5eae351e88d36db9f',1,'DenavitHartenbergIlla3.dList()'],['../class_denavit_hartenberg.html#a47651d0c6381f121c977580b2d9f81a7',1,'DenavitHartenberg.dList()']]]
+  ['distservolist_8',['distServoList',['../class_serial___l_s_s___control.html#a6861a7749d79be0b41d84450c7053d45',1,'Serial_LSS_Control']]],
+  ['dlist_9',['dList',['../class_denavit_hartenberg_illa3.html#af202223a600225c5eae351e88d36db9f',1,'DenavitHartenbergIlla3.dList()'],['../class_denavit_hartenberg.html#a47651d0c6381f121c977580b2d9f81a7',1,'DenavitHartenberg.dList()']]]
 ];

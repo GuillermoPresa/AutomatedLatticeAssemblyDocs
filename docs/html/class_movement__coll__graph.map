@@ -1,10 +1,10 @@
 <map id="Movement" name="Movement">
-<area shape="rect" id="node1" title=" " alt="" coords="179,260,260,287"/>
-<area shape="rect" id="node2" href="$interface_i_prototype.html" title=" " alt="" coords="5,171,169,197"/>
-<area shape="rect" id="node3" href="$class_pos_x.html" title=" " alt="" coords="193,171,245,197"/>
-<area shape="rect" id="node4" href="$interface_i_prototype.html" title=" " alt="" coords="128,81,263,108"/>
-<area shape="rect" id="node5" href="$class_robot_configuration.html" title=" " alt="" coords="329,171,459,197"/>
-<area shape="rect" id="node6" href="$interface_i_prototype.html" title=" " alt="" coords="287,81,501,108"/>
-<area shape="rect" id="node7" href="$class_pos_j.html" title=" " alt="" coords="526,81,577,108"/>
-<area shape="rect" id="node8" href="$interface_i_prototype.html" title=" " alt="" coords="484,5,619,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="231,260,312,287"/>
+<area shape="rect" id="node2" href="$interface_i_prototype.html" title=" " alt="" coords="17,171,181,197"/>
+<area shape="rect" id="node3" href="$class_pos_x.html" title=" " alt="" coords="391,81,443,108"/>
+<area shape="rect" id="node5" href="$class_robot_configuration.html" title=" " alt="" coords="206,171,337,197"/>
+<area shape="rect" id="node4" href="$interface_i_prototype.html" title=" " alt="" coords="355,5,489,32"/>
+<area shape="rect" id="node6" href="$interface_i_prototype.html" title=" " alt="" coords="5,81,220,108"/>
+<area shape="rect" id="node7" href="$class_pos_j.html" title=" " alt="" coords="245,81,295,108"/>
+<area shape="rect" id="node8" href="$interface_i_prototype.html" title=" " alt="" coords="196,5,331,32"/>
 </map>

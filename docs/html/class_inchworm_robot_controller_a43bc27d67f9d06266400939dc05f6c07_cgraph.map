@@ -1,6 +1,6 @@
 <map id="InchwormRobotController.SwapBase" name="InchwormRobotController.SwapBase">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,176,77"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a1435c5d5ea8519d902996b073f7c737d" title=" " alt="" coords="224,35,395,77"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,176,65"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a1435c5d5ea8519d902996b073f7c737d" title=" " alt="" coords="224,23,395,65"/>
 <area shape="rect" id="node3" href="$class_joint_class.html#ae5925b66f76b519b3dca01efdeb5aff0" title=" " alt="" coords="443,5,613,32"/>
-<area shape="rect" id="node4" href="$class_joint_class.html#aa7a0837248628938579dd5061b331d31" title=" " alt="" coords="454,80,602,107"/>
+<area shape="rect" id="node4" href="$class_joint_class.html#aa7a0837248628938579dd5061b331d31" title=" " alt="" coords="454,56,602,83"/>
 </map>

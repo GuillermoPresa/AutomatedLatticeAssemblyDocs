@@ -25,7 +25,7 @@ Collaboration diagram for Movement\+:\nopagebreak
 \item 
 \mbox{\hyperlink{class_movement_ac127471ad5170bb344ea4cbc32e3ac19}{Movement}} (Game\+Object Target, List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ Solution\+Pos\+JList, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Initial\+Config)
 \item 
-float \mbox{\hyperlink{class_movement_aabdac3fb4e86360b2749dba8c5d8d17a}{cost\+Based\+On\+Angle\+Movement}} ()
+float \mbox{\hyperlink{class_movement_a6c025cbe11955f26ba81c575b7296006}{Mincost\+Based\+On\+Angle\+Movement}} ()
 \item 
 void \mbox{\hyperlink{class_movement_a47e2906baf3b92be8fbd054231192ca4}{Add\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JTo\+Add)
 \end{DoxyCompactItemize}
@@ -34,14 +34,14 @@ void \mbox{\hyperlink{class_movement_a47e2906baf3b92be8fbd054231192ca4}{Add\+Pos
 \item 
 \mbox{\hyperlink{class_pos_x}{PosX}} \mbox{\hyperlink{class_movement_af47bdebf10af407e4449daba1e32fc3a}{Target\+PosX}}
 \item 
-List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ \mbox{\hyperlink{class_movement_a34ce3cd8d3bf888c53a4c580f233f662}{Pos\+JList}}
-\item 
-Dictionary$<$ \mbox{\hyperlink{class_pos_j}{PosJ}}, float $>$ \mbox{\hyperlink{class_movement_a79a16b0af892714639e126da6c2e119b}{Pos\+JCost\+Dictionary}} = new Dictionary$<$\mbox{\hyperlink{class_pos_j}{PosJ}}, float$>$()
+Dictionary$<$ \mbox{\hyperlink{class_pos_j}{PosJ}}, float $>$ \mbox{\hyperlink{class_movement_a79a16b0af892714639e126da6c2e119b}{Pos\+JCost\+Dictionary}}
 \item 
 \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} \mbox{\hyperlink{class_movement_a22ff24b09d5dde483a4b3b8bc175d57a}{Starting\+Configuration}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ \mbox{\hyperlink{class_movement_a34ce3cd8d3bf888c53a4c580f233f662}{Pos\+JList}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 float \mbox{\hyperlink{class_movement_a09e436250973593312f94ff1db716d73}{Cost\+Based\+On\+Distance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
@@ -59,7 +59,7 @@ bool \mbox{\hyperlink{class_movement_adf5de4a9260957877f4c4a671becf1c8}{Has\+Con
 A movement is a class that represents a particular robotic movement. It consists of a starting robot configuration (starting \mbox{\hyperlink{class_pos_j}{PosJ}} and base location), a target \mbox{\hyperlink{class_pos_x}{PosX}}, and a list of possible Pos\+Js to reach the target. At the time of executing the movement one of the target Pos\+Js can be selected according to a cost calculation.
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]eliminate ambiguity List form and Dictionary form. Add a method to convert to list form and only \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]eliminate ambiguity List form and Dictionary form. Add a method to convert to list form and only \end{DoxyRefDesc}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -75,6 +75,13 @@ A movement is a class that represents a particular robotic movement. It consists
 \doxysubsubsection{\texorpdfstring{Movement()}{Movement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Movement.\+Movement (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target,  }\item[{List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$}]{Solution\+Pos\+JList,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Initial\+Config }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_ac127471ad5170bb344ea4cbc32e3ac19_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Function Documentation}
@@ -84,24 +91,24 @@ A movement is a class that represents a particular robotic movement. It consists
 \doxysubsubsection{\texorpdfstring{AddPosJ()}{AddPosJ()}}
 {\footnotesize\ttfamily void Movement.\+Add\+PosJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pos\+JTo\+Add }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_movement_aabdac3fb4e86360b2749dba8c5d8d17a}\label{class_movement_aabdac3fb4e86360b2749dba8c5d8d17a}} 
-\index{Movement@{Movement}!costBasedOnAngleMovement@{costBasedOnAngleMovement}}
-\index{costBasedOnAngleMovement@{costBasedOnAngleMovement}!Movement@{Movement}}
-\doxysubsubsection{\texorpdfstring{costBasedOnAngleMovement()}{costBasedOnAngleMovement()}}
-{\footnotesize\ttfamily float Movement.\+cost\+Based\+On\+Angle\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_a47e2906baf3b92be8fbd054231192ca4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_movement_a6c025cbe11955f26ba81c575b7296006}\label{class_movement_a6c025cbe11955f26ba81c575b7296006}} 
+\index{Movement@{Movement}!MincostBasedOnAngleMovement@{MincostBasedOnAngleMovement}}
+\index{MincostBasedOnAngleMovement@{MincostBasedOnAngleMovement}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{MincostBasedOnAngleMovement()}{MincostBasedOnAngleMovement()}}
+{\footnotesize\ttfamily float Movement.\+Mincost\+Based\+On\+Angle\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_movement_aabdac3fb4e86360b2749dba8c5d8d17a_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_movement_aabdac3fb4e86360b2749dba8c5d8d17a_icgraph}
+\includegraphics[width=350pt]{class_movement_a6c025cbe11955f26ba81c575b7296006_cgraph}
 \end{center}
 \end{figure}
 
@@ -111,13 +118,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{Movement@{Movement}!PosJCostDictionary@{PosJCostDictionary}}
 \index{PosJCostDictionary@{PosJCostDictionary}!Movement@{Movement}}
 \doxysubsubsection{\texorpdfstring{PosJCostDictionary}{PosJCostDictionary}}
-{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_pos_j}{PosJ}}, float$>$ Movement.\+Pos\+JCost\+Dictionary = new Dictionary$<$\mbox{\hyperlink{class_pos_j}{PosJ}}, float$>$()}
-
-\mbox{\Hypertarget{class_movement_a34ce3cd8d3bf888c53a4c580f233f662}\label{class_movement_a34ce3cd8d3bf888c53a4c580f233f662}} 
-\index{Movement@{Movement}!PosJList@{PosJList}}
-\index{PosJList@{PosJList}!Movement@{Movement}}
-\doxysubsubsection{\texorpdfstring{PosJList}{PosJList}}
-{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_pos_j}{PosJ}}$>$ Movement.\+Pos\+JList}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_pos_j}{PosJ}}, float$>$ Movement.\+Pos\+JCost\+Dictionary}
 
 \mbox{\Hypertarget{class_movement_a22ff24b09d5dde483a4b3b8bc175d57a}\label{class_movement_a22ff24b09d5dde483a4b3b8bc175d57a}} 
 \index{Movement@{Movement}!StartingConfiguration@{StartingConfiguration}}
@@ -157,6 +158,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{IsComplete@{IsComplete}!Movement@{Movement}}
 \doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
 {\footnotesize\ttfamily bool Movement.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_movement_a34ce3cd8d3bf888c53a4c580f233f662}\label{class_movement_a34ce3cd8d3bf888c53a4c580f233f662}} 
+\index{Movement@{Movement}!PosJList@{PosJList}}
+\index{PosJList@{PosJList}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{PosJList}{PosJList}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_pos_j}{PosJ}}$>$ Movement.\+Pos\+JList\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_movement_a87f9b74c84ea9a18791a38ae30f10713}\label{class_movement_a87f9b74c84ea9a18791a38ae30f10713}} 
 \index{Movement@{Movement}!TargetNode@{TargetNode}}

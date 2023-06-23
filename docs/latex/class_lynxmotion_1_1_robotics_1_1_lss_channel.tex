@@ -1,0 +1,337 @@
+\hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel}{}\doxysection{Lynxmotion.\+Robotics.\+Lss\+Channel Class Reference}
+\label{class_lynxmotion_1_1_robotics_1_1_lss_channel}\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_ae1935b811fd68b134fc17b7d44f6c087}{Connect}} (string portname, int baudrate)
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a22ab5bf2572df456fecbcb31da333ea4}{Disconnect}} ()
+\item 
+bool \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_aa097fb0fd7a08ceca5e867a11ef84e33}{Switch\+Baud\+Rate}} (int \+\_\+baudrate)
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3b5760745a9aa96d7c687ae0ef9e0e9e}{Add\+Devices}} (List$<$ short $>$ Device\+Id\+List)
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a160524062a181db81fbce4e3fda32f44}{Update\+All\+Telemetry}} ()
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac19ff1dd721d6e21cb5d8452a9a8c497}{Run\+Op}} (\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_channel_op}{Channel\+Op}} op)
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_af3919cbbd4601de15ee41737c29cf808}{Scan}} (short lower\+Chanel\+Bound=0, short upper\+Chanel\+Bound=253)
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a9af9c34414a37d77894881222889e007}{Send}} (\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_packet}{Packet}} packet)
+\item 
+\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_packet}{Packet}} \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a90c0ef6c891d8164f302dc4a386a6242}{Read\+Line}} ()
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3bc98c7ac9ce117675ccb7b8fec606d4}{Read\+And\+Distribute\+Servo\+Packages}} ()
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f}{Read\+And\+Distribute\+Current\+Packages}} ()
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0}{Read\+And\+Distribute\+Servo}} (int number\+Of\+Packages, float timeout\+\_\+ms=20)
+\item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6}{Distribute\+Packages\+From\+Message}} (string read\+String, bool add\+Virtual\+Reception=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_ade1a45fbc7c8a0eeda728d8380811b93}{Virtual\+Reception}} = \char`\"{}\char`\"{}
+\item 
+List$<$ \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}} $>$ \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a8982c75079f16769afeda6d7993f913f}{Servos}} = new List$<$\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Serial\+Port \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1bb8762467e5b043cd8db2af6ff76aa7}{Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a74b33c16c9ce19cfe5a66d3a4604dba3}{Is\+Open}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac7def1618dbf8871df13452d51e82e01}{is\+Op\+Running}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3b5760745a9aa96d7c687ae0ef9e0e9e}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3b5760745a9aa96d7c687ae0ef9e0e9e}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!AddDevices@{AddDevices}}
+\index{AddDevices@{AddDevices}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{AddDevices()}{AddDevices()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Add\+Devices (\begin{DoxyParamCaption}\item[{List$<$ short $>$}]{Device\+Id\+List }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3b5760745a9aa96d7c687ae0ef9e0e9e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3b5760745a9aa96d7c687ae0ef9e0e9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_ae1935b811fd68b134fc17b7d44f6c087}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_ae1935b811fd68b134fc17b7d44f6c087}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!Connect@{Connect}}
+\index{Connect@{Connect}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{Connect()}{Connect()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Connect (\begin{DoxyParamCaption}\item[{string}]{portname,  }\item[{int}]{baudrate }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ae1935b811fd68b134fc17b7d44f6c087_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ae1935b811fd68b134fc17b7d44f6c087_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a22ab5bf2572df456fecbcb31da333ea4}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a22ab5bf2572df456fecbcb31da333ea4}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{Disconnect()}{Disconnect()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a22ab5bf2572df456fecbcb31da333ea4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!DistributePackagesFromMessage@{DistributePackagesFromMessage}}
+\index{DistributePackagesFromMessage@{DistributePackagesFromMessage}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{DistributePackagesFromMessage()}{DistributePackagesFromMessage()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Distribute\+Packages\+From\+Message (\begin{DoxyParamCaption}\item[{string}]{read\+String,  }\item[{bool}]{add\+Virtual\+Reception = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!ReadAndDistributeCurrentPackages@{ReadAndDistributeCurrentPackages}}
+\index{ReadAndDistributeCurrentPackages@{ReadAndDistributeCurrentPackages}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{ReadAndDistributeCurrentPackages()}{ReadAndDistributeCurrentPackages()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+And\+Distribute\+Current\+Packages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!ReadAndDistributeServo@{ReadAndDistributeServo}}
+\index{ReadAndDistributeServo@{ReadAndDistributeServo}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{ReadAndDistributeServo()}{ReadAndDistributeServo()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+And\+Distribute\+Servo (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Packages,  }\item[{float}]{timeout\+\_\+ms = {\ttfamily 20} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3bc98c7ac9ce117675ccb7b8fec606d4}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3bc98c7ac9ce117675ccb7b8fec606d4}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!ReadAndDistributeServoPackages@{ReadAndDistributeServoPackages}}
+\index{ReadAndDistributeServoPackages@{ReadAndDistributeServoPackages}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{ReadAndDistributeServoPackages()}{ReadAndDistributeServoPackages()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+And\+Distribute\+Servo\+Packages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3bc98c7ac9ce117675ccb7b8fec606d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a90c0ef6c891d8164f302dc4a386a6242}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a90c0ef6c891d8164f302dc4a386a6242}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!ReadLine@{ReadLine}}
+\index{ReadLine@{ReadLine}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{ReadLine()}{ReadLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_packet}{Packet}} Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a90c0ef6c891d8164f302dc4a386a6242_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac19ff1dd721d6e21cb5d8452a9a8c497}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac19ff1dd721d6e21cb5d8452a9a8c497}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!RunOp@{RunOp}}
+\index{RunOp@{RunOp}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{RunOp()}{RunOp()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Run\+Op (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_channel_op}{Channel\+Op}}}]{op }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac19ff1dd721d6e21cb5d8452a9a8c497_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac19ff1dd721d6e21cb5d8452a9a8c497_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_af3919cbbd4601de15ee41737c29cf808}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_af3919cbbd4601de15ee41737c29cf808}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!Scan@{Scan}}
+\index{Scan@{Scan}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{Scan()}{Scan()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Scan (\begin{DoxyParamCaption}\item[{short}]{lower\+Chanel\+Bound = {\ttfamily 0},  }\item[{short}]{upper\+Chanel\+Bound = {\ttfamily 253} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_af3919cbbd4601de15ee41737c29cf808_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_af3919cbbd4601de15ee41737c29cf808_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a9af9c34414a37d77894881222889e007}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a9af9c34414a37d77894881222889e007}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!Send@{Send}}
+\index{Send@{Send}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_packet}{Packet}}}]{packet }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a9af9c34414a37d77894881222889e007_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_aa097fb0fd7a08ceca5e867a11ef84e33}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_aa097fb0fd7a08ceca5e867a11ef84e33}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!SwitchBaudRate@{SwitchBaudRate}}
+\index{SwitchBaudRate@{SwitchBaudRate}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{SwitchBaudRate()}{SwitchBaudRate()}}
+{\footnotesize\ttfamily bool Lynxmotion.\+Robotics.\+Lss\+Channel.\+Switch\+Baud\+Rate (\begin{DoxyParamCaption}\item[{int}]{\+\_\+baudrate }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_aa097fb0fd7a08ceca5e867a11ef84e33_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_aa097fb0fd7a08ceca5e867a11ef84e33_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a160524062a181db81fbce4e3fda32f44}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a160524062a181db81fbce4e3fda32f44}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!UpdateAllTelemetry@{UpdateAllTelemetry}}
+\index{UpdateAllTelemetry@{UpdateAllTelemetry}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{UpdateAllTelemetry()}{UpdateAllTelemetry()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Update\+All\+Telemetry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a160524062a181db81fbce4e3fda32f44_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a8982c75079f16769afeda6d7993f913f}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a8982c75079f16769afeda6d7993f913f}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!Servos@{Servos}}
+\index{Servos@{Servos}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{Servos}{Servos}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}}$>$ Lynxmotion.\+Robotics.\+Lss\+Channel.\+Servos = new List$<$\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}}$>$()}
+
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_ade1a45fbc7c8a0eeda728d8380811b93}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_ade1a45fbc7c8a0eeda728d8380811b93}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!VirtualReception@{VirtualReception}}
+\index{VirtualReception@{VirtualReception}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{VirtualReception}{VirtualReception}}
+{\footnotesize\ttfamily string Lynxmotion.\+Robotics.\+Lss\+Channel.\+Virtual\+Reception = \char`\"{}\char`\"{}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a74b33c16c9ce19cfe5a66d3a4604dba3}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a74b33c16c9ce19cfe5a66d3a4604dba3}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!IsOpen@{IsOpen}}
+\index{IsOpen@{IsOpen}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{IsOpen}{IsOpen}}
+{\footnotesize\ttfamily bool Lynxmotion.\+Robotics.\+Lss\+Channel.\+Is\+Open\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac7def1618dbf8871df13452d51e82e01}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac7def1618dbf8871df13452d51e82e01}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!isOpRunning@{isOpRunning}}
+\index{isOpRunning@{isOpRunning}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{isOpRunning}{isOpRunning}}
+{\footnotesize\ttfamily bool Lynxmotion.\+Robotics.\+Lss\+Channel.\+is\+Op\+Running\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1bb8762467e5b043cd8db2af6ff76aa7}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1bb8762467e5b043cd8db2af6ff76aa7}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!Port@{Port}}
+\index{Port@{Port}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{Port}{Port}}
+{\footnotesize\ttfamily Serial\+Port Lynxmotion.\+Robotics.\+Lss\+Channel.\+Port\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS\+\_\+lib/code\+\_\+\+LSS/\mbox{\hyperlink{_lss_channel_8cs}{Lss\+Channel.\+cs}}\end{DoxyCompactItemize}

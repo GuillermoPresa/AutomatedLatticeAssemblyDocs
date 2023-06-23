@@ -137,7 +137,7 @@ Vector3 \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\
 
 \doxysubsection{Detailed Description}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]Add individual joint controls for speed, energy etc... 
+\item[\mbox{\hyperlink{todo__todo000010}{Todo}}]Add individual joint controls for speed, energy etc... 
 
 Clean the inspector. Make some things private variables. Use inspector atributes to make it clean and nice\end{DoxyRefDesc}
 
@@ -148,29 +148,29 @@ Clean the inspector. Make some things private variables. Use inspector atributes
 Outdated. HA hier agnostic absolute properties are wrong. The is\+Base criterion is not reliable in Hierarchy agnostic 
 \end{DoxyWarning}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
-\hypertarget{class_joint_class_autotoc_md4}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md4}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
+\hypertarget{class_joint_class_autotoc_md0}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md0}
 The assembly constraint of the joint is defined by the following properties\+:
 
 \mbox{\hyperlink{class_joint_class_a7fa77b5ff5029346a004632255672c3d}{assembly\+Position}} \+: Vector3 with (x,y,z) assembly constraint of the current node wrt base joint ~\newline
 \mbox{\hyperlink{class_joint_class_a867568b3ac94a93e8cb4b5979a45790e}{assembly\+Rotation}} \+: Vector3 with euler angles (x,y,z) of the assembly constraint of the current node wrt base joint. ~\newline
  The assembly constraints are provided in {\bfseries{Hierarchy agnosntic}}, {\bfseries{Absolute frame}}. This is more convinient for the user when defining a robot as it allows to build the robot within Unity prefab editor and copy paste the assembly constraints. \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000015}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
-\hypertarget{class_joint_class_autotoc_md5}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md5}
+\item[\mbox{\hyperlink{todo__todo000012}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
+\hypertarget{class_joint_class_autotoc_md1}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md1}
 The frame of the joint (position and orientation) can be defined with respect to the base joint (aboslute) or previous joint (relative)
 
 {\bfseries{Relative frame\+:}} The joint is defined in a relative frame, with respect to the previous joint. ~\newline
 Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}
 
 {\bfseries{Absolute frame\+:}} The joint is defined in a relative frame, with respect to the base joint. ~\newline
-Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md6}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md6}
+Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md2}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md2}
 When the robot hierarchy is inverted, the next node and previous node to control will be different than that of the assembly definition.
 
 {\bfseries{Hierarchy agnostic (HA)\+:}} Hierachy agnostic properties are those that are not affected by the hierarchy inversion such that the next and previous node are always the same and dont change, always representing the assembly constraints. ~\newline
 Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}
 
 {\bfseries{Hierarchy dependent (HD)\+:}} Hierarchy dependent properties are those that are affected by the the hierarchy inversion such that the next and previous node swap after a hierarchy inversion. ~\newline
-Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md7}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md7}
+Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md3}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md3}
 
 
 \doxysubsection{Member Function Documentation}
@@ -180,13 +180,6 @@ Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}
 \doxysubsubsection{\texorpdfstring{HDMoveToAngle()}{HDMoveToAngle()}}
 {\footnotesize\ttfamily void Joint\+Class.\+HDMove\+To\+Angle (\begin{DoxyParamCaption}\item[{float}]{Target\+Angle,  }\item[{float}]{Angular\+Speed\+Factor }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_joint_class_a5af2c8505e84e2a92d17f8f44bd0557c_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_joint_class_ae5925b66f76b519b3dca01efdeb5aff0}\label{class_joint_class_ae5925b66f76b519b3dca01efdeb5aff0}} 
 \index{JointClass@{JointClass}!InvertHierarchy@{InvertHierarchy}}
 \index{InvertHierarchy@{InvertHierarchy}!JointClass@{JointClass}}
@@ -206,14 +199,8 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{MakeBase()}{MakeBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Joint\+Class.\+Make\+Base (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=191pt]{class_joint_class_aa7a0837248628938579dd5061b331d31_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -232,13 +219,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{RefreshJoint()}{RefreshJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Joint\+Class.\+Refresh\+Joint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_joint_class_aa8beec144d7e7861c0838b6f5c6f6360_cgraph}
-\end{center}
-\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
@@ -252,13 +232,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{RefreshJoint()}{RefreshJoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Joint\+Class.\+Refresh\+Joint (\begin{DoxyParamCaption}\item[{float}]{Movement\+Speed }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_joint_class_a697f7bb3b81f22e2573759b12690782c_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_joint_class_a41177ce4e2f96561bf3e4da5dc648525}\label{class_joint_class_a41177ce4e2f96561bf3e4da5dc648525}} 
 \index{JointClass@{JointClass}!RotateJoint@{RotateJoint}}
 \index{RotateJoint@{RotateJoint}!JointClass@{JointClass}}
@@ -285,13 +258,6 @@ Calculates the rotation in a frame given a target angle and an angular speed fac
 \begin{DoxyReturn}{Returns}
 Rotation\+Inframe The rotation in the frame calculated from the target angle and angular speed factor. 
 \end{DoxyReturn}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_joint_class_ab0b3a0e8258c21534b61276cae558522_icgraph}
-\end{center}
-\end{figure}
 
 
 \doxysubsection{Member Data Documentation}

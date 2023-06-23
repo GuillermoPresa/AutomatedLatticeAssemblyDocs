@@ -1,5 +1,13 @@
 var annotated_dup =
 [
+    [ "Assets", "namespace_assets.html", [
+      [ "Robot", "namespace_assets_1_1_robot.html", [
+        [ "Dynamixel_control", "namespace_assets_1_1_robot_1_1_dynamixel__control.html", [
+          [ "DifferentialJointAngleWrapper", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper.html", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper" ],
+          [ "DynamixelCom", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_dynamixel_com.html", null ]
+        ] ]
+      ] ]
+    ] ],
     [ "DensityMesh", "namespace_density_mesh.html", [
       [ "MeshTriplet", "class_density_mesh_1_1_mesh_triplet.html", "class_density_mesh_1_1_mesh_triplet" ]
     ] ],
@@ -8,6 +16,25 @@ var annotated_dup =
       [ "DefaultGreetingLogger", "class_example_1_1_default_greeting_logger.html", "class_example_1_1_default_greeting_logger" ],
       [ "ExampleBehaviour", "class_example_1_1_example_behaviour.html", "class_example_1_1_example_behaviour" ],
       [ "IGreetingLogger", "interface_example_1_1_i_greeting_logger.html", "interface_example_1_1_i_greeting_logger" ]
+    ] ],
+    [ "Lynxmotion", "namespace_lynxmotion.html", [
+      [ "Robotics", "namespace_lynxmotion_1_1_robotics.html", [
+        [ "ChannelOperations", "namespace_lynxmotion_1_1_robotics_1_1_channel_operations.html", [
+          [ "RetrieveSettings", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings.html", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings" ],
+          [ "Scan", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_scan.html", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_scan" ],
+          [ "SendSettings", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings" ],
+          [ "UninitializedScan", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan.html", "class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan" ]
+        ] ],
+        [ "ChannelMultiOp", "class_lynxmotion_1_1_robotics_1_1_channel_multi_op.html", "class_lynxmotion_1_1_robotics_1_1_channel_multi_op" ],
+        [ "ChannelOp", "class_lynxmotion_1_1_robotics_1_1_channel_op.html", "class_lynxmotion_1_1_robotics_1_1_channel_op" ],
+        [ "LssChannel", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html", "class_lynxmotion_1_1_robotics_1_1_lss_channel" ],
+        [ "LssCommand", "class_lynxmotion_1_1_robotics_1_1_lss_command.html", "class_lynxmotion_1_1_robotics_1_1_lss_command" ],
+        [ "LssServo", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html", "class_lynxmotion_1_1_robotics_1_1_lss_servo" ],
+        [ "LssSettings", "class_lynxmotion_1_1_robotics_1_1_lss_settings.html", "class_lynxmotion_1_1_robotics_1_1_lss_settings" ],
+        [ "LssTelemetry", "class_lynxmotion_1_1_robotics_1_1_lss_telemetry.html", "class_lynxmotion_1_1_robotics_1_1_lss_telemetry" ],
+        [ "Packet", "class_lynxmotion_1_1_robotics_1_1_packet.html", "class_lynxmotion_1_1_robotics_1_1_packet" ],
+        [ "ProgressEventArgs", "class_lynxmotion_1_1_robotics_1_1_progress_event_args.html", "class_lynxmotion_1_1_robotics_1_1_progress_event_args" ]
+      ] ]
     ] ],
     [ "MovementAndSensorDefinition", "namespace_movement_and_sensor_definition.html", [
       [ "SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", "class_movement_and_sensor_definition_1_1_sensor_node" ]
@@ -41,6 +68,8 @@ var annotated_dup =
       [ "ClassTypeReferencePropertyDrawer", "class_type_references_1_1_class_type_reference_property_drawer.html", "class_type_references_1_1_class_type_reference_property_drawer" ]
     ] ],
     [ "AbstractEnvironmentClass", "class_abstract_environment_class.html", "class_abstract_environment_class" ],
+    [ "AbstractSerialThread", "class_abstract_serial_thread.html", "class_abstract_serial_thread" ],
+    [ "AngleUtilities", "class_angle_utilities.html", null ],
     [ "BasicTest", "class_basic_test.html", "class_basic_test" ],
     [ "CameraMovement", "class_camera_movement.html", null ],
     [ "CapsuleMover", "class_capsule_mover.html", "class_capsule_mover" ],
@@ -61,6 +90,7 @@ var annotated_dup =
     [ "EnvironmentManager", "class_environment_manager.html", "class_environment_manager" ],
     [ "ExtensionTest", "class_extension_test.html", "class_extension_test" ],
     [ "FollowPathTask", "class_follow_path_task.html", "class_follow_path_task" ],
+    [ "FullRobotState", "class_full_robot_state.html", "class_full_robot_state" ],
     [ "GetSetAttribute", "class_get_set_attribute.html", "class_get_set_attribute" ],
     [ "GetSetDrawer", "class_get_set_drawer.html", "class_get_set_drawer" ],
     [ "Graph", "class_graph.html", "class_graph" ],
@@ -71,17 +101,21 @@ var annotated_dup =
     [ "IllaGraphNode", "class_illa_graph_node.html", "class_illa_graph_node" ],
     [ "IllaNavigationPath", "class_illa_navigation_path.html", "class_illa_navigation_path" ],
     [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", "class_illa_node_sensor_script" ],
+    [ "ILLAServo", "class_i_l_l_a_servo.html", "class_i_l_l_a_servo" ],
     [ "ImporterWindow", "class_importer_window.html", "class_importer_window" ],
     [ "InchwormRobotController", "class_inchworm_robot_controller.html", "class_inchworm_robot_controller" ],
     [ "InsertTask", "class_insert_task.html", "class_insert_task" ],
     [ "IPrototype", "interface_i_prototype.html", "interface_i_prototype" ],
     [ "JointClass", "class_joint_class.html", "class_joint_class" ],
-    [ "JointClassIlla3", "class_joint_class_illa3.html", "class_joint_class_illa3" ],
+    [ "JointClassV3", "class_joint_class_v3.html", "class_joint_class_v3" ],
     [ "LatticeClass", "class_lattice_class.html", "class_lattice_class" ],
     [ "LatticeCollection", "class_lattice_collection.html", "class_lattice_collection" ],
     [ "LayerSlider", "class_layer_slider.html", "class_layer_slider" ],
+    [ "LSS_Controller_script", "class_l_s_s___controller__script.html", null ],
+    [ "LSS_library_controller", "class_l_s_s__library__controller.html", null ],
+    [ "LSS_Motor", "class_l_s_s___motor.html", "class_l_s_s___motor" ],
+    [ "LSS_MotorController", "class_l_s_s___motor_controller.html", "class_l_s_s___motor_controller" ],
     [ "MaterialCollectionEnvironment", "class_material_collection_environment.html", null ],
-    [ "MathGeo", "class_math_geo.html", null ],
     [ "MeshCombiner", "class_mesh_combiner.html", "class_mesh_combiner" ],
     [ "MeshCombinerEditor", "class_mesh_combiner_editor.html", "class_mesh_combiner_editor" ],
     [ "Modifications", "class_modifications.html", null ],
@@ -109,9 +143,20 @@ var annotated_dup =
     [ "RobotScript", "class_robot_script.html", "class_robot_script" ],
     [ "RobotWaitState", "class_robot_wait_state.html", "class_robot_wait_state" ],
     [ "RobotWalkState", "class_robot_walk_state.html", "class_robot_walk_state" ],
+    [ "SampleCustomDelimiter", "class_sample_custom_delimiter.html", "class_sample_custom_delimiter" ],
+    [ "SampleMessageListener", "class_sample_message_listener.html", null ],
+    [ "SampleTearDown", "class_sample_tear_down.html", "class_sample_tear_down" ],
+    [ "SampleUserPolling_JustRead", "class_sample_user_polling___just_read.html", "class_sample_user_polling___just_read" ],
+    [ "SampleUserPolling_ReadWrite", "class_sample_user_polling___read_write.html", "class_sample_user_polling___read_write" ],
     [ "ScrollviewBlock", "class_scrollview_block.html", "class_scrollview_block" ],
     [ "Selected", "class_selected.html", "class_selected" ],
     [ "SelectionScript", "class_selection_script.html", "class_selection_script" ],
+    [ "Serial_LSS_Control", "class_serial___l_s_s___control.html", "class_serial___l_s_s___control" ],
+    [ "SerialController", "class_serial_controller.html", "class_serial_controller" ],
+    [ "SerialControllerCustomDelimiter", "class_serial_controller_custom_delimiter.html", "class_serial_controller_custom_delimiter" ],
+    [ "SerialThread", "class_serial_thread.html", "class_serial_thread" ],
+    [ "SerialThreadBinaryDelimited", "class_serial_thread_binary_delimited.html", "class_serial_thread_binary_delimited" ],
+    [ "SerialThreadLines", "class_serial_thread_lines.html", "class_serial_thread_lines" ],
     [ "SimplerCameraController", "class_simpler_camera_controller.html", "class_simpler_camera_controller" ],
     [ "Spawner", "class_spawner.html", "class_spawner" ],
     [ "SpawnerOverlay", "class_spawner_overlay.html", "class_spawner_overlay" ],
@@ -129,6 +174,7 @@ var annotated_dup =
     [ "UIToolsPopupFromObjectList", "class_u_i_tools_popup_from_object_list.html", "class_u_i_tools_popup_from_object_list" ],
     [ "UIToolsPopupWindows", "class_u_i_tools_popup_windows.html", "class_u_i_tools_popup_windows" ],
     [ "VerticalBlock", "class_vertical_block.html", "class_vertical_block" ],
+    [ "VirtualServo", "class_virtual_servo.html", "class_virtual_servo" ],
     [ "WorkDefinition", "class_work_definition.html", "class_work_definition" ],
     [ "WorkPackage", "class_work_package.html", "class_work_package" ],
     [ "YieldTask", "class_yield_task.html", "class_yield_task" ]

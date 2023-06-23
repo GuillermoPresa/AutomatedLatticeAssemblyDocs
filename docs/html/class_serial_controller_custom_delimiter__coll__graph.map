@@ -1,0 +1,6 @@
+<map id="SerialControllerCustomDelimiter" name="SerialControllerCustomDelimiter">
+<area shape="rect" id="node1" title=" " alt="" coords="11,171,217,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,116,108"/>
+<area shape="rect" id="node3" href="$class_serial_thread_binary_delimited.html" title=" " alt="" coords="140,81,325,108"/>
+<area shape="rect" id="node4" href="$class_abstract_serial_thread.html" title=" " alt="" coords="161,5,304,32"/>
+</map>
