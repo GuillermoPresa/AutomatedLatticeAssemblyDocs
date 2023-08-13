@@ -1,6 +1,10 @@
 <map id="Serial_LSS_Control.RunFrame" name="Serial_LSS_Control.RunFrame">
-<area shape="rect" id="node1" title=" " alt="" coords="5,37,204,63"/>
-<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="252,29,472,71"/>
-<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#adda627f61d8e22ac12577101475c6da6" title=" " alt="" coords="520,29,740,71"/>
-<area shape="rect" id="node4" href="$class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="788,29,983,71"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,101,204,127"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c" title=" " alt="" coords="267,60,457,101"/>
+<area shape="rect" id="node6" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="252,125,472,167"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="527,5,733,47"/>
+<area shape="rect" id="node5" href="$class_virtual_servo.html#aeb8e11ee91a28f7d672097ee21e105fe" title=" " alt="" coords="564,71,696,98"/>
+<area shape="rect" id="node4" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="788,13,1039,39"/>
+<area shape="rect" id="node7" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#aabeb4c1fc8156b39fca19a55703d33d7" title=" " alt="" coords="520,125,740,167"/>
+<area shape="rect" id="node8" href="$class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="816,125,1011,167"/>
 </map>

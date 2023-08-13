@@ -1,10 +1,11 @@
 var class_references =
 [
     [ "TextureRenderingJobs", "struct_references_1_1_texture_rendering_jobs.html", "struct_references_1_1_texture_rendering_jobs" ],
+    [ "RefreshAvailableConfigurationList", "class_references.html#a04c0d628f2c5d5e4e7f02bb6e1905ba5", null ],
+    [ "ReloadAvailableFileNames", "class_references.html#a0b3f57736871cc72fc77597b388d77e6", null ],
     [ "SortAndAddToObjectList", "class_references.html#a01a2db7007bf1cdf014c958da61a4172", null ],
     [ "Start", "class_references.html#afa18f3ec6ac4f878c28b3b4d66203270", null ],
     [ "Update", "class_references.html#a35e69fd2a60b35f1a70276b8d23f6056", null ],
-    [ "UpdateFileList", "class_references.html#a4d096056921e4a05e1822f5f25396bab", null ],
     [ "Building", "class_references.html#a5691572b32aa4cfe355fb0e274d14f2c", null ],
     [ "EnvironmentManagerParent", "class_references.html#a2fbc9c538f58b0beda41d3bb78ad292a", null ],
     [ "EnvironmentManagerScriptReference", "class_references.html#af8e054fe1c13431c880b5f31bed63e49", null ],
@@ -17,6 +18,8 @@ var class_references =
     [ "GlobalParent", "class_references.html#a8acd7f49260322d1d1237dc35065b7aa", null ],
     [ "GlobalRobotList", "class_references.html#a563c6a2dafe11f79676629448417e0a4", null ],
     [ "heatmapTexture", "class_references.html#ad09689e5e7c0b72181f061c4877604fd", null ],
+    [ "ILLAV3configurationFilesPath", "class_references.html#a8afcdcd5955be2f0148cb939d65c02bd", null ],
+    [ "ILLAV3configurationNameList", "class_references.html#aef82ebd21ac22584c4f173da0b86a67b", null ],
     [ "InitialStructureMaterial", "class_references.html#a67ded95600ec59d53ba4b5bdcaa2b315", null ],
     [ "Lattice", "class_references.html#a3760c76d3c9ef01a6fac7e3e549184f2", null ],
     [ "LatticeBoundingBoxMesh", "class_references.html#af4a195a6edf4c8d2b65783c2e6222d05", null ],

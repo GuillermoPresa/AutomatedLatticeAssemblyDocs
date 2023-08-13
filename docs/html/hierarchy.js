@@ -20,6 +20,7 @@ var hierarchy =
     [ "MStudio.ColorDesign", "class_m_studio_1_1_color_design.html", null ],
     [ "IllaGraphNode.CostStruct", "struct_illa_graph_node_1_1_cost_struct.html", null ],
     [ "Assets.Robot.Dynamixel_control.DifferentialJointAngleWrapper", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper.html", null ],
+    [ "DifferentialJointConfiguration", "class_differential_joint_configuration.html", null ],
     [ "Assets.Robot.Dynamixel_control.DynamixelCom", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_dynamixel_com.html", null ],
     [ "Editor", null, [
       [ "DecalMeshHelperEditor", "class_decal_mesh_helper_editor.html", null ],
@@ -58,6 +59,7 @@ var hierarchy =
       [ "Example.AnotherGreetingLogger", "class_example_1_1_another_greeting_logger.html", null ],
       [ "Example.DefaultGreetingLogger", "class_example_1_1_default_greeting_logger.html", null ]
     ] ],
+    [ "ILLAConfiguration", "class_i_l_l_a_configuration.html", null ],
     [ "IllaGraph", "class_illa_graph.html", null ],
     [ "IllaNavigationPath", "class_illa_navigation_path.html", null ],
     [ "ILLAServo", "class_i_l_l_a_servo.html", null ],
@@ -77,6 +79,7 @@ var hierarchy =
     [ "ISerializationCallbackReceiver", null, [
       [ "TypeReferences.ClassTypeReference", "class_type_references_1_1_class_type_reference.html", null ]
     ] ],
+    [ "JointConfiguration", "class_joint_configuration.html", null ],
     [ "UDictionaryTest.Key", "class_u_dictionary_test_1_1_key.html", null ],
     [ "TextGizmos.LabelStruct", "struct_text_gizmos_1_1_label_struct.html", null ],
     [ "SerializationElements.Lattice", "class_serialization_elements_1_1_lattice.html", null ],
@@ -103,12 +106,12 @@ var hierarchy =
       [ "Example.ExampleBehaviour", "class_example_1_1_example_behaviour.html", null ],
       [ "ExtensionTest", "class_extension_test.html", null ],
       [ "GraphNode", "class_graph_node.html", null ],
+      [ "ILLAJointClassV3", "class_i_l_l_a_joint_class_v3.html", null ],
       [ "IllaControllerV3", "class_illa_controller_v3.html", null ],
       [ "IllaGraphNode", "class_illa_graph_node.html", null ],
       [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", null ],
       [ "InchwormRobotController", "class_inchworm_robot_controller.html", null ],
       [ "JointClass", "class_joint_class.html", null ],
-      [ "JointClassV3", "class_joint_class_v3.html", null ],
       [ "LSS_Controller_script", "class_l_s_s___controller__script.html", null ],
       [ "LSS_Motor", "class_l_s_s___motor.html", null ],
       [ "LSS_MotorController", "class_l_s_s___motor_controller.html", null ],
@@ -145,6 +148,7 @@ var hierarchy =
       [ "Spawning", "class_spawning.html", null ],
       [ "SphericalNodeSensor", "class_spherical_node_sensor.html", null ],
       [ "TestRotationMatrices", "class_test_rotation_matrices.html", null ],
+      [ "TestScript", "class_test_script.html", null ],
       [ "TextGizmos", "class_text_gizmos.html", null ],
       [ "TimeManager", "class_time_manager.html", null ],
       [ "UDictionaryTest", "class_u_dictionary_test.html", null ]
@@ -173,11 +177,18 @@ var hierarchy =
       [ "RobotWaitState", "class_robot_wait_state.html", null ],
       [ "RobotWalkState", "class_robot_walk_state.html", null ]
     ] ],
+    [ "RotationLimit", "class_rotation_limit.html", null ],
     [ "ScriptableObject", null, [
       [ "MStudio.ColorPalette", "class_m_studio_1_1_color_palette.html", null ]
     ] ],
     [ "MovementAndSensorDefinition.SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", null ],
     [ "SerializationElements.SerializationResolution", "class_serialization_elements_1_1_serialization_resolution.html", null ],
+    [ "ServoConfiguration", "class_servo_configuration.html", null ],
+    [ "Assets.Resources.Objects.ILLAV3.srvJoint", "interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint.html", [
+      [ "Assets.Resources.Objects.ILLAV3.DifferentialJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html", null ],
+      [ "Assets.Resources.Objects.ILLAV3.SingleJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html", null ]
+    ] ],
+    [ "srvPointer", "classsrv_pointer.html", null ],
     [ "MStudio.StyleHierarchy", "class_m_studio_1_1_style_hierarchy.html", null ],
     [ "TabsBlock", "class_tabs_block.html", null ],
     [ "Task", "class_task.html", [

@@ -52,7 +52,7 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Properties", "functions_prop.html", null ],
+        [ "Properties", "functions_prop.html", "functions_prop" ],
         [ "Events", "functions_evnt.html", null ]
       ] ]
     ] ],
@@ -69,14 +69,15 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_abstract_environment_class_8cs.html",
-"class_collision_detection_scene.html#a3f3b14a23ef9a0d415cea89ba92af371",
-"class_illa_controller_v3.html#a2a9d61d4ff33b515746cd0988b3241c5",
-"class_inchworm_robot_controller.html#a92bcf909f9599e286f7ec21f80cf6cc5",
-"class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#a669260a5aa36d3698b8fdb9bd458e273",
-"class_movement.html#a09e436250973593312f94ff1db716d73",
-"class_robot_configuration.html#a0817e1175838763ce38925ef860723ce",
-"class_space_navigator_driver_1_1_locks.html#abbebdff05f448d89d55831dbc3f82901",
-"dir_da11fa6216d4434ea49182e69beca8f7.html"
+"class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html#a9440e29a409d4e17e2ccb9dec2e9fd12",
+"class_graph.html#ab8b286cfe410dc5959810e11932b6ba0",
+"class_illa_graph_node.html#a818a25e07a3d48dbf100600f8de89638",
+"class_lattice_class.html#a8faa60a24832fcfef56d4eab539ea30e",
+"class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a68bee605b417d69824cc44f441661877",
+"class_r_t_s___cam_1_1_r_t_s___camera.html#a61d67fee21ec1da43654579e2d1ccf4a",
+"class_serial___l_s_s___control.html#a17d82692fba7d9b060b17255a2ffc3bd",
+"class_u_dictionary.html",
+"index.html#install_sec"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

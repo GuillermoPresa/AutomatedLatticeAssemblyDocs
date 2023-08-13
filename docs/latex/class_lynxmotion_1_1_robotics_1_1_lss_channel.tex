@@ -25,9 +25,11 @@ void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3bc98c7ac9c
 \item 
 void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f}{Read\+And\+Distribute\+Current\+Packages}} ()
 \item 
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_ad68cd7cff0b9eae1697c3ca7190334cc}{Flush\+Serial}} ()
+\item 
 void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0}{Read\+And\+Distribute\+Servo}} (int number\+Of\+Packages, float timeout\+\_\+ms=20)
 \item 
-void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6}{Distribute\+Packages\+From\+Message}} (string read\+String, bool add\+Virtual\+Reception=true)
+void \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_aabeb4c1fc8156b39fca19a55703d33d7}{Distribute\+Packages\+From\+Message}} (string read\+String)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -54,16 +56,14 @@ bool \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac7def1618db
 \doxysubsubsection{\texorpdfstring{AddDevices()}{AddDevices()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Add\+Devices (\begin{DoxyParamCaption}\item[{List$<$ short $>$}]{Device\+Id\+List }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a3b5760745a9aa96d7c687ae0ef9e0e9e_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -76,16 +76,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{Connect()}{Connect()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Connect (\begin{DoxyParamCaption}\item[{string}]{portname,  }\item[{int}]{baudrate }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ae1935b811fd68b134fc17b7d44f6c087_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -98,34 +96,44 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{Disconnect()}{Disconnect()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a22ab5bf2572df456fecbcb31da333ea4_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6}} 
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_aabeb4c1fc8156b39fca19a55703d33d7}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_aabeb4c1fc8156b39fca19a55703d33d7}} 
 \index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!DistributePackagesFromMessage@{DistributePackagesFromMessage}}
 \index{DistributePackagesFromMessage@{DistributePackagesFromMessage}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
 \doxysubsubsection{\texorpdfstring{DistributePackagesFromMessage()}{DistributePackagesFromMessage()}}
-{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Distribute\+Packages\+From\+Message (\begin{DoxyParamCaption}\item[{string}]{read\+String,  }\item[{bool}]{add\+Virtual\+Reception = {\ttfamily true} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Distribute\+Packages\+From\+Message (\begin{DoxyParamCaption}\item[{string}]{read\+String }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6_cgraph}
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_aabeb4c1fc8156b39fca19a55703d33d7_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_adda627f61d8e22ac12577101475c6da6_icgraph}
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_aabeb4c1fc8156b39fca19a55703d33d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_ad68cd7cff0b9eae1697c3ca7190334cc}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_ad68cd7cff0b9eae1697c3ca7190334cc}} 
+\index{Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}!FlushSerial@{FlushSerial}}
+\index{FlushSerial@{FlushSerial}!Lynxmotion.Robotics.LssChannel@{Lynxmotion.Robotics.LssChannel}}
+\doxysubsubsection{\texorpdfstring{FlushSerial()}{FlushSerial()}}
+{\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Flush\+Serial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ad68cd7cff0b9eae1697c3ca7190334cc_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f}\label{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f}} 
@@ -134,16 +142,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{ReadAndDistributeCurrentPackages()}{ReadAndDistributeCurrentPackages()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+And\+Distribute\+Current\+Packages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a50aa4caf08290d9e8525c3bf7105dd2f_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -156,16 +162,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{ReadAndDistributeServo()}{ReadAndDistributeServo()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+And\+Distribute\+Servo (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Packages,  }\item[{float}]{timeout\+\_\+ms = {\ttfamily 20} }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_a1255ea8c1a24db3a6ce28133c3ad98b0_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -178,8 +182,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{ReadAndDistributeServoPackages()}{ReadAndDistributeServoPackages()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+And\+Distribute\+Servo\+Packages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -192,8 +195,7 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{ReadLine()}{ReadLine()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_packet}{Packet}} Lynxmotion.\+Robotics.\+Lss\+Channel.\+Read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -206,16 +208,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{RunOp()}{RunOp()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Run\+Op (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_channel_op}{Channel\+Op}}}]{op }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_ac19ff1dd721d6e21cb5d8452a9a8c497_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -228,16 +228,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{Scan()}{Scan()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Scan (\begin{DoxyParamCaption}\item[{short}]{lower\+Chanel\+Bound = {\ttfamily 0},  }\item[{short}]{upper\+Chanel\+Bound = {\ttfamily 253} }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_af3919cbbd4601de15ee41737c29cf808_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -264,16 +262,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{SwitchBaudRate()}{SwitchBaudRate()}}
 {\footnotesize\ttfamily bool Lynxmotion.\+Robotics.\+Lss\+Channel.\+Switch\+Baud\+Rate (\begin{DoxyParamCaption}\item[{int}]{\+\_\+baudrate }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_lynxmotion_1_1_robotics_1_1_lss_channel_aa097fb0fd7a08ceca5e867a11ef84e33_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -286,8 +282,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{UpdateAllTelemetry()}{UpdateAllTelemetry()}}
 {\footnotesize\ttfamily void Lynxmotion.\+Robotics.\+Lss\+Channel.\+Update\+All\+Telemetry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

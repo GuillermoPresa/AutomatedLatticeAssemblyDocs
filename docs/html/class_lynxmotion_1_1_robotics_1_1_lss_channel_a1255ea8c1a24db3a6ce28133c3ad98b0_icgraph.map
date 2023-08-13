@@ -1,4 +1,5 @@
 <map id="Lynxmotion.Robotics.LssChannel.ReadAndDistributeServo" name="Lynxmotion.Robotics.LssChannel.ReadAndDistributeServo">
-<area shape="rect" id="node1" title=" " alt="" coords="252,5,472,47"/>
-<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="5,13,204,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="273,35,493,76"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ad68cd7cff0b9eae1697c3ca7190334cc" title=" " alt="" coords="5,5,225,47"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="16,71,215,98"/>
 </map>

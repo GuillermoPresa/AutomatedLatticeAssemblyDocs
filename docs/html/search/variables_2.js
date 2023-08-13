@@ -8,12 +8,15 @@ var searchData=
   ['baseorientation_5',['BaseOrientation',['../class_robot_configuration.html#a4af5ec90de18bdb8965ff5a756a7ae1d',1,'RobotConfiguration']]],
   ['basequaternionoffset_6',['BaseQuaternionOffset',['../class_joint_class.html#a48478f077703813efdccc71e5c115955',1,'JointClass']]],
   ['basevectoroffset_7',['BaseVectorOffset',['../class_joint_class.html#a99f65bc78ef96f30d4f097a31ebc6419',1,'JointClass']]],
-  ['baudrate_8',['baudRate',['../class_serial_controller.html#a96535d826c1065405c906c8a15f332bc',1,'SerialController.baudRate()'],['../class_serial_controller_custom_delimiter.html#a3544b667a0b593bf40b9bc46823b3d02',1,'SerialControllerCustomDelimiter.baudRate()']]],
-  ['baudrate_9',['baudrate',['../class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan.html#a7aad862bea1c6b11f86dbf08cbd6e897',1,'Lynxmotion::Robotics::ChannelOperations::UninitializedScan']]],
-  ['baudrateindex_10',['baudrateIndex',['../class_serial___l_s_s___control.html#a23a5a0d945562614251945b844d2eaf8',1,'Serial_LSS_Control']]],
-  ['baudrates_11',['BaudRates',['../class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan.html#a386c12db26553abecf1fa16a9bb320f9',1,'Lynxmotion::Robotics::ChannelOperations::UninitializedScan']]],
-  ['billboardtext_12',['BillBoardText',['../class_dynamic_debug_text.html#aeedde7588e2f0c9100c4a249223852ab',1,'DynamicDebugText']]],
-  ['boost_13',['boost',['../class_simpler_camera_controller.html#a7259b8c7dc08df740d50740e3e0b72f9',1,'SimplerCameraController']]],
-  ['building_14',['Building',['../class_references.html#a5691572b32aa4cfe355fb0e274d14f2c',1,'References']]],
-  ['bussystate_15',['BussyState',['../class_robot_script.html#a9d38baa2b43de34ad49337dc3b201de9',1,'RobotScript']]]
+  ['batterycapacity_5fmah_8',['BatteryCapacity_mah',['../class_i_l_l_a_configuration.html#afb3fef7968fa93b5e2089b9d5fdb6890',1,'ILLAConfiguration']]],
+  ['baudrate_9',['BaudRate',['../class_i_l_l_a_configuration.html#a9500d459019ba33cb437b683d539e226',1,'ILLAConfiguration']]],
+  ['baudrate_10',['Baudrate',['../class_servo_configuration.html#ab09b80789df8232037a252bfa7827e54',1,'ServoConfiguration']]],
+  ['baudrate_11',['baudRate',['../class_serial_controller.html#a96535d826c1065405c906c8a15f332bc',1,'SerialController.baudRate()'],['../class_serial_controller_custom_delimiter.html#a3544b667a0b593bf40b9bc46823b3d02',1,'SerialControllerCustomDelimiter.baudRate()']]],
+  ['baudrate_12',['baudrate',['../class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan.html#a7aad862bea1c6b11f86dbf08cbd6e897',1,'Lynxmotion::Robotics::ChannelOperations::UninitializedScan']]],
+  ['baudrateindex_13',['baudrateIndex',['../class_serial___l_s_s___control.html#a23a5a0d945562614251945b844d2eaf8',1,'Serial_LSS_Control']]],
+  ['baudrates_14',['BaudRates',['../class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan.html#a386c12db26553abecf1fa16a9bb320f9',1,'Lynxmotion::Robotics::ChannelOperations::UninitializedScan']]],
+  ['billboardtext_15',['BillBoardText',['../class_dynamic_debug_text.html#aeedde7588e2f0c9100c4a249223852ab',1,'DynamicDebugText']]],
+  ['boost_16',['boost',['../class_simpler_camera_controller.html#a7259b8c7dc08df740d50740e3e0b72f9',1,'SimplerCameraController']]],
+  ['building_17',['Building',['../class_references.html#a5691572b32aa4cfe355fb0e274d14f2c',1,'References']]],
+  ['bussystate_18',['BussyState',['../class_robot_script.html#a9d38baa2b43de34ad49337dc3b201de9',1,'RobotScript']]]
 ];

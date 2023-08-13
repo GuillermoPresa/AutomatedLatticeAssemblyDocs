@@ -12,6 +12,7 @@ var searchData=
   ['robotscript_9',['RobotScript',['../class_robot_script.html',1,'']]],
   ['robotwaitstate_10',['RobotWaitState',['../class_robot_wait_state.html',1,'']]],
   ['robotwalkstate_11',['RobotWalkState',['../class_robot_walk_state.html',1,'']]],
-  ['rts_5fcamera_12',['RTS_Camera',['../class_r_t_s___cam_1_1_r_t_s___camera.html',1,'RTS_Cam']]],
-  ['rts_5fcameraeditor_13',['RTS_CameraEditor',['../class_r_t_s___cam_1_1_r_t_s___camera_editor.html',1,'RTS_Cam']]]
+  ['rotationlimit_12',['RotationLimit',['../class_rotation_limit.html',1,'']]],
+  ['rts_5fcamera_13',['RTS_Camera',['../class_r_t_s___cam_1_1_r_t_s___camera.html',1,'RTS_Cam']]],
+  ['rts_5fcameraeditor_14',['RTS_CameraEditor',['../class_r_t_s___cam_1_1_r_t_s___camera_editor.html',1,'RTS_Cam']]]
 ];

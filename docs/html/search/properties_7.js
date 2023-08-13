@@ -11,13 +11,14 @@ var searchData=
   ['harelativeassemblyposition_8',['hARelativeAssemblyPosition',['../class_joint_class.html#a16251669280600c4cf765ab808521723',1,'JointClass']]],
   ['harelativeassemblyrotation_9',['hARelativeAssemblyRotation',['../class_joint_class.html#a1abeaee76f243b67145d4cf3c6d1a817',1,'JointClass']]],
   ['hascontent_10',['HasContent',['../class_movement.html#adf5de4a9260957877f4c4a671becf1c8',1,'Movement']]],
-  ['hdabsoluteassemblyposition_11',['hDAbsoluteAssemblyPosition',['../class_joint_class.html#ae04f07dda07185647379a126f4459e27',1,'JointClass']]],
-  ['hdabsoluteassemblyrotation_12',['hDAbsoluteAssemblyRotation',['../class_joint_class.html#a1f9a4b50070af3f87fd48d324ba30c7a',1,'JointClass']]],
-  ['hdcurrentorientation_13',['hDCurrentOrientation',['../class_joint_class.html#abeb9deb2ba3a4695301a57854e3b4770',1,'JointClass']]],
-  ['hdcurrentposition_14',['hDCurrentPosition',['../class_joint_class.html#aca3a9203cc20262b6ea6b10f95acdbac',1,'JointClass']]],
-  ['hdisbase_15',['hdIsBase',['../class_joint_class.html#ac3700cecd960e43cfbd2a216dd0170aa',1,'JointClass']]],
-  ['hdnextjoint_16',['hDNextJoint',['../class_joint_class.html#a650257d4a99df738d4ddaac96caa5a9e',1,'JointClass']]],
-  ['hdpreviousjoint_17',['hDPreviousJoint',['../class_joint_class.html#a7603b49099b1923608d1d13910ed87f5',1,'JointClass']]],
-  ['hdrelativeassemblyposition_18',['hDRelativeAssemblyPosition',['../class_joint_class.html#a52493eaa308fcf78059a7cdd7c414426',1,'JointClass']]],
-  ['hdrelativeassemblyrotation_19',['hDRelativeAssemblyRotation',['../class_joint_class.html#ac7583c0c9387456e3161c77c065e2517',1,'JointClass']]]
+  ['hasservo_11',['HasServo',['../class_i_l_l_a_servo.html#a35cda98cdaa920b02bd02c5b47aa6c60',1,'ILLAServo']]],
+  ['hdabsoluteassemblyposition_12',['hDAbsoluteAssemblyPosition',['../class_joint_class.html#ae04f07dda07185647379a126f4459e27',1,'JointClass']]],
+  ['hdabsoluteassemblyrotation_13',['hDAbsoluteAssemblyRotation',['../class_joint_class.html#a1f9a4b50070af3f87fd48d324ba30c7a',1,'JointClass']]],
+  ['hdcurrentorientation_14',['hDCurrentOrientation',['../class_joint_class.html#abeb9deb2ba3a4695301a57854e3b4770',1,'JointClass']]],
+  ['hdcurrentposition_15',['hDCurrentPosition',['../class_joint_class.html#aca3a9203cc20262b6ea6b10f95acdbac',1,'JointClass']]],
+  ['hdisbase_16',['hdIsBase',['../class_joint_class.html#ac3700cecd960e43cfbd2a216dd0170aa',1,'JointClass']]],
+  ['hdnextjoint_17',['hDNextJoint',['../class_joint_class.html#a650257d4a99df738d4ddaac96caa5a9e',1,'JointClass']]],
+  ['hdpreviousjoint_18',['hDPreviousJoint',['../class_joint_class.html#a7603b49099b1923608d1d13910ed87f5',1,'JointClass']]],
+  ['hdrelativeassemblyposition_19',['hDRelativeAssemblyPosition',['../class_joint_class.html#a52493eaa308fcf78059a7cdd7c414426',1,'JointClass']]],
+  ['hdrelativeassemblyrotation_20',['hDRelativeAssemblyRotation',['../class_joint_class.html#ac7583c0c9387456e3161c77c065e2517',1,'JointClass']]]
 ];

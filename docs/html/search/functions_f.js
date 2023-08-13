@@ -14,6 +14,5 @@ var searchData=
   ['possiblemovements_11',['PossibleMovements',['../class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070',1,'IllaControllerV3.PossibleMovements()'],['../class_inchworm_robot_controller.html#a70f269d65cbdebe0b38cb8e0c8b5320f',1,'InchwormRobotController.PossibleMovements(RobotConfiguration Configuration)'],['../class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8',1,'InchwormRobotController.PossibleMovements(RobotConfiguration Configuration, bool CheckCollisions)']]],
   ['posx_12',['PosX',['../class_pos_x.html#acb32feca5a6223846a79a1e264914638',1,'PosX.PosX(GameObject TargerObject)'],['../class_pos_x.html#adeb4625c86dd648b7fccb008d906ad58',1,'PosX.PosX(Vector3 PositionVector, Quaternion RotationQuat)']]],
   ['printmessageatposition_13',['PrintMessageAtPosition',['../class_text_gizmos.html#a9515de999f66814492388fe7803291a7',1,'TextGizmos']]],
-  ['processtelemetryupdate_14',['ProcessTelemetryUpdate',['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#a27fd314291dbacc8b40415ee8828a9db',1,'Lynxmotion::Robotics::LssServo']]],
-  ['progresshandler_15',['ProgressHandler',['../namespace_lynxmotion_1_1_robotics.html#adca8e19e6da56f3165920b784eef05a0',1,'Lynxmotion::Robotics']]]
+  ['progresshandler_14',['ProgressHandler',['../namespace_lynxmotion_1_1_robotics.html#adca8e19e6da56f3165920b784eef05a0',1,'Lynxmotion::Robotics']]]
 ];

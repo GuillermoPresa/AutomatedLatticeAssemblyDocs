@@ -1,15 +1,16 @@
 <map id="Lynxmotion.Robotics.LssChannel.Send" name="Lynxmotion.Robotics.LssChannel.Send">
-<area shape="rect" id="node1" title=" " alt="" coords="517,177,768,203"/>
-<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#a7676754e9c49d3abacf1c134e6670361" title=" " alt="" coords="269,5,464,47"/>
-<area shape="rect" id="node4" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="264,136,469,177"/>
-<area shape="rect" id="node7" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#a5eb7912e637cebc96e4d605c2c5bf7b9" title=" " alt="" coords="269,71,464,112"/>
-<area shape="rect" id="node8" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#a564a9208d122b1cec43a53014782f6fa" title=" " alt="" coords="264,201,469,243"/>
-<area shape="rect" id="node10" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings.html#a2b52bfd0c70e26cbd6663073703cb6d6" title=" " alt="" coords="268,267,465,308"/>
-<area shape="rect" id="node12" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b" title=" " alt="" coords="264,332,469,373"/>
-<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#ab4886b4926f80a7b07b788abfadfe469" title=" " alt="" coords="13,15,208,56"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_servo.html#a48a39b710fdc291083dd7729e136fc04" title=" " alt="" coords="50,89,171,115"/>
-<area shape="rect" id="node6" href="$class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c" title=" " alt="" coords="15,140,206,181"/>
-<area shape="rect" id="node9" href="$class_i_l_l_a_servo.html#a50be738bb45f8b358ddc41ac5a2cbe15" title=" " alt="" coords="51,209,171,235"/>
-<area shape="rect" id="node11" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings.html#abbbbea17689a452d000ecd336288ce09" title=" " alt="" coords="5,267,216,308"/>
-<area shape="rect" id="node13" href="$class_i_l_l_a_servo.html#aacdc7dead447b50daec139485520b48c" title=" " alt="" coords="51,339,170,366"/>
+<area shape="rect" id="node1" title=" " alt="" coords="764,177,1015,203"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#a7676754e9c49d3abacf1c134e6670361" title=" " alt="" coords="516,5,711,47"/>
+<area shape="rect" id="node4" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="511,136,716,177"/>
+<area shape="rect" id="node8" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#a5eb7912e637cebc96e4d605c2c5bf7b9" title=" " alt="" coords="516,71,711,112"/>
+<area shape="rect" id="node9" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#a564a9208d122b1cec43a53014782f6fa" title=" " alt="" coords="511,201,716,243"/>
+<area shape="rect" id="node11" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings.html#a2b52bfd0c70e26cbd6663073703cb6d6" title=" " alt="" coords="515,267,712,308"/>
+<area shape="rect" id="node13" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b" title=" " alt="" coords="511,332,716,373"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#ab4886b4926f80a7b07b788abfadfe469" title=" " alt="" coords="260,15,455,56"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_servo.html#a48a39b710fdc291083dd7729e136fc04" title=" " alt="" coords="297,89,418,115"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c" title=" " alt="" coords="262,140,453,181"/>
+<area shape="rect" id="node7" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="5,147,204,174"/>
+<area shape="rect" id="node10" href="$class_i_l_l_a_servo.html#a50be738bb45f8b358ddc41ac5a2cbe15" title=" " alt="" coords="297,209,417,235"/>
+<area shape="rect" id="node12" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings.html#abbbbea17689a452d000ecd336288ce09" title=" " alt="" coords="252,267,463,308"/>
+<area shape="rect" id="node14" href="$class_i_l_l_a_servo.html#aacdc7dead447b50daec139485520b48c" title=" " alt="" coords="298,339,417,366"/>
 </map>

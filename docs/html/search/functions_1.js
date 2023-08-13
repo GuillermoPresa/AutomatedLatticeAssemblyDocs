@@ -21,6 +21,7 @@ var searchData=
   ['alllatticesinbounds_18',['AllLatticesInBounds',['../class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23',1,'IllaControllerV3.AllLatticesInBounds()'],['../class_inchworm_robot_controller.html#a4213e697ae17789b06700c3bd3117b79',1,'InchwormRobotController.AllLatticesInBounds()']]],
   ['alllatticesinrange_19',['AllLatticesInRange',['../class_illa_controller_v3.html#a8ef860f36dbe143f07937f3dad57aa5b',1,'IllaControllerV3.AllLatticesInRange()'],['../class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb',1,'InchwormRobotController.AllLatticesInRange()']]],
   ['allnodesinrange_20',['AllNodesInRange',['../class_illa_controller_v3.html#a6160e3696b382a3f53103795b1a0168f',1,'IllaControllerV3.AllNodesInRange()'],['../class_inchworm_robot_controller.html#a293f6f55b028e1fa15432f03eb92ecd0',1,'InchwormRobotController.AllNodesInRange()']]],
-  ['astarcostfunctional_21',['AStarCostFunctional',['../class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6',1,'IllaGraph']]],
-  ['awake_22',['Awake',['../class_importer_window.html#a96a78e7ba5c8f8025b6f81a9a853fcc2',1,'ImporterWindow']]]
+  ['assignservos_21',['AssignServos',['../interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint.html#a9d6fe02e0d115b165b976b1b6dbc9555',1,'Assets.Resources.Objects.ILLAV3.srvJoint.AssignServos()'],['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html#aef924d90038667cd872fa6f93cb24b0d',1,'Assets.Resources.Objects.ILLAV3.SingleJoint.AssignServos()'],['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a74cb41f6dd7a8d4e4de079a845ea4f0a',1,'Assets.Resources.Objects.ILLAV3.DifferentialJoint.AssignServos()']]],
+  ['astarcostfunctional_22',['AStarCostFunctional',['../class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6',1,'IllaGraph']]],
+  ['awake_23',['Awake',['../class_importer_window.html#a96a78e7ba5c8f8025b6f81a9a853fcc2',1,'ImporterWindow']]]
 ];

@@ -11,7 +11,8 @@ Inheritance diagram for Illa\+Controller\+V3\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Illa\+Controller\+V3\+:\nopagebreak
+Collaboration diagram for Illa\+Controller\+V3\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -25,11 +26,13 @@ Collaboration diagram for Illa\+Controller\+V3\+:\nopagebreak
 \item 
 void \mbox{\hyperlink{class_illa_controller_v3_ad66980ec7b35a4b0062c38882b53158b}{Start}} ()
 \item 
+void \mbox{\hyperlink{class_illa_controller_v3_a7c7a5d8f7cc9ed30cf36e2d6b0f5befc}{Load\+Configuration}} (string config\+Path\+To\+Load)
+\item 
+void \mbox{\hyperlink{class_illa_controller_v3_aa2c37ac4cbf9503904e06661e95656d3}{Save\+Configuration}} (string config\+Path\+To\+Save)
+\item 
+void \mbox{\hyperlink{class_illa_controller_v3_a73b859224952e6e91a03e92ef8e9e6df}{New\+Configuration}} ()
+\item 
 void \mbox{\hyperlink{class_illa_controller_v3_a90eb64ba1c439cc35f1e6906910ccf14}{Spawn}} (Game\+Object Spawning\+Node)
-\item 
-void \mbox{\hyperlink{class_illa_controller_v3_a58d67aa7bb5e1f897f8b344eee2176ad}{Refresh\+All\+Anlges}} ()
-\item 
-void \mbox{\hyperlink{class_illa_controller_v3_a1e2c29d983713ebff5420123395fa607}{Force\+Joint\+Angle}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Force\+PosJ)
 \item 
 void \mbox{\hyperlink{class_illa_controller_v3_a7967190b78402df4825808d3682b4097}{Swap\+Base}} ()
 \item 
@@ -42,6 +45,8 @@ void \mbox{\hyperlink{class_illa_controller_v3_ad539036b8f571bb908bd557a0c52f8f8
 \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_illa_controller_v3_ac847777f5ba3184282fc7a946d654ca9}{Current\+PosJ}} ()
 \item 
 void \mbox{\hyperlink{class_illa_controller_v3_a1a802e93b60146e60f331bf584bbf313}{Force\+Configuration}} (\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Robot\+Config)
+\item 
+void \mbox{\hyperlink{class_illa_controller_v3_a57c0e62320a678a2d1fa4e4264faa567}{Set\+Current\+Angle\+To\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Target\+PosJ)
 \item 
 void \mbox{\hyperlink{class_illa_controller_v3_a8fd6af7eead84415b892a86113da3257}{Set\+Target\+Angle\+To\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Target\+PosJ)
 \item 
@@ -88,7 +93,13 @@ void \mbox{\hyperlink{class_illa_controller_v3_aaf0fafcb41fac2f411575672a76d362a
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{class_illa_controller_v3_a3eac509dd91fe9364ae2c029af8114e3}{max\+Thread\+Locking\+Time}} = 1000
+int \mbox{\hyperlink{class_illa_controller_v3_a686c2b3cefa71adc1042b1faae27accc}{configuration\+Index}} = 1
+\item 
+bool \mbox{\hyperlink{class_illa_controller_v3_ab7f166fae75c5dac1e9406c05fd2c90b}{Has\+Configuration}} = false
+\item 
+\mbox{\hyperlink{class_i_l_l_a_configuration}{ILLAConfiguration}} \mbox{\hyperlink{class_illa_controller_v3_a0c489695cb9a0740b03a3a0f0db7314c}{configuration}}
+\item 
+bool \mbox{\hyperlink{class_illa_controller_v3_a18b8b8b4a9fe12c494a9244ce5045c28}{enforce\+Rotation\+Limits}} = true
 \item 
 bool \mbox{\hyperlink{class_illa_controller_v3_a418f786f0b3fa73d34b476ed889f4efe}{Draw\+Outgoing\+Edges\+With\+Cost}} = false
 \item 
@@ -98,7 +109,7 @@ bool \mbox{\hyperlink{class_illa_controller_v3_a8ed495a98d864f5304f415e6b4f34cc0
 \item 
 bool \mbox{\hyperlink{class_illa_controller_v3_a4c92f5297d1ecf5f1a233d6ef3da5eb4}{Draw\+Heatmap}} = false
 \item 
-int \mbox{\hyperlink{class_illa_controller_v3_a1edecb1eb0bdff958e4778b20ba114b4}{direct\+Controlmode}} = 0
+int \mbox{\hyperlink{class_illa_controller_v3_a298b25ae7401d8d473b5e438eae4a053}{direct\+Control\+Mode}} = 0
 \item 
 bool \mbox{\hyperlink{class_illa_controller_v3_afbc6d8d9d74906f6dd5ccbd8f3a8c3f3}{Only\+Top\+Nodes}} = true
 \item 
@@ -116,10 +127,6 @@ Quaternion \mbox{\hyperlink{class_illa_controller_v3_a380e5740361d9ffbf3817071b9
 \item 
 float \mbox{\hyperlink{class_illa_controller_v3_adaa6fe5d8deb14988614fb5307d60779}{Temp\+Test\+Angle\+Base\+Offset}}
 \item 
-float\mbox{[},\mbox{]} \mbox{\hyperlink{class_illa_controller_v3_a9348cac641d56f0406584749b742145d}{dhmat\+Non\+Inverted}}
-\item 
-float\mbox{[},\mbox{]} \mbox{\hyperlink{class_illa_controller_v3_a46ff04ada477bd1eb7054f3f41b6304a}{dhmat\+Inverted}}
-\item 
 \mbox{\hyperlink{class_denavit_hartenberg_illa3}{Denavit\+Hartenberg\+Illa3}} \mbox{\hyperlink{class_illa_controller_v3_a01f8dd31777f441db9bfbcead3e1d44c}{dh\+Params\+Non\+Inverted}}
 \item 
 \mbox{\hyperlink{class_denavit_hartenberg_illa3}{Denavit\+Hartenberg\+Illa3}} \mbox{\hyperlink{class_illa_controller_v3_a04d9d8f65a2a9be302ed4208b5242702}{dh\+Params\+Inverted}}
@@ -134,9 +141,13 @@ Game\+Object \mbox{\hyperlink{class_illa_controller_v3_aca9023926792fe28b24083d4
 \item 
 Game\+Object \mbox{\hyperlink{class_illa_controller_v3_aae1edb6b2a6e048a8ef653ea97cef7b5}{Joint5}}
 \item 
-\mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}} \mbox{\hyperlink{class_illa_controller_v3_a2e8e4d0b836beada76ff59832a6a2ceb}{Differential\+Joint1}} = new \mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}}(2.\+9f, 3.\+1f, 3.\+05f, 3)
+\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint}{Differential\+Joint}} \mbox{\hyperlink{class_illa_controller_v3_a661f62b123814153643436b0206959c4}{Differential\+Joint1}}
 \item 
-\mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}} \mbox{\hyperlink{class_illa_controller_v3_a30c1d4d101cca5b3340501257c71f474}{Differential\+Joint2}} = new \mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}}(3.\+2f, 3, 2.\+85f, 3)
+\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint}{Differential\+Joint}} \mbox{\hyperlink{class_illa_controller_v3_a0e080104dbf7e0002c2fcaea2f53f4a3}{Differential\+Joint2}}
+\item 
+\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint}{Single\+Joint}} \mbox{\hyperlink{class_illa_controller_v3_a69453da3265761813d878a252c6b8e6b}{Single\+Middle\+Joint}}
+\item 
+Dictionary$<$ short, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}} $>$ \mbox{\hyperlink{class_illa_controller_v3_ae349e75110dcc6935430366391ca6ccc}{Joint\+Servo\+Definition}} = new Dictionary$<$short, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}}$>$()
 \item 
 Game\+Object \mbox{\hyperlink{class_illa_controller_v3_aae7f2511ca1a1fb5c90c463585d67dd1}{Strut1\+No\+Invert}}
 \item 
@@ -155,8 +166,6 @@ int \mbox{\hyperlink{class_illa_controller_v3_a7c79b90a30f279e8c343d803b10ad781}
 bool \mbox{\hyperlink{class_illa_controller_v3_aa482d9310f542a2c1149dde6bc473267}{Invert\+Hierarchy}} = false
 \item 
 bool \mbox{\hyperlink{class_illa_controller_v3_a5337b667cccbffa55ac964d78f8a2939}{Is\+Inverted}} = false
-\item 
-float \mbox{\hyperlink{class_illa_controller_v3_a90c3b2e8038860d1dcfd78aa5cb76999}{Robot\+Reach\+Radius}} = 0.\+25f
 \item 
 \mbox{\hyperlink{class_text_gizmos}{Text\+Gizmos}} \mbox{\hyperlink{class_illa_controller_v3_a621eb9af82576c16aed17f4c881a0825}{text\+Gizmos\+Reference}}
 \item 
@@ -205,11 +214,13 @@ Vector3 \mbox{\hyperlink{class_illa_controller_v3_a12ea0ef19ad698bfeb7d701dd9600
 \item 
 Quaternion \mbox{\hyperlink{class_illa_controller_v3_ae296ce9f2b28f113aaa1620c2051225d}{Assembly\+Quat\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
+float\mbox{[},\mbox{]} \mbox{\hyperlink{class_illa_controller_v3_a9348cac641d56f0406584749b742145d}{dhmat\+Non\+Inverted}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float\mbox{[},\mbox{]} \mbox{\hyperlink{class_illa_controller_v3_a46ff04ada477bd1eb7054f3f41b6304a}{dhmat\+Inverted}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
 float\mbox{[},\mbox{]} \mbox{\hyperlink{class_illa_controller_v3_aea8e00503189417bc54c18eaaf33f489}{dhmat}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 \mbox{\hyperlink{class_denavit_hartenberg_illa3}{Denavit\+Hartenberg\+Illa3}} \mbox{\hyperlink{class_illa_controller_v3_ab828067d680220f3ce4ecdec7d1cd32d}{dh\+Params}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
-\mbox{\hyperlink{class_serial___l_s_s___control}{Serial\+\_\+\+LSS\+\_\+\+Control}} \mbox{\hyperlink{class_illa_controller_v3_a616b84f62930a04c49955426eef1ab47}{LSSController}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 double \mbox{\hyperlink{class_illa_controller_v3_a70c9730415ee96f7f4d5afc5912631d0}{Joint1\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
@@ -225,11 +236,21 @@ double \mbox{\hyperlink{class_illa_controller_v3_a8a86844a9afacccc07bfdf8eff4360
 \item 
 double \mbox{\hyperlink{class_illa_controller_v3_aa181855d671900efce03d78dc6c12db8}{Joint2\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_ae0466c12b11c2918b68477bf0c76ab83}{Joint3\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_ae0466c12b11c2918b68477bf0c76ab83}{Joint3\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
 double \mbox{\hyperlink{class_illa_controller_v3_a4990f215c27bb39ce06ff0d6bb282fbe}{Joint4\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 double \mbox{\hyperlink{class_illa_controller_v3_acffd18b83118532b922b2a032d515d0e}{Joint5\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_ae80654442b31f4d73c8949c7650c41bd}{Joint1\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_a6e596ed2417fc89ecdbc8169c3b0146e}{Joint2\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_aa32bc7750c433b95ebe86abb48f719ca}{Joint3\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_a79667017579be46734dac81abfaf7d4a}{Joint4\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_a6138020a6c981e5db7d1746a97dae75b}{Joint5\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Game\+Object \mbox{\hyperlink{class_illa_controller_v3_ad5183b2fa83fdf49405dfe61a5c29f29}{Base\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
@@ -239,29 +260,41 @@ Game\+Object \mbox{\hyperlink{class_illa_controller_v3_a55f94c2a87914ad99ac3afea
 \item 
 Game\+Object \mbox{\hyperlink{class_illa_controller_v3_af27d32a2f69df6be85be18908e13ff6e}{Gripper\+Joint}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\hyperlink{class_joint_class}{Joint\+Class}} \mbox{\hyperlink{class_illa_controller_v3_aa0f5128c57500dd002bdd8334af873d2}{Base\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} \mbox{\hyperlink{class_illa_controller_v3_aa38e87fb6c27bdeb2ac376a7e334b946}{Base\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\hyperlink{class_joint_class}{Joint\+Class}} \mbox{\hyperlink{class_illa_controller_v3_aab70241d1ab93b69227ed248d4fd431b}{Shoulder\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} \mbox{\hyperlink{class_illa_controller_v3_a3aa7dea24b758cc9a24384c2c4666176}{Shoulder\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\hyperlink{class_joint_class}{Joint\+Class}} \mbox{\hyperlink{class_illa_controller_v3_a6f7f78d7dc17050ab011b3c233fffe7d}{Wrist\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} \mbox{\hyperlink{class_illa_controller_v3_a281a57db91b0561466baf1bfe65ce312}{Wrist\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-\mbox{\hyperlink{class_joint_class}{Joint\+Class}} \mbox{\hyperlink{class_illa_controller_v3_a267c2d72edeefb02a6b4c96a7f71bed8}{Gripper\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} \mbox{\hyperlink{class_illa_controller_v3_a3e54ae03242f05ce28060da023f275a9}{Gripper\+Joint\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a6b64f1ad055c7c365b7811691ee5df00}{Base\+Joint\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_a266b37829a31d2c01169c50e78717d19}{base\+Joint\+\_\+\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a665df27200eb434d933e43661311885a}{Shoulder\+Joint\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_a9085e018c2bff1220606c68e32135601}{shoulder\+\_\+\+Joint\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a2a9d61d4ff33b515746cd0988b3241c5}{Wrist\+Joint\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_a93d84d9a7b6efa7145e692b669a84f97}{wrist\+Joint\+\_\+\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a707e3bb33da558ac2833db60774b41be}{Gripper\+Joint\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_ab01f4cad107756a2d21cc071c18c9695}{gripper\+Joint\+\_\+\+Target\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a09eb145a484126638893a9b269c2a494}{Base\+Joint\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_a4cce9ee3621cad82d1773887cdea9daa}{base\+Joint\+\_\+\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a2b5b78a258e2e1776cc1fb71c371e761}{Shoulder\+Joint\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_af1c39287c62e3eecffdfc74e25a07e3b}{shoulder\+Joint\+\_\+\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_ab37d422f3ccaf82c819a2d93d26e1e94}{Wrist\+Joint\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_aba971f0571e157d337ff0bd02b2c3024}{wrist\+Joint\+\_\+\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
-double \mbox{\hyperlink{class_illa_controller_v3_a9ffb1847324187518058797568e5e136}{Gripper\+Joint\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+double \mbox{\hyperlink{class_illa_controller_v3_aa1799ff7ad38d6950f259c1948530227}{gripper\+Joint\+\_\+\+Current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_a408bc92b56d3f80db38522afb1ed2b8f}{base\+Joint\+\_\+\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_a9facfb0d38546525744ab5380db80398}{shoulder\+Joint\+\_\+\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_a8ec2134b06cede57eef4824544ce2878}{wrist\+Joint\+\_\+\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} \mbox{\hyperlink{class_illa_controller_v3_aa604ae53794416313efcecd04cf465c3}{gripper\+Joint\+\_\+\+Rotation\+Limit}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_serial___l_s_s___control}{Serial\+\_\+\+LSS\+\_\+\+Control}} \mbox{\hyperlink{class_illa_controller_v3_a616b84f62930a04c49955426eef1ab47}{LSSController}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_illa_controller_v3_a90c3b2e8038860d1dcfd78aa5cb76999}{Robot\+Reach\+Radius}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
 \item 
 bool \mbox{\hyperlink{class_illa_controller_v3_a852e36559d0eec6ef7b494c3f71aeb25}{Can\+Clamp\+Tool}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
@@ -287,7 +320,9 @@ Integrates the concepts from \mbox{\hyperlink{class_pos_j}{PosJ}}, \mbox{\hyperl
 Illa is based on Inverse Kinnematics and high flexibility. It has the capability of performing collision estimation. Some of these calls can however be very computationally expensive.
 \end{DoxyWarning}
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Delete collision detection scenee class and related content in the inchworm coontroller 
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]Check variable accesibility (public, private) 
+
+Delete collision detection scenee class and related content in the inchworm coontroller 
 
 Transition I.\+K from custom implementation to a simpler to understand I.\+K solution with the robot defined according to Denavit Hartenberg parameters (instead on my arbitrary definitions) as showcased in the Iliukhin\textquotesingle{}s paper mentioned in the I.\+K function. Additionally this opens up the possibility of cleaning the I.\+K and joint position from bodges. 
 
@@ -295,7 +330,9 @@ Remove joint script and save the target angle in the denavit hartemberg matrix o
 
 Play with robot reach radius to optimize lattice discovery by minimizing unreachable discoveries. 
 
-Refine public and private variable status \end{DoxyRefDesc}
+Refine public and private variable status 
+
+transform ILLA V3 execution into state machine like previous robot\end{DoxyRefDesc}
 
 
  
@@ -434,8 +471,7 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{EliminateCollidingStates()}{EliminateCollidingStates()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Illa\+Controller\+V3.\+Eliminate\+Colliding\+States (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_movement}{Movement}}}]{Collision\+Full\+Movement }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -455,8 +491,7 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ForceConfiguration()}{ForceConfiguration()}}
 {\footnotesize\ttfamily void Illa\+Controller\+V3.\+Force\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Robot\+Config }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -468,30 +503,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_illa_controller_v3_a1a802e93b60146e60f331bf584bbf313_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_illa_controller_v3_a1e2c29d983713ebff5420123395fa607}\label{class_illa_controller_v3_a1e2c29d983713ebff5420123395fa607}} 
-\index{IllaControllerV3@{IllaControllerV3}!ForceJointAngle@{ForceJointAngle}}
-\index{ForceJointAngle@{ForceJointAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{ForceJointAngle()}{ForceJointAngle()}}
-{\footnotesize\ttfamily void Illa\+Controller\+V3.\+Force\+Joint\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Force\+PosJ }\end{DoxyParamCaption})}
-
-Forces the joints to instantly move to a certain \mbox{\hyperlink{class_pos_j}{PosJ}} configuration. Utilized for checking collisions and other mid frame computations. \begin{DoxyWarning}{Warning}
-Overrides the current joint motion. Understand what it does before using.
-\end{DoxyWarning}
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_a1e2c29d983713ebff5420123395fa607_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_a1e2c29d983713ebff5420123395fa607_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_controller_v3_aec6aa214422a680dcbbe502f85484590}\label{class_illa_controller_v3_aec6aa214422a680dcbbe502f85484590}} 
@@ -512,8 +523,7 @@ The function yields control after each frame to prevent the function from taking
 \begin{DoxyReturn}{Returns}
 An IEnumerator object that generates a graph representing a navigation space for a robot.
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -614,8 +624,7 @@ Collisions between meshes are expensive to compute.
 
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000004}{Todo}}]Check collision for a robot configuration. \end{DoxyRefDesc}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -628,8 +637,7 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{IsPoseColliding()}{IsPoseColliding()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily bool Illa\+Controller\+V3.\+Is\+Pose\+Colliding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pose\+To\+Check,  }\item[{bool}]{Separate\+Scene }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -654,8 +662,7 @@ This is a single-\/threaded implementation of collision detection for a single p
 \begin{DoxyReturn}{Returns}
 {\ttfamily true} if the given pose results in a collision with any nearby lattices, or {\ttfamily false} otherwise.
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -669,20 +676,26 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_controller_v3_ab9299c8badd9a7805305b53500418b7c_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_illa_controller_v3_a7c7a5d8f7cc9ed30cf36e2d6b0f5befc}\label{class_illa_controller_v3_a7c7a5d8f7cc9ed30cf36e2d6b0f5befc}} 
+\index{IllaControllerV3@{IllaControllerV3}!LoadConfiguration@{LoadConfiguration}}
+\index{LoadConfiguration@{LoadConfiguration}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{LoadConfiguration()}{LoadConfiguration()}}
+{\footnotesize\ttfamily void Illa\+Controller\+V3.\+Load\+Configuration (\begin{DoxyParamCaption}\item[{string}]{config\+Path\+To\+Load }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_controller_v3_a7c7a5d8f7cc9ed30cf36e2d6b0f5befc_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_controller_v3_ac5e50d9be213a10e9c2aae1bccf4dd5d}\label{class_illa_controller_v3_ac5e50d9be213a10e9c2aae1bccf4dd5d}} 
 \index{IllaControllerV3@{IllaControllerV3}!MoveToPosJ@{MoveToPosJ}}
 \index{MoveToPosJ@{MoveToPosJ}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{MoveToPosJ()}{MoveToPosJ()}}
 {\footnotesize\ttfamily void Illa\+Controller\+V3.\+Move\+To\+PosJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Target\+PosJ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_ac5e50d9be213a10e9c2aae1bccf4dd5d_cgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_illa_controller_v3_ae3c1a21d9501cd2723ca0ffba3e99b63}\label{class_illa_controller_v3_ae3c1a21d9501cd2723ca0ffba3e99b63}} 
 \index{IllaControllerV3@{IllaControllerV3}!MultiFrameMapNavigationSpace@{MultiFrameMapNavigationSpace}}
 \index{MultiFrameMapNavigationSpace@{MultiFrameMapNavigationSpace}!IllaControllerV3@{IllaControllerV3}}
@@ -709,12 +722,33 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{MultiFrameMapNavigationSpace()}{MultiFrameMapNavigationSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Illa\+Controller\+V3.\+Multi\+Frame\+Map\+Navigation\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Starting\+Configuration }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_controller_v3_ad9ffe0c670d2997ff0f0be71c647aacf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_controller_v3_a73b859224952e6e91a03e92ef8e9e6df}\label{class_illa_controller_v3_a73b859224952e6e91a03e92ef8e9e6df}} 
+\index{IllaControllerV3@{IllaControllerV3}!NewConfiguration@{NewConfiguration}}
+\index{NewConfiguration@{NewConfiguration}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{NewConfiguration()}{NewConfiguration()}}
+{\footnotesize\ttfamily void Illa\+Controller\+V3.\+New\+Configuration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_ad9ffe0c670d2997ff0f0be71c647aacf_cgraph}
+\includegraphics[width=350pt]{class_illa_controller_v3_a73b859224952e6e91a03e92ef8e9e6df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_controller_v3_a73b859224952e6e91a03e92ef8e9e6df_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_controller_v3_ac78d65fc8f3141e5864b6ef3c7dddb2a}\label{class_illa_controller_v3_ac78d65fc8f3141e5864b6ef3c7dddb2a}} 
@@ -737,8 +771,7 @@ The function first gets all possible movements from the Starting\+Configuration,
 The function also updates the number of times the Starting\+Configuration\textquotesingle{}s Base\+Node has been visited and moved to. \begin{DoxyNote}{Note}
 This function assumes that the Navigation\+Mesh has already been initialized.
 \end{DoxyNote}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -774,8 +807,7 @@ If the Check\+Collisions flag is set to true, the function will check for collis
 \begin{DoxyReturn}{Returns}
 A list of possible movements for the robot.
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -789,27 +821,34 @@ Here is the caller graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_controller_v3_a7136481d493229bb8ff9cc97ec802070_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_controller_v3_a58d67aa7bb5e1f897f8b344eee2176ad}\label{class_illa_controller_v3_a58d67aa7bb5e1f897f8b344eee2176ad}} 
-\index{IllaControllerV3@{IllaControllerV3}!RefreshAllAnlges@{RefreshAllAnlges}}
-\index{RefreshAllAnlges@{RefreshAllAnlges}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{RefreshAllAnlges()}{RefreshAllAnlges()}}
-{\footnotesize\ttfamily void Illa\+Controller\+V3.\+Refresh\+All\+Anlges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_illa_controller_v3_aa2c37ac4cbf9503904e06661e95656d3}\label{class_illa_controller_v3_aa2c37ac4cbf9503904e06661e95656d3}} 
+\index{IllaControllerV3@{IllaControllerV3}!SaveConfiguration@{SaveConfiguration}}
+\index{SaveConfiguration@{SaveConfiguration}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{SaveConfiguration()}{SaveConfiguration()}}
+{\footnotesize\ttfamily void Illa\+Controller\+V3.\+Save\+Configuration (\begin{DoxyParamCaption}\item[{string}]{config\+Path\+To\+Save }\end{DoxyParamCaption})}
 
-Refreshes all joints without modifying the target angles or angular velocities.Here is the call graph for this function\+:
+Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_a58d67aa7bb5e1f897f8b344eee2176ad_cgraph}
+\includegraphics[width=350pt]{class_illa_controller_v3_aa2c37ac4cbf9503904e06661e95656d3_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_a58d67aa7bb5e1f897f8b344eee2176ad_icgraph}
+\includegraphics[width=350pt]{class_illa_controller_v3_aa2c37ac4cbf9503904e06661e95656d3_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_illa_controller_v3_a57c0e62320a678a2d1fa4e4264faa567}\label{class_illa_controller_v3_a57c0e62320a678a2d1fa4e4264faa567}} 
+\index{IllaControllerV3@{IllaControllerV3}!SetCurrentAngleToPosJ@{SetCurrentAngleToPosJ}}
+\index{SetCurrentAngleToPosJ@{SetCurrentAngleToPosJ}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{SetCurrentAngleToPosJ()}{SetCurrentAngleToPosJ()}}
+{\footnotesize\ttfamily void Illa\+Controller\+V3.\+Set\+Current\+Angle\+To\+PosJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Target\+PosJ }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_illa_controller_v3_abeb5795bffe9d030bd13cb6f646fc35f}\label{class_illa_controller_v3_abeb5795bffe9d030bd13cb6f646fc35f}} 
 \index{IllaControllerV3@{IllaControllerV3}!SetJointHierarchy@{SetJointHierarchy}}
 \index{SetJointHierarchy@{SetJointHierarchy}!IllaControllerV3@{IllaControllerV3}}
@@ -842,13 +881,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SetTargetAngleToPosJ()}{SetTargetAngleToPosJ()}}
 {\footnotesize\ttfamily void Illa\+Controller\+V3.\+Set\+Target\+Angle\+To\+PosJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Target\+PosJ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_a8fd6af7eead84415b892a86113da3257_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_illa_controller_v3_a90eb64ba1c439cc35f1e6906910ccf14}\label{class_illa_controller_v3_a90eb64ba1c439cc35f1e6906910ccf14}} 
 \index{IllaControllerV3@{IllaControllerV3}!Spawn@{Spawn}}
 \index{Spawn@{Spawn}!IllaControllerV3@{IllaControllerV3}}
@@ -864,12 +896,11 @@ Must be called for propper functioning of ILLA.
 \doxysubsubsection{\texorpdfstring{Start()}{Start()}}
 {\footnotesize\ttfamily void Illa\+Controller\+V3.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=333pt]{class_illa_controller_v3_ad66980ec7b35a4b0062c38882b53158b_cgraph}
+\includegraphics[width=350pt]{class_illa_controller_v3_ad66980ec7b35a4b0062c38882b53158b_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_controller_v3_a7967190b78402df4825808d3682b4097}\label{class_illa_controller_v3_a7967190b78402df4825808d3682b4097}} 
@@ -905,13 +936,6 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_controller_v3_aaf0fafcb41fac2f411575672a76d362a_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_controller_v3_aaf0fafcb41fac2f411575672a76d362a_icgraph}
-\end{center}
-\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
@@ -939,6 +963,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{baseOffsetQuat}{baseOffsetQuat}}
 {\footnotesize\ttfamily Quaternion Illa\+Controller\+V3.\+base\+Offset\+Quat = Quaternion.\+identity}
 
+\mbox{\Hypertarget{class_illa_controller_v3_a0c489695cb9a0740b03a3a0f0db7314c}\label{class_illa_controller_v3_a0c489695cb9a0740b03a3a0f0db7314c}} 
+\index{IllaControllerV3@{IllaControllerV3}!configuration@{configuration}}
+\index{configuration@{configuration}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{configuration}{configuration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_l_l_a_configuration}{ILLAConfiguration}} Illa\+Controller\+V3.\+configuration}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a686c2b3cefa71adc1042b1faae27accc}\label{class_illa_controller_v3_a686c2b3cefa71adc1042b1faae27accc}} 
+\index{IllaControllerV3@{IllaControllerV3}!configurationIndex@{configurationIndex}}
+\index{configurationIndex@{configurationIndex}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{configurationIndex}{configurationIndex}}
+{\footnotesize\ttfamily int Illa\+Controller\+V3.\+configuration\+Index = 1}
+
 \mbox{\Hypertarget{class_illa_controller_v3_acef9321b05413cdb7f8ffb9c8c95afb9}\label{class_illa_controller_v3_acef9321b05413cdb7f8ffb9c8c95afb9}} 
 \index{IllaControllerV3@{IllaControllerV3}!CostCheckCollisions@{CostCheckCollisions}}
 \index{CostCheckCollisions@{CostCheckCollisions}!IllaControllerV3@{IllaControllerV3}}
@@ -963,38 +999,6 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{CostProcessMovement}{CostProcessMovement}}
 {\footnotesize\ttfamily List$<$float$>$ Illa\+Controller\+V3.\+Cost\+Process\+Movement = new List$<$float$>$()}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a46ff04ada477bd1eb7054f3f41b6304a}\label{class_illa_controller_v3_a46ff04ada477bd1eb7054f3f41b6304a}} 
-\index{IllaControllerV3@{IllaControllerV3}!dhmatInverted@{dhmatInverted}}
-\index{dhmatInverted@{dhmatInverted}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{dhmatInverted}{dhmatInverted}}
-{\footnotesize\ttfamily float \mbox{[},\mbox{]} Illa\+Controller\+V3.\+dhmat\+Inverted}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{float}[,] \{}
-\DoxyCodeLine{        \{1, 0, -\/Mathf.PI/2,         0,      0.01f\},}
-\DoxyCodeLine{        \{2, 0,           0,    -\/0.11f,          0\},}
-\DoxyCodeLine{        \{3, 0,           0,    -\/0.11f,          0\},}
-\DoxyCodeLine{        \{4, 0,  Mathf.PI/2,         0,          0\},}
-\DoxyCodeLine{        \{5, 0,           0,         0,     -\/0.01f\} \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{class_illa_controller_v3_a9348cac641d56f0406584749b742145d}\label{class_illa_controller_v3_a9348cac641d56f0406584749b742145d}} 
-\index{IllaControllerV3@{IllaControllerV3}!dhmatNonInverted@{dhmatNonInverted}}
-\index{dhmatNonInverted@{dhmatNonInverted}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{dhmatNonInverted}{dhmatNonInverted}}
-{\footnotesize\ttfamily float \mbox{[},\mbox{]} Illa\+Controller\+V3.\+dhmat\+Non\+Inverted}
-
-{\bfseries Initial value\+:}
-\begin{DoxyCode}{0}
-\DoxyCodeLine{= \textcolor{keyword}{new} \textcolor{keywordtype}{float}[,] \{}
-\DoxyCodeLine{        \{1, 0,  Mathf.PI/2,         0,      0.01f\},}
-\DoxyCodeLine{        \{2, 0,           0,     0.11f,          0\},}
-\DoxyCodeLine{        \{3, 0,           0,     0.11f,          0\},}
-\DoxyCodeLine{        \{4, 0, -\/Mathf.PI/2,         0,          0\},}
-\DoxyCodeLine{        \{5, 0,           0,         0,     -\/0.01f\} \}}
-
-\end{DoxyCode}
 \mbox{\Hypertarget{class_illa_controller_v3_a04d9d8f65a2a9be302ed4208b5242702}\label{class_illa_controller_v3_a04d9d8f65a2a9be302ed4208b5242702}} 
 \index{IllaControllerV3@{IllaControllerV3}!dhParamsInverted@{dhParamsInverted}}
 \index{dhParamsInverted@{dhParamsInverted}!IllaControllerV3@{IllaControllerV3}}
@@ -1007,23 +1011,23 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{dhParamsNonInverted}{dhParamsNonInverted}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_denavit_hartenberg_illa3}{Denavit\+Hartenberg\+Illa3}} Illa\+Controller\+V3.\+dh\+Params\+Non\+Inverted}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a2e8e4d0b836beada76ff59832a6a2ceb}\label{class_illa_controller_v3_a2e8e4d0b836beada76ff59832a6a2ceb}} 
+\mbox{\Hypertarget{class_illa_controller_v3_a661f62b123814153643436b0206959c4}\label{class_illa_controller_v3_a661f62b123814153643436b0206959c4}} 
 \index{IllaControllerV3@{IllaControllerV3}!DifferentialJoint1@{DifferentialJoint1}}
 \index{DifferentialJoint1@{DifferentialJoint1}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{DifferentialJoint1}{DifferentialJoint1}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}} Illa\+Controller\+V3.\+Differential\+Joint1 = new \mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}}(2.\+9f, 3.\+1f, 3.\+05f, 3)}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint}{Differential\+Joint}} Illa\+Controller\+V3.\+Differential\+Joint1}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a30c1d4d101cca5b3340501257c71f474}\label{class_illa_controller_v3_a30c1d4d101cca5b3340501257c71f474}} 
+\mbox{\Hypertarget{class_illa_controller_v3_a0e080104dbf7e0002c2fcaea2f53f4a3}\label{class_illa_controller_v3_a0e080104dbf7e0002c2fcaea2f53f4a3}} 
 \index{IllaControllerV3@{IllaControllerV3}!DifferentialJoint2@{DifferentialJoint2}}
 \index{DifferentialJoint2@{DifferentialJoint2}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{DifferentialJoint2}{DifferentialJoint2}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}} Illa\+Controller\+V3.\+Differential\+Joint2 = new \mbox{\hyperlink{class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper}{Differential\+Joint\+Angle\+Wrapper}}(3.\+2f, 3, 2.\+85f, 3)}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint}{Differential\+Joint}} Illa\+Controller\+V3.\+Differential\+Joint2}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a1edecb1eb0bdff958e4778b20ba114b4}\label{class_illa_controller_v3_a1edecb1eb0bdff958e4778b20ba114b4}} 
-\index{IllaControllerV3@{IllaControllerV3}!directControlmode@{directControlmode}}
-\index{directControlmode@{directControlmode}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{directControlmode}{directControlmode}}
-{\footnotesize\ttfamily int Illa\+Controller\+V3.\+direct\+Controlmode = 0}
+\mbox{\Hypertarget{class_illa_controller_v3_a298b25ae7401d8d473b5e438eae4a053}\label{class_illa_controller_v3_a298b25ae7401d8d473b5e438eae4a053}} 
+\index{IllaControllerV3@{IllaControllerV3}!directControlMode@{directControlMode}}
+\index{directControlMode@{directControlMode}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{directControlMode}{directControlMode}}
+{\footnotesize\ttfamily int Illa\+Controller\+V3.\+direct\+Control\+Mode = 0}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a4c92f5297d1ecf5f1a233d6ef3da5eb4}\label{class_illa_controller_v3_a4c92f5297d1ecf5f1a233d6ef3da5eb4}} 
 \index{IllaControllerV3@{IllaControllerV3}!DrawHeatmap@{DrawHeatmap}}
@@ -1048,6 +1052,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{DrawOutgoingEdgesWithCost@{DrawOutgoingEdgesWithCost}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{DrawOutgoingEdgesWithCost}{DrawOutgoingEdgesWithCost}}
 {\footnotesize\ttfamily bool Illa\+Controller\+V3.\+Draw\+Outgoing\+Edges\+With\+Cost = false}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a18b8b8b4a9fe12c494a9244ce5045c28}\label{class_illa_controller_v3_a18b8b8b4a9fe12c494a9244ce5045c28}} 
+\index{IllaControllerV3@{IllaControllerV3}!enforceRotationLimits@{enforceRotationLimits}}
+\index{enforceRotationLimits@{enforceRotationLimits}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{enforceRotationLimits}{enforceRotationLimits}}
+{\footnotesize\ttfamily bool Illa\+Controller\+V3.\+enforce\+Rotation\+Limits = true}
 
 \mbox{\Hypertarget{class_illa_controller_v3_af4049a27d2f3c6d597cc55c68c2395b1}\label{class_illa_controller_v3_af4049a27d2f3c6d597cc55c68c2395b1}} 
 \index{IllaControllerV3@{IllaControllerV3}!FindPathToNode@{FindPathToNode}}
@@ -1078,6 +1088,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{GrabObjectPoseIndex@{GrabObjectPoseIndex}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{GrabObjectPoseIndex}{GrabObjectPoseIndex}}
 {\footnotesize\ttfamily int Illa\+Controller\+V3.\+Grab\+Object\+Pose\+Index = 0}
+
+\mbox{\Hypertarget{class_illa_controller_v3_ab7f166fae75c5dac1e9406c05fd2c90b}\label{class_illa_controller_v3_ab7f166fae75c5dac1e9406c05fd2c90b}} 
+\index{IllaControllerV3@{IllaControllerV3}!HasConfiguration@{HasConfiguration}}
+\index{HasConfiguration@{HasConfiguration}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{HasConfiguration}{HasConfiguration}}
+{\footnotesize\ttfamily bool Illa\+Controller\+V3.\+Has\+Configuration = false}
 
 \mbox{\Hypertarget{class_illa_controller_v3_aa482d9310f542a2c1149dde6bc473267}\label{class_illa_controller_v3_aa482d9310f542a2c1149dde6bc473267}} 
 \index{IllaControllerV3@{IllaControllerV3}!InvertHierarchy@{InvertHierarchy}}
@@ -1139,11 +1155,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{JointCapsuleColliders}{JointCapsuleColliders}}
 {\footnotesize\ttfamily List$<$Collider$>$ Illa\+Controller\+V3.\+Joint\+Capsule\+Colliders = new List$<$Collider$>$()}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a3eac509dd91fe9364ae2c029af8114e3}\label{class_illa_controller_v3_a3eac509dd91fe9364ae2c029af8114e3}} 
-\index{IllaControllerV3@{IllaControllerV3}!maxThreadLockingTime@{maxThreadLockingTime}}
-\index{maxThreadLockingTime@{maxThreadLockingTime}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{maxThreadLockingTime}{maxThreadLockingTime}}
-{\footnotesize\ttfamily int Illa\+Controller\+V3.\+max\+Thread\+Locking\+Time = 1000}
+\mbox{\Hypertarget{class_illa_controller_v3_ae349e75110dcc6935430366391ca6ccc}\label{class_illa_controller_v3_ae349e75110dcc6935430366391ca6ccc}} 
+\index{IllaControllerV3@{IllaControllerV3}!JointServoDefinition@{JointServoDefinition}}
+\index{JointServoDefinition@{JointServoDefinition}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{JointServoDefinition}{JointServoDefinition}}
+{\footnotesize\ttfamily Dictionary$<$short, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}}$>$ Illa\+Controller\+V3.\+Joint\+Servo\+Definition = new Dictionary$<$short, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}}$>$()}
 
 \mbox{\Hypertarget{class_illa_controller_v3_aea1734aed0691e15f271170cc503e3b5}\label{class_illa_controller_v3_aea1734aed0691e15f271170cc503e3b5}} 
 \index{IllaControllerV3@{IllaControllerV3}!MeshColliderPenetrationDetection@{MeshColliderPenetrationDetection}}
@@ -1181,17 +1197,17 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{RigidBodyParentCollisionDetector}{RigidBodyParentCollisionDetector}}
 {\footnotesize\ttfamily Game\+Object Illa\+Controller\+V3.\+Rigid\+Body\+Parent\+Collision\+Detector}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a90c3b2e8038860d1dcfd78aa5cb76999}\label{class_illa_controller_v3_a90c3b2e8038860d1dcfd78aa5cb76999}} 
-\index{IllaControllerV3@{IllaControllerV3}!RobotReachRadius@{RobotReachRadius}}
-\index{RobotReachRadius@{RobotReachRadius}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{RobotReachRadius}{RobotReachRadius}}
-{\footnotesize\ttfamily float Illa\+Controller\+V3.\+Robot\+Reach\+Radius = 0.\+25f}
-
 \mbox{\Hypertarget{class_illa_controller_v3_a80751af1aaa680591acf93ce593cc729}\label{class_illa_controller_v3_a80751af1aaa680591acf93ce593cc729}} 
 \index{IllaControllerV3@{IllaControllerV3}!SelectionScriptReference@{SelectionScriptReference}}
 \index{SelectionScriptReference@{SelectionScriptReference}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{SelectionScriptReference}{SelectionScriptReference}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_selection_script}{Selection\+Script}} Illa\+Controller\+V3.\+Selection\+Script\+Reference}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a69453da3265761813d878a252c6b8e6b}\label{class_illa_controller_v3_a69453da3265761813d878a252c6b8e6b}} 
+\index{IllaControllerV3@{IllaControllerV3}!SingleMiddleJoint@{SingleMiddleJoint}}
+\index{SingleMiddleJoint@{SingleMiddleJoint}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{SingleMiddleJoint}{SingleMiddleJoint}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint}{Single\+Joint}} Illa\+Controller\+V3.\+Single\+Middle\+Joint}
 
 \mbox{\Hypertarget{class_illa_controller_v3_ad690f1361892c9f4aa1df1d8501b9540}\label{class_illa_controller_v3_ad690f1361892c9f4aa1df1d8501b9540}} 
 \index{IllaControllerV3@{IllaControllerV3}!stopProcess@{stopProcess}}
@@ -1280,23 +1296,29 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{BaseJoint}{BaseJoint}}
 {\footnotesize\ttfamily Game\+Object Illa\+Controller\+V3.\+Base\+Joint\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a09eb145a484126638893a9b269c2a494}\label{class_illa_controller_v3_a09eb145a484126638893a9b269c2a494}} 
-\index{IllaControllerV3@{IllaControllerV3}!BaseJointCurrentAngle@{BaseJointCurrentAngle}}
-\index{BaseJointCurrentAngle@{BaseJointCurrentAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{BaseJointCurrentAngle}{BaseJointCurrentAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Base\+Joint\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+\mbox{\Hypertarget{class_illa_controller_v3_a4cce9ee3621cad82d1773887cdea9daa}\label{class_illa_controller_v3_a4cce9ee3621cad82d1773887cdea9daa}} 
+\index{IllaControllerV3@{IllaControllerV3}!baseJoint\_CurrentAngle@{baseJoint\_CurrentAngle}}
+\index{baseJoint\_CurrentAngle@{baseJoint\_CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{baseJoint\_CurrentAngle}{baseJoint\_CurrentAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+base\+Joint\+\_\+\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_aa0f5128c57500dd002bdd8334af873d2}\label{class_illa_controller_v3_aa0f5128c57500dd002bdd8334af873d2}} 
+\mbox{\Hypertarget{class_illa_controller_v3_a408bc92b56d3f80db38522afb1ed2b8f}\label{class_illa_controller_v3_a408bc92b56d3f80db38522afb1ed2b8f}} 
+\index{IllaControllerV3@{IllaControllerV3}!baseJoint\_RotationLimit@{baseJoint\_RotationLimit}}
+\index{baseJoint\_RotationLimit@{baseJoint\_RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{baseJoint\_RotationLimit}{baseJoint\_RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+base\+Joint\+\_\+\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a266b37829a31d2c01169c50e78717d19}\label{class_illa_controller_v3_a266b37829a31d2c01169c50e78717d19}} 
+\index{IllaControllerV3@{IllaControllerV3}!baseJoint\_TargetAngle@{baseJoint\_TargetAngle}}
+\index{baseJoint\_TargetAngle@{baseJoint\_TargetAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{baseJoint\_TargetAngle}{baseJoint\_TargetAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+base\+Joint\+\_\+\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_aa38e87fb6c27bdeb2ac376a7e334b946}\label{class_illa_controller_v3_aa38e87fb6c27bdeb2ac376a7e334b946}} 
 \index{IllaControllerV3@{IllaControllerV3}!BaseJointScript@{BaseJointScript}}
 \index{BaseJointScript@{BaseJointScript}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{BaseJointScript}{BaseJointScript}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_joint_class}{Joint\+Class}} Illa\+Controller\+V3.\+Base\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_illa_controller_v3_a6b64f1ad055c7c365b7811691ee5df00}\label{class_illa_controller_v3_a6b64f1ad055c7c365b7811691ee5df00}} 
-\index{IllaControllerV3@{IllaControllerV3}!BaseJointTargetAngle@{BaseJointTargetAngle}}
-\index{BaseJointTargetAngle@{BaseJointTargetAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{BaseJointTargetAngle}{BaseJointTargetAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Base\+Joint\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Illa\+Controller\+V3.\+Base\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a12ea0ef19ad698bfeb7d701dd9600ba6}\label{class_illa_controller_v3_a12ea0ef19ad698bfeb7d701dd9600ba6}} 
 \index{IllaControllerV3@{IllaControllerV3}!baseOffsetVector@{baseOffsetVector}}
@@ -1322,6 +1344,18 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{dhmat}{dhmat}}
 {\footnotesize\ttfamily float \mbox{[},\mbox{]} Illa\+Controller\+V3.\+dhmat\hspace{0.3cm}{\ttfamily [get]}}
 
+\mbox{\Hypertarget{class_illa_controller_v3_a46ff04ada477bd1eb7054f3f41b6304a}\label{class_illa_controller_v3_a46ff04ada477bd1eb7054f3f41b6304a}} 
+\index{IllaControllerV3@{IllaControllerV3}!dhmatInverted@{dhmatInverted}}
+\index{dhmatInverted@{dhmatInverted}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{dhmatInverted}{dhmatInverted}}
+{\footnotesize\ttfamily float \mbox{[},\mbox{]} Illa\+Controller\+V3.\+dhmat\+Inverted\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a9348cac641d56f0406584749b742145d}\label{class_illa_controller_v3_a9348cac641d56f0406584749b742145d}} 
+\index{IllaControllerV3@{IllaControllerV3}!dhmatNonInverted@{dhmatNonInverted}}
+\index{dhmatNonInverted@{dhmatNonInverted}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{dhmatNonInverted}{dhmatNonInverted}}
+{\footnotesize\ttfamily float \mbox{[},\mbox{]} Illa\+Controller\+V3.\+dhmat\+Non\+Inverted\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
 \mbox{\Hypertarget{class_illa_controller_v3_ab828067d680220f3ce4ecdec7d1cd32d}\label{class_illa_controller_v3_ab828067d680220f3ce4ecdec7d1cd32d}} 
 \index{IllaControllerV3@{IllaControllerV3}!dhParams@{dhParams}}
 \index{dhParams@{dhParams}!IllaControllerV3@{IllaControllerV3}}
@@ -1334,29 +1368,41 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{GripperJoint}{GripperJoint}}
 {\footnotesize\ttfamily Game\+Object Illa\+Controller\+V3.\+Gripper\+Joint\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a9ffb1847324187518058797568e5e136}\label{class_illa_controller_v3_a9ffb1847324187518058797568e5e136}} 
-\index{IllaControllerV3@{IllaControllerV3}!GripperJointCurrentAngle@{GripperJointCurrentAngle}}
-\index{GripperJointCurrentAngle@{GripperJointCurrentAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{GripperJointCurrentAngle}{GripperJointCurrentAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Gripper\+Joint\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+\mbox{\Hypertarget{class_illa_controller_v3_aa1799ff7ad38d6950f259c1948530227}\label{class_illa_controller_v3_aa1799ff7ad38d6950f259c1948530227}} 
+\index{IllaControllerV3@{IllaControllerV3}!gripperJoint\_CurrentAngle@{gripperJoint\_CurrentAngle}}
+\index{gripperJoint\_CurrentAngle@{gripperJoint\_CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{gripperJoint\_CurrentAngle}{gripperJoint\_CurrentAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+gripper\+Joint\+\_\+\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a267c2d72edeefb02a6b4c96a7f71bed8}\label{class_illa_controller_v3_a267c2d72edeefb02a6b4c96a7f71bed8}} 
+\mbox{\Hypertarget{class_illa_controller_v3_aa604ae53794416313efcecd04cf465c3}\label{class_illa_controller_v3_aa604ae53794416313efcecd04cf465c3}} 
+\index{IllaControllerV3@{IllaControllerV3}!gripperJoint\_RotationLimit@{gripperJoint\_RotationLimit}}
+\index{gripperJoint\_RotationLimit@{gripperJoint\_RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{gripperJoint\_RotationLimit}{gripperJoint\_RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+gripper\+Joint\+\_\+\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_ab01f4cad107756a2d21cc071c18c9695}\label{class_illa_controller_v3_ab01f4cad107756a2d21cc071c18c9695}} 
+\index{IllaControllerV3@{IllaControllerV3}!gripperJoint\_TargetAngle@{gripperJoint\_TargetAngle}}
+\index{gripperJoint\_TargetAngle@{gripperJoint\_TargetAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{gripperJoint\_TargetAngle}{gripperJoint\_TargetAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+gripper\+Joint\+\_\+\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a3e54ae03242f05ce28060da023f275a9}\label{class_illa_controller_v3_a3e54ae03242f05ce28060da023f275a9}} 
 \index{IllaControllerV3@{IllaControllerV3}!GripperJointScript@{GripperJointScript}}
 \index{GripperJointScript@{GripperJointScript}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{GripperJointScript}{GripperJointScript}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_joint_class}{Joint\+Class}} Illa\+Controller\+V3.\+Gripper\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_illa_controller_v3_a707e3bb33da558ac2833db60774b41be}\label{class_illa_controller_v3_a707e3bb33da558ac2833db60774b41be}} 
-\index{IllaControllerV3@{IllaControllerV3}!GripperJointTargetAngle@{GripperJointTargetAngle}}
-\index{GripperJointTargetAngle@{GripperJointTargetAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{GripperJointTargetAngle}{GripperJointTargetAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Gripper\+Joint\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Illa\+Controller\+V3.\+Gripper\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a8a86844a9afacccc07bfdf8eff4360db}\label{class_illa_controller_v3_a8a86844a9afacccc07bfdf8eff4360db}} 
 \index{IllaControllerV3@{IllaControllerV3}!Joint1CurrentAngle@{Joint1CurrentAngle}}
 \index{Joint1CurrentAngle@{Joint1CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{Joint1CurrentAngle}{Joint1CurrentAngle}}
 {\footnotesize\ttfamily double Illa\+Controller\+V3.\+Joint1\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_ae80654442b31f4d73c8949c7650c41bd}\label{class_illa_controller_v3_ae80654442b31f4d73c8949c7650c41bd}} 
+\index{IllaControllerV3@{IllaControllerV3}!Joint1RotationLimit@{Joint1RotationLimit}}
+\index{Joint1RotationLimit@{Joint1RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{Joint1RotationLimit}{Joint1RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+Joint1\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a70c9730415ee96f7f4d5afc5912631d0}\label{class_illa_controller_v3_a70c9730415ee96f7f4d5afc5912631d0}} 
 \index{IllaControllerV3@{IllaControllerV3}!Joint1TargetAngle@{Joint1TargetAngle}}
@@ -1370,6 +1416,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{Joint2CurrentAngle}{Joint2CurrentAngle}}
 {\footnotesize\ttfamily double Illa\+Controller\+V3.\+Joint2\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}}
 
+\mbox{\Hypertarget{class_illa_controller_v3_a6e596ed2417fc89ecdbc8169c3b0146e}\label{class_illa_controller_v3_a6e596ed2417fc89ecdbc8169c3b0146e}} 
+\index{IllaControllerV3@{IllaControllerV3}!Joint2RotationLimit@{Joint2RotationLimit}}
+\index{Joint2RotationLimit@{Joint2RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{Joint2RotationLimit}{Joint2RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+Joint2\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
+
 \mbox{\Hypertarget{class_illa_controller_v3_a2113b18e6408b433a028c61217b43299}\label{class_illa_controller_v3_a2113b18e6408b433a028c61217b43299}} 
 \index{IllaControllerV3@{IllaControllerV3}!Joint2TargetAngle@{Joint2TargetAngle}}
 \index{Joint2TargetAngle@{Joint2TargetAngle}!IllaControllerV3@{IllaControllerV3}}
@@ -1380,7 +1432,13 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{IllaControllerV3@{IllaControllerV3}!Joint3CurrentAngle@{Joint3CurrentAngle}}
 \index{Joint3CurrentAngle@{Joint3CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{Joint3CurrentAngle}{Joint3CurrentAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Joint3\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Joint3\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_aa32bc7750c433b95ebe86abb48f719ca}\label{class_illa_controller_v3_aa32bc7750c433b95ebe86abb48f719ca}} 
+\index{IllaControllerV3@{IllaControllerV3}!Joint3RotationLimit@{Joint3RotationLimit}}
+\index{Joint3RotationLimit@{Joint3RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{Joint3RotationLimit}{Joint3RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+Joint3\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a0aa4de94ee33210f183aee090acf95c1}\label{class_illa_controller_v3_a0aa4de94ee33210f183aee090acf95c1}} 
 \index{IllaControllerV3@{IllaControllerV3}!Joint3TargetAngle@{Joint3TargetAngle}}
@@ -1394,6 +1452,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{Joint4CurrentAngle}{Joint4CurrentAngle}}
 {\footnotesize\ttfamily double Illa\+Controller\+V3.\+Joint4\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}}
 
+\mbox{\Hypertarget{class_illa_controller_v3_a79667017579be46734dac81abfaf7d4a}\label{class_illa_controller_v3_a79667017579be46734dac81abfaf7d4a}} 
+\index{IllaControllerV3@{IllaControllerV3}!Joint4RotationLimit@{Joint4RotationLimit}}
+\index{Joint4RotationLimit@{Joint4RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{Joint4RotationLimit}{Joint4RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+Joint4\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
+
 \mbox{\Hypertarget{class_illa_controller_v3_a87a90e4fc62f7a8ed7a0edb7f5099da0}\label{class_illa_controller_v3_a87a90e4fc62f7a8ed7a0edb7f5099da0}} 
 \index{IllaControllerV3@{IllaControllerV3}!Joint4TargetAngle@{Joint4TargetAngle}}
 \index{Joint4TargetAngle@{Joint4TargetAngle}!IllaControllerV3@{IllaControllerV3}}
@@ -1405,6 +1469,12 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{Joint5CurrentAngle@{Joint5CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{Joint5CurrentAngle}{Joint5CurrentAngle}}
 {\footnotesize\ttfamily double Illa\+Controller\+V3.\+Joint5\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a6138020a6c981e5db7d1746a97dae75b}\label{class_illa_controller_v3_a6138020a6c981e5db7d1746a97dae75b}} 
+\index{IllaControllerV3@{IllaControllerV3}!Joint5RotationLimit@{Joint5RotationLimit}}
+\index{Joint5RotationLimit@{Joint5RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{Joint5RotationLimit}{Joint5RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+Joint5\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a5a5294fab3e04a2b32a86ea77c0fa30c}\label{class_illa_controller_v3_a5a5294fab3e04a2b32a86ea77c0fa30c}} 
 \index{IllaControllerV3@{IllaControllerV3}!Joint5TargetAngle@{Joint5TargetAngle}}
@@ -1418,29 +1488,41 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{LSSController}{LSSController}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_serial___l_s_s___control}{Serial\+\_\+\+LSS\+\_\+\+Control}} Illa\+Controller\+V3.\+LSSController\hspace{0.3cm}{\ttfamily [get]}}
 
+\mbox{\Hypertarget{class_illa_controller_v3_a90c3b2e8038860d1dcfd78aa5cb76999}\label{class_illa_controller_v3_a90c3b2e8038860d1dcfd78aa5cb76999}} 
+\index{IllaControllerV3@{IllaControllerV3}!RobotReachRadius@{RobotReachRadius}}
+\index{RobotReachRadius@{RobotReachRadius}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{RobotReachRadius}{RobotReachRadius}}
+{\footnotesize\ttfamily float Illa\+Controller\+V3.\+Robot\+Reach\+Radius\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a9085e018c2bff1220606c68e32135601}\label{class_illa_controller_v3_a9085e018c2bff1220606c68e32135601}} 
+\index{IllaControllerV3@{IllaControllerV3}!shoulder\_JointTargetAngle@{shoulder\_JointTargetAngle}}
+\index{shoulder\_JointTargetAngle@{shoulder\_JointTargetAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{shoulder\_JointTargetAngle}{shoulder\_JointTargetAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+shoulder\+\_\+\+Joint\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
 \mbox{\Hypertarget{class_illa_controller_v3_ae7ea6d7c70884af1560c57418736f0b4}\label{class_illa_controller_v3_ae7ea6d7c70884af1560c57418736f0b4}} 
 \index{IllaControllerV3@{IllaControllerV3}!ShoulderJoint@{ShoulderJoint}}
 \index{ShoulderJoint@{ShoulderJoint}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{ShoulderJoint}{ShoulderJoint}}
 {\footnotesize\ttfamily Game\+Object Illa\+Controller\+V3.\+Shoulder\+Joint\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a2b5b78a258e2e1776cc1fb71c371e761}\label{class_illa_controller_v3_a2b5b78a258e2e1776cc1fb71c371e761}} 
-\index{IllaControllerV3@{IllaControllerV3}!ShoulderJointCurrentAngle@{ShoulderJointCurrentAngle}}
-\index{ShoulderJointCurrentAngle@{ShoulderJointCurrentAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{ShoulderJointCurrentAngle}{ShoulderJointCurrentAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Shoulder\+Joint\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+\mbox{\Hypertarget{class_illa_controller_v3_af1c39287c62e3eecffdfc74e25a07e3b}\label{class_illa_controller_v3_af1c39287c62e3eecffdfc74e25a07e3b}} 
+\index{IllaControllerV3@{IllaControllerV3}!shoulderJoint\_CurrentAngle@{shoulderJoint\_CurrentAngle}}
+\index{shoulderJoint\_CurrentAngle@{shoulderJoint\_CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{shoulderJoint\_CurrentAngle}{shoulderJoint\_CurrentAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+shoulder\+Joint\+\_\+\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_aab70241d1ab93b69227ed248d4fd431b}\label{class_illa_controller_v3_aab70241d1ab93b69227ed248d4fd431b}} 
+\mbox{\Hypertarget{class_illa_controller_v3_a9facfb0d38546525744ab5380db80398}\label{class_illa_controller_v3_a9facfb0d38546525744ab5380db80398}} 
+\index{IllaControllerV3@{IllaControllerV3}!shoulderJoint\_RotationLimit@{shoulderJoint\_RotationLimit}}
+\index{shoulderJoint\_RotationLimit@{shoulderJoint\_RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{shoulderJoint\_RotationLimit}{shoulderJoint\_RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+shoulder\+Joint\+\_\+\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a3aa7dea24b758cc9a24384c2c4666176}\label{class_illa_controller_v3_a3aa7dea24b758cc9a24384c2c4666176}} 
 \index{IllaControllerV3@{IllaControllerV3}!ShoulderJointScript@{ShoulderJointScript}}
 \index{ShoulderJointScript@{ShoulderJointScript}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{ShoulderJointScript}{ShoulderJointScript}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_joint_class}{Joint\+Class}} Illa\+Controller\+V3.\+Shoulder\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_illa_controller_v3_a665df27200eb434d933e43661311885a}\label{class_illa_controller_v3_a665df27200eb434d933e43661311885a}} 
-\index{IllaControllerV3@{IllaControllerV3}!ShoulderJointTargetAngle@{ShoulderJointTargetAngle}}
-\index{ShoulderJointTargetAngle@{ShoulderJointTargetAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{ShoulderJointTargetAngle}{ShoulderJointTargetAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Shoulder\+Joint\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Illa\+Controller\+V3.\+Shoulder\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_controller_v3_a59e08c33636a955af132b847188edf83}\label{class_illa_controller_v3_a59e08c33636a955af132b847188edf83}} 
 \index{IllaControllerV3@{IllaControllerV3}!WithinGripperReach@{WithinGripperReach}}
@@ -1454,23 +1536,29 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{WristJoint}{WristJoint}}
 {\footnotesize\ttfamily Game\+Object Illa\+Controller\+V3.\+Wrist\+Joint\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_ab37d422f3ccaf82c819a2d93d26e1e94}\label{class_illa_controller_v3_ab37d422f3ccaf82c819a2d93d26e1e94}} 
-\index{IllaControllerV3@{IllaControllerV3}!WristJointCurrentAngle@{WristJointCurrentAngle}}
-\index{WristJointCurrentAngle@{WristJointCurrentAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{WristJointCurrentAngle}{WristJointCurrentAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Wrist\+Joint\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+\mbox{\Hypertarget{class_illa_controller_v3_aba971f0571e157d337ff0bd02b2c3024}\label{class_illa_controller_v3_aba971f0571e157d337ff0bd02b2c3024}} 
+\index{IllaControllerV3@{IllaControllerV3}!wristJoint\_CurrentAngle@{wristJoint\_CurrentAngle}}
+\index{wristJoint\_CurrentAngle@{wristJoint\_CurrentAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{wristJoint\_CurrentAngle}{wristJoint\_CurrentAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+wrist\+Joint\+\_\+\+Current\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
-\mbox{\Hypertarget{class_illa_controller_v3_a6f7f78d7dc17050ab011b3c233fffe7d}\label{class_illa_controller_v3_a6f7f78d7dc17050ab011b3c233fffe7d}} 
+\mbox{\Hypertarget{class_illa_controller_v3_a8ec2134b06cede57eef4824544ce2878}\label{class_illa_controller_v3_a8ec2134b06cede57eef4824544ce2878}} 
+\index{IllaControllerV3@{IllaControllerV3}!wristJoint\_RotationLimit@{wristJoint\_RotationLimit}}
+\index{wristJoint\_RotationLimit@{wristJoint\_RotationLimit}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{wristJoint\_RotationLimit}{wristJoint\_RotationLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rotation_limit}{Rotation\+Limit}} Illa\+Controller\+V3.\+wrist\+Joint\+\_\+\+Rotation\+Limit\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a93d84d9a7b6efa7145e692b669a84f97}\label{class_illa_controller_v3_a93d84d9a7b6efa7145e692b669a84f97}} 
+\index{IllaControllerV3@{IllaControllerV3}!wristJoint\_TargetAngle@{wristJoint\_TargetAngle}}
+\index{wristJoint\_TargetAngle@{wristJoint\_TargetAngle}!IllaControllerV3@{IllaControllerV3}}
+\doxysubsubsection{\texorpdfstring{wristJoint\_TargetAngle}{wristJoint\_TargetAngle}}
+{\footnotesize\ttfamily double Illa\+Controller\+V3.\+wrist\+Joint\+\_\+\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{class_illa_controller_v3_a281a57db91b0561466baf1bfe65ce312}\label{class_illa_controller_v3_a281a57db91b0561466baf1bfe65ce312}} 
 \index{IllaControllerV3@{IllaControllerV3}!WristJointScript@{WristJointScript}}
 \index{WristJointScript@{WristJointScript}!IllaControllerV3@{IllaControllerV3}}
 \doxysubsubsection{\texorpdfstring{WristJointScript}{WristJointScript}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_joint_class}{Joint\+Class}} Illa\+Controller\+V3.\+Wrist\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_illa_controller_v3_a2a9d61d4ff33b515746cd0988b3241c5}\label{class_illa_controller_v3_a2a9d61d4ff33b515746cd0988b3241c5}} 
-\index{IllaControllerV3@{IllaControllerV3}!WristJointTargetAngle@{WristJointTargetAngle}}
-\index{WristJointTargetAngle@{WristJointTargetAngle}!IllaControllerV3@{IllaControllerV3}}
-\doxysubsubsection{\texorpdfstring{WristJointTargetAngle}{WristJointTargetAngle}}
-{\footnotesize\ttfamily double Illa\+Controller\+V3.\+Wrist\+Joint\+Target\+Angle\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Illa\+Controller\+V3.\+Wrist\+Joint\+Script\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

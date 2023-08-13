@@ -18,5 +18,6 @@ var dir_8bc20651c52d64f68a2ad1811463e540 =
     [ "RobotCoordinator.cs", "_robot_coordinator_8cs.html", "_robot_coordinator_8cs" ],
     [ "SelectionScript.cs", "_selection_script_8cs.html", "_selection_script_8cs" ],
     [ "Spawner.cs", "_spawner_8cs.html", "_spawner_8cs" ],
+    [ "TestScript.cs", "_test_script_8cs.html", "_test_script_8cs" ],
     [ "TimeManager.cs", "_time_manager_8cs.html", "_time_manager_8cs" ]
 ];

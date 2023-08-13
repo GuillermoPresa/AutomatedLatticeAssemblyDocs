@@ -1,0 +1,26 @@
+var class_i_l_l_a_configuration =
+[
+    [ "fillInDefaultValues", "class_i_l_l_a_configuration.html#ac902274e94585c4318cf264c9ce9ae94", null ],
+    [ "SaveConfiguration", "class_i_l_l_a_configuration.html#a1d63e07dc519372d87f798a08acef047", null ],
+    [ "BatteryCapacity_mah", "class_i_l_l_a_configuration.html#afb3fef7968fa93b5e2089b9d5fdb6890", null ],
+    [ "BaudRate", "class_i_l_l_a_configuration.html#a9500d459019ba33cb437b683d539e226", null ],
+    [ "config_ID", "class_i_l_l_a_configuration.html#a1872edc80a0e192ed1b1cf376c480b57", null ],
+    [ "config_name", "class_i_l_l_a_configuration.html#aef10692561cd58d41e3bfc5603ff0f7d", null ],
+    [ "dhmatInverted", "class_i_l_l_a_configuration.html#ab7aa5150aaae9e294e94608f888f3633", null ],
+    [ "dhmatNonInverted", "class_i_l_l_a_configuration.html#a71e8327ec6d95377bbe58c3cb1f1a83a", null ],
+    [ "DifferentialJoint1Config", "class_i_l_l_a_configuration.html#a2d8172b3bd74822b8b0886c4464b7f1b", null ],
+    [ "DifferentialJoint2Config", "class_i_l_l_a_configuration.html#ae2d3b2ee4f5947649cc81649c5651c04", null ],
+    [ "Joint1Config", "class_i_l_l_a_configuration.html#a195e41e7f078b608f22c91b625139b7f", null ],
+    [ "Joint2Config", "class_i_l_l_a_configuration.html#ad1a56820a1fdd68bf54653763c4bdda2", null ],
+    [ "Joint3Config", "class_i_l_l_a_configuration.html#aa331131ff1e258f7f24eca09eebcb54d", null ],
+    [ "Joint4Config", "class_i_l_l_a_configuration.html#a98f3fec47b0e950c7a478e26a253e8f3", null ],
+    [ "Joint5Config", "class_i_l_l_a_configuration.html#ac041a142dc71be295b7389d2f9e87ac5", null ],
+    [ "MaxThreadLockingTime", "class_i_l_l_a_configuration.html#a7457a9d0ebc44dbf30120c3bd598fb56", null ],
+    [ "PortName", "class_i_l_l_a_configuration.html#a361e77f0fe516bacd326509716e66cc6", null ],
+    [ "robotReachRadius", "class_i_l_l_a_configuration.html#afdd412fceaaedca866b6df30011cd74d", null ],
+    [ "servo1Config", "class_i_l_l_a_configuration.html#ac589fa3815e9185b6a1994341f54029a", null ],
+    [ "servo2Config", "class_i_l_l_a_configuration.html#a70b7923ad7dec00641afa0e6c94e144d", null ],
+    [ "servo3Config", "class_i_l_l_a_configuration.html#adbb86c6909d1c4e6f2421d532a8b5b54", null ],
+    [ "servo4Config", "class_i_l_l_a_configuration.html#ab73fb22716506b2b6cec8e02d72e51d6", null ],
+    [ "servo5Config", "class_i_l_l_a_configuration.html#aa4f86a75e5aaf07b86976e09fa86da90", null ]
+];

@@ -1,6 +1,15 @@
 var annotated_dup =
 [
     [ "Assets", "namespace_assets.html", [
+      [ "Resources", "namespace_assets_1_1_resources.html", [
+        [ "Objects", "namespace_assets_1_1_resources_1_1_objects.html", [
+          [ "ILLAV3", "namespace_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3.html", [
+            [ "DifferentialJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint" ],
+            [ "SingleJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint" ],
+            [ "srvJoint", "interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint.html", "interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint" ]
+          ] ]
+        ] ]
+      ] ],
       [ "Robot", "namespace_assets_1_1_robot.html", [
         [ "Dynamixel_control", "namespace_assets_1_1_robot_1_1_dynamixel__control.html", [
           [ "DifferentialJointAngleWrapper", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper.html", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper" ],
@@ -85,6 +94,7 @@ var annotated_dup =
     [ "DefaultEnvironment", "class_default_environment.html", "class_default_environment" ],
     [ "DenavitHartenberg", "class_denavit_hartenberg.html", "class_denavit_hartenberg" ],
     [ "DenavitHartenbergIlla3", "class_denavit_hartenberg_illa3.html", "class_denavit_hartenberg_illa3" ],
+    [ "DifferentialJointConfiguration", "class_differential_joint_configuration.html", "class_differential_joint_configuration" ],
     [ "DynamicDebugText", "class_dynamic_debug_text.html", "class_dynamic_debug_text" ],
     [ "EdgeDrawingScript", "class_edge_drawing_script.html", null ],
     [ "EnvironmentManager", "class_environment_manager.html", "class_environment_manager" ],
@@ -96,9 +106,11 @@ var annotated_dup =
     [ "Graph", "class_graph.html", "class_graph" ],
     [ "GraphNode", "class_graph_node.html", "class_graph_node" ],
     [ "HorizontalBlock", "class_horizontal_block.html", "class_horizontal_block" ],
+    [ "ILLAConfiguration", "class_i_l_l_a_configuration.html", "class_i_l_l_a_configuration" ],
     [ "IllaControllerV3", "class_illa_controller_v3.html", "class_illa_controller_v3" ],
     [ "IllaGraph", "class_illa_graph.html", "class_illa_graph" ],
     [ "IllaGraphNode", "class_illa_graph_node.html", "class_illa_graph_node" ],
+    [ "ILLAJointClassV3", "class_i_l_l_a_joint_class_v3.html", "class_i_l_l_a_joint_class_v3" ],
     [ "IllaNavigationPath", "class_illa_navigation_path.html", "class_illa_navigation_path" ],
     [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", "class_illa_node_sensor_script" ],
     [ "ILLAServo", "class_i_l_l_a_servo.html", "class_i_l_l_a_servo" ],
@@ -107,7 +119,7 @@ var annotated_dup =
     [ "InsertTask", "class_insert_task.html", "class_insert_task" ],
     [ "IPrototype", "interface_i_prototype.html", "interface_i_prototype" ],
     [ "JointClass", "class_joint_class.html", "class_joint_class" ],
-    [ "JointClassV3", "class_joint_class_v3.html", "class_joint_class_v3" ],
+    [ "JointConfiguration", "class_joint_configuration.html", "class_joint_configuration" ],
     [ "LatticeClass", "class_lattice_class.html", "class_lattice_class" ],
     [ "LatticeCollection", "class_lattice_collection.html", "class_lattice_collection" ],
     [ "LayerSlider", "class_layer_slider.html", "class_layer_slider" ],
@@ -143,6 +155,7 @@ var annotated_dup =
     [ "RobotScript", "class_robot_script.html", "class_robot_script" ],
     [ "RobotWaitState", "class_robot_wait_state.html", "class_robot_wait_state" ],
     [ "RobotWalkState", "class_robot_walk_state.html", "class_robot_walk_state" ],
+    [ "RotationLimit", "class_rotation_limit.html", "class_rotation_limit" ],
     [ "SampleCustomDelimiter", "class_sample_custom_delimiter.html", "class_sample_custom_delimiter" ],
     [ "SampleMessageListener", "class_sample_message_listener.html", null ],
     [ "SampleTearDown", "class_sample_tear_down.html", "class_sample_tear_down" ],
@@ -157,14 +170,17 @@ var annotated_dup =
     [ "SerialThread", "class_serial_thread.html", "class_serial_thread" ],
     [ "SerialThreadBinaryDelimited", "class_serial_thread_binary_delimited.html", "class_serial_thread_binary_delimited" ],
     [ "SerialThreadLines", "class_serial_thread_lines.html", "class_serial_thread_lines" ],
+    [ "ServoConfiguration", "class_servo_configuration.html", "class_servo_configuration" ],
     [ "SimplerCameraController", "class_simpler_camera_controller.html", "class_simpler_camera_controller" ],
     [ "Spawner", "class_spawner.html", "class_spawner" ],
     [ "SpawnerOverlay", "class_spawner_overlay.html", "class_spawner_overlay" ],
     [ "Spawning", "class_spawning.html", null ],
     [ "SphericalNodeSensor", "class_spherical_node_sensor.html", "class_spherical_node_sensor" ],
+    [ "srvPointer", "classsrv_pointer.html", "classsrv_pointer" ],
     [ "TabsBlock", "class_tabs_block.html", "class_tabs_block" ],
     [ "Task", "class_task.html", "class_task" ],
     [ "TestRotationMatrices", "class_test_rotation_matrices.html", null ],
+    [ "TestScript", "class_test_script.html", "class_test_script" ],
     [ "TextGizmos", "class_text_gizmos.html", "class_text_gizmos" ],
     [ "TextGizmoStyle", "class_text_gizmo_style.html", "class_text_gizmo_style" ],
     [ "TimeManager", "class_time_manager.html", "class_time_manager" ],
