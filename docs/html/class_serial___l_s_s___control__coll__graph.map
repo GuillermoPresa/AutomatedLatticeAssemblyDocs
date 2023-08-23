@@ -1,4 +1,5 @@
 <map id="Serial_LSS_Control" name="Serial_LSS_Control">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,140,107"/>
-<area shape="rect" id="node2" title=" " alt="" coords="17,5,128,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="87,95,221,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html" title=" " alt="" coords="141,5,357,32"/>
 </map>

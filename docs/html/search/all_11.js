@@ -6,10 +6,11 @@ var searchData=
   ['quaternionextensions_2ecs_3',['QuaternionExtensions.cs',['../_quaternion_extensions_8cs.html',1,'']]],
   ['quatjajb_4',['QuatJaJb',['../class_denavit_hartenberg_illa3.html#a6a55538c82c136742b17f5ebfa951a41',1,'DenavitHartenbergIlla3']]],
   ['quatjaorigin_5',['QuatJaOrigin',['../class_denavit_hartenberg_illa3.html#afd774dbdf96d49e62c738d4ec53e8f9a',1,'DenavitHartenbergIlla3']]],
-  ['querrycurrentangle_6',['QuerryCurrentAngle',['../class_l_s_s___motor.html#aad40059d23b3186a005f14d1835e3195',1,'LSS_Motor']]],
-  ['querrycurrenttargetanlge_7',['QuerryCurrentTargetAnlge',['../class_l_s_s___motor.html#ae2eaf5c047407f99dba2c831536ae2d1',1,'LSS_Motor']]],
+  ['querryallservopositions_6',['QuerryAllServoPositions',['../class_serial___l_s_s___control.html#afc2c4ea02c3ce313f143c066ed1f4a46',1,'Serial_LSS_Control']]],
+  ['querryposition_7',['QuerryPosition',['../class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8',1,'ILLAServo']]],
   ['querrystatus_8',['QuerryStatus',['../class_l_s_s___motor.html#a90824651c4ec21ee0fa8cebbd1260326',1,'LSS_Motor']]],
-  ['query_9',['Query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#aeb3bc2ba7c9b484113010188d9e78f22',1,'Lynxmotion.Robotics.LssCommand.Query()'],['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b',1,'Lynxmotion.Robotics.LssServo.Query()'],['../class_virtual_servo.html#aad72b0d6d1e25cafb4d164b0b35b6f49',1,'VirtualServo.Query()'],['../class_i_l_l_a_servo.html#aacdc7dead447b50daec139485520b48c',1,'ILLAServo.Query()']]],
-  ['query_10',['query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#a4f0761c2cc260be930643c06f3fec675',1,'Lynxmotion::Robotics::LssCommand']]],
-  ['query_11',['Query',['../namespace_lynxmotion_1_1_robotics.html#aeda4ea0038e268eaf512ad2be7d413cba66c1b4c7f3dc385b68a9fa903ccd016d',1,'Lynxmotion::Robotics']]]
+  ['querryvoltage_9',['QuerryVoltage',['../class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4',1,'ILLAServo']]],
+  ['query_10',['Query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#aeb3bc2ba7c9b484113010188d9e78f22',1,'Lynxmotion.Robotics.LssCommand.Query()'],['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b',1,'Lynxmotion.Robotics.LssServo.Query()'],['../class_virtual_servo.html#aad72b0d6d1e25cafb4d164b0b35b6f49',1,'VirtualServo.Query()']]],
+  ['query_11',['query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#a4f0761c2cc260be930643c06f3fec675',1,'Lynxmotion::Robotics::LssCommand']]],
+  ['query_12',['Query',['../namespace_lynxmotion_1_1_robotics.html#aeda4ea0038e268eaf512ad2be7d413cba66c1b4c7f3dc385b68a9fa903ccd016d',1,'Lynxmotion::Robotics']]]
 ];

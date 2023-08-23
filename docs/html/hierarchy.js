@@ -63,6 +63,13 @@ var hierarchy =
     [ "IllaGraph", "class_illa_graph.html", null ],
     [ "IllaNavigationPath", "class_illa_navigation_path.html", null ],
     [ "ILLAServo", "class_i_l_l_a_servo.html", null ],
+    [ "ILLAState_Abstract", "class_i_l_l_a_state___abstract.html", [
+      [ "ILLAState_Configured", "class_i_l_l_a_state___configured.html", null ],
+      [ "ILLAState_Connected", "class_i_l_l_a_state___connected.html", null ],
+      [ "ILLAState_EStop", "class_i_l_l_a_state___e_stop.html", null ],
+      [ "ILLAState_Spawned", "class_i_l_l_a_state___spawned.html", null ]
+    ] ],
+    [ "ILLAV3_UIelements", "class_i_l_l_a_v3___u_ielements.html", null ],
     [ "IPrototype< T >", "interface_i_prototype.html", null ],
     [ "IPrototype< Movement >", "interface_i_prototype.html", [
       [ "Movement", "class_movement.html", null ]
@@ -184,6 +191,7 @@ var hierarchy =
     [ "MovementAndSensorDefinition.SensorNode", "class_movement_and_sensor_definition_1_1_sensor_node.html", null ],
     [ "SerializationElements.SerializationResolution", "class_serialization_elements_1_1_serialization_resolution.html", null ],
     [ "ServoConfiguration", "class_servo_configuration.html", null ],
+    [ "SingleJointConfiguration", "class_single_joint_configuration.html", null ],
     [ "Assets.Resources.Objects.ILLAV3.srvJoint", "interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint.html", [
       [ "Assets.Resources.Objects.ILLAV3.DifferentialJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html", null ],
       [ "Assets.Resources.Objects.ILLAV3.SingleJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html", null ]

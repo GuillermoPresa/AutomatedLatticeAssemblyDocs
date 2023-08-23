@@ -1,6 +1,6 @@
 <map id="VirtualServo.Action" name="VirtualServo.Action">
-<area shape="rect" id="node1" title=" " alt="" coords="491,35,623,61"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#a48a39b710fdc291083dd7729e136fc04" title=" " alt="" coords="287,5,408,32"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c" title=" " alt="" coords="252,57,443,98"/>
-<area shape="rect" id="node4" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="5,64,204,91"/>
+<area shape="rect" id="node1" title=" " alt="" coords="732,13,864,39"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c" title=" " alt="" coords="493,5,684,47"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="247,13,445,39"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,5,199,47"/>
 </map>

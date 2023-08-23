@@ -1,4 +1,7 @@
 <map id="IllaControllerV3.SaveConfiguration" name="IllaControllerV3.SaveConfiguration">
-<area shape="rect" id="node1" title=" " alt="" coords="205,5,421,32"/>
-<area shape="rect" id="node2" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="477,56,693,83"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_v3___u_ielements.html#a7605b372c16709187562ac90ae9044ba" title=" " alt="" coords="247,49,429,90"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,5,198,32"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,56,199,83"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,107,185,133"/>
 </map>

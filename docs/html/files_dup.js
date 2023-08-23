@@ -1,4 +1,4 @@
 var files_dup =
 [
-    [ "LatticeAssembly", "dir_da11fa6216d4434ea49182e69beca8f7.html", "dir_da11fa6216d4434ea49182e69beca8f7" ]
+    [ "LatticeAssembly (2)", "dir_c46cc3acc90bc5a7fd4d9745671838ec.html", "dir_c46cc3acc90bc5a7fd4d9745671838ec" ]
 ];

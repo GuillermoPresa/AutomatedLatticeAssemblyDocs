@@ -9,5 +9,6 @@ var class_lynxmotion_1_1_robotics_1_1_lss_servo =
     [ "Settings", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html#a298107479af7ba14dd9ba372094f92aa", null ],
     [ "Telemetry", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html#a5bdbe5638efae2a7152b812a27bb10f1", null ],
     [ "currentAngle", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ab6f1d9293733dc81d0d5b96cfbe34337", null ],
-    [ "lssChannel", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aace485af9a68b731779de4b25baa0f6c", null ]
+    [ "lssChannel", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aace485af9a68b731779de4b25baa0f6c", null ],
+    [ "voltage", "class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad976ab26d74b9aa2f95fdec3f6517bf5", null ]
 ];

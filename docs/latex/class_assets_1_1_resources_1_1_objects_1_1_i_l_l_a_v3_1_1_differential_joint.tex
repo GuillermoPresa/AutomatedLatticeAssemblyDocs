@@ -11,96 +11,94 @@ Inheritance diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Jo
 \end{figure}
 
 
-Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint\+:\nopagebreak
+Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=217pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint__coll__graph}
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ac85cef28b67a6fde56ef89b9ca5b10f9}{Differential\+Joint}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Illa\+Robot\+Controller\+Reference\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in, float gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Common\+Mode\+\_\+in=1, float gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Common\+Mode\+\_\+in=1, float gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Differential\+Mode\+\_\+in=1, float gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Differential\+Mode\+\_\+in=1)
-\item 
-void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a74cb41f6dd7a8d4e4de079a845ea4f0a}{Assign\+Servos}} (\mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}} servo\+Motor1\+\_\+in, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}} servo\+Motor2\+\_\+in)
+\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a16c66a47b944bdb7814689e62b6c1af0}{Differential\+Joint}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Illa\+Robot\+Controller\+Reference\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in)
 \item 
 void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94}{update\+Servo\+Goal\+Angle\+From\+Target\+Angle}} ()
 \item 
 void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77}{update\+Joint\+Angle\+From\+Servo\+Current\+Angle}} ()
 \item 
-long long M2\+Angle \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a900cfad1dd3a8142d49b192a04d0b2d8}{Motor\+Angles\+From\+Joint\+Angles}} (float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a68f802b68d8aa922689689ba9e14339b}{differential\+\_\+\+Joint\+Angle}}, float common\+\_\+\+Joint\+Angle)
+float float clamped\+\_\+differential\+Mode\+\_\+\+Joint\+Angle \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed}{Clamp\+Joint\+Angles}} (float unclamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle, float unclamped\+\_\+differentialmode\+\_\+\+Joint\+Angle)
 \item 
-float float common\+\_\+\+Joint\+Angle \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a762434f510b380ef37e3e80159176dd4}{Joint\+Angles\+From\+Motor\+Angles}} (double \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e334e653cd1c9b4880db988dd2e6603}{M1\+Angle}}, double M2\+Angle)
+float float M2\+Angle \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1e7f51d0a9a3732a742980a008d82513}{Motor\+Angles\+From\+Joint\+Angles}} (float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7eef0673fc3e5b0ee297e5adde92243b}{common\+\_\+\+Joint\+Angle}}, float differential\+\_\+\+Joint\+Angle)
+\item 
+float float differential\+\_\+\+Joint\+Angle \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e9139bcac07064e3daee6547ad680d9}{Joint\+Angles\+From\+Motor\+Angles}} (double \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa441a29bdceac5e93f8cbf77206c9b8f}{M1\+Angle}}, double M2\+Angle)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa73dc6426b9b356bf4ff99299044d83e}{gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Common\+Mode}}
+int \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a9acf087dac71b5bde4df2f524125b80b}{differential\+Joint\+\_\+index}}
 \item 
-float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a37ad0555d62b247d057759b734d9f27a}{gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Common\+Mode}}
+\mbox{\hyperlink{class_differential_joint_configuration}{Differential\+Joint\+Configuration}} \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae75de8b685adaf09aa1adb6b1838f5df}{differential\+Joint\+Config}}
 \item 
-float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a80a96c25edb05275cfafad76d96d53ad}{gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Differential\+Mode}}
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a2ac92da17d709d01ab1d14551be94bf2}{clamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle}}
 \item 
-float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a137bb65fca853e250536d2d594ca4259}{gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Differential\+Mode}}
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa441a29bdceac5e93f8cbf77206c9b8f}{M1\+Angle}}
 \item 
-long \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e334e653cd1c9b4880db988dd2e6603}{M1\+Angle}}
-\item 
-float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a68f802b68d8aa922689689ba9e14339b}{differential\+\_\+\+Joint\+Angle}}
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7eef0673fc3e5b0ee297e5adde92243b}{common\+\_\+\+Joint\+Angle}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ac85cef28b67a6fde56ef89b9ca5b10f9}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ac85cef28b67a6fde56ef89b9ca5b10f9}} 
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a16c66a47b944bdb7814689e62b6c1af0}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a16c66a47b944bdb7814689e62b6c1af0}} 
 \index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!DifferentialJoint@{DifferentialJoint}}
 \index{DifferentialJoint@{DifferentialJoint}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{DifferentialJoint()}{DifferentialJoint()}}
-{\footnotesize\ttfamily Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Differential\+Joint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{Illa\+Robot\+Controller\+Reference\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in,  }\item[{float}]{gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Common\+Mode\+\_\+in = {\ttfamily 1},  }\item[{float}]{gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Common\+Mode\+\_\+in = {\ttfamily 1},  }\item[{float}]{gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Differential\+Mode\+\_\+in = {\ttfamily 1},  }\item[{float}]{gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Differential\+Mode\+\_\+in = {\ttfamily 1} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Differential\+Joint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{Illa\+Robot\+Controller\+Reference\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a74cb41f6dd7a8d4e4de079a845ea4f0a}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a74cb41f6dd7a8d4e4de079a845ea4f0a}} 
-\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!AssignServos@{AssignServos}}
-\index{AssignServos@{AssignServos}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
-\doxysubsubsection{\texorpdfstring{AssignServos()}{AssignServos()}}
-{\footnotesize\ttfamily void Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Assign\+Servos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}}}]{servo\+Motor1\+\_\+in,  }\item[{\mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}}}]{servo\+Motor2\+\_\+in }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!ClampJointAngles@{ClampJointAngles}}
+\index{ClampJointAngles@{ClampJointAngles}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{ClampJointAngles()}{ClampJointAngles()}}
+{\footnotesize\ttfamily float float clamped\+\_\+differential\+Mode\+\_\+\+Joint\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Clamp\+Joint\+Angles (\begin{DoxyParamCaption}\item[{float}]{unclamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle,  }\item[{float}]{unclamped\+\_\+differentialmode\+\_\+\+Joint\+Angle }\end{DoxyParamCaption})}
 
-
-
-Implements \mbox{\hyperlink{interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint_a9d6fe02e0d115b165b976b1b6dbc9555}{Assets.\+Resources.\+Objects.\+ILLAV3.\+srv\+Joint}}.
-
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a74cb41f6dd7a8d4e4de079a845ea4f0a_icgraph}
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a762434f510b380ef37e3e80159176dd4}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a762434f510b380ef37e3e80159176dd4}} 
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e9139bcac07064e3daee6547ad680d9}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e9139bcac07064e3daee6547ad680d9}} 
 \index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!JointAnglesFromMotorAngles@{JointAnglesFromMotorAngles}}
 \index{JointAnglesFromMotorAngles@{JointAnglesFromMotorAngles}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{JointAnglesFromMotorAngles()}{JointAnglesFromMotorAngles()}}
-{\footnotesize\ttfamily float float common\+\_\+\+Joint\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Joint\+Angles\+From\+Motor\+Angles (\begin{DoxyParamCaption}\item[{double}]{M1\+Angle,  }\item[{double}]{M2\+Angle }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float float differential\+\_\+\+Joint\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Joint\+Angles\+From\+Motor\+Angles (\begin{DoxyParamCaption}\item[{double}]{M1\+Angle,  }\item[{double}]{M2\+Angle }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a762434f510b380ef37e3e80159176dd4_icgraph}
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e9139bcac07064e3daee6547ad680d9_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a900cfad1dd3a8142d49b192a04d0b2d8}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a900cfad1dd3a8142d49b192a04d0b2d8}} 
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1e7f51d0a9a3732a742980a008d82513}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1e7f51d0a9a3732a742980a008d82513}} 
 \index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!MotorAnglesFromJointAngles@{MotorAnglesFromJointAngles}}
 \index{MotorAnglesFromJointAngles@{MotorAnglesFromJointAngles}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{MotorAnglesFromJointAngles()}{MotorAnglesFromJointAngles()}}
-{\footnotesize\ttfamily long long M2\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Motor\+Angles\+From\+Joint\+Angles (\begin{DoxyParamCaption}\item[{float}]{differential\+\_\+\+Joint\+Angle,  }\item[{float}]{common\+\_\+\+Joint\+Angle }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily float float M2\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Motor\+Angles\+From\+Joint\+Angles (\begin{DoxyParamCaption}\item[{float}]{common\+\_\+\+Joint\+Angle,  }\item[{float}]{differential\+\_\+\+Joint\+Angle }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a900cfad1dd3a8142d49b192a04d0b2d8_icgraph}
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1e7f51d0a9a3732a742980a008d82513_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77}} 
@@ -113,11 +111,20 @@ Here is the caller graph for this function\+:\nopagebreak
 
 Implements \mbox{\hyperlink{interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint_a25bcd3b01095e8752cb3a3927a2889ca}{Assets.\+Resources.\+Objects.\+ILLAV3.\+srv\+Joint}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94}} 
@@ -130,54 +137,56 @@ Here is the call graph for this function\+:\nopagebreak
 
 Implements \mbox{\hyperlink{interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint_aa8976fcecbc3b234435e5c4bd5149fae}{Assets.\+Resources.\+Objects.\+ILLAV3.\+srv\+Joint}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94_cgraph}
 \end{center}
 \end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a68f802b68d8aa922689689ba9e14339b}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a68f802b68d8aa922689689ba9e14339b}} 
-\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!differential\_JointAngle@{differential\_JointAngle}}
-\index{differential\_JointAngle@{differential\_JointAngle}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
-\doxysubsubsection{\texorpdfstring{differential\_JointAngle}{differential\_JointAngle}}
-{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+differential\+\_\+\+Joint\+Angle}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a2ac92da17d709d01ab1d14551be94bf2}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a2ac92da17d709d01ab1d14551be94bf2}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!clamped\_commonMode\_JointAngle@{clamped\_commonMode\_JointAngle}}
+\index{clamped\_commonMode\_JointAngle@{clamped\_commonMode\_JointAngle}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{clamped\_commonMode\_JointAngle}{clamped\_commonMode\_JointAngle}}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+clamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle}
 
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa73dc6426b9b356bf4ff99299044d83e}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa73dc6426b9b356bf4ff99299044d83e}} 
-\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!gearingRatio\_Motor1\_CommonMode@{gearingRatio\_Motor1\_CommonMode}}
-\index{gearingRatio\_Motor1\_CommonMode@{gearingRatio\_Motor1\_CommonMode}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
-\doxysubsubsection{\texorpdfstring{gearingRatio\_Motor1\_CommonMode}{gearingRatio\_Motor1\_CommonMode}}
-{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Common\+Mode}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7eef0673fc3e5b0ee297e5adde92243b}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7eef0673fc3e5b0ee297e5adde92243b}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!common\_JointAngle@{common\_JointAngle}}
+\index{common\_JointAngle@{common\_JointAngle}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{common\_JointAngle}{common\_JointAngle}}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+common\+\_\+\+Joint\+Angle}
 
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a80a96c25edb05275cfafad76d96d53ad}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a80a96c25edb05275cfafad76d96d53ad}} 
-\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!gearingRatio\_Motor1\_DifferentialMode@{gearingRatio\_Motor1\_DifferentialMode}}
-\index{gearingRatio\_Motor1\_DifferentialMode@{gearingRatio\_Motor1\_DifferentialMode}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
-\doxysubsubsection{\texorpdfstring{gearingRatio\_Motor1\_DifferentialMode}{gearingRatio\_Motor1\_DifferentialMode}}
-{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+gearing\+Ratio\+\_\+\+Motor1\+\_\+\+Differential\+Mode}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a9acf087dac71b5bde4df2f524125b80b}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a9acf087dac71b5bde4df2f524125b80b}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!differentialJoint\_index@{differentialJoint\_index}}
+\index{differentialJoint\_index@{differentialJoint\_index}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{differentialJoint\_index}{differentialJoint\_index}}
+{\footnotesize\ttfamily int Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+differential\+Joint\+\_\+index}
 
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a37ad0555d62b247d057759b734d9f27a}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a37ad0555d62b247d057759b734d9f27a}} 
-\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!gearingRatio\_Motor2\_CommonMode@{gearingRatio\_Motor2\_CommonMode}}
-\index{gearingRatio\_Motor2\_CommonMode@{gearingRatio\_Motor2\_CommonMode}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
-\doxysubsubsection{\texorpdfstring{gearingRatio\_Motor2\_CommonMode}{gearingRatio\_Motor2\_CommonMode}}
-{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Common\+Mode}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae75de8b685adaf09aa1adb6b1838f5df}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae75de8b685adaf09aa1adb6b1838f5df}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!differentialJointConfig@{differentialJointConfig}}
+\index{differentialJointConfig@{differentialJointConfig}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{differentialJointConfig}{differentialJointConfig}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_differential_joint_configuration}{Differential\+Joint\+Configuration}} Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+differential\+Joint\+Config}
 
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a137bb65fca853e250536d2d594ca4259}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a137bb65fca853e250536d2d594ca4259}} 
-\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!gearingRatio\_Motor2\_DifferentialMode@{gearingRatio\_Motor2\_DifferentialMode}}
-\index{gearingRatio\_Motor2\_DifferentialMode@{gearingRatio\_Motor2\_DifferentialMode}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
-\doxysubsubsection{\texorpdfstring{gearingRatio\_Motor2\_DifferentialMode}{gearingRatio\_Motor2\_DifferentialMode}}
-{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+gearing\+Ratio\+\_\+\+Motor2\+\_\+\+Differential\+Mode}
-
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e334e653cd1c9b4880db988dd2e6603}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a4e334e653cd1c9b4880db988dd2e6603}} 
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa441a29bdceac5e93f8cbf77206c9b8f}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa441a29bdceac5e93f8cbf77206c9b8f}} 
 \index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!M1Angle@{M1Angle}}
 \index{M1Angle@{M1Angle}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{M1Angle}{M1Angle}}
-{\footnotesize\ttfamily long Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+M1\+Angle}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+M1\+Angle}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Resources/\+Objects/\+ILLAV3/\mbox{\hyperlink{_differential_joint_8cs}{Differential\+Joint.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\mbox{\hyperlink{_differential_joint_8cs}{Differential\+Joint.\+cs}}\end{DoxyCompactItemize}

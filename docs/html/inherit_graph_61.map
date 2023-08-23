@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_text_gizmos_1_1_label_struct.html" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,144,133"/>
+<area shape="rect" id="node2" href="$class_colored_block.html" title=" " alt="" coords="235,5,334,32"/>
+<area shape="rect" id="node3" href="$class_horizontal_block.html" title=" " alt="" coords="228,56,341,83"/>
+<area shape="rect" id="node4" href="$class_scrollview_block.html" title=" " alt="" coords="229,107,341,133"/>
+<area shape="rect" id="node5" href="$class_space_navigator_driver_1_1_space_navigator.html" title=" " alt="" coords="192,158,377,199"/>
+<area shape="rect" id="node6" href="$class_vertical_block.html" title=" " alt="" coords="235,224,334,251"/>
 </map>

@@ -12,5 +12,7 @@ var searchData=
   ['colorcycling_2ecs_9',['ColorCycling.cs',['../_color_cycling_8cs.html',1,'']]],
   ['colorpalette_2ecs_10',['ColorPalette.cs',['../_color_palette_8cs.html',1,'']]],
   ['computepenetrationcosttest_2ecs_11',['ComputePenetrationCostTest.cs',['../_compute_penetration_cost_test_8cs.html',1,'']]],
-  ['controlwindow_2ecs_12',['ControlWindow.cs',['../_control_window_8cs.html',1,'']]]
+  ['configured_2ecs_12',['Configured.cs',['../_configured_8cs.html',1,'']]],
+  ['connected_2ecs_13',['Connected.cs',['../_connected_8cs.html',1,'']]],
+  ['controlwindow_2ecs_14',['ControlWindow.cs',['../_control_window_8cs.html',1,'']]]
 ];

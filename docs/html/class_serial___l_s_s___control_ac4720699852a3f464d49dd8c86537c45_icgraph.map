@@ -1,7 +1,10 @@
 <map id="Serial_LSS_Control.FillDistributedWithVirtualServos" name="Serial_LSS_Control.FillDistributedWithVirtualServos">
-<area shape="rect" id="node1" title=" " alt="" coords="425,71,644,112"/>
-<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#a05f57a6b2992220c66d441cf848bdb1d" title=" " alt="" coords="205,5,377,47"/>
-<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="205,71,377,112"/>
-<area shape="rect" id="node5" href="$class_serial___l_s_s___control.html#ac0ee13ad01d6f5c360041a07360b4fdd" title=" " alt="" coords="205,136,377,177"/>
-<area shape="rect" id="node4" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,111,157,138"/>
+<area shape="rect" id="node1" title=" " alt="" coords="688,39,907,80"/>
+<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#a7e080fb4ba0db25d425a8a9897322c22" title=" " alt="" coords="468,5,640,47"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="468,71,640,112"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,37,420,79"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,103,420,144"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,45,198,71"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,102,199,129"/>
+<area shape="rect" id="node8" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,153,185,179"/>
 </map>

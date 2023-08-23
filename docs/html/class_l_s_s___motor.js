@@ -1,8 +1,6 @@
 var class_l_s_s___motor =
 [
     [ "LSS_Motor", "class_l_s_s___motor.html#a004f7ebe0ca325adc3367d3c28944905", null ],
-    [ "QuerryCurrentAngle", "class_l_s_s___motor.html#aad40059d23b3186a005f14d1835e3195", null ],
-    [ "QuerryCurrentTargetAnlge", "class_l_s_s___motor.html#ae2eaf5c047407f99dba2c831536ae2d1", null ],
     [ "QuerryStatus", "class_l_s_s___motor.html#a90824651c4ec21ee0fa8cebbd1260326", null ],
     [ "SendMessage", "class_l_s_s___motor.html#a2491e976951a4528ac75501fd50466cc", null ],
     [ "_SerialComunication", "class_l_s_s___motor.html#ace9afba9983335a693932678adc22034", null ],

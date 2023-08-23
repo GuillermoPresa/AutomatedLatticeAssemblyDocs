@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_lynxmotion_1_1_robotics_1_1_lss_command.html" title=" " alt="" coords="5,5,233,32"/>
+<area shape="rect" id="node1" href="$class_lynxmotion_1_1_robotics_1_1_channel_op.html" title=" " alt="" coords="5,143,217,170"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_channel_multi_op.html" title=" " alt="" coords="265,5,460,47"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_retrieve_settings.html" title=" " alt="" coords="265,71,460,112"/>
+<area shape="rect" id="node4" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_scan.html" title=" " alt="" coords="265,136,460,177"/>
+<area shape="rect" id="node5" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html" title=" " alt="" coords="265,201,460,243"/>
+<area shape="rect" id="node6" href="$class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_uninitialized_scan.html" title=" " alt="" coords="265,267,460,308"/>
 </map>

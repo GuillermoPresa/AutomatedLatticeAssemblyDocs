@@ -1,0 +1,5 @@
+<map id="Serial_LSS_Control.LEDColorServos" name="Serial_LSS_Control.LEDColorServos">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="248,5,453,47"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="501,13,752,39"/>
+</map>

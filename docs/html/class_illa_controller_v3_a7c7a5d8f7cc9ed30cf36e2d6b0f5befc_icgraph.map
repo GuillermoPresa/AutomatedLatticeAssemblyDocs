@@ -1,4 +1,9 @@
 <map id="IllaControllerV3.LoadConfiguration" name="IllaControllerV3.LoadConfiguration">
-<area shape="rect" id="node1" title=" " alt="" coords="205,5,421,32"/>
-<area shape="rect" id="node2" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="477,57,693,84"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_v3___u_ielements.html#a1e59ce256cd266a9b024e49262f7035e" title=" " alt="" coords="249,7,427,49"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#a7605b372c16709187562ac90ae9044ba" title=" " alt="" coords="247,82,429,123"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___spawned.html#af8ac4254423f62a68351b68abaded735" title=" " alt="" coords="10,5,194,32"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,56,198,83"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,107,199,133"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,157,185,184"/>
 </map>

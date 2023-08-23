@@ -11,17 +11,18 @@ Inheritance diagram for Serial\+\_\+\+LSS\+\_\+\+Control\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Serial\+\_\+\+LSS\+\_\+\+Control\+:\nopagebreak
+Collaboration diagram for Serial\+\_\+\+LSS\+\_\+\+Control\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=181pt]{class_serial___l_s_s___control__coll__graph}
+\includegraphics[width=344pt]{class_serial___l_s_s___control__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_serial___l_s_s___control_a05f57a6b2992220c66d441cf848bdb1d}{Serial\+\_\+\+LSS\+\_\+\+Control}} (Dictionary$<$ short, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}} $>$ Joint\+Servo\+Definition)
+\mbox{\hyperlink{class_serial___l_s_s___control_a7e080fb4ba0db25d425a8a9897322c22}{Serial\+\_\+\+LSS\+\_\+\+Control}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} controller\+\_\+in)
 \item 
 void \mbox{\hyperlink{class_serial___l_s_s___control_adfecae8a1bc47fb56b23fd06e1fab5bf}{Serial\+Connect}} ()
 \item 
@@ -29,18 +30,24 @@ void \mbox{\hyperlink{class_serial___l_s_s___control_ac0ee13ad01d6f5c360041a0736
 \item 
 void \mbox{\hyperlink{class_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd}{Scan\+And\+Distribute\+Servos}} ()
 \item 
+void \mbox{\hyperlink{class_serial___l_s_s___control_a6a9ee362ad8576e3ea351bad4101b230}{LEDColor\+Servos}} (List$<$ \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}} $>$ servo\+List, int color)
+\item 
+void \mbox{\hyperlink{class_serial___l_s_s___control_a623e11c30ca3f97d2278887a7d3adddd}{LEDColor\+All\+Servos}} (int color)
+\item 
 int \mbox{\hyperlink{class_serial___l_s_s___control_a195fd2854045e655d06094a2b62943de}{Distribute\+Servos}} (List$<$ \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}} $>$ servo\+List)
 \item 
 void \mbox{\hyperlink{class_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45}{Fill\+Distributed\+With\+Virtual\+Servos}} ()
+\item 
+void \mbox{\hyperlink{class_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13}{Emergency\+Stop\+All\+Servos}} ()
+\item 
+void \mbox{\hyperlink{class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46}{Querry\+All\+Servo\+Positions}} ()
 \item 
 void \mbox{\hyperlink{class_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2}{Run\+Frame}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_serial___l_s_s___control_a9aadffaf4e0a4cf12bafb55927f7b63a}{possible\+Baudrates\+Array}} = new int\mbox{[}$\,$\mbox{]} \{ 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600 \}
-\item 
-string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_serial___l_s_s___control_a31aba7e41844967c4ab33df2679ba314}{detected\+Port\+Names}} = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}COM1\char`\"{}, \char`\"{}COM2\char`\"{}, \char`\"{}COM3\char`\"{}, \char`\"{}COM4\char`\"{}, \char`\"{}COM5\char`\"{}, \char`\"{}COM6\char`\"{}, \char`\"{}COM7\char`\"{} \}
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_serial___l_s_s___control_a31aba7e41844967c4ab33df2679ba314}{detected\+Port\+Names}} = Serial\+Port.\+Get\+Port\+Names()
 \item 
 int \mbox{\hyperlink{class_serial___l_s_s___control_a23a5a0d945562614251945b844d2eaf8}{baudrate\+Index}} = 4
 \item 
@@ -49,32 +56,29 @@ int \mbox{\hyperlink{class_serial___l_s_s___control_abc759bf96ddc09f6265e9429174
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel}{Lss\+Channel}} \mbox{\hyperlink{class_serial___l_s_s___control_a3ee1f8dfa8f172b6253e348c9c00cbbe}{Channel}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
 string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_serial___l_s_s___control_a3844805590df9b0fca36f4cb1f4c1bf9}{possible\+Baudrates\+String\+Array}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 string \mbox{\hyperlink{class_serial___l_s_s___control_a4f46553fff3491265f2c8d9bb74d8812}{COM\+\_\+\+NAME}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 int \mbox{\hyperlink{class_serial___l_s_s___control_a17d82692fba7d9b060b17255a2ffc3bd}{Baud\+Rate}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
-List$<$ \mbox{\hyperlink{class_i_l_l_a_servo}{ILLAServo}} $>$ \mbox{\hyperlink{class_serial___l_s_s___control_a6861a7749d79be0b41d84450c7053d45}{dist\+Servo\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
-\item 
 bool \mbox{\hyperlink{class_serial___l_s_s___control_a60bdbd6ce656e87f3b4e0f4e368db653}{Is\+Connected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_serial___l_s_s___control_a05f57a6b2992220c66d441cf848bdb1d}\label{class_serial___l_s_s___control_a05f57a6b2992220c66d441cf848bdb1d}} 
+\mbox{\Hypertarget{class_serial___l_s_s___control_a7e080fb4ba0db25d425a8a9897322c22}\label{class_serial___l_s_s___control_a7e080fb4ba0db25d425a8a9897322c22}} 
 \index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
 \index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
 \doxysubsubsection{\texorpdfstring{Serial\_LSS\_Control()}{Serial\_LSS\_Control()}}
-{\footnotesize\ttfamily Serial\+\_\+\+LSS\+\_\+\+Control.\+Serial\+\_\+\+LSS\+\_\+\+Control (\begin{DoxyParamCaption}\item[{Dictionary$<$ short, \mbox{\hyperlink{classsrv_pointer}{srv\+Pointer}} $>$}]{Joint\+Servo\+Definition }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Serial\+\_\+\+LSS\+\_\+\+Control.\+Serial\+\_\+\+LSS\+\_\+\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{controller\+\_\+in }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_serial___l_s_s___control_a05f57a6b2992220c66d441cf848bdb1d_cgraph}
+\includegraphics[width=350pt]{class_serial___l_s_s___control_a7e080fb4ba0db25d425a8a9897322c22_cgraph}
 \end{center}
 \end{figure}
 
@@ -86,11 +90,34 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{DistributeServos()}{DistributeServos()}}
 {\footnotesize\ttfamily int Serial\+\_\+\+LSS\+\_\+\+Control.\+Distribute\+Servos (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}} $>$}]{servo\+List }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_serial___l_s_s___control_a195fd2854045e655d06094a2b62943de_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13}\label{class_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13}} 
+\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!EmergencyStopAllServos@{EmergencyStopAllServos}}
+\index{EmergencyStopAllServos@{EmergencyStopAllServos}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
+\doxysubsubsection{\texorpdfstring{EmergencyStopAllServos()}{EmergencyStopAllServos()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Emergency\+Stop\+All\+Servos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45}\label{class_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45}} 
@@ -99,11 +126,78 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{FillDistributedWithVirtualServos()}{FillDistributedWithVirtualServos()}}
 {\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Fill\+Distributed\+With\+Virtual\+Servos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial___l_s_s___control_a623e11c30ca3f97d2278887a7d3adddd}\label{class_serial___l_s_s___control_a623e11c30ca3f97d2278887a7d3adddd}} 
+\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!LEDColorAllServos@{LEDColorAllServos}}
+\index{LEDColorAllServos@{LEDColorAllServos}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
+\doxysubsubsection{\texorpdfstring{LEDColorAllServos()}{LEDColorAllServos()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+LEDColor\+All\+Servos (\begin{DoxyParamCaption}\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_a623e11c30ca3f97d2278887a7d3adddd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_a623e11c30ca3f97d2278887a7d3adddd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial___l_s_s___control_a6a9ee362ad8576e3ea351bad4101b230}\label{class_serial___l_s_s___control_a6a9ee362ad8576e3ea351bad4101b230}} 
+\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!LEDColorServos@{LEDColorServos}}
+\index{LEDColorServos@{LEDColorServos}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
+\doxysubsubsection{\texorpdfstring{LEDColorServos()}{LEDColorServos()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+LEDColor\+Servos (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_servo}{Lss\+Servo}} $>$}]{servo\+List,  }\item[{int}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_a6a9ee362ad8576e3ea351bad4101b230_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_a6a9ee362ad8576e3ea351bad4101b230_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46}\label{class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46}} 
+\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!QuerryAllServoPositions@{QuerryAllServoPositions}}
+\index{QuerryAllServoPositions@{QuerryAllServoPositions}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
+\doxysubsubsection{\texorpdfstring{QuerryAllServoPositions()}{QuerryAllServoPositions()}}
+{\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Querry\+All\+Servo\+Positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2}\label{class_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2}} 
@@ -112,11 +206,19 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{RunFrame()}{RunFrame()}}
 {\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Run\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd}\label{class_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd}} 
@@ -125,14 +227,16 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ScanAndDistributeServos()}{ScanAndDistributeServos()}}
 {\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Scan\+And\+Distribute\+Servos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -145,14 +249,16 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SerialConnect()}{SerialConnect()}}
 {\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Serial\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_serial___l_s_s___control_adfecae8a1bc47fb56b23fd06e1fab5bf_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -165,14 +271,16 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SerialDisconnect()}{SerialDisconnect()}}
 {\footnotesize\ttfamily void Serial\+\_\+\+LSS\+\_\+\+Control.\+Serial\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_serial___l_s_s___control_ac0ee13ad01d6f5c360041a07360b4fdd_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -192,19 +300,13 @@ Here is the caller graph for this function\+:\nopagebreak
 \index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!detectedPortNames@{detectedPortNames}}
 \index{detectedPortNames@{detectedPortNames}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
 \doxysubsubsection{\texorpdfstring{detectedPortNames}{detectedPortNames}}
-{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Serial\+\_\+\+LSS\+\_\+\+Control.\+detected\+Port\+Names = new string\mbox{[}$\,$\mbox{]} \{ \char`\"{}COM1\char`\"{}, \char`\"{}COM2\char`\"{}, \char`\"{}COM3\char`\"{}, \char`\"{}COM4\char`\"{}, \char`\"{}COM5\char`\"{}, \char`\"{}COM6\char`\"{}, \char`\"{}COM7\char`\"{} \}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Serial\+\_\+\+LSS\+\_\+\+Control.\+detected\+Port\+Names = Serial\+Port.\+Get\+Port\+Names()}
 
 \mbox{\Hypertarget{class_serial___l_s_s___control_abc759bf96ddc09f6265e9429174a5f8d}\label{class_serial___l_s_s___control_abc759bf96ddc09f6265e9429174a5f8d}} 
 \index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!portIndex@{portIndex}}
 \index{portIndex@{portIndex}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
 \doxysubsubsection{\texorpdfstring{portIndex}{portIndex}}
 {\footnotesize\ttfamily int Serial\+\_\+\+LSS\+\_\+\+Control.\+port\+Index = 0}
-
-\mbox{\Hypertarget{class_serial___l_s_s___control_a9aadffaf4e0a4cf12bafb55927f7b63a}\label{class_serial___l_s_s___control_a9aadffaf4e0a4cf12bafb55927f7b63a}} 
-\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!possibleBaudratesArray@{possibleBaudratesArray}}
-\index{possibleBaudratesArray@{possibleBaudratesArray}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
-\doxysubsubsection{\texorpdfstring{possibleBaudratesArray}{possibleBaudratesArray}}
-{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Serial\+\_\+\+LSS\+\_\+\+Control.\+possible\+Baudrates\+Array = new int\mbox{[}$\,$\mbox{]} \{ 9600, 19200, 38400, 57600, 115200, 230400, 460800, 921600 \}}
 
 
 
@@ -215,23 +317,11 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{BaudRate}{BaudRate}}
 {\footnotesize\ttfamily int Serial\+\_\+\+LSS\+\_\+\+Control.\+Baud\+Rate\hspace{0.3cm}{\ttfamily [get]}}
 
-\mbox{\Hypertarget{class_serial___l_s_s___control_a3ee1f8dfa8f172b6253e348c9c00cbbe}\label{class_serial___l_s_s___control_a3ee1f8dfa8f172b6253e348c9c00cbbe}} 
-\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!Channel@{Channel}}
-\index{Channel@{Channel}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
-\doxysubsubsection{\texorpdfstring{Channel}{Channel}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_channel}{Lss\+Channel}} Serial\+\_\+\+LSS\+\_\+\+Control.\+Channel\hspace{0.3cm}{\ttfamily [get]}}
-
 \mbox{\Hypertarget{class_serial___l_s_s___control_a4f46553fff3491265f2c8d9bb74d8812}\label{class_serial___l_s_s___control_a4f46553fff3491265f2c8d9bb74d8812}} 
 \index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!COM\_NAME@{COM\_NAME}}
 \index{COM\_NAME@{COM\_NAME}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
 \doxysubsubsection{\texorpdfstring{COM\_NAME}{COM\_NAME}}
 {\footnotesize\ttfamily string Serial\+\_\+\+LSS\+\_\+\+Control.\+COM\+\_\+\+NAME\hspace{0.3cm}{\ttfamily [get]}}
-
-\mbox{\Hypertarget{class_serial___l_s_s___control_a6861a7749d79be0b41d84450c7053d45}\label{class_serial___l_s_s___control_a6861a7749d79be0b41d84450c7053d45}} 
-\index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!distServoList@{distServoList}}
-\index{distServoList@{distServoList}!Serial\_LSS\_Control@{Serial\_LSS\_Control}}
-\doxysubsubsection{\texorpdfstring{distServoList}{distServoList}}
-{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_i_l_l_a_servo}{ILLAServo}}$>$ Serial\+\_\+\+LSS\+\_\+\+Control.\+dist\+Servo\+List\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_serial___l_s_s___control_a60bdbd6ce656e87f3b4e0f4e368db653}\label{class_serial___l_s_s___control_a60bdbd6ce656e87f3b4e0f4e368db653}} 
 \index{Serial\_LSS\_Control@{Serial\_LSS\_Control}!IsConnected@{IsConnected}}
@@ -249,4 +339,4 @@ Here is the caller graph for this function\+:\nopagebreak
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Guille/\+Lattice\+Assembly/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS\+\_\+lib/\mbox{\hyperlink{_i_l_l_a___l_s_s___c_o_ntro_l_8cs}{ILLA\+\_\+\+LSS\+\_\+\+CONtro\+L.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS\+\_\+lib/\mbox{\hyperlink{_i_l_l_a___l_s_s___c_o_ntro_l_8cs}{ILLA\+\_\+\+LSS\+\_\+\+CONtro\+L.\+cs}}\end{DoxyCompactItemize}

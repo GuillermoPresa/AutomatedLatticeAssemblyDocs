@@ -2,7 +2,7 @@ var searchData=
 [
   ['a_0',['A',['../class_lynxmotion_1_1_robotics_1_1_channel_operations_1_1_send_settings.html#a7676754e9c49d3abacf1c134e6670361',1,'Lynxmotion::Robotics::ChannelOperations::SendSettings']]],
   ['abstractserialthread_1',['AbstractSerialThread',['../class_abstract_serial_thread.html#a5f7db2c87837f7da63cb004b20879188',1,'AbstractSerialThread']]],
-  ['action_2',['Action',['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f',1,'Lynxmotion.Robotics.LssServo.Action()'],['../class_virtual_servo.html#aeb8e11ee91a28f7d672097ee21e105fe',1,'VirtualServo.Action()'],['../class_i_l_l_a_servo.html#a48a39b710fdc291083dd7729e136fc04',1,'ILLAServo.Action()']]],
+  ['action_2',['Action',['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f',1,'Lynxmotion.Robotics.LssServo.Action()'],['../class_virtual_servo.html#aeb8e11ee91a28f7d672097ee21e105fe',1,'VirtualServo.Action()']]],
   ['add_3',['Add',['../class_u_dictionary.html#aab252e3467941bba5034346a1960a12e',1,'UDictionary.Add(TKey key, TValue value)'],['../class_u_dictionary.html#ab3898372ef576e0462d88da856dbbff2',1,'UDictionary.Add(KeyValuePair&lt; TKey, TValue &gt; item)']]],
   ['addbuttonclick_4',['AddButtonClick',['../class_remove_item_test.html#a8ceab13b74c5aec32e22549f197dba9f',1,'RemoveItemTest']]],
   ['addcollisionprefab_5',['AddCollisionPrefab',['../class_collision_detection_scene.html#a76a028f4e0aa77e49611b6491c0cdca2',1,'CollisionDetectionScene']]],
@@ -18,10 +18,11 @@ var searchData=
   ['addtoglobalmanagerreferences_15',['AddToGlobalManagerReferences',['../class_lattice_class.html#a57ce03db92ab6725c05cedcee6910829',1,'LatticeClass']]],
   ['ai_16',['ai',['../class_denavit_hartenberg_illa3.html#a91d62cfe36e46e78f255d0e2e3c97894',1,'DenavitHartenbergIlla3.ai()'],['../class_denavit_hartenberg.html#a2615ab09b4d828781f4917d930ad7732',1,'DenavitHartenberg.ai()']]],
   ['aitransmatrix_17',['AiTransMatrix',['../class_denavit_hartenberg_illa3.html#a51e94d8268cc1c803eae94b65d311151',1,'DenavitHartenbergIlla3']]],
-  ['alllatticesinbounds_18',['AllLatticesInBounds',['../class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23',1,'IllaControllerV3.AllLatticesInBounds()'],['../class_inchworm_robot_controller.html#a4213e697ae17789b06700c3bd3117b79',1,'InchwormRobotController.AllLatticesInBounds()']]],
-  ['alllatticesinrange_19',['AllLatticesInRange',['../class_illa_controller_v3.html#a8ef860f36dbe143f07937f3dad57aa5b',1,'IllaControllerV3.AllLatticesInRange()'],['../class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb',1,'InchwormRobotController.AllLatticesInRange()']]],
+  ['alllatticesinbounds_18',['AllLatticesInBounds',['../class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23',1,'IllaControllerV3.AllLatticesInBounds()'],['../class_inchworm_robot_controller.html#a4213e697ae17789b06700c3bd3117b79',1,'InchwormRobotController.AllLatticesInBounds(Bounds bounds, float RangeMultiplier=(float) 1.2)']]],
+  ['alllatticesinrange_19',['AllLatticesInRange',['../class_inchworm_robot_controller.html#a25bcbedbea280f11080eae7bd7e5c3cb',1,'InchwormRobotController']]],
   ['allnodesinrange_20',['AllNodesInRange',['../class_illa_controller_v3.html#a6160e3696b382a3f53103795b1a0168f',1,'IllaControllerV3.AllNodesInRange()'],['../class_inchworm_robot_controller.html#a293f6f55b028e1fa15432f03eb92ecd0',1,'InchwormRobotController.AllNodesInRange()']]],
-  ['assignservos_21',['AssignServos',['../interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint.html#a9d6fe02e0d115b165b976b1b6dbc9555',1,'Assets.Resources.Objects.ILLAV3.srvJoint.AssignServos()'],['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html#aef924d90038667cd872fa6f93cb24b0d',1,'Assets.Resources.Objects.ILLAV3.SingleJoint.AssignServos()'],['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a74cb41f6dd7a8d4e4de079a845ea4f0a',1,'Assets.Resources.Objects.ILLAV3.DifferentialJoint.AssignServos()']]],
-  ['astarcostfunctional_22',['AStarCostFunctional',['../class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6',1,'IllaGraph']]],
-  ['awake_23',['Awake',['../class_importer_window.html#a96a78e7ba5c8f8025b6f81a9a853fcc2',1,'ImporterWindow']]]
+  ['assignlssservo_21',['AssignLSSservo',['../class_i_l_l_a_servo.html#a79b301a0798b70dec1c978c158c1c8fe',1,'ILLAServo']]],
+  ['assignvirtuallssservo_22',['AssignVirtualLSSservo',['../class_i_l_l_a_servo.html#af9f15857db9674e30a355dc5ba03c9c3',1,'ILLAServo']]],
+  ['astarcostfunctional_23',['AStarCostFunctional',['../class_illa_graph.html#a8183b7d088fe4dbe897452a81c6887f6',1,'IllaGraph']]],
+  ['awake_24',['Awake',['../class_importer_window.html#a96a78e7ba5c8f8025b6f81a9a853fcc2',1,'ImporterWindow']]]
 ];

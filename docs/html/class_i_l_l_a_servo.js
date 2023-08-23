@@ -1,16 +1,16 @@
 var class_i_l_l_a_servo =
 [
-    [ "ILLAServo", "class_i_l_l_a_servo.html#a0d1f45321df823d9540166f47757e9ac", null ],
-    [ "ILLAServo", "class_i_l_l_a_servo.html#a80e6eabafbc7f0896edbc2b42fcad7b4", null ],
-    [ "ILLAServo", "class_i_l_l_a_servo.html#a81b0af9a40d1bba2c1a6dc5d0bbee8f7", null ],
-    [ "Action", "class_i_l_l_a_servo.html#a48a39b710fdc291083dd7729e136fc04", null ],
-    [ "Config", "class_i_l_l_a_servo.html#a50be738bb45f8b358ddc41ac5a2cbe15", null ],
+    [ "ILLAServo", "class_i_l_l_a_servo.html#ad5bcb7d434bf990018062b4cd83a1545", null ],
+    [ "AssignLSSservo", "class_i_l_l_a_servo.html#a79b301a0798b70dec1c978c158c1c8fe", null ],
+    [ "AssignVirtualLSSservo", "class_i_l_l_a_servo.html#af9f15857db9674e30a355dc5ba03c9c3", null ],
     [ "MoveToJointTargetPosition", "class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c", null ],
-    [ "Query", "class_i_l_l_a_servo.html#aacdc7dead447b50daec139485520b48c", null ],
-    [ "SetChannel", "class_i_l_l_a_servo.html#afc0c67d5553370629ab390a14ed768eb", null ],
+    [ "QuerryPosition", "class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8", null ],
+    [ "QuerryVoltage", "class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4", null ],
     [ "IsVirtual", "class_i_l_l_a_servo.html#afb08b3973c876c8825634d315cf063dd", null ],
     [ "targetAngle", "class_i_l_l_a_servo.html#a495d62b68ad7bdb891039b278d4fd9ae", null ],
+    [ "unclampedDesiredAngle", "class_i_l_l_a_servo.html#a6026c8417e6a135dfaaa558396085a37", null ],
     [ "currentAngle", "class_i_l_l_a_servo.html#ab9095be1d66a4cd4350e7073195bdbd0", null ],
     [ "HasServo", "class_i_l_l_a_servo.html#a35cda98cdaa920b02bd02c5b47aa6c60", null ],
-    [ "ID", "class_i_l_l_a_servo.html#a714ed71438271f445f8f95f257b64690", null ]
+    [ "ID", "class_i_l_l_a_servo.html#a714ed71438271f445f8f95f257b64690", null ],
+    [ "voltage", "class_i_l_l_a_servo.html#a8f6dda5928252f993556596ce2a7c918", null ]
 ];

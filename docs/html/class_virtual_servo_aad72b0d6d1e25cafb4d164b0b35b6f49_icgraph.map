@@ -1,4 +1,7 @@
 <map id="VirtualServo.Query" name="VirtualServo.Query">
-<area shape="rect" id="node1" title=" " alt="" coords="172,5,303,32"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#aacdc7dead447b50daec139485520b48c" title=" " alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="712,31,843,57"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8" title=" " alt="" coords="493,5,664,32"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4" title=" " alt="" coords="495,56,662,83"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="247,31,445,57"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,23,199,65"/>
 </map>

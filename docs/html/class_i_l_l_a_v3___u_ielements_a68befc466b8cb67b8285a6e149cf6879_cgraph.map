@@ -1,0 +1,8 @@
+<map id="ILLAV3_UIelements.EstopAndReleaseButton" name="ILLAV3_UIelements.EstopAndReleaseButton">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,203,76"/>
+<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#af3489e27bbf553bb994b4f235622ac13" title=" " alt="" coords="251,5,456,47"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#a98e6931e707599ff8b650639400e7a57" title=" " alt="" coords="262,71,445,98"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="504,13,755,39"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___abstract.html#a02e8f269b86bcff46415e2b8de32548c" title=" " alt="" coords="544,64,715,105"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_state___abstract.html#ad16dedd878091349fec8e1f44af80b35" title=" " alt="" coords="533,130,726,157"/>
+</map>

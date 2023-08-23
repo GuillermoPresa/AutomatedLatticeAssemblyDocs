@@ -1,0 +1,10 @@
+<map id="Lynxmotion.Robotics.LssChannel.FlushSerial" name="Lynxmotion.Robotics.LssChannel.FlushSerial">
+<area shape="rect" id="node1" title=" " alt="" coords="928,39,1148,80"/>
+<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#af0b762ab3e576fb1384915b5bad15fbd" title=" " alt="" coords="688,39,880,80"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="468,39,640,80"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,5,420,47"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,71,420,112"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,13,198,39"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,70,199,97"/>
+<area shape="rect" id="node8" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,121,185,147"/>
+</map>
