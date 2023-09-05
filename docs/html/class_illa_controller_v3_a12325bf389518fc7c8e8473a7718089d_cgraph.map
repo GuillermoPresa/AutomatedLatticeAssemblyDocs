@@ -1,10 +1,17 @@
 <map id="IllaControllerV3.EliminateCollidingStates" name="IllaControllerV3.EliminateCollidingStates">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,172,90"/>
-<area shape="rect" id="node2" href="$interface_i_prototype.html#af8fdf15a9898d4527f66ba1f3f3e533a" title=" " alt="" coords="239,5,422,32"/>
-<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a1a802e93b60146e60f331bf584bbf313" title=" " alt="" coords="220,56,441,83"/>
-<area shape="rect" id="node5" href="$class_illa_controller_v3.html#ab9299c8badd9a7805305b53500418b7c" title=" " alt="" coords="229,122,432,163"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2" title=" " alt="" coords="489,41,680,68"/>
-<area shape="rect" id="node6" href="$class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23" title=" " alt="" coords="497,93,672,134"/>
-<area shape="rect" id="node7" href="$class_illa_controller_v3.html#ac847777f5ba3184282fc7a946d654ca9" title=" " alt="" coords="493,159,677,185"/>
-<area shape="rect" id="node8" href="$class_illa_controller_v3.html#adb1fa8e0b6707e4064d776a998dd1601" title=" " alt="" coords="504,209,665,236"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,166,172,207"/>
+<area shape="rect" id="node2" href="$class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="239,93,422,120"/>
+<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a1a802e93b60146e60f331bf584bbf313" title=" " alt="" coords="220,173,441,200"/>
+<area shape="rect" id="node12" href="$class_illa_controller_v3.html#ab9299c8badd9a7805305b53500418b7c" title=" " alt="" coords="229,254,432,295"/>
+<area shape="rect" id="node3" href="$class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e" title=" " alt="" coords="507,5,662,32"/>
+<area shape="rect" id="node5" href="$class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="498,57,671,98"/>
+<area shape="rect" id="node9" href="$class_movement.html#a888fd1350e071cd874e7e587ab95c032" title=" " alt="" coords="513,123,657,149"/>
+<area shape="rect" id="node4" href="$class_pos_x.html#acb32feca5a6223846a79a1e264914638" title=" " alt="" coords="769,5,856,32"/>
+<area shape="rect" id="node6" href="$class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb" title=" " alt="" coords="736,60,889,87"/>
+<area shape="rect" id="node8" href="$class_robot_configuration.html#a1ae7e50b7050ac542ce5fb59d329c81e" title=" " alt="" coords="728,111,897,153"/>
+<area shape="rect" id="node7" href="$class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="945,60,1029,87"/>
+<area shape="rect" id="node11" href="$class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2" title=" " alt="" coords="489,173,680,200"/>
+<area shape="rect" id="node13" href="$class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23" title=" " alt="" coords="497,225,672,266"/>
+<area shape="rect" id="node14" href="$class_illa_controller_v3.html#ac847777f5ba3184282fc7a946d654ca9" title=" " alt="" coords="493,291,677,317"/>
+<area shape="rect" id="node15" href="$class_illa_controller_v3.html#adb1fa8e0b6707e4064d776a998dd1601" title=" " alt="" coords="504,341,665,368"/>
 </map>

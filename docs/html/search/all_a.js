@@ -31,7 +31,7 @@ var searchData=
   ['joint5rotationlimit_28',['Joint5RotationLimit',['../class_illa_controller_v3.html#a6138020a6c981e5db7d1746a97dae75b',1,'IllaControllerV3']]],
   ['joint5targetangle_29',['Joint5TargetAngle',['../class_illa_controller_v3.html#a5a5294fab3e04a2b32a86ea77c0fa30c',1,'IllaControllerV3.Joint5TargetAngle()'],['../class_inchworm_robot_controller.html#ab5416aa9c4b91f8759e92f09593baa11',1,'InchwormRobotController.Joint5TargetAngle()']]],
   ['joint_5frotationlimit_30',['joint_rotationLimit',['../class_joint_configuration.html#a66c8179c179f895ae3746141885003e7',1,'JointConfiguration']]],
-  ['jointanglesfrommotorangles_31',['JointAnglesFromMotorAngles',['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a4e9139bcac07064e3daee6547ad680d9',1,'Assets::Resources::Objects::ILLAV3::DifferentialJoint']]],
+  ['jointanglesfrommotorangles_31',['JointAnglesFromMotorAngles',['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html#a58a2706ae7a1f29905032defd8ad808f',1,'Assets.Resources.Objects.ILLAV3.SingleJoint.JointAnglesFromMotorAngles()'],['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a4e9139bcac07064e3daee6547ad680d9',1,'Assets.Resources.Objects.ILLAV3.DifferentialJoint.JointAnglesFromMotorAngles()']]],
   ['jointcapsulecolliders_32',['JointCapsuleColliders',['../class_illa_controller_v3.html#a0973d62713c5268f7c3288e71225339b',1,'IllaControllerV3.JointCapsuleColliders()'],['../class_inchworm_robot_controller.html#af4ba978dba222ad49c05edacbaa1b1f1',1,'InchwormRobotController.JointCapsuleColliders()']]],
   ['jointclass_33',['JointClass',['../class_joint_class.html',1,'']]],
   ['jointclass_2ecs_34',['JointClass.cs',['../_joint_class_8cs.html',1,'']]],

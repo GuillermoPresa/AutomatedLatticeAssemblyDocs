@@ -90,11 +90,21 @@ $(document).ready(function(){initNavTree('class_i_l_l_a_servo.html',''); initRes
   <div class="headertitle"><div class="title">ILLAServo Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Collaboration diagram for ILLAServo:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_i_l_l_a_servo__coll__graph.png" border="0" usemap="#a_i_l_l_a_servo_coll__map" alt="Collaboration graph"/></div>
+<map name="a_i_l_l_a_servo_coll__map" id="a_i_l_l_a_servo_coll__map">
+<area shape="rect" title=" " alt="" coords="30,184,110,211"/>
+<area shape="rect" href="class_servo_configuration.html" title=" " alt="" coords="5,95,135,121"/>
+<area shape="rect" href="class_rotation_limit.html" title=" " alt="" coords="21,5,119,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5bcb7d434bf990018062b4cd83a1545"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ad5bcb7d434bf990018062b4cd83a1545">ILLAServo</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript_in)</td></tr>
-<tr class="separator:ad5bcb7d434bf990018062b4cd83a1545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ea8d776351bde73d75cf2a42021757"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#af2ea8d776351bde73d75cf2a42021757">ILLAServo</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript_in, <a class="el" href="class_servo_configuration.html">ServoConfiguration</a> servoConfig_in)</td></tr>
+<tr class="separator:af2ea8d776351bde73d75cf2a42021757"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79b301a0798b70dec1c978c158c1c8fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a79b301a0798b70dec1c978c158c1c8fe">AssignLSSservo</a> (<a class="el" href="class_lynxmotion_1_1_robotics_1_1_lss_servo.html">LssServo</a> servo_in)</td></tr>
 <tr class="separator:a79b301a0798b70dec1c978c158c1c8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f15857db9674e30a355dc5ba03c9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#af9f15857db9674e30a355dc5ba03c9c3">AssignVirtualLSSservo</a> (<a class="el" href="class_virtual_servo.html">VirtualServo</a> virtualServo_in)</td></tr>
@@ -110,6 +120,8 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:afb08b3973c876c8825634d315cf063dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#afb08b3973c876c8825634d315cf063dd">IsVirtual</a> = false</td></tr>
 <tr class="separator:afb08b3973c876c8825634d315cf063dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad758d38552a2b4ed05a357aeaedd37e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_servo_configuration.html">ServoConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ad758d38552a2b4ed05a357aeaedd37e7">servoConfig</a></td></tr>
+<tr class="separator:ad758d38552a2b4ed05a357aeaedd37e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495d62b68ad7bdb891039b278d4fd9ae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a495d62b68ad7bdb891039b278d4fd9ae">targetAngle</a></td></tr>
 <tr class="separator:a495d62b68ad7bdb891039b278d4fd9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6026c8417e6a135dfaaa558396085a37"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a6026c8417e6a135dfaaa558396085a37">unclampedDesiredAngle</a></td></tr>
@@ -117,7 +129,7 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ab9095be1d66a4cd4350e7073195bdbd0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ab9095be1d66a4cd4350e7073195bdbd0">currentAngle</a><code> [get, set]</code></td></tr>
+<tr class="memitem:ab9095be1d66a4cd4350e7073195bdbd0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ab9095be1d66a4cd4350e7073195bdbd0">currentAngle</a><code> [get]</code></td></tr>
 <tr class="separator:ab9095be1d66a4cd4350e7073195bdbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6dda5928252f993556596ce2a7c918"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a8f6dda5928252f993556596ce2a7c918">voltage</a><code> [get]</code></td></tr>
 <tr class="separator:a8f6dda5928252f993556596ce2a7c918"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,8 +139,8 @@ Properties</h2></td></tr>
 <tr class="separator:a714ed71438271f445f8f95f257b64690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad5bcb7d434bf990018062b4cd83a1545" name="ad5bcb7d434bf990018062b4cd83a1545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5bcb7d434bf990018062b4cd83a1545">&#9670;&nbsp;</a></span>ILLAServo()</h2>
+<a id="af2ea8d776351bde73d75cf2a42021757" name="af2ea8d776351bde73d75cf2a42021757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ea8d776351bde73d75cf2a42021757">&#9670;&nbsp;</a></span>ILLAServo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,8 +149,18 @@ Properties</h2></td></tr>
           <td class="memname">ILLAServo.ILLAServo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a>&#160;</td>
-          <td class="paramname"><em>robotScript_in</em></td><td>)</td>
+          <td class="paramname"><em>robotScript_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_servo_configuration.html">ServoConfiguration</a>&#160;</td>
+          <td class="paramname"><em>servoConfig_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,6 +333,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ad758d38552a2b4ed05a357aeaedd37e7" name="ad758d38552a2b4ed05a357aeaedd37e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad758d38552a2b4ed05a357aeaedd37e7">&#9670;&nbsp;</a></span>servoConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_servo_configuration.html">ServoConfiguration</a> ILLAServo.servoConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a495d62b68ad7bdb891039b278d4fd9ae" name="a495d62b68ad7bdb891039b278d4fd9ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a495d62b68ad7bdb891039b278d4fd9ae">&#9670;&nbsp;</a></span>targetAngle</h2>
 
@@ -355,7 +391,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

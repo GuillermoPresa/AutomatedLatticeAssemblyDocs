@@ -1,8 +1,8 @@
 var searchData=
 [
   ['n_0',['N',['../class_lynxmotion_1_1_robotics_1_1_progress_event_args.html#a73ece40722e89677dbd566abbf2550cd',1,'Lynxmotion::Robotics::ProgressEventArgs']]],
-  ['name_1',['name',['../class_get_set_attribute.html#a5d4e4b9c867c8728178ccb04721975e6',1,'GetSetAttribute']]],
-  ['name_2',['Name',['../class_servo_configuration.html#afbf3e5f01b786784e94f26b05d28b66a',1,'ServoConfiguration']]],
+  ['name_1',['Name',['../class_servo_configuration.html#afbf3e5f01b786784e94f26b05d28b66a',1,'ServoConfiguration']]],
+  ['name_2',['name',['../class_get_set_attribute.html#a5d4e4b9c867c8728178ccb04721975e6',1,'GetSetAttribute']]],
   ['navigationmesh_3',['NavigationMesh',['../class_illa_controller_v3.html#af292c430c9dff838b4c67be1632bbd0e',1,'IllaControllerV3.NavigationMesh()'],['../class_inchworm_robot_controller.html#afb776d80e2b5cc1008d2078765357688',1,'InchwormRobotController.NavigationMesh()'],['../class_robot_script.html#aab10dbc7234ac3fe8cd7e4fdfae83b39',1,'RobotScript.NavigationMesh()']]],
   ['navmeshcolorlist_4',['NavMeshColorList',['../class_references.html#a7769ce43aa3124298d9aed48411796fd',1,'References']]],
   ['nextlattice_5',['NextLattice',['../class_spawner.html#ad49b175faa405e6baac27f682e464bf8',1,'Spawner']]],

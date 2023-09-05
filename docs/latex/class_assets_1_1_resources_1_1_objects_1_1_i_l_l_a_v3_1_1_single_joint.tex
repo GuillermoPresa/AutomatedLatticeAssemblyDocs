@@ -11,8 +11,7 @@ Inheritance diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Single\+Joint\+:
 \end{figure}
 
 
-Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Single\+Joint\+:
-\nopagebreak
+Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Single\+Joint\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,6 +22,10 @@ Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Single\+Joint\
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a376080b7c557e6bf23892c44a29bfcb2}{Single\+Joint}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Illa\+Robot\+Controller\+Reference\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} joint\+Axis\+\_\+in)
+\item 
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a58a2706ae7a1f29905032defd8ad808f}{Joint\+Angles\+From\+Motor\+Angles}} (double Motor\+Angle)
+\item 
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a81b3d3068ae2286a1d04693efba06b49}{Clamp\+Joint\+Angles}} (float unclamped\+Joint\+Angle)
 \item 
 void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_afeaa24b4061b114c919864babd768cff}{update\+Servo\+Goal\+Angle\+From\+Target\+Angle}} ()
 \item 
@@ -47,6 +50,32 @@ void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a81b3d3068ae2286a1d04693efba06b49}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a81b3d3068ae2286a1d04693efba06b49}} 
+\index{Assets.Resources.Objects.ILLAV3.SingleJoint@{Assets.Resources.Objects.ILLAV3.SingleJoint}!ClampJointAngles@{ClampJointAngles}}
+\index{ClampJointAngles@{ClampJointAngles}!Assets.Resources.Objects.ILLAV3.SingleJoint@{Assets.Resources.Objects.ILLAV3.SingleJoint}}
+\doxysubsubsection{\texorpdfstring{ClampJointAngles()}{ClampJointAngles()}}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Single\+Joint.\+Clamp\+Joint\+Angles (\begin{DoxyParamCaption}\item[{float}]{unclamped\+Joint\+Angle }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a81b3d3068ae2286a1d04693efba06b49_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a58a2706ae7a1f29905032defd8ad808f}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a58a2706ae7a1f29905032defd8ad808f}} 
+\index{Assets.Resources.Objects.ILLAV3.SingleJoint@{Assets.Resources.Objects.ILLAV3.SingleJoint}!JointAnglesFromMotorAngles@{JointAnglesFromMotorAngles}}
+\index{JointAnglesFromMotorAngles@{JointAnglesFromMotorAngles}!Assets.Resources.Objects.ILLAV3.SingleJoint@{Assets.Resources.Objects.ILLAV3.SingleJoint}}
+\doxysubsubsection{\texorpdfstring{JointAnglesFromMotorAngles()}{JointAnglesFromMotorAngles()}}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Single\+Joint.\+Joint\+Angles\+From\+Motor\+Angles (\begin{DoxyParamCaption}\item[{double}]{Motor\+Angle }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a58a2706ae7a1f29905032defd8ad808f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a850121f82fa4d8358f148a46ca04a3e7}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_a850121f82fa4d8358f148a46ca04a3e7}} 
 \index{Assets.Resources.Objects.ILLAV3.SingleJoint@{Assets.Resources.Objects.ILLAV3.SingleJoint}!updateJointAngleFromServoCurrentAngle@{updateJointAngleFromServoCurrentAngle}}
 \index{updateJointAngleFromServoCurrentAngle@{updateJointAngleFromServoCurrentAngle}!Assets.Resources.Objects.ILLAV3.SingleJoint@{Assets.Resources.Objects.ILLAV3.SingleJoint}}
@@ -57,8 +86,7 @@ void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_
 
 Implements \mbox{\hyperlink{interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint_a25bcd3b01095e8752cb3a3927a2889ca}{Assets.\+Resources.\+Objects.\+ILLAV3.\+srv\+Joint}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -75,6 +103,13 @@ Here is the caller graph for this function\+:
 
 Implements \mbox{\hyperlink{interface_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1srv_joint_aa8976fcecbc3b234435e5c4bd5149fae}{Assets.\+Resources.\+Objects.\+ILLAV3.\+srv\+Joint}}.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint_afeaa24b4061b114c919864babd768cff_cgraph}
+\end{center}
+\end{figure}
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}

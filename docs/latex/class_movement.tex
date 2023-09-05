@@ -28,6 +28,12 @@ Collaboration diagram for Movement\+:\nopagebreak
 float \mbox{\hyperlink{class_movement_a6c025cbe11955f26ba81c575b7296006}{Mincost\+Based\+On\+Angle\+Movement}} ()
 \item 
 void \mbox{\hyperlink{class_movement_a47e2906baf3b92be8fbd054231192ca4}{Add\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JTo\+Add)
+\item 
+\mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_movement_a8bace0704cfea07f7b4693b5907fe135}{Create\+Deep\+Copy}} ()
+\item 
+void \mbox{\hyperlink{class_movement_a814d43897f9656de4ccd97d34f6fcaae}{Draw\+Movement}} (Color color)
+\item 
+void \mbox{\hyperlink{class_movement_a46a1f7e26a7713a29110a1c240746606}{Clear}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -56,7 +62,13 @@ bool \mbox{\hyperlink{class_movement_adf5de4a9260957877f4c4a671becf1c8}{Has\+Con
 
 
 \doxysubsection{Detailed Description}
-A movement is a class that represents a particular robotic movement. It consists of a starting robot configuration (starting \mbox{\hyperlink{class_pos_j}{PosJ}} and base location), a target \mbox{\hyperlink{class_pos_x}{PosX}}, and a list of possible Pos\+Js to reach the target. At the time of executing the movement one of the target Pos\+Js can be selected according to a cost calculation.
+Class that represents the possible ways to transition from one node to another. When traversing or moving from one lattice node (base) to another (target), there is a set of possible joint configurations we can take to perform this motion. This is represented by the movement class.
+
+This class consists of a starting robot configuration (starting \mbox{\hyperlink{class_pos_j}{PosJ}} and base location), the target \mbox{\hyperlink{class_pos_x}{PosX}}, and a list of possible Pos\+Js to reach the target.
+
+Movements are constructed from example by the inverse kinnematics or I.\+K functions of a robot controller.
+
+At the time of executing the movement one of the target Pos\+Js can be selected according to a cost calculation.
 
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000010}{Todo}}]eliminate ambiguity List form and Dictionary form. Add a method to convert to list form and only \end{DoxyRefDesc}
@@ -69,6 +81,13 @@ A movement is a class that represents a particular robotic movement. It consists
 \doxysubsubsection{\texorpdfstring{Movement()}{Movement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Movement.\+Movement (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Initial\+Config }\end{DoxyParamCaption})}
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_a888fd1350e071cd874e7e587ab95c032_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_movement_ac127471ad5170bb344ea4cbc32e3ac19}\label{class_movement_ac127471ad5170bb344ea4cbc32e3ac19}} 
 \index{Movement@{Movement}!Movement@{Movement}}
 \index{Movement@{Movement}!Movement@{Movement}}
@@ -98,6 +117,38 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_movement_a47e2906baf3b92be8fbd054231192ca4_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_movement_a46a1f7e26a7713a29110a1c240746606}\label{class_movement_a46a1f7e26a7713a29110a1c240746606}} 
+\index{Movement@{Movement}!Clear@{Clear}}
+\index{Clear@{Clear}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Movement.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_movement_a8bace0704cfea07f7b4693b5907fe135}\label{class_movement_a8bace0704cfea07f7b4693b5907fe135}} 
+\index{Movement@{Movement}!CreateDeepCopy@{CreateDeepCopy}}
+\index{CreateDeepCopy@{CreateDeepCopy}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{CreateDeepCopy()}{CreateDeepCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Movement.\+Create\+Deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_a8bace0704cfea07f7b4693b5907fe135_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_a8bace0704cfea07f7b4693b5907fe135_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_movement_a814d43897f9656de4ccd97d34f6fcaae}\label{class_movement_a814d43897f9656de4ccd97d34f6fcaae}} 
+\index{Movement@{Movement}!DrawMovement@{DrawMovement}}
+\index{DrawMovement@{DrawMovement}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{DrawMovement()}{DrawMovement()}}
+{\footnotesize\ttfamily void Movement.\+Draw\+Movement (\begin{DoxyParamCaption}\item[{Color}]{color }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_movement_a6c025cbe11955f26ba81c575b7296006}\label{class_movement_a6c025cbe11955f26ba81c575b7296006}} 
 \index{Movement@{Movement}!MincostBasedOnAngleMovement@{MincostBasedOnAngleMovement}}
 \index{MincostBasedOnAngleMovement@{MincostBasedOnAngleMovement}!Movement@{Movement}}

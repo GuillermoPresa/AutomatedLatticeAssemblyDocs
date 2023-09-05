@@ -1,0 +1,6 @@
+<map id="IllaControllerV3.UserMoveToSelectedNode" name="IllaControllerV3.UserMoveToSelectedNode">
+<area shape="rect" id="node1" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="5,23,176,65"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a0837edf0d6b08f38e1ffd7c35f3a4e75" title=" " alt="" coords="224,31,396,57"/>
+<area shape="rect" id="node3" href="$class_denavit_hartenberg_illa3.html#a91d62cfe36e46e78f255d0e2e3c97894" title=" " alt="" coords="444,5,608,32"/>
+<area shape="rect" id="node4" href="$class_denavit_hartenberg_illa3.html#ae9265820eba0912eb4741f322be09687" title=" " alt="" coords="444,56,608,83"/>
+</map>
