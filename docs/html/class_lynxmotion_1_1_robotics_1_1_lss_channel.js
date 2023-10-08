@@ -6,7 +6,7 @@ var class_lynxmotion_1_1_robotics_1_1_lss_channel =
     [ "DistributePackagesFromMessage", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#aabeb4c1fc8156b39fca19a55703d33d7", null ],
     [ "FlushSerial", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ad68cd7cff0b9eae1697c3ca7190334cc", null ],
     [ "ReadAndDistributeCurrentPackages", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a50aa4caf08290d9e8525c3bf7105dd2f", null ],
-    [ "ReadAndDistributeServo", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0", null ],
+    [ "ReadAndDistributeServo", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a20a936ef73d4833ad1d53ff736901ec3", null ],
     [ "ReadAndDistributeServoPackages", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a3bc98c7ac9ce117675ccb7b8fec606d4", null ],
     [ "ReadLine", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a90c0ef6c891d8164f302dc4a386a6242", null ],
     [ "RunOp", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ac19ff1dd721d6e21cb5d8452a9a8c497", null ],

@@ -2,7 +2,8 @@
 \label{class_move_to_node_task}\index{MoveToNodeTask@{MoveToNodeTask}}
 
 
-Inheritance diagram for Move\+To\+Node\+Task\+:\nopagebreak
+Inheritance diagram for Move\+To\+Node\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -11,7 +12,8 @@ Inheritance diagram for Move\+To\+Node\+Task\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Move\+To\+Node\+Task\+:\nopagebreak
+Collaboration diagram for Move\+To\+Node\+Task\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,42 +23,84 @@ Collaboration diagram for Move\+To\+Node\+Task\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_move_to_node_task_a684410e77c485f5dde0258c628588cc2}{Move\+To\+Node\+Task}} (\mbox{\hyperlink{class_work_package}{Work\+Package}} Context, Game\+Object Tg\+Node)
+override \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a}{Bid\+From\+Task}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \item 
-override void \mbox{\hyperlink{class_move_to_node_task_ac7e77bf4bf59c3e5995434b861a8fc7e}{Execute\+Task}} (\mbox{\hyperlink{class_work_package}{Work\+Package}} context)
+override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
+\item 
+\mbox{\hyperlink{class_move_to_node_task_a32612dce1c3c9ad3554c01a331ec8087}{Move\+To\+Node\+Task}} (Game\+Object \mbox{\hyperlink{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}{target\+Node}})
+\item 
+\mbox{\hyperlink{class_move_to_node_task_ac33efed5b490f0815852311781e857b5}{Move\+To\+Node\+Task}} ()
 \end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}{target\+Node}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_move_to_node_task_a684410e77c485f5dde0258c628588cc2}\label{class_move_to_node_task_a684410e77c485f5dde0258c628588cc2}} 
+\mbox{\Hypertarget{class_move_to_node_task_a32612dce1c3c9ad3554c01a331ec8087}\label{class_move_to_node_task_a32612dce1c3c9ad3554c01a331ec8087}} 
 \index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
 \index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
-\doxysubsubsection{\texorpdfstring{MoveToNodeTask()}{MoveToNodeTask()}}
-{\footnotesize\ttfamily Move\+To\+Node\+Task.\+Move\+To\+Node\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_work_package}{Work\+Package}}}]{Context,  }\item[{Game\+Object}]{Tg\+Node }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{MoveToNodeTask()}{MoveToNodeTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Move\+To\+Node\+Task.\+Move\+To\+Node\+Task (\begin{DoxyParamCaption}\item[{Game\+Object}]{target\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_move_to_node_task_ac33efed5b490f0815852311781e857b5}\label{class_move_to_node_task_ac33efed5b490f0815852311781e857b5}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
+\index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{MoveToNodeTask()}{MoveToNodeTask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Move\+To\+Node\+Task.\+Move\+To\+Node\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_move_to_node_task_ac7e77bf4bf59c3e5995434b861a8fc7e}\label{class_move_to_node_task_ac7e77bf4bf59c3e5995434b861a8fc7e}} 
-\index{MoveToNodeTask@{MoveToNodeTask}!ExecuteTask@{ExecuteTask}}
-\index{ExecuteTask@{ExecuteTask}!MoveToNodeTask@{MoveToNodeTask}}
-\doxysubsubsection{\texorpdfstring{ExecuteTask()}{ExecuteTask()}}
-{\footnotesize\ttfamily override void Move\+To\+Node\+Task.\+Execute\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_work_package}{Work\+Package}}}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a}\label{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!BidFromTask@{BidFromTask}}
+\index{BidFromTask@{BidFromTask}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{BidFromTask()}{BidFromTask()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} Move\+To\+Node\+Task.\+Bid\+From\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{class_task_aa5f725227d110465c4f442dc3808cafc}{Task}}.
+Implements \mbox{\hyperlink{class_abstract_task_a4e454ec4ebac472784b7703b1f0fdbd2}{Abstract\+Task}}.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_move_to_node_task_ac7e77bf4bf59c3e5995434b861a8fc7e_cgraph}
+\includegraphics[width=350pt]{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}\label{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!BreakIntoActions@{BreakIntoActions}}
+\index{BreakIntoActions@{BreakIntoActions}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}}
+{\footnotesize\ttfamily override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Move\+To\+Node\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7}{Abstract\+Task}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a_cgraph}
 \end{center}
 \end{figure}
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}\label{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!targetNode@{targetNode}}
+\index{targetNode@{targetNode}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{targetNode}{targetNode}}
+{\footnotesize\ttfamily Game\+Object Move\+To\+Node\+Task.\+target\+Node}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Scripts/\+Static classes/\mbox{\hyperlink{_work_package_8cs}{Work\+Package.\+cs}}\end{DoxyCompactItemize}
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Scripts/\+Work\+Package\+System/\+Tasks/\mbox{\hyperlink{_move_to_node_task_8cs}{Move\+To\+Node\+Task.\+cs}}\end{DoxyCompactItemize}

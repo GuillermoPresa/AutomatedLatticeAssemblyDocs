@@ -1,11 +1,19 @@
 \hypertarget{class_illa_navigation_path}{}\doxysection{Illa\+Navigation\+Path Class Reference}
 \label{class_illa_navigation_path}\index{IllaNavigationPath@{IllaNavigationPath}}
+
+
+Collaboration diagram for Illa\+Navigation\+Path\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_navigation_path__coll__graph}
+\end{center}
+\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_illa_navigation_path_a2879d235d7bf88e0e69a353d3e24a39d}{Illa\+Navigation\+Path}} (List$<$ Game\+Object $>$ fordwards\+Navigation\+Path)
-\item 
-\mbox{\hyperlink{class_illa_navigation_path_a533acc10511a0db47215c168cc52e773}{Illa\+Navigation\+Path}} (List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ fordwards\+Path\+Graph\+Node)
+\mbox{\hyperlink{class_illa_navigation_path_ad259939d350b5a1ac040fe44e9f5ad11}{Illa\+Navigation\+Path}} (List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ fordwards\+Path\+Graph\+Node\+\_\+in)
 \item 
 void \mbox{\hyperlink{class_illa_navigation_path_a32df8fb87415053a2b3b820e86ca443b}{Remove\+First\+Movement}} ()
 \item 
@@ -13,12 +21,12 @@ bool \mbox{\hyperlink{class_illa_navigation_path_abad18de9f28b9227f2b076154e43a8
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_illa_navigation_path_ac05468c91ac4d9be84bfcd2924da9497}{Inverse\+Navigation\+Path}} (List$<$ Game\+Object $>$ Path\+To\+Invert)
 \item 
-void \mbox{\hyperlink{class_illa_navigation_path_a780a2814ec9055d224722851752242c1}{Draw\+Path}} ()
+void \mbox{\hyperlink{class_illa_navigation_path_acd36e7edb65cef6f40803fadf425a2ae}{Draw\+Path}} (bool enable\+Order\+Display=true)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-List$<$ Game\+Object $>$ \mbox{\hyperlink{class_illa_navigation_path_a536d107df5c5af027565fa811efb76d4}{\+\_\+\+Fordwards\+Navigation\+Path}} = new List$<$Game\+Object$>$()
+\mbox{\hyperlink{class_illa_graph}{Illa\+Graph}} \mbox{\hyperlink{class_illa_navigation_path_ab88f3df4bb9f3cd4839b66a91f0d0c40}{graph\+Reference\+For\+Gizmo\+Display}}
 \item 
 float \mbox{\hyperlink{class_illa_navigation_path_a169db4370e99ac8aa5c274cdb099d891}{\+\_\+\+Movement\+Cost}} = 9999999999
 \end{DoxyCompactItemize}
@@ -29,6 +37,8 @@ float \mbox{\hyperlink{class_illa_navigation_path_a4d98d5744794f8d0358be49fd1389
 \item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_illa_navigation_path_afdb0cc6dafb67d2856db58ce68ba1c18}{Fordwards\+Navigation\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
+Dictionary$<$ Game\+Object, \mbox{\hyperlink{class_movement}{Movement}} $>$ \mbox{\hyperlink{class_illa_navigation_path_a4ebcc693ea1cf50ef30693af310ba3eb}{Fordwards\+Navigation\+Path\+Movement\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
 List$<$ Game\+Object $>$ \mbox{\hyperlink{class_illa_navigation_path_a749936ca95e4a5b55c286a96a49f0980}{Backwards\+Navigation\+Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 Game\+Object \mbox{\hyperlink{class_illa_navigation_path_a79ff2da30f6074ceaf40846dcbe99025}{Next\+Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
@@ -37,30 +47,42 @@ Game\+Object \mbox{\hyperlink{class_illa_navigation_path_a79ff2da30f6074ceaf4084
 
 \doxysubsection{Detailed Description}
 \hypertarget{class_illa_navigation_path_Illa}{}\doxysubsection{navigation graph class}\label{class_illa_navigation_path_Illa}
+The ILLA navigation graph class allows to send and comunicate navigation paths that can easily be inverted and operated in a simple manner.
 
+It consists of a list of gameobjects that represent the nodes of the graph. movement dictionary that stores the optimal movements to perform where the key of the dictionary is the node of the graph you are on and the value shows the way to reach the next. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_illa_navigation_path_a2879d235d7bf88e0e69a353d3e24a39d}\label{class_illa_navigation_path_a2879d235d7bf88e0e69a353d3e24a39d}} 
+\mbox{\Hypertarget{class_illa_navigation_path_ad259939d350b5a1ac040fe44e9f5ad11}\label{class_illa_navigation_path_ad259939d350b5a1ac040fe44e9f5ad11}} 
 \index{IllaNavigationPath@{IllaNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
 \index{IllaNavigationPath@{IllaNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
-\doxysubsubsection{\texorpdfstring{IllaNavigationPath()}{IllaNavigationPath()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Illa\+Navigation\+Path.\+Illa\+Navigation\+Path (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{fordwards\+Navigation\+Path }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_illa_navigation_path_a533acc10511a0db47215c168cc52e773}\label{class_illa_navigation_path_a533acc10511a0db47215c168cc52e773}} 
-\index{IllaNavigationPath@{IllaNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
-\index{IllaNavigationPath@{IllaNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
-\doxysubsubsection{\texorpdfstring{IllaNavigationPath()}{IllaNavigationPath()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Illa\+Navigation\+Path.\+Illa\+Navigation\+Path (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$}]{fordwards\+Path\+Graph\+Node }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{IllaNavigationPath()}{IllaNavigationPath()}}
+{\footnotesize\ttfamily Illa\+Navigation\+Path.\+Illa\+Navigation\+Path (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$}]{fordwards\+Path\+Graph\+Node\+\_\+in }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_illa_navigation_path_a780a2814ec9055d224722851752242c1}\label{class_illa_navigation_path_a780a2814ec9055d224722851752242c1}} 
+\mbox{\Hypertarget{class_illa_navigation_path_acd36e7edb65cef6f40803fadf425a2ae}\label{class_illa_navigation_path_acd36e7edb65cef6f40803fadf425a2ae}} 
 \index{IllaNavigationPath@{IllaNavigationPath}!DrawPath@{DrawPath}}
 \index{DrawPath@{DrawPath}!IllaNavigationPath@{IllaNavigationPath}}
 \doxysubsubsection{\texorpdfstring{DrawPath()}{DrawPath()}}
-{\footnotesize\ttfamily void Illa\+Navigation\+Path.\+Draw\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Illa\+Navigation\+Path.\+Draw\+Path (\begin{DoxyParamCaption}\item[{bool}]{enable\+Order\+Display = {\ttfamily true} }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_navigation_path_acd36e7edb65cef6f40803fadf425a2ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_navigation_path_acd36e7edb65cef6f40803fadf425a2ae_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_navigation_path_ac05468c91ac4d9be84bfcd2924da9497}\label{class_illa_navigation_path_ac05468c91ac4d9be84bfcd2924da9497}} 
 \index{IllaNavigationPath@{IllaNavigationPath}!InverseNavigationPath@{InverseNavigationPath}}
 \index{InverseNavigationPath@{InverseNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
@@ -96,17 +118,17 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_illa_navigation_path_a536d107df5c5af027565fa811efb76d4}\label{class_illa_navigation_path_a536d107df5c5af027565fa811efb76d4}} 
-\index{IllaNavigationPath@{IllaNavigationPath}!\_FordwardsNavigationPath@{\_FordwardsNavigationPath}}
-\index{\_FordwardsNavigationPath@{\_FordwardsNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
-\doxysubsubsection{\texorpdfstring{\_FordwardsNavigationPath}{\_FordwardsNavigationPath}}
-{\footnotesize\ttfamily List$<$Game\+Object$>$ Illa\+Navigation\+Path.\+\_\+\+Fordwards\+Navigation\+Path = new List$<$Game\+Object$>$()}
-
 \mbox{\Hypertarget{class_illa_navigation_path_a169db4370e99ac8aa5c274cdb099d891}\label{class_illa_navigation_path_a169db4370e99ac8aa5c274cdb099d891}} 
 \index{IllaNavigationPath@{IllaNavigationPath}!\_MovementCost@{\_MovementCost}}
 \index{\_MovementCost@{\_MovementCost}!IllaNavigationPath@{IllaNavigationPath}}
 \doxysubsubsection{\texorpdfstring{\_MovementCost}{\_MovementCost}}
 {\footnotesize\ttfamily float Illa\+Navigation\+Path.\+\_\+\+Movement\+Cost = 9999999999}
+
+\mbox{\Hypertarget{class_illa_navigation_path_ab88f3df4bb9f3cd4839b66a91f0d0c40}\label{class_illa_navigation_path_ab88f3df4bb9f3cd4839b66a91f0d0c40}} 
+\index{IllaNavigationPath@{IllaNavigationPath}!graphReferenceForGizmoDisplay@{graphReferenceForGizmoDisplay}}
+\index{graphReferenceForGizmoDisplay@{graphReferenceForGizmoDisplay}!IllaNavigationPath@{IllaNavigationPath}}
+\doxysubsubsection{\texorpdfstring{graphReferenceForGizmoDisplay}{graphReferenceForGizmoDisplay}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph}{Illa\+Graph}} Illa\+Navigation\+Path.\+graph\+Reference\+For\+Gizmo\+Display}
 
 
 
@@ -122,6 +144,12 @@ Here is the call graph for this function\+:\nopagebreak
 \index{FordwardsNavigationPath@{FordwardsNavigationPath}!IllaNavigationPath@{IllaNavigationPath}}
 \doxysubsubsection{\texorpdfstring{FordwardsNavigationPath}{FordwardsNavigationPath}}
 {\footnotesize\ttfamily List$<$Game\+Object$>$ Illa\+Navigation\+Path.\+Fordwards\+Navigation\+Path\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_illa_navigation_path_a4ebcc693ea1cf50ef30693af310ba3eb}\label{class_illa_navigation_path_a4ebcc693ea1cf50ef30693af310ba3eb}} 
+\index{IllaNavigationPath@{IllaNavigationPath}!FordwardsNavigationPathMovementDictionary@{FordwardsNavigationPathMovementDictionary}}
+\index{FordwardsNavigationPathMovementDictionary@{FordwardsNavigationPathMovementDictionary}!IllaNavigationPath@{IllaNavigationPath}}
+\doxysubsubsection{\texorpdfstring{FordwardsNavigationPathMovementDictionary}{FordwardsNavigationPathMovementDictionary}}
+{\footnotesize\ttfamily Dictionary$<$Game\+Object, \mbox{\hyperlink{class_movement}{Movement}}$>$ Illa\+Navigation\+Path.\+Fordwards\+Navigation\+Path\+Movement\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
 
 \mbox{\Hypertarget{class_illa_navigation_path_a4d98d5744794f8d0358be49fd13897f3}\label{class_illa_navigation_path_a4d98d5744794f8d0358be49fd13897f3}} 
 \index{IllaNavigationPath@{IllaNavigationPath}!MovementCost@{MovementCost}}

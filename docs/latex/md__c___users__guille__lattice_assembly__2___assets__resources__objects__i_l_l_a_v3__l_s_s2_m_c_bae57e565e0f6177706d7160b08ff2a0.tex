@@ -1,0 +1,14 @@
+High performance library for the \mbox{\hyperlink{namespace_lynxmotion}{Lynxmotion}} Smart Servos (LSS).\hypertarget{md__c___users__guille__lattice_assembly__2___assets__resources__objects__i_l_l_a_v3__l_s_s2_m_c_bae57e565e0f6177706d7160b08ff2a0_autotoc_md38}{}\doxysection{Installation}\label{md__c___users__guille__lattice_assembly__2___assets__resources__objects__i_l_l_a_v3__l_s_s2_m_c_bae57e565e0f6177706d7160b08ff2a0_autotoc_md38}
+Use git to clone this repository into your Arduino libraries folder. This is usually in your home Documents directory \char`\"{}\+Arduino/libraries\char`\"{}. Then start Arduino. You should now have Alternative\+LSS as a library and examples under the File $\vert$ Examples $\vert$ Alternative\+LSS menu.\hypertarget{md__c___users__guille__lattice_assembly__2___assets__resources__objects__i_l_l_a_v3__l_s_s2_m_c_bae57e565e0f6177706d7160b08ff2a0_autotoc_md39}{}\doxysection{Examples}\label{md__c___users__guille__lattice_assembly__2___assets__resources__objects__i_l_l_a_v3__l_s_s2_m_c_bae57e565e0f6177706d7160b08ff2a0_autotoc_md39}
+There are 5 examples that use the Alternative\+LSS library. You should verify the LSS\+\_\+\+SERIAL\+\_\+\+PORT (Serial1) and LSS\+\_\+\+BAUDRATE (250k) and servo IDs at the top of the examples before compiling. The default serial monitor baud rate is 115200.
+\begin{DoxyItemize}
+\item Bus\+Scan -\/ scans the bus for servos with ID 1 to 64. It continuously scans and reports a few properties of each servo such as position, target, temperature and voltage.
+\item Simple\+Read -\/ reads multiple properties at once from a single servo in a loop
+\item Simple\+Write -\/ repeatidly moves a servo from -\/90 degrees to +90 degrees
+\item Action\+Update -\/ Requires two servos on the bus, a Slave servo will follow the position of a dedicated master servo. For best performance you should follow this example that requests updates from the server asynchronously, then on completion of the request issues commands to update servo position or other parameters.
+\item Unit\+Tests -\/ runs software simulated unit tests to verify the integrity of the library. Can also run physical servo tests.
+\end{DoxyItemize}\hypertarget{md__c___users__guille__lattice_assembly__2___assets__resources__objects__i_l_l_a_v3__l_s_s2_m_c_bae57e565e0f6177706d7160b08ff2a0_autotoc_md40}{}\doxysection{Known Issues}\label{md__c___users__guille__lattice_assembly__2___assets__resources__objects__i_l_l_a_v3__l_s_s2_m_c_bae57e565e0f6177706d7160b08ff2a0_autotoc_md40}
+
+\begin{DoxyItemize}
+\item Since micros() wraps every $\sim$70 minutes. We need to guard against this case somewhow. This might affect timeout detection. 
+\end{DoxyItemize}

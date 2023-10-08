@@ -1,0 +1,11 @@
+<map id="IllaControllerV3.TargetPosJ" name="IllaControllerV3.TargetPosJ">
+<area shape="rect" id="node1" title=" " alt="" coords="1007,107,1185,134"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#acd6d8377114d7f23bb9f8ca25854705d" title=" " alt="" coords="781,5,957,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a5c942473acfea56e56eff3256cb4060b" title=" " alt="" coords="785,100,954,141"/>
+<area shape="rect" id="node8" href="$class_illa_controller_v3.html#ac15c09d22325669a0ec6f62f159fbd40" title=" " alt="" coords="780,169,959,195"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,53,477,95"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,53,236,95"/>
+<area shape="rect" id="node6" href="$class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="525,49,732,91"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="543,115,714,156"/>
+<area shape="rect" id="node9" href="$class_movement_action.html#a1b75aafde4126f6a0dfcf459e909d3d5" title=" " alt="" coords="537,180,720,221"/>
+</map>

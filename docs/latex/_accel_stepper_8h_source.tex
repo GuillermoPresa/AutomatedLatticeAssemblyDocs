@@ -1,0 +1,193 @@
+\hypertarget{_accel_stepper_8h_source}{}\doxysection{Accel\+Stepper.\+h}
+\label{_accel_stepper_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AccelStepper/src/AccelStepper.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AccelStepper/src/AccelStepper.h}}
+\mbox{\hyperlink{_accel_stepper_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// AccelStepper.h}}
+\DoxyCodeLine{2 \textcolor{comment}{//}}
+\DoxyCodeLine{267 \textcolor{comment}{}\textcolor{comment}{// Copyright (C) 2009-\/2020 Mike McCauley}}
+\DoxyCodeLine{268 \textcolor{comment}{// \$Id: AccelStepper.h,v 1.28 2020/04/20 00:15:03 mikem Exp mikem \$}}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270 \textcolor{preprocessor}{\#ifndef AccelStepper\_h}}
+\DoxyCodeLine{271 \textcolor{preprocessor}{\#define AccelStepper\_h}}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{273 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{274 \textcolor{preprocessor}{\#if ARDUINO >= 100}}
+\DoxyCodeLine{275 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{276 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{277 \textcolor{preprocessor}{\#include <WProgram.h>}}
+\DoxyCodeLine{278 \textcolor{preprocessor}{\#include <wiring.h>}}
+\DoxyCodeLine{279 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{281 \textcolor{comment}{// These defs cause trouble on some versions of Arduino}}
+\DoxyCodeLine{282 \textcolor{preprocessor}{\#undef round}}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{284 \textcolor{comment}{// Use the system yield() whenever possoible, since some platforms require it for housekeeping, especially}}
+\DoxyCodeLine{285 \textcolor{comment}{// ESP8266}}
+\DoxyCodeLine{286 \textcolor{preprocessor}{\#if (defined(ARDUINO) \&\& ARDUINO >= 155) || defined(ESP8266)}}
+\DoxyCodeLine{287 \textcolor{preprocessor}{ \#define YIELD yield();}}
+\DoxyCodeLine{288 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{289 \textcolor{preprocessor}{ \#define YIELD}}
+\DoxyCodeLine{290 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{291 }
+\DoxyCodeLine{337 \textcolor{keyword}{class }\mbox{\hyperlink{class_accel_stepper}{AccelStepper}}}
+\DoxyCodeLine{338 \{}
+\DoxyCodeLine{339 \textcolor{keyword}{public}:}
+\DoxyCodeLine{344     \textcolor{keyword}{typedef} \textcolor{keyword}{enum}}
+\DoxyCodeLine{345     \{}
+\DoxyCodeLine{346     \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5af5bb99ad9d67ad2d85f840e3abcfe068}{FUNCTION}}  = 0, }
+\DoxyCodeLine{347     \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5ac3523e4cf6763ba518d16fec3708ef23}{DRIVER}}    = 1, }
+\DoxyCodeLine{348     \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5a62a305b52f749ff8c89138273fbb012d}{FULL2WIRE}} = 2, }
+\DoxyCodeLine{349     \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5a0b8eea5cf0f8ce70b1959d2977ccc996}{FULL3WIRE}} = 3, }
+\DoxyCodeLine{350         \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5adedd394a375190a3df8d4519c0d4dc2f}{FULL4WIRE}} = 4, }
+\DoxyCodeLine{351     \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5a00c2387a5af43d8e97639699ab7a5c7f}{HALF3WIRE}} = 6, }
+\DoxyCodeLine{352     \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5aecc0900c55b777d2e885581b8c434b07}{HALF4WIRE}} = 8  }
+\DoxyCodeLine{353     \} \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5}{MotorInterfaceType}};}
+\DoxyCodeLine{354 }
+\DoxyCodeLine{386     \mbox{\hyperlink{class_accel_stepper_a3bc75bd6571b98a6177838ca81ac39ab}{AccelStepper}}(uint8\_t interface = \mbox{\hyperlink{class_accel_stepper_a73bdecf1273d98d8c5fbcb764cabeea5adedd394a375190a3df8d4519c0d4dc2f}{AccelStepper::FULL4WIRE}}, uint8\_t pin1 = 2, uint8\_t pin2 = 3, uint8\_t pin3 = 4, uint8\_t pin4 = 5, \textcolor{keywordtype}{bool} enable = \textcolor{keyword}{true});}
+\DoxyCodeLine{387 }
+\DoxyCodeLine{396     \mbox{\hyperlink{class_accel_stepper_a3bc75bd6571b98a6177838ca81ac39ab}{AccelStepper}}(\textcolor{keywordtype}{void} (*forward)(), \textcolor{keywordtype}{void} (*backward)());}
+\DoxyCodeLine{397     }
+\DoxyCodeLine{404     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_ace236ede35f87c63d18da25810ec9736}{moveTo}}(\textcolor{keywordtype}{long} absolute); }
+\DoxyCodeLine{405 }
+\DoxyCodeLine{409     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_a68942c66e78fb7f7b5f0cdade6eb7f06}{move}}(\textcolor{keywordtype}{long} relative);}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{417     \textcolor{keywordtype}{boolean} \mbox{\hyperlink{class_accel_stepper_a608b2395b64ac15451d16d0371fe13ce}{run}}();}
+\DoxyCodeLine{418 }
+\DoxyCodeLine{423     \textcolor{keywordtype}{boolean} \mbox{\hyperlink{class_accel_stepper_aa4a6bdf99f698284faaeb5542b0b7514}{runSpeed}}();}
+\DoxyCodeLine{424 }
+\DoxyCodeLine{432     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_abee8d466229b87accba33d6ec929c18f}{setMaxSpeed}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{class_accel_stepper_a4f0989d0ae264e7eadfe1fa720769fb6}{speed}});}
+\DoxyCodeLine{433 }
+\DoxyCodeLine{437     \textcolor{keywordtype}{float}   \mbox{\hyperlink{class_accel_stepper_a6123a1dfb4495d8bd2646288eae60d7f}{maxSpeed}}();}
+\DoxyCodeLine{438 }
+\DoxyCodeLine{443     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_adfb19e3cd2a028a1fe78131787604fd1}{setAcceleration}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{class_accel_stepper_a8b76f1ae6a49d2c2887b9fea30b8d84f}{acceleration}});}
+\DoxyCodeLine{444 }
+\DoxyCodeLine{448     \textcolor{keywordtype}{float}   \mbox{\hyperlink{class_accel_stepper_a8b76f1ae6a49d2c2887b9fea30b8d84f}{acceleration}}();}
+\DoxyCodeLine{449     }
+\DoxyCodeLine{457     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_ae79c49ad69d5ccc9da0ee691fa4ca235}{setSpeed}}(\textcolor{keywordtype}{float} \mbox{\hyperlink{class_accel_stepper_a4f0989d0ae264e7eadfe1fa720769fb6}{speed}});}
+\DoxyCodeLine{458 }
+\DoxyCodeLine{461     \textcolor{keywordtype}{float}   \mbox{\hyperlink{class_accel_stepper_a4f0989d0ae264e7eadfe1fa720769fb6}{speed}}();}
+\DoxyCodeLine{462 }
+\DoxyCodeLine{466     \textcolor{keywordtype}{long}    \mbox{\hyperlink{class_accel_stepper_a748665c3962e66fbc0e9373eb14c69c1}{distanceToGo}}();}
+\DoxyCodeLine{467 }
+\DoxyCodeLine{471     \textcolor{keywordtype}{long}    \mbox{\hyperlink{class_accel_stepper_a96685e0945b7cf75d5959da679cd911e}{targetPosition}}();}
+\DoxyCodeLine{472 }
+\DoxyCodeLine{476     \textcolor{keywordtype}{long}    \mbox{\hyperlink{class_accel_stepper_a5dce13ab2a1b02b8f443318886bf6fc5}{currentPosition}}();  }
+\DoxyCodeLine{477 }
+\DoxyCodeLine{485     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_a9d917f014317fb9d3b5dc14e66f6c689}{setCurrentPosition}}(\textcolor{keywordtype}{long} position);  }
+\DoxyCodeLine{486     }
+\DoxyCodeLine{490     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_a344f58fef8cc34ac5aa75ba4b665d21c}{runToPosition}}();}
+\DoxyCodeLine{491 }
+\DoxyCodeLine{498     \textcolor{keywordtype}{boolean} \mbox{\hyperlink{class_accel_stepper_a9270d20336e76ac1fd5bcd5b9c34f301}{runSpeedToPosition}}();}
+\DoxyCodeLine{499 }
+\DoxyCodeLine{504     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_a176c5d2e4c2f21e9e92b12e39a6f0e67}{runToNewPosition}}(\textcolor{keywordtype}{long} position);}
+\DoxyCodeLine{505 }
+\DoxyCodeLine{508     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_accel_stepper_a638817b85aed9d5cd15c76a76c00aced}{stop}}();}
+\DoxyCodeLine{509 }
+\DoxyCodeLine{517     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_a3591e29a236e2935afd7f64ff6c22006}{disableOutputs}}();}
+\DoxyCodeLine{518 }
+\DoxyCodeLine{522     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_aa279a50d30d0413f570c692cff071643}{enableOutputs}}();}
+\DoxyCodeLine{523 }
+\DoxyCodeLine{528     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_af4d3818e691dad5dc518308796ccf154}{setMinPulseWidth}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} minWidth);}
+\DoxyCodeLine{529 }
+\DoxyCodeLine{537     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_a56a81c5f00d02ca19646718e88e974c0}{setEnablePin}}(uint8\_t enablePin = 0xff);}
+\DoxyCodeLine{538 }
+\DoxyCodeLine{543     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_ac62cae590c2f9c303519a3a1c4adc8ab}{setPinsInverted}}(\textcolor{keywordtype}{bool} directionInvert = \textcolor{keyword}{false}, \textcolor{keywordtype}{bool} stepInvert = \textcolor{keyword}{false}, \textcolor{keywordtype}{bool} enableInvert = \textcolor{keyword}{false});}
+\DoxyCodeLine{544 }
+\DoxyCodeLine{551     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_accel_stepper_ac62cae590c2f9c303519a3a1c4adc8ab}{setPinsInverted}}(\textcolor{keywordtype}{bool} pin1Invert, \textcolor{keywordtype}{bool} pin2Invert, \textcolor{keywordtype}{bool} pin3Invert, \textcolor{keywordtype}{bool} pin4Invert, \textcolor{keywordtype}{bool} enableInvert);}
+\DoxyCodeLine{552 }
+\DoxyCodeLine{555     \textcolor{keywordtype}{bool}    \mbox{\hyperlink{class_accel_stepper_a3a60cc0b962f8ceb81ee1e6f36443ceb}{isRunning}}();}
+\DoxyCodeLine{556 }
+\DoxyCodeLine{558     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_accel_stepper_a89c4c8de0c983e7a59de6a959481aff1}{\string~AccelStepper}}() \{\};}
+\DoxyCodeLine{559 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{560 }
+\DoxyCodeLine{563     \textcolor{keyword}{typedef} \textcolor{keyword}{enum}}
+\DoxyCodeLine{564     \{}
+\DoxyCodeLine{565     \mbox{\hyperlink{class_accel_stepper_a7468f91a925c689c3ba250f8d074d228a6959a4549f734bd771d418f995ba4fb4}{DIRECTION\_CCW}} = 0,  }
+\DoxyCodeLine{566         \mbox{\hyperlink{class_accel_stepper_a7468f91a925c689c3ba250f8d074d228ad604e0047f7cb47662c5a1cf6999337c}{DIRECTION\_CW}}  = 1   }
+\DoxyCodeLine{567     \} \mbox{\hyperlink{class_accel_stepper_a7468f91a925c689c3ba250f8d074d228}{Direction}};}
+\DoxyCodeLine{568 }
+\DoxyCodeLine{578     \textcolor{keyword}{virtual} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}  \mbox{\hyperlink{class_accel_stepper_aab5944f43f869675958939c421bd9a01}{computeNewSpeed}}();}
+\DoxyCodeLine{579 }
+\DoxyCodeLine{585     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_af3c2516b6ce7c1ecbc2004107bb2a9ce}{setOutputPins}}(uint8\_t mask);}
+\DoxyCodeLine{586 }
+\DoxyCodeLine{592     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{593     }
+\DoxyCodeLine{597     \textcolor{keywordtype}{long}   \mbox{\hyperlink{class_accel_stepper_af4908b53e1821f0a6d2dab509257b3e6}{stepForward}}();}
+\DoxyCodeLine{598 }
+\DoxyCodeLine{602     \textcolor{keywordtype}{long}   \mbox{\hyperlink{class_accel_stepper_af8abc9ede47286fa33b518e0bf297c6a}{stepBackward}}();}
+\DoxyCodeLine{603 }
+\DoxyCodeLine{607     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_aa2913db789e6fa05756579ff82fe6e7e}{step0}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{608 }
+\DoxyCodeLine{615     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_a63ef416bc039da539294e84a41e7d7dc}{step1}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{616 }
+\DoxyCodeLine{621     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_a674e48a6bf99e7ad1f013c1e4414565a}{step2}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{622 }
+\DoxyCodeLine{628     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_ad73c61aade2e10243dfb02aefa7ab8fd}{step3}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{629 }
+\DoxyCodeLine{635     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_a8910bd9218a54dfb7e2372a6d0bcca0c}{step4}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{636 }
+\DoxyCodeLine{642     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_a4b0faf1ebc0c584ab606c0c0f66986b0}{step6}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{643 }
+\DoxyCodeLine{649     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void}   \mbox{\hyperlink{class_accel_stepper_aa909c6c3fcd3ea4b3ee1aa8b4d0f7e87}{step8}}(\textcolor{keywordtype}{long} \mbox{\hyperlink{class_accel_stepper_a8a419121702399d8ac66df4cc47481f4}{step}});}
+\DoxyCodeLine{650 }
+\DoxyCodeLine{653     \textcolor{keywordtype}{boolean} \mbox{\hyperlink{class_accel_stepper_a35162cdf8ed9a98f98984c177d5ade58}{\_direction}}; \textcolor{comment}{// 1 == CW}}
+\DoxyCodeLine{654     }
+\DoxyCodeLine{657     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}  \mbox{\hyperlink{class_accel_stepper_a744fa74c2e181e75509a34b17c02e984}{\_stepInterval}};}
+\DoxyCodeLine{658 }
+\DoxyCodeLine{659 \textcolor{keyword}{private}:}
+\DoxyCodeLine{662     uint8\_t        \_interface;          \textcolor{comment}{// 0, 1, 2, 4, 8, See MotorInterfaceType}}
+\DoxyCodeLine{663 }
+\DoxyCodeLine{666     uint8\_t        \_pin[4];}
+\DoxyCodeLine{667 }
+\DoxyCodeLine{669     uint8\_t        \_pinInverted[4];}
+\DoxyCodeLine{670 }
+\DoxyCodeLine{672     \textcolor{keywordtype}{long}           \_currentPos;    \textcolor{comment}{// Steps}}
+\DoxyCodeLine{673 }
+\DoxyCodeLine{677     \textcolor{keywordtype}{long}           \_targetPos;     \textcolor{comment}{// Steps}}
+\DoxyCodeLine{678 }
+\DoxyCodeLine{681     \textcolor{keywordtype}{float}          \_speed;         \textcolor{comment}{// Steps per second}}
+\DoxyCodeLine{682 }
+\DoxyCodeLine{684     \textcolor{keywordtype}{float}          \_maxSpeed;}
+\DoxyCodeLine{685 }
+\DoxyCodeLine{688     \textcolor{keywordtype}{float}          \_acceleration;}
+\DoxyCodeLine{689     \textcolor{keywordtype}{float}          \_sqrt\_twoa; \textcolor{comment}{// Precomputed sqrt(2*\_acceleration)}}
+\DoxyCodeLine{690 }
+\DoxyCodeLine{692     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long}  \_lastStepTime;}
+\DoxyCodeLine{693 }
+\DoxyCodeLine{695     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int}   \_minPulseWidth;}
+\DoxyCodeLine{696 }
+\DoxyCodeLine{699 }
+\DoxyCodeLine{702 }
+\DoxyCodeLine{704     \textcolor{keywordtype}{bool}           \_enableInverted;}
+\DoxyCodeLine{705 }
+\DoxyCodeLine{707     uint8\_t        \_enablePin;}
+\DoxyCodeLine{708 }
+\DoxyCodeLine{710     void (*\_forward)();}
+\DoxyCodeLine{711 }
+\DoxyCodeLine{713     void (*\_backward)();}
+\DoxyCodeLine{714 }
+\DoxyCodeLine{716     \textcolor{keywordtype}{long} \_n;}
+\DoxyCodeLine{717 }
+\DoxyCodeLine{719     \textcolor{keywordtype}{float} \_c0;}
+\DoxyCodeLine{720 }
+\DoxyCodeLine{722     \textcolor{keywordtype}{float} \_cn;}
+\DoxyCodeLine{723 }
+\DoxyCodeLine{725     \textcolor{keywordtype}{float} \_cmin; \textcolor{comment}{// at max speed}}
+\DoxyCodeLine{726 }
+\DoxyCodeLine{727 \};}
+\DoxyCodeLine{728 }
+\DoxyCodeLine{731 }
+\DoxyCodeLine{736 }
+\DoxyCodeLine{741 }
+\DoxyCodeLine{745 }
+\DoxyCodeLine{750 }
+\DoxyCodeLine{754 }
+\DoxyCodeLine{758 }
+\DoxyCodeLine{763 }
+\DoxyCodeLine{767 }
+\DoxyCodeLine{773 }
+\DoxyCodeLine{777 }
+\DoxyCodeLine{782 }
+\DoxyCodeLine{783 \textcolor{preprocessor}{\#endif }}
+
+\end{DoxyCode}

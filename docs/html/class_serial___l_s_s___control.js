@@ -12,10 +12,10 @@ var class_serial___l_s_s___control =
     [ "SerialConnect", "class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf", null ],
     [ "SerialDisconnect", "class_serial___l_s_s___control.html#ac0ee13ad01d6f5c360041a07360b4fdd", null ],
     [ "baudrateIndex", "class_serial___l_s_s___control.html#a23a5a0d945562614251945b844d2eaf8", null ],
-    [ "detectedPortNames", "class_serial___l_s_s___control.html#a31aba7e41844967c4ab33df2679ba314", null ],
     [ "portIndex", "class_serial___l_s_s___control.html#abc759bf96ddc09f6265e9429174a5f8d", null ],
     [ "BaudRate", "class_serial___l_s_s___control.html#a17d82692fba7d9b060b17255a2ffc3bd", null ],
     [ "COM_NAME", "class_serial___l_s_s___control.html#a4f46553fff3491265f2c8d9bb74d8812", null ],
+    [ "detectedPortNames", "class_serial___l_s_s___control.html#a31aba7e41844967c4ab33df2679ba314", null ],
     [ "IsConnected", "class_serial___l_s_s___control.html#a60bdbd6ce656e87f3b4e0f4e368db653", null ],
     [ "possibleBaudratesStringArray", "class_serial___l_s_s___control.html#a3844805590df9b0fca36f4cb1f4c1bf9", null ]
 ];

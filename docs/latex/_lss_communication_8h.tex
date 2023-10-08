@@ -1,0 +1,460 @@
+\hypertarget{_lss_communication_8h}{}\doxysection{C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\+Lss\+Communication.h File Reference}
+\label{_lss_communication_8h}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssCommunication.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssCommunication.h}}
+{\ttfamily \#include $<$WProgram.\+h$>$}\newline
+{\ttfamily \#include $<$pins\+\_\+arduino.\+h$>$}\newline
+{\ttfamily \#include $<$WString.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Lynxmotion\+LSS-\/\+Config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}aggregate.\+h\char`\"{}}\newline
+Include dependency graph for Lss\+Communication.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lss_communication_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lss_communication_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a5eb1ecd14824e511671863b1557d665b}{Lss\+Broadcast\+Address}}~(254)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(n)~(((unsigned long)1)$<$$<$n)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a2dd9d61480418a3483a96280acc67b2e}{Lss\+Invalid}}~0
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}{Lss\+Action}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(1)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(2)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ac1024b44efcab4562ddbaf96260086d2}{Lss\+Config}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(3)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}{Lss\+Command\+Modes}}~(\mbox{\hyperlink{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}{Lss\+Action}}$\vert$\mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}}$\vert$\mbox{\hyperlink{_lss_communication_8h_ac1024b44efcab4562ddbaf96260086d2}{Lss\+Config}})
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}{Lss\+Degrees}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(4)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a277ff286493ce769a64ef82e2d2219a4}{Lss\+RPM}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(5)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_aa078a7889e69eac6c320c454a1a75069}{Lss\+Pulse}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(6)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}{Lss\+Units}}~(\mbox{\hyperlink{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}{Lss\+Degrees}}$\vert$\mbox{\hyperlink{_lss_communication_8h_a277ff286493ce769a64ef82e2d2219a4}{Lss\+RPM}}$\vert$\mbox{\hyperlink{_lss_communication_8h_aa078a7889e69eac6c320c454a1a75069}{Lss\+Pulse}})
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ab9b5dbae76a639d9bfb798c0cf35cd39}{Lss\+Timed\+Move}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(11)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a5bf0ebe5cce359377357533557cfe4b9}{Lss\+Speed}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(15)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a837b0971a58316d69ff7b52768bb98b2}{Lss\+Speed\+Time}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(32)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_af0f7aa197ced4e01462699d03183537f}{Lss\+Modifiers}}~(\mbox{\hyperlink{_lss_communication_8h_ab9b5dbae76a639d9bfb798c0cf35cd39}{Lss\+Timed\+Move}})
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ac4d5281554cfe3c2eeb66b557a48602c}{Lss\+ID}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(7)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ac25b45e30ab6e7f1aa6c660569f452f2}{Lss\+Baud\+Rate}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(8)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a85c77c29d550bd33e2c9b15832584b05}{Lss\+Limp}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(9)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ae62cba6321454124691380570896e1a7}{Lss\+Halt\+And\+Hold}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(10)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a0d42953866f2ef708181e4d1c340b7df}{Lss\+Move}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(12)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ab369ef86c533a5b059cff902f116050a}{Lss\+Position}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(13)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_abcd565557a3e54334a4eaf8719dfa172}{Lss\+Target}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(14)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a2e5048e4ede6b4dd4c4e2f2f5b46fa9e}{Lss\+Wheel\+Mode}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(16)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a5d75d5ba57f36392744834dfdd7d16d7}{Lss\+Max\+Speed}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(17)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ad0a51ee965c48f42210c4a91f92dc237}{Lss\+Angular\+Range}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(18)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a2f9572c5da3f57c988c64d3f6abfbeba}{Lss\+Angular\+Stiffness}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(19)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a21bfd0055fa4b8ce4372c6f29e6363cb}{Lss\+Origin\+Offset}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(20)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ab2b4dff218dc99ccffc6162c4f005db0}{Lss\+Gyre\+Direction}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(21)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a8e72716f8787cb738a0476e6d30786b6}{Lss\+LEDColor}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(22)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_aecf7f88b3d82d60f1ef37026fb8fb2d9}{Lss\+Current}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(23)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ae477b30f9beae06b59fbdf61330ec42f}{Lss\+Voltage}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(24)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a63531139e7fd87a586892fd825b65be6}{Lss\+Temperature}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(25)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ad9048ec5f93a0e2691a7b692254af5ac}{Lss\+First\+Position}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(26)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_aff18679b0c5a3678ed0bfff590f15c62}{Lss\+Default}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(27)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a403156a73e532b6f3be31f09a6954a8d}{Lss\+Confirm}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(28)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a33f95c7f301080150caf42c1110f0233}{Lss\+Analog}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(29)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_acb1675a122d8ca6a129e423b6f8aba86}{Lss\+Reset}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(30)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a740d9c958f52f9c39cc1e1347ce13c46}{Lss\+Model}}~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(31)
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_ab9f8026ca99fe13d33dda4cac3ccbd4b}{Lss\+Command\+Set}}~((0xffffffff \& $\sim$(\mbox{\hyperlink{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}{Lss\+Command\+Modes}}$\vert$\mbox{\hyperlink{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}{Lss\+Units}}$\vert$\mbox{\hyperlink{_lss_communication_8h_af0f7aa197ced4e01462699d03183537f}{Lss\+Modifiers}})) $\vert$ \mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}})
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_afd70bd7ef035f83984145f29bf874330}{Lss\+Config\+Command\+Set}}
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8h_a9f4d9d35b675fe156f8e51224251b499}{Lss\+Async\+Command\+Set}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned long \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298}{Lss\+Colors}} \{ \newline
+\mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a52c573db2285c42774e223064db05cf9}{Lss\+Led\+Off}} = 0
+, \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298addf0646880e69cec4fd52bfcdc854ce2}{Lss\+Red}} = 1
+, \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298adcd38adf6991615152e66e6d70742c47}{Lss\+Green}} = 2
+, \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a9eae240cf5a9dd0e796fe6b3bdfdb7e1}{Lss\+Blue}} = 3
+, \newline
+\mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a55ce6635330a889a938a055657000287}{Lss\+Yellow}} = 4
+, \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a0c6af6c7a9f509930b056c544b527164}{Lss\+Cyan}} = 5
+, \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a7a8bb4e4b1523cd1974981e4a6ca4e39}{Lss\+Magenta}} = 6
+, \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a8def70c485a2e6bc456ec6842136b9c0}{Lss\+White}} = 7
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}\label{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}} 
+\index{LssCommunication.h@{LssCommunication.h}!BIT@{BIT}}
+\index{BIT@{BIT}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{BIT}{BIT}}
+{\footnotesize\ttfamily \#define BIT(\begin{DoxyParamCaption}\item[{}]{n }\end{DoxyParamCaption})~(((unsigned long)1)$<$$<$n)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}\label{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssAction@{LssAction}}
+\index{LssAction@{LssAction}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssAction}{LssAction}}
+{\footnotesize\ttfamily \#define Lss\+Action~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(1)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a33f95c7f301080150caf42c1110f0233}\label{_lss_communication_8h_a33f95c7f301080150caf42c1110f0233}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssAnalog@{LssAnalog}}
+\index{LssAnalog@{LssAnalog}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssAnalog}{LssAnalog}}
+{\footnotesize\ttfamily \#define Lss\+Analog~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(29)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ad0a51ee965c48f42210c4a91f92dc237}\label{_lss_communication_8h_ad0a51ee965c48f42210c4a91f92dc237}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssAngularRange@{LssAngularRange}}
+\index{LssAngularRange@{LssAngularRange}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssAngularRange}{LssAngularRange}}
+{\footnotesize\ttfamily \#define Lss\+Angular\+Range~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(18)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a2f9572c5da3f57c988c64d3f6abfbeba}\label{_lss_communication_8h_a2f9572c5da3f57c988c64d3f6abfbeba}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssAngularStiffness@{LssAngularStiffness}}
+\index{LssAngularStiffness@{LssAngularStiffness}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssAngularStiffness}{LssAngularStiffness}}
+{\footnotesize\ttfamily \#define Lss\+Angular\+Stiffness~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(19)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a9f4d9d35b675fe156f8e51224251b499}\label{_lss_communication_8h_a9f4d9d35b675fe156f8e51224251b499}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssAsyncCommandSet@{LssAsyncCommandSet}}
+\index{LssAsyncCommandSet@{LssAsyncCommandSet}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssAsyncCommandSet}{LssAsyncCommandSet}}
+{\footnotesize\ttfamily \#define Lss\+Async\+Command\+Set}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{       ( \(\backslash\)}
+\DoxyCodeLine{       LssQuery \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_ab369ef86c533a5b059cff902f116050a}{LssPosition}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_abcd565557a3e54334a4eaf8719dfa172}{LssTarget}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_a5d75d5ba57f36392744834dfdd7d16d7}{LssMaxSpeed}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_ae477b30f9beae06b59fbdf61330ec42f}{LssVoltage}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_aecf7f88b3d82d60f1ef37026fb8fb2d9}{LssCurrent}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_afd70bd7ef035f83984145f29bf874330}{LssConfigCommandSet}} )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_lss_communication_8h_ac25b45e30ab6e7f1aa6c660569f452f2}\label{_lss_communication_8h_ac25b45e30ab6e7f1aa6c660569f452f2}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssBaudRate@{LssBaudRate}}
+\index{LssBaudRate@{LssBaudRate}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssBaudRate}{LssBaudRate}}
+{\footnotesize\ttfamily \#define Lss\+Baud\+Rate~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(8)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a5eb1ecd14824e511671863b1557d665b}\label{_lss_communication_8h_a5eb1ecd14824e511671863b1557d665b}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssBroadcastAddress@{LssBroadcastAddress}}
+\index{LssBroadcastAddress@{LssBroadcastAddress}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssBroadcastAddress}{LssBroadcastAddress}}
+{\footnotesize\ttfamily \#define Lss\+Broadcast\+Address~(254)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}\label{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssCommandModes@{LssCommandModes}}
+\index{LssCommandModes@{LssCommandModes}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssCommandModes}{LssCommandModes}}
+{\footnotesize\ttfamily \#define Lss\+Command\+Modes~(\mbox{\hyperlink{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}{Lss\+Action}}$\vert$\mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}}$\vert$\mbox{\hyperlink{_lss_communication_8h_ac1024b44efcab4562ddbaf96260086d2}{Lss\+Config}})}
+
+\mbox{\Hypertarget{_lss_communication_8h_ab9f8026ca99fe13d33dda4cac3ccbd4b}\label{_lss_communication_8h_ab9f8026ca99fe13d33dda4cac3ccbd4b}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssCommandSet@{LssCommandSet}}
+\index{LssCommandSet@{LssCommandSet}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssCommandSet}{LssCommandSet}}
+{\footnotesize\ttfamily \#define Lss\+Command\+Set~((0xffffffff \& $\sim$(\mbox{\hyperlink{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}{Lss\+Command\+Modes}}$\vert$\mbox{\hyperlink{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}{Lss\+Units}}$\vert$\mbox{\hyperlink{_lss_communication_8h_af0f7aa197ced4e01462699d03183537f}{Lss\+Modifiers}})) $\vert$ \mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}})}
+
+\mbox{\Hypertarget{_lss_communication_8h_ac1024b44efcab4562ddbaf96260086d2}\label{_lss_communication_8h_ac1024b44efcab4562ddbaf96260086d2}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssConfig@{LssConfig}}
+\index{LssConfig@{LssConfig}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssConfig}{LssConfig}}
+{\footnotesize\ttfamily \#define Lss\+Config~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(3)}
+
+\mbox{\Hypertarget{_lss_communication_8h_afd70bd7ef035f83984145f29bf874330}\label{_lss_communication_8h_afd70bd7ef035f83984145f29bf874330}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssConfigCommandSet@{LssConfigCommandSet}}
+\index{LssConfigCommandSet@{LssConfigCommandSet}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssConfigCommandSet}{LssConfigCommandSet}}
+{\footnotesize\ttfamily \#define Lss\+Config\+Command\+Set}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{       ( \(\backslash\)}
+\DoxyCodeLine{       LssWheelMode \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_a5d75d5ba57f36392744834dfdd7d16d7}{LssMaxSpeed}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_ad0a51ee965c48f42210c4a91f92dc237}{LssAngularRange}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_a2f9572c5da3f57c988c64d3f6abfbeba}{LssAngularStiffness}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_a8e72716f8787cb738a0476e6d30786b6}{LssLEDColor}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_ac25b45e30ab6e7f1aa6c660569f452f2}{LssBaudRate}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_ab2b4dff218dc99ccffc6162c4f005db0}{LssGyreDirection}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_a21bfd0055fa4b8ce4372c6f29e6363cb}{LssOriginOffset}} \(\backslash\)}
+\DoxyCodeLine{      |\mbox{\hyperlink{_lss_communication_8h_ac4d5281554cfe3c2eeb66b557a48602c}{LssID}} )}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{_lss_communication_8h_a403156a73e532b6f3be31f09a6954a8d}\label{_lss_communication_8h_a403156a73e532b6f3be31f09a6954a8d}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssConfirm@{LssConfirm}}
+\index{LssConfirm@{LssConfirm}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssConfirm}{LssConfirm}}
+{\footnotesize\ttfamily \#define Lss\+Confirm~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(28)}
+
+\mbox{\Hypertarget{_lss_communication_8h_aecf7f88b3d82d60f1ef37026fb8fb2d9}\label{_lss_communication_8h_aecf7f88b3d82d60f1ef37026fb8fb2d9}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssCurrent@{LssCurrent}}
+\index{LssCurrent@{LssCurrent}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssCurrent}{LssCurrent}}
+{\footnotesize\ttfamily \#define Lss\+Current~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(23)}
+
+\mbox{\Hypertarget{_lss_communication_8h_aff18679b0c5a3678ed0bfff590f15c62}\label{_lss_communication_8h_aff18679b0c5a3678ed0bfff590f15c62}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssDefault@{LssDefault}}
+\index{LssDefault@{LssDefault}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssDefault}{LssDefault}}
+{\footnotesize\ttfamily \#define Lss\+Default~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(27)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}\label{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssDegrees@{LssDegrees}}
+\index{LssDegrees@{LssDegrees}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssDegrees}{LssDegrees}}
+{\footnotesize\ttfamily \#define Lss\+Degrees~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(4)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ad9048ec5f93a0e2691a7b692254af5ac}\label{_lss_communication_8h_ad9048ec5f93a0e2691a7b692254af5ac}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssFirstPosition@{LssFirstPosition}}
+\index{LssFirstPosition@{LssFirstPosition}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssFirstPosition}{LssFirstPosition}}
+{\footnotesize\ttfamily \#define Lss\+First\+Position~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(26)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ab2b4dff218dc99ccffc6162c4f005db0}\label{_lss_communication_8h_ab2b4dff218dc99ccffc6162c4f005db0}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssGyreDirection@{LssGyreDirection}}
+\index{LssGyreDirection@{LssGyreDirection}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssGyreDirection}{LssGyreDirection}}
+{\footnotesize\ttfamily \#define Lss\+Gyre\+Direction~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(21)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ae62cba6321454124691380570896e1a7}\label{_lss_communication_8h_ae62cba6321454124691380570896e1a7}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssHaltAndHold@{LssHaltAndHold}}
+\index{LssHaltAndHold@{LssHaltAndHold}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssHaltAndHold}{LssHaltAndHold}}
+{\footnotesize\ttfamily \#define Lss\+Halt\+And\+Hold~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(10)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ac4d5281554cfe3c2eeb66b557a48602c}\label{_lss_communication_8h_ac4d5281554cfe3c2eeb66b557a48602c}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssID@{LssID}}
+\index{LssID@{LssID}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssID}{LssID}}
+{\footnotesize\ttfamily \#define Lss\+ID~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(7)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a2dd9d61480418a3483a96280acc67b2e}\label{_lss_communication_8h_a2dd9d61480418a3483a96280acc67b2e}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssInvalid@{LssInvalid}}
+\index{LssInvalid@{LssInvalid}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssInvalid}{LssInvalid}}
+{\footnotesize\ttfamily \#define Lss\+Invalid~0}
+
+\mbox{\Hypertarget{_lss_communication_8h_a8e72716f8787cb738a0476e6d30786b6}\label{_lss_communication_8h_a8e72716f8787cb738a0476e6d30786b6}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssLEDColor@{LssLEDColor}}
+\index{LssLEDColor@{LssLEDColor}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssLEDColor}{LssLEDColor}}
+{\footnotesize\ttfamily \#define Lss\+LEDColor~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(22)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a85c77c29d550bd33e2c9b15832584b05}\label{_lss_communication_8h_a85c77c29d550bd33e2c9b15832584b05}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssLimp@{LssLimp}}
+\index{LssLimp@{LssLimp}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssLimp}{LssLimp}}
+{\footnotesize\ttfamily \#define Lss\+Limp~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(9)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a5d75d5ba57f36392744834dfdd7d16d7}\label{_lss_communication_8h_a5d75d5ba57f36392744834dfdd7d16d7}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssMaxSpeed@{LssMaxSpeed}}
+\index{LssMaxSpeed@{LssMaxSpeed}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssMaxSpeed}{LssMaxSpeed}}
+{\footnotesize\ttfamily \#define Lss\+Max\+Speed~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(17)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a740d9c958f52f9c39cc1e1347ce13c46}\label{_lss_communication_8h_a740d9c958f52f9c39cc1e1347ce13c46}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssModel@{LssModel}}
+\index{LssModel@{LssModel}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssModel}{LssModel}}
+{\footnotesize\ttfamily \#define Lss\+Model~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(31)}
+
+\mbox{\Hypertarget{_lss_communication_8h_af0f7aa197ced4e01462699d03183537f}\label{_lss_communication_8h_af0f7aa197ced4e01462699d03183537f}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssModifiers@{LssModifiers}}
+\index{LssModifiers@{LssModifiers}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssModifiers}{LssModifiers}}
+{\footnotesize\ttfamily \#define Lss\+Modifiers~(\mbox{\hyperlink{_lss_communication_8h_ab9b5dbae76a639d9bfb798c0cf35cd39}{Lss\+Timed\+Move}})}
+
+\mbox{\Hypertarget{_lss_communication_8h_a0d42953866f2ef708181e4d1c340b7df}\label{_lss_communication_8h_a0d42953866f2ef708181e4d1c340b7df}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssMove@{LssMove}}
+\index{LssMove@{LssMove}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssMove}{LssMove}}
+{\footnotesize\ttfamily \#define Lss\+Move~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(12)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a21bfd0055fa4b8ce4372c6f29e6363cb}\label{_lss_communication_8h_a21bfd0055fa4b8ce4372c6f29e6363cb}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssOriginOffset@{LssOriginOffset}}
+\index{LssOriginOffset@{LssOriginOffset}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssOriginOffset}{LssOriginOffset}}
+{\footnotesize\ttfamily \#define Lss\+Origin\+Offset~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(20)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ab369ef86c533a5b059cff902f116050a}\label{_lss_communication_8h_ab369ef86c533a5b059cff902f116050a}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssPosition@{LssPosition}}
+\index{LssPosition@{LssPosition}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssPosition}{LssPosition}}
+{\footnotesize\ttfamily \#define Lss\+Position~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(13)}
+
+\mbox{\Hypertarget{_lss_communication_8h_aa078a7889e69eac6c320c454a1a75069}\label{_lss_communication_8h_aa078a7889e69eac6c320c454a1a75069}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssPulse@{LssPulse}}
+\index{LssPulse@{LssPulse}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssPulse}{LssPulse}}
+{\footnotesize\ttfamily \#define Lss\+Pulse~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(6)}
+
+\mbox{\Hypertarget{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}\label{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssQuery@{LssQuery}}
+\index{LssQuery@{LssQuery}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssQuery}{LssQuery}}
+{\footnotesize\ttfamily \#define Lss\+Query~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(2)}
+
+\mbox{\Hypertarget{_lss_communication_8h_acb1675a122d8ca6a129e423b6f8aba86}\label{_lss_communication_8h_acb1675a122d8ca6a129e423b6f8aba86}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssReset@{LssReset}}
+\index{LssReset@{LssReset}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssReset}{LssReset}}
+{\footnotesize\ttfamily \#define Lss\+Reset~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(30)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a277ff286493ce769a64ef82e2d2219a4}\label{_lss_communication_8h_a277ff286493ce769a64ef82e2d2219a4}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssRPM@{LssRPM}}
+\index{LssRPM@{LssRPM}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssRPM}{LssRPM}}
+{\footnotesize\ttfamily \#define Lss\+RPM~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(5)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a5bf0ebe5cce359377357533557cfe4b9}\label{_lss_communication_8h_a5bf0ebe5cce359377357533557cfe4b9}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssSpeed@{LssSpeed}}
+\index{LssSpeed@{LssSpeed}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssSpeed}{LssSpeed}}
+{\footnotesize\ttfamily \#define Lss\+Speed~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(15)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a837b0971a58316d69ff7b52768bb98b2}\label{_lss_communication_8h_a837b0971a58316d69ff7b52768bb98b2}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssSpeedTime@{LssSpeedTime}}
+\index{LssSpeedTime@{LssSpeedTime}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssSpeedTime}{LssSpeedTime}}
+{\footnotesize\ttfamily \#define Lss\+Speed\+Time~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(32)}
+
+\mbox{\Hypertarget{_lss_communication_8h_abcd565557a3e54334a4eaf8719dfa172}\label{_lss_communication_8h_abcd565557a3e54334a4eaf8719dfa172}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssTarget@{LssTarget}}
+\index{LssTarget@{LssTarget}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssTarget}{LssTarget}}
+{\footnotesize\ttfamily \#define Lss\+Target~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(14)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a63531139e7fd87a586892fd825b65be6}\label{_lss_communication_8h_a63531139e7fd87a586892fd825b65be6}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssTemperature@{LssTemperature}}
+\index{LssTemperature@{LssTemperature}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssTemperature}{LssTemperature}}
+{\footnotesize\ttfamily \#define Lss\+Temperature~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(25)}
+
+\mbox{\Hypertarget{_lss_communication_8h_ab9b5dbae76a639d9bfb798c0cf35cd39}\label{_lss_communication_8h_ab9b5dbae76a639d9bfb798c0cf35cd39}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssTimedMove@{LssTimedMove}}
+\index{LssTimedMove@{LssTimedMove}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssTimedMove}{LssTimedMove}}
+{\footnotesize\ttfamily \#define Lss\+Timed\+Move~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(11)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}\label{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssUnits@{LssUnits}}
+\index{LssUnits@{LssUnits}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssUnits}{LssUnits}}
+{\footnotesize\ttfamily \#define Lss\+Units~(\mbox{\hyperlink{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}{Lss\+Degrees}}$\vert$\mbox{\hyperlink{_lss_communication_8h_a277ff286493ce769a64ef82e2d2219a4}{Lss\+RPM}}$\vert$\mbox{\hyperlink{_lss_communication_8h_aa078a7889e69eac6c320c454a1a75069}{Lss\+Pulse}})}
+
+\mbox{\Hypertarget{_lss_communication_8h_ae477b30f9beae06b59fbdf61330ec42f}\label{_lss_communication_8h_ae477b30f9beae06b59fbdf61330ec42f}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssVoltage@{LssVoltage}}
+\index{LssVoltage@{LssVoltage}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssVoltage}{LssVoltage}}
+{\footnotesize\ttfamily \#define Lss\+Voltage~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(24)}
+
+\mbox{\Hypertarget{_lss_communication_8h_a2e5048e4ede6b4dd4c4e2f2f5b46fa9e}\label{_lss_communication_8h_a2e5048e4ede6b4dd4c4e2f2f5b46fa9e}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssWheelMode@{LssWheelMode}}
+\index{LssWheelMode@{LssWheelMode}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssWheelMode}{LssWheelMode}}
+{\footnotesize\ttfamily \#define Lss\+Wheel\+Mode~\mbox{\hyperlink{_lss_communication_8h_a3a8ea58898cb58fc96013383d39f482c}{BIT}}(16)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}\label{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssCommands@{LssCommands}}
+\index{LssCommands@{LssCommands}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssCommands}{LssCommands}}
+{\footnotesize\ttfamily typedef unsigned long \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298}} 
+\index{LssCommunication.h@{LssCommunication.h}!LssColors@{LssColors}}
+\index{LssColors@{LssColors}!LssCommunication.h@{LssCommunication.h}}
+\doxysubsubsection{\texorpdfstring{LssColors}{LssColors}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298}{Lss\+Colors}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssLedOff@{LssLedOff}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssLedOff@{LssLedOff}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a52c573db2285c42774e223064db05cf9}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a52c573db2285c42774e223064db05cf9}} 
+Lss\+Led\+Off&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssRed@{LssRed}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssRed@{LssRed}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298addf0646880e69cec4fd52bfcdc854ce2}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298addf0646880e69cec4fd52bfcdc854ce2}} 
+Lss\+Red&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssGreen@{LssGreen}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssGreen@{LssGreen}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298adcd38adf6991615152e66e6d70742c47}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298adcd38adf6991615152e66e6d70742c47}} 
+Lss\+Green&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssBlue@{LssBlue}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssBlue@{LssBlue}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a9eae240cf5a9dd0e796fe6b3bdfdb7e1}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a9eae240cf5a9dd0e796fe6b3bdfdb7e1}} 
+Lss\+Blue&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssYellow@{LssYellow}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssYellow@{LssYellow}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a55ce6635330a889a938a055657000287}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a55ce6635330a889a938a055657000287}} 
+Lss\+Yellow&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssCyan@{LssCyan}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssCyan@{LssCyan}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a0c6af6c7a9f509930b056c544b527164}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a0c6af6c7a9f509930b056c544b527164}} 
+Lss\+Cyan&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssMagenta@{LssMagenta}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssMagenta@{LssMagenta}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a7a8bb4e4b1523cd1974981e4a6ca4e39}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a7a8bb4e4b1523cd1974981e4a6ca4e39}} 
+Lss\+Magenta&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LssWhite@{LssWhite}!LssCommunication.h@{LssCommunication.h}}\index{LssCommunication.h@{LssCommunication.h}!LssWhite@{LssWhite}}}\mbox{\Hypertarget{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a8def70c485a2e6bc456ec6842136b9c0}\label{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a8def70c485a2e6bc456ec6842136b9c0}} 
+Lss\+White&\\
+\hline
+
+\end{DoxyEnumFields}

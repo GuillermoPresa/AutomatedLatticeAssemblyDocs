@@ -1,8 +1,6 @@
 var class_selection_script =
 [
     [ "CheckOnlyOneObjectSelected", "class_selection_script.html#a8ba0bab57ac28d4716e2633142b1c91b", null ],
-    [ "NullSelections", "class_selection_script.html#a8e6f978d6ad09a1fa6b87df54c76d213", null ],
-    [ "SetDefaults", "class_selection_script.html#a780d94caff0a6cc1d03f3e50a81c2b3c", null ],
     [ "ClickedLattice", "class_selection_script.html#adc2ec3d22c84babcf674531d6d7ad325", null ],
     [ "ClickedNode", "class_selection_script.html#a1e3e360788e8cc50752fc1e30c86ab6a", null ],
     [ "ClickedObject", "class_selection_script.html#a3030d3e8c36edb5edddf6527fc2a0d83", null ],

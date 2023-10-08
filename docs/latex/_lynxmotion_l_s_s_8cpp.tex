@@ -1,0 +1,78 @@
+\hypertarget{_lynxmotion_l_s_s_8cpp}{}\doxysection{C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\+Lynxmotion\+LSS.cpp File Reference}
+\label{_lynxmotion_l_s_s_8cpp}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LynxmotionLSS.cpp@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LynxmotionLSS.cpp}}
+{\ttfamily \#include \char`\"{}Lynxmotion\+LSS.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+Include dependency graph for Lynxmotion\+LSS.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lynxmotion_l_s_s_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s_8cpp_ad7de11d3c634816dbcefaa14452cb883}{OSCOPE\+\_\+\+TRIGGER}}(ex)
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s_8cpp_ac3772d0e8afea20e4e089d7d4839e7c9}{SENDIF}}(lssbit)~if((unsent \& lssbit)$>$0) \{ /$\ast$LSS\+\_\+\+LOGGING.\+print(\char`\"{}Send \char`\"{} \#lssbit); LSS\+\_\+\+LOGGING.\+print(\char`\"{}  \char`\"{}); LSS\+\_\+\+LOGGING.\+print(channel-\/$>$txn\+\_\+current);  LSS\+\_\+\+LOGGING.\+print(\char`\"{}  \char`\"{}); LSS\+\_\+\+LOGGING.\+println(is\+Async\+Complete() ? \char`\"{}Complete\char`\"{}\+:\char`\"{}Pending\char`\"{});$\ast$/ mask.\+requested $\vert$= lssbit; Write(\mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}}$\vert$lssbit); \}
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s_8cpp_a84850d5c129cfe86bb6a2a0652bb848f}{DISPATCH}}(bit,  member)~if ((cmd \& bit)$>$0) \{ member = pkt.\+value; mask.\+completed $\vert$= bit; \}
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s_8cpp_a5002aeb277844234218aa37c53ebfa56}{DISPATCH\+\_\+\+CAST}}(bit,  member,  type)~if ((cmd \& bit)$>$0) \{ member = (type)pkt.\+value; mask.\+completed $\vert$= bit; \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_lynxmotion_l_s_s_8cpp_abe0ebe8484f3a5b07d73f7f4c06abc55}{oscope\+\_\+trigger}} (short exception\+\_\+code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Lynx\+Servo\+::\+Statistics}} \mbox{\hyperlink{_lynxmotion_l_s_s_8cpp_a4740428a0357bcb63345d351057db75c}{global\+\_\+servo\+\_\+stats}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_lynxmotion_l_s_s_8cpp_a84850d5c129cfe86bb6a2a0652bb848f}\label{_lynxmotion_l_s_s_8cpp_a84850d5c129cfe86bb6a2a0652bb848f}} 
+\index{LynxmotionLSS.cpp@{LynxmotionLSS.cpp}!DISPATCH@{DISPATCH}}
+\index{DISPATCH@{DISPATCH}!LynxmotionLSS.cpp@{LynxmotionLSS.cpp}}
+\doxysubsubsection{\texorpdfstring{DISPATCH}{DISPATCH}}
+{\footnotesize\ttfamily \#define DISPATCH(\begin{DoxyParamCaption}\item[{}]{bit,  }\item[{}]{member }\end{DoxyParamCaption})~if ((cmd \& bit)$>$0) \{ member = pkt.\+value; mask.\+completed $\vert$= bit; \}}
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s_8cpp_a5002aeb277844234218aa37c53ebfa56}\label{_lynxmotion_l_s_s_8cpp_a5002aeb277844234218aa37c53ebfa56}} 
+\index{LynxmotionLSS.cpp@{LynxmotionLSS.cpp}!DISPATCH\_CAST@{DISPATCH\_CAST}}
+\index{DISPATCH\_CAST@{DISPATCH\_CAST}!LynxmotionLSS.cpp@{LynxmotionLSS.cpp}}
+\doxysubsubsection{\texorpdfstring{DISPATCH\_CAST}{DISPATCH\_CAST}}
+{\footnotesize\ttfamily \#define DISPATCH\+\_\+\+CAST(\begin{DoxyParamCaption}\item[{}]{bit,  }\item[{}]{member,  }\item[{}]{type }\end{DoxyParamCaption})~if ((cmd \& bit)$>$0) \{ member = (type)pkt.\+value; mask.\+completed $\vert$= bit; \}}
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s_8cpp_ad7de11d3c634816dbcefaa14452cb883}\label{_lynxmotion_l_s_s_8cpp_ad7de11d3c634816dbcefaa14452cb883}} 
+\index{LynxmotionLSS.cpp@{LynxmotionLSS.cpp}!OSCOPE\_TRIGGER@{OSCOPE\_TRIGGER}}
+\index{OSCOPE\_TRIGGER@{OSCOPE\_TRIGGER}!LynxmotionLSS.cpp@{LynxmotionLSS.cpp}}
+\doxysubsubsection{\texorpdfstring{OSCOPE\_TRIGGER}{OSCOPE\_TRIGGER}}
+{\footnotesize\ttfamily \#define OSCOPE\+\_\+\+TRIGGER(\begin{DoxyParamCaption}\item[{}]{ex }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s_8cpp_ac3772d0e8afea20e4e089d7d4839e7c9}\label{_lynxmotion_l_s_s_8cpp_ac3772d0e8afea20e4e089d7d4839e7c9}} 
+\index{LynxmotionLSS.cpp@{LynxmotionLSS.cpp}!SENDIF@{SENDIF}}
+\index{SENDIF@{SENDIF}!LynxmotionLSS.cpp@{LynxmotionLSS.cpp}}
+\doxysubsubsection{\texorpdfstring{SENDIF}{SENDIF}}
+{\footnotesize\ttfamily \#define SENDIF(\begin{DoxyParamCaption}\item[{}]{lssbit }\end{DoxyParamCaption})~if((unsent \& lssbit)$>$0) \{ /$\ast$LSS\+\_\+\+LOGGING.\+print(\char`\"{}Send \char`\"{} \#lssbit); LSS\+\_\+\+LOGGING.\+print(\char`\"{}  \char`\"{}); LSS\+\_\+\+LOGGING.\+print(channel-\/$>$txn\+\_\+current);  LSS\+\_\+\+LOGGING.\+print(\char`\"{}  \char`\"{}); LSS\+\_\+\+LOGGING.\+println(is\+Async\+Complete() ? \char`\"{}Complete\char`\"{}\+:\char`\"{}Pending\char`\"{});$\ast$/ mask.\+requested $\vert$= lssbit; Write(\mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{Lss\+Query}}$\vert$lssbit); \}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_lynxmotion_l_s_s_8cpp_abe0ebe8484f3a5b07d73f7f4c06abc55}\label{_lynxmotion_l_s_s_8cpp_abe0ebe8484f3a5b07d73f7f4c06abc55}} 
+\index{LynxmotionLSS.cpp@{LynxmotionLSS.cpp}!oscope\_trigger@{oscope\_trigger}}
+\index{oscope\_trigger@{oscope\_trigger}!LynxmotionLSS.cpp@{LynxmotionLSS.cpp}}
+\doxysubsubsection{\texorpdfstring{oscope\_trigger()}{oscope\_trigger()}}
+{\footnotesize\ttfamily void oscope\+\_\+trigger (\begin{DoxyParamCaption}\item[{short}]{exception\+\_\+code }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_lynxmotion_l_s_s_8cpp_a4740428a0357bcb63345d351057db75c}\label{_lynxmotion_l_s_s_8cpp_a4740428a0357bcb63345d351057db75c}} 
+\index{LynxmotionLSS.cpp@{LynxmotionLSS.cpp}!global\_servo\_stats@{global\_servo\_stats}}
+\index{global\_servo\_stats@{global\_servo\_stats}!LynxmotionLSS.cpp@{LynxmotionLSS.cpp}}
+\doxysubsubsection{\texorpdfstring{global\_servo\_stats}{global\_servo\_stats}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Lynx\+Servo\+::\+Statistics}} global\+\_\+servo\+\_\+stats}
+

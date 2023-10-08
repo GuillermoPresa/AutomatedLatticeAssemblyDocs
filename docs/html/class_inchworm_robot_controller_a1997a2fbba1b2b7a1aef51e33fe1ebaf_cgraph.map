@@ -1,6 +1,5 @@
 <map id="InchwormRobotController.MapNavigationSpace" name="InchwormRobotController.MapNavigationSpace">
-<area shape="rect" id="node1" title=" " alt="" coords="5,47,176,89"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3" title=" " alt="" coords="233,29,340,56"/>
-<area shape="rect" id="node4" href="$class_illa_graph.html#a28ffcb05dc76848f758318c41d1b49d0" title=" " alt="" coords="224,80,349,107"/>
-<area shape="rect" id="node3" href="$class_illa_graph_node.html#a3f4e900afbf7c330eeb9849944d149c6" title=" " alt="" coords="397,29,535,56"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,29,176,71"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3" title=" " alt="" coords="224,37,331,63"/>
+<area shape="rect" id="node3" href="$class_illa_graph_node.html#a3f4e900afbf7c330eeb9849944d149c6" title=" " alt="" coords="379,37,516,63"/>
 </map>

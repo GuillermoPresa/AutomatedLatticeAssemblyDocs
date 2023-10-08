@@ -1,0 +1,7 @@
+<map id="IllaControllerV3.ReleaseEstopAndSwitchState" name="IllaControllerV3.ReleaseEstopAndSwitchState">
+<area shape="rect" id="node1" title=" " alt="" coords="529,49,689,90"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="284,49,481,90"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,5,217,32"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,56,204,83"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,107,236,149"/>
+</map>

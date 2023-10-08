@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['query_0',['query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#a4f0761c2cc260be930643c06f3fec675',1,'Lynxmotion::Robotics::LssCommand']]]
+  ['q1_0',['q1',['../namespace_i_k_symb_man___t_e_s_t.html#a28115c0fd3cdaa5215737fa889a58a4f',1,'IKSymbMan_TEST.q1()'],['../namespace_i_k_sym_engine___t_e_s_t.html#a965b68b5a226546aa9e508724dc8b46b',1,'IKSymEngine_TEST.q1()'],['../namespace_sym_math_denavit_harternberg___l_a_s_t.html#abad8bfa56e2d15e412aeb22f03e3346c',1,'SymMathDenavitHarternberg_LAST.q1()']]],
+  ['q2_1',['q2',['../namespace_i_k_symb_man___t_e_s_t.html#a7a294bb97edfd08d3a97e7d17df15bd0',1,'IKSymbMan_TEST.q2()'],['../namespace_i_k_sym_engine___t_e_s_t.html#ade46f0be394f79818e96e15bb3d11250',1,'IKSymEngine_TEST.q2()'],['../namespace_sym_math_denavit_harternberg___l_a_s_t.html#a361ee09c113b463422bfac4f7608f391',1,'SymMathDenavitHarternberg_LAST.q2()']]],
+  ['q3_2',['q3',['../namespace_i_k_symb_man___t_e_s_t.html#af2d1e729c0e99cfc13c7147e338b02d5',1,'IKSymbMan_TEST.q3()'],['../namespace_i_k_sym_engine___t_e_s_t.html#a5e11a54c66425d97d4d4d1c56a38a206',1,'IKSymEngine_TEST.q3()'],['../namespace_sym_math_denavit_harternberg___l_a_s_t.html#a10403225ca45011a2911fe0068bc0299',1,'SymMathDenavitHarternberg_LAST.q3()']]],
+  ['q4_3',['q4',['../namespace_i_k_symb_man___t_e_s_t.html#ac31e23f5a8628af8ccd371a4707aea85',1,'IKSymbMan_TEST.q4()'],['../namespace_i_k_sym_engine___t_e_s_t.html#a779716fe5332cd865649ba6d46023b0d',1,'IKSymEngine_TEST.q4()'],['../namespace_sym_math_denavit_harternberg___l_a_s_t.html#abf6259da72b29b03bdc730c32322f308',1,'SymMathDenavitHarternberg_LAST.q4()']]],
+  ['q5_4',['q5',['../namespace_i_k_symb_man___t_e_s_t.html#ad08d22a31d4b399266d1be86a7c1ae3c',1,'IKSymbMan_TEST.q5()'],['../namespace_i_k_sym_engine___t_e_s_t.html#a2271557668812e06c8b4276f563d986c',1,'IKSymEngine_TEST.q5()'],['../namespace_sym_math_denavit_harternberg___l_a_s_t.html#a183fea05a5ae43f583f6c0f70bbda6ca',1,'SymMathDenavitHarternberg_LAST.q5()']]],
+  ['queries_5',['queries',['../class_lynx_servo_1_1_statistics.html#a79b094a655b2e53ca3001bf1de1bc15d',1,'LynxServo::Statistics']]],
+  ['query_6',['query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#a4f0761c2cc260be930643c06f3fec675',1,'Lynxmotion::Robotics::LssCommand']]]
 ];

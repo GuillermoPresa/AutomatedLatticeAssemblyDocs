@@ -1,0 +1,52 @@
+\hypertarget{aggregate_8h_source}{}\doxysection{aggregate.\+h}
+\label{aggregate_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/aggregate.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/aggregate.h}}
+\mbox{\hyperlink{aggregate_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef Aggregate\_h}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define Aggregate\_h}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{template}<}
+\DoxyCodeLine{5   \textcolor{keyword}{class }T,        \textcolor{comment}{// the type to be averaged}}
+\DoxyCodeLine{6   \textcolor{keyword}{class }TA=T      \textcolor{comment}{// the type for the accumulator (normally same as T, but in casees of }}
+\DoxyCodeLine{7                   \textcolor{comment}{// small integers we may want to have a larger accumulator to prevent roll-\/over}}
+\DoxyCodeLine{8                   \textcolor{comment}{// of the sum}}
+\DoxyCodeLine{9 >}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_aggregate}{Aggregate}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     T \mbox{\hyperlink{class_aggregate_a6416c5212fdcf0d224f04029bf27b6be}{minimum}};}
+\DoxyCodeLine{14     T \mbox{\hyperlink{class_aggregate_a54eec5691ba02163b83533c0eb2536ee}{maximum}};}
+\DoxyCodeLine{15     T \mbox{\hyperlink{class_aggregate_aec0b1fe21ce5d5e6d00fef78e520fe34}{sum}};}
+\DoxyCodeLine{16     T \mbox{\hyperlink{class_aggregate_a27c4a6293f14e9c11e942dbd6fb723cb}{count}};}
+\DoxyCodeLine{17     T \mbox{\hyperlink{class_aggregate_a2cae95143ec9b4469d33693df5441ea1}{last}};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20   \mbox{\hyperlink{class_aggregate_ab7e1cfea00dffdf600a278e67f46764f}{Aggregate}}() : \mbox{\hyperlink{class_aggregate_a6416c5212fdcf0d224f04029bf27b6be}{minimum}}(0), \mbox{\hyperlink{class_aggregate_a54eec5691ba02163b83533c0eb2536ee}{maximum}}(0), \mbox{\hyperlink{class_aggregate_aec0b1fe21ce5d5e6d00fef78e520fe34}{sum}}(0), \mbox{\hyperlink{class_aggregate_a27c4a6293f14e9c11e942dbd6fb723cb}{count}}(0), \mbox{\hyperlink{class_aggregate_a2cae95143ec9b4469d33693df5441ea1}{last}}(0) \{\}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_aggregate_ad5222304074fe20da6c918a6aa3985cf}{clear}}() \{}
+\DoxyCodeLine{23     \mbox{\hyperlink{class_aggregate_a6416c5212fdcf0d224f04029bf27b6be}{minimum}} = \mbox{\hyperlink{class_aggregate_a54eec5691ba02163b83533c0eb2536ee}{maximum}} = \mbox{\hyperlink{class_aggregate_a2cae95143ec9b4469d33693df5441ea1}{last}} = 0;}
+\DoxyCodeLine{24     \}}
+\DoxyCodeLine{25  }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_aggregate_a7218cd1c9bfc4accada46e3ca6f547ed}{add}}(T value) \{}
+\DoxyCodeLine{27     \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_aggregate_a27c4a6293f14e9c11e942dbd6fb723cb}{count}}==0) \{}
+\DoxyCodeLine{28       \mbox{\hyperlink{class_aggregate_a6416c5212fdcf0d224f04029bf27b6be}{minimum}} = value;}
+\DoxyCodeLine{29       \mbox{\hyperlink{class_aggregate_a54eec5691ba02163b83533c0eb2536ee}{maximum}} = value;}
+\DoxyCodeLine{30     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{31       \textcolor{keywordflow}{if}(value > \mbox{\hyperlink{class_aggregate_a54eec5691ba02163b83533c0eb2536ee}{maximum}})}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_aggregate_a54eec5691ba02163b83533c0eb2536ee}{maximum}} = value;}
+\DoxyCodeLine{33       \textcolor{keywordflow}{if}(value < \mbox{\hyperlink{class_aggregate_a6416c5212fdcf0d224f04029bf27b6be}{minimum}})}
+\DoxyCodeLine{34         \mbox{\hyperlink{class_aggregate_a6416c5212fdcf0d224f04029bf27b6be}{minimum}} = value;}
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_aggregate_a2cae95143ec9b4469d33693df5441ea1}{last}} = value;}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_aggregate_aec0b1fe21ce5d5e6d00fef78e520fe34}{sum}} += value;}
+\DoxyCodeLine{38     \mbox{\hyperlink{class_aggregate_a27c4a6293f14e9c11e942dbd6fb723cb}{count}}++;}
+\DoxyCodeLine{39   \}}
+\DoxyCodeLine{40     }
+\DoxyCodeLine{41   T \mbox{\hyperlink{class_aggregate_a07c9e9a4ac7f2f0dfb32b2afc66751ea}{average}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{42     \textcolor{keywordflow}{return} (T)(\mbox{\hyperlink{class_aggregate_aec0b1fe21ce5d5e6d00fef78e520fe34}{sum}}/\mbox{\hyperlink{class_aggregate_a27c4a6293f14e9c11e942dbd6fb723cb}{count}});}
+\DoxyCodeLine{43   \}}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

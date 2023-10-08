@@ -1,0 +1,44 @@
+\hypertarget{_multi_stepper_8h_source}{}\doxysection{Multi\+Stepper.\+h}
+\label{_multi_stepper_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AccelStepper/src/MultiStepper.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AccelStepper/src/MultiStepper.h}}
+\mbox{\hyperlink{_multi_stepper_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// MultiStepper.h}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef MultiStepper\_h}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define MultiStepper\_h}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#if ARDUINO >= 100}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <WProgram.h>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <wiring.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define MULTISTEPPER\_MAX\_STEPPERS 10}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_accel_stepper}{AccelStepper}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_multi_stepper}{MultiStepper}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_multi_stepper_a14c0c1c0f55e5bbdc4971730e32304c2}{MultiStepper}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{boolean} \mbox{\hyperlink{class_multi_stepper_a383d8486e17ad9de9f1bafcbd9aa52ee}{addStepper}}(\mbox{\hyperlink{class_accel_stepper}{AccelStepper}}\& stepper);}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_multi_stepper_a291fec32a79390b6eb00296cffac49ee}{moveTo}}(\textcolor{keywordtype}{long} absolute[]);}
+\DoxyCodeLine{53     }
+\DoxyCodeLine{57     \textcolor{keywordtype}{boolean} \mbox{\hyperlink{class_multi_stepper_a26c2f53b1e7ddf5d5dfb333f6fb7fb92}{run}}();}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{62     \textcolor{keywordtype}{void}    \mbox{\hyperlink{class_multi_stepper_a2592f55864ce3ace125944db624317bc}{runSpeedToPosition}}();}
+\DoxyCodeLine{63     }
+\DoxyCodeLine{64 \textcolor{keyword}{private}:}
+\DoxyCodeLine{67     \mbox{\hyperlink{class_accel_stepper}{AccelStepper}}* \_steppers[\mbox{\hyperlink{_multi_stepper_8h_a97076b496e4b1df29a488c36699777b3}{MULTISTEPPER\_MAX\_STEPPERS}}];}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{71     uint8\_t       \_num\_steppers;}
+\DoxyCodeLine{72 \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

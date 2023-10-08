@@ -1,0 +1,74 @@
+\hypertarget{_lynxmotion_l_s_s-_config_8h}{}\doxysection{C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\+Lynxmotion\+LSS-\/\+Config.h File Reference}
+\label{_lynxmotion_l_s_s-_config_8h}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LynxmotionLSS-\/Config.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LynxmotionLSS-\/Config.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lynxmotion_l_s_s-_config_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h_af9e41f79d7fb05ec15edb3dd010dadc7}{INTERPACKET\+\_\+\+DELAY}}~1
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h_a220e1e73990ad8185ce54de0e4265e1d}{TRANSACTION\+\_\+\+TIMEOUT}}~50000u
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h_ac5d7c4eb9a3babe24ab93b65ae613314}{UNRESPONSIVE\+\_\+\+REQUEST\+\_\+\+LIMIT}}~2
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h_a22f68e9f4461ba52481c5c54d75c03d7}{UNRESPONSIVE\+\_\+\+DISABLE\+\_\+\+INTERVAL}}~15000u
+\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h_a2093840c667a80e67d929515ea283252}{HAVE\+\_\+\+STRING}}
+\begin{DoxyCompactList}\small\item\em Enable to include to\+String() functions that require the Arduino String class. If you don\textquotesingle{}t define this you will still have functions to fill a C-\/style char buffer. You lack the convenience of Arduino String but you don\textquotesingle{}t get the code-\/space penalty. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h_a13a86e906b3eaea32909416e88e8b084}{LSS\+\_\+\+STATS}}~1
+\begin{DoxyCompactList}\small\item\em Enable this option to log all bus transactions to a Serial port. by default we log to the first serial port \textquotesingle{}Serial\textquotesingle{} which all Arduino\textquotesingle{}s have, but you can change this to any Arduino stream supporting class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_lynxmotion_l_s_s-_config_8h_a2093840c667a80e67d929515ea283252}\label{_lynxmotion_l_s_s-_config_8h_a2093840c667a80e67d929515ea283252}} 
+\index{LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}!HAVE\_STRING@{HAVE\_STRING}}
+\index{HAVE\_STRING@{HAVE\_STRING}!LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}}
+\doxysubsubsection{\texorpdfstring{HAVE\_STRING}{HAVE\_STRING}}
+{\footnotesize\ttfamily \#define HAVE\+\_\+\+STRING}
+
+
+
+Enable to include to\+String() functions that require the Arduino String class. If you don\textquotesingle{}t define this you will still have functions to fill a C-\/style char buffer. You lack the convenience of Arduino String but you don\textquotesingle{}t get the code-\/space penalty. 
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s-_config_8h_af9e41f79d7fb05ec15edb3dd010dadc7}\label{_lynxmotion_l_s_s-_config_8h_af9e41f79d7fb05ec15edb3dd010dadc7}} 
+\index{LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}!INTERPACKET\_DELAY@{INTERPACKET\_DELAY}}
+\index{INTERPACKET\_DELAY@{INTERPACKET\_DELAY}!LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}}
+\doxysubsubsection{\texorpdfstring{INTERPACKET\_DELAY}{INTERPACKET\_DELAY}}
+{\footnotesize\ttfamily \#define INTERPACKET\+\_\+\+DELAY~1}
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s-_config_8h_a13a86e906b3eaea32909416e88e8b084}\label{_lynxmotion_l_s_s-_config_8h_a13a86e906b3eaea32909416e88e8b084}} 
+\index{LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}!LSS\_STATS@{LSS\_STATS}}
+\index{LSS\_STATS@{LSS\_STATS}!LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}}
+\doxysubsubsection{\texorpdfstring{LSS\_STATS}{LSS\_STATS}}
+{\footnotesize\ttfamily \#define LSS\+\_\+\+STATS~1}
+
+
+
+Enable this option to log all bus transactions to a Serial port. by default we log to the first serial port \textquotesingle{}Serial\textquotesingle{} which all Arduino\textquotesingle{}s have, but you can change this to any Arduino stream supporting class. 
+
+Generate a pulse on a pin when bus read errors occur. If defined and set to a GPIO pin, the library will toggle this pin anytime a read error has occured. This is great for tracing electrical errors using an oscilloscope. Hook the GPIO pin to the trigger input of your oscope.
+
+Tracks statistics on bus transactions (NOT YET IMPLEMENTED) Statistics will include bus transaction counts, timing, read errors, and servo contention. You can read the stats structure directly, or print it using Lss\+Channel\+::print\+Stats(\+Stream\&). \mbox{\Hypertarget{_lynxmotion_l_s_s-_config_8h_a220e1e73990ad8185ce54de0e4265e1d}\label{_lynxmotion_l_s_s-_config_8h_a220e1e73990ad8185ce54de0e4265e1d}} 
+\index{LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}!TRANSACTION\_TIMEOUT@{TRANSACTION\_TIMEOUT}}
+\index{TRANSACTION\_TIMEOUT@{TRANSACTION\_TIMEOUT}!LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}}
+\doxysubsubsection{\texorpdfstring{TRANSACTION\_TIMEOUT}{TRANSACTION\_TIMEOUT}}
+{\footnotesize\ttfamily \#define TRANSACTION\+\_\+\+TIMEOUT~50000u}
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s-_config_8h_a22f68e9f4461ba52481c5c54d75c03d7}\label{_lynxmotion_l_s_s-_config_8h_a22f68e9f4461ba52481c5c54d75c03d7}} 
+\index{LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}!UNRESPONSIVE\_DISABLE\_INTERVAL@{UNRESPONSIVE\_DISABLE\_INTERVAL}}
+\index{UNRESPONSIVE\_DISABLE\_INTERVAL@{UNRESPONSIVE\_DISABLE\_INTERVAL}!LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}}
+\doxysubsubsection{\texorpdfstring{UNRESPONSIVE\_DISABLE\_INTERVAL}{UNRESPONSIVE\_DISABLE\_INTERVAL}}
+{\footnotesize\ttfamily \#define UNRESPONSIVE\+\_\+\+DISABLE\+\_\+\+INTERVAL~15000u}
+
+\mbox{\Hypertarget{_lynxmotion_l_s_s-_config_8h_ac5d7c4eb9a3babe24ab93b65ae613314}\label{_lynxmotion_l_s_s-_config_8h_ac5d7c4eb9a3babe24ab93b65ae613314}} 
+\index{LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}!UNRESPONSIVE\_REQUEST\_LIMIT@{UNRESPONSIVE\_REQUEST\_LIMIT}}
+\index{UNRESPONSIVE\_REQUEST\_LIMIT@{UNRESPONSIVE\_REQUEST\_LIMIT}!LynxmotionLSS-\/Config.h@{LynxmotionLSS-\/Config.h}}
+\doxysubsubsection{\texorpdfstring{UNRESPONSIVE\_REQUEST\_LIMIT}{UNRESPONSIVE\_REQUEST\_LIMIT}}
+{\footnotesize\ttfamily \#define UNRESPONSIVE\+\_\+\+REQUEST\+\_\+\+LIMIT~2}
+

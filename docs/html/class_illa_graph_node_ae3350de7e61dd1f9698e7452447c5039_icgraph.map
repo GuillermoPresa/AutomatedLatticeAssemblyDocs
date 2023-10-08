@@ -1,5 +1,6 @@
 <map id="IllaGraphNode.DiscoverPreviousNodes" name="IllaGraphNode.DiscoverPreviousNodes">
-<area shape="rect" id="node1" title=" " alt="" coords="467,5,672,47"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#ad33f2442d491486a614c51d74d9921e0" title=" " alt="" coords="232,5,419,47"/>
-<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="683,5,888,47"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#a8fe0a5999ffbe2e512eb39702ead38c4" title=" " alt="" coords="455,5,635,47"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="232,5,407,47"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,5,184,47"/>
 </map>

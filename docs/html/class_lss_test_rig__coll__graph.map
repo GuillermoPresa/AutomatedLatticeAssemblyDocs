@@ -1,0 +1,13 @@
+<map id="LssTestRig" name="LssTestRig">
+<area shape="rect" id="node1" title=" " alt="" coords="197,347,283,373"/>
+<area shape="rect" id="node2" href="$class_sim_channel.html" title=" " alt="" coords="99,228,191,255"/>
+<area shape="rect" id="node3" href="$class_char_stream.html" title=" " alt="" coords="5,139,96,165"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,20,83,47"/>
+<area shape="rect" id="node5" href="$class_sim_servo.html" title=" " alt="" coords="120,139,197,165"/>
+<area shape="rect" id="node6" href="$class_lynx_channel.html" title=" " alt="" coords="235,139,333,165"/>
+<area shape="rect" id="node7" href="$class_lynx_servo.html" title=" " alt="" coords="359,228,441,255"/>
+<area shape="rect" id="node8" href="$struct___lss_servo_config.html" title=" " alt="" coords="366,139,485,165"/>
+<area shape="rect" id="node9" href="$class_mask_set.html" title=" " alt="" coords="509,139,584,165"/>
+<area shape="rect" id="node10" href="$class_lynx_servo_1_1_statistics.html" title=" " alt="" coords="609,139,754,165"/>
+<area shape="rect" id="node11" href="$class_aggregate.html" title=" " alt="" coords="609,5,754,61"/>
+</map>

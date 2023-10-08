@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['key_0',['Key',['../class_u_dictionary_test_1_1_key.html',1,'UDictionaryTest']]]
+  ['jointclass_0',['JointClass',['../class_joint_class.html',1,'']]],
+  ['jointconfiguration_1',['JointConfiguration',['../class_joint_configuration.html',1,'']]]
 ];

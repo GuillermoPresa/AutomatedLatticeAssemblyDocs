@@ -33,6 +33,7 @@ var class_references =
     [ "ObjectParentPrefab", "class_references.html#aad351d151e3aec04eca0d82d16cd39bc", null ],
     [ "ObjectsPath", "class_references.html#af78ba2e50d3f68e0323493c574eefdf3", null ],
     [ "RenderingJobQueue", "class_references.html#a183bf8d1ecc6580326f829b6056ced32", null ],
+    [ "robotCoordinator", "class_references.html#a08cca545f3554bffb44bc168d3c4fb37", null ],
     [ "RobotWorker", "class_references.html#aa13e3df440ffcbb539ff51e5d48737d8", null ],
     [ "SelectedEnvironmentIndex", "class_references.html#a582889e077f59d4fb05312eea9ef816d", null ],
     [ "StructureMaterial", "class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1", null ],

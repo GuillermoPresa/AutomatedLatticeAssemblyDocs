@@ -1,0 +1,163 @@
+\hypertarget{class_char_stream}{}\doxysection{Char\+Stream Class Reference}
+\label{class_char_stream}\index{CharStream@{CharStream}}
+
+
+{\ttfamily \#include $<$Lss\+Testing.\+h$>$}
+
+
+
+Inheritance diagram for Char\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_char_stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Char\+Stream\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{class_char_stream__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_char_stream_aeb018d0160b9d4d8201f0941fac5daa9}{clear}} ()
+\item 
+\mbox{\hyperlink{class_char_stream_a8585cb498e8840387ca3de4161bce29f}{Char\+Stream}} ()
+\item 
+virtual int \mbox{\hyperlink{class_char_stream_a1fd6554ee05e2b062fab04c4335d7714}{available}} ()
+\item 
+virtual int \mbox{\hyperlink{class_char_stream_a58ec2eaf57d0c59a82608fb1b3c97151}{read}} ()
+\item 
+virtual int \mbox{\hyperlink{class_char_stream_a5d0935c619af174b248b443611a31d97}{peek}} ()
+\item 
+virtual void \mbox{\hyperlink{class_char_stream_a5d95c5a4c6ff1db706f36e2a92b5e0a1}{flush}} ()
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_char_stream_a224394ca2a8ab39ab88b6a546905db6e}{write}} (uint8\+\_\+t c)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const short \mbox{\hyperlink{class_char_stream_ab690d4d1a488d522007846aa28c8845b}{rewrite\+Limit}} = 8
+\item 
+char \mbox{\hyperlink{class_char_stream_a014b11118250c549a2ecd422c63835d9}{buffer}} \mbox{[}128\mbox{]}
+\item 
+char $\ast$ \mbox{\hyperlink{class_char_stream_a3e107ff2c2f1195747d2a1264b5f3bd1}{pread}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_char_stream_acb273f9b55a2773f87288ee4eff0ba7f}{pwrite}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_char_stream_a8585cb498e8840387ca3de4161bce29f}\label{class_char_stream_a8585cb498e8840387ca3de4161bce29f}} 
+\index{CharStream@{CharStream}!CharStream@{CharStream}}
+\index{CharStream@{CharStream}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{CharStream()}{CharStream()}}
+{\footnotesize\ttfamily Char\+Stream\+::\+Char\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_char_stream_a1fd6554ee05e2b062fab04c4335d7714}\label{class_char_stream_a1fd6554ee05e2b062fab04c4335d7714}} 
+\index{CharStream@{CharStream}!available@{available}}
+\index{available@{available}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{available()}{available()}}
+{\footnotesize\ttfamily int Char\+Stream\+::available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_char_stream_aeb018d0160b9d4d8201f0941fac5daa9}\label{class_char_stream_aeb018d0160b9d4d8201f0941fac5daa9}} 
+\index{CharStream@{CharStream}!clear@{clear}}
+\index{clear@{clear}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Char\+Stream\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_char_stream_a5d95c5a4c6ff1db706f36e2a92b5e0a1}\label{class_char_stream_a5d95c5a4c6ff1db706f36e2a92b5e0a1}} 
+\index{CharStream@{CharStream}!flush@{flush}}
+\index{flush@{flush}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void Char\+Stream\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_char_stream_a5d95c5a4c6ff1db706f36e2a92b5e0a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_char_stream_a5d0935c619af174b248b443611a31d97}\label{class_char_stream_a5d0935c619af174b248b443611a31d97}} 
+\index{CharStream@{CharStream}!peek@{peek}}
+\index{peek@{peek}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily int Char\+Stream\+::peek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_char_stream_a58ec2eaf57d0c59a82608fb1b3c97151}\label{class_char_stream_a58ec2eaf57d0c59a82608fb1b3c97151}} 
+\index{CharStream@{CharStream}!read@{read}}
+\index{read@{read}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int Char\+Stream\+::read (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_char_stream_a58ec2eaf57d0c59a82608fb1b3c97151_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_char_stream_a224394ca2a8ab39ab88b6a546905db6e}\label{class_char_stream_a224394ca2a8ab39ab88b6a546905db6e}} 
+\index{CharStream@{CharStream}!write@{write}}
+\index{write@{write}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily size\+\_\+t Char\+Stream\+::write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_sim_channel_a2b0ea3f7389909a69e7df51b3fcc37b6}{Sim\+Channel}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_char_stream_a224394ca2a8ab39ab88b6a546905db6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_char_stream_a014b11118250c549a2ecd422c63835d9}\label{class_char_stream_a014b11118250c549a2ecd422c63835d9}} 
+\index{CharStream@{CharStream}!buffer@{buffer}}
+\index{buffer@{buffer}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily char Char\+Stream\+::buffer\mbox{[}128\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_char_stream_a3e107ff2c2f1195747d2a1264b5f3bd1}\label{class_char_stream_a3e107ff2c2f1195747d2a1264b5f3bd1}} 
+\index{CharStream@{CharStream}!pread@{pread}}
+\index{pread@{pread}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{pread}{pread}}
+{\footnotesize\ttfamily char$\ast$ Char\+Stream\+::pread\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_char_stream_acb273f9b55a2773f87288ee4eff0ba7f}\label{class_char_stream_acb273f9b55a2773f87288ee4eff0ba7f}} 
+\index{CharStream@{CharStream}!pwrite@{pwrite}}
+\index{pwrite@{pwrite}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{pwrite}{pwrite}}
+{\footnotesize\ttfamily char$\ast$ Char\+Stream\+::pwrite\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_char_stream_ab690d4d1a488d522007846aa28c8845b}\label{class_char_stream_ab690d4d1a488d522007846aa28c8845b}} 
+\index{CharStream@{CharStream}!rewriteLimit@{rewriteLimit}}
+\index{rewriteLimit@{rewriteLimit}!CharStream@{CharStream}}
+\doxysubsubsection{\texorpdfstring{rewriteLimit}{rewriteLimit}}
+{\footnotesize\ttfamily const short Char\+Stream\+::rewrite\+Limit = 8\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/examples/\+Lss\+Unit\+Tests/\mbox{\hyperlink{_lss_testing_8h}{Lss\+Testing.\+h}}\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/examples/\+Lss\+Unit\+Tests/\mbox{\hyperlink{_lss_testing_8cpp}{Lss\+Testing.\+cpp}}\end{DoxyCompactItemize}

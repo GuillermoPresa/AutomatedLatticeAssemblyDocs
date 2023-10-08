@@ -1,0 +1,137 @@
+\hypertarget{class_abstract_robot_worker}{}\doxysection{Abstract\+Robot\+Worker Class Reference}
+\label{class_abstract_robot_worker}\index{AbstractRobotWorker@{AbstractRobotWorker}}
+
+
+Inheritance diagram for Abstract\+Robot\+Worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_abstract_robot_worker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Abstract\+Robot\+Worker\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_abstract_robot_worker__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_abstract_robot_worker_aca6fdcdcbee87f1d61525e3c8774174a}{bid\+From\+WP}} (\mbox{\hyperlink{class_work_package}{Work\+Package}} work\+Package)
+\item 
+virtual \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_abstract_robot_worker_ae8ae793d468b4e29ad463b200ffadd68}{bid\+From\+Task}} (\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}} task)
+\item 
+virtual \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_abstract_robot_worker_a5994aa628c0ed14836f693a5e81b94e1}{bid\+From\+Task}} (\mbox{\hyperlink{class_insert_task}{Insert\+Task}} insert\+Task)
+\item 
+virtual \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_abstract_robot_worker_ac6c284d02ab5d1efbe1d0c5fc4ca9ede}{bid\+From\+Task}} (\mbox{\hyperlink{class_move_to_node_task}{Move\+To\+Node\+Task}} move\+Task)
+\item 
+virtual List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_abstract_robot_worker_acb0533a69c934e7a2cd701b18d9f9f86}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}} task)
+\item 
+virtual List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_abstract_robot_worker_a6fb85c4c62902eec6ad2a44d78ec2e0a}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_insert_task}{Insert\+Task}} isnert\+Task)
+\item 
+virtual List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_abstract_robot_worker_a8b08073724b99c99709d440ee6c0c025}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_move_to_node_task}{Move\+To\+Node\+Task}} move\+Task)
+\item 
+abstract void \mbox{\hyperlink{class_abstract_robot_worker_a07fda176bbe3af3497603441c6ca7b2a}{Execute\+Work\+Package}} (\mbox{\hyperlink{class_work_package}{Work\+Package}} work\+Package)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_robot_worker_ae8ae793d468b4e29ad463b200ffadd68}\label{class_abstract_robot_worker_ae8ae793d468b4e29ad463b200ffadd68}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!bidFromTask@{bidFromTask}}
+\index{bidFromTask@{bidFromTask}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{bidFromTask()}{bidFromTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} Abstract\+Robot\+Worker.\+bid\+From\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}}}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_robot_worker_ae8ae793d468b4e29ad463b200ffadd68_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_robot_worker_a5994aa628c0ed14836f693a5e81b94e1}\label{class_abstract_robot_worker_a5994aa628c0ed14836f693a5e81b94e1}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!bidFromTask@{bidFromTask}}
+\index{bidFromTask@{bidFromTask}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{bidFromTask()}{bidFromTask()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} Abstract\+Robot\+Worker.\+bid\+From\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_insert_task}{Insert\+Task}}}]{insert\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illa_controller_v3_a0dcd655193fed575b8c7f949833e9a2f}{Illa\+Controller\+V3}}.
+
+\mbox{\Hypertarget{class_abstract_robot_worker_ac6c284d02ab5d1efbe1d0c5fc4ca9ede}\label{class_abstract_robot_worker_ac6c284d02ab5d1efbe1d0c5fc4ca9ede}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!bidFromTask@{bidFromTask}}
+\index{bidFromTask@{bidFromTask}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{bidFromTask()}{bidFromTask()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} Abstract\+Robot\+Worker.\+bid\+From\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move_to_node_task}{Move\+To\+Node\+Task}}}]{move\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illa_controller_v3_aa4998738f9965ed06ab277967c2bbed7}{Illa\+Controller\+V3}}.
+
+\mbox{\Hypertarget{class_abstract_robot_worker_aca6fdcdcbee87f1d61525e3c8774174a}\label{class_abstract_robot_worker_aca6fdcdcbee87f1d61525e3c8774174a}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!bidFromWP@{bidFromWP}}
+\index{bidFromWP@{bidFromWP}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{bidFromWP()}{bidFromWP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} Abstract\+Robot\+Worker.\+bid\+From\+WP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_work_package}{Work\+Package}}}]{work\+Package }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_abstract_robot_worker_acb0533a69c934e7a2cd701b18d9f9f86}\label{class_abstract_robot_worker_acb0533a69c934e7a2cd701b18d9f9f86}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!BreakIntoActions@{BreakIntoActions}}
+\index{BreakIntoActions@{BreakIntoActions}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Abstract\+Robot\+Worker.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}}}]{task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_robot_worker_acb0533a69c934e7a2cd701b18d9f9f86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_robot_worker_a6fb85c4c62902eec6ad2a44d78ec2e0a}\label{class_abstract_robot_worker_a6fb85c4c62902eec6ad2a44d78ec2e0a}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!BreakIntoActions@{BreakIntoActions}}
+\index{BreakIntoActions@{BreakIntoActions}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily virtual List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Abstract\+Robot\+Worker.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_insert_task}{Insert\+Task}}}]{isnert\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_abstract_robot_worker_a8b08073724b99c99709d440ee6c0c025}\label{class_abstract_robot_worker_a8b08073724b99c99709d440ee6c0c025}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!BreakIntoActions@{BreakIntoActions}}
+\index{BreakIntoActions@{BreakIntoActions}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily virtual List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Abstract\+Robot\+Worker.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move_to_node_task}{Move\+To\+Node\+Task}}}]{move\+Task }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illa_controller_v3_a748a431a5356e997c92e4f3031595818}{Illa\+Controller\+V3}}.
+
+\mbox{\Hypertarget{class_abstract_robot_worker_a07fda176bbe3af3497603441c6ca7b2a}\label{class_abstract_robot_worker_a07fda176bbe3af3497603441c6ca7b2a}} 
+\index{AbstractRobotWorker@{AbstractRobotWorker}!ExecuteWorkPackage@{ExecuteWorkPackage}}
+\index{ExecuteWorkPackage@{ExecuteWorkPackage}!AbstractRobotWorker@{AbstractRobotWorker}}
+\doxysubsubsection{\texorpdfstring{ExecuteWorkPackage()}{ExecuteWorkPackage()}}
+{\footnotesize\ttfamily abstract void Abstract\+Robot\+Worker.\+Execute\+Work\+Package (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_work_package}{Work\+Package}}}]{work\+Package }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_illa_controller_v3_af3bc068870d0f8316bef9167f5e20795}{Illa\+Controller\+V3}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_robot_worker_a07fda176bbe3af3497603441c6ca7b2a_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Scripts/\mbox{\hyperlink{_abstract_robot_worker_8cs}{Abstract\+Robot\+Worker.\+cs}}\end{DoxyCompactItemize}

@@ -5,8 +5,6 @@ var class_spawner =
     [ "GetLatticeTypeNames", "class_spawner.html#aad354315fa89d5ea1148d707e984ee5c", null ],
     [ "Spawn3DObject", "class_spawner.html#a19c6afc7e1d1048d35073725b6830978", null ],
     [ "Spawn3DObject", "class_spawner.html#a2a3f46698546a64f0a2970eaacbfa228", null ],
-    [ "SpawnWorker", "class_spawner.html#a7e63b2d1dbffd6577cd69b13e26af2e6", null ],
-    [ "SpawnWorker", "class_spawner.html#a54033ba32888537f2637c9530c7aff5f", null ],
     [ "UpdateVisibilityTime", "class_spawner.html#af6c6907cb6c08744b2d5c7dabcdccbe4", null ],
     [ "FileList", "class_spawner.html#ac7bea9bb037a9b00f426277765f1fd4f", null ],
     [ "GlobalManager", "class_spawner.html#ab27b102d4e0059c11b49cecb55eba073", null ],

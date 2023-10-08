@@ -1,0 +1,9 @@
+<map id="LssTestRig::update" name="LssTestRig::update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,140,83"/>
+<area shape="rect" id="node2" href="$class_lynx_channel.html#af28230bf8113555b7b4ff9dc8c5c5c5b" title=" " alt="" coords="188,56,332,83"/>
+<area shape="rect" id="node3" href="$class_lynx_servo.html#ab9a5b6ddf6bbe029805658c5670f6800" title=" " alt="" coords="380,31,519,57"/>
+<area shape="rect" id="node6" href="$class_lynx_servo.html#a73462b8e322998c113b648f4e3690efe" title=" " alt="" coords="385,81,514,108"/>
+<area shape="rect" id="node4" href="$class_aggregate.html#a7218cd1c9bfc4accada46e3ca6f547ed" title=" " alt="" coords="605,56,715,83"/>
+<area shape="rect" id="node5" href="$class_lynx_packet.html#a5288c52d2faed0afc6386fbba0cc7ed0" title=" " alt="" coords="567,5,753,32"/>
+<area shape="rect" id="node7" href="$class_lynx_servo.html#a0bc1ac9ed3fc6d1db44429584f9b0fc8" title=" " alt="" coords="587,107,733,133"/>
+</map>

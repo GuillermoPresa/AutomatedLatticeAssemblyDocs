@@ -13,9 +13,9 @@ var searchData=
   ['servomotor3_10',['servoMotor3',['../class_illa_controller_v3.html#ab559d14c4547298bfdcf1f330df74fbd',1,'IllaControllerV3']]],
   ['servomotor4_11',['servoMotor4',['../class_illa_controller_v3.html#a97735e4c2d6b831b50f59abffa7182d6',1,'IllaControllerV3']]],
   ['servomotor5_12',['servoMotor5',['../class_illa_controller_v3.html#aa41ddb5a04d8a2a8b2ee38de8b1edd3a',1,'IllaControllerV3']]],
-  ['shoulder_5fjointtargetangle_13',['shoulder_JointTargetAngle',['../class_illa_controller_v3.html#a9085e018c2bff1220606c68e32135601',1,'IllaControllerV3']]],
-  ['shoulderjoint_14',['ShoulderJoint',['../class_illa_controller_v3.html#ae7ea6d7c70884af1560c57418736f0b4',1,'IllaControllerV3']]],
-  ['shoulderjoint_5fcurrentangle_15',['shoulderJoint_CurrentAngle',['../class_illa_controller_v3.html#af1c39287c62e3eecffdfc74e25a07e3b',1,'IllaControllerV3']]],
+  ['shoulderjoint_13',['ShoulderJoint',['../class_illa_controller_v3.html#ae7ea6d7c70884af1560c57418736f0b4',1,'IllaControllerV3']]],
+  ['shoulderjoint_5fcurrentangle_14',['shoulderJoint_CurrentAngle',['../class_illa_controller_v3.html#af1c39287c62e3eecffdfc74e25a07e3b',1,'IllaControllerV3']]],
+  ['shoulderjoint_5ftargetangle_15',['shoulderJoint_TargetAngle',['../class_illa_controller_v3.html#a9e1e75e58f5f3ee9a60da6294f68844b',1,'IllaControllerV3']]],
   ['shoulderjointcurrentangle_16',['ShoulderJointCurrentAngle',['../class_inchworm_robot_controller.html#a677376382bd18204d878ac2ba893d484',1,'InchwormRobotController']]],
   ['shoulderjointtargetangle_17',['ShoulderJointTargetAngle',['../class_inchworm_robot_controller.html#a8108558ecc425c556061a6e071fcdc7c',1,'InchwormRobotController']]],
   ['stiffness_18',['Stiffness',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a8173ae9e98358b72fb98614ad2486c9f',1,'Lynxmotion::Robotics::LssSettings']]]

@@ -1,5 +1,6 @@
 <map id="Assets.Resources.Objects.ILLAV3.DifferentialJoint.updateJointAngleFromServoCurrentAngle" name="Assets.Resources.Objects.ILLAV3.DifferentialJoint.updateJointAngleFromServoCurrentAngle">
-<area shape="rect" id="node1" title=" " alt="" coords="247,31,465,87"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_state___connected.html#a36054f3768114ee26801c00fe84d7a17" title=" " alt="" coords="11,5,193,47"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,71,199,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="525,31,744,87"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_state___connected.html#a36054f3768114ee26801c00fe84d7a17" title=" " alt="" coords="289,5,472,47"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,71,477,112"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,71,236,112"/>
 </map>

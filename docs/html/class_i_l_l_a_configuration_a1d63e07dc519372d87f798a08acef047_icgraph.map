@@ -1,8 +1,9 @@
 <map id="ILLAConfiguration.SaveConfiguration" name="ILLAConfiguration.SaveConfiguration">
-<area shape="rect" id="node1" title=" " alt="" coords="741,56,972,83"/>
-<area shape="rect" id="node2" href="$class_illa_controller_v3.html#aa2c37ac4cbf9503904e06661e95656d3" title=" " alt="" coords="477,56,693,83"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_v3___u_ielements.html#a7605b372c16709187562ac90ae9044ba" title=" " alt="" coords="247,49,429,90"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,5,198,32"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,56,199,83"/>
-<area shape="rect" id="node6" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,107,185,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="779,81,1009,108"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#aa2c37ac4cbf9503904e06661e95656d3" title=" " alt="" coords="515,81,731,108"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_v3___u_ielements.html#a7605b372c16709187562ac90ae9044ba" title=" " alt="" coords="284,74,467,115"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,5,217,32"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,56,217,83"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,107,204,133"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,158,236,199"/>
 </map>

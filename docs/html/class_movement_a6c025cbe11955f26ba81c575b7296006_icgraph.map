@@ -1,0 +1,6 @@
+<map id="Movement.MincostBasedOnAngleMovement" name="Movement.MincostBasedOnAngleMovement">
+<area shape="rect" id="node1" title=" " alt="" coords="448,35,667,76"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#af20e678932ca7e84f298344b0eb0044d" title=" " alt="" coords="221,13,400,39"/>
+<area shape="rect" id="node4" href="$class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="223,64,399,105"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a748a431a5356e997c92e4f3031595818" title=" " alt="" coords="5,5,173,47"/>
+</map>

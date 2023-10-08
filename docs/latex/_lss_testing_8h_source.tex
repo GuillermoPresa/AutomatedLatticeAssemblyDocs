@@ -1,0 +1,142 @@
+\hypertarget{_lss_testing_8h_source}{}\doxysection{Lss\+Testing.\+h}
+\label{_lss_testing_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/examples/LssUnitTests/LssTesting.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/examples/LssUnitTests/LssTesting.h}}
+\mbox{\hyperlink{_lss_testing_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#if (ARDUINO >= 100)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{ \#include <Arduino.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{ \#include <WProgram.h>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{ \#include <pins\_arduino.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <WString.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{_lynxmotion_l_s_s_8h}{LynxmotionLSS.h}}>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_char_stream}{CharStream}} : \textcolor{keyword}{public} Stream}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16   \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{class_char_stream_ab690d4d1a488d522007846aa28c8845b}{rewriteLimit}} = 8;}
+\DoxyCodeLine{18     }
+\DoxyCodeLine{19     \textcolor{comment}{// we will allocate buffer as two pages}}
+\DoxyCodeLine{20     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_char_stream_a014b11118250c549a2ecd422c63835d9}{buffer}}[128];}
+\DoxyCodeLine{21     \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_char_stream_a3e107ff2c2f1195747d2a1264b5f3bd1}{pread}};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_char_stream_acb273f9b55a2773f87288ee4eff0ba7f}{pwrite}};}
+\DoxyCodeLine{23     }
+\DoxyCodeLine{24   \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_char_stream_aeb018d0160b9d4d8201f0941fac5daa9}{clear}}();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \mbox{\hyperlink{class_char_stream_a8585cb498e8840387ca3de4161bce29f}{CharStream}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     \textcolor{comment}{// override Stream methods}}
+\DoxyCodeLine{30     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_char_stream_a1fd6554ee05e2b062fab04c4335d7714}{available}}();}
+\DoxyCodeLine{31     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_char_stream_a58ec2eaf57d0c59a82608fb1b3c97151}{read}}();}
+\DoxyCodeLine{32     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_char_stream_a5d0935c619af174b248b443611a31d97}{peek}}();}
+\DoxyCodeLine{33     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_char_stream_a5d95c5a4c6ff1db706f36e2a92b5e0a1}{flush}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{comment}{// override Print methods}}
+\DoxyCodeLine{36     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_char_stream_a224394ca2a8ab39ab88b6a546905db6e}{write}}(uint8\_t c);}
+\DoxyCodeLine{37 \};}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39 \textcolor{comment}{/*}}
+\DoxyCodeLine{40 \textcolor{comment}{ * Simple Simulated Servo for testing}}
+\DoxyCodeLine{41 \textcolor{comment}{ * }}
+\DoxyCodeLine{42 \textcolor{comment}{ */}}
+\DoxyCodeLine{43 \textcolor{keyword}{class }\mbox{\hyperlink{class_sim_servo}{SimServo}}}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45   \textcolor{keyword}{public}:}
+\DoxyCodeLine{46     Stream* \mbox{\hyperlink{class_sim_servo_ac365bd985d9f262eaaf4e9eb13d8b719}{channel}};}
+\DoxyCodeLine{47     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_aab97c53b578d70bac807bd9778a86ae5}{id}};}
+\DoxyCodeLine{48     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_a0da0a1822457fe2d9854f5a69b7f312e}{position}};}
+\DoxyCodeLine{49     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_af2d4ec06368498305c1b937cd5aced6a}{target}};}
+\DoxyCodeLine{50     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_a7359be38a2fe6d563e53182312f93dd7}{speed}};}
+\DoxyCodeLine{51     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_acba856965e4069fd329bd07c49fe6e77}{voltage}};}
+\DoxyCodeLine{52     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_ad635569b9410352a6b7ebfe7aed13d2e}{current}};}
+\DoxyCodeLine{53     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_servo_a5d0a61d3c4f6363b8da88d073b2502c1}{temperature}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \mbox{\hyperlink{class_sim_servo_a19beb089f4397c02dd79ea685565f56d}{SimServo}}(\textcolor{keywordtype}{short} \_id=0);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sim_servo_a1f4766b6dd5be04bfa27347411a84462}{assign}}(\textcolor{keywordtype}{short} \_id, Stream* \_channel);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     \mbox{\hyperlink{class_lynx_packet}{LynxPacket}} \mbox{\hyperlink{class_sim_servo_a8b9a9c77e2f25a942bb4fdd21f35da15}{receive}}(\mbox{\hyperlink{class_lynx_packet}{LynxPacket}} p);}
+\DoxyCodeLine{60 \};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{comment}{// we must declare our placement-\/new operator so we can instantiate SimServo in-\/place}}
+\DoxyCodeLine{63 \textcolor{keywordtype}{void} * \textcolor{keyword}{operator} \textcolor{keyword}{new} (\textcolor{keywordtype}{size\_t} size, \textcolor{keywordtype}{void} * ptr);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{keyword}{class }\mbox{\hyperlink{class_sim_channel}{SimChannel}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_char_stream}{CharStream}}}
+\DoxyCodeLine{67 \{}
+\DoxyCodeLine{68   \textcolor{keyword}{public}:}
+\DoxyCodeLine{69     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_sim_channel_a7962e17c4304175072b79e9d19af4194}{writebuffer}}[128];}
+\DoxyCodeLine{70     \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_sim_channel_a3c6d73e68f88343c9c81733c1363a3ed}{wbwrite}};}
+\DoxyCodeLine{71     \mbox{\hyperlink{class_sim_servo}{SimServo}}* \mbox{\hyperlink{class_sim_channel_a097c69afa5feb47e8dfd7536533524c9}{servos}};}
+\DoxyCodeLine{72     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_sim_channel_add01b016bb03095289918fd92ef78e0f}{count}};}
+\DoxyCodeLine{73     }
+\DoxyCodeLine{74   \textcolor{keyword}{public}:}
+\DoxyCodeLine{75     \mbox{\hyperlink{class_sim_channel_aeee30c0e6ffc2335050c772dfbd33763}{SimChannel}}();}
+\DoxyCodeLine{76     \mbox{\hyperlink{class_sim_channel_aac3554c56baf2dabf29bdbb69f9a5c16}{\string~SimChannel}}();}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_sim_channel_a7ced6dff9a3369bc20a5f99c2a986599}{contains}}(\textcolor{keywordtype}{short} servoId) \textcolor{keyword}{const};}
+\DoxyCodeLine{79     \mbox{\hyperlink{class_sim_servo}{SimServo}}\& \mbox{\hyperlink{class_sim_channel_a6a90ccfa508d339ac4ed90422cf7d99d}{operator[]}}(\textcolor{keywordtype}{short} servoId);}
+\DoxyCodeLine{80     \textcolor{keyword}{const} \mbox{\hyperlink{class_sim_servo}{SimServo}}\& \mbox{\hyperlink{class_sim_channel_a6a90ccfa508d339ac4ed90422cf7d99d}{operator[]}}(\textcolor{keywordtype}{short} servoId) \textcolor{keyword}{const};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82     \textcolor{keyword}{virtual} \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_sim_channel_a2b0ea3f7389909a69e7df51b3fcc37b6}{write}}(uint8\_t c);}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t} N>}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sim_channel_a4a66416fe48c7774340933aa5ddecd52}{begin}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} (\&ids)[N])}
+\DoxyCodeLine{86     \{}
+\DoxyCodeLine{87       \mbox{\hyperlink{class_sim_channel_add01b016bb03095289918fd92ef78e0f}{count}}=N;}
+\DoxyCodeLine{88       \mbox{\hyperlink{class_sim_channel_a097c69afa5feb47e8dfd7536533524c9}{servos}} = (\mbox{\hyperlink{class_sim_servo}{SimServo}}*)calloc(\mbox{\hyperlink{class_sim_channel_add01b016bb03095289918fd92ef78e0f}{count}}, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_sim_servo}{SimServo}}));}
+\DoxyCodeLine{89       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\mbox{\hyperlink{class_sim_channel_add01b016bb03095289918fd92ef78e0f}{count}}; i++) \{}
+\DoxyCodeLine{90         \textcolor{comment}{// call the placement new operator here supplying the memory the constructor operates on}}
+\DoxyCodeLine{91         \textcolor{comment}{// "{}placement new"{} operator doesnt allocate memory, we supply the memory it just runs the constructor}}
+\DoxyCodeLine{92         \mbox{\hyperlink{class_sim_servo}{SimServo}}* s = \textcolor{keyword}{new} (\&\mbox{\hyperlink{class_sim_channel_a097c69afa5feb47e8dfd7536533524c9}{servos}}[i]) \mbox{\hyperlink{class_sim_servo}{SimServo}}();}
+\DoxyCodeLine{93         s-\/>\mbox{\hyperlink{class_sim_servo_a1f4766b6dd5be04bfa27347411a84462}{assign}}(ids[i], \textcolor{keyword}{this});}
+\DoxyCodeLine{94       \}}
+\DoxyCodeLine{95     \}}
+\DoxyCodeLine{96 \};}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98 \textcolor{keyword}{class }\mbox{\hyperlink{class_lss_test_rig}{LssTestRig}} \{}
+\DoxyCodeLine{99   \textcolor{keyword}{public}:}
+\DoxyCodeLine{100     \mbox{\hyperlink{class_sim_channel}{SimChannel}} \mbox{\hyperlink{class_lss_test_rig_a09560abd810a0a696adf255c59e1bf39}{sim}};}
+\DoxyCodeLine{101     \mbox{\hyperlink{class_lynx_channel}{LynxChannel}} \mbox{\hyperlink{class_lss_test_rig_a529d0a6b819a21b576acbf6736cde082}{channel}};}
+\DoxyCodeLine{102     \mbox{\hyperlink{class_lynx_servo}{LynxServo}} \mbox{\hyperlink{class_lss_test_rig_a4864c492b3389f309799425d85436db0}{hip}};}
+\DoxyCodeLine{103     \mbox{\hyperlink{class_lynx_servo}{LynxServo}} \mbox{\hyperlink{class_lss_test_rig_a29d98835df850669fc03bc99f511b728}{ankle}};}
+\DoxyCodeLine{104     \mbox{\hyperlink{class_lynx_servo}{LynxServo}} \mbox{\hyperlink{class_lss_test_rig_a89cab3fbd055ebec7a7defef2d421999}{foot}};}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106     \mbox{\hyperlink{class_lss_test_rig_a50b2b9fbf740929d80cf766346fd1ba5}{LssTestRig}}();}
+\DoxyCodeLine{107     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lss_test_rig_ab4847078dd5ee79186abff46e67400a9}{scan}}();}
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lss_test_rig_abc76a5bcc4c170a210a5e379df9f0b46}{update}}();}
+\DoxyCodeLine{109 \};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \textcolor{keyword}{class }\mbox{\hyperlink{class_lss_physical_rig}{LssPhysicalRig}} \{}
+\DoxyCodeLine{112   \textcolor{keyword}{public}:}
+\DoxyCodeLine{113     \mbox{\hyperlink{class_lynx_channel}{LynxChannel}} \mbox{\hyperlink{class_lss_physical_rig_a87d9b0515aed4ef12643dda813ae9253}{channel}};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115     \mbox{\hyperlink{class_lss_physical_rig_a88d0d5a82452c7a4f2e046fd0a14b5f1}{LssPhysicalRig}}(HardwareSerial\& serial, \textcolor{keywordtype}{short}* ids, \textcolor{keywordtype}{short} count);}
+\DoxyCodeLine{116     }
+\DoxyCodeLine{117     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lss_physical_rig_a5969ac87fe828015d1abd787e583a869}{update}}();}
+\DoxyCodeLine{118 \};}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 \textcolor{keyword}{extern} \textcolor{keywordtype}{bool} \mbox{\hyperlink{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}{\_neg\_test}};}
+\DoxyCodeLine{122 \textcolor{preprocessor}{\#define test\_neg(test\_func) \{ \_neg\_test=true; test\_func;  \_neg\_test=false; \}}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a178ba45a1e7358a6848da9c433aff767}{test\_report}}(\textcolor{keyword}{const} \_\_FlashStringHelper* result, \textcolor{keywordtype}{bool} passed);}
+\DoxyCodeLine{125 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a178ba45a1e7358a6848da9c433aff767}{test\_report}}(String result, \textcolor{keywordtype}{bool} passed);}
+\DoxyCodeLine{126 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a0d00e4f7786da5e813f3d70ebf8aa2b1}{test\_head}}(\textcolor{keyword}{const} \_\_FlashStringHelper* header);}
+\DoxyCodeLine{127 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a2e3220b909e1909d93b3b6484a71dd01}{test\_report\_finish}}();}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a52fb799b0df138720ac2e1055136ec8f}{test\_parse\_command}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* cmd, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} parsed);}
+\DoxyCodeLine{130 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a7be05481d3154841432b36c9eca34500}{test\_parse\_packet}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* pkt, \mbox{\hyperlink{class_lynx_packet}{LynxPacket}} packet);}
+\DoxyCodeLine{131 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a464743c509447a35595b6bbcab86463e}{test\_serialize\_command}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* pkt, \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} cmd);}
+\DoxyCodeLine{132 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_a33df0fd68696a973a034c943746e9dbe}{test\_serialize\_packet}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* pkt, \mbox{\hyperlink{class_lynx_packet}{LynxPacket}} packet); }
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134 \textcolor{comment}{//void test\_packet\_class();}}
+\DoxyCodeLine{135 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_ab905b65772dd1b6716c6ddf364ca5790}{lynx\_charstream\_tests}}();}
+\DoxyCodeLine{136 \textcolor{keywordtype}{void} \mbox{\hyperlink{_lss_testing_8h_aed0555b3c1c7610beffd8691b3d2ca7d}{lynx\_servo\_tests}}();}
+
+\end{DoxyCode}

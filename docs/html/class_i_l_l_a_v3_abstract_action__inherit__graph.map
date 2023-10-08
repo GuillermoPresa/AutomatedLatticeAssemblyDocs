@@ -1,0 +1,9 @@
+<map id="ILLAV3AbstractAction" name="ILLAV3AbstractAction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,156,159"/>
+<area shape="rect" id="node2" href="$class_actuate_screw_driver.html" title=" " alt="" coords="210,5,345,32"/>
+<area shape="rect" id="node3" href="$class_insert_in_node.html" title=" " alt="" coords="230,56,325,83"/>
+<area shape="rect" id="node4" href="$class_move_and_insert_in_node.html" title="This actions moves the robot arm and inserts the screwdriver into the node. First the arm moves a dis..." alt="" coords="204,107,351,133"/>
+<area shape="rect" id="node5" href="$class_movement_action.html" title=" " alt="" coords="218,157,337,184"/>
+<area shape="rect" id="node6" href="$class_swap_base_action.html" title=" " alt="" coords="217,208,338,235"/>
+<area shape="rect" id="node7" href="$class_wait_action.html" title=" " alt="" coords="234,259,321,285"/>
+</map>

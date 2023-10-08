@@ -1,7 +1,8 @@
 <map id="ILLAState_Abstract" name="ILLAState_Abstract">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,398,32"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_state___configured.html" title=" " alt="" coords="5,80,152,107"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html" title=" " alt="" coords="177,80,325,107"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_state___e_stop.html" title=" " alt="" coords="349,80,472,107"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_state___spawned.html" title=" " alt="" coords="496,80,635,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,140,133"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_state___configured.html" title=" " alt="" coords="228,5,375,32"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html" title=" " alt="" coords="227,56,375,83"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___e_stop.html" title=" " alt="" coords="240,107,363,133"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___executing_work_package.html" title=" " alt="" coords="188,157,415,184"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_state___spawned.html" title=" " alt="" coords="232,208,371,235"/>
 </map>

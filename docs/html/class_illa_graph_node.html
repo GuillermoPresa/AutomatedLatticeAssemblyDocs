@@ -106,14 +106,16 @@ Collaboration diagram for IllaGraphNode:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_illa_graph_node__coll__graph.png" border="0" usemap="#a_illa_graph_node_coll__map" alt="Collaboration graph"/></div>
 <map name="a_illa_graph_node_coll__map" id="a_illa_graph_node_coll__map">
-<area shape="rect" title=" " alt="" coords="9,81,112,108"/>
-<area shape="rect" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" title=" " alt="" coords="31,171,133,197"/>
+<area shape="rect" title=" " alt="" coords="5,81,116,108"/>
+<area shape="rect" href="class_pos_j.html" title=" " alt="" coords="141,81,191,108"/>
+<area shape="rect" href="interface_i_prototype.html" title=" " alt="" coords="99,5,233,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_illa_graph_node_1_1_cost_struct.html">CostStruct</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_illa_graph_node_1_1_neighbor_movement_struct.html">NeighborMovementStruct</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -124,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f4e900afbf7c330eeb9849944d149c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bbcb583eda13d6f62f9fabcde44bef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a17bbcb583eda13d6f62f9fabcde44bef">ResetSearchParameters</a> ()</td></tr>
 <tr class="separator:a17bbcb583eda13d6f62f9fabcde44bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a829203e841dcd579d7c7f0f96b954026"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a829203e841dcd579d7c7f0f96b954026">MakeInitialNode</a> (<a class="el" href="class_pos_j.html">PosJ</a> startingPose)</td></tr>
-<tr class="separator:a829203e841dcd579d7c7f0f96b954026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e8cc3178130c5d56feb88f48cb13ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#aa2e8cc3178130c5d56feb88f48cb13ca">MakeInitialNode</a> (<a class="el" href="class_pos_j.html">PosJ</a> startingPose_in)</td></tr>
+<tr class="separator:aa2e8cc3178130c5d56feb88f48cb13ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aea29ea30084ae32454937e45d62ae4"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a2aea29ea30084ae32454937e45d62ae4">Equals</a> (object other)</td></tr>
 <tr class="separator:a2aea29ea30084ae32454937e45d62ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad415df3fd267254b8e4d0693164282bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc">AddNeighbour</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> neighbour, <a class="el" href="class_movement.html">Movement</a> TargetMovement)</td></tr>
@@ -140,6 +142,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae99e75a74c7d92ea88ec27f842d0181a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b865fbdde4bd0c1e812496261982f8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8">GetMinCostFromNeighbor</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> neighbor)</td></tr>
 <tr class="separator:ad2b865fbdde4bd0c1e812496261982f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fe8de0c14a7e155ddef823c5db35c00"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a1fe8de0c14a7e155ddef823c5db35c00">GetMinCostFromNeighbor</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> neighbor, <a class="el" href="class_robot_configuration.html">RobotConfiguration</a> startingConfiguration)</td></tr>
+<tr class="memdesc:a1fe8de0c14a7e155ddef823c5db35c00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum cost from the input neighbour to this node given an initial configuration the robot is at the previous node.  <a href="class_illa_graph_node.html#a1fe8de0c14a7e155ddef823c5db35c00">More...</a><br /></td></tr>
+<tr class="separator:a1fe8de0c14a7e155ddef823c5db35c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e3aa47f179ee2d8ad84620cf11db85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ab5e3aa47f179ee2d8ad84620cf11db85">DrawOutgoingEdgesWithCost</a> (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> previousNodeToDraw)</td></tr>
+<tr class="separator:ab5e3aa47f179ee2d8ad84620cf11db85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6943dc10fe8167c1f295303fc10dd3c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a6943dc10fe8167c1f295303fc10dd3c4">DrawNodeTag</a> ()</td></tr>
+<tr class="separator:a6943dc10fe8167c1f295303fc10dd3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -150,6 +159,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a4502f27643db7e629021fcb1d286f4ab"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a4502f27643db7e629021fcb1d286f4ab">NodeIDstr</a></td></tr>
+<tr class="separator:a4502f27643db7e629021fcb1d286f4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace8039c347b503ff2f20f0f014f8db2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ace8039c347b503ff2f20f0f014f8db2d">visited</a> = false</td></tr>
 <tr class="separator:ace8039c347b503ff2f20f0f014f8db2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71296d4ee3c25014f9e0936456edcbc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a71296d4ee3c25014f9e0936456edcbc7">isStartingNode</a> = false</td></tr>
@@ -162,6 +173,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad10bdcd90870e22e6b41260777a72e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79df5c2a8e1d0d17c3e4052a6d9d9776"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a79df5c2a8e1d0d17c3e4052a6d9d9776">estimatedCostFunctional</a> = (float)99999999999</td></tr>
 <tr class="separator:a79df5c2a8e1d0d17c3e4052a6d9d9776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eabfa3670b0ed2abfde166a8e9b3996"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a4eabfa3670b0ed2abfde166a8e9b3996">startingPose</a></td></tr>
+<tr class="separator:a4eabfa3670b0ed2abfde166a8e9b3996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7d1747d660f197bb7f66e0c9b7475d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a6d7d1747d660f197bb7f66e0c9b7475d">IllaGraphNode</a></td></tr>
+<tr class="memdesc:a6d7d1747d660f197bb7f66e0c9b7475d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum cost from the input neighbour to this node.  <a href="class_illa_graph_node.html#a6d7d1747d660f197bb7f66e0c9b7475d">More...</a><br /></td></tr>
+<tr class="separator:a6d7d1747d660f197bb7f66e0c9b7475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -175,10 +191,8 @@ Properties</h2></td></tr>
 <tr class="separator:a878d7fb8673283c02dd4e5b7f3af717a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d13fb39c644b44d7f22de0df5c915a"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, <a class="el" href="class_movement.html">Movement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a61d13fb39c644b44d7f22de0df5c915a">neighbourMovementDictionary</a><code> [get]</code></td></tr>
 <tr class="separator:a61d13fb39c644b44d7f22de0df5c915a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8d7fcb5dc27d4767a83832025d2ebd2"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, List&lt; <a class="el" href="struct_illa_graph_node_1_1_cost_struct.html">CostStruct</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#ab8d7fcb5dc27d4767a83832025d2ebd2">incomingNeighbourCostDictionary</a><code> [get]</code></td></tr>
-<tr class="separator:ab8d7fcb5dc27d4767a83832025d2ebd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a272391aa7445c44a1b5c3f0b62f03e8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a272391aa7445c44a1b5c3f0b62f03e8d">incomingNeighbourCostDictDiscovered</a><code> [get]</code></td></tr>
-<tr class="separator:a272391aa7445c44a1b5c3f0b62f03e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201f055c5aa3f675ce14be33552721eb"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; <a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, List&lt; <a class="el" href="struct_illa_graph_node_1_1_neighbor_movement_struct.html">NeighborMovementStruct</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_illa_graph_node.html#a201f055c5aa3f675ce14be33552721eb">incomingNeighbourCostDictionary</a><code> [get]</code></td></tr>
+<tr class="separator:a201f055c5aa3f675ce14be33552721eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Navigation graph for ILLA inchowrm locomotion lattice assemblers that employ inverse kinnematics and dont have preprogramed movements.</p>
@@ -202,7 +216,7 @@ Properties</h2></td></tr>
  <br  />
 </p>
 <p >The _incomingNeighbourCostDictionary, stores for incomming neighbours, the previous node, inital <a class="el" href="class_pos_j.html">PosJ</a> and the cost to reach the goal node from the origin. <br  />
- The incomming neighbours previous node, initial <a class="el" href="class_pos_j.html">PosJ</a> and cost to reach are stored in the form of a <a class="el" href="struct_illa_graph_node_1_1_cost_struct.html">CostStruct</a></p>
+ The incomming neighbours previous node, initial <a class="el" href="class_pos_j.html">PosJ</a> and cost to reach are stored in the form of a CostStruct</p>
 <p >The structu PosJAndCost is utilized to store this information: <br  />
  ComputeCostToReachFromOrigin populates this dictionary and structs and returns the path with the minimal cost.</p>
 <dl class="section warning"><dt>Warning</dt><dd>*Starting node has to be assigned an incomming cost struct with itself as the previous incomming node. This way the search algorithm can compute its initial cost. * In essence the definition of the initial node can be that of a node whose previous node is itself (in a movement of zero cost). </dd></dl>
@@ -232,15 +246,6 @@ Properties</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_illa_graph_node_a7211b14dc30796fdecd736fa1f49989e_icgraph.png" border="0" usemap="#aclass_illa_graph_node_a7211b14dc30796fdecd736fa1f49989e_icgraph" alt=""/></div>
-<map name="aclass_illa_graph_node_a7211b14dc30796fdecd736fa1f49989e_icgraph" id="aclass_illa_graph_node_a7211b14dc30796fdecd736fa1f49989e_icgraph">
-<area shape="rect" title=" " alt="" coords="200,5,388,32"/>
-<area shape="rect" href="class_illa_graph_node.html#a2aea29ea30084ae32454937e45d62ae4" title=" " alt="" coords="5,5,152,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -279,7 +284,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="241,64,424,91"/>
 <area shape="rect" href="class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e" title=" " alt="" coords="481,5,636,32"/>
 <area shape="rect" href="class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="472,57,645,98"/>
-<area shape="rect" href="class_movement.html#a888fd1350e071cd874e7e587ab95c032" title=" " alt="" coords="487,123,631,149"/>
+<area shape="rect" href="class_movement.html#a7f4f9b9b1d2266412f90de53a13aa7dc" title=" " alt="" coords="487,123,631,149"/>
 <area shape="rect" href="class_pos_x.html#acb32feca5a6223846a79a1e264914638" title=" " alt="" coords="735,5,821,32"/>
 <area shape="rect" href="class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb" title=" " alt="" coords="701,60,855,87"/>
 <area shape="rect" href="class_robot_configuration.html#a1ae7e50b7050ac542ce5fb59d329c81e" title=" " alt="" coords="693,111,863,153"/>
@@ -316,13 +321,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_icgraph.png" border="0" usemap="#aclass_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_icgraph" alt=""/></div>
 <map name="aclass_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_icgraph" id="aclass_illa_graph_node_a3f4e900afbf7c330eeb9849944d149c6_icgraph">
-<area shape="rect" title=" " alt="" coords="900,126,1037,153"/>
-<area shape="rect" href="class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3" title=" " alt="" coords="745,126,852,153"/>
-<area shape="rect" href="class_inchworm_robot_controller.html#a1997a2fbba1b2b7a1aef51e33fe1ebaf" title=" " alt="" coords="508,29,679,71"/>
-<area shape="rect" href="class_illa_controller_v3.html#ae3c1a21d9501cd2723ca0ffba3e99b63" title=" " alt="" coords="504,119,683,160"/>
-<area shape="rect" href="class_inchworm_robot_controller.html#a8748b1488b66e0aea734ff0acf4a82fb" title=" " alt="" coords="489,208,697,249"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="247,119,441,160"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,126,199,153"/>
+<area shape="rect" title=" " alt="" coords="937,126,1075,153"/>
+<area shape="rect" href="class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3" title=" " alt="" coords="783,126,889,153"/>
+<area shape="rect" href="class_inchworm_robot_controller.html#a1997a2fbba1b2b7a1aef51e33fe1ebaf" title=" " alt="" coords="545,29,716,71"/>
+<area shape="rect" href="class_illa_controller_v3.html#ae3c1a21d9501cd2723ca0ffba3e99b63" title=" " alt="" coords="541,119,720,160"/>
+<area shape="rect" href="class_inchworm_robot_controller.html#a8748b1488b66e0aea734ff0acf4a82fb" title=" " alt="" coords="527,208,735,249"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="284,119,479,160"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,97,217,123"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,148,236,189"/>
 </map>
 </div>
 
@@ -347,9 +353,74 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039_icgraph.png" border="0" usemap="#aclass_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039_icgraph" alt=""/></div>
 <map name="aclass_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039_icgraph" id="aclass_illa_graph_node_ae3350de7e61dd1f9698e7452447c5039_icgraph">
-<area shape="rect" title=" " alt="" coords="467,5,672,47"/>
-<area shape="rect" href="class_illa_graph.html#ad33f2442d491486a614c51d74d9921e0" title=" " alt="" coords="232,5,419,47"/>
+<area shape="rect" title=" " alt="" coords="683,5,888,47"/>
+<area shape="rect" href="class_illa_graph.html#a8fe0a5999ffbe2e512eb39702ead38c4" title=" " alt="" coords="455,5,635,47"/>
+<area shape="rect" href="class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="232,5,407,47"/>
 <area shape="rect" href="class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,5,184,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6943dc10fe8167c1f295303fc10dd3c4" name="a6943dc10fe8167c1f295303fc10dd3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6943dc10fe8167c1f295303fc10dd3c4">&#9670;&nbsp;</a></span>DrawNodeTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IllaGraphNode.DrawNodeTag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_node_a6943dc10fe8167c1f295303fc10dd3c4_cgraph.png" border="0" usemap="#aclass_illa_graph_node_a6943dc10fe8167c1f295303fc10dd3c4_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_a6943dc10fe8167c1f295303fc10dd3c4_cgraph" id="aclass_illa_graph_node_a6943dc10fe8167c1f295303fc10dd3c4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,192,39"/>
+<area shape="rect" href="class_text_gizmos.html#a9515de999f66814492388fe7803291a7" title=" " alt="" coords="240,5,429,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5e3aa47f179ee2d8ad84620cf11db85" name="ab5e3aa47f179ee2d8ad84620cf11db85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e3aa47f179ee2d8ad84620cf11db85">&#9670;&nbsp;</a></span>DrawOutgoingEdgesWithCost()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IllaGraphNode.DrawOutgoingEdgesWithCost </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td>
+          <td class="paramname"><em>previousNodeToDraw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>OPTIMIAZTION: only compute the cost of the elements that are not already checked. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Requieres node to have been visited. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_cgraph.png" border="0" usemap="#aclass_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_cgraph" id="aclass_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,193,47"/>
+<area shape="rect" href="class_text_gizmos.html#a9515de999f66814492388fe7803291a7" title=" " alt="" coords="241,5,431,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_icgraph.png" border="0" usemap="#aclass_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_icgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_icgraph" id="aclass_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85_icgraph">
+<area shape="rect" title=" " alt="" coords="243,5,431,47"/>
+<area shape="rect" href="class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="5,5,195,47"/>
 </map>
 </div>
 
@@ -376,14 +447,14 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4_cgraph.png" border="0" usemap="#aclass_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4_cgraph" alt=""/></div>
 <map name="aclass_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4_cgraph" id="aclass_illa_graph_node_a2aea29ea30084ae32454937e45d62ae4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,152,32"/>
-<area shape="rect" href="class_illa_graph_node.html#a7211b14dc30796fdecd736fa1f49989e" title=" " alt="" coords="200,5,388,32"/>
+<area shape="rect" href="class_illa_graph_node.html#a6d7d1747d660f197bb7f66e0c9b7475d" title="Returns the minimum cost from the input neighbour to this node." alt="" coords="200,5,388,32"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="ad2b865fbdde4bd0c1e812496261982f8" name="ad2b865fbdde4bd0c1e812496261982f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2b865fbdde4bd0c1e812496261982f8">&#9670;&nbsp;</a></span>GetMinCostFromNeighbor()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b865fbdde4bd0c1e812496261982f8">&#9670;&nbsp;</a></span>GetMinCostFromNeighbor() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,19 +469,69 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_icgraph.png" border="0" usemap="#aclass_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_icgraph" alt=""/></div>
-<map name="aclass_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_icgraph" id="aclass_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_icgraph">
-<area shape="rect" title=" " alt="" coords="232,5,408,47"/>
-<area shape="rect" href="class_illa_graph.html#ae47ae1cfaec3d6dfb3ca4dad8e7ac555" title=" " alt="" coords="5,13,184,39"/>
+<div class="center"><img src="class_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_cgraph.png" border="0" usemap="#aclass_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_cgraph" id="aclass_illa_graph_node_ad2b865fbdde4bd0c1e812496261982f8_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="229,5,448,47"/>
+<area shape="rect" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title=" " alt="" coords="496,5,675,47"/>
+<area shape="rect" href="class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="723,13,857,39"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a829203e841dcd579d7c7f0f96b954026" name="a829203e841dcd579d7c7f0f96b954026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a829203e841dcd579d7c7f0f96b954026">&#9670;&nbsp;</a></span>MakeInitialNode()</h2>
+<a id="a1fe8de0c14a7e155ddef823c5db35c00" name="a1fe8de0c14a7e155ddef823c5db35c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fe8de0c14a7e155ddef823c5db35c00">&#9670;&nbsp;</a></span>GetMinCostFromNeighbor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float IllaGraphNode.GetMinCostFromNeighbor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>&#160;</td>
+          <td class="paramname"><em>neighbor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_robot_configuration.html">RobotConfiguration</a>&#160;</td>
+          <td class="paramname"><em>startingConfiguration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum cost from the input neighbour to this node given an initial configuration the robot is at the previous node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">neighbor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_illa_graph_node_a1fe8de0c14a7e155ddef823c5db35c00_cgraph.png" border="0" usemap="#aclass_illa_graph_node_a1fe8de0c14a7e155ddef823c5db35c00_cgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_a1fe8de0c14a7e155ddef823c5db35c00_cgraph" id="aclass_illa_graph_node_a1fe8de0c14a7e155ddef823c5db35c00_cgraph">
+<area shape="rect" title="Returns the minimum cost from the input neighbour to this node given an initial configuration the rob..." alt="" coords="5,5,181,47"/>
+<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="229,5,448,47"/>
+<area shape="rect" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title=" " alt="" coords="496,5,675,47"/>
+<area shape="rect" href="class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="723,13,857,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2e8cc3178130c5d56feb88f48cb13ca" name="aa2e8cc3178130c5d56feb88f48cb13ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2e8cc3178130c5d56feb88f48cb13ca">&#9670;&nbsp;</a></span>MakeInitialNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,7 +540,7 @@ Here is the caller graph for this function:</div>
           <td class="memname">void IllaGraphNode.MakeInitialNode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
-          <td class="paramname"><em>startingPose</em></td><td>)</td>
+          <td class="paramname"><em>startingPose_in</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -427,10 +548,10 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_illa_graph_node_a829203e841dcd579d7c7f0f96b954026_icgraph.png" border="0" usemap="#aclass_illa_graph_node_a829203e841dcd579d7c7f0f96b954026_icgraph" alt=""/></div>
-<map name="aclass_illa_graph_node_a829203e841dcd579d7c7f0f96b954026_icgraph" id="aclass_illa_graph_node_a829203e841dcd579d7c7f0f96b954026_icgraph">
-<area shape="rect" title=" " alt="" coords="227,5,425,32"/>
-<area shape="rect" href="class_illa_graph.html#abd8d7d4227661b992ec074dac72e76c2" title=" " alt="" coords="5,5,179,32"/>
+<div class="center"><img src="class_illa_graph_node_aa2e8cc3178130c5d56feb88f48cb13ca_icgraph.png" border="0" usemap="#aclass_illa_graph_node_aa2e8cc3178130c5d56feb88f48cb13ca_icgraph" alt=""/></div>
+<map name="aclass_illa_graph_node_aa2e8cc3178130c5d56feb88f48cb13ca_icgraph" id="aclass_illa_graph_node_aa2e8cc3178130c5d56feb88f48cb13ca_icgraph">
+<area shape="rect" title=" " alt="" coords="207,5,405,32"/>
+<area shape="rect" href="class_illa_graph.html#afdc20abb7f68106a4856175a136832c9" title=" " alt="" coords="5,5,159,32"/>
 </map>
 </div>
 
@@ -639,6 +760,29 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a6d7d1747d660f197bb7f66e0c9b7475d" name="a6d7d1747d660f197bb7f66e0c9b7475d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7d1747d660f197bb7f66e0c9b7475d">&#9670;&nbsp;</a></span>IllaGraphNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IllaGraphNode.IllaGraphNode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the minimum cost from the input neighbour to this node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">neighbor</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a34421db1e995a87ff81a3f74741e48b0" name="a34421db1e995a87ff81a3f74741e48b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34421db1e995a87ff81a3f74741e48b0">&#9670;&nbsp;</a></span>isGoalNode</h2>
 
@@ -667,6 +811,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a4502f27643db7e629021fcb1d286f4ab" name="a4502f27643db7e629021fcb1d286f4ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4502f27643db7e629021fcb1d286f4ab">&#9670;&nbsp;</a></span>NodeIDstr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string IllaGraphNode.NodeIDstr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4eabfa3670b0ed2abfde166a8e9b3996" name="a4eabfa3670b0ed2abfde166a8e9b3996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eabfa3670b0ed2abfde166a8e9b3996">&#9670;&nbsp;</a></span>startingPose</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pos_j.html">PosJ</a> IllaGraphNode.startingPose</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ace8039c347b503ff2f20f0f014f8db2d" name="ace8039c347b503ff2f20f0f014f8db2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace8039c347b503ff2f20f0f014f8db2d">&#9670;&nbsp;</a></span>visited</h2>
 
@@ -682,8 +854,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a272391aa7445c44a1b5c3f0b62f03e8d" name="a272391aa7445c44a1b5c3f0b62f03e8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a272391aa7445c44a1b5c3f0b62f03e8d">&#9670;&nbsp;</a></span>incomingNeighbourCostDictDiscovered</h2>
+<a id="a201f055c5aa3f675ce14be33552721eb" name="a201f055c5aa3f675ce14be33552721eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201f055c5aa3f675ce14be33552721eb">&#9670;&nbsp;</a></span>incomingNeighbourCostDictionary</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,29 +864,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool IllaGraphNode.incomingNeighbourCostDictDiscovered</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab8d7fcb5dc27d4767a83832025d2ebd2" name="ab8d7fcb5dc27d4767a83832025d2ebd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8d7fcb5dc27d4767a83832025d2ebd2">&#9670;&nbsp;</a></span>incomingNeighbourCostDictionary</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dictionary&lt;<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, List&lt;<a class="el" href="struct_illa_graph_node_1_1_cost_struct.html">CostStruct</a>&gt; &gt; IllaGraphNode.incomingNeighbourCostDictionary</td>
+          <td class="memname">Dictionary&lt;<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a>, List&lt;<a class="el" href="struct_illa_graph_node_1_1_neighbor_movement_struct.html">NeighborMovementStruct</a>&gt; &gt; IllaGraphNode.incomingNeighbourCostDictionary</td>
         </tr>
       </table>
   </td>

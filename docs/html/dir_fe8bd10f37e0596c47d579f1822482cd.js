@@ -12,6 +12,5 @@ var dir_fe8bd10f37e0596c47d579f1822482cd =
     [ "ObjectSaver.cs", "_object_saver_8cs.html", "_object_saver_8cs" ],
     [ "Selected.cs", "_selected_8cs.html", "_selected_8cs" ],
     [ "Spawning.cs", "_spawning_8cs.html", "_spawning_8cs" ],
-    [ "UITools.cs", "_u_i_tools_8cs.html", "_u_i_tools_8cs" ],
-    [ "WorkPackage.cs", "_work_package_8cs.html", "_work_package_8cs" ]
+    [ "UITools.cs", "_u_i_tools_8cs.html", "_u_i_tools_8cs" ]
 ];

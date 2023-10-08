@@ -11,7 +11,8 @@ Inheritance diagram for Joint\+Class\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Joint\+Class\+:\nopagebreak
+Collaboration diagram for Joint\+Class\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -149,28 +150,28 @@ Outdated. HA hier agnostic absolute properties are wrong. The is\+Base criterion
 \end{DoxyWarning}
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000008}{Todo}}]update this doc section. \mbox{\hyperlink{class_references}{References}} to fuinctions in the frame definition and hierarchy dependence stuff\end{DoxyRefDesc}
-\hypertarget{class_joint_class_autotoc_md23}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md23}
+\hypertarget{class_joint_class_autotoc_md52}{}\doxysubsubsection{Assembly definition}\label{class_joint_class_autotoc_md52}
 The assembly constraint of the joint is defined by the following properties\+:
 
 \mbox{\hyperlink{class_joint_class_a7fa77b5ff5029346a004632255672c3d}{assembly\+Position}} \+: Vector3 with (x,y,z) assembly constraint of the current node wrt base joint ~\newline
 \mbox{\hyperlink{class_joint_class_a867568b3ac94a93e8cb4b5979a45790e}{assembly\+Rotation}} \+: Vector3 with euler angles (x,y,z) of the assembly constraint of the current node wrt base joint. ~\newline
  The assembly constraints are provided in {\bfseries{Hierarchy agnosntic}}, {\bfseries{Absolute frame}}. This is more convinient for the user when defining a robot as it allows to build the robot within Unity prefab editor and copy paste the assembly constraints. \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000009}{Todo}}]Add editor tools to allow the user to define a robot from relative frames within the editor and convert it to absolute frames.\end{DoxyRefDesc}
-\hypertarget{class_joint_class_autotoc_md24}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md24}
+\hypertarget{class_joint_class_autotoc_md53}{}\doxysubsubsection{Frame definition}\label{class_joint_class_autotoc_md53}
 The frame of the joint (position and orientation) can be defined with respect to the base joint (aboslute) or previous joint (relative)
 
 {\bfseries{Relative frame\+:}} The joint is defined in a relative frame, with respect to the previous joint. ~\newline
 Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}
 
 {\bfseries{Absolute frame\+:}} The joint is defined in a relative frame, with respect to the base joint. ~\newline
-Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md25}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md25}
+Used in\+: \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_abeb9deb2ba3a4695301a57854e3b4770}{h\+DCurrent\+Orientation}}??, \mbox{\hyperlink{class_joint_class_aca3a9203cc20262b6ea6b10f95acdbac}{h\+DCurrent\+Position}}??\hypertarget{class_joint_class_autotoc_md54}{}\doxysubsubsection{Hierarchy dependence}\label{class_joint_class_autotoc_md54}
 When the robot hierarchy is inverted, the next node and previous node to control will be different than that of the assembly definition.
 
 {\bfseries{Hierarchy agnostic (HA)\+:}} Hierachy agnostic properties are those that are not affected by the hierarchy inversion such that the next and previous node are always the same and dont change, always representing the assembly constraints. ~\newline
 Used in\+: \mbox{\hyperlink{class_joint_class_a16251669280600c4cf765ab808521723}{h\+ARelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_a1abeaee76f243b67145d4cf3c6d1a817}{h\+ARelative\+Assembly\+Rotation}}
 
 {\bfseries{Hierarchy dependent (HD)\+:}} Hierarchy dependent properties are those that are affected by the the hierarchy inversion such that the next and previous node swap after a hierarchy inversion. ~\newline
-Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md26}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md26}
+Used in\+: \mbox{\hyperlink{class_joint_class_a52493eaa308fcf78059a7cdd7c414426}{h\+DRelative\+Assembly\+Position}}, \mbox{\hyperlink{class_joint_class_ac7583c0c9387456e3161c77c065e2517}{h\+DRelative\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_a1f9a4b50070af3f87fd48d324ba30c7a}{h\+DAbsolute\+Assembly\+Rotation}}, \mbox{\hyperlink{class_joint_class_ae04f07dda07185647379a126f4459e27}{h\+DAbsolute\+Assembly\+Position}}\hypertarget{class_joint_class_autotoc_md55}{}\doxysubsubsection{Internal definitions}\label{class_joint_class_autotoc_md55}
 
 
 \doxysubsection{Member Function Documentation}

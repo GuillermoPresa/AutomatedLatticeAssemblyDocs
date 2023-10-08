@@ -1,6 +1,9 @@
 <map id="C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3" name="C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3">
-<area shape="rect" id="node2" href="dir_04eee088ca6b5a3954c8c285afe5cce5.html" title="ILLA_States" alt="" coords="133,63,227,111"/>
-<area shape="rect" id="node3" href="dir_549a80e3ac12bff7a312bad1f97a57be.html" title="LSS_lib" alt="" coords="37,63,109,111"/>
-<area shape="rect" id="clust2" href="dir_40ef2f37466dc58e6f95dd69f846fc37.html" alt="" coords="27,52,333,121"/>
-<area shape="rect" id="clust1" href="dir_759798f0f79e5b171576380855099450.html" title="Objects" alt="" coords="16,16,344,132"/>
+<area shape="rect" id="node2" href="dir_19c503f7b7f32c24e41e5e41a1c00447.html" title="Actions" alt="" coords="595,63,667,111"/>
+<area shape="rect" id="node3" href="dir_04eee088ca6b5a3954c8c285afe5cce5.html" title="ILLA_States" alt="" coords="477,63,571,111"/>
+<area shape="rect" id="node4" href="dir_6c4fada989afdd60f3b6243b448b48a4.html" title="LSS2MC_arduinoCode" alt="" coords="299,63,453,111"/>
+<area shape="rect" id="node5" href="dir_549a80e3ac12bff7a312bad1f97a57be.html" title="LSS_lib" alt="" coords="203,63,275,111"/>
+<area shape="rect" id="node6" href="dir_07d355fd374f1d70d33b88c188492223.html" title="Python_IKmathCode" alt="" coords="37,63,179,111"/>
+<area shape="rect" id="clust2" href="dir_40ef2f37466dc58e6f95dd69f846fc37.html" alt="" coords="27,52,773,121"/>
+<area shape="rect" id="clust1" href="dir_759798f0f79e5b171576380855099450.html" title="Objects" alt="" coords="16,16,784,132"/>
 </map>

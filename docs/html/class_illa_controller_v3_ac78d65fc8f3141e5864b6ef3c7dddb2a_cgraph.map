@@ -1,28 +1,33 @@
 <map id="IllaControllerV3.NonDeepeningMapNavSpace" name="IllaControllerV3.NonDeepeningMapNavSpace">
-<area shape="rect" id="node1" title=" " alt="" coords="5,128,203,169"/>
-<area shape="rect" id="node2" href="$class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="267,34,397,60"/>
-<area shape="rect" id="node3" href="$class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="461,77,659,118"/>
-<area shape="rect" id="node4" href="$class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="267,84,397,111"/>
-<area shape="rect" id="node5" href="$class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="253,135,411,162"/>
-<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ac847777f5ba3184282fc7a946d654ca9" title=" " alt="" coords="979,222,1163,248"/>
-<area shape="rect" id="node7" href="$class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="253,186,411,212"/>
-<area shape="rect" id="node8" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="251,466,413,508"/>
-<area shape="rect" id="node9" href="$class_illa_controller_v3.html#a6160e3696b382a3f53103795b1a0168f" title=" " alt="" coords="477,525,643,566"/>
-<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a12325bf389518fc7c8e8473a7718089d" title=" " alt="" coords="477,408,643,449"/>
-<area shape="rect" id="node19" href="$class_illa_controller_v3.html#a1a802e93b60146e60f331bf584bbf313" title=" " alt="" coords="707,474,928,500"/>
-<area shape="rect" id="node24" href="$class_illa_controller_v3.html#a0837edf0d6b08f38e1ffd7c35f3a4e75" title=" " alt="" coords="474,591,646,618"/>
-<area shape="rect" id="node11" href="$class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="726,419,909,446"/>
-<area shape="rect" id="node21" href="$class_illa_controller_v3.html#ab9299c8badd9a7805305b53500418b7c" title=" " alt="" coords="716,317,919,358"/>
-<area shape="rect" id="node12" href="$class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e" title=" " alt="" coords="994,390,1149,416"/>
-<area shape="rect" id="node14" href="$class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="985,441,1158,482"/>
-<area shape="rect" id="node18" href="$class_movement.html#a888fd1350e071cd874e7e587ab95c032" title=" " alt="" coords="999,507,1143,534"/>
-<area shape="rect" id="node13" href="$class_pos_x.html#acb32feca5a6223846a79a1e264914638" title=" " alt="" coords="1256,390,1343,416"/>
-<area shape="rect" id="node15" href="$class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb" title=" " alt="" coords="1223,444,1376,471"/>
-<area shape="rect" id="node17" href="$class_robot_configuration.html#a1ae7e50b7050ac542ce5fb59d329c81e" title=" " alt="" coords="1215,496,1384,537"/>
-<area shape="rect" id="node16" href="$class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="1432,444,1516,471"/>
-<area shape="rect" id="node20" href="$class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2" title=" " alt="" coords="976,558,1167,584"/>
-<area shape="rect" id="node22" href="$class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23" title=" " alt="" coords="984,273,1159,314"/>
-<area shape="rect" id="node23" href="$class_illa_controller_v3.html#adb1fa8e0b6707e4064d776a998dd1601" title=" " alt="" coords="991,339,1152,366"/>
-<area shape="rect" id="node25" href="$class_denavit_hartenberg_illa3.html#a91d62cfe36e46e78f255d0e2e3c97894" title=" " alt="" coords="735,566,899,592"/>
-<area shape="rect" id="node26" href="$class_denavit_hartenberg_illa3.html#ae9265820eba0912eb4741f322be09687" title=" " alt="" coords="735,616,899,643"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,150,203,191"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#aa401d4cc167d5826fc3eb86310c14ae2" title=" " alt="" coords="267,107,397,133"/>
+<area shape="rect" id="node3" href="$class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="470,99,667,141"/>
+<area shape="rect" id="node4" href="$class_illa_graph.html#a66a87d5b2bb9a5a40c217b701c6bbc99" title=" " alt="" coords="267,157,397,184"/>
+<area shape="rect" id="node5" href="$class_illa_graph.html#a3e2a417393dd3fd82b541325ee654e6f" title=" " alt="" coords="253,208,411,235"/>
+<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ac847777f5ba3184282fc7a946d654ca9" title=" " alt="" coords="1011,252,1195,279"/>
+<area shape="rect" id="node7" href="$class_illa_graph.html#ad9d0f28ac924e43e3f7eaa2a02288afd" title=" " alt="" coords="253,5,411,32"/>
+<area shape="rect" id="node8" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="251,406,413,447"/>
+<area shape="rect" id="node9" href="$class_illa_controller_v3.html#a6160e3696b382a3f53103795b1a0168f" title=" " alt="" coords="486,465,651,506"/>
+<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a1a802e93b60146e60f331bf584bbf313" title=" " alt="" coords="724,413,945,440"/>
+<area shape="rect" id="node12" href="$class_illa_controller_v3.html#a3d5887cd9a7b71afafbe70de22a2941b" title=" " alt="" coords="483,639,655,665"/>
+<area shape="rect" id="node28" href="$class_illa_controller_v3.html#ac596ba25103eb0743a5fdc79e193a463" title="From an input movement return a new movement with only the non colliding posJ solutions." alt="" coords="461,363,676,389"/>
+<area shape="rect" id="node11" href="$class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2" title=" " alt="" coords="1007,420,1198,447"/>
+<area shape="rect" id="node13" href="$class_denavit_hartenberg_illa3.html#a91d62cfe36e46e78f255d0e2e3c97894" title=" " alt="" coords="1985,639,2149,665"/>
+<area shape="rect" id="node14" href="$class_illa_controller_v3.html#a6b901425ad91f1ccda81e0e956a3cce8" title=" " alt="" coords="745,741,925,782"/>
+<area shape="rect" id="node15" href="$class_denavit_hartenberg_illa3.html#ae9265820eba0912eb4741f322be09687" title=" " alt="" coords="1985,689,2149,716"/>
+<area shape="rect" id="node16" href="$class_illa_controller_v3.html#a65b562c1059e5179151a927a028a2384" title=" " alt="" coords="748,547,921,589"/>
+<area shape="rect" id="node17" href="$class_denavit_hartenberg_illa3.html#a6a55538c82c136742b17f5ebfa951a41" title=" " alt="" coords="1260,563,1468,589"/>
+<area shape="rect" id="node25" href="$class_denavit_hartenberg_illa3.html#ac7145518189fc07793035a9d458c6acf" title=" " alt="" coords="1015,522,1190,563"/>
+<area shape="rect" id="node26" href="$class_denavit_hartenberg_illa3.html#a8cf39b65a84666274567ba5e6c067de0" title=" " alt="" coords="993,471,1212,497"/>
+<area shape="rect" id="node18" href="$class_denavit_hartenberg_illa3.html#acfb2eb55a05fa5e235db0d4cd01d3698" title=" " alt="" coords="1516,530,1697,571"/>
+<area shape="rect" id="node19" href="$class_denavit_hartenberg_illa3.html#a51e94d8268cc1c803eae94b65d311151" title=" " alt="" coords="1745,530,1912,571"/>
+<area shape="rect" id="node20" href="$class_denavit_hartenberg_illa3.html#ae62fc9cbc72f785c3f65d17f2af0068f" title=" " alt="" coords="1960,436,2175,463"/>
+<area shape="rect" id="node21" href="$class_denavit_hartenberg_illa3.html#aa4ecab3b6a2d7c45775446a8aa47b9c2" title=" " alt="" coords="1982,487,2153,513"/>
+<area shape="rect" id="node22" href="$class_denavit_hartenberg_illa3.html#ac7ff6d0262e1a01702858fd08a014376" title=" " alt="" coords="1985,537,2149,564"/>
+<area shape="rect" id="node23" href="$class_denavit_hartenberg_illa3.html#a51cc6ff7a484bb888ca4250e777509de" title=" " alt="" coords="1982,588,2153,615"/>
+<area shape="rect" id="node24" href="$class_denavit_hartenberg_illa3.html#a50d712f1155f01ef09cf946c61daa670" title=" " alt="" coords="1985,385,2149,412"/>
+<area shape="rect" id="node27" href="$class_denavit_hartenberg_illa3.html#a968b561c340e5e425b14fb96adf5de42" title=" " alt="" coords="1273,481,1455,522"/>
+<area shape="rect" id="node29" href="$class_illa_controller_v3.html#ae08318123dbbc607bf524cce0aa0e035" title=" " alt="" coords="733,322,936,363"/>
+<area shape="rect" id="node30" href="$class_illa_controller_v3.html#a12c19a21630988cd83951eed2ca51f23" title=" " alt="" coords="1015,303,1190,345"/>
+<area shape="rect" id="node31" href="$class_illa_controller_v3.html#adb1fa8e0b6707e4064d776a998dd1601" title=" " alt="" coords="1022,369,1183,396"/>
 </map>

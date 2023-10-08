@@ -1,5 +1,6 @@
 <map id="IllaControllerV3.MultiFrameMapNavigationSpace" name="IllaControllerV3.MultiFrameMapNavigationSpace">
-<area shape="rect" id="node1" title=" " alt="" coords="489,29,668,71"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="247,29,441,71"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,37,199,63"/>
+<area shape="rect" id="node1" title=" " alt="" coords="527,29,705,71"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="284,29,479,71"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,7,217,34"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,59,236,100"/>
 </map>

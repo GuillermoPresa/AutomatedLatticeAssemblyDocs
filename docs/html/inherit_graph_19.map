@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_illa_navigation_path.html" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node1" href="$interface_example_1_1_i_greeting_logger.html" title=" " alt="" coords="5,31,173,57"/>
+<area shape="rect" id="node2" href="$class_example_1_1_another_greeting_logger.html" title=" " alt="" coords="221,5,432,32"/>
+<area shape="rect" id="node3" href="$class_example_1_1_default_greeting_logger.html" title=" " alt="" coords="224,56,429,83"/>
 </map>

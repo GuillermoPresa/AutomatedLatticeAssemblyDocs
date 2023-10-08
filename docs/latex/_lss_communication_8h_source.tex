@@ -1,0 +1,152 @@
+\hypertarget{_lss_communication_8h_source}{}\doxysection{Lss\+Communication.\+h}
+\label{_lss_communication_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssCommunication.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssCommunication.h}}
+\mbox{\hyperlink{_lss_communication_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#if (ARDUINO >= 100)}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{ \#include <Arduino.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{ \#include <WProgram.h>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{ \#include <pins\_arduino.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <WString.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h}{LynxmotionLSS-\/Config.h}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#if defined(LSS\_STATS)}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{aggregate_8h}{aggregate.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#define LssBroadcastAddress   (254)}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define BIT(n) (((unsigned long)1)<<n)}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}};}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define  LssInvalid          0}}
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define  LssAction           BIT(1)}}
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define  LssQuery            BIT(2)}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#define  LssConfig           BIT(3)}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define  LssCommandModes     (LssAction|LssQuery|LssConfig)}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#define  LssDegrees          BIT(4)}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define  LssRPM              BIT(5)}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#define  LssPulse            BIT(6)}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#define  LssUnits            (LssDegrees|LssRPM|LssPulse)}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35   \textcolor{comment}{// modifiers}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#define  LssTimedMove        BIT(11)}}
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define  LssSpeed            BIT(15)}}
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define  LssSpeedTime        BIT(32) }\textcolor{comment}{//Custom added}}
+\DoxyCodeLine{39 \textcolor{preprocessor}{\#define  LssModifiers        (LssTimedMove)}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{preprocessor}{\#define  LssID               BIT(7)}}
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define  LssBaudRate         BIT(8)}}
+\DoxyCodeLine{44 \textcolor{preprocessor}{\#define  LssLimp             BIT(9)}}
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#define  LssHaltAndHold      BIT(10)}}
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#define  LssMove             BIT(12)}}
+\DoxyCodeLine{47 \textcolor{preprocessor}{\#define  LssPosition         BIT(13)}}
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#define  LssTarget           BIT(14)}}
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define  LssWheelMode        BIT(16)}}
+\DoxyCodeLine{50 \textcolor{preprocessor}{\#define  LssMaxSpeed         BIT(17)}}
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#define  LssAngularRange     BIT(18)}}
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define  LssAngularStiffness BIT(19)}}
+\DoxyCodeLine{53 \textcolor{preprocessor}{\#define  LssOriginOffset     BIT(20)}}
+\DoxyCodeLine{54 \textcolor{preprocessor}{\#define  LssGyreDirection    BIT(21)}}
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define  LssLEDColor         BIT(22)}}
+\DoxyCodeLine{56 \textcolor{preprocessor}{\#define  LssCurrent          BIT(23)}}
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#define  LssVoltage          BIT(24)}}
+\DoxyCodeLine{58 \textcolor{preprocessor}{\#define  LssTemperature      BIT(25)}}
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define  LssFirstPosition    BIT(26)}}
+\DoxyCodeLine{60 \textcolor{preprocessor}{\#define  LssDefault          BIT(27)}}
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#define  LssConfirm          BIT(28)}}
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#define  LssAnalog           BIT(29)}}
+\DoxyCodeLine{63 \textcolor{preprocessor}{\#define  LssReset            BIT(30)}}
+\DoxyCodeLine{64 \textcolor{preprocessor}{\#define  LssModel            BIT(31)}}
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#define  LssCommandSet       ((0xffffffff \& \string~(LssCommandModes|LssUnits|LssModifiers)) | LssQuery)}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{comment}{// commands that are part of servo configuration}}
+\DoxyCodeLine{69 \textcolor{comment}{// you probably dont need these for normal control operations}}
+\DoxyCodeLine{70 \textcolor{preprocessor}{\#define  LssConfigCommandSet  ( \(\backslash\)}}
+\DoxyCodeLine{71 \textcolor{preprocessor}{       LssWheelMode \(\backslash\)}}
+\DoxyCodeLine{72 \textcolor{preprocessor}{      |LssMaxSpeed \(\backslash\)}}
+\DoxyCodeLine{73 \textcolor{preprocessor}{      |LssAngularRange \(\backslash\)}}
+\DoxyCodeLine{74 \textcolor{preprocessor}{      |LssAngularStiffness \(\backslash\)}}
+\DoxyCodeLine{75 \textcolor{preprocessor}{      |LssLEDColor \(\backslash\)}}
+\DoxyCodeLine{76 \textcolor{preprocessor}{      |LssBaudRate \(\backslash\)}}
+\DoxyCodeLine{77 \textcolor{preprocessor}{      |LssGyreDirection \(\backslash\)}}
+\DoxyCodeLine{78 \textcolor{preprocessor}{      |LssOriginOffset \(\backslash\)}}
+\DoxyCodeLine{79 \textcolor{preprocessor}{      |LssID )}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81   \textcolor{comment}{// commands that support asynchronous queries}}
+\DoxyCodeLine{82 \textcolor{preprocessor}{\#define  LssAsyncCommandSet  ( \(\backslash\)}}
+\DoxyCodeLine{83 \textcolor{preprocessor}{       LssQuery \(\backslash\)}}
+\DoxyCodeLine{84 \textcolor{preprocessor}{      |LssPosition \(\backslash\)}}
+\DoxyCodeLine{85 \textcolor{preprocessor}{      |LssTarget \(\backslash\)}}
+\DoxyCodeLine{86 \textcolor{preprocessor}{      |LssMaxSpeed \(\backslash\)}}
+\DoxyCodeLine{87 \textcolor{preprocessor}{      |LssVoltage \(\backslash\)}}
+\DoxyCodeLine{88 \textcolor{preprocessor}{      |LssCurrent \(\backslash\)}}
+\DoxyCodeLine{89 \textcolor{preprocessor}{      |LssConfigCommandSet )}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 \textcolor{keyword}{typedef} \textcolor{keyword}{enum} \{}
+\DoxyCodeLine{93   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a52c573db2285c42774e223064db05cf9}{LssLedOff}}  = 0,}
+\DoxyCodeLine{94   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298addf0646880e69cec4fd52bfcdc854ce2}{LssRed}}     = 1,}
+\DoxyCodeLine{95   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298adcd38adf6991615152e66e6d70742c47}{LssGreen}}   = 2,}
+\DoxyCodeLine{96   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a9eae240cf5a9dd0e796fe6b3bdfdb7e1}{LssBlue}}    = 3,}
+\DoxyCodeLine{97   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a55ce6635330a889a938a055657000287}{LssYellow}}  = 4,}
+\DoxyCodeLine{98   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a0c6af6c7a9f509930b056c544b527164}{LssCyan}}    = 5,}
+\DoxyCodeLine{99   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a7a8bb4e4b1523cd1974981e4a6ca4e39}{LssMagenta}} = 6,}
+\DoxyCodeLine{100   \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298a8def70c485a2e6bc456ec6842136b9c0}{LssWhite}}   = 7}
+\DoxyCodeLine{101 \} \mbox{\hyperlink{_lss_communication_8h_a737ab0892820ed129f0d630a2c8fa298}{LssColors}};}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 \textcolor{keyword}{class }\mbox{\hyperlink{class_lynx_packet}{LynxPacket}} \{}
+\DoxyCodeLine{105   \textcolor{keyword}{public}:}
+\DoxyCodeLine{106     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}{id}};}
+\DoxyCodeLine{107     \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} \mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}};}
+\DoxyCodeLine{108     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{hasValue}};}
+\DoxyCodeLine{109     \textcolor{keywordtype}{long} \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}};}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111     \textcolor{keyword}{inline} \mbox{\hyperlink{class_lynx_packet_ae5f3c18f1469cfcd40e12db9d34800f2}{LynxPacket}}() : \mbox{\hyperlink{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}{id}}(0), \mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}}(\mbox{\hyperlink{_lss_communication_8h_a2dd9d61480418a3483a96280acc67b2e}{LssInvalid}}), \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{hasValue}}(false), \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}}(0) \{\}}
+\DoxyCodeLine{112     \textcolor{keyword}{inline} \mbox{\hyperlink{class_lynx_packet_ab95872062da7e477a24ea5c1c5c1b571}{LynxPacket}}(\textcolor{keywordtype}{short} \_id, \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} \_command) : \mbox{\hyperlink{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}{id}}(\_id), \mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}}(\_command), \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{hasValue}}(false), \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}}(0) \{\}}
+\DoxyCodeLine{113     \textcolor{keyword}{inline} \mbox{\hyperlink{class_lynx_packet_a5ba4c2a1d02a4802edc66dc11a1c5cca}{LynxPacket}}(\textcolor{keywordtype}{short} \_id, \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} \_command, \textcolor{keywordtype}{long} \_value) : \mbox{\hyperlink{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}{id}}(\_id), \mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}}(\_command), \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{hasValue}}(true), \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}}(\_value) \{\}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115     \mbox{\hyperlink{class_lynx_packet_ae5f3c18f1469cfcd40e12db9d34800f2}{LynxPacket}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* pkt);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a987a17bbda8bbc64343944efebf102e2}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_lynx_packet}{LynxPacket}}\& rhs) \textcolor{keyword}{const};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_lynx_packet_adbe7623a71c543a12c6fb796566419ed}{set}}(\textcolor{keywordtype}{long} \_value) \{ \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}}=\_value; \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{hasValue}}=\textcolor{keyword}{true}; \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a4152efbf9ef0cb3b89ae946f3554ebfe}{parse}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* pkt);}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123     \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_lynx_packet_ae48cc3bc60f3339afc1d60cfcb05aa0c}{serialize}}(\textcolor{keywordtype}{char}* out) \textcolor{keyword}{const};}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_adfe9c716ad8c7611367b20dd7e1026f8}{matches}}(\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} bits)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}} \& bits) == bits; \}}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a45c2a2d5eafc45f84d106aae43130377}{between}}(\textcolor{keywordtype}{long} min, \textcolor{keywordtype}{long} max)\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{hasValue}} \&\& \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}} >= min \&\& \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}} <= max; \}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a1bdfe6198e22ada04e5b514c204bdd5f}{broadcast}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} \textcolor{keywordtype}{id} == 254; \}}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131     \textcolor{comment}{// true if command is a query command}}
+\DoxyCodeLine{132     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a0704fab798e3db1b6b89e6355a03ddfa}{query}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}} \& \mbox{\hyperlink{_lss_communication_8h_af617bb43659fc42cb97c149ea061097e}{LssQuery}}) >0; \}}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134     \textcolor{comment}{// true if command requests value be written to flash (Config prefix)}}
+\DoxyCodeLine{135     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lynx_packet_a5e9465c572d45d7f197b57e58f516803}{flash}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}} \& \mbox{\hyperlink{_lss_communication_8h_ac1024b44efcab4562ddbaf96260086d2}{LssConfig}}) >0; \}}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137     \textcolor{keyword}{static} \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} \mbox{\hyperlink{class_lynx_packet_a314bc4eacb8c286de10e13369d9fb1ac}{parseCommand}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}*\& pkt);}
+\DoxyCodeLine{138     }
+\DoxyCodeLine{139     \textcolor{comment}{// converts the cmd into a string command code and places the result in 'out'}}
+\DoxyCodeLine{140     \textcolor{comment}{// returns the end of the command code string within the 'out' memory, or NULL if an error}}
+\DoxyCodeLine{141     \textcolor{keyword}{static} \textcolor{keywordtype}{char}* \mbox{\hyperlink{class_lynx_packet_a5288c52d2faed0afc6386fbba0cc7ed0}{commandCode}}(\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} cmd, \textcolor{keywordtype}{char}* out);}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143 \textcolor{preprocessor}{\#if defined(HAVE\_STRING)}}
+\DoxyCodeLine{144     String \mbox{\hyperlink{class_lynx_packet_a2c0754688cf606928fe29c1308a3667b}{toString}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{145 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{146 \};}
+
+\end{DoxyCode}

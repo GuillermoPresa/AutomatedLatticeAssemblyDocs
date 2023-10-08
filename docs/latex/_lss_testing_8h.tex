@@ -1,0 +1,157 @@
+\hypertarget{_lss_testing_8h}{}\doxysection{C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/examples/\+Lss\+Unit\+Tests/\+Lss\+Testing.h File Reference}
+\label{_lss_testing_8h}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/examples/LssUnitTests/LssTesting.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/examples/LssUnitTests/LssTesting.h}}
+{\ttfamily \#include $<$WProgram.\+h$>$}\newline
+{\ttfamily \#include $<$pins\+\_\+arduino.\+h$>$}\newline
+{\ttfamily \#include $<$WString.\+h$>$}\newline
+{\ttfamily \#include $<$Lynxmotion\+LSS.\+h$>$}\newline
+Include dependency graph for Lss\+Testing.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lss_testing_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_lss_testing_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_char_stream}{Char\+Stream}}
+\item 
+class \mbox{\hyperlink{class_sim_servo}{Sim\+Servo}}
+\item 
+class \mbox{\hyperlink{class_sim_channel}{Sim\+Channel}}
+\item 
+class \mbox{\hyperlink{class_lss_test_rig}{Lss\+Test\+Rig}}
+\item 
+class \mbox{\hyperlink{class_lss_physical_rig}{Lss\+Physical\+Rig}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_lss_testing_8h_a60f50890416094eee073e1cc4d2ae512}{test\+\_\+neg}}(test\+\_\+func)~\{ \mbox{\hyperlink{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}{\+\_\+neg\+\_\+test}}=true; test\+\_\+func;  \mbox{\hyperlink{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}{\+\_\+neg\+\_\+test}}=false; \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{_lss_testing_8h_a2c242637e43b0729938e82c847c75b8b}{operator new}} (size\+\_\+t size, void $\ast$ptr)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a178ba45a1e7358a6848da9c433aff767}{test\+\_\+report}} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$result, bool passed)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a1e228681f8adc63a2d2aa4d0ea8a1db7}{test\+\_\+report}} (String result, bool passed)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a0d00e4f7786da5e813f3d70ebf8aa2b1}{test\+\_\+head}} (const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$header)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a2e3220b909e1909d93b3b6484a71dd01}{test\+\_\+report\+\_\+finish}} ()
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a52fb799b0df138720ac2e1055136ec8f}{test\+\_\+parse\+\_\+command}} (const char $\ast$cmd, unsigned long parsed)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a7be05481d3154841432b36c9eca34500}{test\+\_\+parse\+\_\+packet}} (const char $\ast$pkt, \mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}} packet)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a464743c509447a35595b6bbcab86463e}{test\+\_\+serialize\+\_\+command}} (const char $\ast$pkt, \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} cmd)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_a33df0fd68696a973a034c943746e9dbe}{test\+\_\+serialize\+\_\+packet}} (const char $\ast$pkt, \mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}} packet)
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_ab905b65772dd1b6716c6ddf364ca5790}{lynx\+\_\+charstream\+\_\+tests}} ()
+\item 
+void \mbox{\hyperlink{_lss_testing_8h_aed0555b3c1c7610beffd8691b3d2ca7d}{lynx\+\_\+servo\+\_\+tests}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}{\+\_\+neg\+\_\+test}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_lss_testing_8h_a60f50890416094eee073e1cc4d2ae512}\label{_lss_testing_8h_a60f50890416094eee073e1cc4d2ae512}} 
+\index{LssTesting.h@{LssTesting.h}!test\_neg@{test\_neg}}
+\index{test\_neg@{test\_neg}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_neg}{test\_neg}}
+{\footnotesize\ttfamily \#define test\+\_\+neg(\begin{DoxyParamCaption}\item[{}]{test\+\_\+func }\end{DoxyParamCaption})~\{ \mbox{\hyperlink{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}{\+\_\+neg\+\_\+test}}=true; test\+\_\+func;  \mbox{\hyperlink{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}{\+\_\+neg\+\_\+test}}=false; \}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_lss_testing_8h_ab905b65772dd1b6716c6ddf364ca5790}\label{_lss_testing_8h_ab905b65772dd1b6716c6ddf364ca5790}} 
+\index{LssTesting.h@{LssTesting.h}!lynx\_charstream\_tests@{lynx\_charstream\_tests}}
+\index{lynx\_charstream\_tests@{lynx\_charstream\_tests}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{lynx\_charstream\_tests()}{lynx\_charstream\_tests()}}
+{\footnotesize\ttfamily void lynx\+\_\+charstream\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_aed0555b3c1c7610beffd8691b3d2ca7d}\label{_lss_testing_8h_aed0555b3c1c7610beffd8691b3d2ca7d}} 
+\index{LssTesting.h@{LssTesting.h}!lynx\_servo\_tests@{lynx\_servo\_tests}}
+\index{lynx\_servo\_tests@{lynx\_servo\_tests}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{lynx\_servo\_tests()}{lynx\_servo\_tests()}}
+{\footnotesize\ttfamily void lynx\+\_\+servo\+\_\+tests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a2c242637e43b0729938e82c847c75b8b}\label{_lss_testing_8h_a2c242637e43b0729938e82c847c75b8b}} 
+\index{LssTesting.h@{LssTesting.h}!operator new@{operator new}}
+\index{operator new@{operator new}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{operator new()}{operator new()}}
+{\footnotesize\ttfamily void $\ast$ operator new (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{void $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{_lss_testing_8h_a0d00e4f7786da5e813f3d70ebf8aa2b1}\label{_lss_testing_8h_a0d00e4f7786da5e813f3d70ebf8aa2b1}} 
+\index{LssTesting.h@{LssTesting.h}!test\_head@{test\_head}}
+\index{test\_head@{test\_head}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_head()}{test\_head()}}
+{\footnotesize\ttfamily void test\+\_\+head (\begin{DoxyParamCaption}\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{header }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a52fb799b0df138720ac2e1055136ec8f}\label{_lss_testing_8h_a52fb799b0df138720ac2e1055136ec8f}} 
+\index{LssTesting.h@{LssTesting.h}!test\_parse\_command@{test\_parse\_command}}
+\index{test\_parse\_command@{test\_parse\_command}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_command()}{test\_parse\_command()}}
+{\footnotesize\ttfamily void test\+\_\+parse\+\_\+command (\begin{DoxyParamCaption}\item[{const char $\ast$}]{cmd,  }\item[{unsigned long}]{parsed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a7be05481d3154841432b36c9eca34500}\label{_lss_testing_8h_a7be05481d3154841432b36c9eca34500}} 
+\index{LssTesting.h@{LssTesting.h}!test\_parse\_packet@{test\_parse\_packet}}
+\index{test\_parse\_packet@{test\_parse\_packet}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_parse\_packet()}{test\_parse\_packet()}}
+{\footnotesize\ttfamily void test\+\_\+parse\+\_\+packet (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pkt,  }\item[{\mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}}}]{packet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a178ba45a1e7358a6848da9c433aff767}\label{_lss_testing_8h_a178ba45a1e7358a6848da9c433aff767}} 
+\index{LssTesting.h@{LssTesting.h}!test\_report@{test\_report}}
+\index{test\_report@{test\_report}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_report()}{test\_report()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void test\+\_\+report (\begin{DoxyParamCaption}\item[{const \+\_\+\+\_\+\+Flash\+String\+Helper $\ast$}]{result,  }\item[{bool}]{passed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a1e228681f8adc63a2d2aa4d0ea8a1db7}\label{_lss_testing_8h_a1e228681f8adc63a2d2aa4d0ea8a1db7}} 
+\index{LssTesting.h@{LssTesting.h}!test\_report@{test\_report}}
+\index{test\_report@{test\_report}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_report()}{test\_report()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void test\+\_\+report (\begin{DoxyParamCaption}\item[{String}]{result,  }\item[{bool}]{passed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a2e3220b909e1909d93b3b6484a71dd01}\label{_lss_testing_8h_a2e3220b909e1909d93b3b6484a71dd01}} 
+\index{LssTesting.h@{LssTesting.h}!test\_report\_finish@{test\_report\_finish}}
+\index{test\_report\_finish@{test\_report\_finish}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_report\_finish()}{test\_report\_finish()}}
+{\footnotesize\ttfamily void test\+\_\+report\+\_\+finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a464743c509447a35595b6bbcab86463e}\label{_lss_testing_8h_a464743c509447a35595b6bbcab86463e}} 
+\index{LssTesting.h@{LssTesting.h}!test\_serialize\_command@{test\_serialize\_command}}
+\index{test\_serialize\_command@{test\_serialize\_command}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_serialize\_command()}{test\_serialize\_command()}}
+{\footnotesize\ttfamily void test\+\_\+serialize\+\_\+command (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pkt,  }\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_lss_testing_8h_a33df0fd68696a973a034c943746e9dbe}\label{_lss_testing_8h_a33df0fd68696a973a034c943746e9dbe}} 
+\index{LssTesting.h@{LssTesting.h}!test\_serialize\_packet@{test\_serialize\_packet}}
+\index{test\_serialize\_packet@{test\_serialize\_packet}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{test\_serialize\_packet()}{test\_serialize\_packet()}}
+{\footnotesize\ttfamily void test\+\_\+serialize\+\_\+packet (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pkt,  }\item[{\mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}}}]{packet }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}\label{_lss_testing_8h_ab291d63debc15df3b4be4817e2be7069}} 
+\index{LssTesting.h@{LssTesting.h}!\_neg\_test@{\_neg\_test}}
+\index{\_neg\_test@{\_neg\_test}!LssTesting.h@{LssTesting.h}}
+\doxysubsubsection{\texorpdfstring{\_neg\_test}{\_neg\_test}}
+{\footnotesize\ttfamily bool \+\_\+neg\+\_\+test\hspace{0.3cm}{\ttfamily [extern]}}
+

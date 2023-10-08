@@ -1,4 +1,7 @@
 <map id="TextGizmos.PrintMessageAtPosition" name="TextGizmos.PrintMessageAtPosition">
-<area shape="rect" id="node1" title=" " alt="" coords="241,5,431,47"/>
-<area shape="rect" id="node2" href="$class_illa_graph_node.html#ab5e3aa47f179ee2d8ad84620cf11db85" title=" " alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="479,57,668,98"/>
+<area shape="rect" id="node2" href="$class_illa_graph_node.html#a6943dc10fe8167c1f295303fc10dd3c4" title=" " alt="" coords="243,5,430,32"/>
+<area shape="rect" id="node3" href="$class_illa_graph_node.html#ab5e3aa47f179ee2d8ad84620cf11db85" title=" " alt="" coords="243,57,431,98"/>
+<area shape="rect" id="node5" href="$class_illa_navigation_path.html#acd36e7edb65cef6f40803fadf425a2ae" title=" " alt="" coords="245,123,429,149"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="5,86,195,127"/>
 </map>

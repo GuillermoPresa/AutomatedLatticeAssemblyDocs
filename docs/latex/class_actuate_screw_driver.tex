@@ -1,0 +1,113 @@
+\hypertarget{class_actuate_screw_driver}{}\doxysection{Actuate\+Screw\+Driver Class Reference}
+\label{class_actuate_screw_driver}\index{ActuateScrewDriver@{ActuateScrewDriver}}
+
+
+Inheritance diagram for Actuate\+Screw\+Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_actuate_screw_driver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Actuate\+Screw\+Driver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_actuate_screw_driver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_actuate_screw_driver_aaa16bc1df8b64630a8f368d6103f71ef}{Setup\+Action}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+override void \mbox{\hyperlink{class_actuate_screw_driver_a60c3a63d2e10f8ba8ec2515f2a4dfece}{Execute\+Action\+Frame}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+override bool \mbox{\hyperlink{class_actuate_screw_driver_a00a3894beb52fd0a5f93280d828df026}{Has\+Action\+Finished}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+\mbox{\hyperlink{class_actuate_screw_driver_a51ae34478d640e57e98e49851396e95f}{Actuate\+Screw\+Driver}} (int actuation\+Duration\+\_\+ms\+\_\+in, bool is\+Direction\+Insert\+\_\+in=true, bool wait\+For\+Completion\+\_\+in=false, bool is\+N20ingripper\+\_\+in=true)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_actuate_screw_driver_a51ae34478d640e57e98e49851396e95f}\label{class_actuate_screw_driver_a51ae34478d640e57e98e49851396e95f}} 
+\index{ActuateScrewDriver@{ActuateScrewDriver}!ActuateScrewDriver@{ActuateScrewDriver}}
+\index{ActuateScrewDriver@{ActuateScrewDriver}!ActuateScrewDriver@{ActuateScrewDriver}}
+\doxysubsubsection{\texorpdfstring{ActuateScrewDriver()}{ActuateScrewDriver()}}
+{\footnotesize\ttfamily Actuate\+Screw\+Driver.\+Actuate\+Screw\+Driver (\begin{DoxyParamCaption}\item[{int}]{actuation\+Duration\+\_\+ms\+\_\+in,  }\item[{bool}]{is\+Direction\+Insert\+\_\+in = {\ttfamily true},  }\item[{bool}]{wait\+For\+Completion\+\_\+in = {\ttfamily false},  }\item[{bool}]{is\+N20ingripper\+\_\+in = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em actuation\+Duration\+\_\+ms\+\_\+in} & \\
+\hline
+{\em is\+Direction\+Insert\+\_\+in} & \\
+\hline
+{\em wait\+For\+Completion\+\_\+in} & \\
+\hline
+\end{DoxyParams}
+if set to true the action will wait for the actuation\+Duration\+\_\+ms\+\_\+in to complete before returning true for Has\+Action\+Finished 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_actuate_screw_driver_a60c3a63d2e10f8ba8ec2515f2a4dfece}\label{class_actuate_screw_driver_a60c3a63d2e10f8ba8ec2515f2a4dfece}} 
+\index{ActuateScrewDriver@{ActuateScrewDriver}!ExecuteActionFrame@{ExecuteActionFrame}}
+\index{ExecuteActionFrame@{ExecuteActionFrame}!ActuateScrewDriver@{ActuateScrewDriver}}
+\doxysubsubsection{\texorpdfstring{ExecuteActionFrame()}{ExecuteActionFrame()}}
+{\footnotesize\ttfamily override void Actuate\+Screw\+Driver.\+Execute\+Action\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action_afe63c2874fa0f5ddc511893db9742794}{ILLAV3\+Abstract\+Action}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_actuate_screw_driver_a60c3a63d2e10f8ba8ec2515f2a4dfece_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_actuate_screw_driver_a00a3894beb52fd0a5f93280d828df026}\label{class_actuate_screw_driver_a00a3894beb52fd0a5f93280d828df026}} 
+\index{ActuateScrewDriver@{ActuateScrewDriver}!HasActionFinished@{HasActionFinished}}
+\index{HasActionFinished@{HasActionFinished}!ActuateScrewDriver@{ActuateScrewDriver}}
+\doxysubsubsection{\texorpdfstring{HasActionFinished()}{HasActionFinished()}}
+{\footnotesize\ttfamily override bool Actuate\+Screw\+Driver.\+Has\+Action\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em robot\+Script} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action_ac15f99d32624d2a6dfd4bd4d24ba2a59}{ILLAV3\+Abstract\+Action}}.
+
+\mbox{\Hypertarget{class_actuate_screw_driver_aaa16bc1df8b64630a8f368d6103f71ef}\label{class_actuate_screw_driver_aaa16bc1df8b64630a8f368d6103f71ef}} 
+\index{ActuateScrewDriver@{ActuateScrewDriver}!SetupAction@{SetupAction}}
+\index{SetupAction@{SetupAction}!ActuateScrewDriver@{ActuateScrewDriver}}
+\doxysubsubsection{\texorpdfstring{SetupAction()}{SetupAction()}}
+{\footnotesize\ttfamily override void Actuate\+Screw\+Driver.\+Setup\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action_aeee5772fd1a69a4ab90d1f6f454135d4}{ILLAV3\+Abstract\+Action}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+Actions/\mbox{\hyperlink{_actuate_screw_driver_8cs}{Actuate\+Screw\+Driver.\+cs}}\end{DoxyCompactItemize}

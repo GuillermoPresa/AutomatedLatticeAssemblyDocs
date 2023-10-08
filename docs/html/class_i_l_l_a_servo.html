@@ -126,6 +126,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a495d62b68ad7bdb891039b278d4fd9ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6026c8417e6a135dfaaa558396085a37"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a6026c8417e6a135dfaaa558396085a37">unclampedDesiredAngle</a></td></tr>
 <tr class="separator:a6026c8417e6a135dfaaa558396085a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3b0225ed59ef6c7d9e01a7cb180896d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ab3b0225ed59ef6c7d9e01a7cb180896d">previousCurrentAngle</a></td></tr>
+<tr class="separator:ab3b0225ed59ef6c7d9e01a7cb180896d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae728f9f8531180182626b9773bf55208"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ae728f9f8531180182626b9773bf55208">isMovingTolerance</a> = 1f</td></tr>
+<tr class="separator:ae728f9f8531180182626b9773bf55208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -234,9 +238,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph" alt=""/></div>
 <map name="aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph" id="aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph">
-<area shape="rect" title=" " alt="" coords="493,5,684,47"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="247,13,445,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" title=" " alt="" coords="772,5,963,47"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
 </map>
 </div>
 
@@ -272,9 +277,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph" alt=""/></div>
 <map name="aclass_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph" id="aclass_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph">
-<area shape="rect" title=" " alt="" coords="493,13,664,39"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="247,13,445,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" title=" " alt="" coords="772,13,943,39"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
 </map>
 </div>
 
@@ -310,15 +316,30 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph" alt=""/></div>
 <map name="aclass_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph" id="aclass_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph">
-<area shape="rect" title=" " alt="" coords="493,13,660,39"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="247,13,445,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" title=" " alt="" coords="772,13,939,39"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae728f9f8531180182626b9773bf55208" name="ae728f9f8531180182626b9773bf55208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae728f9f8531180182626b9773bf55208">&#9670;&nbsp;</a></span>isMovingTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ILLAServo.isMovingTolerance = 1f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afb08b3973c876c8825634d315cf063dd" name="afb08b3973c876c8825634d315cf063dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb08b3973c876c8825634d315cf063dd">&#9670;&nbsp;</a></span>IsVirtual</h2>
 
@@ -327,6 +348,20 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">bool ILLAServo.IsVirtual = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3b0225ed59ef6c7d9e01a7cb180896d" name="ab3b0225ed59ef6c7d9e01a7cb180896d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3b0225ed59ef6c7d9e01a7cb180896d">&#9670;&nbsp;</a></span>previousCurrentAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ILLAServo.previousCurrentAngle</td>
         </tr>
       </table>
 </div><div class="memdoc">

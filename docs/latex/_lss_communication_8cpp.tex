@@ -1,0 +1,33 @@
+\hypertarget{_lss_communication_8cpp}{}\doxysection{C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\+Lss\+Communication.cpp File Reference}
+\label{_lss_communication_8cpp}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssCommunication.cpp@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssCommunication.cpp}}
+{\ttfamily \#include \char`\"{}Lss\+Communication.\+h\char`\"{}}\newline
+Include dependency graph for Lss\+Communication.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lss_communication_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8cpp_ae413329d4784cd7543afecbd6763f4f6}{ACCEPT}}(cmdid)~return (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}})(cmdid);
+\item 
+\#define \mbox{\hyperlink{_lss_communication_8cpp_a679a7d628b096784d76707a3a2916e10}{SWITCH}}(cmdid)~if($\ast$pkt==0 $\vert$$\vert$ !isalpha($\ast$pkt)) \mbox{\hyperlink{_lss_communication_8cpp_ae413329d4784cd7543afecbd6763f4f6}{ACCEPT}}(cmdid) else switch (toupper($\ast$pkt++))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_lss_communication_8cpp_ae413329d4784cd7543afecbd6763f4f6}\label{_lss_communication_8cpp_ae413329d4784cd7543afecbd6763f4f6}} 
+\index{LssCommunication.cpp@{LssCommunication.cpp}!ACCEPT@{ACCEPT}}
+\index{ACCEPT@{ACCEPT}!LssCommunication.cpp@{LssCommunication.cpp}}
+\doxysubsubsection{\texorpdfstring{ACCEPT}{ACCEPT}}
+{\footnotesize\ttfamily \#define ACCEPT(\begin{DoxyParamCaption}\item[{}]{cmdid }\end{DoxyParamCaption})~return (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}})(cmdid);}
+
+\mbox{\Hypertarget{_lss_communication_8cpp_a679a7d628b096784d76707a3a2916e10}\label{_lss_communication_8cpp_a679a7d628b096784d76707a3a2916e10}} 
+\index{LssCommunication.cpp@{LssCommunication.cpp}!SWITCH@{SWITCH}}
+\index{SWITCH@{SWITCH}!LssCommunication.cpp@{LssCommunication.cpp}}
+\doxysubsubsection{\texorpdfstring{SWITCH}{SWITCH}}
+{\footnotesize\ttfamily \#define SWITCH(\begin{DoxyParamCaption}\item[{}]{cmdid }\end{DoxyParamCaption})~if($\ast$pkt==0 $\vert$$\vert$ !isalpha($\ast$pkt)) \mbox{\hyperlink{_lss_communication_8cpp_ae413329d4784cd7543afecbd6763f4f6}{ACCEPT}}(cmdid) else switch (toupper($\ast$pkt++))}
+

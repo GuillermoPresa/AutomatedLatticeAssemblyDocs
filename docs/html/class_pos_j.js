@@ -7,7 +7,7 @@ var class_pos_j =
     [ "ClampPM180", "class_pos_j.html#a7b131613afa3cf3eb6ed7b1fd7bb4498", null ],
     [ "CreateDeepCopy", "class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb", null ],
     [ "InvertedOrderPosJ", "class_pos_j.html#afc7b1bcade16d10fc1e731cf24bc8427", null ],
-    [ "MaxRotationFromInitialPose", "class_pos_j.html#ad34358d7097fad2ccb516cac2fc2fa9f", null ],
+    [ "MaxAngularDiferenceFromPose", "class_pos_j.html#a853ba026122cd1332fffefa320d2bb64", null ],
     [ "PosJListForm", "class_pos_j.html#a5071f901728aa6e54db6285c65d22910", null ],
     [ "PosJListFormClampedPositive", "class_pos_j.html#aee0d48d0ba0baeee3fb8316a98c27a29", null ],
     [ "ToString", "class_pos_j.html#a2acd1425539e39cbd0a2fb82ebd070e6", null ],

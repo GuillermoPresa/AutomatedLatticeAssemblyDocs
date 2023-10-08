@@ -1,0 +1,165 @@
+\hypertarget{class_sim_channel}{}\doxysection{Sim\+Channel Class Reference}
+\label{class_sim_channel}\index{SimChannel@{SimChannel}}
+
+
+{\ttfamily \#include $<$Lss\+Testing.\+h$>$}
+
+
+
+Inheritance diagram for Sim\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_sim_channel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Sim\+Channel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{class_sim_channel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sim_channel_aeee30c0e6ffc2335050c772dfbd33763}{Sim\+Channel}} ()
+\item 
+\mbox{\hyperlink{class_sim_channel_aac3554c56baf2dabf29bdbb69f9a5c16}{$\sim$\+Sim\+Channel}} ()
+\item 
+bool \mbox{\hyperlink{class_sim_channel_a7ced6dff9a3369bc20a5f99c2a986599}{contains}} (short servo\+Id) const
+\item 
+\mbox{\hyperlink{class_sim_servo}{Sim\+Servo}} \& \mbox{\hyperlink{class_sim_channel_a6a90ccfa508d339ac4ed90422cf7d99d}{operator\mbox{[}$\,$\mbox{]}}} (short servo\+Id)
+\item 
+const \mbox{\hyperlink{class_sim_servo}{Sim\+Servo}} \& \mbox{\hyperlink{class_sim_channel_ad1eda6dcec41249649308ada99646a5a}{operator\mbox{[}$\,$\mbox{]}}} (short servo\+Id) const
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_sim_channel_a2b0ea3f7389909a69e7df51b3fcc37b6}{write}} (uint8\+\_\+t c)
+\item 
+{\footnotesize template$<$size\+\_\+t N$>$ }\\void \mbox{\hyperlink{class_sim_channel_a4a66416fe48c7774340933aa5ddecd52}{begin}} (const int(\&ids)\mbox{[}N\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_sim_channel_a7962e17c4304175072b79e9d19af4194}{writebuffer}} \mbox{[}128\mbox{]}
+\item 
+char $\ast$ \mbox{\hyperlink{class_sim_channel_a3c6d73e68f88343c9c81733c1363a3ed}{wbwrite}}
+\item 
+\mbox{\hyperlink{class_sim_servo}{Sim\+Servo}} $\ast$ \mbox{\hyperlink{class_sim_channel_a097c69afa5feb47e8dfd7536533524c9}{servos}}
+\item 
+short \mbox{\hyperlink{class_sim_channel_add01b016bb03095289918fd92ef78e0f}{count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sim_channel_aeee30c0e6ffc2335050c772dfbd33763}\label{class_sim_channel_aeee30c0e6ffc2335050c772dfbd33763}} 
+\index{SimChannel@{SimChannel}!SimChannel@{SimChannel}}
+\index{SimChannel@{SimChannel}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{SimChannel()}{SimChannel()}}
+{\footnotesize\ttfamily Sim\+Channel\+::\+Sim\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sim_channel_aac3554c56baf2dabf29bdbb69f9a5c16}\label{class_sim_channel_aac3554c56baf2dabf29bdbb69f9a5c16}} 
+\index{SimChannel@{SimChannel}!````~SimChannel@{$\sim$SimChannel}}
+\index{````~SimChannel@{$\sim$SimChannel}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{$\sim$SimChannel()}{~SimChannel()}}
+{\footnotesize\ttfamily Sim\+Channel\+::$\sim$\+Sim\+Channel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sim_channel_a4a66416fe48c7774340933aa5ddecd52}\label{class_sim_channel_a4a66416fe48c7774340933aa5ddecd52}} 
+\index{SimChannel@{SimChannel}!begin@{begin}}
+\index{begin@{begin}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$size\+\_\+t N$>$ \\
+void Sim\+Channel\+::begin (\begin{DoxyParamCaption}\item[{const int(\&)}]{ids\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_sim_channel_a4a66416fe48c7774340933aa5ddecd52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_sim_channel_a4a66416fe48c7774340933aa5ddecd52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_sim_channel_a7ced6dff9a3369bc20a5f99c2a986599}\label{class_sim_channel_a7ced6dff9a3369bc20a5f99c2a986599}} 
+\index{SimChannel@{SimChannel}!contains@{contains}}
+\index{contains@{contains}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Sim\+Channel\+::contains (\begin{DoxyParamCaption}\item[{short}]{servo\+Id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sim_channel_a6a90ccfa508d339ac4ed90422cf7d99d}\label{class_sim_channel_a6a90ccfa508d339ac4ed90422cf7d99d}} 
+\index{SimChannel@{SimChannel}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sim_servo}{Sim\+Servo}} \& Sim\+Channel\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{short}]{servo\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sim_channel_ad1eda6dcec41249649308ada99646a5a}\label{class_sim_channel_ad1eda6dcec41249649308ada99646a5a}} 
+\index{SimChannel@{SimChannel}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_sim_servo}{Sim\+Servo}} \& Sim\+Channel\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{short}]{servo\+Id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sim_channel_a2b0ea3f7389909a69e7df51b3fcc37b6}\label{class_sim_channel_a2b0ea3f7389909a69e7df51b3fcc37b6}} 
+\index{SimChannel@{SimChannel}!write@{write}}
+\index{write@{write}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily size\+\_\+t Sim\+Channel\+::write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_char_stream_a224394ca2a8ab39ab88b6a546905db6e}{Char\+Stream}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sim_channel_a2b0ea3f7389909a69e7df51b3fcc37b6_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sim_channel_add01b016bb03095289918fd92ef78e0f}\label{class_sim_channel_add01b016bb03095289918fd92ef78e0f}} 
+\index{SimChannel@{SimChannel}!count@{count}}
+\index{count@{count}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily short Sim\+Channel\+::count}
+
+\mbox{\Hypertarget{class_sim_channel_a097c69afa5feb47e8dfd7536533524c9}\label{class_sim_channel_a097c69afa5feb47e8dfd7536533524c9}} 
+\index{SimChannel@{SimChannel}!servos@{servos}}
+\index{servos@{servos}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{servos}{servos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sim_servo}{Sim\+Servo}}$\ast$ Sim\+Channel\+::servos}
+
+\mbox{\Hypertarget{class_sim_channel_a3c6d73e68f88343c9c81733c1363a3ed}\label{class_sim_channel_a3c6d73e68f88343c9c81733c1363a3ed}} 
+\index{SimChannel@{SimChannel}!wbwrite@{wbwrite}}
+\index{wbwrite@{wbwrite}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{wbwrite}{wbwrite}}
+{\footnotesize\ttfamily char$\ast$ Sim\+Channel\+::wbwrite}
+
+\mbox{\Hypertarget{class_sim_channel_a7962e17c4304175072b79e9d19af4194}\label{class_sim_channel_a7962e17c4304175072b79e9d19af4194}} 
+\index{SimChannel@{SimChannel}!writebuffer@{writebuffer}}
+\index{writebuffer@{writebuffer}!SimChannel@{SimChannel}}
+\doxysubsubsection{\texorpdfstring{writebuffer}{writebuffer}}
+{\footnotesize\ttfamily char Sim\+Channel\+::writebuffer\mbox{[}128\mbox{]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/examples/\+Lss\+Unit\+Tests/\mbox{\hyperlink{_lss_testing_8h}{Lss\+Testing.\+h}}\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/examples/\+Lss\+Unit\+Tests/\mbox{\hyperlink{_lss_testing_8cpp}{Lss\+Testing.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,365 @@
+\hypertarget{class_lynx_servo}{}\doxysection{Lynx\+Servo Class Reference}
+\label{class_lynx_servo}\index{LynxServo@{LynxServo}}
+
+
+{\ttfamily \#include $<$Lynxmotion\+LSS.\+h$>$}
+
+
+
+Collaboration diagram for Lynx\+Servo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Statistics}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lynx_servo_a78c0e481dca71cb738a25510406c6726}{Lynx\+Servo}} (short \+\_\+\+ID, int \+\_\+units=\mbox{\hyperlink{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}{Lss\+Degrees}}, \mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Statistics}} $\ast$\+\_\+stats=NULL)
+\item 
+bool \mbox{\hyperlink{class_lynx_servo_a0bc1ac9ed3fc6d1db44429584f9b0fc8}{is\+Enabled}} () const
+\item 
+bool \mbox{\hyperlink{class_lynx_servo_a49462e4aa73bf847238b2ac504eb5241}{is\+Responsive}} () const
+\item 
+bool \mbox{\hyperlink{class_lynx_servo_a4e248c1e41a160bbf8fa512b80c2e984}{is\+Unresponsive}} () const
+\item 
+void \mbox{\hyperlink{class_lynx_servo_aa5d29aa5e5aaa08cf22dffddbe9d9f8d}{Write}} (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} cmd)
+\item 
+void \mbox{\hyperlink{class_lynx_servo_a3eb4632398f583ee4e6f136289684e7e}{Write}} (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} cmd, int value)
+\item 
+void \mbox{\hyperlink{class_lynx_servo_a1356206fa1cb03ea7c3ff2e725be35ab}{Write\+Position}} (short p)
+\item 
+\mbox{\hyperlink{class_async_token}{Async\+Token}} \mbox{\hyperlink{class_lynx_servo_a3dea659cb467c45a269c8615741f5fc2}{Read\+Async}} (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} commands)
+\item 
+void \mbox{\hyperlink{class_lynx_servo_a39a83be4e00a4df4cc5d2e482f3ef1b8}{Clear\+Async}} (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} commands)
+\item 
+void \mbox{\hyperlink{class_lynx_servo_ab9a5b6ddf6bbe029805658c5670f6800}{dispatch}} (\mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}} pkt)
+\item 
+void \mbox{\hyperlink{class_lynx_servo_a73462b8e322998c113b648f4e3690efe}{update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Statistics}} \& \mbox{\hyperlink{class_lynx_servo_a4900d406aa4936d670f178d35b586852}{global\+Statistics}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_a92716bb302b5dfe94313363ac0b06847}{id}}
+\item 
+\mbox{\hyperlink{class_lynx_channel}{Lynx\+Channel}} $\ast$ \mbox{\hyperlink{class_lynx_servo_a03219603fea7a796150bf9f162466247}{channel}}
+\item 
+bool \mbox{\hyperlink{class_lynx_servo_ac51e6ad4a3657ad1413bdec03c6ccd2c}{channel\+\_\+owned}}
+\item 
+\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} \mbox{\hyperlink{class_lynx_servo_aec1c31886cd3e65de8ba64e621211326}{units}}
+\item 
+unsigned long \mbox{\hyperlink{class_lynx_servo_ac91b03ae79ab7c0e96bce62defbe0d43}{timeout\+\_\+usec}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_a7a55721c41d59145b99ceebe98b81462}{timeouts}}
+\item 
+unsigned long \mbox{\hyperlink{class_lynx_servo_a9b1d3c9e712bf07b1ad032f8c89ed3cc}{enable\+After\+\_\+millis}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_a16b6a2444594ba287272990f375bcd9e}{state}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_af04ebffa09401bafc00d98635707f956}{position}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_a2a8ea22e904281187013f437d26904f7}{target}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_a8bdd5ab664446731c65f81b9690b085e}{speed}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_aece4532c541865c87cf598f6f8998c03}{current}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_a16c30199809a71543181f407179382d1}{voltage}}
+\item 
+short \mbox{\hyperlink{class_lynx_servo_ada2345272da254c7b324653c8f791469}{temperature}}
+\item 
+\mbox{\hyperlink{_lynxmotion_l_s_s_8h_a8020bb249f72428e24a9e5ee3f1f41de}{Lss\+Servo\+Config}} $\ast$ \mbox{\hyperlink{class_lynx_servo_a7792fc1abd09b661d75c32e1811ff82c}{config}}
+\item 
+\mbox{\hyperlink{class_mask_set}{Mask\+Set}} \mbox{\hyperlink{class_lynx_servo_a5b16d0955c0f23259fd6bce501d6dd8b}{mask}}
+\item 
+\mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Statistics}} $\ast$ \mbox{\hyperlink{class_lynx_servo_aa75e8a348ee054a67b757ded60773234}{stats}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lynx_servo_a78c0e481dca71cb738a25510406c6726}\label{class_lynx_servo_a78c0e481dca71cb738a25510406c6726}} 
+\index{LynxServo@{LynxServo}!LynxServo@{LynxServo}}
+\index{LynxServo@{LynxServo}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{LynxServo()}{LynxServo()}}
+{\footnotesize\ttfamily Lynx\+Servo\+::\+Lynx\+Servo (\begin{DoxyParamCaption}\item[{short}]{\+\_\+\+ID,  }\item[{int}]{\+\_\+units = {\ttfamily \mbox{\hyperlink{_lss_communication_8h_a44971e758260958c279fa8c84c7aebaf}{Lss\+Degrees}}},  }\item[{\mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Statistics}} $\ast$}]{\+\_\+stats = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lynx_servo_a39a83be4e00a4df4cc5d2e482f3ef1b8}\label{class_lynx_servo_a39a83be4e00a4df4cc5d2e482f3ef1b8}} 
+\index{LynxServo@{LynxServo}!ClearAsync@{ClearAsync}}
+\index{ClearAsync@{ClearAsync}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{ClearAsync()}{ClearAsync()}}
+{\footnotesize\ttfamily void Lynx\+Servo\+::\+Clear\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{commands }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_lynx_servo_ab9a5b6ddf6bbe029805658c5670f6800}\label{class_lynx_servo_ab9a5b6ddf6bbe029805658c5670f6800}} 
+\index{LynxServo@{LynxServo}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily void Lynx\+Servo\+::dispatch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}}}]{pkt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_ab9a5b6ddf6bbe029805658c5670f6800_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_ab9a5b6ddf6bbe029805658c5670f6800_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_servo_a4900d406aa4936d670f178d35b586852}\label{class_lynx_servo_a4900d406aa4936d670f178d35b586852}} 
+\index{LynxServo@{LynxServo}!globalStatistics@{globalStatistics}}
+\index{globalStatistics@{globalStatistics}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{globalStatistics()}{globalStatistics()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Lynx\+Servo\+::\+Statistics}} \& Lynx\+Servo\+::global\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_lynx_servo_a0bc1ac9ed3fc6d1db44429584f9b0fc8}\label{class_lynx_servo_a0bc1ac9ed3fc6d1db44429584f9b0fc8}} 
+\index{LynxServo@{LynxServo}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily bool Lynx\+Servo\+::is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_a0bc1ac9ed3fc6d1db44429584f9b0fc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_servo_a49462e4aa73bf847238b2ac504eb5241}\label{class_lynx_servo_a49462e4aa73bf847238b2ac504eb5241}} 
+\index{LynxServo@{LynxServo}!isResponsive@{isResponsive}}
+\index{isResponsive@{isResponsive}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{isResponsive()}{isResponsive()}}
+{\footnotesize\ttfamily bool Lynx\+Servo\+::is\+Responsive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_servo_a4e248c1e41a160bbf8fa512b80c2e984}\label{class_lynx_servo_a4e248c1e41a160bbf8fa512b80c2e984}} 
+\index{LynxServo@{LynxServo}!isUnresponsive@{isUnresponsive}}
+\index{isUnresponsive@{isUnresponsive}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{isUnresponsive()}{isUnresponsive()}}
+{\footnotesize\ttfamily bool Lynx\+Servo\+::is\+Unresponsive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_servo_a3dea659cb467c45a269c8615741f5fc2}\label{class_lynx_servo_a3dea659cb467c45a269c8615741f5fc2}} 
+\index{LynxServo@{LynxServo}!ReadAsync@{ReadAsync}}
+\index{ReadAsync@{ReadAsync}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{ReadAsync()}{ReadAsync()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_async_token}{Async\+Token}} Lynx\+Servo\+::\+Read\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{commands }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_a3dea659cb467c45a269c8615741f5fc2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_a3dea659cb467c45a269c8615741f5fc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_servo_a73462b8e322998c113b648f4e3690efe}\label{class_lynx_servo_a73462b8e322998c113b648f4e3690efe}} 
+\index{LynxServo@{LynxServo}!update@{update}}
+\index{update@{update}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Lynx\+Servo\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_lynx_servo_a73462b8e322998c113b648f4e3690efe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_a73462b8e322998c113b648f4e3690efe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_servo_aa5d29aa5e5aaa08cf22dffddbe9d9f8d}\label{class_lynx_servo_aa5d29aa5e5aaa08cf22dffddbe9d9f8d}} 
+\index{LynxServo@{LynxServo}!Write@{Write}}
+\index{Write@{Write}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Lynx\+Servo\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{cmd }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_aa5d29aa5e5aaa08cf22dffddbe9d9f8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_lynx_servo_aa5d29aa5e5aaa08cf22dffddbe9d9f8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_servo_a3eb4632398f583ee4e6f136289684e7e}\label{class_lynx_servo_a3eb4632398f583ee4e6f136289684e7e}} 
+\index{LynxServo@{LynxServo}!Write@{Write}}
+\index{Write@{Write}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Lynx\+Servo\+::\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{cmd,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_a3eb4632398f583ee4e6f136289684e7e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_servo_a1356206fa1cb03ea7c3ff2e725be35ab}\label{class_lynx_servo_a1356206fa1cb03ea7c3ff2e725be35ab}} 
+\index{LynxServo@{LynxServo}!WritePosition@{WritePosition}}
+\index{WritePosition@{WritePosition}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{WritePosition()}{WritePosition()}}
+{\footnotesize\ttfamily void Lynx\+Servo\+::\+Write\+Position (\begin{DoxyParamCaption}\item[{short}]{p }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_servo_a1356206fa1cb03ea7c3ff2e725be35ab_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lynx_servo_a03219603fea7a796150bf9f162466247}\label{class_lynx_servo_a03219603fea7a796150bf9f162466247}} 
+\index{LynxServo@{LynxServo}!channel@{channel}}
+\index{channel@{channel}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{channel}{channel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lynx_channel}{Lynx\+Channel}}$\ast$ Lynx\+Servo\+::channel}
+
+\mbox{\Hypertarget{class_lynx_servo_ac51e6ad4a3657ad1413bdec03c6ccd2c}\label{class_lynx_servo_ac51e6ad4a3657ad1413bdec03c6ccd2c}} 
+\index{LynxServo@{LynxServo}!channel\_owned@{channel\_owned}}
+\index{channel\_owned@{channel\_owned}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{channel\_owned}{channel\_owned}}
+{\footnotesize\ttfamily bool Lynx\+Servo\+::channel\+\_\+owned}
+
+\mbox{\Hypertarget{class_lynx_servo_a7792fc1abd09b661d75c32e1811ff82c}\label{class_lynx_servo_a7792fc1abd09b661d75c32e1811ff82c}} 
+\index{LynxServo@{LynxServo}!config@{config}}
+\index{config@{config}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_lynxmotion_l_s_s_8h_a8020bb249f72428e24a9e5ee3f1f41de}{Lss\+Servo\+Config}}$\ast$ Lynx\+Servo\+::config}
+
+\mbox{\Hypertarget{class_lynx_servo_aece4532c541865c87cf598f6f8998c03}\label{class_lynx_servo_aece4532c541865c87cf598f6f8998c03}} 
+\index{LynxServo@{LynxServo}!current@{current}}
+\index{current@{current}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::current}
+
+\mbox{\Hypertarget{class_lynx_servo_a9b1d3c9e712bf07b1ad032f8c89ed3cc}\label{class_lynx_servo_a9b1d3c9e712bf07b1ad032f8c89ed3cc}} 
+\index{LynxServo@{LynxServo}!enableAfter\_millis@{enableAfter\_millis}}
+\index{enableAfter\_millis@{enableAfter\_millis}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{enableAfter\_millis}{enableAfter\_millis}}
+{\footnotesize\ttfamily unsigned long Lynx\+Servo\+::enable\+After\+\_\+millis\hspace{0.3cm}{\ttfamily [mutable]}}
+
+\mbox{\Hypertarget{class_lynx_servo_a92716bb302b5dfe94313363ac0b06847}\label{class_lynx_servo_a92716bb302b5dfe94313363ac0b06847}} 
+\index{LynxServo@{LynxServo}!id@{id}}
+\index{id@{id}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::id}
+
+\mbox{\Hypertarget{class_lynx_servo_a5b16d0955c0f23259fd6bce501d6dd8b}\label{class_lynx_servo_a5b16d0955c0f23259fd6bce501d6dd8b}} 
+\index{LynxServo@{LynxServo}!mask@{mask}}
+\index{mask@{mask}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_mask_set}{Mask\+Set}} Lynx\+Servo\+::mask}
+
+\mbox{\Hypertarget{class_lynx_servo_af04ebffa09401bafc00d98635707f956}\label{class_lynx_servo_af04ebffa09401bafc00d98635707f956}} 
+\index{LynxServo@{LynxServo}!position@{position}}
+\index{position@{position}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::position}
+
+\mbox{\Hypertarget{class_lynx_servo_a8bdd5ab664446731c65f81b9690b085e}\label{class_lynx_servo_a8bdd5ab664446731c65f81b9690b085e}} 
+\index{LynxServo@{LynxServo}!speed@{speed}}
+\index{speed@{speed}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::speed}
+
+\mbox{\Hypertarget{class_lynx_servo_a16b6a2444594ba287272990f375bcd9e}\label{class_lynx_servo_a16b6a2444594ba287272990f375bcd9e}} 
+\index{LynxServo@{LynxServo}!state@{state}}
+\index{state@{state}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::state}
+
+\mbox{\Hypertarget{class_lynx_servo_aa75e8a348ee054a67b757ded60773234}\label{class_lynx_servo_aa75e8a348ee054a67b757ded60773234}} 
+\index{LynxServo@{LynxServo}!stats@{stats}}
+\index{stats@{stats}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{stats}{stats}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lynx_servo_1_1_statistics}{Statistics}}$\ast$ Lynx\+Servo\+::stats}
+
+\mbox{\Hypertarget{class_lynx_servo_a2a8ea22e904281187013f437d26904f7}\label{class_lynx_servo_a2a8ea22e904281187013f437d26904f7}} 
+\index{LynxServo@{LynxServo}!target@{target}}
+\index{target@{target}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::target}
+
+\mbox{\Hypertarget{class_lynx_servo_ada2345272da254c7b324653c8f791469}\label{class_lynx_servo_ada2345272da254c7b324653c8f791469}} 
+\index{LynxServo@{LynxServo}!temperature@{temperature}}
+\index{temperature@{temperature}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{temperature}{temperature}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::temperature}
+
+\mbox{\Hypertarget{class_lynx_servo_ac91b03ae79ab7c0e96bce62defbe0d43}\label{class_lynx_servo_ac91b03ae79ab7c0e96bce62defbe0d43}} 
+\index{LynxServo@{LynxServo}!timeout\_usec@{timeout\_usec}}
+\index{timeout\_usec@{timeout\_usec}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{timeout\_usec}{timeout\_usec}}
+{\footnotesize\ttfamily unsigned long Lynx\+Servo\+::timeout\+\_\+usec}
+
+\mbox{\Hypertarget{class_lynx_servo_a7a55721c41d59145b99ceebe98b81462}\label{class_lynx_servo_a7a55721c41d59145b99ceebe98b81462}} 
+\index{LynxServo@{LynxServo}!timeouts@{timeouts}}
+\index{timeouts@{timeouts}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{timeouts}{timeouts}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::timeouts\hspace{0.3cm}{\ttfamily [mutable]}}
+
+\mbox{\Hypertarget{class_lynx_servo_aec1c31886cd3e65de8ba64e621211326}\label{class_lynx_servo_aec1c31886cd3e65de8ba64e621211326}} 
+\index{LynxServo@{LynxServo}!units@{units}}
+\index{units@{units}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{units}{units}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} Lynx\+Servo\+::units}
+
+\mbox{\Hypertarget{class_lynx_servo_a16c30199809a71543181f407179382d1}\label{class_lynx_servo_a16c30199809a71543181f407179382d1}} 
+\index{LynxServo@{LynxServo}!voltage@{voltage}}
+\index{voltage@{voltage}!LynxServo@{LynxServo}}
+\doxysubsubsection{\texorpdfstring{voltage}{voltage}}
+{\footnotesize\ttfamily short Lynx\+Servo\+::voltage}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\mbox{\hyperlink{_lynxmotion_l_s_s_8h}{Lynxmotion\+LSS.\+h}}\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\mbox{\hyperlink{_lynxmotion_l_s_s_8cpp}{Lynxmotion\+LSS.\+cpp}}\end{DoxyCompactItemize}

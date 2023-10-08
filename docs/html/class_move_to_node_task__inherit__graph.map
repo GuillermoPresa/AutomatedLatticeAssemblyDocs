@@ -1,4 +1,4 @@
 <map id="MoveToNodeTask" name="MoveToNodeTask">
 <area shape="rect" id="node1" title=" " alt="" coords="5,80,129,107"/>
-<area shape="rect" id="node2" href="$class_task.html" title=" " alt="" coords="42,5,93,32"/>
+<area shape="rect" id="node2" href="$class_abstract_task.html" title=" " alt="" coords="18,5,117,32"/>
 </map>

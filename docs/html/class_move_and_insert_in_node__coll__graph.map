@@ -1,0 +1,4 @@
+<map id="MoveAndInsertInNode" name="MoveAndInsertInNode">
+<area shape="rect" id="node1" title="This actions moves the robot arm and inserts the screwdriver into the node. First the arm moves a dis..." alt="" coords="7,80,154,107"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_v3_abstract_action.html" title=" " alt="" coords="5,5,156,32"/>
+</map>

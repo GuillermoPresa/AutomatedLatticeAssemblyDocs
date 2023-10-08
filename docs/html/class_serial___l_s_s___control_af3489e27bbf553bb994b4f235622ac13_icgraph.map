@@ -1,7 +1,8 @@
 <map id="Serial_LSS_Control.EmergencyStopAllServos" name="Serial_LSS_Control.EmergencyStopAllServos">
-<area shape="rect" id="node1" title=" " alt="" coords="492,27,697,69"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_state___e_stop.html#ac0cbe8dbf770c586bf96f2180d29c716" title=" " alt="" coords="251,5,439,32"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="247,57,444,98"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,39,199,65"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,89,185,116"/>
+<area shape="rect" id="node1" title=" " alt="" coords="529,27,735,69"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_state___e_stop.html#ac0cbe8dbf770c586bf96f2180d29c716" title=" " alt="" coords="289,5,477,32"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="284,57,481,98"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,13,217,40"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,64,204,91"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,115,236,157"/>
 </map>

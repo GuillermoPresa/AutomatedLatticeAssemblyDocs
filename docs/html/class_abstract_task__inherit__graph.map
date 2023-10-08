@@ -1,0 +1,5 @@
+<map id="AbstractTask" name="AbstractTask">
+<area shape="rect" id="node1" title=" " alt="" coords="61,5,160,32"/>
+<area shape="rect" id="node2" href="$class_insert_task.html" title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$class_move_to_node_task.html" title=" " alt="" coords="113,80,237,107"/>
+</map>

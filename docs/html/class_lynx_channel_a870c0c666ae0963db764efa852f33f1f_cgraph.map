@@ -1,0 +1,13 @@
+<map id="LynxChannel::waitFor" name="LynxChannel::waitFor">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,152,83"/>
+<area shape="rect" id="node2" href="$class_async_token.html#aec3951bfe5b21639ae364c2203cebc7e" title=" " alt="" coords="210,5,357,32"/>
+<area shape="rect" id="node4" href="$class_async_token.html#a0a3c5ffeca1875799e9a4c66104c5455" title=" " alt="" coords="200,56,367,83"/>
+<area shape="rect" id="node6" href="$class_lynx_channel.html#af28230bf8113555b7b4ff9dc8c5c5c5b" title=" " alt="" coords="211,107,355,133"/>
+<area shape="rect" id="node3" href="$class_mask_set.html#ab95c4ff7ff21f82b41b95d4ef7e75d62" title=" " alt="" coords="425,5,551,32"/>
+<area shape="rect" id="node5" href="$class_mask_set.html#af515ed6ee71b3543fe9c79131bd7a7f3" title=" " alt="" coords="415,56,561,83"/>
+<area shape="rect" id="node7" href="$class_lynx_servo.html#ab9a5b6ddf6bbe029805658c5670f6800" title=" " alt="" coords="419,107,557,133"/>
+<area shape="rect" id="node10" href="$class_lynx_servo.html#a73462b8e322998c113b648f4e3690efe" title=" " alt="" coords="423,157,553,184"/>
+<area shape="rect" id="node8" href="$class_aggregate.html#a7218cd1c9bfc4accada46e3ca6f547ed" title=" " alt="" coords="647,132,758,159"/>
+<area shape="rect" id="node9" href="$class_lynx_packet.html#a5288c52d2faed0afc6386fbba0cc7ed0" title=" " alt="" coords="609,81,796,108"/>
+<area shape="rect" id="node11" href="$class_lynx_servo.html#a0bc1ac9ed3fc6d1db44429584f9b0fc8" title=" " alt="" coords="629,183,776,209"/>
+</map>

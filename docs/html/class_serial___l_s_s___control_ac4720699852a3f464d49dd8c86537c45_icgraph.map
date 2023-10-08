@@ -1,10 +1,11 @@
 <map id="Serial_LSS_Control.FillDistributedWithVirtualServos" name="Serial_LSS_Control.FillDistributedWithVirtualServos">
-<area shape="rect" id="node1" title=" " alt="" coords="688,39,907,80"/>
-<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#a7e080fb4ba0db25d425a8a9897322c22" title=" " alt="" coords="468,5,640,47"/>
-<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="468,71,640,112"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,37,420,79"/>
-<area shape="rect" id="node6" href="$class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,103,420,144"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,45,198,71"/>
-<area shape="rect" id="node7" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,102,199,129"/>
-<area shape="rect" id="node8" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,153,185,179"/>
+<area shape="rect" id="node1" title=" " alt="" coords="725,39,944,80"/>
+<area shape="rect" id="node2" href="$class_serial___l_s_s___control.html#a7e080fb4ba0db25d425a8a9897322c22" title=" " alt="" coords="505,5,677,47"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="505,71,677,112"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="284,28,457,69"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="284,103,457,144"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,26,217,53"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,77,217,103"/>
+<area shape="rect" id="node8" href="$class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,127,204,154"/>
+<area shape="rect" id="node9" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,179,236,220"/>
 </map>

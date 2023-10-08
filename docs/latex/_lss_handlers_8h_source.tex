@@ -1,0 +1,118 @@
+\hypertarget{_lss_handlers_8h_source}{}\doxysection{Lss\+Handlers.\+h}
+\label{_lss_handlers_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssHandlers.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LssHandlers.h}}
+\mbox{\hyperlink{_lss_handlers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{comment}{//\#include <functional>}}
+\DoxyCodeLine{5 \textcolor{comment}{//\#include <initializer\_list>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_a87eb5ebdda5f01e4d4528eabc069e4e2}{LssNone}} = 0;}
+\DoxyCodeLine{8 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_a47ecc84a6f79566a95b5fed2e6071938}{LssNoBroadcast}} = 1;}
+\DoxyCodeLine{9 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_abbda7ac2ce553bd4488932373ef449f3}{LssMatchAny}} = 2;}
+\DoxyCodeLine{10 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_a3e65822cbd75b898c951dc94fb0332d1}{LssContinue}} = 4;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_aa7ed41001be5faf716f0df2114b30723}{LssReply}} = 1;}
+\DoxyCodeLine{13 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_af62eb9d7dd2ef8918ccf06553329a08c}{LssNoReply}} = 0;}
+\DoxyCodeLine{14 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_adba7d8bf00b8fa628fdd1f47e6725628}{LssNoHandler}} = -\/1;}
+\DoxyCodeLine{15 \textcolor{keyword}{const} \textcolor{keywordtype}{short} \mbox{\hyperlink{_lss_handlers_8h_a29e1b02731171de2027291e26b04c96c}{LssError}} = -\/2;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{inline} \textcolor{keywordtype}{void}* \textcolor{keyword}{operator} \textcolor{keyword}{new} (\textcolor{keywordtype}{size\_t} size, \textcolor{keywordtype}{void} * ptr) \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} ptr; \}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{template}<\textcolor{keyword}{class }... Args>}
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23   \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \textcolor{comment}{// All handler callbacks should have this prototype based on the template parameter-\/pack arguments}}
+\DoxyCodeLine{25     \textcolor{keyword}{using }\mbox{\hyperlink{class_lss_packet_handlers_aad0a5a6aea7a050aa48755fdc90b47f8}{Callback}} = short(*)(\mbox{\hyperlink{class_lynx_packet}{LynxPacket}}\&, Args...);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{comment}{// Flags can direct how a handler is matched against a packet}}
+\DoxyCodeLine{28     \textcolor{keyword}{using }\mbox{\hyperlink{class_lss_packet_handlers_ad1754691c31ae8892ad1394eff2cc0b1}{Flags}} = \textcolor{keywordtype}{unsigned} int;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     \textcolor{comment}{// This handler class holds packet match parameters and a callback to call on successful match}}
+\DoxyCodeLine{31     \textcolor{keyword}{class }\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}} \{}
+\DoxyCodeLine{32     \textcolor{keyword}{public}:  }
+\DoxyCodeLine{33       \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a016c54f887fa079ba3179c4ae411e974}{command}};}
+\DoxyCodeLine{34       \mbox{\hyperlink{class_lss_packet_handlers_ad1754691c31ae8892ad1394eff2cc0b1}{Flags}}  \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a92069ccc7254daa41f8cdcd6d476b138}{flags}};}
+\DoxyCodeLine{35       \mbox{\hyperlink{class_lss_packet_handlers_aad0a5a6aea7a050aa48755fdc90b47f8}{Callback}} \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a75be2587767882f6ad46f51086a69248}{handler}};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37       \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a8578a7555beb0839b628d6c19f2e1980}{Handler}}(\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} \_command, \mbox{\hyperlink{class_lss_packet_handlers_ad1754691c31ae8892ad1394eff2cc0b1}{Flags}} \_flags, \mbox{\hyperlink{class_lss_packet_handlers_aad0a5a6aea7a050aa48755fdc90b47f8}{Callback}} \_handler) }
+\DoxyCodeLine{38         : \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a016c54f887fa079ba3179c4ae411e974}{command}}(\_command), \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a92069ccc7254daa41f8cdcd6d476b138}{flags}}(\_flags), \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a75be2587767882f6ad46f51086a69248}{handler}}(\_handler) \{}
+\DoxyCodeLine{39           \textcolor{keywordflow}{if}((\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a016c54f887fa079ba3179c4ae411e974}{command}} \& \mbox{\hyperlink{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}{LssCommandModes}}) ==0)}
+\DoxyCodeLine{40             \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a016c54f887fa079ba3179c4ae411e974}{command}} |= \mbox{\hyperlink{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}{LssAction}};}
+\DoxyCodeLine{41       \}}
+\DoxyCodeLine{42       }
+\DoxyCodeLine{43     \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45     \textcolor{comment}{// single constructor for defining packet handlers}}
+\DoxyCodeLine{46     \textcolor{comment}{// Packet handler classes should be global and allocated once, therefor no copy or assignment constructors should be used}}
+\DoxyCodeLine{47     \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t} N>}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_lss_packet_handlers_a0f8c92807b1c8678400972bab1966622}{LssPacketHandlers}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}(\&handlers)[N]) }
+\DoxyCodeLine{49       : \mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}(nullptr), \mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}}(N) \{}
+\DoxyCodeLine{50         \mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}} = (\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}*)calloc(N, \textcolor{keyword}{sizeof}(\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}));}
+\DoxyCodeLine{51         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i=0; i < \mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}}; i++) \{}
+\DoxyCodeLine{52           \textcolor{keyword}{new} (\&\mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}[i]) \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}(handlers[i]);}
+\DoxyCodeLine{53         \}}
+\DoxyCodeLine{54     \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \mbox{\hyperlink{class_lss_packet_handlers_a6ffad69b05f5f37a34bf392d17f7a433}{\string~LssPacketHandlers}}() \{}
+\DoxyCodeLine{57       \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}) ::free(\mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}});}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59    }
+\DoxyCodeLine{60     \textcolor{comment}{// if you are copying handlers you are doing it wrong :) }}
+\DoxyCodeLine{61     \textcolor{comment}{// we generate a compile error, took a look at the examples again to see how packet handlers should be constructed.}}
+\DoxyCodeLine{62     \mbox{\hyperlink{class_lss_packet_handlers_a07cd54926523c91ad6722178bbd34dbb}{LssPacketHandlers}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}\& copy) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{63     \mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}\& \mbox{\hyperlink{class_lss_packet_handlers_a93fbcafb27fc22c22e3fa6d9bfa2ab78}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}\& copy) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65     \textcolor{comment}{// we should allow moves though}}
+\DoxyCodeLine{66     \mbox{\hyperlink{class_lss_packet_handlers_a9bc1f6ddd887e0f815f95d6c8642fb70}{LssPacketHandlers}}(\mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}\&\& \_move) : \mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}(\_move.\mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}), \mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}}(\_move.\mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}}) \{}
+\DoxyCodeLine{67       \_move.\_handlers = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{68       \_move.\_count = 0;}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{comment}{// assignment move operator}}
+\DoxyCodeLine{72     \mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}\& \mbox{\hyperlink{class_lss_packet_handlers_a6f06af3bdb3cf5d79fc37b04ba317aa3}{operator=}}(\mbox{\hyperlink{class_lss_packet_handlers}{LssPacketHandlers}}\&\& \_move) \{}
+\DoxyCodeLine{73       \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}) ::free(\mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}});}
+\DoxyCodeLine{74       \mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}} = \_move.\_handlers;}
+\DoxyCodeLine{75       \mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}} = \_move.\_count;}
+\DoxyCodeLine{76       \_move.\_handlers = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{77       \_move.\_count = 0;}
+\DoxyCodeLine{78       \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{79     \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{comment}{// returns true if a packet is handled by the given callback handler}}
+\DoxyCodeLine{82     \textcolor{keyword}{inline} \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_lss_packet_handlers_a0231ee36ed6fc5f026728261c3516a4b}{matches}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_lynx_packet}{LynxPacket}}\& p, \textcolor{keyword}{const} \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}\& h) \{ }
+\DoxyCodeLine{83       \textcolor{comment}{//return (match \& rhs.match)==match \&\& (!broadcast || rhs.broadcast); }}
+\DoxyCodeLine{84       \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} hcmd = h.\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a016c54f887fa079ba3179c4ae411e974}{command}} \& (\mbox{\hyperlink{_lss_communication_8h_ab9f8026ca99fe13d33dda4cac3ccbd4b}{LssCommandSet}}|\mbox{\hyperlink{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}{LssUnits}});}
+\DoxyCodeLine{85       \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} cmd = p.\mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}} \& (\mbox{\hyperlink{_lss_communication_8h_ab9f8026ca99fe13d33dda4cac3ccbd4b}{LssCommandSet}}|\mbox{\hyperlink{_lss_communication_8h_a0d7e49af649845c88ab38edd7085a066}{LssUnits}});}
+\DoxyCodeLine{86       \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{LssCommands}} mode = p.\mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}} \& \mbox{\hyperlink{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}{LssCommandModes}};}
+\DoxyCodeLine{87       \textcolor{keywordflow}{if}((mode \& \mbox{\hyperlink{_lss_communication_8h_a1a4567b4e35293935508dfcb093a8c53}{LssCommandModes}}) ==0)}
+\DoxyCodeLine{88         mode |= \mbox{\hyperlink{_lss_communication_8h_a7ab26478c28dafa7eb8d531a06b72f10}{LssAction}};    \textcolor{comment}{// todo: move this to the main handler so we only do it once}}
+\DoxyCodeLine{89       \textcolor{keywordtype}{bool} command\_match = (h.\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a92069ccc7254daa41f8cdcd6d476b138}{flags}} \& \mbox{\hyperlink{_lss_handlers_8h_abbda7ac2ce553bd4488932373ef449f3}{LssMatchAny}})}
+\DoxyCodeLine{90           ? (hcmd \& cmd)                 \textcolor{comment}{// match ANY of the command bits}}
+\DoxyCodeLine{91           : (hcmd == cmd);   \textcolor{comment}{// match ALL of the command bits}}
+\DoxyCodeLine{92       \textcolor{keywordflow}{return} command\_match \&\& (h.\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a016c54f887fa079ba3179c4ae411e974}{command}} \& mode)>0 \&\& (!p.\mbox{\hyperlink{class_lynx_packet_a1bdfe6198e22ada04e5b514c204bdd5f}{broadcast}}() || (h.\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a92069ccc7254daa41f8cdcd6d476b138}{flags}} \& \mbox{\hyperlink{_lss_handlers_8h_a47ecc84a6f79566a95b5fed2e6071938}{LssNoBroadcast}})==0);}
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     \textcolor{comment}{// find and execute a handler for the given packet}}
+\DoxyCodeLine{96     \textcolor{keywordtype}{short} \mbox{\hyperlink{class_lss_packet_handlers_a64744d2845c19d9351fcc01997a4dce2}{operator()}}(\mbox{\hyperlink{class_lynx_packet}{LynxPacket}}\& p, Args ... args)\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{97       \textcolor{keywordtype}{short} r = \mbox{\hyperlink{_lss_handlers_8h_adba7d8bf00b8fa628fdd1f47e6725628}{LssNoHandler}};}
+\DoxyCodeLine{98       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i=0; i < \mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}}; i++) \{}
+\DoxyCodeLine{99         \textcolor{keyword}{const} \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}\& handler = \mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}}[i];}
+\DoxyCodeLine{100         \textcolor{keywordflow}{if}(\mbox{\hyperlink{class_lss_packet_handlers_a0231ee36ed6fc5f026728261c3516a4b}{matches}}(p, handler)) \{}
+\DoxyCodeLine{101           r =  handler.\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a75be2587767882f6ad46f51086a69248}{handler}}(p, args...);}
+\DoxyCodeLine{102           \textcolor{keywordflow}{if}(r==\mbox{\hyperlink{_lss_handlers_8h_a29e1b02731171de2027291e26b04c96c}{LssError}} || (handler.\mbox{\hyperlink{class_lss_packet_handlers_1_1_handler_a92069ccc7254daa41f8cdcd6d476b138}{flags}} \& \mbox{\hyperlink{_lss_handlers_8h_a3e65822cbd75b898c951dc94fb0332d1}{LssContinue}})==0)}
+\DoxyCodeLine{103             \textcolor{keywordflow}{return} r;}
+\DoxyCodeLine{104         \}}
+\DoxyCodeLine{105       \}}
+\DoxyCodeLine{106       \textcolor{keywordflow}{return} r;}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109   \textcolor{keyword}{protected}:}
+\DoxyCodeLine{110     \mbox{\hyperlink{class_lss_packet_handlers_1_1_handler}{Handler}}* \mbox{\hyperlink{class_lss_packet_handlers_a7e7cd9e0d051535998341c2d695a5de4}{\_handlers}};}
+\DoxyCodeLine{111     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_lss_packet_handlers_a0173bbdaafec9b1f7bbd7ffc68c2dad1}{\_count}};}
+\DoxyCodeLine{112 \};}
+
+\end{DoxyCode}

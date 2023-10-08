@@ -1,0 +1,32 @@
+\hypertarget{_lynxmotion_l_s_s-_config_8h_source}{}\doxysection{Lynxmotion\+LSS-\/\+Config.h}
+\label{_lynxmotion_l_s_s-_config_8h_source}\index{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LynxmotionLSS-\/Config.h@{C:/Users/Guille/LatticeAssembly (2)/Assets/Resources/Objects/ILLAV3/LSS2MC\_arduinoCode/libraries/AlternativeLSS/src/LynxmotionLSS-\/Config.h}}
+\mbox{\hyperlink{_lynxmotion_l_s_s-_config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define INTERPACKET\_DELAY   1}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{comment}{// maximum amount of time we will wait for a response from a servo before considering it a timeout}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define TRANSACTION\_TIMEOUT   50000u}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{comment}{// if a servo fails to respond to this number of packets in a row, we consider it unresponsive}}
+\DoxyCodeLine{11 \textcolor{comment}{// if a servo responds, this counter is reset to zero}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define UNRESPONSIVE\_REQUEST\_LIMIT  2}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{comment}{// amount of milliseconds a servo gets disabled when found unresponsive}}
+\DoxyCodeLine{15 \textcolor{comment}{// after this timout elapses, we will give the servo another chance to respond.}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define UNRESPONSIVE\_DISABLE\_INTERVAL   15000u}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define HAVE\_STRING}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26 \textcolor{comment}{//\#define LSS\_LOGGING Serial}}
+\DoxyCodeLine{27 \textcolor{comment}{//\#define LSS\_LOG\_PACKETS}}
+\DoxyCodeLine{28 \textcolor{comment}{//\#define LSS\_LOG\_SERVO\_DISPATCH}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33 \textcolor{comment}{//\#define LSS\_OSCOPE\_TRIGGER\_PIN 4}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{38 \textcolor{preprocessor}{\#define LSS\_STATS 1}}
+
+\end{DoxyCode}

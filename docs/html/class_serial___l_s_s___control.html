@@ -131,14 +131,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af3489e27bbf553bb994b4f235622ac13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#af3489e27bbf553bb994b4f235622ac13">EmergencyStopAllServos</a> ()</td></tr>
 <tr class="separator:af3489e27bbf553bb994b4f235622ac13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc2c4ea02c3ce313f143c066ed1f4a46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#afc2c4ea02c3ce313f143c066ed1f4a46">QuerryAllServoPositions</a> ()</td></tr>
+<tr class="memdesc:afc2c4ea02c3ce313f143c066ed1f4a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Querry all servos for their position. Since this waits for 5 servos to reply this is slow  <a href="class_serial___l_s_s___control.html#afc2c4ea02c3ce313f143c066ed1f4a46">More...</a><br /></td></tr>
 <tr class="separator:afc2c4ea02c3ce313f143c066ed1f4a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c0001d60d5fd298df171dc61b2acd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2">RunFrame</a> ()</td></tr>
 <tr class="separator:ac7c0001d60d5fd298df171dc61b2acd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a31aba7e41844967c4ab33df2679ba314"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#a31aba7e41844967c4ab33df2679ba314">detectedPortNames</a> = SerialPort.GetPortNames()</td></tr>
-<tr class="separator:a31aba7e41844967c4ab33df2679ba314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23a5a0d945562614251945b844d2eaf8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#a23a5a0d945562614251945b844d2eaf8">baudrateIndex</a> = 4</td></tr>
 <tr class="separator:a23a5a0d945562614251945b844d2eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc759bf96ddc09f6265e9429174a5f8d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#abc759bf96ddc09f6265e9429174a5f8d">portIndex</a> = 0</td></tr>
@@ -148,6 +147,8 @@ Public Attributes</h2></td></tr>
 Properties</h2></td></tr>
 <tr class="memitem:a3844805590df9b0fca36f4cb1f4c1bf9"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#a3844805590df9b0fca36f4cb1f4c1bf9">possibleBaudratesStringArray</a><code> [get]</code></td></tr>
 <tr class="separator:a3844805590df9b0fca36f4cb1f4c1bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31aba7e41844967c4ab33df2679ba314"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#a31aba7e41844967c4ab33df2679ba314">detectedPortNames</a><code> [get]</code></td></tr>
+<tr class="separator:a31aba7e41844967c4ab33df2679ba314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f46553fff3491265f2c8d9bb74d8812"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#a4f46553fff3491265f2c8d9bb74d8812">COM_NAME</a><code> [get]</code></td></tr>
 <tr class="separator:a4f46553fff3491265f2c8d9bb74d8812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17d82692fba7d9b060b17255a2ffc3bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_serial___l_s_s___control.html#a17d82692fba7d9b060b17255a2ffc3bd">BaudRate</a><code> [get]</code></td></tr>
@@ -204,14 +205,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_a195fd2854045e655d06094a2b62943de_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_a195fd2854045e655d06094a2b62943de_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_a195fd2854045e655d06094a2b62943de_icgraph" id="aclass_serial___l_s_s___control_a195fd2854045e655d06094a2b62943de_icgraph">
-<area shape="rect" title=" " alt="" coords="928,39,1123,80"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#af0b762ab3e576fb1384915b5bad15fbd" title=" " alt="" coords="688,39,880,80"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="468,39,640,80"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,5,420,47"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,71,420,112"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,13,198,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,70,199,97"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,121,185,147"/>
+<area shape="rect" title=" " alt="" coords="965,50,1160,91"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#af0b762ab3e576fb1384915b5bad15fbd" title=" " alt="" coords="725,50,917,91"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="505,50,677,91"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="284,7,457,49"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="284,82,457,123"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,5,217,32"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,56,217,83"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,107,204,133"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,158,236,199"/>
 </map>
 </div>
 
@@ -245,11 +247,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13_icgraph" id="aclass_serial___l_s_s___control_af3489e27bbf553bb994b4f235622ac13_icgraph">
-<area shape="rect" title=" " alt="" coords="492,27,697,69"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#ac0cbe8dbf770c586bf96f2180d29c716" title=" " alt="" coords="251,5,439,32"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="247,57,444,98"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,39,199,65"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,89,185,116"/>
+<area shape="rect" title=" " alt="" coords="529,27,735,69"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#ac0cbe8dbf770c586bf96f2180d29c716" title=" " alt="" coords="289,5,477,32"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="284,57,481,98"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,13,217,40"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,64,204,91"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,115,236,157"/>
 </map>
 </div>
 
@@ -274,14 +277,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45_icgraph" id="aclass_serial___l_s_s___control_ac4720699852a3f464d49dd8c86537c45_icgraph">
-<area shape="rect" title=" " alt="" coords="688,39,907,80"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#a7e080fb4ba0db25d425a8a9897322c22" title=" " alt="" coords="468,5,640,47"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="468,71,640,112"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,37,420,79"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,103,420,144"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,45,198,71"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,102,199,129"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,153,185,179"/>
+<area shape="rect" title=" " alt="" coords="725,39,944,80"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#a7e080fb4ba0db25d425a8a9897322c22" title=" " alt="" coords="505,5,677,47"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="505,71,677,112"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="284,28,457,69"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="284,103,457,144"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,26,217,53"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,77,217,103"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,127,204,154"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,179,236,220"/>
 </map>
 </div>
 
@@ -384,15 +388,18 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Querry all servos for their position. Since this waits for 5 servos to reply this is slow </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_cgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_cgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_cgraph" id="aclass_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,184,47"/>
-<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="232,5,452,47"/>
-<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#aabeb4c1fc8156b39fca19a55703d33d7" title=" " alt="" coords="500,5,720,47"/>
-<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="768,5,963,47"/>
+<area shape="rect" title="Querry all servos for their position. Since this waits for 5 servos to reply this is slow" alt="" coords="5,35,184,76"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ad68cd7cff0b9eae1697c3ca7190334cc" title=" " alt="" coords="232,5,452,47"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a20a936ef73d4833ad1d53ff736901ec3" title=" " alt="" coords="500,35,720,76"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#aabeb4c1fc8156b39fca19a55703d33d7" title=" " alt="" coords="768,35,988,76"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="1036,35,1231,76"/>
 </map>
 </div>
 <div class="dynheader">
@@ -400,7 +407,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_icgraph" id="aclass_serial___l_s_s___control_afc2c4ea02c3ce313f143c066ed1f4a46_icgraph">
-<area shape="rect" title=" " alt="" coords="236,5,415,47"/>
+<area shape="rect" title="Querry all servos for their position. Since this waits for 5 servos to reply this is slow" alt="" coords="236,5,415,47"/>
 <area shape="rect" href="class_i_l_l_a_state___connected.html#a36054f3768114ee26801c00fe84d7a17" title=" " alt="" coords="5,5,188,47"/>
 </map>
 </div>
@@ -430,7 +437,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c" title=" " alt="" coords="267,64,457,105"/>
 <area shape="rect" href="class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8" title=" " alt="" coords="277,130,447,157"/>
 <area shape="rect" href="class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4" title=" " alt="" coords="279,181,445,207"/>
-<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="252,235,472,276"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a20a936ef73d4833ad1d53ff736901ec3" title=" " alt="" coords="252,235,472,276"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="527,5,733,47"/>
 <area shape="rect" href="class_virtual_servo.html#aeb8e11ee91a28f7d672097ee21e105fe" title=" " alt="" coords="564,71,696,98"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="788,97,1039,123"/>
@@ -445,8 +452,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2_icgraph" id="aclass_serial___l_s_s___control_ac7c0001d60d5fd298df171dc61b2acd2_icgraph">
-<area shape="rect" title=" " alt="" coords="247,13,445,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" title=" " alt="" coords="525,13,724,39"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
 </map>
 </div>
 
@@ -476,7 +484,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ad68cd7cff0b9eae1697c3ca7190334cc" title=" " alt="" coords="261,71,481,112"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a50aa4caf08290d9e8525c3bf7105dd2f" title=" " alt="" coords="544,129,775,171"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#af3919cbbd4601de15ee41737c29cf808" title=" " alt="" coords="245,194,496,221"/>
-<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="549,64,769,105"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a20a936ef73d4833ad1d53ff736901ec3" title=" " alt="" coords="549,64,769,105"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#aabeb4c1fc8156b39fca19a55703d33d7" title=" " alt="" coords="823,97,1043,139"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="1091,97,1285,139"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ac19ff1dd721d6e21cb5d8452a9a8c497" title=" " alt="" coords="549,195,769,236"/>
@@ -488,13 +496,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd_icgraph" id="aclass_serial___l_s_s___control_af0b762ab3e576fb1384915b5bad15fbd_icgraph">
-<area shape="rect" title=" " alt="" coords="688,39,880,80"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="468,39,640,80"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,5,420,47"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,71,420,112"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,13,198,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,70,199,97"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,121,185,147"/>
+<area shape="rect" title=" " alt="" coords="725,50,917,91"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#adfecae8a1bc47fb56b23fd06e1fab5bf" title=" " alt="" coords="505,50,677,91"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="284,7,457,49"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="284,82,457,123"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,5,217,32"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,56,217,83"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,107,204,133"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,158,236,199"/>
 </map>
 </div>
 
@@ -528,7 +537,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ad68cd7cff0b9eae1697c3ca7190334cc" title=" " alt="" coords="509,136,729,177"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a50aa4caf08290d9e8525c3bf7105dd2f" title=" " alt="" coords="792,195,1023,236"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#af3919cbbd4601de15ee41737c29cf808" title=" " alt="" coords="493,259,744,286"/>
-<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a1255ea8c1a24db3a6ce28133c3ad98b0" title=" " alt="" coords="797,129,1017,171"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a20a936ef73d4833ad1d53ff736901ec3" title=" " alt="" coords="797,129,1017,171"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#aabeb4c1fc8156b39fca19a55703d33d7" title=" " alt="" coords="1071,163,1291,204"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_channel_op.html#ab9c98a63c09da5934ecc5fc9836d2501" title=" " alt="" coords="1339,163,1533,204"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#ac19ff1dd721d6e21cb5d8452a9a8c497" title=" " alt="" coords="797,260,1017,301"/>
@@ -540,12 +549,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_adfecae8a1bc47fb56b23fd06e1fab5bf_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_adfecae8a1bc47fb56b23fd06e1fab5bf_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_adfecae8a1bc47fb56b23fd06e1fab5bf_icgraph" id="aclass_serial___l_s_s___control_adfecae8a1bc47fb56b23fd06e1fab5bf_icgraph">
-<area shape="rect" title=" " alt="" coords="468,39,640,80"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,5,420,47"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,71,420,112"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,13,198,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,70,199,97"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,121,185,147"/>
+<area shape="rect" title=" " alt="" coords="505,50,677,91"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="284,7,457,49"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="284,82,457,123"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,5,217,32"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,56,217,83"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,107,204,133"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,158,236,199"/>
 </map>
 </div>
 
@@ -579,12 +589,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_serial___l_s_s___control_ac0ee13ad01d6f5c360041a07360b4fdd_icgraph.png" border="0" usemap="#aclass_serial___l_s_s___control_ac0ee13ad01d6f5c360041a07360b4fdd_icgraph" alt=""/></div>
 <map name="aclass_serial___l_s_s___control_ac0ee13ad01d6f5c360041a07360b4fdd_icgraph" id="aclass_serial___l_s_s___control_ac0ee13ad01d6f5c360041a07360b4fdd_icgraph">
-<area shape="rect" title=" " alt="" coords="468,39,640,80"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="247,5,420,47"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="247,71,420,112"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="6,13,198,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="5,70,199,97"/>
-<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="19,121,185,147"/>
+<area shape="rect" title=" " alt="" coords="505,50,677,91"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ad8026b6dce6904daf8b5521bf2343cb5" title=" " alt="" coords="284,7,457,49"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a6faad9630736b3a3c0427d0fcf7e124a" title=" " alt="" coords="284,82,457,123"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a9b72ba87c64b6157bf4857005a28dfac" title=" " alt="" coords="25,5,217,32"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,56,217,83"/>
+<area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,107,204,133"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,158,236,199"/>
 </map>
 </div>
 
@@ -599,20 +610,6 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int Serial_LSS_Control.baudrateIndex = 4</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a31aba7e41844967c4ab33df2679ba314" name="a31aba7e41844967c4ab33df2679ba314"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31aba7e41844967c4ab33df2679ba314">&#9670;&nbsp;</a></span>detectedPortNames</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">string [] Serial_LSS_Control.detectedPortNames = SerialPort.GetPortNames()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -667,6 +664,28 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">string Serial_LSS_Control.COM_NAME</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31aba7e41844967c4ab33df2679ba314" name="a31aba7e41844967c4ab33df2679ba314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31aba7e41844967c4ab33df2679ba314">&#9670;&nbsp;</a></span>detectedPortNames</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string [] Serial_LSS_Control.detectedPortNames</td>
         </tr>
       </table>
   </td>

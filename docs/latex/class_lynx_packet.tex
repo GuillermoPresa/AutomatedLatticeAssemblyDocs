@@ -1,0 +1,271 @@
+\hypertarget{class_lynx_packet}{}\doxysection{Lynx\+Packet Class Reference}
+\label{class_lynx_packet}\index{LynxPacket@{LynxPacket}}
+
+
+{\ttfamily \#include $<$Lss\+Communication.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lynx_packet_ae5f3c18f1469cfcd40e12db9d34800f2}{Lynx\+Packet}} ()
+\item 
+\mbox{\hyperlink{class_lynx_packet_ab95872062da7e477a24ea5c1c5c1b571}{Lynx\+Packet}} (short \+\_\+id, \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} \+\_\+command)
+\item 
+\mbox{\hyperlink{class_lynx_packet_a5ba4c2a1d02a4802edc66dc11a1c5cca}{Lynx\+Packet}} (short \+\_\+id, \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} \+\_\+command, long \+\_\+value)
+\item 
+\mbox{\hyperlink{class_lynx_packet_a8ab0bc47fe1d12e30b4464067a03e816}{Lynx\+Packet}} (const char $\ast$pkt)
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a987a17bbda8bbc64343944efebf102e2}{operator==}} (const \mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}} \&rhs) const
+\item 
+void \mbox{\hyperlink{class_lynx_packet_adbe7623a71c543a12c6fb796566419ed}{set}} (long \+\_\+value)
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a4152efbf9ef0cb3b89ae946f3554ebfe}{parse}} (const char $\ast$pkt)
+\item 
+char $\ast$ \mbox{\hyperlink{class_lynx_packet_ae48cc3bc60f3339afc1d60cfcb05aa0c}{serialize}} (char $\ast$out) const
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_adfe9c716ad8c7611367b20dd7e1026f8}{matches}} (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} bits) const
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a45c2a2d5eafc45f84d106aae43130377}{between}} (long min, long max) const
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a1bdfe6198e22ada04e5b514c204bdd5f}{broadcast}} () const
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a0704fab798e3db1b6b89e6355a03ddfa}{query}} () const
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a5e9465c572d45d7f197b57e58f516803}{flash}} () const
+\item 
+String \mbox{\hyperlink{class_lynx_packet_a2c0754688cf606928fe29c1308a3667b}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} \mbox{\hyperlink{class_lynx_packet_a314bc4eacb8c286de10e13369d9fb1ac}{parse\+Command}} (const char $\ast$\&pkt)
+\item 
+static char $\ast$ \mbox{\hyperlink{class_lynx_packet_a5288c52d2faed0afc6386fbba0cc7ed0}{command\+Code}} (\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} cmd, char $\ast$out)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+short \mbox{\hyperlink{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}{id}}
+\item 
+\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} \mbox{\hyperlink{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}{command}}
+\item 
+bool \mbox{\hyperlink{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}{has\+Value}}
+\item 
+long \mbox{\hyperlink{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}{value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lynx_packet_ae5f3c18f1469cfcd40e12db9d34800f2}\label{class_lynx_packet_ae5f3c18f1469cfcd40e12db9d34800f2}} 
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{LynxPacket()}{LynxPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Lynx\+Packet\+::\+Lynx\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_lynx_packet_ab95872062da7e477a24ea5c1c5c1b571}\label{class_lynx_packet_ab95872062da7e477a24ea5c1c5c1b571}} 
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{LynxPacket()}{LynxPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Lynx\+Packet\+::\+Lynx\+Packet (\begin{DoxyParamCaption}\item[{short}]{\+\_\+id,  }\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{\+\_\+command }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_lynx_packet_a5ba4c2a1d02a4802edc66dc11a1c5cca}\label{class_lynx_packet_a5ba4c2a1d02a4802edc66dc11a1c5cca}} 
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{LynxPacket()}{LynxPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Lynx\+Packet\+::\+Lynx\+Packet (\begin{DoxyParamCaption}\item[{short}]{\+\_\+id,  }\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{\+\_\+command,  }\item[{long}]{\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_lynx_packet_a8ab0bc47fe1d12e30b4464067a03e816}\label{class_lynx_packet_a8ab0bc47fe1d12e30b4464067a03e816}} 
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\index{LynxPacket@{LynxPacket}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{LynxPacket()}{LynxPacket()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Lynx\+Packet\+::\+Lynx\+Packet (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_a8ab0bc47fe1d12e30b4464067a03e816_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lynx_packet_a45c2a2d5eafc45f84d106aae43130377}\label{class_lynx_packet_a45c2a2d5eafc45f84d106aae43130377}} 
+\index{LynxPacket@{LynxPacket}!between@{between}}
+\index{between@{between}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{between()}{between()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::between (\begin{DoxyParamCaption}\item[{long}]{min,  }\item[{long}]{max }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_packet_a1bdfe6198e22ada04e5b514c204bdd5f}\label{class_lynx_packet_a1bdfe6198e22ada04e5b514c204bdd5f}} 
+\index{LynxPacket@{LynxPacket}!broadcast@{broadcast}}
+\index{broadcast@{broadcast}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{broadcast()}{broadcast()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::broadcast (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_a1bdfe6198e22ada04e5b514c204bdd5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_packet_a5288c52d2faed0afc6386fbba0cc7ed0}\label{class_lynx_packet_a5288c52d2faed0afc6386fbba0cc7ed0}} 
+\index{LynxPacket@{LynxPacket}!commandCode@{commandCode}}
+\index{commandCode@{commandCode}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{commandCode()}{commandCode()}}
+{\footnotesize\ttfamily char $\ast$ Lynx\+Packet\+::command\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{cmd,  }\item[{char $\ast$}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_a5288c52d2faed0afc6386fbba0cc7ed0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_packet_a5e9465c572d45d7f197b57e58f516803}\label{class_lynx_packet_a5e9465c572d45d7f197b57e58f516803}} 
+\index{LynxPacket@{LynxPacket}!flash@{flash}}
+\index{flash@{flash}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{flash()}{flash()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::flash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_packet_adfe9c716ad8c7611367b20dd7e1026f8}\label{class_lynx_packet_adfe9c716ad8c7611367b20dd7e1026f8}} 
+\index{LynxPacket@{LynxPacket}!matches@{matches}}
+\index{matches@{matches}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::matches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}}}]{bits }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_packet_a987a17bbda8bbc64343944efebf102e2}\label{class_lynx_packet_a987a17bbda8bbc64343944efebf102e2}} 
+\index{LynxPacket@{LynxPacket}!operator==@{operator==}}
+\index{operator==@{operator==}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lynx_packet}{Lynx\+Packet}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_packet_a4152efbf9ef0cb3b89ae946f3554ebfe}\label{class_lynx_packet_a4152efbf9ef0cb3b89ae946f3554ebfe}} 
+\index{LynxPacket@{LynxPacket}!parse@{parse}}
+\index{parse@{parse}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::parse (\begin{DoxyParamCaption}\item[{const char $\ast$}]{pkt }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_a4152efbf9ef0cb3b89ae946f3554ebfe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_lynx_packet_a4152efbf9ef0cb3b89ae946f3554ebfe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_packet_a314bc4eacb8c286de10e13369d9fb1ac}\label{class_lynx_packet_a314bc4eacb8c286de10e13369d9fb1ac}} 
+\index{LynxPacket@{LynxPacket}!parseCommand@{parseCommand}}
+\index{parseCommand@{parseCommand}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{parseCommand()}{parseCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} Lynx\+Packet\+::parse\+Command (\begin{DoxyParamCaption}\item[{const char $\ast$\&}]{pkt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_a314bc4eacb8c286de10e13369d9fb1ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_packet_a0704fab798e3db1b6b89e6355a03ddfa}\label{class_lynx_packet_a0704fab798e3db1b6b89e6355a03ddfa}} 
+\index{LynxPacket@{LynxPacket}!query@{query}}
+\index{query@{query}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_lynx_packet_ae48cc3bc60f3339afc1d60cfcb05aa0c}\label{class_lynx_packet_ae48cc3bc60f3339afc1d60cfcb05aa0c}} 
+\index{LynxPacket@{LynxPacket}!serialize@{serialize}}
+\index{serialize@{serialize}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily char $\ast$ Lynx\+Packet\+::serialize (\begin{DoxyParamCaption}\item[{char $\ast$}]{out }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_ae48cc3bc60f3339afc1d60cfcb05aa0c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_ae48cc3bc60f3339afc1d60cfcb05aa0c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_packet_adbe7623a71c543a12c6fb796566419ed}\label{class_lynx_packet_adbe7623a71c543a12c6fb796566419ed}} 
+\index{LynxPacket@{LynxPacket}!set@{set}}
+\index{set@{set}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily void Lynx\+Packet\+::set (\begin{DoxyParamCaption}\item[{long}]{\+\_\+value }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_adbe7623a71c543a12c6fb796566419ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_lynx_packet_a2c0754688cf606928fe29c1308a3667b}\label{class_lynx_packet_a2c0754688cf606928fe29c1308a3667b}} 
+\index{LynxPacket@{LynxPacket}!toString@{toString}}
+\index{toString@{toString}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String Lynx\+Packet\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_lynx_packet_a2c0754688cf606928fe29c1308a3667b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}\label{class_lynx_packet_a87bbab49f4b52aa6ec6c48e7f3885de2}} 
+\index{LynxPacket@{LynxPacket}!command@{command}}
+\index{command@{command}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_lss_communication_8h_aca3a41f855f081418aebab290e251f73}{Lss\+Commands}} Lynx\+Packet\+::command}
+
+\mbox{\Hypertarget{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}\label{class_lynx_packet_a114fb40904ba5f1f574f6738fd6670ed}} 
+\index{LynxPacket@{LynxPacket}!hasValue@{hasValue}}
+\index{hasValue@{hasValue}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{hasValue}{hasValue}}
+{\footnotesize\ttfamily bool Lynx\+Packet\+::has\+Value}
+
+\mbox{\Hypertarget{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}\label{class_lynx_packet_a924beb5167e1b6f163b6de7792154861}} 
+\index{LynxPacket@{LynxPacket}!id@{id}}
+\index{id@{id}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily short Lynx\+Packet\+::id}
+
+\mbox{\Hypertarget{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}\label{class_lynx_packet_afb6ff771f7912f20f6e7f58569c0c429}} 
+\index{LynxPacket@{LynxPacket}!value@{value}}
+\index{value@{value}!LynxPacket@{LynxPacket}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily long Lynx\+Packet\+::value}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\mbox{\hyperlink{_lss_communication_8h}{Lss\+Communication.\+h}}\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\mbox{\hyperlink{_lss_communication_8cpp}{Lss\+Communication.\+cpp}}\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+LSS2\+MC\+\_\+arduino\+Code/libraries/\+Alternative\+LSS/src/\mbox{\hyperlink{_lynxmotion_l_s_s_8cpp}{Lynxmotion\+LSS.\+cpp}}\end{DoxyCompactItemize}
