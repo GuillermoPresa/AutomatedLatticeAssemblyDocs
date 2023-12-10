@@ -1,0 +1,4 @@
+<map id="WorkPackage.ExecuteTask" name="WorkPackage.ExecuteTask">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$class_abstract_task.html#a10525aeaf83f134ebe10c20c9f3d56b5" title="Called before the task is passed to the robot and split into actions." alt="" coords="237,5,463,32"/>
+</map>

@@ -13,8 +13,10 @@ var searchData=
   ['virtualservo_10',['VirtualServo',['../class_virtual_servo.html',1,'VirtualServo'],['../class_virtual_servo.html#a8fcda9d3fec4a3088ae0bd097f0b4535',1,'VirtualServo.VirtualServo()']]],
   ['virtualservo_2ecs_11',['VirtualServo.cs',['../_virtual_servo_8cs.html',1,'']]],
   ['visited_12',['visited',['../class_illa_graph_node.html#ace8039c347b503ff2f20f0f014f8db2d',1,'IllaGraphNode.visited()'],['../class_graph_node.html#a6669c521e51d47d2e2a39c4d84386e3f',1,'GraphNode.visited()']]],
-  ['visitednodes_13',['VisitedNodes',['../class_illa_controller_v3.html#ac3897366abc8ac8eb007307780df3ff8',1,'IllaControllerV3.VisitedNodes()'],['../class_inchworm_robot_controller.html#ab6622d1fba8f6a79ade4c11c13f4e277',1,'InchwormRobotController.VisitedNodes()'],['../class_robot_script.html#a20becf471b6850fa5bb43a859cb31510',1,'RobotScript.VisitedNodes()']]],
-  ['voltage_14',['Voltage',['../class_lynxmotion_1_1_robotics_1_1_lss_telemetry.html#ada5f65ac074eed5f612d4e81d55c5a72',1,'Lynxmotion::Robotics::LssTelemetry']]],
-  ['voltage_15',['voltage',['../class_sim_servo.html#acba856965e4069fd329bd07c49fe6e77',1,'SimServo::voltage()'],['../class_lynx_servo.html#a16c30199809a71543181f407179382d1',1,'LynxServo::voltage()'],['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad976ab26d74b9aa2f95fdec3f6517bf5',1,'Lynxmotion.Robotics.LssServo.voltage()'],['../class_i_l_l_a_servo.html#a8f6dda5928252f993556596ce2a7c918',1,'ILLAServo.voltage()']]],
-  ['vslidervalue_16',['vSliderValue',['../class_layer_slider.html#aa12d3224cb68cb7e6f9b1a643dbe874c',1,'LayerSlider']]]
+  ['visitedasneighbor_13',['visitedAsNeighbor',['../class_illa_graph_node.html#a8009024c927303b5bc38c90383007d3d',1,'IllaGraphNode']]],
+  ['visitednodes_14',['VisitedNodes',['../class_illa_controller_v3.html#ac3897366abc8ac8eb007307780df3ff8',1,'IllaControllerV3.VisitedNodes()'],['../class_inchworm_robot_controller.html#ab6622d1fba8f6a79ade4c11c13f4e277',1,'InchwormRobotController.VisitedNodes()'],['../class_robot_script.html#a20becf471b6850fa5bb43a859cb31510',1,'RobotScript.VisitedNodes()']]],
+  ['visualizations_15',['Visualizations',['../class_i_l_l_a_v3___u_ielements.html#a0025e9075f27a6451adc978a0e4d93f0',1,'ILLAV3_UIelements']]],
+  ['voltage_16',['Voltage',['../class_lynxmotion_1_1_robotics_1_1_lss_telemetry.html#ada5f65ac074eed5f612d4e81d55c5a72',1,'Lynxmotion::Robotics::LssTelemetry']]],
+  ['voltage_17',['voltage',['../class_sim_servo.html#acba856965e4069fd329bd07c49fe6e77',1,'SimServo::voltage()'],['../class_lynx_servo.html#a16c30199809a71543181f407179382d1',1,'LynxServo::voltage()'],['../class_i_l_l_a_servo.html#a8f6dda5928252f993556596ce2a7c918',1,'ILLAServo.voltage()']]],
+  ['vslidervalue_18',['vSliderValue',['../class_layer_slider.html#aa12d3224cb68cb7e6f9b1a643dbe874c',1,'LayerSlider']]]
 ];

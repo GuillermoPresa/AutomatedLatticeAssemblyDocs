@@ -5,5 +5,6 @@ var _i_l_l_a_configuration_8cs =
     [ "DifferentialJointConfiguration", "class_differential_joint_configuration.html", "class_differential_joint_configuration" ],
     [ "SingleJointConfiguration", "class_single_joint_configuration.html", "class_single_joint_configuration" ],
     [ "JointConfiguration", "class_joint_configuration.html", "class_joint_configuration" ],
-    [ "RotationLimit", "class_rotation_limit.html", "class_rotation_limit" ]
+    [ "RotationLimit", "class_rotation_limit.html", "class_rotation_limit" ],
+    [ "N20MotorConfig", "class_n20_motor_config.html", "class_n20_motor_config" ]
 ];

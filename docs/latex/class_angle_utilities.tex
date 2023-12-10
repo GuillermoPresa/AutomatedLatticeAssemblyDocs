@@ -8,10 +8,49 @@ static float \mbox{\hyperlink{class_angle_utilities_a3734e19dc96284837d15e31de8f
 static float \mbox{\hyperlink{class_angle_utilities_abecfb99bebfa6cca32536020cf8c02b1}{Clamp\+P360}} (float angle)
 \item 
 static float \mbox{\hyperlink{class_angle_utilities_a6d0cb1ecba4db0c1f185330c87692db8}{Clamp\+Pa\+Pb}} (float angle, float min\+Angle, float max\+Angle)
+\item 
+static float \mbox{\hyperlink{class_angle_utilities_a1118ece40c127e3ef51a269716c90076}{Clamp\+Pa\+Pb}} (float angle, float min\+Angle, float max\+Angle, out bool is\+In\+Range)
+\item 
+static float \mbox{\hyperlink{class_angle_utilities_a86590d2f2a099f38a66906d7a6c43859}{Clamp\+Closest\+Pa\+Pb}} (float angle, float current\+Angle, float min\+Angle, float max\+Angle)
+\item 
+static float \mbox{\hyperlink{class_angle_utilities_aef7a51fa8c9562f04286fab523b6d8a0}{Clamp\+Closest\+Pa\+Pb}} (float angle, float current\+Angle, float min\+Angle, float max\+Angle, out bool is\+In\+Range)
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_angle_utilities_a86590d2f2a099f38a66906d7a6c43859}\label{class_angle_utilities_a86590d2f2a099f38a66906d7a6c43859}} 
+\index{AngleUtilities@{AngleUtilities}!ClampClosestPaPb@{ClampClosestPaPb}}
+\index{ClampClosestPaPb@{ClampClosestPaPb}!AngleUtilities@{AngleUtilities}}
+\doxysubsubsection{\texorpdfstring{ClampClosestPaPb()}{ClampClosestPaPb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float Angle\+Utilities.\+Clamp\+Closest\+Pa\+Pb (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{current\+Angle,  }\item[{float}]{min\+Angle,  }\item[{float}]{max\+Angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_angle_utilities_a86590d2f2a099f38a66906d7a6c43859_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_angle_utilities_a86590d2f2a099f38a66906d7a6c43859_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_angle_utilities_aef7a51fa8c9562f04286fab523b6d8a0}\label{class_angle_utilities_aef7a51fa8c9562f04286fab523b6d8a0}} 
+\index{AngleUtilities@{AngleUtilities}!ClampClosestPaPb@{ClampClosestPaPb}}
+\index{ClampClosestPaPb@{ClampClosestPaPb}!AngleUtilities@{AngleUtilities}}
+\doxysubsubsection{\texorpdfstring{ClampClosestPaPb()}{ClampClosestPaPb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Angle\+Utilities.\+Clamp\+Closest\+Pa\+Pb (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{current\+Angle,  }\item[{float}]{min\+Angle,  }\item[{float}]{max\+Angle,  }\item[{out bool}]{is\+In\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_angle_utilities_aef7a51fa8c9562f04286fab523b6d8a0_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_angle_utilities_abecfb99bebfa6cca32536020cf8c02b1}\label{class_angle_utilities_abecfb99bebfa6cca32536020cf8c02b1}} 
 \index{AngleUtilities@{AngleUtilities}!ClampP360@{ClampP360}}
 \index{ClampP360@{ClampP360}!AngleUtilities@{AngleUtilities}}
@@ -22,23 +61,35 @@ Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=335pt]{class_angle_utilities_abecfb99bebfa6cca32536020cf8c02b1_icgraph}
+\includegraphics[width=350pt]{class_angle_utilities_abecfb99bebfa6cca32536020cf8c02b1_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_angle_utilities_a6d0cb1ecba4db0c1f185330c87692db8}\label{class_angle_utilities_a6d0cb1ecba4db0c1f185330c87692db8}} 
 \index{AngleUtilities@{AngleUtilities}!ClampPaPb@{ClampPaPb}}
 \index{ClampPaPb@{ClampPaPb}!AngleUtilities@{AngleUtilities}}
-\doxysubsubsection{\texorpdfstring{ClampPaPb()}{ClampPaPb()}}
+\doxysubsubsection{\texorpdfstring{ClampPaPb()}{ClampPaPb()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily static float Angle\+Utilities.\+Clamp\+Pa\+Pb (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{min\+Angle,  }\item[{float}]{max\+Angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_angle_utilities_a6d0cb1ecba4db0c1f185330c87692db8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_angle_utilities_a6d0cb1ecba4db0c1f185330c87692db8_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_angle_utilities_a1118ece40c127e3ef51a269716c90076}\label{class_angle_utilities_a1118ece40c127e3ef51a269716c90076}} 
+\index{AngleUtilities@{AngleUtilities}!ClampPaPb@{ClampPaPb}}
+\index{ClampPaPb@{ClampPaPb}!AngleUtilities@{AngleUtilities}}
+\doxysubsubsection{\texorpdfstring{ClampPaPb()}{ClampPaPb()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Angle\+Utilities.\+Clamp\+Pa\+Pb (\begin{DoxyParamCaption}\item[{float}]{angle,  }\item[{float}]{min\+Angle,  }\item[{float}]{max\+Angle,  }\item[{out bool}]{is\+In\+Range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{class_angle_utilities_a3734e19dc96284837d15e31de8fa9520}\label{class_angle_utilities_a3734e19dc96284837d15e31de8fa9520}} 
 \index{AngleUtilities@{AngleUtilities}!ClampPM180@{ClampPM180}}
 \index{ClampPM180@{ClampPM180}!AngleUtilities@{AngleUtilities}}

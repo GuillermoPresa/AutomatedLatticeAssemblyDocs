@@ -11,8 +11,7 @@ Inheritance diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Jo
 \end{figure}
 
 
-Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint\+:
-\nopagebreak
+Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,10 +21,18 @@ Collaboration diagram for Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a16c66a47b944bdb7814689e62b6c1af0}{Differential\+Joint}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Illa\+Robot\+Controller\+Reference\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in)
+\mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a3ec7d449904748dc967182676fde83b1}{Differential\+Joint}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} Illa\+Robot\+Controller\+Reference\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in, \mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}} Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in, Game\+Object \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ab6b4ae2b482246ed341c73932db97fb0}{storage\+Point\+\_\+\+Non\+Inv}}, Game\+Object \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7b05b1ea5a5b3c175eeb3bdb38622a9e}{storage\+Point\+\_\+\+Inv}})
 \item 
+void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a17e4f07b7ccaedf520de4ce42730e85f}{actuate\+N20\+Motor}} (int direction=1, float actuation\+Duration\+\_\+sec=-\/1)
+\begin{DoxyCompactList}\small\item\em Actuates the N20 motor within the differential joint. A positive direction permorms an insertion (screw-\/in) and a negative direction performs a screw-\/out. The actuation directions the the screwing duration in millisecconds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a5f1b6b95a564497155bc4d7753407e7c}{Toggle\+Screwing}} (int direction=1)
+\item 
+void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1ca663a65c669e7499608efacba3d594}{Update\+Screwed\+In\+Lattice\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Updates the position of the lattice that is screwed on the N20 of the differential joint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a64c38e52e429e8d9c84c52769804250d}{Update\+Stored\+Lattice\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Updates the position of the lattice that is stored on the magnetic storage point of the lattice. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94}{update\+Servo\+Goal\+Angle\+From\+Target\+Angle}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the position of the lattice that is stored in the storage point of the differential joint. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77}{update\+Joint\+Angle\+From\+Servo\+Current\+Angle}} ()
 \item 
 float float clamped\+\_\+differential\+Mode\+\_\+\+Joint\+Angle \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed}{Clamp\+Joint\+Angles}} (float unclamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle, float unclamped\+\_\+differentialmode\+\_\+\+Joint\+Angle)
@@ -41,32 +48,79 @@ int \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_d
 \item 
 \mbox{\hyperlink{class_differential_joint_configuration}{Differential\+Joint\+Configuration}} \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae75de8b685adaf09aa1adb6b1838f5df}{differential\+Joint\+Config}}
 \item 
+Game\+Object \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ab6b4ae2b482246ed341c73932db97fb0}{storage\+Point\+\_\+\+Non\+Inv}}
+\item 
+Game\+Object \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7b05b1ea5a5b3c175eeb3bdb38622a9e}{storage\+Point\+\_\+\+Inv}}
+\item 
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ad4cc49018a8491cfc94993fefa989d0c}{time\+Start\+Screwing\+\_\+sec}}
+\item 
+float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7810cfd562cf91e7b65c285ecb676b3c}{screw\+In\+Duration\+\_\+sec}}
+\item 
 float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a2ac92da17d709d01ab1d14551be94bf2}{clamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle}}
 \item 
 float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa441a29bdceac5e93f8cbf77206c9b8f}{M1\+Angle}}
 \item 
 float \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7eef0673fc3e5b0ee297e5adde92243b}{common\+\_\+\+Joint\+Angle}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_af9ca7605fb07e55dff7aad510c6f2092}{node\+Sensor\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+ref Game\+Object \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aee34451c8e955f832e6b89f0f5bbd1d7}{storage\+Point}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae04f663695bf7b9908d8d43c331417fa}{is\+N20\+Screwing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a16c66a47b944bdb7814689e62b6c1af0}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a16c66a47b944bdb7814689e62b6c1af0}} 
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a3ec7d449904748dc967182676fde83b1}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a3ec7d449904748dc967182676fde83b1}} 
 \index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!DifferentialJoint@{DifferentialJoint}}
 \index{DifferentialJoint@{DifferentialJoint}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{DifferentialJoint()}{DifferentialJoint()}}
-{\footnotesize\ttfamily Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Differential\+Joint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{Illa\+Robot\+Controller\+Reference\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Differential\+Joint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{Illa\+Robot\+Controller\+Reference\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{joint\+Axis1\+\_\+\+Common\+Mode\+\_\+in,  }\item[{\mbox{\hyperlink{class_i_l_l_a_joint_class_v3}{ILLAJoint\+Class\+V3}}}]{Joint\+Axis2\+\_\+\+Differential\+Mode\+\_\+in,  }\item[{Game\+Object}]{storage\+Point\+\_\+\+Non\+Inv,  }\item[{Game\+Object}]{storage\+Point\+\_\+\+Inv }\end{DoxyParamCaption})}
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a17e4f07b7ccaedf520de4ce42730e85f}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a17e4f07b7ccaedf520de4ce42730e85f}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!actuateN20Motor@{actuateN20Motor}}
+\index{actuateN20Motor@{actuateN20Motor}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{actuateN20Motor()}{actuateN20Motor()}}
+{\footnotesize\ttfamily void Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+actuate\+N20\+Motor (\begin{DoxyParamCaption}\item[{int}]{direction = {\ttfamily 1},  }\item[{float}]{actuation\+Duration\+\_\+sec = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Actuates the N20 motor within the differential joint. A positive direction permorms an insertion (screw-\/in) and a negative direction performs a screw-\/out. The actuation directions the the screwing duration in millisecconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+{\em actuation\+Duration\+\_\+sec} & \\
+\hline
+\end{DoxyParams}
+For an indefenate movement use -\/1 Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a17e4f07b7ccaedf520de4ce42730e85f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a17e4f07b7ccaedf520de4ce42730e85f_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aa1afe8a3b0776e47f670e08b4727b8ed}} 
 \index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!ClampJointAngles@{ClampJointAngles}}
 \index{ClampJointAngles@{ClampJointAngles}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{ClampJointAngles()}{ClampJointAngles()}}
 {\footnotesize\ttfamily float float clamped\+\_\+differential\+Mode\+\_\+\+Joint\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Clamp\+Joint\+Angles (\begin{DoxyParamCaption}\item[{float}]{unclamped\+\_\+common\+Mode\+\_\+\+Joint\+Angle,  }\item[{float}]{unclamped\+\_\+differentialmode\+\_\+\+Joint\+Angle }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -79,8 +133,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{JointAnglesFromMotorAngles()}{JointAnglesFromMotorAngles()}}
 {\footnotesize\ttfamily float float differential\+\_\+\+Joint\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Joint\+Angles\+From\+Motor\+Angles (\begin{DoxyParamCaption}\item[{double}]{M1\+Angle,  }\item[{double}]{M2\+Angle }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -93,12 +146,24 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{MotorAnglesFromJointAngles()}{MotorAnglesFromJointAngles()}}
 {\footnotesize\ttfamily float float M2\+Angle Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Motor\+Angles\+From\+Joint\+Angles (\begin{DoxyParamCaption}\item[{float}]{common\+\_\+\+Joint\+Angle,  }\item[{float}]{differential\+\_\+\+Joint\+Angle }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1e7f51d0a9a3732a742980a008d82513_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a5f1b6b95a564497155bc4d7753407e7c}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a5f1b6b95a564497155bc4d7753407e7c}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!ToggleScrewing@{ToggleScrewing}}
+\index{ToggleScrewing@{ToggleScrewing}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{ToggleScrewing()}{ToggleScrewing()}}
+{\footnotesize\ttfamily void Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Toggle\+Screwing (\begin{DoxyParamCaption}\item[{int}]{direction = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a5f1b6b95a564497155bc4d7753407e7c_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77}} 
@@ -118,12 +183,21 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1ca663a65c669e7499608efacba3d594}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1ca663a65c669e7499608efacba3d594}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!UpdateScrewedInLatticePosition@{UpdateScrewedInLatticePosition}}
+\index{UpdateScrewedInLatticePosition@{UpdateScrewedInLatticePosition}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{UpdateScrewedInLatticePosition()}{UpdateScrewedInLatticePosition()}}
+{\footnotesize\ttfamily void Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Update\+Screwed\+In\+Lattice\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the position of the lattice that is screwed on the N20 of the differential joint. 
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a22d7ab33288a58072bacb12933a7ca77_icgraph}
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a1ca663a65c669e7499608efacba3d594_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94}} 
@@ -131,6 +205,10 @@ Here is the caller graph for this function\+:
 \index{updateServoGoalAngleFromTargetAngle@{updateServoGoalAngleFromTargetAngle}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{updateServoGoalAngleFromTargetAngle()}{updateServoGoalAngleFromTargetAngle()}}
 {\footnotesize\ttfamily void Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+update\+Servo\+Goal\+Angle\+From\+Target\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the position of the lattice that is stored in the storage point of the differential joint. 
 
 
 
@@ -143,12 +221,21 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a64c38e52e429e8d9c84c52769804250d}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a64c38e52e429e8d9c84c52769804250d}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!UpdateStoredLatticePosition@{UpdateStoredLatticePosition}}
+\index{UpdateStoredLatticePosition@{UpdateStoredLatticePosition}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{UpdateStoredLatticePosition()}{UpdateStoredLatticePosition()}}
+{\footnotesize\ttfamily void Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+Update\+Stored\+Lattice\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the position of the lattice that is stored on the magnetic storage point of the lattice. 
+
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_abc3cdc4dee3d6bc3ebe6397fcb047c94_icgraph}
+\includegraphics[width=350pt]{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a64c38e52e429e8d9c84c52769804250d_icgraph}
 \end{center}
 \end{figure}
 
@@ -183,6 +270,51 @@ Here is the caller graph for this function\+:
 \index{M1Angle@{M1Angle}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
 \doxysubsubsection{\texorpdfstring{M1Angle}{M1Angle}}
 {\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+M1\+Angle}
+
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7810cfd562cf91e7b65c285ecb676b3c}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7810cfd562cf91e7b65c285ecb676b3c}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!screwInDuration\_sec@{screwInDuration\_sec}}
+\index{screwInDuration\_sec@{screwInDuration\_sec}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{screwInDuration\_sec}{screwInDuration\_sec}}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+screw\+In\+Duration\+\_\+sec}
+
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7b05b1ea5a5b3c175eeb3bdb38622a9e}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_a7b05b1ea5a5b3c175eeb3bdb38622a9e}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!storagePoint\_Inv@{storagePoint\_Inv}}
+\index{storagePoint\_Inv@{storagePoint\_Inv}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{storagePoint\_Inv}{storagePoint\_Inv}}
+{\footnotesize\ttfamily Game\+Object Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+storage\+Point\+\_\+\+Inv}
+
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ab6b4ae2b482246ed341c73932db97fb0}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ab6b4ae2b482246ed341c73932db97fb0}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!storagePoint\_NonInv@{storagePoint\_NonInv}}
+\index{storagePoint\_NonInv@{storagePoint\_NonInv}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{storagePoint\_NonInv}{storagePoint\_NonInv}}
+{\footnotesize\ttfamily Game\+Object Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+storage\+Point\+\_\+\+Non\+Inv}
+
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ad4cc49018a8491cfc94993fefa989d0c}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ad4cc49018a8491cfc94993fefa989d0c}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!timeStartScrewing\_sec@{timeStartScrewing\_sec}}
+\index{timeStartScrewing\_sec@{timeStartScrewing\_sec}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{timeStartScrewing\_sec}{timeStartScrewing\_sec}}
+{\footnotesize\ttfamily float Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+time\+Start\+Screwing\+\_\+sec}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae04f663695bf7b9908d8d43c331417fa}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_ae04f663695bf7b9908d8d43c331417fa}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!isN20Screwing@{isN20Screwing}}
+\index{isN20Screwing@{isN20Screwing}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{isN20Screwing}{isN20Screwing}}
+{\footnotesize\ttfamily bool Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+is\+N20\+Screwing\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_af9ca7605fb07e55dff7aad510c6f2092}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_af9ca7605fb07e55dff7aad510c6f2092}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!nodeSensorScript@{nodeSensorScript}}
+\index{nodeSensorScript@{nodeSensorScript}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{nodeSensorScript}{nodeSensorScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_node_sensor_script}{Illa\+Node\+Sensor\+Script}} Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+node\+Sensor\+Script\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aee34451c8e955f832e6b89f0f5bbd1d7}\label{class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint_aee34451c8e955f832e6b89f0f5bbd1d7}} 
+\index{Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}!storagePoint@{storagePoint}}
+\index{storagePoint@{storagePoint}!Assets.Resources.Objects.ILLAV3.DifferentialJoint@{Assets.Resources.Objects.ILLAV3.DifferentialJoint}}
+\doxysubsubsection{\texorpdfstring{storagePoint}{storagePoint}}
+{\footnotesize\ttfamily ref Game\+Object Assets.\+Resources.\+Objects.\+ILLAV3.\+Differential\+Joint.\+storage\+Point\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

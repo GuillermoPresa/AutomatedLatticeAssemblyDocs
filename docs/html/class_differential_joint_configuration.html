@@ -94,17 +94,18 @@ Collaboration diagram for DifferentialJointConfiguration:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_differential_joint_configuration__coll__graph.png" border="0" usemap="#a_differential_joint_configuration_coll__map" alt="Collaboration graph"/></div>
 <map name="a_differential_joint_configuration_coll__map" id="a_differential_joint_configuration_coll__map">
-<area shape="rect" title=" " alt="" coords="51,199,235,225"/>
-<area shape="rect" href="class_joint_configuration.html" title=" " alt="" coords="5,95,129,121"/>
-<area shape="rect" href="class_rotation_limit.html" title=" " alt="" coords="93,5,191,32"/>
-<area shape="rect" href="class_servo_configuration.html" title=" " alt="" coords="161,95,291,121"/>
+<area shape="rect" title=" " alt="" coords="159,199,343,225"/>
+<area shape="rect" href="class_joint_configuration.html" title="Represents the configuration of a joint&#39;s rotation limit." alt="" coords="5,95,129,121"/>
+<area shape="rect" href="class_rotation_limit.html" title="Represents the rotation limits for joints and servos. Consist of a lower limit and an upper limit...." alt="" coords="93,5,191,32"/>
+<area shape="rect" href="class_servo_configuration.html" title=" " alt="" coords="153,95,283,121"/>
+<area shape="rect" href="class_n20_motor_config.html" title="Represents the configuration of the N20 motors inside the differential joints used for screwing in an..." alt="" coords="307,95,422,121"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada884924708e609875dad7e71d9b2463"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_differential_joint_configuration.html#ada884924708e609875dad7e71d9b2463">DifferentialJointConfiguration</a> (<a class="el" href="class_joint_configuration.html">JointConfiguration</a> commonModeJoint_in, <a class="el" href="class_joint_configuration.html">JointConfiguration</a> differentialModeJoint_in, <a class="el" href="class_servo_configuration.html">ServoConfiguration</a> motor1_in, <a class="el" href="class_servo_configuration.html">ServoConfiguration</a> motor2_in, float gearingRatio_Motor1_CommonMode_in, float gearingRatio_Motor2_CommonMode_in, float gearingRatio_Motor1_DifferentialMode_in, float gearingRatio_Motor2_DifferentialMode_in, int N20DriverID_in, int N20ScrewInDirection_in)</td></tr>
-<tr class="separator:ada884924708e609875dad7e71d9b2463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb762d273ece35debd2e577e1c927b88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_differential_joint_configuration.html#adb762d273ece35debd2e577e1c927b88">DifferentialJointConfiguration</a> (<a class="el" href="class_joint_configuration.html">JointConfiguration</a> commonModeJoint_in, <a class="el" href="class_joint_configuration.html">JointConfiguration</a> differentialModeJoint_in, <a class="el" href="class_servo_configuration.html">ServoConfiguration</a> motor1_in, <a class="el" href="class_servo_configuration.html">ServoConfiguration</a> motor2_in, float gearingRatio_Motor1_CommonMode_in, float gearingRatio_Motor2_CommonMode_in, float gearingRatio_Motor1_DifferentialMode_in, float gearingRatio_Motor2_DifferentialMode_in, <a class="el" href="class_n20_motor_config.html">N20MotorConfig</a> N20MotorConfig_in)</td></tr>
+<tr class="separator:adb762d273ece35debd2e577e1c927b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -124,14 +125,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:affda619ac9232de828af0318f908e8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f4801050b9347145258ccb9f154df2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_differential_joint_configuration.html#a62f4801050b9347145258ccb9f154df2">gearingRatio_Motor2_DifferentialMode</a></td></tr>
 <tr class="separator:a62f4801050b9347145258ccb9f154df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a17ba979119d283aab7028c20e87eb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_differential_joint_configuration.html#a1a17ba979119d283aab7028c20e87eb0">N20DriverID</a></td></tr>
-<tr class="separator:a1a17ba979119d283aab7028c20e87eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0110514edc8189312b413e8e1eccec95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_differential_joint_configuration.html#a0110514edc8189312b413e8e1eccec95">N20ScrewInDirection</a></td></tr>
-<tr class="separator:a0110514edc8189312b413e8e1eccec95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abda55558421dbc400e0a5fa22c150234"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n20_motor_config.html">N20MotorConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_differential_joint_configuration.html#abda55558421dbc400e0a5fa22c150234">n20MotorConfig</a></td></tr>
+<tr class="separator:abda55558421dbc400e0a5fa22c150234"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ada884924708e609875dad7e71d9b2463" name="ada884924708e609875dad7e71d9b2463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada884924708e609875dad7e71d9b2463">&#9670;&nbsp;</a></span>DifferentialJointConfiguration()</h2>
+<a id="adb762d273ece35debd2e577e1c927b88" name="adb762d273ece35debd2e577e1c927b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb762d273ece35debd2e577e1c927b88">&#9670;&nbsp;</a></span>DifferentialJointConfiguration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,14 +186,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>N20DriverID_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>N20ScrewInDirection_in</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_n20_motor_config.html">N20MotorConfig</a>&#160;</td>
+          <td class="paramname"><em>N20MotorConfig_in</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -319,28 +312,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1a17ba979119d283aab7028c20e87eb0" name="a1a17ba979119d283aab7028c20e87eb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a17ba979119d283aab7028c20e87eb0">&#9670;&nbsp;</a></span>N20DriverID</h2>
+<a id="abda55558421dbc400e0a5fa22c150234" name="abda55558421dbc400e0a5fa22c150234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abda55558421dbc400e0a5fa22c150234">&#9670;&nbsp;</a></span>n20MotorConfig</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int DifferentialJointConfiguration.N20DriverID</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0110514edc8189312b413e8e1eccec95" name="a0110514edc8189312b413e8e1eccec95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0110514edc8189312b413e8e1eccec95">&#9670;&nbsp;</a></span>N20ScrewInDirection</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int DifferentialJointConfiguration.N20ScrewInDirection</td>
+          <td class="memname"><a class="el" href="class_n20_motor_config.html">N20MotorConfig</a> DifferentialJointConfiguration.n20MotorConfig</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -1,0 +1,4 @@
+<map id="Assets.Resources.Objects.ILLAV3.DifferentialJoint.actuateN20Motor" name="Assets.Resources.Objects.ILLAV3.DifferentialJoint.actuateN20Motor">
+<area shape="rect" id="node1" title="Actuates the N20 motor within the differential joint. A positive direction permorms an insertion (scr..." alt="" coords="5,5,208,61"/>
+<area shape="rect" id="node2" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="256,20,507,47"/>
+</map>

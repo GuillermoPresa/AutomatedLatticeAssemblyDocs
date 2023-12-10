@@ -1,8 +1,9 @@
 <map id="Lynxmotion.Robotics.LssServo.Query" name="Lynxmotion.Robotics.LssServo.Query">
-<area shape="rect" id="node1" title=" " alt="" coords="991,23,1196,65"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8" title=" " alt="" coords="772,5,943,32"/>
-<area shape="rect" id="node6" href="$class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4" title=" " alt="" coords="774,56,941,83"/>
-<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,31,724,57"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,23,477,65"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,23,236,65"/>
+<area shape="rect" id="node1" title=" " alt="" coords="991,56,1196,97"/>
+<area shape="rect" id="node2" href="$class_i_l_l_a_servo.html#af137e33807657c09cc8e148b09d269ff" title=" " alt="" coords="796,13,919,39"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8" title=" " alt="" coords="772,63,943,90"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4" title=" " alt="" coords="774,114,941,141"/>
+<area shape="rect" id="node3" href="$class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
 </map>

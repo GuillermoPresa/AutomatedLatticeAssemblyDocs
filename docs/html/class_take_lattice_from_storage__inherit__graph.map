@@ -1,0 +1,4 @@
+<map id="TakeLatticeFromStorage" name="TakeLatticeFromStorage">
+<area shape="rect" id="node1" title="Puts the currently stored lattice into the screwdriver of the opposite differential joint." alt="" coords="5,80,169,107"/>
+<area shape="rect" id="node2" href="$class_abstract_action.html" title=" " alt="" coords="33,5,141,32"/>
+</map>

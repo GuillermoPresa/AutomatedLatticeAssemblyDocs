@@ -1,6 +1,19 @@
 var hierarchy =
 [
     [ "_LssServoConfig", "struct___lss_servo_config.html", null ],
+    [ "AbstractAction", "class_abstract_action.html", [
+      [ "ActuateScrewDriverAction", "class_actuate_screw_driver_action.html", null ],
+      [ "AttatchInStoragePoint", "class_attatch_in_storage_point.html", null ],
+      [ "GrabNeighborNode_Action", "class_grab_neighbor_node___action.html", null ],
+      [ "MapNavSpaceAction", "class_map_nav_space_action.html", null ],
+      [ "MoveToNode", "class_move_to_node.html", null ],
+      [ "MovementAction", "class_movement_action.html", null ],
+      [ "PlaceLattice", "class_place_lattice.html", null ],
+      [ "StoreLattice", "class_store_lattice.html", null ],
+      [ "SwapBaseAction", "class_swap_base_action.html", null ],
+      [ "TakeLatticeFromStorage", "class_take_lattice_from_storage.html", null ],
+      [ "WaitAction", "class_wait_action.html", null ]
+    ] ],
     [ "AbstractSerialThread", "class_abstract_serial_thread.html", [
       [ "SerialThreadBinaryDelimited", "class_serial_thread_binary_delimited.html", null ],
       [ "SerialThreadLines", "class_serial_thread_lines.html", [
@@ -9,7 +22,10 @@ var hierarchy =
     ] ],
     [ "AbstractTask", "class_abstract_task.html", [
       [ "InsertTask", "class_insert_task.html", null ],
-      [ "MoveToNodeTask", "class_move_to_node_task.html", null ]
+      [ "MoveToNodeTask", "class_move_to_node_task.html", null ],
+      [ "PickLatticeAndInsertInLocation", "class_pick_lattice_and_insert_in_location.html", null ],
+      [ "PickTask", "class_pick_task.html", null ],
+      [ "PlaceTask", "class_place_task.html", null ]
     ] ],
     [ "AccelStepper", "class_accel_stepper.html", null ],
     [ "Aggregate< T, TA >", "class_aggregate.html", null ],
@@ -28,6 +44,7 @@ var hierarchy =
     [ "CollisionDetectionScene", "class_collision_detection_scene.html", null ],
     [ "CollisionTestResult", "class_collision_test_result.html", null ],
     [ "MStudio.ColorDesign", "class_m_studio_1_1_color_design.html", null ],
+    [ "DenavitHartenbergIlla3", "class_denavit_hartenberg_illa3.html", null ],
     [ "Assets.Robot.Dynamixel_control.DifferentialJointAngleWrapper", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_differential_joint_angle_wrapper.html", null ],
     [ "DifferentialJointConfiguration", "class_differential_joint_configuration.html", null ],
     [ "Assets.Robot.Dynamixel_control.DynamixelCom", "class_assets_1_1_robot_1_1_dynamixel__control_1_1_dynamixel_com.html", null ],
@@ -81,14 +98,6 @@ var hierarchy =
       [ "ILLAState_Spawned", "class_i_l_l_a_state___spawned.html", null ]
     ] ],
     [ "ILLAV3_UIelements", "class_i_l_l_a_v3___u_ielements.html", null ],
-    [ "ILLAV3AbstractAction", "class_i_l_l_a_v3_abstract_action.html", [
-      [ "ActuateScrewDriver", "class_actuate_screw_driver.html", null ],
-      [ "InsertInNode", "class_insert_in_node.html", null ],
-      [ "MoveAndInsertInNode", "class_move_and_insert_in_node.html", null ],
-      [ "MovementAction", "class_movement_action.html", null ],
-      [ "SwapBaseAction", "class_swap_base_action.html", null ],
-      [ "WaitAction", "class_wait_action.html", null ]
-    ] ],
     [ "IPrototype< T >", "interface_i_prototype.html", null ],
     [ "IPrototype< Movement >", "interface_i_prototype.html", [
       [ "Movement", "class_movement.html", null ]
@@ -109,7 +118,6 @@ var hierarchy =
     [ "UDictionaryTest.Key", "class_u_dictionary_test_1_1_key.html", null ],
     [ "TextGizmos.LabelStruct", "struct_text_gizmos_1_1_label_struct.html", null ],
     [ "SerializationElements.Lattice", "class_serialization_elements_1_1_lattice.html", null ],
-    [ "LatticeCollection", "class_lattice_collection.html", null ],
     [ "SpaceNavigatorDriver.Locks", "class_space_navigator_driver_1_1_locks.html", null ],
     [ "Lynxmotion.Robotics.LssChannel", "class_lynxmotion_1_1_robotics_1_1_lss_channel.html", null ],
     [ "Lynxmotion.Robotics.LssCommand", "class_lynxmotion_1_1_robotics_1_1_lss_command.html", null ],
@@ -135,14 +143,16 @@ var hierarchy =
       [ "CollisionSensor", "class_collision_sensor.html", null ],
       [ "ComputePenetrationCostTest", "class_compute_penetration_cost_test.html", null ],
       [ "DenavitHartenberg", "class_denavit_hartenberg.html", null ],
-      [ "DenavitHartenbergIlla3", "class_denavit_hartenberg_illa3.html", null ],
       [ "DynamicDebugText", "class_dynamic_debug_text.html", null ],
       [ "EdgeDrawingScript", "class_edge_drawing_script.html", null ],
       [ "EnvironmentManager", "class_environment_manager.html", null ],
       [ "Example.ExampleBehaviour", "class_example_1_1_example_behaviour.html", null ],
       [ "ExtensionTest", "class_extension_test.html", null ],
+      [ "FlyAround", "class_fly_around.html", null ],
+      [ "GarbageCollectionForce", "class_garbage_collection_force.html", null ],
       [ "GraphNode", "class_graph_node.html", null ],
       [ "ILLAJointClassV3", "class_i_l_l_a_joint_class_v3.html", null ],
+      [ "ILLAlogger", "class_i_l_l_alogger.html", null ],
       [ "IllaGraphNode", "class_illa_graph_node.html", null ],
       [ "IllaNodeSensorScript", "class_illa_node_sensor_script.html", null ],
       [ "InchwormRobotController", "class_inchworm_robot_controller.html", null ],
@@ -152,6 +162,7 @@ var hierarchy =
       [ "LSS_MotorController", "class_l_s_s___motor_controller.html", null ],
       [ "LSS_library_controller", "class_l_s_s__library__controller.html", null ],
       [ "LatticeClass", "class_lattice_class.html", null ],
+      [ "LatticeSpawner", "class_lattice_spawner.html", null ],
       [ "MaterialCollectionEnvironment", "class_material_collection_environment.html", null ],
       [ "MeshCombiner", "class_mesh_combiner.html", null ],
       [ "Modifications", "class_modifications.html", null ],
@@ -177,19 +188,25 @@ var hierarchy =
       [ "SerialControllerCustomDelimiter", "class_serial_controller_custom_delimiter.html", null ],
       [ "Serial_LSS_Control", "class_serial___l_s_s___control.html", null ],
       [ "SimplerCameraController", "class_simpler_camera_controller.html", null ],
+      [ "SmoothFollow2", "class_smooth_follow2.html", null ],
       [ "Spawner", "class_spawner.html", null ],
       [ "SpawnerOverlay", "class_spawner_overlay.html", null ],
       [ "Spawning", "class_spawning.html", null ],
       [ "SphericalNodeSensor", "class_spherical_node_sensor.html", null ],
+      [ "Test", "class_test.html", null ],
       [ "TestRotationMatrices", "class_test_rotation_matrices.html", null ],
       [ "TestScript", "class_test_script.html", null ],
       [ "TextGizmos", "class_text_gizmos.html", null ],
       [ "TimeManager", "class_time_manager.html", null ],
+      [ "Torus", "class_torus.html", null ],
+      [ "TorusController", "class_torus_controller.html", null ],
       [ "UDictionaryTest", "class_u_dictionary_test.html", null ]
     ] ],
     [ "MultiStepper", "class_multi_stepper.html", null ],
+    [ "N20MotorConfig", "class_n20_motor_config.html", null ],
     [ "NavigationPath", "class_navigation_path.html", null ],
     [ "IllaGraphNode.NeighborMovementStruct", "struct_illa_graph_node_1_1_neighbor_movement_struct.html", null ],
+    [ "ObjectCollection", "class_object_collection.html", null ],
     [ "SerializationElements.ObjectDocument", "class_serialization_elements_1_1_object_document.html", null ],
     [ "Lynxmotion.Robotics.Packet", "class_lynxmotion_1_1_robotics_1_1_packet.html", null ],
     [ "PopupWindowContent", null, [

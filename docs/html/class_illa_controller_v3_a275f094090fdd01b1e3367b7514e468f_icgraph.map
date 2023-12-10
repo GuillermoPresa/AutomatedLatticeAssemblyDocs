@@ -1,0 +1,10 @@
+<map id="IllaControllerV3.MultiFrameMapNavigationSpace" name="IllaControllerV3.MultiFrameMapNavigationSpace">
+<area shape="rect" id="node1" title=" " alt="" coords="549,136,728,177"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="309,5,477,47"/>
+<area shape="rect" id="node3" href="$class_map_nav_space_action.html#a0657a232e3510abdd8119a75bf88fd56" title=" " alt="" coords="295,71,490,112"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="295,136,490,177"/>
+<area shape="rect" id="node7" href="$class_map_nav_space_action.html#a5788a839614f314348803215c6260aab" title=" " alt="" coords="284,202,501,229"/>
+<area shape="rect" id="node8" href="$class_place_lattice.html#ad182b38a5222b30138ab92fd811db85a" title=" " alt="" coords="308,253,477,279"/>
+<area shape="rect" id="node5" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,114,217,141"/>
+<area shape="rect" id="node6" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,165,236,207"/>
+</map>

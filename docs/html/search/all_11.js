@@ -12,11 +12,12 @@ var searchData=
   ['quatjajb_9',['QuatJaJb',['../class_denavit_hartenberg_illa3.html#a6a55538c82c136742b17f5ebfa951a41',1,'DenavitHartenbergIlla3']]],
   ['quatjaorigin_10',['QuatJaOrigin',['../class_denavit_hartenberg_illa3.html#afd774dbdf96d49e62c738d4ec53e8f9a',1,'DenavitHartenbergIlla3']]],
   ['queries_11',['queries',['../class_lynx_servo_1_1_statistics.html#a79b094a655b2e53ca3001bf1de1bc15d',1,'LynxServo::Statistics']]],
-  ['querryallservopositions_12',['QuerryAllServoPositions',['../class_serial___l_s_s___control.html#afc2c4ea02c3ce313f143c066ed1f4a46',1,'Serial_LSS_Control']]],
-  ['querryposition_13',['QuerryPosition',['../class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8',1,'ILLAServo']]],
-  ['querrystatus_14',['QuerryStatus',['../class_l_s_s___motor.html#a90824651c4ec21ee0fa8cebbd1260326',1,'LSS_Motor']]],
-  ['querryvoltage_15',['QuerryVoltage',['../class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4',1,'ILLAServo']]],
-  ['query_16',['Query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#aeb3bc2ba7c9b484113010188d9e78f22',1,'Lynxmotion.Robotics.LssCommand.Query()'],['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b',1,'Lynxmotion.Robotics.LssServo.Query()'],['../class_virtual_servo.html#aad72b0d6d1e25cafb4d164b0b35b6f49',1,'VirtualServo.Query()']]],
-  ['query_17',['query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#a4f0761c2cc260be930643c06f3fec675',1,'Lynxmotion.Robotics.LssCommand.query()'],['../class_lynx_packet.html#a0704fab798e3db1b6b89e6355a03ddfa',1,'LynxPacket::query()']]],
-  ['query_18',['Query',['../namespace_lynxmotion_1_1_robotics.html#aeda4ea0038e268eaf512ad2be7d413cba66c1b4c7f3dc385b68a9fa903ccd016d',1,'Lynxmotion::Robotics']]]
+  ['querry_12',['Querry',['../class_i_l_l_a_servo.html#af137e33807657c09cc8e148b09d269ff',1,'ILLAServo']]],
+  ['querryallservopositions_13',['QuerryAllServoPositions',['../class_serial___l_s_s___control.html#afc2c4ea02c3ce313f143c066ed1f4a46',1,'Serial_LSS_Control']]],
+  ['querryposition_14',['QuerryPosition',['../class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8',1,'ILLAServo']]],
+  ['querrystatus_15',['QuerryStatus',['../class_l_s_s___motor.html#a90824651c4ec21ee0fa8cebbd1260326',1,'LSS_Motor']]],
+  ['querryvoltage_16',['QuerryVoltage',['../class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4',1,'ILLAServo']]],
+  ['query_17',['Query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#aeb3bc2ba7c9b484113010188d9e78f22',1,'Lynxmotion.Robotics.LssCommand.Query()'],['../class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b',1,'Lynxmotion.Robotics.LssServo.Query()'],['../class_virtual_servo.html#aad72b0d6d1e25cafb4d164b0b35b6f49',1,'VirtualServo.Query()']]],
+  ['query_18',['query',['../class_lynxmotion_1_1_robotics_1_1_lss_command.html#a4f0761c2cc260be930643c06f3fec675',1,'Lynxmotion.Robotics.LssCommand.query()'],['../class_lynx_packet.html#a0704fab798e3db1b6b89e6355a03ddfa',1,'LynxPacket::query()']]],
+  ['query_19',['Query',['../namespace_lynxmotion_1_1_robotics.html#aeda4ea0038e268eaf512ad2be7d413cba66c1b4c7f3dc385b68a9fa903ccd016d',1,'Lynxmotion::Robotics']]]
 ];

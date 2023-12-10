@@ -5,6 +5,8 @@ var dir_4bc9ee860fb5e9911a833c716d3ba32a =
     [ "Resources", "dir_6c8d9f3e88de244bf3618666335aad2c.html", "dir_6c8d9f3e88de244bf3618666335aad2c" ],
     [ "Robot", "dir_848a0f24e5cf5a53af46adb465c97d5a.html", "dir_848a0f24e5cf5a53af46adb465c97d5a" ],
     [ "Scripts", "dir_8b81a36a50e6d656340c5ae6639c1664.html", "dir_8b81a36a50e6d656340c5ae6639c1664" ],
+    [ "SmallTestStuff", "dir_2dc7b6a181408b16de887e98aaf8bed3.html", "dir_2dc7b6a181408b16de887e98aaf8bed3" ],
+    [ "SpaceNavigator", "dir_eb1d1618e1e6357050b2fa0ebd6bd47e.html", "dir_eb1d1618e1e6357050b2fa0ebd6bd47e" ],
     [ "Thirdparty", "dir_658c0d2cd26735353a0c3a14875f04e1.html", "dir_658c0d2cd26735353a0c3a14875f04e1" ],
     [ "Tools", "dir_861d161e4e14365ebecae71f36ca8eee.html", "dir_861d161e4e14365ebecae71f36ca8eee" ],
     [ "CameraMovement.cs", "_camera_movement_8cs.html", "_camera_movement_8cs" ],

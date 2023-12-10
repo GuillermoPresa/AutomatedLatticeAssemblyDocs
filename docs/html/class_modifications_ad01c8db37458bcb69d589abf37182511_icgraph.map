@@ -1,4 +1,6 @@
 <map id="Modifications.UpdateLatticeColor" name="Modifications.UpdateLatticeColor">
-<area shape="rect" id="node1" title=" " alt="" coords="205,5,388,47"/>
-<area shape="rect" id="node2" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,13,157,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="695,49,877,90"/>
+<area shape="rect" id="node2" href="$class_robot_coordinator.html#a1f724d6136d54e5e8aad091657f08a0a" title=" " alt="" coords="420,5,647,32"/>
+<area shape="rect" id="node3" href="$class_robot_coordinator.html#ad80a6957b713627e779f9a8457e8a742" title=" " alt="" coords="205,56,372,83"/>
+<area shape="rect" id="node4" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,81,157,108"/>
 </map>

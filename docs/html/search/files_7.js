@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jointclass_2ecs_0',['JointClass.cs',['../_joint_class_8cs.html',1,'']]]
+  ['hungarianalgorithm_2ecs_0',['HungarianAlgorithm.cs',['../_hungarian_algorithm_8cs.html',1,'']]]
 ];

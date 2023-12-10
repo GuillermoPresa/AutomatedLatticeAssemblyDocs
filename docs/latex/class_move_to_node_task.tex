@@ -2,8 +2,7 @@
 \label{class_move_to_node_task}\index{MoveToNodeTask@{MoveToNodeTask}}
 
 
-Inheritance diagram for Move\+To\+Node\+Task\+:
-\nopagebreak
+Inheritance diagram for Move\+To\+Node\+Task\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Inheritance diagram for Move\+To\+Node\+Task\+:
 \end{figure}
 
 
-Collaboration diagram for Move\+To\+Node\+Task\+:
-\nopagebreak
+Collaboration diagram for Move\+To\+Node\+Task\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,11 +21,15 @@ Collaboration diagram for Move\+To\+Node\+Task\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+override void \mbox{\hyperlink{class_move_to_node_task_ad57c33cb01cfaf30f056981a9b622833}{Prepare\+For\+Execution}} ()
+\begin{DoxyCompactList}\small\item\em Called before the task is passed to the robot and split into actions. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_move_to_node_task_ac7c9c7ae6ccb156f43137fc1ad61ea35}{Draw\+Gizmos}} ()
+\item 
 override \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a}{Bid\+From\+Task}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \item 
-override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
+override List$<$ \mbox{\hyperlink{class_abstract_action}{Abstract\+Action}} $>$ \mbox{\hyperlink{class_move_to_node_task_a6b481dc1eb795c24703a2c107e9f5c05}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \item 
-\mbox{\hyperlink{class_move_to_node_task_a32612dce1c3c9ad3554c01a331ec8087}{Move\+To\+Node\+Task}} (Game\+Object \mbox{\hyperlink{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}{target\+Node}})
+\mbox{\hyperlink{class_move_to_node_task_a63831e97dec251fcf74726d4981fe8da}{Move\+To\+Node\+Task}} (Game\+Object target\+Node\+\_\+in, bool move\+To\+Neighbor\+\_\+in=false)
 \item 
 \mbox{\hyperlink{class_move_to_node_task_ac33efed5b490f0815852311781e857b5}{Move\+To\+Node\+Task}} ()
 \end{DoxyCompactItemize}
@@ -35,15 +37,17 @@ override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abst
 \begin{DoxyCompactItemize}
 \item 
 Game\+Object \mbox{\hyperlink{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}{target\+Node}}
+\item 
+bool \mbox{\hyperlink{class_move_to_node_task_afafee83e444999c7115d02084fe2ab04}{move\+To\+Neighbor}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_move_to_node_task_a32612dce1c3c9ad3554c01a331ec8087}\label{class_move_to_node_task_a32612dce1c3c9ad3554c01a331ec8087}} 
+\mbox{\Hypertarget{class_move_to_node_task_a63831e97dec251fcf74726d4981fe8da}\label{class_move_to_node_task_a63831e97dec251fcf74726d4981fe8da}} 
 \index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
 \index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
 \doxysubsubsection{\texorpdfstring{MoveToNodeTask()}{MoveToNodeTask()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Move\+To\+Node\+Task.\+Move\+To\+Node\+Task (\begin{DoxyParamCaption}\item[{Game\+Object}]{target\+Node }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Move\+To\+Node\+Task.\+Move\+To\+Node\+Task (\begin{DoxyParamCaption}\item[{Game\+Object}]{target\+Node\+\_\+in,  }\item[{bool}]{move\+To\+Neighbor\+\_\+in = {\ttfamily false} }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_move_to_node_task_ac33efed5b490f0815852311781e857b5}\label{class_move_to_node_task_ac33efed5b490f0815852311781e857b5}} 
 \index{MoveToNodeTask@{MoveToNodeTask}!MoveToNodeTask@{MoveToNodeTask}}
@@ -64,35 +68,63 @@ Game\+Object \mbox{\hyperlink{class_move_to_node_task_ae24193f7e50d59849208554b8
 
 Implements \mbox{\hyperlink{class_abstract_task_a4e454ec4ebac472784b7703b1f0fdbd2}{Abstract\+Task}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}\label{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}} 
+\mbox{\Hypertarget{class_move_to_node_task_a6b481dc1eb795c24703a2c107e9f5c05}\label{class_move_to_node_task_a6b481dc1eb795c24703a2c107e9f5c05}} 
 \index{MoveToNodeTask@{MoveToNodeTask}!BreakIntoActions@{BreakIntoActions}}
 \index{BreakIntoActions@{BreakIntoActions}!MoveToNodeTask@{MoveToNodeTask}}
 \doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}}
-{\footnotesize\ttfamily override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Move\+To\+Node\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily override List$<$ \mbox{\hyperlink{class_abstract_action}{Abstract\+Action}} $>$ Move\+To\+Node\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7}{Abstract\+Task}}.
+Implements \mbox{\hyperlink{class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1}{Abstract\+Task}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a_cgraph}
+\includegraphics[width=350pt]{class_move_to_node_task_a6b481dc1eb795c24703a2c107e9f5c05_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_move_to_node_task_ac7c9c7ae6ccb156f43137fc1ad61ea35}\label{class_move_to_node_task_ac7c9c7ae6ccb156f43137fc1ad61ea35}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!DrawGizmos@{DrawGizmos}}
+\index{DrawGizmos@{DrawGizmos}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{DrawGizmos()}{DrawGizmos()}}
+{\footnotesize\ttfamily override void Move\+To\+Node\+Task.\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942}{Abstract\+Task}}.
+
+\mbox{\Hypertarget{class_move_to_node_task_ad57c33cb01cfaf30f056981a9b622833}\label{class_move_to_node_task_ad57c33cb01cfaf30f056981a9b622833}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!PrepareForExecution@{PrepareForExecution}}
+\index{PrepareForExecution@{PrepareForExecution}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{PrepareForExecution()}{PrepareForExecution()}}
+{\footnotesize\ttfamily override void Move\+To\+Node\+Task.\+Prepare\+For\+Execution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called before the task is passed to the robot and split into actions. 
+
+
+
+Implements \mbox{\hyperlink{class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5}{Abstract\+Task}}.
+
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_move_to_node_task_afafee83e444999c7115d02084fe2ab04}\label{class_move_to_node_task_afafee83e444999c7115d02084fe2ab04}} 
+\index{MoveToNodeTask@{MoveToNodeTask}!moveToNeighbor@{moveToNeighbor}}
+\index{moveToNeighbor@{moveToNeighbor}!MoveToNodeTask@{MoveToNodeTask}}
+\doxysubsubsection{\texorpdfstring{moveToNeighbor}{moveToNeighbor}}
+{\footnotesize\ttfamily bool Move\+To\+Node\+Task.\+move\+To\+Neighbor}
+
 \mbox{\Hypertarget{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}\label{class_move_to_node_task_ae24193f7e50d59849208554b86afb45f}} 
 \index{MoveToNodeTask@{MoveToNodeTask}!targetNode@{targetNode}}
 \index{targetNode@{targetNode}!MoveToNodeTask@{MoveToNodeTask}}

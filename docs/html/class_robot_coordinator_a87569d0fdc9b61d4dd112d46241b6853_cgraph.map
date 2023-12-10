@@ -3,6 +3,6 @@
 <area shape="rect" id="node2" href="$class_work_package.html#a1ca483d0e9c7408563109a34b0b220f7" title=" " alt="" coords="281,5,439,32"/>
 <area shape="rect" id="node3" href="$class_work_package.html#a7c02f62bfab7d29f76b7287192464dd7" title=" " alt="" coords="235,56,485,83"/>
 <area shape="rect" id="node4" href="$class_work_package.html#a81ced28015b9320f8ac39a315fc33805" title=" " alt="" coords="533,31,748,57"/>
-<area shape="rect" id="node5" href="$class_work_package.html#ad19b5891776b5894b96ac22a0ce8b7ae" title=" " alt="" coords="549,81,733,108"/>
-<area shape="rect" id="node6" href="$class_abstract_robot_worker.html#a07fda176bbe3af3497603441c6ca7b2a" title=" " alt="" coords="796,74,995,115"/>
+<area shape="rect" id="node5" href="$class_work_package.html#aff789cc4a1e713a68842d6e7a0d00fd4" title=" " alt="" coords="549,81,733,108"/>
+<area shape="rect" id="node6" href="$class_abstract_task.html#a10525aeaf83f134ebe10c20c9f3d56b5" title="Called before the task is passed to the robot and split into actions." alt="" coords="796,81,1021,108"/>
 </map>

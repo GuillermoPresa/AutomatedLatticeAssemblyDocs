@@ -1,9 +1,7 @@
 <map id="PosX.CreateDeepCopy" name="PosX.CreateDeepCopy">
-<area shape="rect" id="node1" title=" " alt="" coords="704,96,859,123"/>
-<area shape="rect" id="node2" href="$class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="472,64,655,91"/>
-<area shape="rect" id="node6" href="$class_move_and_insert_in_node.html#acd340b01cbc3a5c8ad5f2a637de8f85c" title=" " alt="" coords="471,118,656,159"/>
-<area shape="rect" id="node3" href="$class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc" title=" " alt="" coords="229,5,417,32"/>
-<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="238,57,409,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="691,35,845,61"/>
+<area shape="rect" id="node2" href="$class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="460,35,643,61"/>
+<area shape="rect" id="node3" href="$class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc" title=" " alt="" coords="224,5,412,32"/>
+<area shape="rect" id="node4" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="233,57,403,98"/>
 <area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="5,57,176,98"/>
-<area shape="rect" id="node7" href="$class_move_and_insert_in_node.html#a949a3018a59cdf8c6893b86124df5ff7" title=" " alt="" coords="224,122,423,163"/>
 </map>

@@ -21,6 +21,8 @@ Collaboration diagram for Movement\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+Dictionary$<$ \mbox{\hyperlink{class_pos_j}{PosJ}}, float $>$ \mbox{\hyperlink{class_movement_ad38b7affeb0c772e388facb4a671421c}{Pos\+JRobot\+Angle\+Cost\+Dict}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
 \mbox{\hyperlink{class_movement_a7f4f9b9b1d2266412f90de53a13aa7dc}{Movement}} (Game\+Object Target, Vector3 target\+Offset, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Initial\+Config)
 \item 
 \mbox{\hyperlink{class_movement_a888fd1350e071cd874e7e587ab95c032}{Movement}} (Game\+Object Target, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} Initial\+Config)
@@ -35,6 +37,8 @@ float \mbox{\hyperlink{class_movement_a6c025cbe11955f26ba81c575b7296006}{Mincost
 \item 
 void \mbox{\hyperlink{class_movement_a47e2906baf3b92be8fbd054231192ca4}{Add\+PosJ}} (\mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+JTo\+Add)
 \item 
+void \mbox{\hyperlink{class_movement_a61e8684d29228edd7038727af05d1051}{Add\+PosJ}} (List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$ Pos\+Js\+To\+Add)
+\item 
 \mbox{\hyperlink{class_movement}{Movement}} \mbox{\hyperlink{class_movement_a8bace0704cfea07f7b4693b5907fe135}{Create\+Deep\+Copy}} ()
 \item 
 void \mbox{\hyperlink{class_movement_a814d43897f9656de4ccd97d34f6fcaae}{Draw\+Movement}} (Color color)
@@ -46,7 +50,7 @@ void \mbox{\hyperlink{class_movement_a46a1f7e26a7713a29110a1c240746606}{Clear}} 
 \item 
 \mbox{\hyperlink{class_pos_x}{PosX}} \mbox{\hyperlink{class_movement_af47bdebf10af407e4449daba1e32fc3a}{Target\+PosX}}
 \item 
-Dictionary$<$ \mbox{\hyperlink{class_pos_j}{PosJ}}, float $>$ \mbox{\hyperlink{class_movement_a79a16b0af892714639e126da6c2e119b}{Pos\+JCost\+Dictionary}}
+Dictionary$<$ \mbox{\hyperlink{class_pos_j}{PosJ}}, float $>$ \mbox{\hyperlink{class_movement_abb36e260bd4dae983800323688ea5d3f}{Pos\+JMax\+Angle\+Unlimited\+Cost\+Dict}}
 \item 
 \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} \mbox{\hyperlink{class_movement_a22ff24b09d5dde483a4b3b8bc175d57a}{Starting\+Configuration}}
 \end{DoxyCompactItemize}
@@ -89,8 +93,7 @@ At the time of executing the movement one of the target Pos\+Js can be selected 
 \doxysubsubsection{\texorpdfstring{Movement()}{Movement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
 {\footnotesize\ttfamily Movement.\+Movement (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target,  }\item[{Vector3}]{target\+Offset,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Initial\+Config }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -109,8 +112,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{Movement()}{Movement()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
 {\footnotesize\ttfamily Movement.\+Movement (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target,  }\item[{List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$}]{Solution\+Pos\+JList,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{Initial\+Config }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -136,18 +138,37 @@ Creates a movement with the same Target\+PosX and Starting\+Configuration as the
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_movement_a61e8684d29228edd7038727af05d1051}\label{class_movement_a61e8684d29228edd7038727af05d1051}} 
+\index{Movement@{Movement}!AddPosJ@{AddPosJ}}
+\index{AddPosJ@{AddPosJ}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{AddPosJ()}{AddPosJ()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Movement.\+Add\+PosJ (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_pos_j}{PosJ}} $>$}]{Pos\+Js\+To\+Add }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_a61e8684d29228edd7038727af05d1051_cgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_movement_a47e2906baf3b92be8fbd054231192ca4}\label{class_movement_a47e2906baf3b92be8fbd054231192ca4}} 
 \index{Movement@{Movement}!AddPosJ@{AddPosJ}}
 \index{AddPosJ@{AddPosJ}!Movement@{Movement}}
-\doxysubsubsection{\texorpdfstring{AddPosJ()}{AddPosJ()}}
+\doxysubsubsection{\texorpdfstring{AddPosJ()}{AddPosJ()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Movement.\+Add\+PosJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{Pos\+JTo\+Add }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_movement_a47e2906baf3b92be8fbd054231192ca4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_a47e2906baf3b92be8fbd054231192ca4_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_movement_a46a1f7e26a7713a29110a1c240746606}\label{class_movement_a46a1f7e26a7713a29110a1c240746606}} 
@@ -162,16 +183,14 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{CreateDeepCopy()}{CreateDeepCopy()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_movement}{Movement}} Movement.\+Create\+Deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_movement_a8bace0704cfea07f7b4693b5907fe135_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -190,30 +209,48 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{MincostBasedOnAngleMovement()}{MincostBasedOnAngleMovement()}}
 {\footnotesize\ttfamily float Movement.\+Mincost\+Based\+On\+Angle\+Movement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_movement_a6c025cbe11955f26ba81c575b7296006_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_movement_a6c025cbe11955f26ba81c575b7296006_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_movement_ad38b7affeb0c772e388facb4a671421c}\label{class_movement_ad38b7affeb0c772e388facb4a671421c}} 
+\index{Movement@{Movement}!PosJRobotAngleCostDict@{PosJRobotAngleCostDict}}
+\index{PosJRobotAngleCostDict@{PosJRobotAngleCostDict}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{PosJRobotAngleCostDict()}{PosJRobotAngleCostDict()}}
+{\footnotesize\ttfamily Dictionary$<$ \mbox{\hyperlink{class_pos_j}{PosJ}}, float $>$ Movement.\+Pos\+JRobot\+Angle\+Cost\+Dict (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_ad38b7affeb0c772e388facb4a671421c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_movement_ad38b7affeb0c772e388facb4a671421c_icgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_movement_a79a16b0af892714639e126da6c2e119b}\label{class_movement_a79a16b0af892714639e126da6c2e119b}} 
-\index{Movement@{Movement}!PosJCostDictionary@{PosJCostDictionary}}
-\index{PosJCostDictionary@{PosJCostDictionary}!Movement@{Movement}}
-\doxysubsubsection{\texorpdfstring{PosJCostDictionary}{PosJCostDictionary}}
-{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_pos_j}{PosJ}}, float$>$ Movement.\+Pos\+JCost\+Dictionary}
+\mbox{\Hypertarget{class_movement_abb36e260bd4dae983800323688ea5d3f}\label{class_movement_abb36e260bd4dae983800323688ea5d3f}} 
+\index{Movement@{Movement}!PosJMaxAngleUnlimitedCostDict@{PosJMaxAngleUnlimitedCostDict}}
+\index{PosJMaxAngleUnlimitedCostDict@{PosJMaxAngleUnlimitedCostDict}!Movement@{Movement}}
+\doxysubsubsection{\texorpdfstring{PosJMaxAngleUnlimitedCostDict}{PosJMaxAngleUnlimitedCostDict}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_pos_j}{PosJ}}, float$>$ Movement.\+Pos\+JMax\+Angle\+Unlimited\+Cost\+Dict}
 
 \mbox{\Hypertarget{class_movement_a22ff24b09d5dde483a4b3b8bc175d57a}\label{class_movement_a22ff24b09d5dde483a4b3b8bc175d57a}} 
 \index{Movement@{Movement}!StartingConfiguration@{StartingConfiguration}}

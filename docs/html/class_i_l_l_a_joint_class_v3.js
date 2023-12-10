@@ -1,6 +1,7 @@
 var class_i_l_l_a_joint_class_v3 =
 [
     [ "MakeBase", "class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2", null ],
+    [ "Update", "class_i_l_l_a_joint_class_v3.html#a44e2f70d8c8ad37a668d01a8715627f6", null ],
     [ "ClampedNode", "class_i_l_l_a_joint_class_v3.html#afee1517d0d75cd026fb2f3a5bef0772b", null ],
     [ "currentAngle", "class_i_l_l_a_joint_class_v3.html#a32362e7f91be3743663b7c04617863c6", null ],
     [ "GoalAngle", "class_i_l_l_a_joint_class_v3.html#a8f26de0a5ffa1e74ce2cf4072692a64b", null ],

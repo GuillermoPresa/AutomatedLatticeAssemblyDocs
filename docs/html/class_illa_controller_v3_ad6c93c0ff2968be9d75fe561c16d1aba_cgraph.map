@@ -1,0 +1,5 @@
+<map id="IllaControllerV3.NonCollidingMovement" name="IllaControllerV3.NonCollidingMovement">
+<area shape="rect" id="node1" title="From an input movement return a new movement with only the non colliding posJ solutions." alt="" coords="5,5,191,47"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a4f9865567dc3c18c3e72ee293dd24a87" title=" " alt="" coords="239,5,441,47"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#adb1fa8e0b6707e4064d776a998dd1601" title=" " alt="" coords="489,13,651,39"/>
+</map>

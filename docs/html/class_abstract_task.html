@@ -93,18 +93,26 @@ Inheritance diagram for AbstractTask:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_abstract_task__inherit__graph.png" border="0" usemap="#a_abstract_task_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_abstract_task_inherit__map" id="a_abstract_task_inherit__map">
-<area shape="rect" title=" " alt="" coords="61,5,160,32"/>
+<area shape="rect" title=" " alt="" coords="312,5,411,32"/>
 <area shape="rect" href="class_insert_task.html" title=" " alt="" coords="5,80,88,107"/>
 <area shape="rect" href="class_move_to_node_task.html" title=" " alt="" coords="113,80,237,107"/>
+<area shape="rect" href="class_pick_lattice_and_insert_in_location.html" title=" " alt="" coords="261,80,462,107"/>
+<area shape="rect" href="class_pick_task.html" title=" " alt="" coords="486,80,562,107"/>
+<area shape="rect" href="class_place_task.html" title=" " alt="" coords="587,80,669,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a10525aeaf83f134ebe10c20c9f3d56b5"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_task.html#a10525aeaf83f134ebe10c20c9f3d56b5">PrepareForExecution</a> ()</td></tr>
+<tr class="memdesc:a10525aeaf83f134ebe10c20c9f3d56b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before the task is passed to the robot and split into actions.  <a href="class_abstract_task.html#a10525aeaf83f134ebe10c20c9f3d56b5">More...</a><br /></td></tr>
+<tr class="separator:a10525aeaf83f134ebe10c20c9f3d56b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d6f595d20ef4e87196ae6cbfc22942"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_task.html#a37d6f595d20ef4e87196ae6cbfc22942">DrawGizmos</a> ()</td></tr>
+<tr class="separator:a37d6f595d20ef4e87196ae6cbfc22942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e454ec4ebac472784b7703b1f0fdbd2"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="class_auction_bid.html">AuctionBid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_task.html#a4e454ec4ebac472784b7703b1f0fdbd2">BidFromTask</a> (<a class="el" href="class_abstract_robot_worker.html">AbstractRobotWorker</a> robotWorker)</td></tr>
 <tr class="separator:a4e454ec4ebac472784b7703b1f0fdbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7232eb64af8efecefaf21b9c96774dc7"><td class="memItemLeft" align="right" valign="top">abstract List&lt; <a class="el" href="class_i_l_l_a_v3_abstract_action.html">ILLAV3AbstractAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_task.html#a7232eb64af8efecefaf21b9c96774dc7">BreakIntoActions</a> (<a class="el" href="class_abstract_robot_worker.html">AbstractRobotWorker</a> robotWorker)</td></tr>
-<tr class="separator:a7232eb64af8efecefaf21b9c96774dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa42ad6544ee3a4e120cbdb7df27a5d1"><td class="memItemLeft" align="right" valign="top">abstract List&lt; <a class="el" href="class_abstract_action.html">AbstractAction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_task.html#aaa42ad6544ee3a4e120cbdb7df27a5d1">BreakIntoActions</a> (<a class="el" href="class_abstract_robot_worker.html">AbstractRobotWorker</a> robotWorker)</td></tr>
+<tr class="separator:aaa42ad6544ee3a4e120cbdb7df27a5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4e454ec4ebac472784b7703b1f0fdbd2" name="a4e454ec4ebac472784b7703b1f0fdbd2"></a>
@@ -131,12 +139,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_insert_task.html#a7f4e04170d26d486c4b1989596955c67">InsertTask</a>, and <a class="el" href="class_move_to_node_task.html#ac2e6f953256a0e312065892aec21dd1a">MoveToNodeTask</a>.</p>
+<p>Implemented in <a class="el" href="class_insert_task.html#a7f4e04170d26d486c4b1989596955c67">InsertTask</a>, <a class="el" href="class_move_to_node_task.html#ac2e6f953256a0e312065892aec21dd1a">MoveToNodeTask</a>, <a class="el" href="class_pick_lattice_and_insert_in_location.html#ad65c03b5461732e911e5da8184f5718c">PickLatticeAndInsertInLocation</a>, <a class="el" href="class_pick_task.html#a8bcc84284e6d07cb8b0d634914475982">PickTask</a>, and <a class="el" href="class_place_task.html#a2e0da3da5ebf74e222efc5af19657de2">PlaceTask</a>.</p>
 
 </div>
 </div>
-<a id="a7232eb64af8efecefaf21b9c96774dc7" name="a7232eb64af8efecefaf21b9c96774dc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7232eb64af8efecefaf21b9c96774dc7">&#9670;&nbsp;</a></span>BreakIntoActions()</h2>
+<a id="aaa42ad6544ee3a4e120cbdb7df27a5d1" name="aaa42ad6544ee3a4e120cbdb7df27a5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa42ad6544ee3a4e120cbdb7df27a5d1">&#9670;&nbsp;</a></span>BreakIntoActions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +153,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract List&lt; <a class="el" href="class_i_l_l_a_v3_abstract_action.html">ILLAV3AbstractAction</a> &gt; AbstractTask.BreakIntoActions </td>
+          <td class="memname">abstract List&lt; <a class="el" href="class_abstract_action.html">AbstractAction</a> &gt; AbstractTask.BreakIntoActions </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_abstract_robot_worker.html">AbstractRobotWorker</a>&#160;</td>
           <td class="paramname"><em>robotWorker</em></td><td>)</td>
@@ -159,14 +167,92 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_insert_task.html#abecf20f22cd85ef31c76a99b93f5d6ba">InsertTask</a>, and <a class="el" href="class_move_to_node_task.html#aeb33b7b1cdacd984e7e1d8db5c37499a">MoveToNodeTask</a>.</p>
+<p>Implemented in <a class="el" href="class_insert_task.html#a132747dbd8c24af9ee3ca6d76a711993">InsertTask</a>, <a class="el" href="class_move_to_node_task.html#a6b481dc1eb795c24703a2c107e9f5c05">MoveToNodeTask</a>, <a class="el" href="class_pick_lattice_and_insert_in_location.html#a720d58eab5e588f79662817fe3a8400d">PickLatticeAndInsertInLocation</a>, <a class="el" href="class_pick_task.html#ad245113589165400514f24439757c986">PickTask</a>, and <a class="el" href="class_place_task.html#aaf95e9c769eea689d594638e967359c1">PlaceTask</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7_icgraph.png" border="0" usemap="#aclass_abstract_task_a7232eb64af8efecefaf21b9c96774dc7_icgraph" alt=""/></div>
-<map name="aclass_abstract_task_a7232eb64af8efecefaf21b9c96774dc7_icgraph" id="aclass_abstract_task_a7232eb64af8efecefaf21b9c96774dc7_icgraph">
+<div class="center"><img src="class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1_icgraph.png" border="0" usemap="#aclass_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1_icgraph" alt=""/></div>
+<map name="aclass_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1_icgraph" id="aclass_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1_icgraph">
 <area shape="rect" title=" " alt="" coords="284,13,487,39"/>
 <area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a37d6f595d20ef4e87196ae6cbfc22942" name="a37d6f595d20ef4e87196ae6cbfc22942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d6f595d20ef4e87196ae6cbfc22942">&#9670;&nbsp;</a></span>DrawGizmos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void AbstractTask.DrawGizmos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="class_insert_task.html#a24d2ed4b9c468b17549f4c24db6136f3">InsertTask</a>, <a class="el" href="class_move_to_node_task.html#ac7c9c7ae6ccb156f43137fc1ad61ea35">MoveToNodeTask</a>, <a class="el" href="class_pick_lattice_and_insert_in_location.html#a1ca3add4e1452c0650d96f916ae0991e">PickLatticeAndInsertInLocation</a>, <a class="el" href="class_pick_task.html#a0f6526e135f2eb093d7b691aab076684">PickTask</a>, and <a class="el" href="class_place_task.html#a481aa8d652b00ccf14522bdadeec4d91">PlaceTask</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942_icgraph.png" border="0" usemap="#aclass_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942_icgraph" alt=""/></div>
+<map name="aclass_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942_icgraph" id="aclass_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942_icgraph">
+<area shape="rect" title=" " alt="" coords="284,13,461,39"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a10525aeaf83f134ebe10c20c9f3d56b5" name="a10525aeaf83f134ebe10c20c9f3d56b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10525aeaf83f134ebe10c20c9f3d56b5">&#9670;&nbsp;</a></span>PrepareForExecution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">abstract void AbstractTask.PrepareForExecution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called before the task is passed to the robot and split into actions. </p>
+
+<p>Implemented in <a class="el" href="class_insert_task.html#acfe92211ab9795643a338b06034ab8e0">InsertTask</a>, <a class="el" href="class_move_to_node_task.html#ad57c33cb01cfaf30f056981a9b622833">MoveToNodeTask</a>, <a class="el" href="class_pick_lattice_and_insert_in_location.html#a519dd5bc49986dc71acd3e7708c5a8d5">PickLatticeAndInsertInLocation</a>, <a class="el" href="class_pick_task.html#a7cf00f62c7a9e9bfe75798ccb77d42d0">PickTask</a>, and <a class="el" href="class_place_task.html#a5f5688bf126d566dbe3dea225f43aa13">PlaceTask</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5_icgraph.png" border="0" usemap="#aclass_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5_icgraph" alt=""/></div>
+<map name="aclass_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5_icgraph" id="aclass_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5_icgraph">
+<area shape="rect" title="Called before the task is passed to the robot and split into actions." alt="" coords="1180,13,1405,39"/>
+<area shape="rect" href="class_work_package.html#aff789cc4a1e713a68842d6e7a0d00fd4" title=" " alt="" coords="948,13,1132,39"/>
+<area shape="rect" href="class_work_package.html#a7c02f62bfab7d29f76b7287192464dd7" title=" " alt="" coords="649,13,900,39"/>
+<area shape="rect" href="class_robot_coordinator.html#a87569d0fdc9b61d4dd112d46241b6853" title=" " alt="" coords="420,5,601,47"/>
+<area shape="rect" href="class_robot_coordinator.html#ad80a6957b713627e779f9a8457e8a742" title=" " alt="" coords="205,13,372,39"/>
+<area shape="rect" href="class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,13,157,39"/>
 </map>
 </div>
 

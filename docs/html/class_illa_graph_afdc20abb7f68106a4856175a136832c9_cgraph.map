@@ -1,4 +1,7 @@
 <map id="IllaGraph.ShortestPath" name="IllaGraph.ShortestPath">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,159,32"/>
-<area shape="rect" id="node2" href="$class_illa_graph_node.html#aa2e8cc3178130c5d56feb88f48cb13ca" title=" " alt="" coords="207,5,405,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,159,98"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#acce37b4f311b3e074b0e0bb47f1cf7f6" title=" " alt="" coords="217,5,415,47"/>
+<area shape="rect" id="node3" href="$class_illa_graph_node.html#aa2e8cc3178130c5d56feb88f48cb13ca" title=" " alt="" coords="217,71,415,98"/>
+<area shape="rect" id="node4" href="$class_illa_graph.html#adf602d79b553173ec449a8659d57b410" title=" " alt="" coords="207,122,425,149"/>
+<area shape="rect" id="node5" href="$class_illa_graph_node.html#a17bbcb583eda13d6f62f9fabcde44bef" title=" " alt="" coords="473,115,656,156"/>
 </map>

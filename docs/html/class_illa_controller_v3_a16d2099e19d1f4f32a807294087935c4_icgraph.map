@@ -1,0 +1,8 @@
+<map id="IllaControllerV3.DrawRobot" name="IllaControllerV3.DrawRobot">
+<area shape="rect" id="node1" title=" " alt="" coords="1003,63,1179,90"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#af4f6214d4b2dd6b5765296e93e66d197" title=" " alt="" coords="525,5,701,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a51c88eebd426857647098acfb916c6f0" title=" " alt="" coords="749,63,955,90"/>
+<area shape="rect" id="node6" href="$class_illa_controller_v3.html#acd6d8377114d7f23bb9f8ca25854705d" title=" " alt="" coords="525,71,701,112"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,39,477,80"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,39,236,80"/>
+</map>

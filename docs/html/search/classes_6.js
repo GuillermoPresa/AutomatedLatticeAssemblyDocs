@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fullrobotstate_0',['FullRobotState',['../class_full_robot_state.html',1,'']]]
+  ['flyaround_0',['FlyAround',['../class_fly_around.html',1,'']]],
+  ['fullrobotstate_1',['FullRobotState',['../class_full_robot_state.html',1,'']]]
 ];

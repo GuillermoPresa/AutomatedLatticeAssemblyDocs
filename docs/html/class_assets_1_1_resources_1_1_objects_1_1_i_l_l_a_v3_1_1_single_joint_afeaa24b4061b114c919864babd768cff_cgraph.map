@@ -1,5 +1,5 @@
 <map id="Assets.Resources.Objects.ILLAV3.SingleJoint.updateServoGoalAngleFromTargetAngle" name="Assets.Resources.Objects.ILLAV3.SingleJoint.updateServoGoalAngleFromTargetAngle">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,61"/>
-<area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html#a81b3d3068ae2286a1d04693efba06b49" title=" " alt="" coords="260,13,499,54"/>
-<area shape="rect" id="node3" href="$class_angle_utilities.html#a6d0cb1ecba4db0c1f185330c87692db8" title=" " alt="" coords="547,20,717,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,15,212,71"/>
+<area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_single_joint.html#a81b3d3068ae2286a1d04693efba06b49" title=" " alt="" coords="260,22,499,63"/>
+<area shape="rect" id="node3" href="$class_angle_utilities.html#a86590d2f2a099f38a66906d7a6c43859" title=" " alt="" coords="547,29,761,56"/>
 </map>

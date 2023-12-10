@@ -1,13 +1,12 @@
 <map id="IllaControllerV3.IKSolution" name="IllaControllerV3.IKSolution">
-<area shape="rect" id="node1" title=" " alt="" coords="991,97,1163,124"/>
-<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a7b25491150a664e3bcf6f8e90db79f45" title=" " alt="" coords="764,5,936,32"/>
-<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="769,57,931,98"/>
-<area shape="rect" id="node7" href="$class_move_and_insert_in_node.html#acd340b01cbc3a5c8ad5f2a637de8f85c" title=" " alt="" coords="757,122,943,163"/>
-<area shape="rect" id="node9" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="765,187,935,229"/>
-<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="511,57,709,98"/>
-<area shape="rect" id="node5" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="260,57,435,98"/>
-<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,57,184,98"/>
-<area shape="rect" id="node8" href="$class_move_and_insert_in_node.html#a949a3018a59cdf8c6893b86124df5ff7" title=" " alt="" coords="511,122,709,163"/>
-<area shape="rect" id="node10" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="513,187,707,229"/>
-<area shape="rect" id="node11" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="232,187,463,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="983,78,1155,105"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="764,5,927,47"/>
+<area shape="rect" id="node6" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="756,71,935,112"/>
+<area shape="rect" id="node8" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="760,136,931,177"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="511,5,708,47"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#aa5cb39f48cd181882426f5c865952f2f" title=" " alt="" coords="260,5,435,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a28f63001d6ff55d1e75260633a3c1f9d" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node7" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="520,71,699,112"/>
+<area shape="rect" id="node9" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="513,136,706,177"/>
+<area shape="rect" id="node10" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="232,136,463,177"/>
 </map>

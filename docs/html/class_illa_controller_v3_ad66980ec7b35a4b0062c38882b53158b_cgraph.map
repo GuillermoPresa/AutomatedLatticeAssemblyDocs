@@ -1,5 +1,6 @@
 <map id="IllaControllerV3.Start" name="IllaControllerV3.Start">
-<area shape="rect" id="node1" title=" " alt="" coords="5,42,147,69"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_state___abstract.html#a02e8f269b86bcff46415e2b8de32548c" title=" " alt="" coords="205,5,375,47"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2" title=" " alt="" coords="195,71,385,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,147,91"/>
+<area shape="rect" id="node2" href="$class_i_l_l_alogger.html#a94b2d735fe83cea0f9e1555f0fa582ba" title="Adds a new parameter to be logged every frame (LogValues call)." alt="" coords="209,5,371,32"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___abstract.html#a02e8f269b86bcff46415e2b8de32548c" title=" " alt="" coords="205,57,375,98"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_joint_class_v3.html#a21c650d9917a1f8542dfaa9b80f9f0a2" title=" " alt="" coords="195,123,385,149"/>
 </map>

@@ -1,9 +1,11 @@
 <map id="RobotCoordinator.DrawUI" name="RobotCoordinator.DrawUI">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,172,57"/>
-<area shape="rect" id="node2" href="$class_robot_coordinator.html#a87569d0fdc9b61d4dd112d46241b6853" title=" " alt="" coords="220,23,401,65"/>
-<area shape="rect" id="node3" href="$class_work_package.html#a1ca483d0e9c7408563109a34b0b220f7" title=" " alt="" coords="495,5,654,32"/>
-<area shape="rect" id="node4" href="$class_work_package.html#a7c02f62bfab7d29f76b7287192464dd7" title=" " alt="" coords="449,56,700,83"/>
-<area shape="rect" id="node5" href="$class_work_package.html#a81ced28015b9320f8ac39a315fc33805" title=" " alt="" coords="748,31,963,57"/>
-<area shape="rect" id="node6" href="$class_work_package.html#ad19b5891776b5894b96ac22a0ce8b7ae" title=" " alt="" coords="763,81,947,108"/>
-<area shape="rect" id="node7" href="$class_abstract_robot_worker.html#a07fda176bbe3af3497603441c6ca7b2a" title=" " alt="" coords="1011,74,1209,115"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,172,83"/>
+<area shape="rect" id="node2" href="$class_robot_coordinator.html#a1f724d6136d54e5e8aad091657f08a0a" title=" " alt="" coords="220,5,447,32"/>
+<area shape="rect" id="node3" href="$class_modifications.html#ad01c8db37458bcb69d589abf37182511" title=" " alt="" coords="529,10,711,51"/>
+<area shape="rect" id="node4" href="$class_robot_coordinator.html#a87569d0fdc9b61d4dd112d46241b6853" title=" " alt="" coords="243,107,424,149"/>
+<area shape="rect" id="node5" href="$class_work_package.html#a1ca483d0e9c7408563109a34b0b220f7" title=" " alt="" coords="541,101,699,128"/>
+<area shape="rect" id="node6" href="$class_work_package.html#a7c02f62bfab7d29f76b7287192464dd7" title=" " alt="" coords="495,152,745,179"/>
+<area shape="rect" id="node7" href="$class_work_package.html#a81ced28015b9320f8ac39a315fc33805" title=" " alt="" coords="793,127,1008,153"/>
+<area shape="rect" id="node8" href="$class_work_package.html#aff789cc4a1e713a68842d6e7a0d00fd4" title=" " alt="" coords="809,177,993,204"/>
+<area shape="rect" id="node9" href="$class_abstract_task.html#a10525aeaf83f134ebe10c20c9f3d56b5" title="Called before the task is passed to the robot and split into actions." alt="" coords="1056,177,1281,204"/>
 </map>

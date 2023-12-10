@@ -84,7 +84,9 @@ $(document).ready(function(){initNavTree('class_pos_j.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_pos_j-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PosJ Class Reference</div></div>
 </div><!--header-->
@@ -127,32 +129,51 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4043a767915cc4078dca8b4e58687cbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb">CreateDeepCopy</a> ()</td></tr>
 <tr class="separator:a4043a767915cc4078dca8b4e58687cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a853ba026122cd1332fffefa320d2bb64"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64">MaxAngularDiferenceFromPose</a> (<a class="el" href="class_pos_j.html">PosJ</a> initialPosJ)</td></tr>
+<tr class="memdesc:a853ba026122cd1332fffefa320d2bb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does not take into consideration the motion limits of a particular robot. For that utilize methods implemented in the robot scripts.  <a href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64">More...</a><br /></td></tr>
 <tr class="separator:a853ba026122cd1332fffefa320d2bb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7b1bcade16d10fc1e731cf24bc8427"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#afc7b1bcade16d10fc1e731cf24bc8427">InvertedOrderPosJ</a> ()</td></tr>
 <tr class="separator:afc7b1bcade16d10fc1e731cf24bc8427"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b131613afa3cf3eb6ed7b1fd7bb4498"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a7b131613afa3cf3eb6ed7b1fd7bb4498">ClampPM180</a> ()</td></tr>
-<tr class="separator:a7b131613afa3cf3eb6ed7b1fd7bb4498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb7d8a6aab0849bad93025d40e28741"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a3fb7d8a6aab0849bad93025d40e28741">ClampP360</a> ()</td></tr>
-<tr class="separator:a3fb7d8a6aab0849bad93025d40e28741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1459c5ed46d5c0bf548d4285283fe0d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a1459c5ed46d5c0bf548d4285283fe0d2">ClampPM180</a> ()</td></tr>
+<tr class="separator:a1459c5ed46d5c0bf548d4285283fe0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59643c441fc5977091b776ee4ac2fea1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1">ClampP360</a> ()</td></tr>
+<tr class="separator:a59643c441fc5977091b776ee4ac2fea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b6378a5537d8ea49a00a11d426eae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#aa9b6378a5537d8ea49a00a11d426eae7">ClampPaPbLimits</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript)</td></tr>
+<tr class="separator:aa9b6378a5537d8ea49a00a11d426eae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbbe0731c53f2eeeeaa2c8b9f6cd4781"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#afbbe0731c53f2eeeeaa2c8b9f6cd4781">ClampClosestPaPbLimits</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript)</td></tr>
+<tr class="separator:afbbe0731c53f2eeeeaa2c8b9f6cd4781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_i_prototype"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_i_prototype')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interface_i_prototype.html">IPrototype&lt; PosJ &gt;</a></td></tr>
 <tr class="memitem:af8fdf15a9898d4527f66ba1f3f3e533a inherit pub_methods_interface_i_prototype"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_i_prototype.html#af8fdf15a9898d4527f66ba1f3f3e533a">CreateDeepCopy</a> ()</td></tr>
 <tr class="separator:af8fdf15a9898d4527f66ba1f3f3e533a inherit pub_methods_interface_i_prototype"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a45fb9f608a2b484940a42b95e0edc303"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a45fb9f608a2b484940a42b95e0edc303">operator-</a> (<a class="el" href="class_pos_j.html">PosJ</a> a, <a class="el" href="class_pos_j.html">PosJ</a> b)</td></tr>
+<tr class="separator:a45fb9f608a2b484940a42b95e0edc303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a602afb6fa3d4262fb24414f06806d79a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a602afb6fa3d4262fb24414f06806d79a">operator+</a> (<a class="el" href="class_pos_j.html">PosJ</a> a, <a class="el" href="class_pos_j.html">PosJ</a> b)</td></tr>
+<tr class="separator:a602afb6fa3d4262fb24414f06806d79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dfe40857db8ffa58094191497c297f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_pos_j.html">PosJ</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#ac3dfe40857db8ffa58094191497c297f">operator*</a> (float a, <a class="el" href="class_pos_j.html">PosJ</a> b)</td></tr>
+<tr class="separator:ac3dfe40857db8ffa58094191497c297f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a48e98aea4dad98fe9732a201217fbff5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a48e98aea4dad98fe9732a201217fbff5">Joint1Angle</a></td></tr>
-<tr class="separator:a48e98aea4dad98fe9732a201217fbff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7046ec81e683259732a9b2de0fd019c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#af7046ec81e683259732a9b2de0fd019c">Joint2Angle</a></td></tr>
-<tr class="separator:af7046ec81e683259732a9b2de0fd019c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe4ef01f5c1214bcb7a668469a0da71"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#affe4ef01f5c1214bcb7a668469a0da71">Joint3Angle</a></td></tr>
-<tr class="separator:affe4ef01f5c1214bcb7a668469a0da71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3361e13cee83709c7e8062a142bb0d3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#ae3361e13cee83709c7e8062a142bb0d3">Joint4Angle</a></td></tr>
-<tr class="separator:ae3361e13cee83709c7e8062a142bb0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b7a8d2a9de94fa2c1117bd5649739d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a98b7a8d2a9de94fa2c1117bd5649739d">Joint5Angle</a></td></tr>
-<tr class="separator:a98b7a8d2a9de94fa2c1117bd5649739d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b8bfd042f127bbe13777f8368141411"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a8b8bfd042f127bbe13777f8368141411">BaseAngle</a></td></tr>
+<tr class="separator:a8b8bfd042f127bbe13777f8368141411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5e464c385735986cd3f07ce0e787d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#afb5e464c385735986cd3f07ce0e787d2">ShoulderAngle</a></td></tr>
+<tr class="separator:afb5e464c385735986cd3f07ce0e787d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3317ec58b828e6774c960fb47ef02032"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a3317ec58b828e6774c960fb47ef02032">MiddleAngle</a></td></tr>
+<tr class="separator:a3317ec58b828e6774c960fb47ef02032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fce85cd4d5141348f2e56645c642e9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#ad0fce85cd4d5141348f2e56645c642e9">WristAngle</a></td></tr>
+<tr class="separator:ad0fce85cd4d5141348f2e56645c642e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28dc5a2bb3a8443cc2204c1e782e67ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a28dc5a2bb3a8443cc2204c1e782e67ec">GripperAngle</a></td></tr>
+<tr class="separator:a28dc5a2bb3a8443cc2204c1e782e67ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a2198da76e8a282c36ff096961760580c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pos_j.html#a2198da76e8a282c36ff096961760580c">summedAngle</a><code> [get]</code></td></tr>
+<tr class="separator:a2198da76e8a282c36ff096961760580c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A <a class="el" href="class_pos_j.html">PosJ</a> represents the Pose of a robot in the Joint configuration, that is the rotation of all the joints. </p>
+<div class="textblock"><p >A <a class="el" href="class_pos_j.html">PosJ</a> represents the Pose of a robot in the Joint configuration, that is the rotation of all the joints. <a class="el" href="class_pos_j.html">PosJ</a> depends on the Hierarchy of the robot. It represents the join in the following order: 1) Base 2) Shoulder 3) Middle 4) Wrist 5) Gripper. If the hierarchy is inverted the new current and target PosJs will have the inverted order. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a94fcd443e19ca2b7440b2739c206ee09" name="a94fcd443e19ca2b7440b2739c206ee09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94fcd443e19ca2b7440b2739c206ee09">&#9670;&nbsp;</a></span>PosJ() <span class="overload">[1/3]</span></h2>
@@ -173,14 +194,41 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pos_j_a94fcd443e19ca2b7440b2739c206ee09_icgraph.png" border="0" usemap="#aclass_pos_j_a94fcd443e19ca2b7440b2739c206ee09_icgraph" alt=""/></div>
 <map name="aclass_pos_j_a94fcd443e19ca2b7440b2739c206ee09_icgraph" id="aclass_pos_j_a94fcd443e19ca2b7440b2739c206ee09_icgraph">
-<area shape="rect" title=" " alt="" coords="1120,60,1204,87"/>
-<area shape="rect" href="class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb" title=" " alt="" coords="915,35,1069,61"/>
-<area shape="rect" href="class_pos_j.html#afc7b1bcade16d10fc1e731cf24bc8427" title=" " alt="" coords="912,85,1072,112"/>
-<area shape="rect" href="class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="691,27,864,69"/>
-<area shape="rect" href="class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="460,35,643,61"/>
-<area shape="rect" href="class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc" title=" " alt="" coords="224,5,412,32"/>
-<area shape="rect" href="class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="233,57,403,98"/>
-<area shape="rect" href="class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="5,57,176,98"/>
+<area shape="rect" title=" " alt="" coords="1569,493,1653,519"/>
+<area shape="rect" href="class_pos_j.html#afbbe0731c53f2eeeeaa2c8b9f6cd4781" title=" " alt="" coords="1111,203,1313,230"/>
+<area shape="rect" href="class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1" title=" " alt="" coords="1380,417,1503,443"/>
+<area shape="rect" href="class_pos_j.html#aa9b6378a5537d8ea49a00a11d426eae7" title=" " alt="" coords="1362,467,1521,494"/>
+<area shape="rect" href="class_pos_j.html#a1459c5ed46d5c0bf548d4285283fe0d2" title=" " alt="" coords="1375,518,1508,545"/>
+<area shape="rect" href="class_pos_j.html#a4043a767915cc4078dca8b4e58687cbb" title=" " alt="" coords="1365,569,1518,595"/>
+<area shape="rect" href="class_pos_j.html#afc7b1bcade16d10fc1e731cf24bc8427" title=" " alt="" coords="1361,619,1521,646"/>
+<area shape="rect" href="class_illa_controller_v3.html#a4323aba4f9f36f59fcb9eab0d0695f99" title=" " alt="" coords="856,72,1039,113"/>
+<area shape="rect" href="class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="832,246,1063,273"/>
+<area shape="rect" href="class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="577,133,770,159"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ade751970fda0a178dcff565d146d5e35" title=" " alt="" coords="563,53,784,109"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="303,71,496,98"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="284,5,515,47"/>
+<area shape="rect" href="class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="593,184,754,225"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="584,249,763,291"/>
+<area shape="rect" href="class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="588,315,759,356"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="310,248,489,289"/>
+<area shape="rect" href="class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="296,125,503,167"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="303,313,496,355"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,313,236,355"/>
+<area shape="rect" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="1123,409,1301,451"/>
+<area shape="rect" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="879,501,1016,527"/>
+<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="838,380,1057,421"/>
+<area shape="rect" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="875,446,1019,473"/>
+<area shape="rect" href="class_movement.html#a61e8684d29228edd7038727af05d1051" title=" " alt="" coords="605,501,742,527"/>
+<area shape="rect" href="class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="572,552,775,593"/>
+<area shape="rect" href="class_illa_graph.html#a9424246a0aa5bfbee54058780b1d18ca" title=" " alt="" coords="584,383,763,410"/>
+<area shape="rect" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="585,435,761,476"/>
+<area shape="rect" href="class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="315,379,483,420"/>
+<area shape="rect" href="class_move_to_node.html#ae3c2423d26374a01693d9d7984889697" title=" " alt="" coords="314,445,485,471"/>
+<area shape="rect" href="class_robot_configuration.html#a0817e1175838763ce38925ef860723ce" title=" " alt="" coords="1125,573,1299,615"/>
+<area shape="rect" href="class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="856,618,1039,645"/>
+<area shape="rect" href="class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc" title=" " alt="" coords="579,618,767,645"/>
+<area shape="rect" href="class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="588,669,759,711"/>
+<area shape="rect" href="class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="314,669,485,711"/>
 </map>
 </div>
 
@@ -251,16 +299,17 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3fb7d8a6aab0849bad93025d40e28741" name="a3fb7d8a6aab0849bad93025d40e28741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fb7d8a6aab0849bad93025d40e28741">&#9670;&nbsp;</a></span>ClampP360()</h2>
+<a id="afbbe0731c53f2eeeeaa2c8b9f6cd4781" name="afbbe0731c53f2eeeeaa2c8b9f6cd4781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbbe0731c53f2eeeeaa2c8b9f6cd4781">&#9670;&nbsp;</a></span>ClampClosestPaPbLimits()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PosJ.ClampP360 </td>
+          <td class="memname"><a class="el" href="class_pos_j.html">PosJ</a> PosJ.ClampClosestPaPbLimits </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a>&#160;</td>
+          <td class="paramname"><em>robotScript</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -268,23 +317,45 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_pos_j_a3fb7d8a6aab0849bad93025d40e28741_cgraph.png" border="0" usemap="#aclass_pos_j_a3fb7d8a6aab0849bad93025d40e28741_cgraph" alt=""/></div>
-<map name="aclass_pos_j_a3fb7d8a6aab0849bad93025d40e28741_cgraph" id="aclass_pos_j_a3fb7d8a6aab0849bad93025d40e28741_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,128,32"/>
-<area shape="rect" href="class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="176,5,345,32"/>
+<div class="center"><img src="class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_cgraph.png" border="0" usemap="#aclass_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_cgraph" alt=""/></div>
+<map name="aclass_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_cgraph" id="aclass_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,208,81"/>
+<area shape="rect" href="class_angle_utilities.html#a86590d2f2a099f38a66906d7a6c43859" title=" " alt="" coords="256,29,471,56"/>
+<area shape="rect" href="class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="321,80,405,107"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_icgraph.png" border="0" usemap="#aclass_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_icgraph" alt=""/></div>
+<map name="aclass_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_icgraph" id="aclass_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_icgraph">
+<area shape="rect" title=" " alt="" coords="1111,235,1313,262"/>
+<area shape="rect" href="class_illa_controller_v3.html#a4323aba4f9f36f59fcb9eab0d0695f99" title=" " alt="" coords="856,97,1039,139"/>
+<area shape="rect" href="class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="832,235,1063,262"/>
+<area shape="rect" href="class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="577,326,770,353"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ade751970fda0a178dcff565d146d5e35" title=" " alt="" coords="563,49,784,105"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="303,71,496,98"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="284,5,515,47"/>
+<area shape="rect" href="class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="593,260,754,301"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="584,129,763,171"/>
+<area shape="rect" href="class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="588,195,759,236"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="310,129,489,171"/>
+<area shape="rect" href="class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="296,319,503,360"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="303,195,496,236"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,195,236,236"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7b131613afa3cf3eb6ed7b1fd7bb4498" name="a7b131613afa3cf3eb6ed7b1fd7bb4498"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b131613afa3cf3eb6ed7b1fd7bb4498">&#9670;&nbsp;</a></span>ClampPM180()</h2>
+<a id="a59643c441fc5977091b776ee4ac2fea1" name="a59643c441fc5977091b776ee4ac2fea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59643c441fc5977091b776ee4ac2fea1">&#9670;&nbsp;</a></span>ClampP360()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PosJ.ClampPM180 </td>
+          <td class="memname"><a class="el" href="class_pos_j.html">PosJ</a> PosJ.ClampP360 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -294,10 +365,93 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498_cgraph.png" border="0" usemap="#aclass_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498_cgraph" alt=""/></div>
-<map name="aclass_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498_cgraph" id="aclass_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,139,32"/>
+<div class="center"><img src="class_pos_j_a59643c441fc5977091b776ee4ac2fea1_cgraph.png" border="0" usemap="#aclass_pos_j_a59643c441fc5977091b776ee4ac2fea1_cgraph" alt=""/></div>
+<map name="aclass_pos_j_a59643c441fc5977091b776ee4ac2fea1_cgraph" id="aclass_pos_j_a59643c441fc5977091b776ee4ac2fea1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,128,57"/>
+<area shape="rect" href="class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="176,5,345,32"/>
+<area shape="rect" href="class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="219,56,303,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_pos_j_a59643c441fc5977091b776ee4ac2fea1_icgraph.png" border="0" usemap="#aclass_pos_j_a59643c441fc5977091b776ee4ac2fea1_icgraph" alt=""/></div>
+<map name="aclass_pos_j_a59643c441fc5977091b776ee4ac2fea1_icgraph" id="aclass_pos_j_a59643c441fc5977091b776ee4ac2fea1_icgraph">
+<area shape="rect" title=" " alt="" coords="1295,181,1417,208"/>
+<area shape="rect" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="1068,174,1247,215"/>
+<area shape="rect" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="836,64,973,91"/>
+<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="795,145,1014,186"/>
+<area shape="rect" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="833,211,977,237"/>
+<area shape="rect" href="class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="789,312,1020,339"/>
+<area shape="rect" href="class_movement.html#a61e8684d29228edd7038727af05d1051" title=" " alt="" coords="571,5,709,32"/>
+<area shape="rect" href="class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="539,57,741,98"/>
+<area shape="rect" href="class_illa_graph.html#a9424246a0aa5bfbee54058780b1d18ca" title=" " alt="" coords="551,123,729,149"/>
+<area shape="rect" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="552,174,728,215"/>
+<area shape="rect" href="class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="303,86,471,127"/>
+<area shape="rect" href="class_move_to_node.html#ae3c2423d26374a01693d9d7984889697" title=" " alt="" coords="302,152,473,179"/>
+<area shape="rect" href="class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="559,239,721,281"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="551,305,729,346"/>
+<area shape="rect" href="class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="543,371,737,397"/>
+<area shape="rect" href="class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="555,425,725,466"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="298,298,477,339"/>
+<area shape="rect" href="class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="284,363,491,405"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="291,429,484,470"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,429,236,470"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9b6378a5537d8ea49a00a11d426eae7" name="aa9b6378a5537d8ea49a00a11d426eae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b6378a5537d8ea49a00a11d426eae7">&#9670;&nbsp;</a></span>ClampPaPbLimits()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pos_j.html">PosJ</a> PosJ.ClampPaPbLimits </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a>&#160;</td>
+          <td class="paramname"><em>robotScript</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_pos_j_aa9b6378a5537d8ea49a00a11d426eae7_cgraph.png" border="0" usemap="#aclass_pos_j_aa9b6378a5537d8ea49a00a11d426eae7_cgraph" alt=""/></div>
+<map name="aclass_pos_j_aa9b6378a5537d8ea49a00a11d426eae7_cgraph" id="aclass_pos_j_aa9b6378a5537d8ea49a00a11d426eae7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,55,164,81"/>
+<area shape="rect" href="class_angle_utilities.html#a6d0cb1ecba4db0c1f185330c87692db8" title=" " alt="" coords="212,29,383,56"/>
+<area shape="rect" href="class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="255,80,339,107"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1459c5ed46d5c0bf548d4285283fe0d2" name="a1459c5ed46d5c0bf548d4285283fe0d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1459c5ed46d5c0bf548d4285283fe0d2">&#9670;&nbsp;</a></span>ClampPM180()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_pos_j.html">PosJ</a> PosJ.ClampPM180 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2_cgraph.png" border="0" usemap="#aclass_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2_cgraph" alt=""/></div>
+<map name="aclass_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2_cgraph" id="aclass_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,139,57"/>
 <area shape="rect" href="class_angle_utilities.html#a3734e19dc96284837d15e31de8fa9520" title=" " alt="" coords="187,5,367,32"/>
+<area shape="rect" href="class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="235,56,319,83"/>
 </map>
 </div>
 
@@ -383,13 +537,25 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Does not take into consideration the motion limits of a particular robot. For that utilize methods implemented in the robot scripts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initialPosJ</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pos_j_a853ba026122cd1332fffefa320d2bb64_cgraph.png" border="0" usemap="#aclass_pos_j_a853ba026122cd1332fffefa320d2bb64_cgraph" alt=""/></div>
 <map name="aclass_pos_j_a853ba026122cd1332fffefa320d2bb64_cgraph" id="aclass_pos_j_a853ba026122cd1332fffefa320d2bb64_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,184,47"/>
-<area shape="rect" href="class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="232,13,367,39"/>
+<area shape="rect" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="5,49,184,90"/>
+<area shape="rect" href="class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1" title=" " alt="" coords="238,31,361,57"/>
+<area shape="rect" href="class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="232,81,367,108"/>
+<area shape="rect" href="class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="415,5,584,32"/>
+<area shape="rect" href="class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="457,56,541,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -397,15 +563,135 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pos_j_a853ba026122cd1332fffefa320d2bb64_icgraph.png" border="0" usemap="#aclass_pos_j_a853ba026122cd1332fffefa320d2bb64_icgraph" alt=""/></div>
 <map name="aclass_pos_j_a853ba026122cd1332fffefa320d2bb64_icgraph" id="aclass_pos_j_a853ba026122cd1332fffefa320d2bb64_icgraph">
-<area shape="rect" title=" " alt="" coords="715,57,893,98"/>
-<area shape="rect" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="489,5,626,32"/>
-<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="448,57,667,98"/>
-<area shape="rect" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="485,123,629,149"/>
-<area shape="rect" href="class_illa_graph.html#af20e678932ca7e84f298344b0eb0044d" title=" " alt="" coords="221,35,400,61"/>
-<area shape="rect" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="223,86,399,127"/>
-<area shape="rect" href="class_illa_controller_v3.html#a748a431a5356e997c92e4f3031595818" title=" " alt="" coords="5,27,173,69"/>
+<area shape="rect" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="1068,174,1247,215"/>
+<area shape="rect" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="836,64,973,91"/>
+<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="795,145,1014,186"/>
+<area shape="rect" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="833,211,977,237"/>
+<area shape="rect" href="class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="789,312,1020,339"/>
+<area shape="rect" href="class_movement.html#a61e8684d29228edd7038727af05d1051" title=" " alt="" coords="571,5,709,32"/>
+<area shape="rect" href="class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="539,57,741,98"/>
+<area shape="rect" href="class_illa_graph.html#a9424246a0aa5bfbee54058780b1d18ca" title=" " alt="" coords="551,123,729,149"/>
+<area shape="rect" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="552,174,728,215"/>
+<area shape="rect" href="class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="303,86,471,127"/>
+<area shape="rect" href="class_move_to_node.html#ae3c2423d26374a01693d9d7984889697" title=" " alt="" coords="302,152,473,179"/>
+<area shape="rect" href="class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="559,239,721,281"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="551,305,729,346"/>
+<area shape="rect" href="class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="543,371,737,397"/>
+<area shape="rect" href="class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="555,425,725,466"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="298,298,477,339"/>
+<area shape="rect" href="class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="284,363,491,405"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="291,429,484,470"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,429,236,470"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ac3dfe40857db8ffa58094191497c297f" name="ac3dfe40857db8ffa58094191497c297f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3dfe40857db8ffa58094191497c297f">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_pos_j.html">PosJ</a> PosJ.operator* </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a602afb6fa3d4262fb24414f06806d79a" name="a602afb6fa3d4262fb24414f06806d79a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a602afb6fa3d4262fb24414f06806d79a">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_pos_j.html">PosJ</a> PosJ.operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45fb9f608a2b484940a42b95e0edc303" name="a45fb9f608a2b484940a42b95e0edc303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45fb9f608a2b484940a42b95e0edc303">&#9670;&nbsp;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_pos_j.html">PosJ</a> PosJ.operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_pos_j.html">PosJ</a>&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -428,14 +714,30 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pos_j_a5071f901728aa6e54db6285c65d22910_icgraph.png" border="0" usemap="#aclass_pos_j_a5071f901728aa6e54db6285c65d22910_icgraph" alt=""/></div>
 <map name="aclass_pos_j_a5071f901728aa6e54db6285c65d22910_icgraph" id="aclass_pos_j_a5071f901728aa6e54db6285c65d22910_icgraph">
-<area shape="rect" title=" " alt="" coords="941,64,1076,91"/>
-<area shape="rect" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title=" " alt="" coords="715,57,893,98"/>
-<area shape="rect" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="489,5,626,32"/>
-<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="448,57,667,98"/>
-<area shape="rect" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="485,123,629,149"/>
-<area shape="rect" href="class_illa_graph.html#af20e678932ca7e84f298344b0eb0044d" title=" " alt="" coords="221,35,400,61"/>
-<area shape="rect" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="223,86,399,127"/>
-<area shape="rect" href="class_illa_controller_v3.html#a748a431a5356e997c92e4f3031595818" title=" " alt="" coords="5,27,173,69"/>
+<area shape="rect" title=" " alt="" coords="1327,364,1461,391"/>
+<area shape="rect" href="class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="1098,243,1277,285"/>
+<area shape="rect" href="class_illa_controller_v3.html#a4323aba4f9f36f59fcb9eab0d0695f99" title=" " alt="" coords="1096,389,1279,430"/>
+<area shape="rect" href="class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="864,64,1001,91"/>
+<area shape="rect" href="class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="823,174,1042,215"/>
+<area shape="rect" href="class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="861,251,1005,277"/>
+<area shape="rect" href="class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="817,312,1048,339"/>
+<area shape="rect" href="class_movement.html#a61e8684d29228edd7038727af05d1051" title=" " alt="" coords="585,5,723,32"/>
+<area shape="rect" href="class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="553,57,755,98"/>
+<area shape="rect" href="class_illa_graph.html#a9424246a0aa5bfbee54058780b1d18ca" title=" " alt="" coords="565,123,743,149"/>
+<area shape="rect" href="class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="566,174,742,215"/>
+<area shape="rect" href="class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="303,86,471,127"/>
+<area shape="rect" href="class_move_to_node.html#ae3c2423d26374a01693d9d7984889697" title=" " alt="" coords="302,152,473,179"/>
+<area shape="rect" href="class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="573,239,735,281"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="565,305,743,346"/>
+<area shape="rect" href="class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="557,371,751,397"/>
+<area shape="rect" href="class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="569,422,739,463"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="298,298,477,339"/>
+<area shape="rect" href="class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="284,363,491,405"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="291,429,484,470"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,429,236,470"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#ade751970fda0a178dcff565d146d5e35" title=" " alt="" coords="822,473,1043,529"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="557,488,751,515"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="539,539,769,581"/>
 </map>
 </div>
 
@@ -473,6 +775,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <dl class="section warning"><dt>Warning</dt><dd>: Values cropped to two decimal places. Intended for display </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_pos_j_a2acd1425539e39cbd0a2fb82ebd070e6_icgraph.png" border="0" usemap="#aclass_pos_j_a2acd1425539e39cbd0a2fb82ebd070e6_icgraph" alt=""/></div>
+<map name="aclass_pos_j_a2acd1425539e39cbd0a2fb82ebd070e6_icgraph" id="aclass_pos_j_a2acd1425539e39cbd0a2fb82ebd070e6_icgraph">
+<area shape="rect" title=" " alt="" coords="459,13,561,39"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="232,5,411,47"/>
+<area shape="rect" href="class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="5,5,184,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -523,72 +835,95 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a48e98aea4dad98fe9732a201217fbff5" name="a48e98aea4dad98fe9732a201217fbff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48e98aea4dad98fe9732a201217fbff5">&#9670;&nbsp;</a></span>Joint1Angle</h2>
+<a id="a8b8bfd042f127bbe13777f8368141411" name="a8b8bfd042f127bbe13777f8368141411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b8bfd042f127bbe13777f8368141411">&#9670;&nbsp;</a></span>BaseAngle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float PosJ.Joint1Angle</td>
+          <td class="memname">float PosJ.BaseAngle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af7046ec81e683259732a9b2de0fd019c" name="af7046ec81e683259732a9b2de0fd019c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7046ec81e683259732a9b2de0fd019c">&#9670;&nbsp;</a></span>Joint2Angle</h2>
+<a id="a28dc5a2bb3a8443cc2204c1e782e67ec" name="a28dc5a2bb3a8443cc2204c1e782e67ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28dc5a2bb3a8443cc2204c1e782e67ec">&#9670;&nbsp;</a></span>GripperAngle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float PosJ.Joint2Angle</td>
+          <td class="memname">float PosJ.GripperAngle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="affe4ef01f5c1214bcb7a668469a0da71" name="affe4ef01f5c1214bcb7a668469a0da71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affe4ef01f5c1214bcb7a668469a0da71">&#9670;&nbsp;</a></span>Joint3Angle</h2>
+<a id="a3317ec58b828e6774c960fb47ef02032" name="a3317ec58b828e6774c960fb47ef02032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3317ec58b828e6774c960fb47ef02032">&#9670;&nbsp;</a></span>MiddleAngle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float PosJ.Joint3Angle</td>
+          <td class="memname">float PosJ.MiddleAngle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae3361e13cee83709c7e8062a142bb0d3" name="ae3361e13cee83709c7e8062a142bb0d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3361e13cee83709c7e8062a142bb0d3">&#9670;&nbsp;</a></span>Joint4Angle</h2>
+<a id="afb5e464c385735986cd3f07ce0e787d2" name="afb5e464c385735986cd3f07ce0e787d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb5e464c385735986cd3f07ce0e787d2">&#9670;&nbsp;</a></span>ShoulderAngle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float PosJ.Joint4Angle</td>
+          <td class="memname">float PosJ.ShoulderAngle</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a98b7a8d2a9de94fa2c1117bd5649739d" name="a98b7a8d2a9de94fa2c1117bd5649739d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b7a8d2a9de94fa2c1117bd5649739d">&#9670;&nbsp;</a></span>Joint5Angle</h2>
+<a id="ad0fce85cd4d5141348f2e56645c642e9" name="ad0fce85cd4d5141348f2e56645c642e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0fce85cd4d5141348f2e56645c642e9">&#9670;&nbsp;</a></span>WristAngle</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float PosJ.Joint5Angle</td>
+          <td class="memname">float PosJ.WristAngle</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a2198da76e8a282c36ff096961760580c" name="a2198da76e8a282c36ff096961760580c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2198da76e8a282c36ff096961760580c">&#9670;&nbsp;</a></span>summedAngle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float PosJ.summedAngle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

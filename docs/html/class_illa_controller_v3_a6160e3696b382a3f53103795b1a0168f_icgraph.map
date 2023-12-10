@@ -1,7 +1,7 @@
 <map id="IllaControllerV3.AllNodesInRange" name="IllaControllerV3.AllNodesInRange">
-<area shape="rect" id="node1" title=" " alt="" coords="911,5,1076,47"/>
+<area shape="rect" id="node1" title="Get all the nodes within a certain radius of the robot base position." alt="" coords="911,5,1076,47"/>
 <area shape="rect" id="node2" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="700,5,863,47"/>
 <area shape="rect" id="node3" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="455,5,652,47"/>
-<area shape="rect" id="node4" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="232,5,407,47"/>
-<area shape="rect" id="node5" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#aa5cb39f48cd181882426f5c865952f2f" title=" " alt="" coords="232,5,407,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a28f63001d6ff55d1e75260633a3c1f9d" title=" " alt="" coords="5,5,184,47"/>
 </map>

@@ -2,8 +2,7 @@
 \label{class_insert_task}\index{InsertTask@{InsertTask}}
 
 
-Inheritance diagram for Insert\+Task\+:
-\nopagebreak
+Inheritance diagram for Insert\+Task\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Inheritance diagram for Insert\+Task\+:
 \end{figure}
 
 
-Collaboration diagram for Insert\+Task\+:
-\nopagebreak
+Collaboration diagram for Insert\+Task\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,9 +21,13 @@ Collaboration diagram for Insert\+Task\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+override void \mbox{\hyperlink{class_insert_task_acfe92211ab9795643a338b06034ab8e0}{Prepare\+For\+Execution}} ()
+\begin{DoxyCompactList}\small\item\em Called before the task is passed to the robot and split into actions. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_insert_task_a24d2ed4b9c468b17549f4c24db6136f3}{Draw\+Gizmos}} ()
+\item 
 override \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_insert_task_a7f4e04170d26d486c4b1989596955c67}{Bid\+From\+Task}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \item 
-override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_insert_task_abecf20f22cd85ef31c76a99b93f5d6ba}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
+override List$<$ \mbox{\hyperlink{class_abstract_action}{Abstract\+Action}} $>$ \mbox{\hyperlink{class_insert_task_a132747dbd8c24af9ee3ca6d76a711993}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \end{DoxyCompactItemize}
 
 
@@ -40,32 +42,54 @@ override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abst
 
 Implements \mbox{\hyperlink{class_abstract_task_a4e454ec4ebac472784b7703b1f0fdbd2}{Abstract\+Task}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_insert_task_a7f4e04170d26d486c4b1989596955c67_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_insert_task_abecf20f22cd85ef31c76a99b93f5d6ba}\label{class_insert_task_abecf20f22cd85ef31c76a99b93f5d6ba}} 
+\mbox{\Hypertarget{class_insert_task_a132747dbd8c24af9ee3ca6d76a711993}\label{class_insert_task_a132747dbd8c24af9ee3ca6d76a711993}} 
 \index{InsertTask@{InsertTask}!BreakIntoActions@{BreakIntoActions}}
 \index{BreakIntoActions@{BreakIntoActions}!InsertTask@{InsertTask}}
 \doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}}
-{\footnotesize\ttfamily override List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Insert\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily override List$<$ \mbox{\hyperlink{class_abstract_action}{Abstract\+Action}} $>$ Insert\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7}{Abstract\+Task}}.
+Implements \mbox{\hyperlink{class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1}{Abstract\+Task}}.
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_insert_task_abecf20f22cd85ef31c76a99b93f5d6ba_cgraph}
+\includegraphics[width=350pt]{class_insert_task_a132747dbd8c24af9ee3ca6d76a711993_cgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_insert_task_a24d2ed4b9c468b17549f4c24db6136f3}\label{class_insert_task_a24d2ed4b9c468b17549f4c24db6136f3}} 
+\index{InsertTask@{InsertTask}!DrawGizmos@{DrawGizmos}}
+\index{DrawGizmos@{DrawGizmos}!InsertTask@{InsertTask}}
+\doxysubsubsection{\texorpdfstring{DrawGizmos()}{DrawGizmos()}}
+{\footnotesize\ttfamily override void Insert\+Task.\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942}{Abstract\+Task}}.
+
+\mbox{\Hypertarget{class_insert_task_acfe92211ab9795643a338b06034ab8e0}\label{class_insert_task_acfe92211ab9795643a338b06034ab8e0}} 
+\index{InsertTask@{InsertTask}!PrepareForExecution@{PrepareForExecution}}
+\index{PrepareForExecution@{PrepareForExecution}!InsertTask@{InsertTask}}
+\doxysubsubsection{\texorpdfstring{PrepareForExecution()}{PrepareForExecution()}}
+{\footnotesize\ttfamily override void Insert\+Task.\+Prepare\+For\+Execution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called before the task is passed to the robot and split into actions. 
+
+
+
+Implements \mbox{\hyperlink{class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5}{Abstract\+Task}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

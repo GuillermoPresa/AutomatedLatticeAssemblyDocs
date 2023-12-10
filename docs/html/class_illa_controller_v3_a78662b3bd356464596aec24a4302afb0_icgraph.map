@@ -1,6 +1,6 @@
 <map id="IllaControllerV3.CurrentPosX" name="IllaControllerV3.CurrentPosX">
-<area shape="rect" id="node1" title=" " alt="" coords="485,46,671,73"/>
-<area shape="rect" id="node2" href="$class_movement_action.html#a1b75aafde4126f6a0dfcf459e909d3d5" title=" " alt="" coords="253,5,436,47"/>
-<area shape="rect" id="node3" href="$class_move_and_insert_in_node.html#acd340b01cbc3a5c8ad5f2a637de8f85c" title=" " alt="" coords="252,71,437,112"/>
-<area shape="rect" id="node4" href="$class_move_and_insert_in_node.html#a949a3018a59cdf8c6893b86124df5ff7" title=" " alt="" coords="5,71,204,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="463,46,648,73"/>
+<area shape="rect" id="node2" href="$class_movement_action.html#a1b75aafde4126f6a0dfcf459e909d3d5" title=" " alt="" coords="232,5,415,47"/>
+<area shape="rect" id="node3" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="234,71,413,112"/>
+<area shape="rect" id="node4" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="5,71,184,112"/>
 </map>

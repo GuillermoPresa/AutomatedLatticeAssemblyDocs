@@ -1,0 +1,4 @@
+<map id="StoreLattice" name="StoreLattice">
+<area shape="rect" id="node1" title="Puts the currently screwed in lattice into the storage point of the opposite differential joint." alt="" coords="13,80,105,107"/>
+<area shape="rect" id="node2" href="$class_abstract_action.html" title=" " alt="" coords="5,5,113,32"/>
+</map>

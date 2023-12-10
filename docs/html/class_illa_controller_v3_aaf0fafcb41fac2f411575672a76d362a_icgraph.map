@@ -1,5 +1,6 @@
 <map id="IllaControllerV3.UpdateJointPosition" name="IllaControllerV3.UpdateJointPosition">
-<area shape="rect" id="node1" title=" " alt="" coords="525,5,707,47"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="525,39,707,80"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="300,5,461,47"/>
+<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,71,477,112"/>
+<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,71,236,112"/>
 </map>

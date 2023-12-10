@@ -1,10 +1,4 @@
 <map id="Assets.Resources.Objects.ILLAV3.DifferentialJoint.JointAnglesFromMotorAngles" name="Assets.Resources.Objects.ILLAV3.DifferentialJoint.JointAnglesFromMotorAngles">
-<area shape="rect" id="node1" title=" " alt="" coords="832,85,1019,141"/>
-<area shape="rect" id="node2" href="$class_i_l_l_a_v3___u_ielements.html#ade751970fda0a178dcff565d146d5e35" title=" " alt="" coords="563,45,784,101"/>
-<area shape="rect" id="node5" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a22d7ab33288a58072bacb12933a7ca77" title=" " alt="" coords="564,125,783,181"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="303,5,496,32"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="284,57,515,98"/>
-<area shape="rect" id="node6" href="$class_i_l_l_a_state___connected.html#a36054f3768114ee26801c00fe84d7a17" title=" " alt="" coords="308,129,491,170"/>
-<area shape="rect" id="node7" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="303,194,496,235"/>
-<area shape="rect" id="node8" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,194,236,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="272,5,459,61"/>
+<area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a22d7ab33288a58072bacb12933a7ca77" title=" " alt="" coords="5,5,224,61"/>
 </map>

@@ -1,11 +1,12 @@
 <map id="PosX.PosX" name="PosX.PosX">
-<area shape="rect" id="node1" title=" " alt="" coords="907,100,993,127"/>
-<area shape="rect" id="node2" href="$class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e" title=" " alt="" coords="704,75,859,101"/>
-<area shape="rect" id="node9" href="$class_pos_x.html#ac464e8608213e5f775826a3763a7a3c7" title=" " alt="" coords="714,125,849,152"/>
-<area shape="rect" id="node3" href="$class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="472,64,655,91"/>
-<area shape="rect" id="node7" href="$class_move_and_insert_in_node.html#acd340b01cbc3a5c8ad5f2a637de8f85c" title=" " alt="" coords="471,118,656,159"/>
-<area shape="rect" id="node4" href="$class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc" title=" " alt="" coords="229,5,417,32"/>
-<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="238,57,409,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="913,100,1000,127"/>
+<area shape="rect" id="node2" href="$class_pos_x.html#a75794cecd584d4ef31e4519fa201fa7e" title=" " alt="" coords="711,71,865,97"/>
+<area shape="rect" id="node7" href="$class_pos_x.html#ac464e8608213e5f775826a3763a7a3c7" title=" " alt="" coords="721,125,855,152"/>
+<area shape="rect" id="node3" href="$class_movement.html#a8bace0704cfea07f7b4693b5907fe135" title=" " alt="" coords="470,64,653,91"/>
+<area shape="rect" id="node4" href="$class_illa_graph_node.html#ad415df3fd267254b8e4d0693164282bc" title=" " alt="" coords="224,5,412,32"/>
+<area shape="rect" id="node5" href="$class_inchworm_robot_controller.html#a65806d94422f68079d1b3b0d410b8ed2" title=" " alt="" coords="233,57,403,98"/>
 <area shape="rect" id="node6" href="$class_inchworm_robot_controller.html#ab40b636922009970daf25226e1c0cbf8" title=" " alt="" coords="5,57,176,98"/>
-<area shape="rect" id="node8" href="$class_move_and_insert_in_node.html#a949a3018a59cdf8c6893b86124df5ff7" title=" " alt="" coords="224,122,423,163"/>
+<area shape="rect" id="node8" href="$class_store_lattice.html#a0e282403dc039fcc354ba7ed87198cf6" title=" " alt="" coords="478,125,645,152"/>
+<area shape="rect" id="node10" href="$class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="460,177,663,218"/>
+<area shape="rect" id="node9" href="$class_store_lattice.html#a9fb1048840a85d3d5d58541760a776a7" title=" " alt="" coords="227,122,409,163"/>
 </map>

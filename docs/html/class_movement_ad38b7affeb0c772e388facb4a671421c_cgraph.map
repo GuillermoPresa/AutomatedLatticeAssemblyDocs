@@ -1,0 +1,10 @@
+<map id="Movement.PosJRobotAngleCostDict" name="Movement.PosJRobotAngleCostDict">
+<area shape="rect" id="node1" title=" " alt="" coords="5,105,236,132"/>
+<area shape="rect" id="node2" href="$class_pos_j.html#afbbe0731c53f2eeeeaa2c8b9f6cd4781" title=" " alt="" coords="284,76,487,103"/>
+<area shape="rect" id="node5" href="$class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="296,127,475,169"/>
+<area shape="rect" id="node3" href="$class_angle_utilities.html#a86590d2f2a099f38a66906d7a6c43859" title=" " alt="" coords="535,29,749,56"/>
+<area shape="rect" id="node4" href="$class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="840,80,924,107"/>
+<area shape="rect" id="node6" href="$class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1" title=" " alt="" coords="581,131,703,157"/>
+<area shape="rect" id="node8" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="575,181,709,208"/>
+<area shape="rect" id="node7" href="$class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="797,131,967,157"/>
+</map>

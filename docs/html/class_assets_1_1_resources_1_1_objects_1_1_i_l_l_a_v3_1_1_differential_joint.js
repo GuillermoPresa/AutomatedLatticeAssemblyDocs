@@ -1,14 +1,25 @@
 var class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint =
 [
-    [ "DifferentialJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a16c66a47b944bdb7814689e62b6c1af0", null ],
+    [ "DifferentialJoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a3ec7d449904748dc967182676fde83b1", null ],
+    [ "actuateN20Motor", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a17e4f07b7ccaedf520de4ce42730e85f", null ],
     [ "ClampJointAngles", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#aa1afe8a3b0776e47f670e08b4727b8ed", null ],
     [ "JointAnglesFromMotorAngles", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a4e9139bcac07064e3daee6547ad680d9", null ],
     [ "MotorAnglesFromJointAngles", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a1e7f51d0a9a3732a742980a008d82513", null ],
+    [ "ToggleScrewing", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a5f1b6b95a564497155bc4d7753407e7c", null ],
     [ "updateJointAngleFromServoCurrentAngle", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a22d7ab33288a58072bacb12933a7ca77", null ],
+    [ "UpdateScrewedInLatticePosition", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a1ca663a65c669e7499608efacba3d594", null ],
     [ "updateServoGoalAngleFromTargetAngle", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#abc3cdc4dee3d6bc3ebe6397fcb047c94", null ],
+    [ "UpdateStoredLatticePosition", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a64c38e52e429e8d9c84c52769804250d", null ],
     [ "clamped_commonMode_JointAngle", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a2ac92da17d709d01ab1d14551be94bf2", null ],
     [ "common_JointAngle", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a7eef0673fc3e5b0ee297e5adde92243b", null ],
     [ "differentialJoint_index", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a9acf087dac71b5bde4df2f524125b80b", null ],
     [ "differentialJointConfig", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#ae75de8b685adaf09aa1adb6b1838f5df", null ],
-    [ "M1Angle", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#aa441a29bdceac5e93f8cbf77206c9b8f", null ]
+    [ "M1Angle", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#aa441a29bdceac5e93f8cbf77206c9b8f", null ],
+    [ "screwInDuration_sec", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a7810cfd562cf91e7b65c285ecb676b3c", null ],
+    [ "storagePoint_Inv", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a7b05b1ea5a5b3c175eeb3bdb38622a9e", null ],
+    [ "storagePoint_NonInv", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#ab6b4ae2b482246ed341c73932db97fb0", null ],
+    [ "timeStartScrewing_sec", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#ad4cc49018a8491cfc94993fefa989d0c", null ],
+    [ "isN20Screwing", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#ae04f663695bf7b9908d8d43c331417fa", null ],
+    [ "nodeSensorScript", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#af9ca7605fb07e55dff7aad510c6f2092", null ],
+    [ "storagePoint", "class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#aee34451c8e955f832e6b89f0f5bbd1d7", null ]
 ];

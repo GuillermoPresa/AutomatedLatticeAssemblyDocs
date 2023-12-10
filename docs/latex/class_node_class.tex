@@ -11,14 +11,18 @@ Inheritance diagram for Node\+Class\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Node\+Class\+:
-\nopagebreak
+Collaboration diagram for Node\+Class\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_node_class__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_node_class_ac54348aedd573b871191b690e6486100}{Nearby\+Nodes}} (float distance\+To\+Check, bool remove\+Target\+Location\+Nodes)
+\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,6 +42,28 @@ int \mbox{\hyperlink{class_node_class_ab89bab0bffacfbaa90183ed2007fdf30}{Times\+
 \item 
 Game\+Object \mbox{\hyperlink{class_node_class_ac0f72dddc7c1bf82be350742962a63dd}{Renderer\+Object}}
 \end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_node_class_ac7729db625fee689f7c1110649db138b}{placed\+Lattice}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_node_class_a267eca00044c81159be08b2a021be90c}{construction\+Target\+Location\+Lattice}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_node_class_a5f0b1818821bd234ca6235b2f74aaf05}{available\+For\+Pickup\+Lattice}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_lattice_class}{Lattice\+Class}} \mbox{\hyperlink{class_node_class_a4717a9f507bdec536a97db0a371521bb}{Lattice\+Class}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_node_class_abafaae02612a7e6ed11c60801152a4bf}{can\+Connect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_node_class_ac54348aedd573b871191b690e6486100}\label{class_node_class_ac54348aedd573b871191b690e6486100}} 
+\index{NodeClass@{NodeClass}!NearbyNodes@{NearbyNodes}}
+\index{NearbyNodes@{NearbyNodes}!NodeClass@{NodeClass}}
+\doxysubsubsection{\texorpdfstring{NearbyNodes()}{NearbyNodes()}}
+{\footnotesize\ttfamily List$<$ Game\+Object $>$ Node\+Class.\+Nearby\+Nodes (\begin{DoxyParamCaption}\item[{float}]{distance\+To\+Check,  }\item[{bool}]{remove\+Target\+Location\+Nodes }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -88,6 +114,39 @@ Game\+Object \mbox{\hyperlink{class_node_class_ac0f72dddc7c1bf82be350742962a63dd
 \index{TimesVisited@{TimesVisited}!NodeClass@{NodeClass}}
 \doxysubsubsection{\texorpdfstring{TimesVisited}{TimesVisited}}
 {\footnotesize\ttfamily int Node\+Class.\+Times\+Visited = 0}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_node_class_a5f0b1818821bd234ca6235b2f74aaf05}\label{class_node_class_a5f0b1818821bd234ca6235b2f74aaf05}} 
+\index{NodeClass@{NodeClass}!availableForPickupLattice@{availableForPickupLattice}}
+\index{availableForPickupLattice@{availableForPickupLattice}!NodeClass@{NodeClass}}
+\doxysubsubsection{\texorpdfstring{availableForPickupLattice}{availableForPickupLattice}}
+{\footnotesize\ttfamily bool Node\+Class.\+available\+For\+Pickup\+Lattice\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_node_class_abafaae02612a7e6ed11c60801152a4bf}\label{class_node_class_abafaae02612a7e6ed11c60801152a4bf}} 
+\index{NodeClass@{NodeClass}!canConnect@{canConnect}}
+\index{canConnect@{canConnect}!NodeClass@{NodeClass}}
+\doxysubsubsection{\texorpdfstring{canConnect}{canConnect}}
+{\footnotesize\ttfamily bool Node\+Class.\+can\+Connect\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_node_class_a267eca00044c81159be08b2a021be90c}\label{class_node_class_a267eca00044c81159be08b2a021be90c}} 
+\index{NodeClass@{NodeClass}!constructionTargetLocationLattice@{constructionTargetLocationLattice}}
+\index{constructionTargetLocationLattice@{constructionTargetLocationLattice}!NodeClass@{NodeClass}}
+\doxysubsubsection{\texorpdfstring{constructionTargetLocationLattice}{constructionTargetLocationLattice}}
+{\footnotesize\ttfamily bool Node\+Class.\+construction\+Target\+Location\+Lattice\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_node_class_a4717a9f507bdec536a97db0a371521bb}\label{class_node_class_a4717a9f507bdec536a97db0a371521bb}} 
+\index{NodeClass@{NodeClass}!LatticeClass@{LatticeClass}}
+\index{LatticeClass@{LatticeClass}!NodeClass@{NodeClass}}
+\doxysubsubsection{\texorpdfstring{LatticeClass}{LatticeClass}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lattice_class}{Lattice\+Class}} Node\+Class.\+Lattice\+Class\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_node_class_ac7729db625fee689f7c1110649db138b}\label{class_node_class_ac7729db625fee689f7c1110649db138b}} 
+\index{NodeClass@{NodeClass}!placedLattice@{placedLattice}}
+\index{placedLattice@{placedLattice}!NodeClass@{NodeClass}}
+\doxysubsubsection{\texorpdfstring{placedLattice}{placedLattice}}
+{\footnotesize\ttfamily bool Node\+Class.\+placed\+Lattice\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

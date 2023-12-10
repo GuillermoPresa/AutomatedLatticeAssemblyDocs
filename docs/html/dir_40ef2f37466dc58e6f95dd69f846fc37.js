@@ -10,6 +10,7 @@ var dir_40ef2f37466dc58e6f95dd69f846fc37 =
     [ "ILLAConfiguration.cs", "_i_l_l_a_configuration_8cs.html", "_i_l_l_a_configuration_8cs" ],
     [ "IllaControllerV3.cs", "_illa_controller_v3_8cs.html", "_illa_controller_v3_8cs" ],
     [ "ILLAJointClassV3.cs", "_i_l_l_a_joint_class_v3_8cs.html", "_i_l_l_a_joint_class_v3_8cs" ],
+    [ "ILLAlogger.cs", "_i_l_l_alogger_8cs.html", "_i_l_l_alogger_8cs" ],
     [ "ILLAV3_UIelements.cs", "_i_l_l_a_v3___u_ielements_8cs.html", "_i_l_l_a_v3___u_ielements_8cs" ],
     [ "LSS_Joint.cs", "_l_s_s___joint_8cs.html", null ],
     [ "LSS_library_controller.cs", "_l_s_s__library__controller_8cs.html", "_l_s_s__library__controller_8cs" ],

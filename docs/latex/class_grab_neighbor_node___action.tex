@@ -1,0 +1,146 @@
+\hypertarget{class_grab_neighbor_node___action}{}\doxysection{Grab\+Neighbor\+Node\+\_\+\+Action Class Reference}
+\label{class_grab_neighbor_node___action}\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+
+
+This actions moves the robot arm and inserts the screwdriver into the node. First the arm moves a distance in front of the node and then pushes in.  
+
+
+
+
+Inheritance diagram for Grab\+Neighbor\+Node\+\_\+\+Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_grab_neighbor_node___action__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Grab\+Neighbor\+Node\+\_\+\+Action\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{class_grab_neighbor_node___action__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_grab_neighbor_node___action_a3301975aa234cde9ba64239188176ef7}{Setup\+Action}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+override void \mbox{\hyperlink{class_grab_neighbor_node___action_ab50c45a50b556d01d7dbe679a0d92471}{Execute\+Action\+Frame}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+override bool \mbox{\hyperlink{class_grab_neighbor_node___action_a38bcaed7037953203737eeaf42399418}{Has\+Action\+Finished}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+\mbox{\hyperlink{class_grab_neighbor_node___action_ae72ac5c5ffd4d9d20be11e971d5a3018}{Grab\+Neighbor\+Node\+\_\+\+Action}} (Game\+Object node\+To\+Insert\+In\+\_\+in, bool unscrew\+From\+Current=false, bool swap\+Base\+To\+Neighbor=false, bool screw\+In\+Neighbor=false, float z\+\_\+hop\+\_\+height=0.\+075f)
+\item 
+\mbox{\hyperlink{class_grab_neighbor_node___action_acb4a6ef6410eff889f0dee8302e96cbb}{Grab\+Neighbor\+Node\+\_\+\+Action}} (Game\+Object node\+To\+Insert\+In\+\_\+in, int ID, float z\+\_\+hop\+\_\+height=0.\+075f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_grab_neighbor_node___action_ac41b945af6e085560a2aea88f2d15135}{is\+Setup}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This actions moves the robot arm and inserts the screwdriver into the node. First the arm moves a distance in front of the node and then pushes in. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_grab_neighbor_node___action_ae72ac5c5ffd4d9d20be11e971d5a3018}\label{class_grab_neighbor_node___action_ae72ac5c5ffd4d9d20be11e971d5a3018}} 
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\doxysubsubsection{\texorpdfstring{GrabNeighborNode\_Action()}{GrabNeighborNode\_Action()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Grab\+Neighbor\+Node\+\_\+\+Action.\+Grab\+Neighbor\+Node\+\_\+\+Action (\begin{DoxyParamCaption}\item[{Game\+Object}]{node\+To\+Insert\+In\+\_\+in,  }\item[{bool}]{unscrew\+From\+Current = {\ttfamily false},  }\item[{bool}]{swap\+Base\+To\+Neighbor = {\ttfamily false},  }\item[{bool}]{screw\+In\+Neighbor = {\ttfamily false},  }\item[{float}]{z\+\_\+hop\+\_\+height = {\ttfamily 0.075f} }\end{DoxyParamCaption})}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ID   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Final configuration   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ unscrew\+From\+Current   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Swap\+Base\+To\+Neighbor   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Screw\+In\+Neighbor    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ ID   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Final configuration   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ unscrew\+From\+Current   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Swap\+Base\+To\+Neighbor   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Screw\+In\+Neighbor    }\\\cline{1-5}
+\endhead
+1   &Screwdriver only engaged with original base Original base remains   &false   &false   &false    \\\cline{1-5}
+2   &Screwdriver enganged with both original base and target node Original base remains   &false   &false   &true    \\\cline{1-5}
+3   &Screwdriver enganged with both original base and target node Base is swapped to target node   &false   &True   &true    \\\cline{1-5}
+4   &Screwdriver enganged only with target node Base is swapped to target node   &true   &True   &true   \\\cline{1-5}
+\end{longtabu}
+
+
+TODO\+: -\/\mbox{[}\mbox{]} Add drawings of the different configurations to the documentation \mbox{\Hypertarget{class_grab_neighbor_node___action_acb4a6ef6410eff889f0dee8302e96cbb}\label{class_grab_neighbor_node___action_acb4a6ef6410eff889f0dee8302e96cbb}} 
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\doxysubsubsection{\texorpdfstring{GrabNeighborNode\_Action()}{GrabNeighborNode\_Action()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Grab\+Neighbor\+Node\+\_\+\+Action.\+Grab\+Neighbor\+Node\+\_\+\+Action (\begin{DoxyParamCaption}\item[{Game\+Object}]{node\+To\+Insert\+In\+\_\+in,  }\item[{int}]{ID,  }\item[{float}]{z\+\_\+hop\+\_\+height = {\ttfamily 0.075f} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_grab_neighbor_node___action_ab50c45a50b556d01d7dbe679a0d92471}\label{class_grab_neighbor_node___action_ab50c45a50b556d01d7dbe679a0d92471}} 
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!ExecuteActionFrame@{ExecuteActionFrame}}
+\index{ExecuteActionFrame@{ExecuteActionFrame}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\doxysubsubsection{\texorpdfstring{ExecuteActionFrame()}{ExecuteActionFrame()}}
+{\footnotesize\ttfamily override void Grab\+Neighbor\+Node\+\_\+\+Action.\+Execute\+Action\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_action_a28482e081c73b550e7c4146eebc93a3c}{Abstract\+Action}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_grab_neighbor_node___action_ab50c45a50b556d01d7dbe679a0d92471_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_grab_neighbor_node___action_a38bcaed7037953203737eeaf42399418}\label{class_grab_neighbor_node___action_a38bcaed7037953203737eeaf42399418}} 
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!HasActionFinished@{HasActionFinished}}
+\index{HasActionFinished@{HasActionFinished}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\doxysubsubsection{\texorpdfstring{HasActionFinished()}{HasActionFinished()}}
+{\footnotesize\ttfamily override bool Grab\+Neighbor\+Node\+\_\+\+Action.\+Has\+Action\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_action_a63c08eab129837051799c020092bb74d}{Abstract\+Action}}.
+
+\mbox{\Hypertarget{class_grab_neighbor_node___action_a3301975aa234cde9ba64239188176ef7}\label{class_grab_neighbor_node___action_a3301975aa234cde9ba64239188176ef7}} 
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!SetupAction@{SetupAction}}
+\index{SetupAction@{SetupAction}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\doxysubsubsection{\texorpdfstring{SetupAction()}{SetupAction()}}
+{\footnotesize\ttfamily override void Grab\+Neighbor\+Node\+\_\+\+Action.\+Setup\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_action_ab951d1dcae68e3607e1ac44b195d27ed}{Abstract\+Action}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_grab_neighbor_node___action_a3301975aa234cde9ba64239188176ef7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_grab_neighbor_node___action_a3301975aa234cde9ba64239188176ef7_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_grab_neighbor_node___action_ac41b945af6e085560a2aea88f2d15135}\label{class_grab_neighbor_node___action_ac41b945af6e085560a2aea88f2d15135}} 
+\index{GrabNeighborNode\_Action@{GrabNeighborNode\_Action}!isSetup@{isSetup}}
+\index{isSetup@{isSetup}!GrabNeighborNode\_Action@{GrabNeighborNode\_Action}}
+\doxysubsubsection{\texorpdfstring{isSetup}{isSetup}}
+{\footnotesize\ttfamily bool Grab\+Neighbor\+Node\+\_\+\+Action.\+is\+Setup = false}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+Actions/\mbox{\hyperlink{_move_and_insert_in_nearby_node_8cs}{Move\+And\+Insert\+In\+Nearby\+Node.\+cs}}\end{DoxyCompactItemize}

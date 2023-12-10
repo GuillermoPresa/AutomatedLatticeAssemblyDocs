@@ -1,5 +1,8 @@
 <map id="Movement.Movement" name="Movement.Movement">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,149,39"/>
-<area shape="rect" id="node2" href="$class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title=" " alt="" coords="197,5,376,47"/>
-<area shape="rect" id="node3" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="424,13,559,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,149,83"/>
+<area shape="rect" id="node2" href="$class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="197,49,376,90"/>
+<area shape="rect" id="node3" href="$class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1" title=" " alt="" coords="430,31,553,57"/>
+<area shape="rect" id="node6" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="424,81,559,108"/>
+<area shape="rect" id="node4" href="$class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="607,5,776,32"/>
+<area shape="rect" id="node5" href="$class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="649,56,733,83"/>
 </map>

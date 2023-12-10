@@ -1,11 +1,13 @@
 var class_references =
 [
     [ "TextureRenderingJobs", "struct_references_1_1_texture_rendering_jobs.html", "struct_references_1_1_texture_rendering_jobs" ],
+    [ "ForceTimeStep", "class_references.html#aebf33afea232e7942ad4edb628c248f3", null ],
     [ "RefreshAvailableConfigurationList", "class_references.html#a04c0d628f2c5d5e4e7f02bb6e1905ba5", null ],
     [ "ReloadAvailableFileNames", "class_references.html#a0b3f57736871cc72fc77597b388d77e6", null ],
     [ "SortAndAddToObjectList", "class_references.html#a01a2db7007bf1cdf014c958da61a4172", null ],
     [ "Start", "class_references.html#afa18f3ec6ac4f878c28b3b4d66203270", null ],
     [ "Update", "class_references.html#a35e69fd2a60b35f1a70276b8d23f6056", null ],
+    [ "availableStructureMaterial", "class_references.html#a534012cb40ae4126cc16b57b1543cbf6", null ],
     [ "Building", "class_references.html#a5691572b32aa4cfe355fb0e274d14f2c", null ],
     [ "EnvironmentManagerParent", "class_references.html#a2fbc9c538f58b0beda41d3bb78ad292a", null ],
     [ "EnvironmentManagerScriptReference", "class_references.html#af8e054fe1c13431c880b5f31bed63e49", null ],
@@ -20,7 +22,6 @@ var class_references =
     [ "heatmapTexture", "class_references.html#ad09689e5e7c0b72181f061c4877604fd", null ],
     [ "ILLAV3configurationFilesPath", "class_references.html#a8afcdcd5955be2f0148cb939d65c02bd", null ],
     [ "ILLAV3configurationNameList", "class_references.html#aef82ebd21ac22584c4f173da0b86a67b", null ],
-    [ "InitialStructureMaterial", "class_references.html#a67ded95600ec59d53ba4b5bdcaa2b315", null ],
     [ "Lattice", "class_references.html#a3760c76d3c9ef01a6fac7e3e549184f2", null ],
     [ "LatticeBoundingBoxMesh", "class_references.html#af4a195a6edf4c8d2b65783c2e6222d05", null ],
     [ "LatticeHighlighter", "class_references.html#a02ed04f25220d583c8fba1a1cf0d63e1", null ],
@@ -32,12 +33,19 @@ var class_references =
     [ "ObjectCount", "class_references.html#aa8e873a41635ab94001b3f8bd0bf57c6", null ],
     [ "ObjectParentPrefab", "class_references.html#aad351d151e3aec04eca0d82d16cd39bc", null ],
     [ "ObjectsPath", "class_references.html#af78ba2e50d3f68e0323493c574eefdf3", null ],
+    [ "placedStructureMaterial", "class_references.html#a8be5c7b5811b4070ad0752fd6db936b7", null ],
     [ "RenderingJobQueue", "class_references.html#a183bf8d1ecc6580326f829b6056ced32", null ],
     [ "robotCoordinator", "class_references.html#a08cca545f3554bffb44bc168d3c4fb37", null ],
     [ "RobotWorker", "class_references.html#aa13e3df440ffcbb539ff51e5d48737d8", null ],
     [ "SelectedEnvironmentIndex", "class_references.html#a582889e077f59d4fb05312eea9ef816d", null ],
+    [ "structureDefinitionMaterial", "class_references.html#a6c7f1ac9963bc2bbd70e907915d18a6c", null ],
     [ "StructureMaterial", "class_references.html#a3d1a9e20ce2f8a4963939e59ba0a4fd1", null ],
+    [ "textGizmosReference", "class_references.html#a8f43f6e0c043b4c600d15c0d3055dc1d", null ],
     [ "TimeMultiplyier", "class_references.html#a6d192c4617a2686dc5dc5a969994e8be", null ],
     [ "TimeWindowBackground", "class_references.html#a7bdc6b08cec46317bcfc6623d987c7eb", null ],
-    [ "UnplacedLatticeMaterial", "class_references.html#adea2e447839f404e6fb011269ada64d4", null ]
+    [ "AvailableRobotWorkers", "class_references.html#a52c9007530db8ad54badfb2de966da27", null ],
+    [ "GlobalLatticeList_AvailableForPickup", "class_references.html#adf216d0a46970be935c522f74b3cfa3b", null ],
+    [ "GlobalLatticeList_Placed", "class_references.html#a3ec891129a107c80d9f589f3ef13d0fd", null ],
+    [ "GlobalLatticeList_ToBePLaced", "class_references.html#ac13064e64d098c33c5025ddd65db40db", null ],
+    [ "GlobalParentScript", "class_references.html#ac7a3fc06d54f5b81defcf66793d55a91", null ]
 ];

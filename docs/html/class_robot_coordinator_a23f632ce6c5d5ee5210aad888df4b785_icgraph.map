@@ -1,0 +1,4 @@
+<map id="RobotCoordinator.MatchAvailableAndToBePlaced" name="RobotCoordinator.MatchAvailableAndToBePlaced">
+<area shape="rect" id="node1" title="Matches the set of available lattices and the set of lattices to be placed and returns a dictionary w..." alt="" coords="220,5,433,47"/>
+<area shape="rect" id="node2" href="$class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="5,13,172,39"/>
+</map>

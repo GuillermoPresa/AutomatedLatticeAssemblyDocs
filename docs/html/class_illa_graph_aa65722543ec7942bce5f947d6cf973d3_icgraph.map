@@ -1,9 +1,13 @@
 <map id="IllaGraph.Clear" name="IllaGraph.Clear">
-<area shape="rect" id="node1" title=" " alt="" coords="783,126,889,153"/>
-<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a1997a2fbba1b2b7a1aef51e33fe1ebaf" title=" " alt="" coords="545,29,716,71"/>
-<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ae3c1a21d9501cd2723ca0ffba3e99b63" title=" " alt="" coords="541,119,720,160"/>
-<area shape="rect" id="node7" href="$class_inchworm_robot_controller.html#a8748b1488b66e0aea734ff0acf4a82fb" title=" " alt="" coords="527,208,735,249"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="284,119,479,160"/>
-<area shape="rect" id="node5" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,97,217,123"/>
-<area shape="rect" id="node6" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,148,236,189"/>
+<area shape="rect" id="node1" title=" " alt="" coords="805,126,912,153"/>
+<area shape="rect" id="node2" href="$class_inchworm_robot_controller.html#a1997a2fbba1b2b7a1aef51e33fe1ebaf" title=" " alt="" coords="568,29,739,71"/>
+<area shape="rect" id="node3" href="$class_inchworm_robot_controller.html#a8748b1488b66e0aea734ff0acf4a82fb" title=" " alt="" coords="549,119,757,160"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#a275f094090fdd01b1e3367b7514e468f" title=" " alt="" coords="564,208,743,249"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="309,77,477,119"/>
+<area shape="rect" id="node6" href="$class_map_nav_space_action.html#a0657a232e3510abdd8119a75bf88fd56" title=" " alt="" coords="295,143,490,184"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_v3___u_ielements.html#abac50970df051804eb59e7cca22514fa" title=" " alt="" coords="295,208,490,249"/>
+<area shape="rect" id="node10" href="$class_map_nav_space_action.html#a5788a839614f314348803215c6260aab" title=" " alt="" coords="284,274,501,301"/>
+<area shape="rect" id="node11" href="$class_place_lattice.html#ad182b38a5222b30138ab92fd811db85a" title=" " alt="" coords="308,325,477,351"/>
+<area shape="rect" id="node8" href="$class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,186,217,213"/>
+<area shape="rect" id="node9" href="$class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,237,236,279"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="IllaControllerV3.IsPoseWithinLimits" name="IllaControllerV3.IsPoseWithinLimits">
+<area shape="rect" id="node1" title="Checks if the input PosJ is within the motion limits of the robot." alt="" coords="5,22,196,63"/>
+<area shape="rect" id="node2" href="$class_angle_utilities.html#a6d0cb1ecba4db0c1f185330c87692db8" title=" " alt="" coords="244,29,415,56"/>
+</map>

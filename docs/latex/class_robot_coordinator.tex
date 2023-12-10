@@ -11,8 +11,7 @@ Inheritance diagram for Robot\+Coordinator\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Robot\+Coordinator\+:
-\nopagebreak
+Collaboration diagram for Robot\+Coordinator\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,8 +25,12 @@ void \mbox{\hyperlink{class_robot_coordinator_a1bd1aa98c0765f8cb744f5e8bb8cc9f1}
 \item 
 void \mbox{\hyperlink{class_robot_coordinator_ad80a6957b713627e779f9a8457e8a742}{Draw\+UI}} ()
 \item 
+void \mbox{\hyperlink{class_robot_coordinator_a1f724d6136d54e5e8aad091657f08a0a}{Construction\+Step}} ()
+\item 
 void \mbox{\hyperlink{class_robot_coordinator_a87569d0fdc9b61d4dd112d46241b6853}{New\+Move\+To\+Node\+Package}} (Game\+Object Target\+Node)
 \item 
+Dictionary$<$ Game\+Object, Game\+Object $>$ \mbox{\hyperlink{class_robot_coordinator_aa02b7b6a529510e30e010f3828f86526}{Match\+Available\+And\+To\+Be\+Placed}} (List$<$ Game\+Object $>$ nodes\+Avalable\+For\+Pickup\+In\+Range, List$<$ Game\+Object $>$ construction\+Front\+Nodes)
+\begin{DoxyCompactList}\small\item\em Matches the set of available lattices and the set of lattices to be placed and returns a dictionary with the lattices. The keys are the lattices avaialble for pickup and the values the lattices to be placed. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_robot_coordinator_adf62aefbd7ac012a5b5001b016e7636d}{Update}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
@@ -42,26 +45,64 @@ void \mbox{\hyperlink{class_robot_coordinator_adf62aefbd7ac012a5b5001b016e7636d}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_coordinator_a1f724d6136d54e5e8aad091657f08a0a}\label{class_robot_coordinator_a1f724d6136d54e5e8aad091657f08a0a}} 
+\index{RobotCoordinator@{RobotCoordinator}!ConstructionStep@{ConstructionStep}}
+\index{ConstructionStep@{ConstructionStep}!RobotCoordinator@{RobotCoordinator}}
+\doxysubsubsection{\texorpdfstring{ConstructionStep()}{ConstructionStep()}}
+{\footnotesize\ttfamily void Robot\+Coordinator.\+Construction\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_coordinator_a1f724d6136d54e5e8aad091657f08a0a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_coordinator_a1f724d6136d54e5e8aad091657f08a0a_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_robot_coordinator_ad80a6957b713627e779f9a8457e8a742}\label{class_robot_coordinator_ad80a6957b713627e779f9a8457e8a742}} 
 \index{RobotCoordinator@{RobotCoordinator}!DrawUI@{DrawUI}}
 \index{DrawUI@{DrawUI}!RobotCoordinator@{RobotCoordinator}}
 \doxysubsubsection{\texorpdfstring{DrawUI()}{DrawUI()}}
 {\footnotesize\ttfamily void Robot\+Coordinator.\+Draw\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_robot_coordinator_ad80a6957b713627e779f9a8457e8a742_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_robot_coordinator_ad80a6957b713627e779f9a8457e8a742_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_robot_coordinator_aa02b7b6a529510e30e010f3828f86526}\label{class_robot_coordinator_aa02b7b6a529510e30e010f3828f86526}} 
+\index{RobotCoordinator@{RobotCoordinator}!MatchAvailableAndToBePlaced@{MatchAvailableAndToBePlaced}}
+\index{MatchAvailableAndToBePlaced@{MatchAvailableAndToBePlaced}!RobotCoordinator@{RobotCoordinator}}
+\doxysubsubsection{\texorpdfstring{MatchAvailableAndToBePlaced()}{MatchAvailableAndToBePlaced()}}
+{\footnotesize\ttfamily Dictionary$<$ Game\+Object, Game\+Object $>$ Robot\+Coordinator.\+Match\+Available\+And\+To\+Be\+Placed (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{nodes\+Avalable\+For\+Pickup\+In\+Range,  }\item[{List$<$ Game\+Object $>$}]{construction\+Front\+Nodes }\end{DoxyParamCaption})}
+
+
+
+Matches the set of available lattices and the set of lattices to be placed and returns a dictionary with the lattices. The keys are the lattices avaialble for pickup and the values the lattices to be placed. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_coordinator_aa02b7b6a529510e30e010f3828f86526_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_robot_coordinator_a87569d0fdc9b61d4dd112d46241b6853}\label{class_robot_coordinator_a87569d0fdc9b61d4dd112d46241b6853}} 
@@ -70,16 +111,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{NewMoveToNodePackage()}{NewMoveToNodePackage()}}
 {\footnotesize\ttfamily void Robot\+Coordinator.\+New\+Move\+To\+Node\+Package (\begin{DoxyParamCaption}\item[{Game\+Object}]{Target\+Node }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_robot_coordinator_a87569d0fdc9b61d4dd112d46241b6853_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -98,6 +137,13 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{Update()}{Update()}}
 {\footnotesize\ttfamily void Robot\+Coordinator.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_robot_coordinator_adf62aefbd7ac012a5b5001b016e7636d_cgraph}
+\end{center}
+\end{figure}
 
 
 \doxysubsection{Member Data Documentation}

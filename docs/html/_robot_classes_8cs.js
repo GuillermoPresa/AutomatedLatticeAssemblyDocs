@@ -6,6 +6,5 @@ var _robot_classes_8cs =
     [ "RobotConfiguration", "class_robot_configuration.html", "class_robot_configuration" ],
     [ "Movement", "class_movement.html", "class_movement" ],
     [ "AngleUtilities", "class_angle_utilities.html", null ],
-    [ "FullRobotState", "class_full_robot_state.html", "class_full_robot_state" ],
-    [ "SD", "_robot_classes_8cs.html#ababa94d9960f4fef518b02331e6d9910", null ]
+    [ "FullRobotState", "class_full_robot_state.html", "class_full_robot_state" ]
 ];

@@ -1,0 +1,11 @@
+<map id="Movement.PosJRobotAngleCostDict" name="Movement.PosJRobotAngleCostDict">
+<area shape="rect" id="node1" title=" " alt="" coords="780,107,1011,134"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="555,5,716,47"/>
+<area shape="rect" id="node3" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="546,71,725,112"/>
+<area shape="rect" id="node5" href="$class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="539,137,732,163"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="550,191,721,232"/>
+<area shape="rect" id="node4" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="298,64,477,105"/>
+<area shape="rect" id="node6" href="$class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="284,129,491,171"/>
+<area shape="rect" id="node8" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="291,195,484,236"/>
+<area shape="rect" id="node9" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,195,236,236"/>
+</map>

@@ -1,0 +1,105 @@
+\hypertarget{class_move_to_node}{}\doxysection{Move\+To\+Node Class Reference}
+\label{class_move_to_node}\index{MoveToNode@{MoveToNode}}
+
+
+Inheritance diagram for Move\+To\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_move_to_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Move\+To\+Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_move_to_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_move_to_node_ae3c2423d26374a01693d9d7984889697}{Setup\+Action}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+override void \mbox{\hyperlink{class_move_to_node_a1463adf8bbafda834c69b4f73925e380}{Execute\+Action\+Frame}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+override bool \mbox{\hyperlink{class_move_to_node_a6e41338d79b1b150b22aa32aaf4251f4}{Has\+Action\+Finished}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+\mbox{\hyperlink{class_move_to_node_a7ec5afd907515545c12803e7a68d5806}{Move\+To\+Node}} (Game\+Object target\+Node\+\_\+in, bool move\+To\+Neighbor=false)
+\begin{DoxyCompactList}\small\item\em Action to move the robot to a far away node. During the setup of this action it is further broken into smaller actions. It allows some commonality in the breaking of tasks into actions as many actions require movements like this. A series of parameters allow for some flexibility in the breaking of the action into smaller actions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_move_to_node_a62ab2a7d2e3f093d58b423651b4139c9}{Move\+To\+Node}} (\mbox{\hyperlink{class_illa_navigation_path}{Illa\+Navigation\+Path}} nav\+Path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_move_to_node_a7ec5afd907515545c12803e7a68d5806}\label{class_move_to_node_a7ec5afd907515545c12803e7a68d5806}} 
+\index{MoveToNode@{MoveToNode}!MoveToNode@{MoveToNode}}
+\index{MoveToNode@{MoveToNode}!MoveToNode@{MoveToNode}}
+\doxysubsubsection{\texorpdfstring{MoveToNode()}{MoveToNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Move\+To\+Node.\+Move\+To\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{target\+Node\+\_\+in,  }\item[{bool}]{move\+To\+Neighbor = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Action to move the robot to a far away node. During the setup of this action it is further broken into smaller actions. It allows some commonality in the breaking of tasks into actions as many actions require movements like this. A series of parameters allow for some flexibility in the breaking of the action into smaller actions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Node\+\_\+in} & \\
+\hline
+{\em move\+To\+Neighbor\+\_\+in} & If true, the robot will move to the closest neighbor of the target node instead on the target node directly.\\
+\hline
+\end{DoxyParams}
+~\newline
+ \mbox{\Hypertarget{class_move_to_node_a62ab2a7d2e3f093d58b423651b4139c9}\label{class_move_to_node_a62ab2a7d2e3f093d58b423651b4139c9}} 
+\index{MoveToNode@{MoveToNode}!MoveToNode@{MoveToNode}}
+\index{MoveToNode@{MoveToNode}!MoveToNode@{MoveToNode}}
+\doxysubsubsection{\texorpdfstring{MoveToNode()}{MoveToNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Move\+To\+Node.\+Move\+To\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_navigation_path}{Illa\+Navigation\+Path}}}]{nav\+Path }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_move_to_node_a1463adf8bbafda834c69b4f73925e380}\label{class_move_to_node_a1463adf8bbafda834c69b4f73925e380}} 
+\index{MoveToNode@{MoveToNode}!ExecuteActionFrame@{ExecuteActionFrame}}
+\index{ExecuteActionFrame@{ExecuteActionFrame}!MoveToNode@{MoveToNode}}
+\doxysubsubsection{\texorpdfstring{ExecuteActionFrame()}{ExecuteActionFrame()}}
+{\footnotesize\ttfamily override void Move\+To\+Node.\+Execute\+Action\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_action_a28482e081c73b550e7c4146eebc93a3c}{Abstract\+Action}}.
+
+\mbox{\Hypertarget{class_move_to_node_a6e41338d79b1b150b22aa32aaf4251f4}\label{class_move_to_node_a6e41338d79b1b150b22aa32aaf4251f4}} 
+\index{MoveToNode@{MoveToNode}!HasActionFinished@{HasActionFinished}}
+\index{HasActionFinished@{HasActionFinished}!MoveToNode@{MoveToNode}}
+\doxysubsubsection{\texorpdfstring{HasActionFinished()}{HasActionFinished()}}
+{\footnotesize\ttfamily override bool Move\+To\+Node.\+Has\+Action\+Finished (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_action_a63c08eab129837051799c020092bb74d}{Abstract\+Action}}.
+
+\mbox{\Hypertarget{class_move_to_node_ae3c2423d26374a01693d9d7984889697}\label{class_move_to_node_ae3c2423d26374a01693d9d7984889697}} 
+\index{MoveToNode@{MoveToNode}!SetupAction@{SetupAction}}
+\index{SetupAction@{SetupAction}!MoveToNode@{MoveToNode}}
+\doxysubsubsection{\texorpdfstring{SetupAction()}{SetupAction()}}
+{\footnotesize\ttfamily override void Move\+To\+Node.\+Setup\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_action_ab951d1dcae68e3607e1ac44b195d27ed}{Abstract\+Action}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_move_to_node_ae3c2423d26374a01693d9d7984889697_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Resources/\+Objects/\+ILLAV3/\+Actions/\mbox{\hyperlink{_move_to_node_8cs}{Move\+To\+Node.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,8 @@
+<map id="AbstractRobotWorker.BreakIntoActions" name="AbstractRobotWorker.BreakIntoActions">
+<area shape="rect" id="node1" title=" " alt="" coords="259,122,444,163"/>
+<area shape="rect" id="node2" href="$class_insert_task.html#a132747dbd8c24af9ee3ca6d76a711993" title=" " alt="" coords="15,5,201,32"/>
+<area shape="rect" id="node3" href="$class_move_to_node_task.html#a6b481dc1eb795c24703a2c107e9f5c05" title=" " alt="" coords="17,57,199,98"/>
+<area shape="rect" id="node4" href="$class_pick_lattice_and_insert_in_location.html#a720d58eab5e588f79662817fe3a8400d" title=" " alt="" coords="5,122,211,163"/>
+<area shape="rect" id="node5" href="$class_pick_task.html#ad245113589165400514f24439757c986" title=" " alt="" coords="19,188,197,215"/>
+<area shape="rect" id="node6" href="$class_place_task.html#aaf95e9c769eea689d594638e967359c1" title=" " alt="" coords="15,239,201,265"/>
+</map>

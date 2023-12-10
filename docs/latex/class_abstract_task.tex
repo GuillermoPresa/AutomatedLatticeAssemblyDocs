@@ -2,20 +2,23 @@
 \label{class_abstract_task}\index{AbstractTask@{AbstractTask}}
 
 
-Inheritance diagram for Abstract\+Task\+:
-\nopagebreak
+Inheritance diagram for Abstract\+Task\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=254pt]{class_abstract_task__inherit__graph}
+\includegraphics[width=350pt]{class_abstract_task__inherit__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+abstract void \mbox{\hyperlink{class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5}{Prepare\+For\+Execution}} ()
+\begin{DoxyCompactList}\small\item\em Called before the task is passed to the robot and split into actions. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942}{Draw\+Gizmos}} ()
+\item 
 abstract \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} \mbox{\hyperlink{class_abstract_task_a4e454ec4ebac472784b7703b1f0fdbd2}{Bid\+From\+Task}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \item 
-abstract List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ \mbox{\hyperlink{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
+abstract List$<$ \mbox{\hyperlink{class_abstract_action}{Abstract\+Action}} $>$ \mbox{\hyperlink{class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1}{Break\+Into\+Actions}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \end{DoxyCompactItemize}
 
 
@@ -28,24 +31,61 @@ abstract List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abst
 
 
 
-Implemented in \mbox{\hyperlink{class_insert_task_a7f4e04170d26d486c4b1989596955c67}{Insert\+Task}}, and \mbox{\hyperlink{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a}{Move\+To\+Node\+Task}}.
+Implemented in \mbox{\hyperlink{class_insert_task_a7f4e04170d26d486c4b1989596955c67}{Insert\+Task}}, \mbox{\hyperlink{class_move_to_node_task_ac2e6f953256a0e312065892aec21dd1a}{Move\+To\+Node\+Task}}, \mbox{\hyperlink{class_pick_lattice_and_insert_in_location_ad65c03b5461732e911e5da8184f5718c}{Pick\+Lattice\+And\+Insert\+In\+Location}}, \mbox{\hyperlink{class_pick_task_a8bcc84284e6d07cb8b0d634914475982}{Pick\+Task}}, and \mbox{\hyperlink{class_place_task_a2e0da3da5ebf74e222efc5af19657de2}{Place\+Task}}.
 
-\mbox{\Hypertarget{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7}\label{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7}} 
+\mbox{\Hypertarget{class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1}\label{class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1}} 
 \index{AbstractTask@{AbstractTask}!BreakIntoActions@{BreakIntoActions}}
 \index{BreakIntoActions@{BreakIntoActions}!AbstractTask@{AbstractTask}}
 \doxysubsubsection{\texorpdfstring{BreakIntoActions()}{BreakIntoActions()}}
-{\footnotesize\ttfamily abstract List$<$ \mbox{\hyperlink{class_i_l_l_a_v3_abstract_action}{ILLAV3\+Abstract\+Action}} $>$ Abstract\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily abstract List$<$ \mbox{\hyperlink{class_abstract_action}{Abstract\+Action}} $>$ Abstract\+Task.\+Break\+Into\+Actions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{class_insert_task_abecf20f22cd85ef31c76a99b93f5d6ba}{Insert\+Task}}, and \mbox{\hyperlink{class_move_to_node_task_aeb33b7b1cdacd984e7e1d8db5c37499a}{Move\+To\+Node\+Task}}.
+Implemented in \mbox{\hyperlink{class_insert_task_a132747dbd8c24af9ee3ca6d76a711993}{Insert\+Task}}, \mbox{\hyperlink{class_move_to_node_task_a6b481dc1eb795c24703a2c107e9f5c05}{Move\+To\+Node\+Task}}, \mbox{\hyperlink{class_pick_lattice_and_insert_in_location_a720d58eab5e588f79662817fe3a8400d}{Pick\+Lattice\+And\+Insert\+In\+Location}}, \mbox{\hyperlink{class_pick_task_ad245113589165400514f24439757c986}{Pick\+Task}}, and \mbox{\hyperlink{class_place_task_aaf95e9c769eea689d594638e967359c1}{Place\+Task}}.
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_abstract_task_a7232eb64af8efecefaf21b9c96774dc7_icgraph}
+\includegraphics[width=350pt]{class_abstract_task_aaa42ad6544ee3a4e120cbdb7df27a5d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942}\label{class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942}} 
+\index{AbstractTask@{AbstractTask}!DrawGizmos@{DrawGizmos}}
+\index{DrawGizmos@{DrawGizmos}!AbstractTask@{AbstractTask}}
+\doxysubsubsection{\texorpdfstring{DrawGizmos()}{DrawGizmos()}}
+{\footnotesize\ttfamily abstract void Abstract\+Task.\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_insert_task_a24d2ed4b9c468b17549f4c24db6136f3}{Insert\+Task}}, \mbox{\hyperlink{class_move_to_node_task_ac7c9c7ae6ccb156f43137fc1ad61ea35}{Move\+To\+Node\+Task}}, \mbox{\hyperlink{class_pick_lattice_and_insert_in_location_a1ca3add4e1452c0650d96f916ae0991e}{Pick\+Lattice\+And\+Insert\+In\+Location}}, \mbox{\hyperlink{class_pick_task_a0f6526e135f2eb093d7b691aab076684}{Pick\+Task}}, and \mbox{\hyperlink{class_place_task_a481aa8d652b00ccf14522bdadeec4d91}{Place\+Task}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_task_a37d6f595d20ef4e87196ae6cbfc22942_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5}\label{class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5}} 
+\index{AbstractTask@{AbstractTask}!PrepareForExecution@{PrepareForExecution}}
+\index{PrepareForExecution@{PrepareForExecution}!AbstractTask@{AbstractTask}}
+\doxysubsubsection{\texorpdfstring{PrepareForExecution()}{PrepareForExecution()}}
+{\footnotesize\ttfamily abstract void Abstract\+Task.\+Prepare\+For\+Execution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called before the task is passed to the robot and split into actions. 
+
+
+
+Implemented in \mbox{\hyperlink{class_insert_task_acfe92211ab9795643a338b06034ab8e0}{Insert\+Task}}, \mbox{\hyperlink{class_move_to_node_task_ad57c33cb01cfaf30f056981a9b622833}{Move\+To\+Node\+Task}}, \mbox{\hyperlink{class_pick_lattice_and_insert_in_location_a519dd5bc49986dc71acd3e7708c5a8d5}{Pick\+Lattice\+And\+Insert\+In\+Location}}, \mbox{\hyperlink{class_pick_task_a7cf00f62c7a9e9bfe75798ccb77d42d0}{Pick\+Task}}, and \mbox{\hyperlink{class_place_task_a5f5688bf126d566dbe3dea225f43aa13}{Place\+Task}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_task_a10525aeaf83f134ebe10c20c9f3d56b5_icgraph}
 \end{center}
 \end{figure}
 

@@ -2,8 +2,7 @@
 \label{class_illa_graph}\index{IllaGraph@{IllaGraph}}
 
 
-Collaboration diagram for Illa\+Graph\+:
-\nopagebreak
+Collaboration diagram for Illa\+Graph\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -42,11 +41,11 @@ bool \mbox{\hyperlink{class_illa_graph_aa401d4cc167d5826fc3eb86310c14ae2}{Add\+E
 \item 
 bool \mbox{\hyperlink{class_illa_graph_adce9b902dd00be64c8904a1c49375e83}{Add\+Edge}} (\mbox{\hyperlink{class_movement}{Movement}} Target\+Movement)
 \item 
-bool \mbox{\hyperlink{class_illa_graph_a1a332f3a15e210a74c6564b102ced051}{Remove\+Node}} (Game\+Object value)
+bool \mbox{\hyperlink{class_illa_graph_ae3f33f0a8b884f6fdaad24573bdc3621}{Remove\+Lattice}} (Game\+Object lattice\+To\+Remove)
+\item 
+bool \mbox{\hyperlink{class_illa_graph_a0127e8b30fe14e3b088ac5f206152d8b}{Remove\+Node}} (Game\+Object node\+To\+Remove)
 \item 
 bool \mbox{\hyperlink{class_illa_graph_aba3fff1c6439fbbe6a455c866e3ef1c7}{Remove\+Edge}} (Game\+Object value1, Game\+Object value2)
-\item 
-void \mbox{\hyperlink{class_illa_graph_aca620313cf9e321b0d940db52cfac32e}{Remove\+Lattice}} (Game\+Object Lattice\+To\+Remove, Game\+Object Robot)
 \item 
 void \mbox{\hyperlink{class_illa_graph_aa65722543ec7942bce5f947d6cf973d3}{Clear}} ()
 \item 
@@ -58,7 +57,9 @@ List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ \mbox{\h
 \item 
 void \mbox{\hyperlink{class_illa_graph_a8fe0a5999ffbe2e512eb39702ead38c4}{Populate\+Incoming\+Neighbor\+Cost\+Dictionary}} ()
 \item 
-void \mbox{\hyperlink{class_illa_graph_a74382ceebce722167afd6af6efd11198}{Clear\+Costs\+From\+Origin}} ()
+float \mbox{\hyperlink{class_illa_graph_a7b280229f4bd2447b8c84a1fd1a53176}{Manhattan\+Distance\+Heuristic}} (Game\+Object current\+Node, Game\+Object target\+Node)
+\item 
+float \mbox{\hyperlink{class_illa_graph_a5755a8a14aefca0a1260c3b97455ad6a}{Euclidean\+Distance\+Heuristic}} (Game\+Object current\+Node, Game\+Object target\+Node)
 \item 
 float \mbox{\hyperlink{class_illa_graph_a56dc95c8e0b57ff0e6eaf5ead5bfab73}{Dijkstra\+Cost\+Functional}} (\mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}} state\+To\+Evaluate, Game\+Object target\+Node=null, float admissibility\+Criterion=0)
 \item 
@@ -66,16 +67,23 @@ float \mbox{\hyperlink{class_illa_graph_a414a569a3906535e41c6c04a46fe19ab}{AStar
 \item 
 string \mbox{\hyperlink{class_illa_graph_a373956d7031db44c593d5eafa23025e9}{state\+String}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} current\+Node, \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} previous\+Node)
 \item 
-\mbox{\hyperlink{class_illa_navigation_path}{Illa\+Navigation\+Path}} \mbox{\hyperlink{class_illa_graph_af20e678932ca7e84f298344b0eb0044d}{Find\+Shortest\+Path}} (Game\+Object goal\+Node, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} starting\+Configuration, int use\+States=0, Func$<$ \mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}}, Game\+Object, float, float $>$ cost\+Functional=null)
+\mbox{\hyperlink{class_illa_navigation_path}{Illa\+Navigation\+Path}} \mbox{\hyperlink{class_illa_graph_a9424246a0aa5bfbee54058780b1d18ca}{Find\+Shortest\+Path}} (Game\+Object goal\+Node, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} starting\+Configuration, int use\+States=0, bool path\+To\+Neighbor=false, Func$<$ \mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}}, Game\+Object, float, float $>$ cost\+Functional=null)
 \item 
 void \mbox{\hyperlink{class_illa_graph_afdc20abb7f68106a4856175a136832c9}{Shortest\+Path}} (Game\+Object goal\+Node, \mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}} starting\+Configuration)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_illa_graph_ab83fc44047840565dc83272bd068deb1}{construction\+Front\+Nodes}} = new List$<$Game\+Object$>$()
+\item 
 \mbox{\hyperlink{class_text_gizmos}{Text\+Gizmos}} \mbox{\hyperlink{class_illa_graph_a802cdcbcb08a20069de08696ae35276d}{text\+Gizmos\+Reference}}
 \item 
 \mbox{\hyperlink{class_references}{References}} \mbox{\hyperlink{class_illa_graph_ad20659d2dcda44b4ca42f31c4372faba}{reference\+Script\+Reference}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_illa_graph_a6d26a1235f18b363ae82af9198a8d9cd}{nodes\+Available\+For\+Pickup}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
@@ -148,6 +156,20 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{AStarCostFunctional()}{AStarCostFunctional()}}
 {\footnotesize\ttfamily float Illa\+Graph.\+AStar\+Cost\+Functional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}}}]{state\+To\+Evaluate,  }\item[{Game\+Object}]{target\+Node,  }\item[{float}]{admissibility\+Criterion = {\ttfamily 1} }\end{DoxyParamCaption})}
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a414a569a3906535e41c6c04a46fe19ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a414a569a3906535e41c6c04a46fe19ab_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_a55ba55f17212324720a155dd48ef692a}\label{class_illa_graph_a55ba55f17212324720a155dd48ef692a}} 
 \index{IllaGraph@{IllaGraph}!AverageSolutionsInMovement@{AverageSolutionsInMovement}}
 \index{AverageSolutionsInMovement@{AverageSolutionsInMovement}!IllaGraph@{IllaGraph}}
@@ -167,27 +189,13 @@ Returns the average number of posJ solutions in the movements of all the nodes i
 \doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
 {\footnotesize\ttfamily void Illa\+Graph.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=299pt]{class_illa_graph_aa65722543ec7942bce5f947d6cf973d3_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_illa_graph_aa65722543ec7942bce5f947d6cf973d3_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_a74382ceebce722167afd6af6efd11198}\label{class_illa_graph_a74382ceebce722167afd6af6efd11198}} 
-\index{IllaGraph@{IllaGraph}!ClearCostsFromOrigin@{ClearCostsFromOrigin}}
-\index{ClearCostsFromOrigin@{ClearCostsFromOrigin}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{ClearCostsFromOrigin()}{ClearCostsFromOrigin()}}
-{\footnotesize\ttfamily void Illa\+Graph.\+Clear\+Costs\+From\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
 \mbox{\Hypertarget{class_illa_graph_a3e2a417393dd3fd82b541325ee654e6f}\label{class_illa_graph_a3e2a417393dd3fd82b541325ee654e6f}} 
 \index{IllaGraph@{IllaGraph}!ContainsEdge@{ContainsEdge}}
 \index{ContainsEdge@{ContainsEdge}!IllaGraph@{IllaGraph}}
@@ -233,6 +241,103 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{DijkstraCostFunctional()}{DijkstraCostFunctional()}}
 {\footnotesize\ttfamily float Illa\+Graph.\+Dijkstra\+Cost\+Functional (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}}}]{state\+To\+Evaluate,  }\item[{Game\+Object}]{target\+Node = {\ttfamily null},  }\item[{float}]{admissibility\+Criterion = {\ttfamily 0} }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_illa_graph_a6017ffa189e27169af89c3b36049823d}\label{class_illa_graph_a6017ffa189e27169af89c3b36049823d}} 
+\index{IllaGraph@{IllaGraph}!DrawMesh@{DrawMesh}}
+\index{DrawMesh@{DrawMesh}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{DrawMesh()}{DrawMesh()}}
+{\footnotesize\ttfamily void Illa\+Graph.\+Draw\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a6017ffa189e27169af89c3b36049823d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_a5755a8a14aefca0a1260c3b97455ad6a}\label{class_illa_graph_a5755a8a14aefca0a1260c3b97455ad6a}} 
+\index{IllaGraph@{IllaGraph}!EuclideanDistanceHeuristic@{EuclideanDistanceHeuristic}}
+\index{EuclideanDistanceHeuristic@{EuclideanDistanceHeuristic}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{EuclideanDistanceHeuristic()}{EuclideanDistanceHeuristic()}}
+{\footnotesize\ttfamily float Illa\+Graph.\+Euclidean\+Distance\+Heuristic (\begin{DoxyParamCaption}\item[{Game\+Object}]{current\+Node,  }\item[{Game\+Object}]{target\+Node }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6}\label{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6}} 
+\index{IllaGraph@{IllaGraph}!FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}}
+\index{FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{FindGraphNodeFromNodeObject()}{FindGraphNodeFromNodeObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} Illa\+Graph.\+Find\+Graph\+Node\+From\+Node\+Object (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc}\label{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc}} 
+\index{IllaGraph@{IllaGraph}!FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}}
+\index{FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{FindGraphNodeFromNodeObject()}{FindGraphNodeFromNodeObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ Illa\+Graph.\+Find\+Graph\+Node\+From\+Node\+Object (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{Node\+List }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_a9424246a0aa5bfbee54058780b1d18ca}\label{class_illa_graph_a9424246a0aa5bfbee54058780b1d18ca}} 
+\index{IllaGraph@{IllaGraph}!FindShortestPath@{FindShortestPath}}
+\index{FindShortestPath@{FindShortestPath}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{FindShortestPath()}{FindShortestPath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_navigation_path}{Illa\+Navigation\+Path}} Illa\+Graph.\+Find\+Shortest\+Path (\begin{DoxyParamCaption}\item[{Game\+Object}]{goal\+Node,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{starting\+Configuration,  }\item[{int}]{use\+States = {\ttfamily 0},  }\item[{bool}]{path\+To\+Neighbor = {\ttfamily false},  }\item[{Func$<$ \mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}}, Game\+Object, float, float $>$}]{cost\+Functional = {\ttfamily null} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a9424246a0aa5bfbee54058780b1d18ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a9424246a0aa5bfbee54058780b1d18ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_acdfb644d57d63847867a558433d8c567}\label{class_illa_graph_acdfb644d57d63847867a558433d8c567}} 
+\index{IllaGraph@{IllaGraph}!GraphNodes@{GraphNodes}}
+\index{GraphNodes@{GraphNodes}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{GraphNodes()}{GraphNodes()}}
+{\footnotesize\ttfamily IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ Illa\+Graph.\+Graph\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd}\label{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd}} 
+\index{IllaGraph@{IllaGraph}!IsNodeVisited@{IsNodeVisited}}
+\index{IsNodeVisited@{IsNodeVisited}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{IsNodeVisited()}{IsNodeVisited()}}
+{\footnotesize\ttfamily bool Illa\+Graph.\+Is\+Node\+Visited (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_a7b280229f4bd2447b8c84a1fd1a53176}\label{class_illa_graph_a7b280229f4bd2447b8c84a1fd1a53176}} 
+\index{IllaGraph@{IllaGraph}!ManhattanDistanceHeuristic@{ManhattanDistanceHeuristic}}
+\index{ManhattanDistanceHeuristic@{ManhattanDistanceHeuristic}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{ManhattanDistanceHeuristic()}{ManhattanDistanceHeuristic()}}
+{\footnotesize\ttfamily float Illa\+Graph.\+Manhattan\+Distance\+Heuristic (\begin{DoxyParamCaption}\item[{Game\+Object}]{current\+Node,  }\item[{Game\+Object}]{target\+Node }\end{DoxyParamCaption})}
+
 Planning on the graph\+:
 
 \begin{DoxyVerb} Planning is the reasoning side of acting.\end{DoxyVerb}
@@ -263,93 +368,11 @@ X\+: states ~\newline
  f(x)\+: Cost utilized for evaluated the priority of the priority queue. Deternubes which nodes will be visited next. ~\newline
  g(x)\+: Cost of the path from the starting state x\+\_\+\{i\} to the current state\+\_\+\{x\} ~\newline
  h(x)\+: Heuristic function that aproximates the cost from the current state x to the goal state x\+\_\+\{g\} ~\newline
- e\+: Admissibility criterion \mbox{\Hypertarget{class_illa_graph_a6017ffa189e27169af89c3b36049823d}\label{class_illa_graph_a6017ffa189e27169af89c3b36049823d}} 
-\index{IllaGraph@{IllaGraph}!DrawMesh@{DrawMesh}}
-\index{DrawMesh@{DrawMesh}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{DrawMesh()}{DrawMesh()}}
-{\footnotesize\ttfamily void Illa\+Graph.\+Draw\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-Here is the caller graph for this function\+:
-\nopagebreak
+ e\+: Admissibility criterion Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_graph_a6017ffa189e27169af89c3b36049823d_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6}\label{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6}} 
-\index{IllaGraph@{IllaGraph}!FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}}
-\index{FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{FindGraphNodeFromNodeObject()}{FindGraphNodeFromNodeObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} Illa\+Graph.\+Find\+Graph\+Node\+From\+Node\+Object (\begin{DoxyParamCaption}\item[{Game\+Object}]{Node }\end{DoxyParamCaption})}
-
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_graph_acce37b4f311b3e074b0e0bb47f1cf7f6_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc}\label{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc}} 
-\index{IllaGraph@{IllaGraph}!FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}}
-\index{FindGraphNodeFromNodeObject@{FindGraphNodeFromNodeObject}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{FindGraphNodeFromNodeObject()}{FindGraphNodeFromNodeObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ Illa\+Graph.\+Find\+Graph\+Node\+From\+Node\+Object (\begin{DoxyParamCaption}\item[{List$<$ Game\+Object $>$}]{Node\+List }\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_graph_ab2f513419177900b8e9a2ad3867597cc_cgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_illa_graph_af20e678932ca7e84f298344b0eb0044d}\label{class_illa_graph_af20e678932ca7e84f298344b0eb0044d}} 
-\index{IllaGraph@{IllaGraph}!FindShortestPath@{FindShortestPath}}
-\index{FindShortestPath@{FindShortestPath}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{FindShortestPath()}{FindShortestPath()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_illa_navigation_path}{Illa\+Navigation\+Path}} Illa\+Graph.\+Find\+Shortest\+Path (\begin{DoxyParamCaption}\item[{Game\+Object}]{goal\+Node,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{starting\+Configuration,  }\item[{int}]{use\+States = {\ttfamily 0},  }\item[{Func$<$ \mbox{\hyperlink{class_illa_graph_1_1_i_l_l_astate}{ILLAstate}}, Game\+Object, float, float $>$}]{cost\+Functional = {\ttfamily null} }\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_graph_af20e678932ca7e84f298344b0eb0044d_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_graph_af20e678932ca7e84f298344b0eb0044d_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{class_illa_graph_acdfb644d57d63847867a558433d8c567}\label{class_illa_graph_acdfb644d57d63847867a558433d8c567}} 
-\index{IllaGraph@{IllaGraph}!GraphNodes@{GraphNodes}}
-\index{GraphNodes@{GraphNodes}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{GraphNodes()}{GraphNodes()}}
-{\footnotesize\ttfamily IList$<$ \mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} $>$ Illa\+Graph.\+Graph\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd}\label{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd}} 
-\index{IllaGraph@{IllaGraph}!IsNodeVisited@{IsNodeVisited}}
-\index{IsNodeVisited@{IsNodeVisited}!IllaGraph@{IllaGraph}}
-\doxysubsubsection{\texorpdfstring{IsNodeVisited()}{IsNodeVisited()}}
-{\footnotesize\ttfamily bool Illa\+Graph.\+Is\+Node\+Visited (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
-
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_illa_graph_ad9d0f28ac924e43e3f7eaa2a02288afd_icgraph}
+\includegraphics[width=350pt]{class_illa_graph_a7b280229f4bd2447b8c84a1fd1a53176_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_graph_a8fe0a5999ffbe2e512eb39702ead38c4}\label{class_illa_graph_a8fe0a5999ffbe2e512eb39702ead38c4}} 
@@ -358,16 +381,14 @@ Here is the caller graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{PopulateIncomingNeighborCostDictionary()}{PopulateIncomingNeighborCostDictionary()}}
 {\footnotesize\ttfamily void Illa\+Graph.\+Populate\+Incoming\+Neighbor\+Cost\+Dictionary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_illa_graph_a8fe0a5999ffbe2e512eb39702ead38c4_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -387,30 +408,44 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_aba3fff1c6439fbbe6a455c866e3ef1c7_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_aca620313cf9e321b0d940db52cfac32e}\label{class_illa_graph_aca620313cf9e321b0d940db52cfac32e}} 
+\mbox{\Hypertarget{class_illa_graph_ae3f33f0a8b884f6fdaad24573bdc3621}\label{class_illa_graph_ae3f33f0a8b884f6fdaad24573bdc3621}} 
 \index{IllaGraph@{IllaGraph}!RemoveLattice@{RemoveLattice}}
 \index{RemoveLattice@{RemoveLattice}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{RemoveLattice()}{RemoveLattice()}}
-{\footnotesize\ttfamily void Illa\+Graph.\+Remove\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice\+To\+Remove,  }\item[{Game\+Object}]{Robot }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Illa\+Graph.\+Remove\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{lattice\+To\+Remove }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_graph_aca620313cf9e321b0d940db52cfac32e_cgraph}
+\includegraphics[width=350pt]{class_illa_graph_ae3f33f0a8b884f6fdaad24573bdc3621_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_illa_graph_a1a332f3a15e210a74c6564b102ced051}\label{class_illa_graph_a1a332f3a15e210a74c6564b102ced051}} 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_ae3f33f0a8b884f6fdaad24573bdc3621_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_illa_graph_a0127e8b30fe14e3b088ac5f206152d8b}\label{class_illa_graph_a0127e8b30fe14e3b088ac5f206152d8b}} 
 \index{IllaGraph@{IllaGraph}!RemoveNode@{RemoveNode}}
 \index{RemoveNode@{RemoveNode}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{RemoveNode()}{RemoveNode()}}
-{\footnotesize\ttfamily bool Illa\+Graph.\+Remove\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Illa\+Graph.\+Remove\+Node (\begin{DoxyParamCaption}\item[{Game\+Object}]{node\+To\+Remove }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_illa_graph_a1a332f3a15e210a74c6564b102ced051_cgraph}
+\includegraphics[width=350pt]{class_illa_graph_a0127e8b30fe14e3b088ac5f206152d8b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a0127e8b30fe14e3b088ac5f206152d8b_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_illa_graph_adf602d79b553173ec449a8659d57b410}\label{class_illa_graph_adf602d79b553173ec449a8659d57b410}} 
@@ -426,14 +461,20 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_illa_graph_adf602d79b553173ec449a8659d57b410_cgraph}
 \end{center}
 \end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_adf602d79b553173ec449a8659d57b410_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_afdc20abb7f68106a4856175a136832c9}\label{class_illa_graph_afdc20abb7f68106a4856175a136832c9}} 
 \index{IllaGraph@{IllaGraph}!ShortestPath@{ShortestPath}}
 \index{ShortestPath@{ShortestPath}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{ShortestPath()}{ShortestPath()}}
 {\footnotesize\ttfamily void Illa\+Graph.\+Shortest\+Path (\begin{DoxyParamCaption}\item[{Game\+Object}]{goal\+Node,  }\item[{\mbox{\hyperlink{class_robot_configuration}{Robot\+Configuration}}}]{starting\+Configuration }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -446,6 +487,13 @@ Here is the call graph for this function\+:
 \doxysubsubsection{\texorpdfstring{stateString()}{stateString()}}
 {\footnotesize\ttfamily string Illa\+Graph.\+state\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{current\+Node,  }\item[{\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}}}]{previous\+Node }\end{DoxyParamCaption})}
 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_illa_graph_a373956d7031db44c593d5eafa23025e9_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_illa_graph_a28ffcb05dc76848f758318c41d1b49d0}\label{class_illa_graph_a28ffcb05dc76848f758318c41d1b49d0}} 
 \index{IllaGraph@{IllaGraph}!ToString@{ToString}}
 \index{ToString@{ToString}!IllaGraph@{IllaGraph}}
@@ -455,6 +503,12 @@ Here is the call graph for this function\+:
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_illa_graph_ab83fc44047840565dc83272bd068deb1}\label{class_illa_graph_ab83fc44047840565dc83272bd068deb1}} 
+\index{IllaGraph@{IllaGraph}!constructionFrontNodes@{constructionFrontNodes}}
+\index{constructionFrontNodes@{constructionFrontNodes}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{constructionFrontNodes}{constructionFrontNodes}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Illa\+Graph.\+construction\+Front\+Nodes = new List$<$Game\+Object$>$()}
+
 \mbox{\Hypertarget{class_illa_graph_ad20659d2dcda44b4ca42f31c4372faba}\label{class_illa_graph_ad20659d2dcda44b4ca42f31c4372faba}} 
 \index{IllaGraph@{IllaGraph}!referenceScriptReference@{referenceScriptReference}}
 \index{referenceScriptReference@{referenceScriptReference}!IllaGraph@{IllaGraph}}
@@ -466,6 +520,15 @@ Here is the call graph for this function\+:
 \index{textGizmosReference@{textGizmosReference}!IllaGraph@{IllaGraph}}
 \doxysubsubsection{\texorpdfstring{textGizmosReference}{textGizmosReference}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_text_gizmos}{Text\+Gizmos}} Illa\+Graph.\+text\+Gizmos\+Reference}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_illa_graph_a6d26a1235f18b363ae82af9198a8d9cd}\label{class_illa_graph_a6d26a1235f18b363ae82af9198a8d9cd}} 
+\index{IllaGraph@{IllaGraph}!nodesAvailableForPickup@{nodesAvailableForPickup}}
+\index{nodesAvailableForPickup@{nodesAvailableForPickup}!IllaGraph@{IllaGraph}}
+\doxysubsubsection{\texorpdfstring{nodesAvailableForPickup}{nodesAvailableForPickup}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Illa\+Graph.\+nodes\+Available\+For\+Pickup\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

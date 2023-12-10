@@ -1,5 +1,8 @@
 <map id="AbstractRobotWorker.bidFromTask" name="AbstractRobotWorker.bidFromTask">
-<area shape="rect" id="node1" title=" " alt="" coords="259,31,485,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="259,115,485,141"/>
 <area shape="rect" id="node2" href="$class_insert_task.html#a7f4e04170d26d486c4b1989596955c67" title=" " alt="" coords="27,5,189,32"/>
 <area shape="rect" id="node3" href="$class_move_to_node_task.html#ac2e6f953256a0e312065892aec21dd1a" title=" " alt="" coords="5,56,211,83"/>
+<area shape="rect" id="node4" href="$class_pick_lattice_and_insert_in_location.html#ad65c03b5461732e911e5da8184f5718c" title=" " alt="" coords="5,107,211,149"/>
+<area shape="rect" id="node5" href="$class_pick_task.html#a8bcc84284e6d07cb8b0d634914475982" title=" " alt="" coords="29,173,187,200"/>
+<area shape="rect" id="node6" href="$class_place_task.html#a2e0da3da5ebf74e222efc5af19657de2" title=" " alt="" coords="26,224,190,251"/>
 </map>

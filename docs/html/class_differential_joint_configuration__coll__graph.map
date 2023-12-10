@@ -1,6 +1,7 @@
 <map id="DifferentialJointConfiguration" name="DifferentialJointConfiguration">
-<area shape="rect" id="node1" title=" " alt="" coords="51,199,235,225"/>
-<area shape="rect" id="node2" href="$class_joint_configuration.html" title=" " alt="" coords="5,95,129,121"/>
-<area shape="rect" id="node3" href="$class_rotation_limit.html" title=" " alt="" coords="93,5,191,32"/>
-<area shape="rect" id="node4" href="$class_servo_configuration.html" title=" " alt="" coords="161,95,291,121"/>
+<area shape="rect" id="node1" title=" " alt="" coords="159,199,343,225"/>
+<area shape="rect" id="node2" href="$class_joint_configuration.html" title="Represents the configuration of a joint&#39;s rotation limit." alt="" coords="5,95,129,121"/>
+<area shape="rect" id="node3" href="$class_rotation_limit.html" title="Represents the rotation limits for joints and servos. Consist of a lower limit and an upper limit...." alt="" coords="93,5,191,32"/>
+<area shape="rect" id="node4" href="$class_servo_configuration.html" title=" " alt="" coords="153,95,283,121"/>
+<area shape="rect" id="node5" href="$class_n20_motor_config.html" title="Represents the configuration of the N20 motors inside the differential joints used for screwing in an..." alt="" coords="307,95,422,121"/>
 </map>

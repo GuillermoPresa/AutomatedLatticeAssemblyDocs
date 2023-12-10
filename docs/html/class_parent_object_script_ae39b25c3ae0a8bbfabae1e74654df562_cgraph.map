@@ -1,4 +1,4 @@
 <map id="ParentObjectScript.ForceTimeStep" name="ParentObjectScript.ForceTimeStep">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,175,47"/>
-<area shape="rect" id="node2" href="$class_lattice_collection.html#a33f2c72139145b522070e34e24e9bd98" title=" " alt="" coords="223,5,388,47"/>
+<area shape="rect" id="node2" href="$class_object_collection.html#a0f7ef448c889bd79464286c0804a0b34" title="Rebuilds the collection from scratch taking a look at the TimeStep from the globalManager...." alt="" coords="223,5,387,47"/>
 </map>

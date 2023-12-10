@@ -1,0 +1,10 @@
+<map id="IllaControllerV3.IsPoseWithinLimits" name="IllaControllerV3.IsPoseWithinLimits">
+<area shape="rect" id="node1" title="Checks if the input PosJ is within the motion limits of the robot." alt="" coords="1009,71,1200,112"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#aa0158e09dd29a7143e417fdd95a5bc5c" title="From an input movement return a new movement with only the PosJ solutions that are within the motion ..." alt="" coords="776,71,961,112"/>
+<area shape="rect" id="node3" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="537,5,716,47"/>
+<area shape="rect" id="node5" href="$class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="525,71,728,112"/>
+<area shape="rect" id="node6" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="541,136,712,177"/>
+<area shape="rect" id="node4" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="291,5,470,47"/>
+<area shape="rect" id="node7" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,136,477,177"/>
+<area shape="rect" id="node8" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,136,236,177"/>
+</map>

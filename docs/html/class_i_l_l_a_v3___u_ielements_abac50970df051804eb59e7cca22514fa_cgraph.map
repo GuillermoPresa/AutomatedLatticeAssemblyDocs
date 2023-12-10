@@ -1,7 +1,6 @@
 <map id="ILLAV3_UIelements.HighLevelControls" name="ILLAV3_UIelements.HighLevelControls">
 <area shape="rect" id="node1" title=" " alt="" coords="5,63,200,105"/>
 <area shape="rect" id="node2" href="$class_illa_controller_v3.html#a4f8582ad415c66a5bfed20200d39709d" title=" " alt="" coords="248,29,455,56"/>
-<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ae3c1a21d9501cd2723ca0ffba3e99b63" title=" " alt="" coords="262,105,441,146"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a275f094090fdd01b1e3367b7514e468f" title=" " alt="" coords="262,105,441,146"/>
 <area shape="rect" id="node4" href="$class_illa_graph.html#aa65722543ec7942bce5f947d6cf973d3" title=" " alt="" coords="503,112,609,139"/>
-<area shape="rect" id="node5" href="$class_illa_graph_node.html#a3f4e900afbf7c330eeb9849944d149c6" title=" " alt="" coords="657,112,795,139"/>
 </map>

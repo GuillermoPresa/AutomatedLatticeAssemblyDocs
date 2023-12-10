@@ -1,0 +1,5 @@
+<map id="IllaControllerV3.WithinLimitsMovement" name="IllaControllerV3.WithinLimitsMovement">
+<area shape="rect" id="node1" title="From an input movement return a new movement with only the PosJ solutions that are within the motion ..." alt="" coords="5,22,191,63"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#afb1c270b098bc2545d48a6329d2ca385" title="Checks if the input PosJ is within the motion limits of the robot." alt="" coords="239,22,429,63"/>
+<area shape="rect" id="node3" href="$class_angle_utilities.html#a6d0cb1ecba4db0c1f185330c87692db8" title=" " alt="" coords="477,29,648,56"/>
+</map>

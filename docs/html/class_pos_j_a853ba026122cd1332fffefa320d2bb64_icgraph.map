@@ -1,9 +1,21 @@
 <map id="PosJ.MaxAngularDiferenceFromPose" name="PosJ.MaxAngularDiferenceFromPose">
-<area shape="rect" id="node1" title=" " alt="" coords="715,57,893,98"/>
-<area shape="rect" id="node2" href="$class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="489,5,626,32"/>
-<area shape="rect" id="node3" href="$class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="448,57,667,98"/>
-<area shape="rect" id="node7" href="$class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="485,123,629,149"/>
-<area shape="rect" id="node4" href="$class_illa_graph.html#af20e678932ca7e84f298344b0eb0044d" title=" " alt="" coords="221,35,400,61"/>
-<area shape="rect" id="node6" href="$class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="223,86,399,127"/>
-<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a748a431a5356e997c92e4f3031595818" title=" " alt="" coords="5,27,173,69"/>
+<area shape="rect" id="node1" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="1068,174,1247,215"/>
+<area shape="rect" id="node2" href="$class_movement.html#a47e2906baf3b92be8fbd054231192ca4" title=" " alt="" coords="836,64,973,91"/>
+<area shape="rect" id="node5" href="$class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="795,145,1014,186"/>
+<area shape="rect" id="node10" href="$class_movement.html#ac127471ad5170bb344ea4cbc32e3ac19" title=" " alt="" coords="833,211,977,237"/>
+<area shape="rect" id="node11" href="$class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="789,312,1020,339"/>
+<area shape="rect" id="node3" href="$class_movement.html#a61e8684d29228edd7038727af05d1051" title=" " alt="" coords="571,5,709,32"/>
+<area shape="rect" id="node4" href="$class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="539,57,741,98"/>
+<area shape="rect" id="node6" href="$class_illa_graph.html#a9424246a0aa5bfbee54058780b1d18ca" title=" " alt="" coords="551,123,729,149"/>
+<area shape="rect" id="node9" href="$class_illa_graph_node.html#ad2b865fbdde4bd0c1e812496261982f8" title=" " alt="" coords="552,174,728,215"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="303,86,471,127"/>
+<area shape="rect" id="node8" href="$class_move_to_node.html#ae3c2423d26374a01693d9d7984889697" title=" " alt="" coords="302,152,473,179"/>
+<area shape="rect" id="node12" href="$class_illa_controller_v3.html#a8120be115fe35343b75379f7eb2f508d" title="Goes throu the navigation path and returns the final configuration of the robot. Used for simulating ..." alt="" coords="559,239,721,281"/>
+<area shape="rect" id="node13" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="551,305,729,346"/>
+<area shape="rect" id="node15" href="$class_movement_action.html#aa92aaca8f42b97c3be7fc55e103bf3b6" title=" " alt="" coords="543,371,737,397"/>
+<area shape="rect" id="node17" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="555,425,725,466"/>
+<area shape="rect" id="node14" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="298,298,477,339"/>
+<area shape="rect" id="node16" href="$class_movement_action.html#aa34bf76923ea2ce3c3c7e2d65fec494d" title=" " alt="" coords="284,363,491,405"/>
+<area shape="rect" id="node18" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="291,429,484,470"/>
+<area shape="rect" id="node19" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,429,236,470"/>
 </map>

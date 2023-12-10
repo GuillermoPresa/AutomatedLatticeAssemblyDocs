@@ -1,0 +1,7 @@
+<map id="IllaNavigationPath.AddExtraStep" name="IllaNavigationPath.AddExtraStep">
+<area shape="rect" id="node1" title=" " alt="" coords="457,46,667,73"/>
+<area shape="rect" id="node2" href="$class_illa_navigation_path.html#a2793e18388d9a181acdf4f55c4af302f" title=" " alt="" coords="221,17,409,43"/>
+<area shape="rect" id="node4" href="$class_illa_navigation_path.html#a94d095d3bddb05cd655f5bb66be4fe62" title=" " alt="" coords="223,71,407,98"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a3e79c4f46a7cd041fb6dc469a8f9b851" title=" " alt="" coords="5,71,173,112"/>
+</map>

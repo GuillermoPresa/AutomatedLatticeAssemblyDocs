@@ -17,6 +17,11 @@ var searchData=
   ['shoulderjoint_5fcurrentangle_14',['shoulderJoint_CurrentAngle',['../class_illa_controller_v3.html#af1c39287c62e3eecffdfc74e25a07e3b',1,'IllaControllerV3']]],
   ['shoulderjoint_5ftargetangle_15',['shoulderJoint_TargetAngle',['../class_illa_controller_v3.html#a9e1e75e58f5f3ee9a60da6294f68844b',1,'IllaControllerV3']]],
   ['shoulderjointcurrentangle_16',['ShoulderJointCurrentAngle',['../class_inchworm_robot_controller.html#a677376382bd18204d878ac2ba893d484',1,'InchwormRobotController']]],
-  ['shoulderjointtargetangle_17',['ShoulderJointTargetAngle',['../class_inchworm_robot_controller.html#a8108558ecc425c556061a6e071fcdc7c',1,'InchwormRobotController']]],
-  ['stiffness_18',['Stiffness',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a8173ae9e98358b72fb98614ad2486c9f',1,'Lynxmotion::Robotics::LssSettings']]]
+  ['shoulderjointrotationlimit_17',['ShoulderJointRotationLimit',['../class_illa_controller_v3.html#ac3a04fcd977457bf1fe9d36acd993987',1,'IllaControllerV3']]],
+  ['shoulderjointtargetangle_18',['ShoulderJointTargetAngle',['../class_inchworm_robot_controller.html#a8108558ecc425c556061a6e071fcdc7c',1,'InchwormRobotController']]],
+  ['stiffness_19',['Stiffness',['../class_lynxmotion_1_1_robotics_1_1_lss_settings.html#a8173ae9e98358b72fb98614ad2486c9f',1,'Lynxmotion::Robotics::LssSettings']]],
+  ['storagepoint_20',['storagePoint',['../class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#aee34451c8e955f832e6b89f0f5bbd1d7',1,'Assets::Resources::Objects::ILLAV3::DifferentialJoint']]],
+  ['storagepointdiffj1_21',['storagePointDiffJ1',['../class_illa_controller_v3.html#a4f6d32431ff252cbf0b875a61151e4fd',1,'IllaControllerV3']]],
+  ['storagepointdiffj2_22',['storagePointDiffJ2',['../class_illa_controller_v3.html#afb910b2dd99374e8ed591e590eecb458',1,'IllaControllerV3']]],
+  ['summedangle_23',['summedAngle',['../class_pos_j.html#a2198da76e8a282c36ff096961760580c',1,'PosJ']]]
 ];

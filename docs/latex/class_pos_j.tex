@@ -38,30 +38,48 @@ override string \mbox{\hyperlink{class_pos_j_a2acd1425539e39cbd0a2fb82ebd070e6}{
 \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_a4043a767915cc4078dca8b4e58687cbb}{Create\+Deep\+Copy}} ()
 \item 
 float \mbox{\hyperlink{class_pos_j_a853ba026122cd1332fffefa320d2bb64}{Max\+Angular\+Diference\+From\+Pose}} (\mbox{\hyperlink{class_pos_j}{PosJ}} initial\+PosJ)
-\item 
+\begin{DoxyCompactList}\small\item\em Does not take into consideration the motion limits of a particular robot. For that utilize methods implemented in the robot scripts. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_afc7b1bcade16d10fc1e731cf24bc8427}{Inverted\+Order\+PosJ}} ()
 \item 
-void \mbox{\hyperlink{class_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498}{Clamp\+PM180}} ()
+\mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2}{Clamp\+PM180}} ()
 \item 
-void \mbox{\hyperlink{class_pos_j_a3fb7d8a6aab0849bad93025d40e28741}{Clamp\+P360}} ()
+\mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_a59643c441fc5977091b776ee4ac2fea1}{Clamp\+P360}} ()
+\item 
+\mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_aa9b6378a5537d8ea49a00a11d426eae7}{Clamp\+Pa\+Pb\+Limits}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\item 
+\mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781}{Clamp\+Closest\+Pa\+Pb\+Limits}} (\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} robot\+Script)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_a45fb9f608a2b484940a42b95e0edc303}{operator-\/}} (\mbox{\hyperlink{class_pos_j}{PosJ}} a, \mbox{\hyperlink{class_pos_j}{PosJ}} b)
+\item 
+static \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_a602afb6fa3d4262fb24414f06806d79a}{operator+}} (\mbox{\hyperlink{class_pos_j}{PosJ}} a, \mbox{\hyperlink{class_pos_j}{PosJ}} b)
+\item 
+static \mbox{\hyperlink{class_pos_j}{PosJ}} \mbox{\hyperlink{class_pos_j_ac3dfe40857db8ffa58094191497c297f}{operator$\ast$}} (float a, \mbox{\hyperlink{class_pos_j}{PosJ}} b)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-float \mbox{\hyperlink{class_pos_j_a48e98aea4dad98fe9732a201217fbff5}{Joint1\+Angle}}
+float \mbox{\hyperlink{class_pos_j_a8b8bfd042f127bbe13777f8368141411}{Base\+Angle}}
 \item 
-float \mbox{\hyperlink{class_pos_j_af7046ec81e683259732a9b2de0fd019c}{Joint2\+Angle}}
+float \mbox{\hyperlink{class_pos_j_afb5e464c385735986cd3f07ce0e787d2}{Shoulder\+Angle}}
 \item 
-float \mbox{\hyperlink{class_pos_j_affe4ef01f5c1214bcb7a668469a0da71}{Joint3\+Angle}}
+float \mbox{\hyperlink{class_pos_j_a3317ec58b828e6774c960fb47ef02032}{Middle\+Angle}}
 \item 
-float \mbox{\hyperlink{class_pos_j_ae3361e13cee83709c7e8062a142bb0d3}{Joint4\+Angle}}
+float \mbox{\hyperlink{class_pos_j_ad0fce85cd4d5141348f2e56645c642e9}{Wrist\+Angle}}
 \item 
-float \mbox{\hyperlink{class_pos_j_a98b7a8d2a9de94fa2c1117bd5649739d}{Joint5\+Angle}}
+float \mbox{\hyperlink{class_pos_j_a28dc5a2bb3a8443cc2204c1e782e67ec}{Gripper\+Angle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_pos_j_a2198da76e8a282c36ff096961760580c}{summed\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A \mbox{\hyperlink{class_pos_j}{PosJ}} represents the Pose of a robot in the Joint configuration, that is the rotation of all the joints. 
+A \mbox{\hyperlink{class_pos_j}{PosJ}} represents the Pose of a robot in the Joint configuration, that is the rotation of all the joints. \mbox{\hyperlink{class_pos_j}{PosJ}} depends on the Hierarchy of the robot. It represents the join in the following order\+: 1) Base 2) Shoulder 3) Middle 4) Wrist 5) Gripper. If the hierarchy is inverted the new current and target Pos\+Js will have the inverted order. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_pos_j_a94fcd443e19ca2b7440b2739c206ee09}\label{class_pos_j_a94fcd443e19ca2b7440b2739c206ee09}} 
@@ -70,8 +88,7 @@ A \mbox{\hyperlink{class_pos_j}{PosJ}} represents the Pose of a robot in the Joi
 \doxysubsubsection{\texorpdfstring{PosJ()}{PosJ()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Pos\+J.\+PosJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -93,30 +110,70 @@ Here is the caller graph for this function\+:
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_pos_j_a3fb7d8a6aab0849bad93025d40e28741}\label{class_pos_j_a3fb7d8a6aab0849bad93025d40e28741}} 
+\mbox{\Hypertarget{class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781}\label{class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781}} 
+\index{PosJ@{PosJ}!ClampClosestPaPbLimits@{ClampClosestPaPbLimits}}
+\index{ClampClosestPaPbLimits@{ClampClosestPaPbLimits}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{ClampClosestPaPbLimits()}{ClampClosestPaPbLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+Clamp\+Closest\+Pa\+Pb\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pos_j_afbbe0731c53f2eeeeaa2c8b9f6cd4781_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_pos_j_a59643c441fc5977091b776ee4ac2fea1}\label{class_pos_j_a59643c441fc5977091b776ee4ac2fea1}} 
 \index{PosJ@{PosJ}!ClampP360@{ClampP360}}
 \index{ClampP360@{ClampP360}!PosJ@{PosJ}}
 \doxysubsubsection{\texorpdfstring{ClampP360()}{ClampP360()}}
-{\footnotesize\ttfamily void Pos\+J.\+Clamp\+P360 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+Clamp\+P360 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=335pt]{class_pos_j_a3fb7d8a6aab0849bad93025d40e28741_cgraph}
+\includegraphics[width=335pt]{class_pos_j_a59643c441fc5977091b776ee4ac2fea1_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498}\label{class_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498}} 
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pos_j_a59643c441fc5977091b776ee4ac2fea1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_pos_j_aa9b6378a5537d8ea49a00a11d426eae7}\label{class_pos_j_aa9b6378a5537d8ea49a00a11d426eae7}} 
+\index{PosJ@{PosJ}!ClampPaPbLimits@{ClampPaPbLimits}}
+\index{ClampPaPbLimits@{ClampPaPbLimits}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{ClampPaPbLimits()}{ClampPaPbLimits()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+Clamp\+Pa\+Pb\+Limits (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}}}]{robot\+Script }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pos_j_aa9b6378a5537d8ea49a00a11d426eae7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2}\label{class_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2}} 
 \index{PosJ@{PosJ}!ClampPM180@{ClampPM180}}
 \index{ClampPM180@{ClampPM180}!PosJ@{PosJ}}
 \doxysubsubsection{\texorpdfstring{ClampPM180()}{ClampPM180()}}
-{\footnotesize\ttfamily void Pos\+J.\+Clamp\+PM180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+Clamp\+PM180 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_pos_j_a7b131613afa3cf3eb6ed7b1fd7bb4498_cgraph}
+\includegraphics[width=350pt]{class_pos_j_a1459c5ed46d5c0bf548d4285283fe0d2_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_pos_j_a4043a767915cc4078dca8b4e58687cbb}\label{class_pos_j_a4043a767915cc4078dca8b4e58687cbb}} 
@@ -132,8 +189,7 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=294pt]{class_pos_j_a4043a767915cc4078dca8b4e58687cbb_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -159,30 +215,57 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{MaxAngularDiferenceFromPose()}{MaxAngularDiferenceFromPose()}}
 {\footnotesize\ttfamily float Pos\+J.\+Max\+Angular\+Diference\+From\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{initial\+PosJ }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+
+
+Does not take into consideration the motion limits of a particular robot. For that utilize methods implemented in the robot scripts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+PosJ} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_pos_j_a853ba026122cd1332fffefa320d2bb64_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_pos_j_a853ba026122cd1332fffefa320d2bb64_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{class_pos_j_ac3dfe40857db8ffa58094191497c297f}\label{class_pos_j_ac3dfe40857db8ffa58094191497c297f}} 
+\index{PosJ@{PosJ}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+operator$\ast$ (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_pos_j_a602afb6fa3d4262fb24414f06806d79a}\label{class_pos_j_a602afb6fa3d4262fb24414f06806d79a}} 
+\index{PosJ@{PosJ}!operator+@{operator+}}
+\index{operator+@{operator+}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{a,  }\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_pos_j_a45fb9f608a2b484940a42b95e0edc303}\label{class_pos_j_a45fb9f608a2b484940a42b95e0edc303}} 
+\index{PosJ@{PosJ}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_pos_j}{PosJ}} Pos\+J.\+operator-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{a,  }\item[{\mbox{\hyperlink{class_pos_j}{PosJ}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
 \mbox{\Hypertarget{class_pos_j_a5071f901728aa6e54db6285c65d22910}\label{class_pos_j_a5071f901728aa6e54db6285c65d22910}} 
 \index{PosJ@{PosJ}!PosJListForm@{PosJListForm}}
 \index{PosJListForm@{PosJListForm}!PosJ@{PosJ}}
 \doxysubsubsection{\texorpdfstring{PosJListForm()}{PosJListForm()}}
 {\footnotesize\ttfamily List$<$ float $>$ Pos\+J.\+Pos\+JList\+Form (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -204,6 +287,13 @@ Here is the caller graph for this function\+:
 \begin{DoxyWarning}{Warning}
 \+: Values cropped to two decimal places. Intended for display 
 \end{DoxyWarning}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pos_j_a2acd1425539e39cbd0a2fb82ebd070e6_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_pos_j_a4700dc2d058e6bf14139c105e6e7a262}\label{class_pos_j_a4700dc2d058e6bf14139c105e6e7a262}} 
 \index{PosJ@{PosJ}!UpdatePosJ@{UpdatePosJ}}
 \index{UpdatePosJ@{UpdatePosJ}!PosJ@{PosJ}}
@@ -213,35 +303,44 @@ Here is the caller graph for this function\+:
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_pos_j_a48e98aea4dad98fe9732a201217fbff5}\label{class_pos_j_a48e98aea4dad98fe9732a201217fbff5}} 
-\index{PosJ@{PosJ}!Joint1Angle@{Joint1Angle}}
-\index{Joint1Angle@{Joint1Angle}!PosJ@{PosJ}}
-\doxysubsubsection{\texorpdfstring{Joint1Angle}{Joint1Angle}}
-{\footnotesize\ttfamily float Pos\+J.\+Joint1\+Angle}
+\mbox{\Hypertarget{class_pos_j_a8b8bfd042f127bbe13777f8368141411}\label{class_pos_j_a8b8bfd042f127bbe13777f8368141411}} 
+\index{PosJ@{PosJ}!BaseAngle@{BaseAngle}}
+\index{BaseAngle@{BaseAngle}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{BaseAngle}{BaseAngle}}
+{\footnotesize\ttfamily float Pos\+J.\+Base\+Angle}
 
-\mbox{\Hypertarget{class_pos_j_af7046ec81e683259732a9b2de0fd019c}\label{class_pos_j_af7046ec81e683259732a9b2de0fd019c}} 
-\index{PosJ@{PosJ}!Joint2Angle@{Joint2Angle}}
-\index{Joint2Angle@{Joint2Angle}!PosJ@{PosJ}}
-\doxysubsubsection{\texorpdfstring{Joint2Angle}{Joint2Angle}}
-{\footnotesize\ttfamily float Pos\+J.\+Joint2\+Angle}
+\mbox{\Hypertarget{class_pos_j_a28dc5a2bb3a8443cc2204c1e782e67ec}\label{class_pos_j_a28dc5a2bb3a8443cc2204c1e782e67ec}} 
+\index{PosJ@{PosJ}!GripperAngle@{GripperAngle}}
+\index{GripperAngle@{GripperAngle}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{GripperAngle}{GripperAngle}}
+{\footnotesize\ttfamily float Pos\+J.\+Gripper\+Angle}
 
-\mbox{\Hypertarget{class_pos_j_affe4ef01f5c1214bcb7a668469a0da71}\label{class_pos_j_affe4ef01f5c1214bcb7a668469a0da71}} 
-\index{PosJ@{PosJ}!Joint3Angle@{Joint3Angle}}
-\index{Joint3Angle@{Joint3Angle}!PosJ@{PosJ}}
-\doxysubsubsection{\texorpdfstring{Joint3Angle}{Joint3Angle}}
-{\footnotesize\ttfamily float Pos\+J.\+Joint3\+Angle}
+\mbox{\Hypertarget{class_pos_j_a3317ec58b828e6774c960fb47ef02032}\label{class_pos_j_a3317ec58b828e6774c960fb47ef02032}} 
+\index{PosJ@{PosJ}!MiddleAngle@{MiddleAngle}}
+\index{MiddleAngle@{MiddleAngle}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{MiddleAngle}{MiddleAngle}}
+{\footnotesize\ttfamily float Pos\+J.\+Middle\+Angle}
 
-\mbox{\Hypertarget{class_pos_j_ae3361e13cee83709c7e8062a142bb0d3}\label{class_pos_j_ae3361e13cee83709c7e8062a142bb0d3}} 
-\index{PosJ@{PosJ}!Joint4Angle@{Joint4Angle}}
-\index{Joint4Angle@{Joint4Angle}!PosJ@{PosJ}}
-\doxysubsubsection{\texorpdfstring{Joint4Angle}{Joint4Angle}}
-{\footnotesize\ttfamily float Pos\+J.\+Joint4\+Angle}
+\mbox{\Hypertarget{class_pos_j_afb5e464c385735986cd3f07ce0e787d2}\label{class_pos_j_afb5e464c385735986cd3f07ce0e787d2}} 
+\index{PosJ@{PosJ}!ShoulderAngle@{ShoulderAngle}}
+\index{ShoulderAngle@{ShoulderAngle}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{ShoulderAngle}{ShoulderAngle}}
+{\footnotesize\ttfamily float Pos\+J.\+Shoulder\+Angle}
 
-\mbox{\Hypertarget{class_pos_j_a98b7a8d2a9de94fa2c1117bd5649739d}\label{class_pos_j_a98b7a8d2a9de94fa2c1117bd5649739d}} 
-\index{PosJ@{PosJ}!Joint5Angle@{Joint5Angle}}
-\index{Joint5Angle@{Joint5Angle}!PosJ@{PosJ}}
-\doxysubsubsection{\texorpdfstring{Joint5Angle}{Joint5Angle}}
-{\footnotesize\ttfamily float Pos\+J.\+Joint5\+Angle}
+\mbox{\Hypertarget{class_pos_j_ad0fce85cd4d5141348f2e56645c642e9}\label{class_pos_j_ad0fce85cd4d5141348f2e56645c642e9}} 
+\index{PosJ@{PosJ}!WristAngle@{WristAngle}}
+\index{WristAngle@{WristAngle}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{WristAngle}{WristAngle}}
+{\footnotesize\ttfamily float Pos\+J.\+Wrist\+Angle}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_pos_j_a2198da76e8a282c36ff096961760580c}\label{class_pos_j_a2198da76e8a282c36ff096961760580c}} 
+\index{PosJ@{PosJ}!summedAngle@{summedAngle}}
+\index{summedAngle@{summedAngle}!PosJ@{PosJ}}
+\doxysubsubsection{\texorpdfstring{summedAngle}{summedAngle}}
+{\footnotesize\ttfamily float Pos\+J.\+summed\+Angle\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

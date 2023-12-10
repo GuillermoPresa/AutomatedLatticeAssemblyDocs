@@ -1,4 +1,4 @@
 <map id="JointConfiguration" name="JointConfiguration">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,129,121"/>
-<area shape="rect" id="node2" href="$class_rotation_limit.html" title=" " alt="" coords="18,5,117,32"/>
+<area shape="rect" id="node1" title="Represents the configuration of a joint&#39;s rotation limit." alt="" coords="5,95,129,121"/>
+<area shape="rect" id="node2" href="$class_rotation_limit.html" title="Represents the rotation limits for joints and servos. Consist of a lower limit and an upper limit...." alt="" coords="18,5,117,32"/>
 </map>

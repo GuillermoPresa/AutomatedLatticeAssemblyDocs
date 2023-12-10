@@ -1,7 +1,13 @@
 <map id="TextGizmos.PrintMessageAtPosition" name="TextGizmos.PrintMessageAtPosition">
-<area shape="rect" id="node1" title=" " alt="" coords="479,57,668,98"/>
-<area shape="rect" id="node2" href="$class_illa_graph_node.html#a6943dc10fe8167c1f295303fc10dd3c4" title=" " alt="" coords="243,5,430,32"/>
-<area shape="rect" id="node3" href="$class_illa_graph_node.html#ab5e3aa47f179ee2d8ad84620cf11db85" title=" " alt="" coords="243,57,431,98"/>
-<area shape="rect" id="node5" href="$class_illa_navigation_path.html#acd36e7edb65cef6f40803fadf425a2ae" title=" " alt="" coords="245,123,429,149"/>
-<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="5,86,195,127"/>
+<area shape="rect" id="node1" title=" " alt="" coords="731,186,920,227"/>
+<area shape="rect" id="node2" href="$class_pick_lattice_and_insert_in_location.html#a1ca3add4e1452c0650d96f916ae0991e" title=" " alt="" coords="243,33,448,74"/>
+<area shape="rect" id="node3" href="$class_pick_task.html#a0f6526e135f2eb093d7b691aab076684" title=" " alt="" coords="512,41,667,68"/>
+<area shape="rect" id="node4" href="$class_place_task.html#a481aa8d652b00ccf14522bdadeec4d91" title=" " alt="" coords="509,92,670,119"/>
+<area shape="rect" id="node5" href="$class_illa_graph_node.html#a6943dc10fe8167c1f295303fc10dd3c4" title=" " alt="" coords="496,193,683,220"/>
+<area shape="rect" id="node6" href="$class_illa_graph_node.html#a3296ffa467602c210c6de8668ab5cd09" title=" " alt="" coords="251,202,439,243"/>
+<area shape="rect" id="node8" href="$class_illa_graph_node.html#ab5e3aa47f179ee2d8ad84620cf11db85" title=" " alt="" coords="251,274,439,315"/>
+<area shape="rect" id="node9" href="$class_illa_navigation_path.html#acd36e7edb65cef6f40803fadf425a2ae" title=" " alt="" coords="497,143,681,169"/>
+<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a8dbacda5259bfd6a2804441e728f5573" title=" " alt="" coords="501,345,677,372"/>
+<area shape="rect" id="node11" href="$class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="506,396,673,423"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="5,202,195,243"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="ActuateScrewDriverAction.SetupAction" name="ActuateScrewDriverAction.SetupAction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,50,181,91"/>
+<area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a17e4f07b7ccaedf520de4ce42730e85f" title="Actuates the N20 motor within the differential joint. A positive direction permorms an insertion (scr..." alt="" coords="229,5,432,61"/>
+<area shape="rect" id="node4" href="$class_illa_node_sensor_script.html#ab30de6ea684239af86cfac74c830f42a" title=" " alt="" coords="238,86,423,127"/>
+<area shape="rect" id="node3" href="$class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="480,20,731,47"/>
+</map>

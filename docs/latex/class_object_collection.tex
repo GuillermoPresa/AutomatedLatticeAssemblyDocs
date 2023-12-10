@@ -1,0 +1,196 @@
+\hypertarget{class_object_collection}{}\doxysection{Object\+Collection Class Reference}
+\label{class_object_collection}\index{ObjectCollection@{ObjectCollection}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_object_collection_a1fb709b6d1d81e1f25a3665d4e74c533}{Object\+Collection}} (Game\+Object Parent)
+\item 
+\mbox{\hyperlink{class_object_collection_a5403af058cb4691839d6987b7dfe49d4}{Object\+Collection}} ()
+\item 
+void \mbox{\hyperlink{class_object_collection_a0ff30ff4e03196f2243b7da85ddbec82}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_object_collection_a3da17803d876d34964fce31a201690a8}{Set\+Parent}} (Game\+Object Parent)
+\item 
+void \mbox{\hyperlink{class_object_collection_a0f7ef448c889bd79464286c0804a0b34}{Rebuild\+From\+Scratch}} ()
+\begin{DoxyCompactList}\small\item\em Rebuilds the collection from scratch taking a look at the Time\+Step from the global\+Manager. This is useful when the collection is not updated properly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_object_collection_a112385f0896172ff5e17895d63490863}{Place\+Lattice}} (Game\+Object Lattice)
+\item 
+void \mbox{\hyperlink{class_object_collection_afb25342b5e2751a3c28cc5eee5e822da}{Unplace\+Lattice}} (Game\+Object Lattice)
+\item 
+void \mbox{\hyperlink{class_object_collection_aa10d3a8726a618c229680516a8a818ed}{Add\+Object}} (Game\+Object object\+To\+Add, string object\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ Game\+Object, string $>$ \mbox{\hyperlink{class_object_collection_ac8e266107426b6bea662b3d7d4efbf10}{Non\+Deepening\+Child\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Dictionary$<$ Game\+Object, string $>$ \mbox{\hyperlink{class_object_collection_a13528b74729fd2d8b46cdadb59d1cd85}{Deepening\+Child\+Dictionary}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_object_collection_a24e7627cf7a9812f980aa37f60356270}{All\+Objects\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_object_collection_a02d62fc61b184c849536b8e00e9dd57b}{Unplaced\+Lattice\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_object_collection_a66fce5ac74a97532df0583b124ef1847}{Deepening\+Unplaced\+Lattice\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_object_collection_a23a661cabee6b783fee8f155508dc464}{Placed\+Lattice\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_object_collection_a81358d95c80d44cecc50c9280d712ab7}{Deepening\+Placed\+Lattice\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_object_collection_ab220728ff9b6df8806924a371a0f62b1}{Worker\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_object_collection_a4223d669dcbb0bbe34f7a69a3b1827fb}{Object\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+EDIT\+: This is quite literally trash. Did it first week.\hypertarget{class_object_collection_autotoc_md56}{}\doxysubsection{Lattice collections}\label{class_object_collection_autotoc_md56}
+Lattice collections are the representation of the group of lattices in the selected group of objects to be built. They contain information about what lattices are placed, what lattice is to be placed next, as well as including built in querries for finding common lattice sets such as placed, unplaced etc... in the build order. Note that the build order can differ from what is stablished in the inut structure definition due to impossible routing or additional constraints.
+
+\mbox{\hyperlink{class_control_window_ControlWindow}{Control\+Window}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_object_collection_a1fb709b6d1d81e1f25a3665d4e74c533}\label{class_object_collection_a1fb709b6d1d81e1f25a3665d4e74c533}} 
+\index{ObjectCollection@{ObjectCollection}!ObjectCollection@{ObjectCollection}}
+\index{ObjectCollection@{ObjectCollection}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{ObjectCollection()}{ObjectCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Object\+Collection.\+Object\+Collection (\begin{DoxyParamCaption}\item[{Game\+Object}]{Parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_object_collection_a5403af058cb4691839d6987b7dfe49d4}\label{class_object_collection_a5403af058cb4691839d6987b7dfe49d4}} 
+\index{ObjectCollection@{ObjectCollection}!ObjectCollection@{ObjectCollection}}
+\index{ObjectCollection@{ObjectCollection}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{ObjectCollection()}{ObjectCollection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Object\+Collection.\+Object\+Collection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_object_collection_aa10d3a8726a618c229680516a8a818ed}\label{class_object_collection_aa10d3a8726a618c229680516a8a818ed}} 
+\index{ObjectCollection@{ObjectCollection}!AddObject@{AddObject}}
+\index{AddObject@{AddObject}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{AddObject()}{AddObject()}}
+{\footnotesize\ttfamily void Object\+Collection.\+Add\+Object (\begin{DoxyParamCaption}\item[{Game\+Object}]{object\+To\+Add,  }\item[{string}]{object\+Type }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_collection_aa10d3a8726a618c229680516a8a818ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_object_collection_a0ff30ff4e03196f2243b7da85ddbec82}\label{class_object_collection_a0ff30ff4e03196f2243b7da85ddbec82}} 
+\index{ObjectCollection@{ObjectCollection}!Clear@{Clear}}
+\index{Clear@{Clear}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Object\+Collection.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_object_collection_a112385f0896172ff5e17895d63490863}\label{class_object_collection_a112385f0896172ff5e17895d63490863}} 
+\index{ObjectCollection@{ObjectCollection}!PlaceLattice@{PlaceLattice}}
+\index{PlaceLattice@{PlaceLattice}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{PlaceLattice()}{PlaceLattice()}}
+{\footnotesize\ttfamily void Object\+Collection.\+Place\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_collection_a112385f0896172ff5e17895d63490863_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_object_collection_a0f7ef448c889bd79464286c0804a0b34}\label{class_object_collection_a0f7ef448c889bd79464286c0804a0b34}} 
+\index{ObjectCollection@{ObjectCollection}!RebuildFromScratch@{RebuildFromScratch}}
+\index{RebuildFromScratch@{RebuildFromScratch}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{RebuildFromScratch()}{RebuildFromScratch()}}
+{\footnotesize\ttfamily void Object\+Collection.\+Rebuild\+From\+Scratch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rebuilds the collection from scratch taking a look at the Time\+Step from the global\+Manager. This is useful when the collection is not updated properly. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_collection_a0f7ef448c889bd79464286c0804a0b34_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_object_collection_a3da17803d876d34964fce31a201690a8}\label{class_object_collection_a3da17803d876d34964fce31a201690a8}} 
+\index{ObjectCollection@{ObjectCollection}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{SetParent()}{SetParent()}}
+{\footnotesize\ttfamily void Object\+Collection.\+Set\+Parent (\begin{DoxyParamCaption}\item[{Game\+Object}]{Parent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_object_collection_afb25342b5e2751a3c28cc5eee5e822da}\label{class_object_collection_afb25342b5e2751a3c28cc5eee5e822da}} 
+\index{ObjectCollection@{ObjectCollection}!UnplaceLattice@{UnplaceLattice}}
+\index{UnplaceLattice@{UnplaceLattice}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{UnplaceLattice()}{UnplaceLattice()}}
+{\footnotesize\ttfamily void Object\+Collection.\+Unplace\+Lattice (\begin{DoxyParamCaption}\item[{Game\+Object}]{Lattice }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_collection_afb25342b5e2751a3c28cc5eee5e822da_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_object_collection_a24e7627cf7a9812f980aa37f60356270}\label{class_object_collection_a24e7627cf7a9812f980aa37f60356270}} 
+\index{ObjectCollection@{ObjectCollection}!AllObjectsList@{AllObjectsList}}
+\index{AllObjectsList@{AllObjectsList}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{AllObjectsList}{AllObjectsList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Object\+Collection.\+All\+Objects\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_a13528b74729fd2d8b46cdadb59d1cd85}\label{class_object_collection_a13528b74729fd2d8b46cdadb59d1cd85}} 
+\index{ObjectCollection@{ObjectCollection}!DeepeningChildDictionary@{DeepeningChildDictionary}}
+\index{DeepeningChildDictionary@{DeepeningChildDictionary}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{DeepeningChildDictionary}{DeepeningChildDictionary}}
+{\footnotesize\ttfamily Dictionary$<$Game\+Object, string$>$ Object\+Collection.\+Deepening\+Child\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_a81358d95c80d44cecc50c9280d712ab7}\label{class_object_collection_a81358d95c80d44cecc50c9280d712ab7}} 
+\index{ObjectCollection@{ObjectCollection}!DeepeningPlacedLatticeList@{DeepeningPlacedLatticeList}}
+\index{DeepeningPlacedLatticeList@{DeepeningPlacedLatticeList}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{DeepeningPlacedLatticeList}{DeepeningPlacedLatticeList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Object\+Collection.\+Deepening\+Placed\+Lattice\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_a66fce5ac74a97532df0583b124ef1847}\label{class_object_collection_a66fce5ac74a97532df0583b124ef1847}} 
+\index{ObjectCollection@{ObjectCollection}!DeepeningUnplacedLatticeList@{DeepeningUnplacedLatticeList}}
+\index{DeepeningUnplacedLatticeList@{DeepeningUnplacedLatticeList}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{DeepeningUnplacedLatticeList}{DeepeningUnplacedLatticeList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Object\+Collection.\+Deepening\+Unplaced\+Lattice\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_ac8e266107426b6bea662b3d7d4efbf10}\label{class_object_collection_ac8e266107426b6bea662b3d7d4efbf10}} 
+\index{ObjectCollection@{ObjectCollection}!NonDeepeningChildDictionary@{NonDeepeningChildDictionary}}
+\index{NonDeepeningChildDictionary@{NonDeepeningChildDictionary}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{NonDeepeningChildDictionary}{NonDeepeningChildDictionary}}
+{\footnotesize\ttfamily Dictionary$<$Game\+Object, string$>$ Object\+Collection.\+Non\+Deepening\+Child\+Dictionary\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_a4223d669dcbb0bbe34f7a69a3b1827fb}\label{class_object_collection_a4223d669dcbb0bbe34f7a69a3b1827fb}} 
+\index{ObjectCollection@{ObjectCollection}!ObjectCount@{ObjectCount}}
+\index{ObjectCount@{ObjectCount}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{ObjectCount}{ObjectCount}}
+{\footnotesize\ttfamily int Object\+Collection.\+Object\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_a23a661cabee6b783fee8f155508dc464}\label{class_object_collection_a23a661cabee6b783fee8f155508dc464}} 
+\index{ObjectCollection@{ObjectCollection}!PlacedLatticeList@{PlacedLatticeList}}
+\index{PlacedLatticeList@{PlacedLatticeList}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{PlacedLatticeList}{PlacedLatticeList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Object\+Collection.\+Placed\+Lattice\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_a02d62fc61b184c849536b8e00e9dd57b}\label{class_object_collection_a02d62fc61b184c849536b8e00e9dd57b}} 
+\index{ObjectCollection@{ObjectCollection}!UnplacedLatticeList@{UnplacedLatticeList}}
+\index{UnplacedLatticeList@{UnplacedLatticeList}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{UnplacedLatticeList}{UnplacedLatticeList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Object\+Collection.\+Unplaced\+Lattice\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_object_collection_ab220728ff9b6df8806924a371a0f62b1}\label{class_object_collection_ab220728ff9b6df8806924a371a0f62b1}} 
+\index{ObjectCollection@{ObjectCollection}!WorkerList@{WorkerList}}
+\index{WorkerList@{WorkerList}!ObjectCollection@{ObjectCollection}}
+\doxysubsubsection{\texorpdfstring{WorkerList}{WorkerList}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ Object\+Collection.\+Worker\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Guille/\+Lattice\+Assembly (2)/\+Assets/\+Scripts/\+Static classes/\mbox{\hyperlink{_lattice_collection_8cs}{Lattice\+Collection.\+cs}}\end{DoxyCompactItemize}

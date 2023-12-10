@@ -1,0 +1,6 @@
+<map id="IllaGraph.AStarCostFunctional" name="IllaGraph.AStarCostFunctional">
+<area shape="rect" id="node1" title=" " alt="" coords="451,42,648,69"/>
+<area shape="rect" id="node2" href="$class_illa_graph.html#a9424246a0aa5bfbee54058780b1d18ca" title=" " alt="" coords="224,42,403,69"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#a0f81628815302b9da3eca385165eef86" title="Check if we can reach the location to place the lattice without changing the base,..." alt="" coords="7,5,175,47"/>
+<area shape="rect" id="node4" href="$class_move_to_node.html#ae3c2423d26374a01693d9d7984889697" title=" " alt="" coords="5,71,176,98"/>
+</map>

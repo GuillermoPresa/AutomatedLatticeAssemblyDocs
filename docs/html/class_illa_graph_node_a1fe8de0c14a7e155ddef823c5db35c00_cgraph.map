@@ -1,6 +1,9 @@
 <map id="IllaGraphNode.GetMinCostFromNeighbor" name="IllaGraphNode.GetMinCostFromNeighbor">
-<area shape="rect" id="node1" title="Returns the minimum cost from the input neighbour to this node given an initial configuration the rob..." alt="" coords="5,5,181,47"/>
-<area shape="rect" id="node2" href="$class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="229,5,448,47"/>
-<area shape="rect" id="node3" href="$class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title=" " alt="" coords="496,5,675,47"/>
-<area shape="rect" id="node4" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="723,13,857,39"/>
+<area shape="rect" id="node1" title="Returns the minimum cost from the input neighbour to this node given an initial configuration the rob..." alt="" coords="5,49,181,90"/>
+<area shape="rect" id="node2" href="$class_movement.html#a6c025cbe11955f26ba81c575b7296006" title=" " alt="" coords="229,49,448,90"/>
+<area shape="rect" id="node3" href="$class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="496,49,675,90"/>
+<area shape="rect" id="node4" href="$class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1" title=" " alt="" coords="729,31,851,57"/>
+<area shape="rect" id="node7" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="723,81,857,108"/>
+<area shape="rect" id="node5" href="$class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="905,5,1075,32"/>
+<area shape="rect" id="node6" href="$class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="948,56,1032,83"/>
 </map>

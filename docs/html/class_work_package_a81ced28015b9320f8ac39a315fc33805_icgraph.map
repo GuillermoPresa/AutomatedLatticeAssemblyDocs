@@ -1,6 +1,7 @@
 <map id="WorkPackage.AuctionSolicitBids" name="WorkPackage.AuctionSolicitBids">
-<area shape="rect" id="node1" title=" " alt="" coords="948,13,1163,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="948,38,1163,65"/>
 <area shape="rect" id="node2" href="$class_work_package.html#a7c02f62bfab7d29f76b7287192464dd7" title=" " alt="" coords="649,13,900,39"/>
+<area shape="rect" id="node6" href="$class_robot_coordinator.html#adf62aefbd7ac012a5b5001b016e7636d" title=" " alt="" coords="691,63,858,90"/>
 <area shape="rect" id="node3" href="$class_robot_coordinator.html#a87569d0fdc9b61d4dd112d46241b6853" title=" " alt="" coords="420,5,601,47"/>
 <area shape="rect" id="node4" href="$class_robot_coordinator.html#ad80a6957b713627e779f9a8457e8a742" title=" " alt="" coords="205,13,372,39"/>
 <area shape="rect" id="node5" href="$class_control_window.html#ae9d596b21380d7dc65b4340833b6c687" title=" " alt="" coords="5,13,157,39"/>

@@ -87,7 +87,11 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Class <a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000001"></a>Check variable accesibility (public, private) </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000001"></a>Issues with the baseOffsetQuat. Its a rotational ofsset for the base to account for the base rotation after a base swap. However its a mess and it is not consistent. Something is not right with the differences between both DH configurations and the offset used. I dont have time to fix this. A cleaner solution would require more consisten non inverted and inverted DH configurations </p>
+<p class="interdd"></p>
+<p class="interdd">Would be amazing to use partial classes to split this monstruosity of a </p>
+<p class="interdd"></p>
+<p class="interdd">Check variable accesibility (public, private) </p>
 <p class="interdd"></p>
 <p class="interdd">Delete collision detection scenee class and related content in the inchworm coontroller </p>
 <p class="interdd"></p>
@@ -99,7 +103,9 @@ $(document).ready(function(){initNavTree('todo.html',''); initResizable(); });
 <p class="interdd"></p>
 <p class="interdd">Refine public and private variable status </p>
 <p class="interdd"></p>
-<p class="enddd">transform ILLA V3 execution into state machine like previous robot </p>
+<p class="interdd">transform ILLA V3 execution into state machine like previous robot </p>
+<p class="interdd"></p>
+<p class="enddd">there are some fixes with the baseOffsetQuat. It is removed from the Base joint and the last joint on the update but then added on the screwed in lattice position update in the diff joint. Overall this is a mess. </p>
 </dd>
 <dt>Member <a class="el" href="class_illa_graph_node.html#ab5e3aa47f179ee2d8ad84620cf11db85">IllaGraphNode.DrawOutgoingEdgesWithCost</a>  (<a class="el" href="class_illa_graph_node.html">IllaGraphNode</a> previousNodeToDraw)</dt>
 <dd><a class="anchor" id="_todo000002"></a>OPTIMIAZTION: only compute the cost of the elements that are not already checked.  </dd>

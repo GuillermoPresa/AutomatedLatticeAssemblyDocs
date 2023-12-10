@@ -20,7 +20,8 @@ var searchData=
   ['getsetattribute_17',['GetSetAttribute',['../class_get_set_attribute.html#ac095bce32bb6aef4bad33888c2de3cf8',1,'GetSetAttribute']]],
   ['gettranslation_18',['GetTranslation',['../class_space_navigator_driver_1_1_space_navigator.html#ad7af9dac7e11cc2c6c92c453dedb3f52',1,'SpaceNavigatorDriver::SpaceNavigator']]],
   ['globalstatistics_19',['globalStatistics',['../class_lynx_servo.html#a4900d406aa4936d670f178d35b586852',1,'LynxServo']]],
-  ['graph_20',['Graph',['../class_graph.html#ab8ccb82fd216cc5a36c3887c6820428f',1,'Graph']]],
-  ['graphnode_21',['GraphNode',['../class_graph_node.html#aac326ec4b6615ae23ef584fbbf998628',1,'GraphNode']]],
-  ['graphnodes_22',['GraphNodes',['../class_illa_graph.html#acdfb644d57d63847867a558433d8c567',1,'IllaGraph.GraphNodes()'],['../class_graph.html#addefede59dc24daa7d423ce7d2bbde6f',1,'Graph.GraphNodes()']]]
+  ['grabneighbornode_5faction_20',['GrabNeighborNode_Action',['../class_grab_neighbor_node___action.html#ae72ac5c5ffd4d9d20be11e971d5a3018',1,'GrabNeighborNode_Action.GrabNeighborNode_Action(GameObject nodeToInsertIn_in, bool unscrewFromCurrent=false, bool swapBaseToNeighbor=false, bool screwInNeighbor=false, float z_hop_height=0.075f)'],['../class_grab_neighbor_node___action.html#acb4a6ef6410eff889f0dee8302e96cbb',1,'GrabNeighborNode_Action.GrabNeighborNode_Action(GameObject nodeToInsertIn_in, int ID, float z_hop_height=0.075f)']]],
+  ['graph_21',['Graph',['../class_graph.html#ab8ccb82fd216cc5a36c3887c6820428f',1,'Graph']]],
+  ['graphnode_22',['GraphNode',['../class_graph_node.html#aac326ec4b6615ae23ef584fbbf998628',1,'GraphNode']]],
+  ['graphnodes_23',['GraphNodes',['../class_illa_graph.html#acdfb644d57d63847867a558433d8c567',1,'IllaGraph.GraphNodes()'],['../class_graph.html#addefede59dc24daa7d423ce7d2bbde6f',1,'Graph.GraphNodes()']]]
 ];

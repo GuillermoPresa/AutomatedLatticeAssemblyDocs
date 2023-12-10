@@ -3,7 +3,7 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_work_package_af80d6e2de85823592752c516c7843e37}{Work\+Package}} ()
+\mbox{\hyperlink{class_work_package_a9eec4ea7a150f26c2e6ce1030e2831af}{Work\+Package}} (string name=\char`\"{}default\+Name\char`\"{})
 \item 
 \mbox{\hyperlink{class_work_package_a4a12c3153b98cfa559557bf3f019b3ed}{Work\+Package}} (List$<$ \mbox{\hyperlink{class_abstract_task}{Abstract\+Task}} $>$ Initial\+Task\+List)
 \item 
@@ -13,7 +13,7 @@ void \mbox{\hyperlink{class_work_package_a1ca483d0e9c7408563109a34b0b220f7}{Add\
 \item 
 Dictionary$<$ \mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}, \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} $>$ \mbox{\hyperlink{class_work_package_a81ced28015b9320f8ac39a315fc33805}{Auction\+Solicit\+Bids}} (List$<$ \mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} $>$ Possible\+Worker\+Pool)
 \item 
-void \mbox{\hyperlink{class_work_package_ad19b5891776b5894b96ac22a0ce8b7ae}{Execute\+Task}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} Robot\+Worker)
+void \mbox{\hyperlink{class_work_package_aff789cc4a1e713a68842d6e7a0d00fd4}{Execute\+Task}} (\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} robot\+Worker)
 \item 
 void \mbox{\hyperlink{class_work_package_a7c02f62bfab7d29f76b7287192464dd7}{Auction\+And\+Execute\+Task}} (float time\+Weight=1, float energy\+Weight=1)
 \end{DoxyCompactItemize}
@@ -21,6 +21,8 @@ void \mbox{\hyperlink{class_work_package_a7c02f62bfab7d29f76b7287192464dd7}{Auct
 \begin{DoxyCompactItemize}
 \item 
 List$<$ \mbox{\hyperlink{class_abstract_task}{Abstract\+Task}} $>$ \mbox{\hyperlink{class_work_package_a91a7a76f115fcef2b03208c40ff31c80}{task\+List}} = new List$<$\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}}$>$()
+\item 
+string \mbox{\hyperlink{class_work_package_a82fd420567c628a06b4c8b2bd1afe262}{wp\+Name}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Properties}
 \begin{DoxyCompactItemize}
@@ -30,11 +32,11 @@ bool \mbox{\hyperlink{class_work_package_a4b729ee345292780516afc22883b684d}{is\+
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_work_package_af80d6e2de85823592752c516c7843e37}\label{class_work_package_af80d6e2de85823592752c516c7843e37}} 
+\mbox{\Hypertarget{class_work_package_a9eec4ea7a150f26c2e6ce1030e2831af}\label{class_work_package_a9eec4ea7a150f26c2e6ce1030e2831af}} 
 \index{WorkPackage@{WorkPackage}!WorkPackage@{WorkPackage}}
 \index{WorkPackage@{WorkPackage}!WorkPackage@{WorkPackage}}
 \doxysubsubsection{\texorpdfstring{WorkPackage()}{WorkPackage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Work\+Package.\+Work\+Package (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Work\+Package.\+Work\+Package (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily \char`\"{}defaultName\char`\"{}} }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_work_package_a4a12c3153b98cfa559557bf3f019b3ed}\label{class_work_package_a4a12c3153b98cfa559557bf3f019b3ed}} 
 \index{WorkPackage@{WorkPackage}!WorkPackage@{WorkPackage}}
@@ -51,8 +53,7 @@ bool \mbox{\hyperlink{class_work_package_a4b729ee345292780516afc22883b684d}{is\+
 \doxysubsubsection{\texorpdfstring{AddTask()}{AddTask()}}
 {\footnotesize\ttfamily void Work\+Package.\+Add\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}}}]{Task\+To\+Add }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -65,16 +66,14 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{AuctionAndExecuteTask()}{AuctionAndExecuteTask()}}
 {\footnotesize\ttfamily void Work\+Package.\+Auction\+And\+Execute\+Task (\begin{DoxyParamCaption}\item[{float}]{time\+Weight = {\ttfamily 1},  }\item[{float}]{energy\+Weight = {\ttfamily 1} }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_work_package_a7c02f62bfab7d29f76b7287192464dd7_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -87,34 +86,31 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{AuctionSolicitBids()}{AuctionSolicitBids()}}
 {\footnotesize\ttfamily Dictionary$<$ \mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}, \mbox{\hyperlink{class_auction_bid}{Auction\+Bid}} $>$ Work\+Package.\+Auction\+Solicit\+Bids (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} $>$}]{Possible\+Worker\+Pool }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_work_package_a81ced28015b9320f8ac39a315fc33805_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{class_work_package_ad19b5891776b5894b96ac22a0ce8b7ae}\label{class_work_package_ad19b5891776b5894b96ac22a0ce8b7ae}} 
+\mbox{\Hypertarget{class_work_package_aff789cc4a1e713a68842d6e7a0d00fd4}\label{class_work_package_aff789cc4a1e713a68842d6e7a0d00fd4}} 
 \index{WorkPackage@{WorkPackage}!ExecuteTask@{ExecuteTask}}
 \index{ExecuteTask@{ExecuteTask}!WorkPackage@{WorkPackage}}
 \doxysubsubsection{\texorpdfstring{ExecuteTask()}{ExecuteTask()}}
-{\footnotesize\ttfamily void Work\+Package.\+Execute\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{Robot\+Worker }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Work\+Package.\+Execute\+Task (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}}]{robot\+Worker }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_work_package_ad19b5891776b5894b96ac22a0ce8b7ae_cgraph}
+\includegraphics[width=350pt]{class_work_package_aff789cc4a1e713a68842d6e7a0d00fd4_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_work_package_ad19b5891776b5894b96ac22a0ce8b7ae_icgraph}
+\includegraphics[width=350pt]{class_work_package_aff789cc4a1e713a68842d6e7a0d00fd4_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_work_package_abb9309cbeaaa4548488a78f727ed5b95}\label{class_work_package_abb9309cbeaaa4548488a78f727ed5b95}} 
@@ -123,8 +119,7 @@ Here is the caller graph for this function\+:
 \doxysubsubsection{\texorpdfstring{PopFirstTask()}{PopFirstTask()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_task}{Abstract\+Task}} Work\+Package.\+Pop\+First\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -139,6 +134,12 @@ Here is the caller graph for this function\+:
 \index{taskList@{taskList}!WorkPackage@{WorkPackage}}
 \doxysubsubsection{\texorpdfstring{taskList}{taskList}}
 {\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}}$>$ Work\+Package.\+task\+List = new List$<$\mbox{\hyperlink{class_abstract_task}{Abstract\+Task}}$>$()}
+
+\mbox{\Hypertarget{class_work_package_a82fd420567c628a06b4c8b2bd1afe262}\label{class_work_package_a82fd420567c628a06b4c8b2bd1afe262}} 
+\index{WorkPackage@{WorkPackage}!wpName@{wpName}}
+\index{wpName@{wpName}!WorkPackage@{WorkPackage}}
+\doxysubsubsection{\texorpdfstring{wpName}{wpName}}
+{\footnotesize\ttfamily string Work\+Package.\+wp\+Name}
 
 
 

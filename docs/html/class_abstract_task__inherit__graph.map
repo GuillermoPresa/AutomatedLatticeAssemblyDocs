@@ -1,5 +1,8 @@
 <map id="AbstractTask" name="AbstractTask">
-<area shape="rect" id="node1" title=" " alt="" coords="61,5,160,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="312,5,411,32"/>
 <area shape="rect" id="node2" href="$class_insert_task.html" title=" " alt="" coords="5,80,88,107"/>
 <area shape="rect" id="node3" href="$class_move_to_node_task.html" title=" " alt="" coords="113,80,237,107"/>
+<area shape="rect" id="node4" href="$class_pick_lattice_and_insert_in_location.html" title=" " alt="" coords="261,80,462,107"/>
+<area shape="rect" id="node5" href="$class_pick_task.html" title=" " alt="" coords="486,80,562,107"/>
+<area shape="rect" id="node6" href="$class_place_task.html" title=" " alt="" coords="587,80,669,107"/>
 </map>

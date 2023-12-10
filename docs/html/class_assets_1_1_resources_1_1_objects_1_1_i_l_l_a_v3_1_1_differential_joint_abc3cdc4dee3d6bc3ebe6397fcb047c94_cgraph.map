@@ -1,5 +1,5 @@
 <map id="Assets.Resources.Objects.ILLAV3.DifferentialJoint.updateServoGoalAngleFromTargetAngle" name="Assets.Resources.Objects.ILLAV3.DifferentialJoint.updateServoGoalAngleFromTargetAngle">
-<area shape="rect" id="node1" title=" " alt="" coords="5,45,219,101"/>
+<area shape="rect" id="node1" title="Updates the position of the lattice that is stored in the storage point of the differential joint." alt="" coords="5,45,219,101"/>
 <area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#aa1afe8a3b0776e47f670e08b4727b8ed" title=" " alt="" coords="267,5,463,61"/>
 <area shape="rect" id="node3" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#a1e7f51d0a9a3732a742980a008d82513" title=" " alt="" coords="269,85,461,141"/>
 </map>

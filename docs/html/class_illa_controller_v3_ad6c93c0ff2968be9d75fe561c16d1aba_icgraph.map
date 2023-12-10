@@ -1,0 +1,13 @@
+<map id="IllaControllerV3.NonCollidingMovement" name="IllaControllerV3.NonCollidingMovement">
+<area shape="rect" id="node1" title="From an input movement return a new movement with only the non colliding posJ solutions." alt="" coords="1007,104,1192,145"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a3ccf98a66cdc97ce0fa406b4211874be" title=" " alt="" coords="776,5,939,47"/>
+<area shape="rect" id="node6" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="768,71,947,112"/>
+<area shape="rect" id="node8" href="$class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="756,136,959,177"/>
+<area shape="rect" id="node9" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="772,201,943,243"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="511,5,708,47"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#aa5cb39f48cd181882426f5c865952f2f" title=" " alt="" coords="260,5,435,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a28f63001d6ff55d1e75260633a3c1f9d" title=" " alt="" coords="5,5,184,47"/>
+<area shape="rect" id="node7" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="520,71,699,112"/>
+<area shape="rect" id="node10" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="513,201,706,243"/>
+<area shape="rect" id="node11" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="232,201,463,243"/>
+</map>

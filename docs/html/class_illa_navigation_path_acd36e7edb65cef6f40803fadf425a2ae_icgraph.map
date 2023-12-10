@@ -1,4 +1,5 @@
 <map id="IllaNavigationPath.DrawPath" name="IllaNavigationPath.DrawPath">
-<area shape="rect" id="node1" title=" " alt="" coords="243,13,427,39"/>
-<area shape="rect" id="node2" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="5,5,195,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="259,46,443,73"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="13,5,203,47"/>
+<area shape="rect" id="node3" href="$class_pick_lattice_and_insert_in_location.html#a1ca3add4e1452c0650d96f916ae0991e" title=" " alt="" coords="5,71,211,112"/>
 </map>

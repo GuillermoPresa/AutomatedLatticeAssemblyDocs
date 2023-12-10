@@ -1,6 +1,4 @@
 <map id="Assets.Resources.Objects.ILLAV3.DifferentialJoint.MotorAnglesFromJointAngles" name="Assets.Resources.Objects.ILLAV3.DifferentialJoint.MotorAnglesFromJointAngles">
-<area shape="rect" id="node1" title=" " alt="" coords="787,5,979,61"/>
-<area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#abc3cdc4dee3d6bc3ebe6397fcb047c94" title=" " alt="" coords="525,5,739,61"/>
-<area shape="rect" id="node3" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,13,477,54"/>
-<area shape="rect" id="node4" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,13,236,54"/>
+<area shape="rect" id="node1" title=" " alt="" coords="267,5,459,61"/>
+<area shape="rect" id="node2" href="$class_assets_1_1_resources_1_1_objects_1_1_i_l_l_a_v3_1_1_differential_joint.html#abc3cdc4dee3d6bc3ebe6397fcb047c94" title="Updates the position of the lattice that is stored in the storage point of the differential joint." alt="" coords="5,5,219,61"/>
 </map>

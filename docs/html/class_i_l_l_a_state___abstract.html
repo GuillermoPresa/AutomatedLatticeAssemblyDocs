@@ -110,14 +110,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad16dedd878091349fec8e1f44af80b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759afa3055ed19e54de9a14c77c927fb"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_state___abstract.html#a759afa3055ed19e54de9a14c77c927fb">UpdateState</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript)</td></tr>
 <tr class="separator:a759afa3055ed19e54de9a14c77c927fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fd0a88d1bbbd20fa6069ea9ed3800ee"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_state___abstract.html#a1fd0a88d1bbbd20fa6069ea9ed3800ee">CheckSwitchStates</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript)</td></tr>
-<tr class="separator:a1fd0a88d1bbbd20fa6069ea9ed3800ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af909fbbd7c5d7bd47173371fb0239fce"><td class="memItemLeft" align="right" valign="top">abstract bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_state___abstract.html#af909fbbd7c5d7bd47173371fb0239fce">CheckAndSwitchStates</a> (<a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a> robotScript)</td></tr>
+<tr class="separator:af909fbbd7c5d7bd47173371fb0239fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab67f594973b4522b1f230b2767c8b972"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_state___abstract.html#ab67f594973b4522b1f230b2767c8b972">DrawUI</a> (<a class="el" href="class_i_l_l_a_v3___u_ielements.html">ILLAV3_UIelements</a> <a class="el" href="class_i_l_l_a_v3___u_ielements.html">ILLAV3_UIelements</a>)</td></tr>
 <tr class="separator:ab67f594973b4522b1f230b2767c8b972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1fd0a88d1bbbd20fa6069ea9ed3800ee" name="a1fd0a88d1bbbd20fa6069ea9ed3800ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fd0a88d1bbbd20fa6069ea9ed3800ee">&#9670;&nbsp;</a></span>CheckSwitchStates()</h2>
+<a id="af909fbbd7c5d7bd47173371fb0239fce" name="af909fbbd7c5d7bd47173371fb0239fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af909fbbd7c5d7bd47173371fb0239fce">&#9670;&nbsp;</a></span>CheckAndSwitchStates()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract void ILLAState_Abstract.CheckSwitchStates </td>
+          <td class="memname">abstract bool ILLAState_Abstract.CheckAndSwitchStates </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_illa_controller_v3.html">IllaControllerV3</a>&#160;</td>
           <td class="paramname"><em>robotScript</em></td><td>)</td>
@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_i_l_l_a_state___configured.html#aa95ac7e7bcee8f4ede7be32eea586ec1">ILLAState_Configured</a>, <a class="el" href="class_i_l_l_a_state___connected.html#a6dd8c8e18d5892436b4e4aa5c4ee5a56">ILLAState_Connected</a>, <a class="el" href="class_i_l_l_a_state___e_stop.html#a06f04a63c83ced5cc4c63bf771116d0a">ILLAState_EStop</a>, <a class="el" href="class_i_l_l_a_state___executing_work_package.html#a6a9e5f2b0da00d2d6fd2e33547d45bc2">ILLAState_ExecutingWorkPackage</a>, and <a class="el" href="class_i_l_l_a_state___spawned.html#a06ff1ebdc5f14f6abe0f72581931c6f7">ILLAState_Spawned</a>.</p>
+<p>Implemented in <a class="el" href="class_i_l_l_a_state___configured.html#a42982a2a9e4cf53250e918fe6ee601f6">ILLAState_Configured</a>, <a class="el" href="class_i_l_l_a_state___connected.html#aabb494a82ef0f8b6b3528704116e1f03">ILLAState_Connected</a>, <a class="el" href="class_i_l_l_a_state___e_stop.html#af8fab7c9bd432bc85d1d1f668c7ae1ff">ILLAState_EStop</a>, <a class="el" href="class_i_l_l_a_state___executing_work_package.html#aba170192f9a7e75aa80f6536463fccf8">ILLAState_ExecutingWorkPackage</a>, and <a class="el" href="class_i_l_l_a_state___spawned.html#ab1ce3ec7e62c4e846b13d1d379e1a3dd">ILLAState_Spawned</a>.</p>
 
 </div>
 </div>
@@ -212,18 +212,19 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_l_l_a_state___abstract_a02e8f269b86bcff46415e2b8de32548c_icgraph.png" border="0" usemap="#aclass_i_l_l_a_state___abstract_a02e8f269b86bcff46415e2b8de32548c_icgraph" alt=""/></div>
 <map name="aclass_i_l_l_a_state___abstract_a02e8f269b86bcff46415e2b8de32548c_icgraph" id="aclass_i_l_l_a_state___abstract_a02e8f269b86bcff46415e2b8de32548c_icgraph">
-<area shape="rect" title=" " alt="" coords="793,171,964,213"/>
-<area shape="rect" href="class_illa_controller_v3.html#a035e2ff566d69d5e1003dfb45477a73b" title=" " alt="" coords="574,110,734,151"/>
-<area shape="rect" href="class_illa_controller_v3.html#ad66980ec7b35a4b0062c38882b53158b" title=" " alt="" coords="583,179,725,205"/>
-<area shape="rect" href="class_illa_controller_v3.html#a98e6931e707599ff8b650639400e7a57" title=" " alt="" coords="563,235,745,261"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="301,107,498,149"/>
+<area shape="rect" title=" " alt="" coords="793,118,964,159"/>
+<area shape="rect" href="class_illa_controller_v3.html#a035e2ff566d69d5e1003dfb45477a73b" title=" " alt="" coords="574,58,734,99"/>
+<area shape="rect" href="class_illa_controller_v3.html#ad66980ec7b35a4b0062c38882b53158b" title=" " alt="" coords="583,125,725,152"/>
+<area shape="rect" href="class_illa_controller_v3.html#a98e6931e707599ff8b650639400e7a57" title=" " alt="" coords="563,180,745,207"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="301,55,498,97"/>
 <area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,5,217,32"/>
 <area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,56,204,83"/>
 <area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,107,236,149"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#aa95ac7e7bcee8f4ede7be32eea586ec1" title=" " alt="" coords="305,173,493,214"/>
-<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#a6a9e5f2b0da00d2d6fd2e33547d45bc2" title=" " alt="" coords="284,238,515,279"/>
-<area shape="rect" href="class_i_l_l_a_state___spawned.html#a06ff1ebdc5f14f6abe0f72581931c6f7" title=" " alt="" coords="290,303,509,345"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a42982a2a9e4cf53250e918fe6ee601f6" title=" " alt="" coords="305,173,493,214"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#aba170192f9a7e75aa80f6536463fccf8" title=" " alt="" coords="284,238,515,279"/>
+<area shape="rect" href="class_i_l_l_a_state___spawned.html#ab1ce3ec7e62c4e846b13d1d379e1a3dd" title=" " alt="" coords="298,303,501,345"/>
 <area shape="rect" href="class_illa_controller_v3.html#af3bc068870d0f8316bef9167f5e20795" title=" " alt="" coords="319,369,480,410"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a227f72970b0507863f8e46fab78ef0ab" title=" " alt="" coords="286,121,513,148"/>
 <area shape="rect" href="class_i_l_l_a_state___configured.html#a671f800802b642da9ce3e9be97366c79" title=" " alt="" coords="25,173,217,214"/>
 <area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,238,236,279"/>
 <area shape="rect" href="class_i_l_l_a_state___spawned.html#a02f83df2c777ad534f2dc73cffb37df9" title=" " alt="" coords="29,303,213,345"/>
@@ -262,17 +263,18 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_i_l_l_a_state___abstract_ad16dedd878091349fec8e1f44af80b35_icgraph.png" border="0" usemap="#aclass_i_l_l_a_state___abstract_ad16dedd878091349fec8e1f44af80b35_icgraph" alt=""/></div>
 <map name="aclass_i_l_l_a_state___abstract_ad16dedd878091349fec8e1f44af80b35_icgraph" id="aclass_i_l_l_a_state___abstract_ad16dedd878091349fec8e1f44af80b35_icgraph">
-<area shape="rect" title=" " alt="" coords="793,184,987,211"/>
-<area shape="rect" href="class_illa_controller_v3.html#a035e2ff566d69d5e1003dfb45477a73b" title=" " alt="" coords="574,127,734,169"/>
-<area shape="rect" href="class_illa_controller_v3.html#a98e6931e707599ff8b650639400e7a57" title=" " alt="" coords="563,213,745,240"/>
-<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="301,107,498,149"/>
+<area shape="rect" title=" " alt="" coords="793,151,987,177"/>
+<area shape="rect" href="class_illa_controller_v3.html#a035e2ff566d69d5e1003dfb45477a73b" title=" " alt="" coords="574,85,734,126"/>
+<area shape="rect" href="class_illa_controller_v3.html#a98e6931e707599ff8b650639400e7a57" title=" " alt="" coords="563,180,745,207"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a68befc466b8cb67b8285a6e149cf6879" title=" " alt="" coords="301,55,498,97"/>
 <area shape="rect" href="class_i_l_l_a_state___connected.html#a434a902a8673a8fd2c83295c2eb17dac" title=" " alt="" coords="24,5,217,32"/>
 <area shape="rect" href="class_i_l_l_a_state___e_stop.html#a661417e074d4c8e1530bbaa04a92d0d3" title=" " alt="" coords="37,56,204,83"/>
 <area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac1aa7a0f380e23875f488df06efcf182" title=" " alt="" coords="5,107,236,149"/>
-<area shape="rect" href="class_i_l_l_a_state___configured.html#aa95ac7e7bcee8f4ede7be32eea586ec1" title=" " alt="" coords="305,173,493,214"/>
-<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#a6a9e5f2b0da00d2d6fd2e33547d45bc2" title=" " alt="" coords="284,238,515,279"/>
-<area shape="rect" href="class_i_l_l_a_state___spawned.html#a06ff1ebdc5f14f6abe0f72581931c6f7" title=" " alt="" coords="290,303,509,345"/>
+<area shape="rect" href="class_i_l_l_a_state___configured.html#a42982a2a9e4cf53250e918fe6ee601f6" title=" " alt="" coords="305,173,493,214"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#aba170192f9a7e75aa80f6536463fccf8" title=" " alt="" coords="284,238,515,279"/>
+<area shape="rect" href="class_i_l_l_a_state___spawned.html#ab1ce3ec7e62c4e846b13d1d379e1a3dd" title=" " alt="" coords="298,303,501,345"/>
 <area shape="rect" href="class_illa_controller_v3.html#af3bc068870d0f8316bef9167f5e20795" title=" " alt="" coords="319,369,480,410"/>
+<area shape="rect" href="class_i_l_l_a_v3___u_ielements.html#a227f72970b0507863f8e46fab78ef0ab" title=" " alt="" coords="286,121,513,148"/>
 <area shape="rect" href="class_i_l_l_a_state___configured.html#a671f800802b642da9ce3e9be97366c79" title=" " alt="" coords="25,173,217,214"/>
 <area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,238,236,279"/>
 <area shape="rect" href="class_i_l_l_a_state___spawned.html#a02f83df2c777ad534f2dc73cffb37df9" title=" " alt="" coords="29,303,213,345"/>

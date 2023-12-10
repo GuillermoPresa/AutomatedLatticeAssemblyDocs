@@ -1,0 +1,11 @@
+<map id="MovementAction.SetupAction" name="MovementAction.SetupAction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,101,199,128"/>
+<area shape="rect" id="node2" href="$class_pos_j.html#afbbe0731c53f2eeeeaa2c8b9f6cd4781" title=" " alt="" coords="525,76,728,103"/>
+<area shape="rect" id="node5" href="$class_movement.html#ad38b7affeb0c772e388facb4a671421c" title=" " alt="" coords="247,127,477,153"/>
+<area shape="rect" id="node3" href="$class_angle_utilities.html#a86590d2f2a099f38a66906d7a6c43859" title=" " alt="" coords="776,29,991,56"/>
+<area shape="rect" id="node4" href="$class_pos_j.html#a94fcd443e19ca2b7440b2739c206ee09" title=" " alt="" coords="1081,80,1165,107"/>
+<area shape="rect" id="node6" href="$class_pos_j.html#a853ba026122cd1332fffefa320d2bb64" title="Does not take into consideration the motion limits of a particular robot. For that utilize methods im..." alt="" coords="537,127,716,169"/>
+<area shape="rect" id="node7" href="$class_pos_j.html#a59643c441fc5977091b776ee4ac2fea1" title=" " alt="" coords="822,131,945,157"/>
+<area shape="rect" id="node9" href="$class_pos_j.html#a5071f901728aa6e54db6285c65d22910" title=" " alt="" coords="816,181,951,208"/>
+<area shape="rect" id="node8" href="$class_angle_utilities.html#abecfb99bebfa6cca32536020cf8c02b1" title=" " alt="" coords="1039,131,1208,157"/>
+</map>

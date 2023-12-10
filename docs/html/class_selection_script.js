@@ -25,7 +25,6 @@ var class_selection_script =
     [ "SelectingLattice", "class_selection_script.html#a246f0fda7f89482ab1f3a30d8d2bcf9f", null ],
     [ "SelectingObject", "class_selection_script.html#a677586ac56980111840b0f3855bdb65d", null ],
     [ "SelectingRobot", "class_selection_script.html#aade23c8c7a4f501322312e9b6c8cde1f", null ],
-    [ "ShowNavMesh", "class_selection_script.html#a93939d7d68d1f7018dd8ca07ac5741dd", null ],
     [ "SpawnerReference", "class_selection_script.html#a9d1b99db177609bd4e21bd6495a3b4cd", null ],
     [ "SpawnLatice", "class_selection_script.html#af83a2cefc4eea44666bd1e441886ce34", null ],
     [ "SpawnLattice", "class_selection_script.html#a44868cea78355bf28133df90cf62b74a", null ],

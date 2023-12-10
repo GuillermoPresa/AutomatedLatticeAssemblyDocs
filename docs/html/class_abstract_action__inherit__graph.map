@@ -1,0 +1,14 @@
+<map id="AbstractAction" name="AbstractAction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,113,285"/>
+<area shape="rect" id="node2" href="$class_actuate_screw_driver_action.html" title=" " alt="" coords="163,5,335,32"/>
+<area shape="rect" id="node3" href="$class_attatch_in_storage_point.html" title=" " alt="" coords="174,56,323,83"/>
+<area shape="rect" id="node4" href="$class_grab_neighbor_node___action.html" title="This actions moves the robot arm and inserts the screwdriver into the node. First the arm moves a dis..." alt="" coords="161,107,336,133"/>
+<area shape="rect" id="node5" href="$class_map_nav_space_action.html" title=" " alt="" coords="177,157,320,184"/>
+<area shape="rect" id="node6" href="$class_move_to_node.html" title=" " alt="" coords="201,208,297,235"/>
+<area shape="rect" id="node7" href="$class_movement_action.html" title=" " alt="" coords="189,259,308,285"/>
+<area shape="rect" id="node8" href="$class_place_lattice.html" title=" " alt="" coords="201,309,296,336"/>
+<area shape="rect" id="node9" href="$class_store_lattice.html" title="Puts the currently screwed in lattice into the storage point of the opposite differential joint." alt="" coords="203,360,295,387"/>
+<area shape="rect" id="node10" href="$class_swap_base_action.html" title=" " alt="" coords="188,411,309,437"/>
+<area shape="rect" id="node11" href="$class_take_lattice_from_storage.html" title="Puts the currently stored lattice into the screwdriver of the opposite differential joint." alt="" coords="167,461,331,488"/>
+<area shape="rect" id="node12" href="$class_wait_action.html" title=" " alt="" coords="205,512,292,539"/>
+</map>

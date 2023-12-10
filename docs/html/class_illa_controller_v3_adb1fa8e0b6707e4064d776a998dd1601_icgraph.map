@@ -1,14 +1,18 @@
 <map id="IllaControllerV3.IllaMesh" name="IllaControllerV3.IllaMesh">
-<area shape="rect" id="node1" title=" " alt="" coords="1448,46,1609,73"/>
-<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a59587fbd1bbbd728dfdb3224a6cdb408" title=" " alt="" coords="1221,5,1377,47"/>
-<area shape="rect" id="node4" href="$class_illa_controller_v3.html#ae08318123dbbc607bf524cce0aa0e035" title=" " alt="" coords="1197,71,1400,112"/>
-<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="947,5,1137,47"/>
-<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a3ce63bc7f014ccb914c2d44738fac18d" title=" " alt="" coords="959,71,1125,112"/>
-<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ac596ba25103eb0743a5fdc79e193a463" title="From an input movement return a new movement with only the non colliding posJ solutions." alt="" coords="935,137,1149,163"/>
-<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a7136481d493229bb8ff9cc97ec802070" title=" " alt="" coords="713,96,875,137"/>
-<area shape="rect" id="node11" href="$class_move_and_insert_in_node.html#acd340b01cbc3a5c8ad5f2a637de8f85c" title=" " alt="" coords="701,161,887,203"/>
-<area shape="rect" id="node8" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="455,96,653,137"/>
-<area shape="rect" id="node9" href="$class_illa_controller_v3.html#aec6aa214422a680dcbbe502f85484590" title=" " alt="" coords="232,96,407,137"/>
-<area shape="rect" id="node10" href="$class_illa_controller_v3.html#ad9ffe0c670d2997ff0f0be71c647aacf" title=" " alt="" coords="5,96,184,137"/>
-<area shape="rect" id="node12" href="$class_move_and_insert_in_node.html#a949a3018a59cdf8c6893b86124df5ff7" title=" " alt="" coords="455,161,653,203"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1491,46,1652,73"/>
+<area shape="rect" id="node2" href="$class_illa_controller_v3.html#a59587fbd1bbbd728dfdb3224a6cdb408" title=" " alt="" coords="1263,5,1419,47"/>
+<area shape="rect" id="node4" href="$class_illa_controller_v3.html#a4f9865567dc3c18c3e72ee293dd24a87" title=" " alt="" coords="1240,71,1443,112"/>
+<area shape="rect" id="node3" href="$class_illa_controller_v3.html#ac1f9d5ade3504623ddafdb9c72a3454c" title=" " alt="" coords="763,5,952,47"/>
+<area shape="rect" id="node5" href="$class_illa_controller_v3.html#a3ce63bc7f014ccb914c2d44738fac18d" title=" " alt="" coords="1016,67,1183,108"/>
+<area shape="rect" id="node6" href="$class_illa_controller_v3.html#ad6c93c0ff2968be9d75fe561c16d1aba" title="From an input movement return a new movement with only the non colliding posJ solutions." alt="" coords="1007,136,1192,177"/>
+<area shape="rect" id="node7" href="$class_illa_controller_v3.html#a3ccf98a66cdc97ce0fa406b4211874be" title=" " alt="" coords="776,71,939,112"/>
+<area shape="rect" id="node11" href="$class_grab_neighbor_node___action.html#a3301975aa234cde9ba64239188176ef7" title=" " alt="" coords="768,136,947,177"/>
+<area shape="rect" id="node13" href="$class_take_lattice_from_storage.html#a3f55f3796c773e338a8a721d8b90a7e8" title=" " alt="" coords="756,201,959,243"/>
+<area shape="rect" id="node14" href="$class_illa_controller_v3.html#a37269c4bba900293da3100e710bb8539" title="If a node is selected (selected node from the selection script) and the user has enabled the ToGrab b..." alt="" coords="772,267,943,308"/>
+<area shape="rect" id="node8" href="$class_illa_controller_v3.html#ac78d65fc8f3141e5864b6ef3c7dddb2a" title=" " alt="" coords="511,71,708,112"/>
+<area shape="rect" id="node9" href="$class_illa_controller_v3.html#aa5cb39f48cd181882426f5c865952f2f" title=" " alt="" coords="260,71,435,112"/>
+<area shape="rect" id="node10" href="$class_illa_controller_v3.html#a28f63001d6ff55d1e75260633a3c1f9d" title=" " alt="" coords="5,71,184,112"/>
+<area shape="rect" id="node12" href="$class_grab_neighbor_node___action.html#ab50c45a50b556d01d7dbe679a0d92471" title=" " alt="" coords="520,136,699,177"/>
+<area shape="rect" id="node15" href="$class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="513,267,706,308"/>
+<area shape="rect" id="node16" href="$class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="232,267,463,308"/>
 </map>

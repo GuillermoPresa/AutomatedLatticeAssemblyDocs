@@ -2,6 +2,14 @@
 \begin{DoxyRefList}
 \item[Class \mbox{\hyperlink{class_illa_controller_v3}{Illa\+Controller\+V3}} ]\label{todo__todo000001}%
 \Hypertarget{todo__todo000001}%
+Issues with the base\+Offset\+Quat. Its a rotational ofsset for the base to account for the base rotation after a base swap. However its a mess and it is not consistent. Something is not right with the differences between both DH configurations and the offset used. I dont have time to fix this. A cleaner solution would require more consisten non inverted and inverted DH configurations 
+
+
+
+Would be amazing to use partial classes to split this monstruosity of a 
+
+
+
 Check variable accesibility (public, private) 
 
 
@@ -27,6 +35,10 @@ Refine public and private variable status
 
 
 transform ILLA V3 execution into state machine like previous robot 
+
+
+
+there are some fixes with the base\+Offset\+Quat. It is removed from the Base joint and the last joint on the update but then added on the screwed in lattice position update in the diff joint. Overall this is a mess. 
 \item[Member \mbox{\hyperlink{class_illa_graph_node_ab5e3aa47f179ee2d8ad84620cf11db85}{Illa\+Graph\+Node.Draw\+Outgoing\+Edges\+With\+Cost}} (\mbox{\hyperlink{class_illa_graph_node}{Illa\+Graph\+Node}} previous\+Node\+To\+Draw)]\label{todo__todo000002}%
 \Hypertarget{todo__todo000002}%
 OPTIMIAZTION\+: only compute the cost of the elements that are not already checked.  

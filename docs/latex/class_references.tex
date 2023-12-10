@@ -11,8 +11,7 @@ Inheritance diagram for References\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for References\+:
-\nopagebreak
+Collaboration diagram for References\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -36,6 +35,8 @@ void \mbox{\hyperlink{class_references_a0b3f57736871cc72fc77597b388d77e6}{Reload
 void \mbox{\hyperlink{class_references_a04c0d628f2c5d5e4e7f02bb6e1905ba5}{Refresh\+Available\+Configuration\+List}} ()
 \item 
 void \mbox{\hyperlink{class_references_a01a2db7007bf1cdf014c958da61a4172}{Sort\+And\+Add\+To\+Object\+List}} (Game\+Object Object\+To\+Add)
+\item 
+void \mbox{\hyperlink{class_references_aebf33afea232e7942ad4edb628c248f3}{Force\+Time\+Step}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -45,6 +46,8 @@ string \mbox{\hyperlink{class_references_a8afcdcd5955be2f0148cb939d65c02bd}{ILLA
 string \mbox{\hyperlink{class_references_af78ba2e50d3f68e0323493c574eefdf3}{Objects\+Path}}
 \item 
 string \mbox{\hyperlink{class_references_a620d06e31a43ea0bde08217ac9074cdb}{Lattice\+Path}}
+\item 
+\mbox{\hyperlink{class_text_gizmos}{Text\+Gizmos}} \mbox{\hyperlink{class_references_a8f43f6e0c043b4c600d15c0d3055dc1d}{text\+Gizmos\+Reference}}
 \item 
 Texture2D \mbox{\hyperlink{class_references_a7bdc6b08cec46317bcfc6623d987c7eb}{Time\+Window\+Background}}
 \item 
@@ -90,9 +93,11 @@ List$<$ string $>$ \mbox{\hyperlink{class_references_aef82ebd21ac22584c4f173da0b
 \item 
 Material \mbox{\hyperlink{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}{Structure\+Material}}
 \item 
-Material \mbox{\hyperlink{class_references_a67ded95600ec59d53ba4b5bdcaa2b315}{Initial\+Structure\+Material}}
+Material \mbox{\hyperlink{class_references_a534012cb40ae4126cc16b57b1543cbf6}{available\+Structure\+Material}}
 \item 
-Material \mbox{\hyperlink{class_references_adea2e447839f404e6fb011269ada64d4}{Unplaced\+Lattice\+Material}}
+Material \mbox{\hyperlink{class_references_a8be5c7b5811b4070ad0752fd6db936b7}{placed\+Structure\+Material}}
+\item 
+Material \mbox{\hyperlink{class_references_a6c7f1ac9963bc2bbd70e907915d18a6c}{structure\+Definition\+Material}}
 \item 
 Game\+Object \mbox{\hyperlink{class_references_a3760c76d3c9ef01a6fac7e3e549184f2}{Lattice}}
 \item 
@@ -108,9 +113,42 @@ Mesh \mbox{\hyperlink{class_references_af4a195a6edf4c8d2b65783c2e6222d05}{Lattic
 \item 
 int \mbox{\hyperlink{class_references_a6d192c4617a2686dc5dc5a969994e8be}{Time\+Multiplyier}} = 1
 \end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_references_a3ec891129a107c80d9f589f3ef13d0fd}{Global\+Lattice\+List\+\_\+\+Placed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_references_ac13064e64d098c33c5025ddd65db40db}{Global\+Lattice\+List\+\_\+\+To\+Be\+PLaced}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ Game\+Object $>$ \mbox{\hyperlink{class_references_adf216d0a46970be935c522f74b3cfa3b}{Global\+Lattice\+List\+\_\+\+Available\+For\+Pickup}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}} $>$ \mbox{\hyperlink{class_references_a52c9007530db8ad54badfb2de966da27}{Available\+Robot\+Workers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Robot workers available and not currently executing a WP \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_parent_object_script}{Parent\+Object\+Script}} \mbox{\hyperlink{class_references_ac7a3fc06d54f5b81defcf66793d55a91}{Global\+Parent\+Script}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_references_aebf33afea232e7942ad4edb628c248f3}\label{class_references_aebf33afea232e7942ad4edb628c248f3}} 
+\index{References@{References}!ForceTimeStep@{ForceTimeStep}}
+\index{ForceTimeStep@{ForceTimeStep}!References@{References}}
+\doxysubsubsection{\texorpdfstring{ForceTimeStep()}{ForceTimeStep()}}
+{\footnotesize\ttfamily void References.\+Force\+Time\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_references_aebf33afea232e7942ad4edb628c248f3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_references_aebf33afea232e7942ad4edb628c248f3_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{class_references_a04c0d628f2c5d5e4e7f02bb6e1905ba5}\label{class_references_a04c0d628f2c5d5e4e7f02bb6e1905ba5}} 
 \index{References@{References}!RefreshAvailableConfigurationList@{RefreshAvailableConfigurationList}}
 \index{RefreshAvailableConfigurationList@{RefreshAvailableConfigurationList}!References@{References}}
@@ -147,7 +185,7 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=256pt]{class_references_a01a2db7007bf1cdf014c958da61a4172_cgraph}
+\includegraphics[width=350pt]{class_references_a01a2db7007bf1cdf014c958da61a4172_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:\nopagebreak
@@ -179,6 +217,12 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_references_a534012cb40ae4126cc16b57b1543cbf6}\label{class_references_a534012cb40ae4126cc16b57b1543cbf6}} 
+\index{References@{References}!availableStructureMaterial@{availableStructureMaterial}}
+\index{availableStructureMaterial@{availableStructureMaterial}!References@{References}}
+\doxysubsubsection{\texorpdfstring{availableStructureMaterial}{availableStructureMaterial}}
+{\footnotesize\ttfamily Material References.\+available\+Structure\+Material}
+
 \mbox{\Hypertarget{class_references_a5691572b32aa4cfe355fb0e274d14f2c}\label{class_references_a5691572b32aa4cfe355fb0e274d14f2c}} 
 \index{References@{References}!Building@{Building}}
 \index{Building@{Building}!References@{References}}
@@ -263,12 +307,6 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ILLAV3configurationNameList}{ILLAV3configurationNameList}}
 {\footnotesize\ttfamily List$<$string$>$ References.\+ILLAV3configuration\+Name\+List}
 
-\mbox{\Hypertarget{class_references_a67ded95600ec59d53ba4b5bdcaa2b315}\label{class_references_a67ded95600ec59d53ba4b5bdcaa2b315}} 
-\index{References@{References}!InitialStructureMaterial@{InitialStructureMaterial}}
-\index{InitialStructureMaterial@{InitialStructureMaterial}!References@{References}}
-\doxysubsubsection{\texorpdfstring{InitialStructureMaterial}{InitialStructureMaterial}}
-{\footnotesize\ttfamily Material References.\+Initial\+Structure\+Material}
-
 \mbox{\Hypertarget{class_references_a3760c76d3c9ef01a6fac7e3e549184f2}\label{class_references_a3760c76d3c9ef01a6fac7e3e549184f2}} 
 \index{References@{References}!Lattice@{Lattice}}
 \index{Lattice@{Lattice}!References@{References}}
@@ -335,6 +373,12 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{ObjectsPath}{ObjectsPath}}
 {\footnotesize\ttfamily string References.\+Objects\+Path}
 
+\mbox{\Hypertarget{class_references_a8be5c7b5811b4070ad0752fd6db936b7}\label{class_references_a8be5c7b5811b4070ad0752fd6db936b7}} 
+\index{References@{References}!placedStructureMaterial@{placedStructureMaterial}}
+\index{placedStructureMaterial@{placedStructureMaterial}!References@{References}}
+\doxysubsubsection{\texorpdfstring{placedStructureMaterial}{placedStructureMaterial}}
+{\footnotesize\ttfamily Material References.\+placed\+Structure\+Material}
+
 \mbox{\Hypertarget{class_references_a183bf8d1ecc6580326f829b6056ced32}\label{class_references_a183bf8d1ecc6580326f829b6056ced32}} 
 \index{References@{References}!RenderingJobQueue@{RenderingJobQueue}}
 \index{RenderingJobQueue@{RenderingJobQueue}!References@{References}}
@@ -359,11 +403,23 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{SelectedEnvironmentIndex}{SelectedEnvironmentIndex}}
 {\footnotesize\ttfamily int References.\+Selected\+Environment\+Index}
 
+\mbox{\Hypertarget{class_references_a6c7f1ac9963bc2bbd70e907915d18a6c}\label{class_references_a6c7f1ac9963bc2bbd70e907915d18a6c}} 
+\index{References@{References}!structureDefinitionMaterial@{structureDefinitionMaterial}}
+\index{structureDefinitionMaterial@{structureDefinitionMaterial}!References@{References}}
+\doxysubsubsection{\texorpdfstring{structureDefinitionMaterial}{structureDefinitionMaterial}}
+{\footnotesize\ttfamily Material References.\+structure\+Definition\+Material}
+
 \mbox{\Hypertarget{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}\label{class_references_a3d1a9e20ce2f8a4963939e59ba0a4fd1}} 
 \index{References@{References}!StructureMaterial@{StructureMaterial}}
 \index{StructureMaterial@{StructureMaterial}!References@{References}}
 \doxysubsubsection{\texorpdfstring{StructureMaterial}{StructureMaterial}}
 {\footnotesize\ttfamily Material References.\+Structure\+Material}
+
+\mbox{\Hypertarget{class_references_a8f43f6e0c043b4c600d15c0d3055dc1d}\label{class_references_a8f43f6e0c043b4c600d15c0d3055dc1d}} 
+\index{References@{References}!textGizmosReference@{textGizmosReference}}
+\index{textGizmosReference@{textGizmosReference}!References@{References}}
+\doxysubsubsection{\texorpdfstring{textGizmosReference}{textGizmosReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text_gizmos}{Text\+Gizmos}} References.\+text\+Gizmos\+Reference}
 
 \mbox{\Hypertarget{class_references_a6d192c4617a2686dc5dc5a969994e8be}\label{class_references_a6d192c4617a2686dc5dc5a969994e8be}} 
 \index{References@{References}!TimeMultiplyier@{TimeMultiplyier}}
@@ -377,11 +433,42 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{TimeWindowBackground}{TimeWindowBackground}}
 {\footnotesize\ttfamily Texture2D References.\+Time\+Window\+Background}
 
-\mbox{\Hypertarget{class_references_adea2e447839f404e6fb011269ada64d4}\label{class_references_adea2e447839f404e6fb011269ada64d4}} 
-\index{References@{References}!UnplacedLatticeMaterial@{UnplacedLatticeMaterial}}
-\index{UnplacedLatticeMaterial@{UnplacedLatticeMaterial}!References@{References}}
-\doxysubsubsection{\texorpdfstring{UnplacedLatticeMaterial}{UnplacedLatticeMaterial}}
-{\footnotesize\ttfamily Material References.\+Unplaced\+Lattice\+Material}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_references_a52c9007530db8ad54badfb2de966da27}\label{class_references_a52c9007530db8ad54badfb2de966da27}} 
+\index{References@{References}!AvailableRobotWorkers@{AvailableRobotWorkers}}
+\index{AvailableRobotWorkers@{AvailableRobotWorkers}!References@{References}}
+\doxysubsubsection{\texorpdfstring{AvailableRobotWorkers}{AvailableRobotWorkers}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_abstract_robot_worker}{Abstract\+Robot\+Worker}}$>$ References.\+Available\+Robot\+Workers\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Robot workers available and not currently executing a WP 
+
+\mbox{\Hypertarget{class_references_adf216d0a46970be935c522f74b3cfa3b}\label{class_references_adf216d0a46970be935c522f74b3cfa3b}} 
+\index{References@{References}!GlobalLatticeList\_AvailableForPickup@{GlobalLatticeList\_AvailableForPickup}}
+\index{GlobalLatticeList\_AvailableForPickup@{GlobalLatticeList\_AvailableForPickup}!References@{References}}
+\doxysubsubsection{\texorpdfstring{GlobalLatticeList\_AvailableForPickup}{GlobalLatticeList\_AvailableForPickup}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ References.\+Global\+Lattice\+List\+\_\+\+Available\+For\+Pickup\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_references_a3ec891129a107c80d9f589f3ef13d0fd}\label{class_references_a3ec891129a107c80d9f589f3ef13d0fd}} 
+\index{References@{References}!GlobalLatticeList\_Placed@{GlobalLatticeList\_Placed}}
+\index{GlobalLatticeList\_Placed@{GlobalLatticeList\_Placed}!References@{References}}
+\doxysubsubsection{\texorpdfstring{GlobalLatticeList\_Placed}{GlobalLatticeList\_Placed}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ References.\+Global\+Lattice\+List\+\_\+\+Placed\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_references_ac13064e64d098c33c5025ddd65db40db}\label{class_references_ac13064e64d098c33c5025ddd65db40db}} 
+\index{References@{References}!GlobalLatticeList\_ToBePLaced@{GlobalLatticeList\_ToBePLaced}}
+\index{GlobalLatticeList\_ToBePLaced@{GlobalLatticeList\_ToBePLaced}!References@{References}}
+\doxysubsubsection{\texorpdfstring{GlobalLatticeList\_ToBePLaced}{GlobalLatticeList\_ToBePLaced}}
+{\footnotesize\ttfamily List$<$Game\+Object$>$ References.\+Global\+Lattice\+List\+\_\+\+To\+Be\+PLaced\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{class_references_ac7a3fc06d54f5b81defcf66793d55a91}\label{class_references_ac7a3fc06d54f5b81defcf66793d55a91}} 
+\index{References@{References}!GlobalParentScript@{GlobalParentScript}}
+\index{GlobalParentScript@{GlobalParentScript}!References@{References}}
+\doxysubsubsection{\texorpdfstring{GlobalParentScript}{GlobalParentScript}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_parent_object_script}{Parent\+Object\+Script}} References.\+Global\+Parent\+Script\hspace{0.3cm}{\ttfamily [get]}}
 
 
 

@@ -97,7 +97,7 @@ Collaboration diagram for ILLAServo:</div>
 <map name="a_i_l_l_a_servo_coll__map" id="a_i_l_l_a_servo_coll__map">
 <area shape="rect" title=" " alt="" coords="30,184,110,211"/>
 <area shape="rect" href="class_servo_configuration.html" title=" " alt="" coords="5,95,135,121"/>
-<area shape="rect" href="class_rotation_limit.html" title=" " alt="" coords="21,5,119,32"/>
+<area shape="rect" href="class_rotation_limit.html" title="Represents the rotation limits for joints and servos. Consist of a lower limit and an upper limit...." alt="" coords="21,5,119,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -109,12 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a79b301a0798b70dec1c978c158c1c8fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f15857db9674e30a355dc5ba03c9c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#af9f15857db9674e30a355dc5ba03c9c3">AssignVirtualLSSservo</a> (<a class="el" href="class_virtual_servo.html">VirtualServo</a> virtualServo_in)</td></tr>
 <tr class="separator:af9f15857db9674e30a355dc5ba03c9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af137e33807657c09cc8e148b09d269ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#af137e33807657c09cc8e148b09d269ff">Querry</a> (<a class="el" href="class_lynxmotion_1_1_robotics_1_1_lss_command.html">LssCommand</a> cmd)</td></tr>
+<tr class="separator:af137e33807657c09cc8e148b09d269ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c87c25f347cf806dd1340d476037f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a25c87c25f347cf806dd1340d476037f8">QuerryPosition</a> ()</td></tr>
 <tr class="separator:a25c87c25f347cf806dd1340d476037f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf500cfb9daeb329b9330ef0b1694dc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#aaf500cfb9daeb329b9330ef0b1694dc4">QuerryVoltage</a> ()</td></tr>
 <tr class="separator:aaf500cfb9daeb329b9330ef0b1694dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cfd6bf41872feaa42b4c3c12026c95c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a2cfd6bf41872feaa42b4c3c12026c95c">MoveToJointTargetPosition</a> ()</td></tr>
-<tr class="separator:a2cfd6bf41872feaa42b4c3c12026c95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6489f34d54ca17e33236dae20d7bdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#aba6489f34d54ca17e33236dae20d7bdc">MoveToJointTargetPosition</a> (int frameUpdateFraction=5)</td></tr>
+<tr class="separator:aba6489f34d54ca17e33236dae20d7bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -137,6 +139,8 @@ Properties</h2></td></tr>
 <tr class="separator:ab9095be1d66a4cd4350e7073195bdbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6dda5928252f993556596ce2a7c918"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a8f6dda5928252f993556596ce2a7c918">voltage</a><code> [get]</code></td></tr>
 <tr class="separator:a8f6dda5928252f993556596ce2a7c918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade7260b53a73b18f2d13117a711bed40"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#ade7260b53a73b18f2d13117a711bed40">current</a><code> [get]</code></td></tr>
+<tr class="separator:ade7260b53a73b18f2d13117a711bed40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35cda98cdaa920b02bd02c5b47aa6c60"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a35cda98cdaa920b02bd02c5b47aa6c60">HasServo</a><code> [get]</code></td></tr>
 <tr class="separator:a35cda98cdaa920b02bd02c5b47aa6c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714ed71438271f445f8f95f257b64690"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_l_l_a_servo.html#a714ed71438271f445f8f95f257b64690">ID</a><code> [get]</code></td></tr>
@@ -208,8 +212,8 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a2cfd6bf41872feaa42b4c3c12026c95c" name="a2cfd6bf41872feaa42b4c3c12026c95c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cfd6bf41872feaa42b4c3c12026c95c">&#9670;&nbsp;</a></span>MoveToJointTargetPosition()</h2>
+<a id="aba6489f34d54ca17e33236dae20d7bdc" name="aba6489f34d54ca17e33236dae20d7bdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6489f34d54ca17e33236dae20d7bdc">&#9670;&nbsp;</a></span>MoveToJointTargetPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +221,8 @@ Properties</h2></td></tr>
         <tr>
           <td class="memname">void ILLAServo.MoveToJointTargetPosition </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>frameUpdateFraction</em> = <code>5</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -225,8 +230,8 @@ Properties</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_cgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_cgraph" alt=""/></div>
-<map name="aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_cgraph" id="aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_cgraph">
+<div class="center"><img src="class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_cgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_cgraph" alt=""/></div>
+<map name="aclass_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_cgraph" id="aclass_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,196,76"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_servo.html#aa3405f1765e598006e3fd9dcd381a67f" title=" " alt="" coords="244,5,449,47"/>
 <area shape="rect" href="class_virtual_servo.html#aeb8e11ee91a28f7d672097ee21e105fe" title=" " alt="" coords="281,71,413,98"/>
@@ -236,9 +241,49 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph" alt=""/></div>
-<map name="aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph" id="aclass_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph">
+<div class="center"><img src="class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_icgraph" alt=""/></div>
+<map name="aclass_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_icgraph" id="aclass_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_icgraph">
 <area shape="rect" title=" " alt="" coords="772,5,963,47"/>
+<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
+<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
+<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af137e33807657c09cc8e148b09d269ff" name="af137e33807657c09cc8e148b09d269ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af137e33807657c09cc8e148b09d269ff">&#9670;&nbsp;</a></span>Querry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ILLAServo.Querry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_lynxmotion_1_1_robotics_1_1_lss_command.html">LssCommand</a>&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_cgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_cgraph" alt=""/></div>
+<map name="aclass_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_cgraph" id="aclass_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_cgraph">
+<area shape="rect" title=" " alt="" coords="5,42,128,69"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b" title=" " alt="" coords="176,5,381,47"/>
+<area shape="rect" href="class_virtual_servo.html#aad72b0d6d1e25cafb4d164b0b35b6f49" title=" " alt="" coords="213,71,344,98"/>
+<area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="429,13,680,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_icgraph" alt=""/></div>
+<map name="aclass_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_icgraph" id="aclass_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_icgraph">
+<area shape="rect" title=" " alt="" coords="772,13,895,39"/>
 <area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
 <area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
 <area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
@@ -272,17 +317,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="477,13,728,39"/>
 </map>
 </div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph" alt=""/></div>
-<map name="aclass_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph" id="aclass_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph">
-<area shape="rect" title=" " alt="" coords="772,13,943,39"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
-<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -309,17 +343,6 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_servo.html#ad10c3979d9df1567380a2ec90527634b" title=" " alt="" coords="220,5,425,47"/>
 <area shape="rect" href="class_virtual_servo.html#aad72b0d6d1e25cafb4d164b0b35b6f49" title=" " alt="" coords="257,71,388,98"/>
 <area shape="rect" href="class_lynxmotion_1_1_robotics_1_1_lss_channel.html#a9af9c34414a37d77894881222889e007" title=" " alt="" coords="473,13,724,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph.png" border="0" usemap="#aclass_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph" alt=""/></div>
-<map name="aclass_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph" id="aclass_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph">
-<area shape="rect" title=" " alt="" coords="772,13,939,39"/>
-<area shape="rect" href="class_serial___l_s_s___control.html#ac7c0001d60d5fd298df171dc61b2acd2" title=" " alt="" coords="525,13,724,39"/>
-<area shape="rect" href="class_i_l_l_a_state___connected.html#a066487ffef95e073f0bb376c5a530fc9" title=" " alt="" coords="284,5,477,47"/>
-<area shape="rect" href="class_i_l_l_a_state___executing_work_package.html#ac01b9ded30006155ca2258af5fe622b3" title=" " alt="" coords="5,5,236,47"/>
 </map>
 </div>
 
@@ -411,6 +434,28 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
+<a id="ade7260b53a73b18f2d13117a711bed40" name="ade7260b53a73b18f2d13117a711bed40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade7260b53a73b18f2d13117a711bed40">&#9670;&nbsp;</a></span>current</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double ILLAServo.current</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab9095be1d66a4cd4350e7073195bdbd0" name="ab9095be1d66a4cd4350e7073195bdbd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab9095be1d66a4cd4350e7073195bdbd0">&#9670;&nbsp;</a></span>currentAngle</h2>
 

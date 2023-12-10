@@ -18,11 +18,13 @@ void \mbox{\hyperlink{class_i_l_l_a_servo_a79b301a0798b70dec1c978c158c1c8fe}{Ass
 \item 
 void \mbox{\hyperlink{class_i_l_l_a_servo_af9f15857db9674e30a355dc5ba03c9c3}{Assign\+Virtual\+LSSservo}} (\mbox{\hyperlink{class_virtual_servo}{Virtual\+Servo}} virtual\+Servo\+\_\+in)
 \item 
+void \mbox{\hyperlink{class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff}{Querry}} (\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_command}{Lss\+Command}} cmd)
+\item 
 void \mbox{\hyperlink{class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8}{Querry\+Position}} ()
 \item 
 void \mbox{\hyperlink{class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4}{Querry\+Voltage}} ()
 \item 
-void \mbox{\hyperlink{class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c}{Move\+To\+Joint\+Target\+Position}} ()
+void \mbox{\hyperlink{class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc}{Move\+To\+Joint\+Target\+Position}} (int frame\+Update\+Fraction=5)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
@@ -45,6 +47,8 @@ float \mbox{\hyperlink{class_i_l_l_a_servo_ae728f9f8531180182626b9773bf55208}{is
 double \mbox{\hyperlink{class_i_l_l_a_servo_ab9095be1d66a4cd4350e7073195bdbd0}{current\+Angle}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 double \mbox{\hyperlink{class_i_l_l_a_servo_a8f6dda5928252f993556596ce2a7c918}{voltage}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+double \mbox{\hyperlink{class_i_l_l_a_servo_ade7260b53a73b18f2d13117a711bed40}{current}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
 bool \mbox{\hyperlink{class_i_l_l_a_servo_a35cda98cdaa920b02bd02c5b47aa6c60}{Has\+Servo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
 \item 
@@ -74,25 +78,44 @@ short \mbox{\hyperlink{class_i_l_l_a_servo_a714ed71438271f445f8f95f257b64690}{ID
 \doxysubsubsection{\texorpdfstring{AssignVirtualLSSservo()}{AssignVirtualLSSservo()}}
 {\footnotesize\ttfamily void ILLAServo.\+Assign\+Virtual\+LSSservo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_virtual_servo}{Virtual\+Servo}}}]{virtual\+Servo\+\_\+in }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c}\label{class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c}} 
+\mbox{\Hypertarget{class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc}\label{class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc}} 
 \index{ILLAServo@{ILLAServo}!MoveToJointTargetPosition@{MoveToJointTargetPosition}}
 \index{MoveToJointTargetPosition@{MoveToJointTargetPosition}!ILLAServo@{ILLAServo}}
 \doxysubsubsection{\texorpdfstring{MoveToJointTargetPosition()}{MoveToJointTargetPosition()}}
-{\footnotesize\ttfamily void ILLAServo.\+Move\+To\+Joint\+Target\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void ILLAServo.\+Move\+To\+Joint\+Target\+Position (\begin{DoxyParamCaption}\item[{int}]{frame\+Update\+Fraction = {\ttfamily 5} }\end{DoxyParamCaption})}
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_cgraph}
+\includegraphics[width=350pt]{class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{class_i_l_l_a_servo_a2cfd6bf41872feaa42b4c3c12026c95c_icgraph}
+\includegraphics[width=350pt]{class_i_l_l_a_servo_aba6489f34d54ca17e33236dae20d7bdc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff}\label{class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff}} 
+\index{ILLAServo@{ILLAServo}!Querry@{Querry}}
+\index{Querry@{Querry}!ILLAServo@{ILLAServo}}
+\doxysubsubsection{\texorpdfstring{Querry()}{Querry()}}
+{\footnotesize\ttfamily void ILLAServo.\+Querry (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lynxmotion_1_1_robotics_1_1_lss_command}{Lss\+Command}}}]{cmd }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_i_l_l_a_servo_af137e33807657c09cc8e148b09d269ff_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8}\label{class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8}} 
@@ -108,14 +131,6 @@ Here is the call graph for this function\+:\nopagebreak
 \includegraphics[width=350pt]{class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_i_l_l_a_servo_a25c87c25f347cf806dd1340d476037f8_icgraph}
-\end{center}
-\end{figure}
 \mbox{\Hypertarget{class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4}\label{class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4}} 
 \index{ILLAServo@{ILLAServo}!QuerryVoltage@{QuerryVoltage}}
 \index{QuerryVoltage@{QuerryVoltage}!ILLAServo@{ILLAServo}}
@@ -127,14 +142,6 @@ Here is the call graph for this function\+:\nopagebreak
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_i_l_l_a_servo_aaf500cfb9daeb329b9330ef0b1694dc4_icgraph}
 \end{center}
 \end{figure}
 
@@ -179,6 +186,12 @@ Here is the caller graph for this function\+:
 
 
 \doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_i_l_l_a_servo_ade7260b53a73b18f2d13117a711bed40}\label{class_i_l_l_a_servo_ade7260b53a73b18f2d13117a711bed40}} 
+\index{ILLAServo@{ILLAServo}!current@{current}}
+\index{current@{current}!ILLAServo@{ILLAServo}}
+\doxysubsubsection{\texorpdfstring{current}{current}}
+{\footnotesize\ttfamily double ILLAServo.\+current\hspace{0.3cm}{\ttfamily [get]}}
+
 \mbox{\Hypertarget{class_i_l_l_a_servo_ab9095be1d66a4cd4350e7073195bdbd0}\label{class_i_l_l_a_servo_ab9095be1d66a4cd4350e7073195bdbd0}} 
 \index{ILLAServo@{ILLAServo}!currentAngle@{currentAngle}}
 \index{currentAngle@{currentAngle}!ILLAServo@{ILLAServo}}
